@@ -4,11 +4,9 @@
 
 This is a collection of container images using Fedora's support for OCI/Docker containers as a [transport and delivery mechanism for operating system content](https://fedoraproject.org/wiki/Changes/OstreeNativeContainerStable).
 
-[[ screenshot of some images ]]
-
 This project's purpose is to:
 
-- Provide a diverse set of Fedoral based images for people to use as their desktop operating system.
+- Provide a diverse set of Fedora based images for people to use as their desktop operating system.
 - Provide a diverse set of tools and reusable automation "kits" for more technical users so that they can customize and share their images with others.
 - Act as a proving ground for new ideas around the Linux desktop. 
 
