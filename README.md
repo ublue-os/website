@@ -16,4 +16,4 @@ You will need [Python version 3.10 or higher](https://www.python.org/downloads/)
 2. Create a new branch for your contribution `git checkout -b my-new-branch`
 3. Add your contributions! Make changes, use `poetry run mkdocs serve` to validate those changes
 4. Commit and push your changes to your branch
-5. Open [a pull request[(https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) to have it reviewed
+5. Open [a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) to have it reviewed
