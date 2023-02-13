@@ -3,23 +3,53 @@ on:
   push:
     branches:
     - main
+  workflow_dispatch:
+
 permissions:
   contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-python@v4
+    - name: Checkout
+      uses: actions/checkout@v3
+    - name: Setup Pages
+      uses: actions/configure-pages@v3
+    - name: Setup Python
+      uses: actions/setup-python@v4
       with:
         python-version: '3.10'
     - uses: actions/cache@v2
       with:
         key: ${{ github.ref }}
         path: .cache
-    - run: |
+    - name: Install project dependencies
+      run: |
         pip install poetry
         poetry install
       env:
         POETRY_VIRTUALENVS_CREATE: false
-    - run: mkdocs gh-deploy --force
+    - name: Build MkDocs
+      run: mkdocs build
+    - name: Upload site artifact
+      uses: actions/upload-pages-artifact@v1
+      with:
+        path: ./site
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
