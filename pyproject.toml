@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "ublue-website"
+version = "0.1.0"
+description = "ublue.it website"
+authors = ["Marco Ceppi <marco@ceppi.net>"]
+license = "Apache 2.0"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+mkdocs = "^1.4.2"
+mkdocs-material = "^9.0.12"
+
+[tool.poetry.dev-dependencies]
+black = "^23.1.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
