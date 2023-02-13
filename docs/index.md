@@ -4,6 +4,7 @@
 
 This is a collection of container images using Fedora's support for OCI/Docker containers as a [transport and delivery mechanism for operating system content](https://fedoraproject.org/wiki/Changes/OstreeNativeContainerStable).
 
+
 This project's purpose is to:
 
 - Provide a diverse set of Fedora based images for people to use as their desktop operating system.
@@ -14,7 +15,8 @@ This project's purpose is to:
 
 We're always looking for people to help, all skill levels are welcome.
 
-- Pull requests gladly accepted
-- Experimentation encouraged
+- [Full list of images](https://github.com/orgs/ublue-os/packages) 
+- Pull requests gladly accepted, we're trying to figure out if a community-curated set of images can make something awesome.
+- Experimentation encouraged!
 
 Ping [@jorge@hachyderm.io](https://hachyderm.io/@jorge) if you're interested in collaborating with a repo in this org. If you're building your own custom images feel free to add them to [our awesome list](https://github.com/ublue-os/awesome-custom-images)! You can also [join our Discord](https://discord.gg/WEu6BdFEtp) if you want to dive in and help out.
