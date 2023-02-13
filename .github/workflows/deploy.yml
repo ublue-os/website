@@ -17,5 +17,9 @@ jobs:
       with:
         key: ${{ github.ref }}
         path: .cache
-    - run: pip install mkdocs-material 
+    - run: |
+        pip install poetry
+        poetry install
+      env:
+        POETRY_VIRTUALENVS_CREATE: false
     - run: mkdocs gh-deploy --force
