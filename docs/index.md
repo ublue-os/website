@@ -34,9 +34,10 @@ Check out our [full list of images](https://github.com/orgs/ublue-os/packages) f
 
 ## Join Us
 
-We're always looking for people to help, all skill levels are welcome.
+We're always looking for people to help, all skill levels and areas of expertise are welcome.
 
-- Pull requests gladly accepted, we're trying to figure out if a community-curated set of images can make something awesome.
+- [Join our Discord](https://discord.gg/WEu6BdFEtp)
+- Pull requests wanted and accepted!
 - Experimentation encouraged!
 
-Ping [@jorge@hachyderm.io](https://hachyderm.io/@jorge) if you're interested in collaborating with a repo in this org. If you're building your own custom images feel free to add them to [our awesome list](https://github.com/ublue-os/awesome-custom-images)! You can also [join our Discord](https://discord.gg/WEu6BdFEtp) if you want to dive in and help out.
+If you're building your own custom images feel free to add them to [our awesome list](https://github.com/ublue-os/awesome-custom-images)!
