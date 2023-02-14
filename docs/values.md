@@ -14,6 +14,13 @@ Broadly successful and useful technologies require different perspectives and sk
 ## Evolution is better than stagnation
 Openness to new ideas and studied technological evolution make us a stronger project. 
 
+## Transparency
+We endevaour to utilize the latest in open source technology (like [sigstore](https://www.sigstore.dev/)) to ensure our users can verify the processes used to build these images.
+
+
+---
+
+
 ... and we can't have all that without the quote: 
 
 "Culture eats strategy for breakfast." --Peter Drucker
