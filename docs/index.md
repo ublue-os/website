@@ -30,7 +30,24 @@ Users with NVIDIA GPUs should use the following images:
 | [`silverblue-nvidia`](https://github.com/ublue-os/silverblue-nvidia) | An immutable desktop operating system featuring the GNOME desktop and applications | [![build-ublue](https://github.com/ublue-os/nvidia/actions/workflows/build.yml/badge.svg)](https://github.com/ublue-os/nvidia/actions/workflows/build.yml) |
 | [`vauxite-nvidia`](https://github.com/ublue-os/vauxite-nvidia) | Immutable Fedora-based Xfce desktop | [![build-ublue](https://github.com/ublue-os/nvidia/actions/workflows/build.yml/badge.svg)](https://github.com/ublue-os/nvidia/actions/workflows/build.yml) |
 
-Check out our [full list of images](https://github.com/orgs/ublue-os/packages) for more options. 
+Check out our [full list of images](https://github.com/orgs/ublue-os/packages) for more options.
+
+## Why would I use these?
+
+These images reflect a more [cloud-native](https://www.youtube.com/watch?v=vZ1LRe_foJY) approach to running Linux on your desktop. Images are built a minimum of once a day so updates from Fedora are included.
+
+### Advantages over traditional Linux desktops 
+
+- Reliable, atomic updates with built in rollback
+- Known-good state and fewer failures
+  - Significantly reduced configuration drift
+  - No compiling or building Nvidia drivers on the local client, they come premade on the image
+- Clean seperation of the base system from applications and your data
+- Unbridled customization
+  - Craft your perfect image from scratch or derive from others   
+- Reuses standards-based tooling from cloud
+  - Built using ostree-enabled [OCI compliant images](https://opencontainers.org/) 
+- Built-in container tools for developers
 
 ## Join Us
 
