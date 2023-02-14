@@ -26,9 +26,9 @@ Users with NVIDIA GPUs should use the following images:
 | Image name | Description | Status | 
 | ---------- | ----------- | ------ | 
 | [`bazzite`](https://github.com/ublue-os/bazzite) | an OCI based off of ublue-os/kinoite-nvidia that is intended to be an alternative OS for the Steam Deck and a SteamOS-alike for desktops.  | [![build-ublue](https://github.com/ublue-os/bazzite/actions/workflows/build.yml/badge.svg)](https://github.com/ublue-os/bazzite/actions/workflows/build.yml) |
-| [`kinoite-nvidia`](https://github.com/ublue-os/kinoite-nvidia) | A variant of the Fedora KDE Spin | [![build-ublue](https://github.com/ublue-os/nvidia/actions/workflows/build.yml/badge.svg)](https://github.com/ublue-os/nvidia/actions/workflows/build.yml) |
-| [`silverblue-nvidia`](https://github.com/ublue-os/silverblue-nvidia) | An immutable desktop operating system featuring the GNOME desktop and applications | [![build-ublue](https://github.com/ublue-os/nvidia/actions/workflows/build.yml/badge.svg)](https://github.com/ublue-os/nvidia/actions/workflows/build.yml) |
-| [`vauxite-nvidia`](https://github.com/ublue-os/vauxite-nvidia) | Immutable Fedora-based Xfce desktop | [![build-ublue](https://github.com/ublue-os/nvidia/actions/workflows/build.yml/badge.svg)](https://github.com/ublue-os/nvidia/actions/workflows/build.yml) |
+| [`kinoite-nvidia`](https://github.com/ublue-os/nvidia) | A variant of the Fedora KDE Spin | [![build-ublue](https://github.com/ublue-os/nvidia/actions/workflows/build.yml/badge.svg)](https://github.com/ublue-os/nvidia/actions/workflows/build.yml) |
+| [`silverblue-nvidia`](https://github.com/ublue-os/nvidia) | An immutable desktop operating system featuring the GNOME desktop and applications | [![build-ublue](https://github.com/ublue-os/nvidia/actions/workflows/build.yml/badge.svg)](https://github.com/ublue-os/nvidia/actions/workflows/build.yml) |
+| [`vauxite-nvidia`](https://github.com/ublue-os/nvidia) | Immutable Fedora-based Xfce desktop | [![build-ublue](https://github.com/ublue-os/nvidia/actions/workflows/build.yml/badge.svg)](https://github.com/ublue-os/nvidia/actions/workflows/build.yml) |
 
 Check out our [full list of images](https://github.com/orgs/ublue-os/packages) for more options.
 
