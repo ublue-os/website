@@ -8,12 +8,19 @@ The current Anaconda installer doesn't support installing custom images. Here's 
 
 For now we recommend reading the [Administrator's Handbook](https://coreos.github.io/rpm-ostree/administrator-handbook/) so that you can learn how to pin, rollback, and switch between images. 
 
+!!! A note on default applications
+The default applications that are installed depend on which ISO you used to install. Silverblue will come with GNOME apps, and Kinoite will come with KDE apps. These are installed via Flatpak and can be cleanly uninstalled if you prefer something else.
+
 ## What's the differences between all these images?
 
 It depends, some are vanilla Fedora with an extra desktop that might not yet be officially supported.
 Some modify Fedora in some way, like adding drivers.
 And some of them take a more opinionated approach to the final "product" than Fedora does.
 Refer to the README of that specific image to learn more about it.
+
+## What should I know about rebasing between images? 
+
+The images provide _system level_ components. Desktops and applications will continue to use your home directory for their data. So for example if you started with Kinoite and rebased to GNOME, then to XFCE, you will have all three of those desktops' dotfiles and configuration in your home directory. This may or may not be important to you depending on your usage, available disk space, and how you manage your personal data. 
 
 ## Why does it download more changes than it seems like it should?
 
