@@ -34,7 +34,7 @@ Check out our [full list of images](https://github.com/orgs/ublue-os/packages) f
 
 ## Why would I use these?
 
-These images reflect a more [cloud-native](https://www.youtube.com/watch?v=vZ1LRe_foJY) approach to running Linux on your desktop. Images are built a minimum of once a day so updates from Fedora are included.
+These images reflect a more [cloud-native](https://www.youtube.com/watch?v=vZ1LRe_foJY) approach to running Linux on your desktop. 
 
 ### Advantages over traditional Linux desktops 
 
@@ -45,10 +45,19 @@ These images reflect a more [cloud-native](https://www.youtube.com/watch?v=vZ1LR
 - Clean seperation of the base system from applications and your data
 - Unbridled customization
     - Craft your perfect image from scratch or derive from others   
+    - Consume packages and software from any repo without risking breakage on the client
 - Reuses standards-based tooling from cloud
     - Built using ostree-enabled [OCI compliant images](https://opencontainers.org/)
     - Host and Build on any container registry, both cloud and bare metal
 - Built-in container tools for developers
+
+### Other Features
+
+- Fast updates: minimum of once-a-day updates so you're never behind Fedora
+- Hosted on ghcr.io
+    - Ninety (90) days of image archives allowing for flexible rollback options  
+    - Globally distributed via CDN for fast image downloads, thanks Microsoft!
+- Images signed with standard [sigstore tools](https://www.sigstore.dev/)
 
 ## Join Us
 
