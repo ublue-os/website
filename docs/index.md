@@ -46,7 +46,8 @@ These images reflect a more [cloud-native](https://www.youtube.com/watch?v=vZ1LR
 - Unbridled customization
     - Craft your perfect image from scratch or derive from others   
 - Reuses standards-based tooling from cloud
-    - Built using ostree-enabled [OCI compliant images](https://opencontainers.org/) 
+    - Built using ostree-enabled [OCI compliant images](https://opencontainers.org/)
+    - Host and Build on any container registry, both cloud and bare metal
 - Built-in container tools for developers
 
 ## Join Us
