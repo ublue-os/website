@@ -1,4 +1,7 @@
-# Universal Blue
+---
+hide:
+  - navigation
+---
 
 ## Custom Operating System images based on Fedora
 
@@ -48,6 +51,8 @@ These images reflect a more [cloud-native](https://www.youtube.com/watch?v=vZ1LR
 - Reuses standards-based tooling from cloud
     - Built using ostree-enabled [OCI compliant images](https://opencontainers.org/) 
 - Built-in container tools for developers
+
+
 
 ## Join Us
 

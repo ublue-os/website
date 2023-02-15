@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # Community Values
 
 Derived from the [Kubernetes Community Values](https://kubernetes.io/community/values/) but with a more hometown feel: 
