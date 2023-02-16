@@ -23,6 +23,10 @@ Refer to the README of that specific image to learn more about it.
 
 The images provide _system level_ components. Desktops and applications will continue to use your home directory for their data. So for example if you started with Kinoite and rebased to GNOME, then to XFCE, you will have all three of those desktops' dotfiles and configuration in your home directory. This may or may not be important to you depending on your usage, available disk space, and how you manage your personal data. 
 
+!!! note
+
+    Rebasing between images will not affect your installed applications, those are handled by flatpak.
+
 ## Why does it download more changes than it seems like it should?
 
 Ideally we'd get one lovely zstd-compressed container diff every day but it's not there yet.
