@@ -13,7 +13,11 @@ This project's purpose is to:
 - Provide a diverse set of tools and reusable automation "kits" for more technical users so that they can customize and share their images with others.
 - Act as a proving ground for new ideas around the Linux desktop. 
 
-Check out our [full list of images](https://ublue.it/images/)) with GNOME, KDE, XFXE, LXQt, and MATE, with more being added on the regular. Our NVIDIA images offer a unique blend reliability and ease of use that you won't find anywhere else.
+!!! example "Join us on the journey"
+
+    [Full list of images](https://ublue.it/images)
+
+Our images offer GNOME, KDE, XFXE, LXQt, and MATE, with more being added on the regular. Our NVIDIA images offer a unique blend reliability and ease of use that you won't find anywhere else.
 
 ## Why would I use these?
 
