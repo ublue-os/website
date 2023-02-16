@@ -36,10 +36,6 @@ These images reflect a more [cloud-native](https://www.youtube.com/watch?v=vZ1LR
     - Built using ostree-enabled [OCI compliant images](https://opencontainers.org/) 
 - Built-in container tools for developers
     - Consume packages and software from any repo without risking breakage on the client
-- Reuses standards-based tooling from cloud
-    - Built using ostree-enabled [OCI compliant images](https://opencontainers.org/)
-    - Host and Build on any container registry, both cloud and bare metal
-- Built-in container tools for developers
 
 ### Other Features
 
