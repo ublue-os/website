@@ -13,26 +13,7 @@ This project's purpose is to:
 - Provide a diverse set of tools and reusable automation "kits" for more technical users so that they can customize and share their images with others.
 - Act as a proving ground for new ideas around the Linux desktop. 
 
-Here is an alphabetical list images:
-
-| Image name | Description | Status | 
-| ---------- | ----------- | ------ | 
-| [`base`](https://github.com/ublue-os/base) | Silverblue with unfiltered Flathub, distrobox, and automatic updates |  [![base](https://github.com/ublue-os/base/actions/workflows/build.yml/badge.svg)](https://github.com/ublue-os/base/actions/workflows/build.yml) |
-| [`lxqt`](https://github.com/ublue-os/lxqt) | Immutable Fedora-based LXQt desktop container image  | [![lxqt](https://github.com/ublue-os/lxqt/actions/workflows/build.yml/badge.svg)](https://github.com/ublue-os/lxqt/actions/workflows/build.yml) |
-| [`mate`](https://github.com/ublue-os/mate) | Immutable Fedora-based MATE Desktop container image | [![mate](https://github.com/ublue-os/mate/actions/workflows/build.yml/badge.svg)](https://github.com/ublue-os/mate/actions/workflows/build.yml) |
-| [`ubuntu`](https://github.com/ublue-os/ubuntu) | Fedora Silverblue for Ubuntu Expatriates | [![ubuntu](https://github.com/ublue-os/ubuntu/actions/workflows/build.yml/badge.svg)](https://github.com/ublue-os/ubuntu/actions/workflows/build.yml) |
-| [`vauxite`](https://github.com/ublue-os/vauxite) | Immutable Fedora-based Xfce desktop | [![vauxite](https://github.com/ublue-os/vauxite/actions/workflows/build.yml/badge.svg)](https://github.com/ublue-os/vauxite/actions/workflows/build.yml) |
-
-Users with NVIDIA GPUs should use the following images: 
-
-| Image name | Description | Status | 
-| ---------- | ----------- | ------ | 
-| [`bazzite`](https://github.com/ublue-os/bazzite) | an OCI based off of ublue-os/kinoite-nvidia that is intended to be an alternative OS for the Steam Deck and a SteamOS-alike for desktops.  | [![build-ublue](https://github.com/ublue-os/bazzite/actions/workflows/build.yml/badge.svg)](https://github.com/ublue-os/bazzite/actions/workflows/build.yml) |
-| [`kinoite-nvidia`](https://github.com/ublue-os/nvidia) | A variant of the Fedora KDE Spin | [![build-ublue](https://github.com/ublue-os/nvidia/actions/workflows/build.yml/badge.svg)](https://github.com/ublue-os/nvidia/actions/workflows/build.yml) |
-| [`silverblue-nvidia`](https://github.com/ublue-os/nvidia) | An immutable desktop operating system featuring the GNOME desktop and applications | [![build-ublue](https://github.com/ublue-os/nvidia/actions/workflows/build.yml/badge.svg)](https://github.com/ublue-os/nvidia/actions/workflows/build.yml) |
-| [`vauxite-nvidia`](https://github.com/ublue-os/nvidia) | Immutable Fedora-based Xfce desktop | [![build-ublue](https://github.com/ublue-os/nvidia/actions/workflows/build.yml/badge.svg)](https://github.com/ublue-os/nvidia/actions/workflows/build.yml) |
-
-Check out our [full list of images](https://github.com/orgs/ublue-os/packages) for more options.
+Check out our [full list of images](https://ublue.it/images/)) with GNOME, KDE, XFXE, LXQt, and MATE, with more being added on the regular. Our NVIDIA images offer a unique blend reliability and ease of use that you won't find anywhere else.
 
 ## Why would I use these?
 
