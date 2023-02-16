@@ -17,7 +17,7 @@ This project's purpose is to:
 
     [Full list of images](https://ublue.it/images)
 
-Our images offer GNOME, KDE, XFXE, LXQt, and MATE, with more being added on the regular. Our NVIDIA images offer a unique blend reliability and ease of use that you won't find anywhere else.
+Our images offer GNOME, KDE, XFXE, LXQt, and MATE, with more being added on the regular. Our NVIDIA images offer a unique blend of reliability and ease of use that you won't find anywhere else.
 
 ## Why would I use these?
 
