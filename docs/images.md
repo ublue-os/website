@@ -4,9 +4,10 @@ hide:
 ---
 
 This list is in alphabetical order, organized by build method.
+Check out [artifact hub](https://artifacthub.io/packages/search?org=ublue-os&sort=relevance&page=1) for more images that we may be publishing.
 
 - **Users:** the build method doesn't matter to you, use whichever image fits your use case.
-- **Creators:** The method that the image is built might be important to you: 
+- **Creators:** The method that the image is built might be important to you
 
 ## Composed Images
 
