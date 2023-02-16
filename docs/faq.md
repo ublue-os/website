@@ -8,9 +8,9 @@ The current Anaconda installer doesn't support installing custom images. Here's 
 
 For now we recommend reading the [Administrator's Handbook](https://coreos.github.io/rpm-ostree/administrator-handbook/) so that you can learn how to pin, rollback, and switch between images. 
 
-!!! A note on default applications
+!!! note "Default applications"
 
-The default applications that are installed depend on which ISO you used to install. Silverblue will come with GNOME apps, and Kinoite will come with KDE apps. These are installed via Flatpak and can be cleanly uninstalled if you prefer something else.
+    The default applications that are installed depend on which ISO you used to install. Silverblue will come with GNOME apps, and Kinoite will come with KDE apps. These are installed via Flatpak and can be cleanly uninstalled if you prefer something else.
 
 ## What's the differences between all these images?
 
