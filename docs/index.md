@@ -23,7 +23,7 @@ Our images offer GNOME, KDE, XFXE, LXQt, and MATE, with more being added on the 
 
 Currently we're waiting for installer support in Anaconda. In order to use these images you'll need to download [Fedora Silverblue](https://silverblue.fedoraproject.org/download) or [Kinoite](https://kinoite.fedoraproject.org/) and then follow the instructions for the image you're interested in to "rebase" to it. 
 Don't worry, that operation is image-based, so you'll always have what's supposed to be there. 
-Image based updates inherently don't allow for cruft to accumulate or configuration drift, allowing for a level of stability and upgrade resilience once reserved for only cloud and mobile. 
+Image based updates inherently don't allow for cruft to accumulate, allowing for a level of stability and upgrade resilience that has been missing on the Linux desktop, until now. 
 Our goal is to for one install to last the life of the hardware, while allowing you to rebase onto other images. 
 
 ## Why would I use these?
@@ -38,7 +38,7 @@ These images reflect a more [cloud-native](https://www.youtube.com/watch?v=vZ1LR
     - No compiling or building Nvidia drivers on the local client, they come premade on the image
 - Clean seperation of the base system from applications and your data
     - Integration of Flatpak applications
-    - Toolbox and Distrobox support, run your existing apps right on your machine no matter what distro you're using now. 
+    - Toolbox and Distrobox support, run applications from any distribution in a containerized environment 
 - Unbridled customization
     - Craft your perfect image from scratch or derive from others   
 - Reuses standards-based tooling from cloud
