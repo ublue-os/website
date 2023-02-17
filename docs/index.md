@@ -60,6 +60,7 @@ These images reflect a more [cloud-native](https://www.youtube.com/watch?v=vZ1LR
 We're always looking for people to help, all skill levels and areas of expertise are welcome.
 
 - [Join our Discord](https://discord.gg/WEu6BdFEtp)
+  - We strive for a safe, inclusive community   
 - Pull requests wanted and accepted!
 - Experimentation encouraged!
 
