@@ -23,12 +23,13 @@ Our images offer GNOME, KDE, XFXE, LXQt, and MATE, with more being added on the 
 
 Currently we're waiting for installer support in Anaconda. In order to use these images you'll need to download [Fedora Silverblue](https://silverblue.fedoraproject.org/download) or [Kinoite](https://kinoite.fedoraproject.org/) and then follow the instructions for the image you're interested in to "rebase" to it. 
 Don't worry, that operation is image-based, so you'll always have what's supposed to be there. 
+
 Image based updates inherently don't allow for cruft to accumulate, allowing for a level of stability and upgrade resilience that has been missing on the Linux desktop, until now. 
 Our goal is to for one install to last the life of the hardware, while allowing you to rebase onto other images. 
 
 ## Why would I use these?
 
-These images reflect a more [cloud-native](https://www.youtube.com/watch?v=vZ1LRe_foJY) approach to running Linux on your desktop. 
+These images reflect a more [cloud-native](https://www.youtube.com/watch?v=vZ1LRe_foJY) approach to running Linux on your desktop. We feel that a dedicated group of enthusiasts can automate a large amount of toil that plagues existing Linux desktops today: 
 
 ### Advantages over traditional Linux desktops 
 
