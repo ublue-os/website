@@ -13,11 +13,18 @@ This project's purpose is to:
 - Provide a diverse set of tools and reusable automation "kits" for more technical users so that they can customize and share their images with others.
 - Act as a proving ground for new ideas around the Linux desktop. 
 
-!!! example "Join us on the journey"
+!!! example "Join us on the Journey"
 
     [Full list of images](https://ublue.it/images)
 
 Our images offer GNOME, KDE, XFXE, LXQt, and MATE, with more being added on the regular. Our NVIDIA images offer a unique blend of reliability and ease of use that you won't find anywhere else.
+
+## Usage
+
+Currently we're waiting for installer support in Anaconda. In order to use these images you'll need to download [Fedora Silverblue](https://silverblue.fedoraproject.org/download) or [Kinoite](https://kinoite.fedoraproject.org/) and then follow the instructions for the image you're interested in to "rebase" to it. 
+Don't worry, that operation is image-based, so you'll always have what's supposed to be there. 
+Image based updates inherently don't allow for cruft to accumulate or configuration drift, allowing for a level of stability and upgrade resilience once reserved for only cloud and mobile. 
+Our goal is to for one install to last the life of the hardware, while allowing you to rebase onto other images. 
 
 ## Why would I use these?
 
@@ -30,12 +37,15 @@ These images reflect a more [cloud-native](https://www.youtube.com/watch?v=vZ1LR
     - Significantly reduced configuration drift
     - No compiling or building Nvidia drivers on the local client, they come premade on the image
 - Clean seperation of the base system from applications and your data
+    - Integration of Flatpak applications
+    - Toolbox and Distrobox support, run your existing apps right on your machine no matter what distro you're using now. 
 - Unbridled customization
     - Craft your perfect image from scratch or derive from others   
 - Reuses standards-based tooling from cloud
     - Built using ostree-enabled [OCI compliant images](https://opencontainers.org/) 
 - Built-in container tools for developers
     - Consume packages and software from any repo without risking breakage on the client
+    - Easy consumption of other OCI images, if it's on the [CNCF Landscape](https://landscape.cncf.io/) it's a first class citizen thanks to Podman!
 
 ### Other Features
 
