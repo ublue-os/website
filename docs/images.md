@@ -11,7 +11,7 @@ Check out [artifact hub](https://artifacthub.io/packages/search?org=ublue-os&sor
 
 !!! warning
 
-If you're coming from an existing Fedora installation you should ensure that you don't have layered packages. If you're not familiar with usage of rpm-ostree we strongly recommend [reading the documentation](https://coreos.github.io/rpm-ostree/).
+    If you're coming from an existing Fedora installation you should ensure that you don't have layered packages. If you're not familiar with usage of rpm-ostree we strongly recommend [reading the documentation](https://coreos.github.io/rpm-ostree/).
 
 ## Composed Images
 
