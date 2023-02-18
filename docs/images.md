@@ -9,6 +9,10 @@ Check out [artifact hub](https://artifacthub.io/packages/search?org=ublue-os&sor
 - **Users:** the build method doesn't matter to you, use whichever image fits your use case.
 - **Creators:** The method that the image is built might be important to you
 
+!!! warning
+
+If you're coming from an existing Fedora installation you should ensure that you don't have layered packages. If you're not familiar with usage of rpm-ostree we strongly recommend [reading the documentation](https://coreos.github.io/rpm-ostree/).
+
 ## Composed Images
 
 These images are built by composing ostree treefiles and are more "from scratch".
