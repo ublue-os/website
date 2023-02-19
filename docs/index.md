@@ -29,10 +29,10 @@ Our goal is to for one install to last the life of the hardware, while allowing 
 
 ## Why would I use these?
 
-These images reflect a more [cloud-native](https://www.youtube.com/watch?v=vZ1LRe_foJY) approach to running Linux on your desktop. We feel that a dedicated group of enthusiasts can automate a large amount of toil that plagues existing Linux desktops today: 
+These images reflect a more [cloud-native](https://www.youtube.com/watch?v=vZ1LRe_foJY) approach to running Linux on your desktop. We feel that a dedicated group of enthusiasts can automate a large amount of toil that plagues existing Linux desktops today, here's the video summary:
 
 <div class="video-wrapper">
-  <iframe width="1280" height="720" src="https://www.youtube.com/embed/X8h304Jp9N8" frameborder="0" allowfullscreen></iframe>
+  <iframe width="1280" height="720" src="https://www.youtube.com/embed/X8h304Jp9N8?t=435" frameborder="0" allowfullscreen></iframe>
 </div>
 
 ### Advantages over traditional Linux desktops 
