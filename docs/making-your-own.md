@@ -8,7 +8,7 @@
    - Install the [cosign CLI tool](https://edu.chainguard.dev/open-source/sigstore/cosign/how-to-install-cosign/)
    - Run `cosign generate-key-pair`
    - In your repository settings, under Secrets and Variables -> Actions
-     - Create a new secret:
+     - Create a new secret, make sure that you don't put a password on the key as this will be used by an action:
      ![image](https://user-images.githubusercontent.com/1264109/216735595-0ecf1b66-b9ee-439e-87d7-c8cc43c2110a.png)
      - Call it `SIGNING_SECRET` and then paste the contents of `cosign.key` into the field and save it. Be careful to make sure it's the .key file and not the .pub file. It should look like this:  
      ![image](https://user-images.githubusercontent.com/1264109/216735690-2d19271f-cee2-45ac-a039-23e6a4c16b34.png)
