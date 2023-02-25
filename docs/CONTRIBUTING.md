@@ -1,4 +1,4 @@
-# Welcome to Universal Blue
+# Contributing
 
 Thanks for taking the time to look into helping out!
 All contributions are appreciated! 
