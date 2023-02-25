@@ -7,7 +7,7 @@ hide:
 
 Thanks for taking the time to look into helping out!
 All contributions are appreciated! 
-Please refer to our [Code of Conduct](https://github.com/ublue-os/base/blob/main/CODE_OF_CONDUCT.md) while you're at it!
+Please refer to our [Code of Conduct](CODE_OF_CONDUCT.md) while you're at it!
 
 Feel free to report issues as you find them, and [helping others in the discussions]() is always appreciated.
 
