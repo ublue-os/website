@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # Making your Own
 
 1. Fork the ublue-os/base repo:
