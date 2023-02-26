@@ -9,9 +9,10 @@ This is a collection of container images using Fedora's support for OCI/Docker c
 
 This project's purpose is to:
 
-- Provide a diverse set of Fedora based images for people to use as their desktop operating system.
-- Provide a diverse set of tools and reusable automation "kits" for more technical users so that they can customize and share their images with others.
-- Act as a proving ground for new ideas around the Linux desktop. 
+- Provide a diverse set of Fedora based images for people to use as their desktop operating system
+- Provide a diverse set of tools and reusable automation "kits" for more technical users so that they can customize and share their images with others
+- Act as a proving ground for new ideas around the Linux desktop
+- Help new contributors to start their cloud native and open source journeys no matter their skill level
 
 !!! example "Join us on the Journey"
 
