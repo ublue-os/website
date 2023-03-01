@@ -52,16 +52,16 @@ Reasons include:
 
 The following are some best practices based on experience with learning how to move to this new model:
 
-- You need to read the documentation
-  - There's no way around this, we're terraforming a new planet, you'll save a ton of time by reading the documentation:
-    - [CoreOS](https://docs.fedoraproject.org/en-US/fedora-coreos/)
-    - [Kinoite](https://docs.fedoraproject.org/en-US/fedora-kinoite/)
-    - [Silverblue](https://docs.fedoraproject.org/en-US/fedora-kinoite/)
-  - Additionally, your developer users might not be familiar with [Podman](https://podman.io/)
-    - Most documentation around "How do I install a webserver in Fedora" will not apply
-    - It looks more like `podman run --name podman-nginx -p 8080:80 -d nginx`
-    - IDEs are still a problem area 
-- Resist the urge to add the entire universe 
-  - Systems like this are designed for a _small, lean, mean, maintainable, and performant core_. Remember that updates to the _base image_ require a reboot, so ideally you want that surface area to be small - let Flatpak handle the rest.
-  - But also remember that these systems are atomic, you don't need to manually clean up an old decision, the user will just get a new pristine image (ideally every day), so if you need to add a bunch of packages to get the desired outcome then you can always trim it down later - just remember that you need to account for the user's data!
-  - This means: be cognizant where you put stuff. When making an image you can't put things in `/usr/local` or other common places to put custom things, in this context you're the distro now: so probably `/usr/bin`. Don't worry, you got this.
+### You need to read the documentation
+- There's no way around this, we're terraforming a new planet, you'll save a ton of time by reading the documentation:
+  - [CoreOS](https://docs.fedoraproject.org/en-US/fedora-coreos/)
+  - [Kinoite](https://docs.fedoraproject.org/en-US/fedora-kinoite/)
+  - [Silverblue](https://docs.fedoraproject.org/en-US/fedora-kinoite/)
+- Additionally, your developer users might not be familiar with [Podman](https://podman.io/)
+  - Most documentation around "How do I install a webserver in Fedora" will not apply
+  - It looks more like `podman run --name podman-nginx -p 8080:80 -d nginx`
+  - IDEs are still a problem area 
+### Resist the urge to add the entire universe 
+ - Systems like this are designed for a _small, lean, mean, maintainable, and performant core_. Remember that updates to the _base image_ require a reboot, so ideally you want that surface area to be small - let Flatpak handle the rest.
+ - But also remember that these systems are atomic, you don't need to manually clean up an old decision, the user will just get a new pristine image (ideally every day), so if you need to add a bunch of packages to get the desired outcome then you can always trim it down later - just remember that you need to account for the user's data!
+ - This means: be cognizant where you put stuff. When making an image you can't put things in `/usr/local` or other common places to put custom things, in this context you're the distro now: so probably `/usr/bin`. Don't worry, you got this.
