@@ -13,7 +13,7 @@ However, one of the main goals is to provide a custom toolkit for you to make yo
 The concept around image based operating systems balances on the idea that the core image is ready to go, ideally users don't need to touch it.
 However, people like to tinker, so instead of [layering packages](https://docs.fedoraproject.org/en-US/iot/adding-layered/) that compromise the integrity of upgrades, the idea is to just make your own image so that you can just have a pristine setup over time for the life of the hardware.
 
-Reasons include:
+### Reasons to make your own image
 - You want the reliability of image based operating systems like ChromeOS or Android but want more flexibility
     - A complete Fedora experience with all the benefits of your preferences shipped out of the box
     - Ship your own terminal CLI experience on whatever distribution you like
