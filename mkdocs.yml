@@ -34,4 +34,14 @@ extra:
   analytics:
     provider: google
     property: G-QJBLY50M60
+nav: 
+  - Home: index.md
+  - Community
+    - Code of Conduct: CODE_OF_CONDUCT.md
+    - Values: values.md
+  - Documentation
+    - Make Your Own: making-your-own.md
+  - FAQ: faq.md
+  - Contributing: CONTRIBUTING.md
+  
 
