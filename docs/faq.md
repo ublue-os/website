@@ -24,6 +24,10 @@ Some modify Fedora in some way, like adding drivers.
 And some of them take a more opinionated approach to the final "product" than Fedora does.
 Refer to the README of that specific image to learn more about it.
 
+The images in the [Toolbox section](https://ublue.it/toolboxes/) are meant to be used with [Toolbx](https://containertoolbx.org/) and [Distrobox](https://github.com/89luca89/distrobox).
+They are meant to be the used for a command line experience for developers and advanced users.
+Please refer to the documentation for those respective projects.
+
 ## What should I know about rebasing between images? 
 
 The images provide _system level_ components.
