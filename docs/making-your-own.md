@@ -54,10 +54,12 @@ The following are some best practices based on experience with learning how to m
 
 ### You need to read the documentation
 - There's no way around this, we're terraforming a new planet, you'll save a ton of time by reading the documentation:
+
   - [CoreOS](https://docs.fedoraproject.org/en-US/fedora-coreos/)
   - [Kinoite](https://docs.fedoraproject.org/en-US/fedora-kinoite/)
   - [Silverblue](https://docs.fedoraproject.org/en-US/fedora-kinoite/)
 - Additionally, your developer users might not be familiar with [Podman](https://podman.io/)
+
   - Most documentation around "How do I install a webserver in Fedora" will not apply
   - It looks more like `podman run --name podman-nginx -p 8080:80 -d nginx`
   - IDEs are still a problem area 
