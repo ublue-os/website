@@ -15,11 +15,11 @@ However, people like to tinker, so instead of [layering packages](https://docs.f
 
 Reasons include:
 - You want the reliability of image based operating systems like ChromeOS or Android but want more flexibility
-  - A complete Fedora experience with all the benefits of your preferences shipped out of the box
-  - Ship your own terminal CLI experience on whatever distribution you like
+    - A complete Fedora experience with all the benefits of your preferences shipped out of the box
+    - Ship your own terminal CLI experience on whatever distribution you like
 - Draw "outside the lines" of what Fedora provides in a repeatable manner
-  - Make your own custom image without the overhead or responsibility of "making your own distro"
-  - But still be able to ingest all the improvements from Fedora every day
+    - Make your own custom image without the overhead or responsibility of "making your own distro"
+    - But still be able to ingest all the improvements from Fedora every day
 - You might need a specific kernel or module to get your hardware to work
 - It's fun
 
@@ -54,15 +54,14 @@ The following are some best practices based on experience with learning how to m
 
 ### You need to read the documentation
 - There's no way around this, we're terraforming a new planet, you'll save a ton of time by reading the documentation:
-
-  - [CoreOS](https://docs.fedoraproject.org/en-US/fedora-coreos/)
-  - [Kinoite](https://docs.fedoraproject.org/en-US/fedora-kinoite/)
-  - [Silverblue](https://docs.fedoraproject.org/en-US/fedora-kinoite/)
+    - [CoreOS](https://docs.fedoraproject.org/en-US/fedora-coreos/)
+    - [Kinoite](https://docs.fedoraproject.org/en-US/fedora-kinoite/)
+    - [Silverblue](https://docs.fedoraproject.org/en-US/fedora-kinoite/)
 - Additionally, your developer users might not be familiar with [Podman](https://podman.io/)
+    - Most documentation around "How do I install a webserver in Fedora" will not apply
+    - It looks more like `podman run --name podman-nginx -p 8080:80 -d nginx`
+    - IDEs are still a problem area 
 
-  - Most documentation around "How do I install a webserver in Fedora" will not apply
-  - It looks more like `podman run --name podman-nginx -p 8080:80 -d nginx`
-  - IDEs are still a problem area 
 ### Resist the urge to add the entire universe 
  - Systems like this are designed for a _small, lean, mean, maintainable, and performant core_. Remember that updates to the _base image_ require a reboot, so ideally you want that surface area to be small - let Flatpak handle the rest.
  - But also remember that these systems are atomic, you don't need to manually clean up an old decision, the user will just get a new pristine image (ideally every day), so if you need to add a bunch of packages to get the desired outcome then you can always trim it down later - just remember that you need to account for the user's data!
