@@ -36,12 +36,12 @@ extra:
     property: G-QJBLY50M60
 nav: 
   - Home: index.md
-  - Community
+  - Images: images.md
+  - Toolboxes: toolboxes.md
+  - Community:
     - Code of Conduct: CODE_OF_CONDUCT.md
     - Values: values.md
-  - Documentation
+  - Documentation:
     - Make Your Own: making-your-own.md
   - FAQ: faq.md
   - Contributing: CONTRIBUTING.md
-  
-

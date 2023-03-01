@@ -1,9 +1,3 @@
----
-hide:
-  - navigation
----
-
-
 # Code of Conduct
 
 ## Our Pledge
