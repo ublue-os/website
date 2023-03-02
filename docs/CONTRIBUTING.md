@@ -55,9 +55,9 @@ Please report unacceptable behavior to jorge.castro@gmail.com
 > When contributing to this project, you must agree that you have authored 100% of the content, that you have the necessary rights to the content and that the content you contribute may be provided under the project license.
 
 Generally speaking we try to follow the [Lazy Concensus](http://lazyconcens.us/) model of development to keep the builds healthy and ourselves happy. 
-   - If you're looking for concensus to make a decision post an issue for feedback and remember to account for timezones and weekends/holidays/work time 
-   - We want people to be opinionated in their builds so we're more of a loose confederation of repos than a top-down org
-   - Try not to merge your own stuff, ask for a review. At some point when we have enough reviewers we'll be turning on branch protection
+    - If you're looking for concensus to make a decision post an issue for feedback and remember to account for timezones and weekends/holidays/work time 
+    - We want people to be opinionated in their builds so we're more of a loose confederation of repos than a top-down org
+    - Try not to merge your own stuff, ask for a review. At some point when we have enough reviewers we'll be turning on branch protection
 
 ### Reporting Bugs
 
