@@ -1,4 +1,6 @@
 site_name: Universal Blue
+repo_name: ublue-os/main
+repo_url: https://github.com/ublue-os/main
 theme:
   name: material
   palette:
