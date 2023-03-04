@@ -44,7 +44,7 @@ nav:
     - Code of Conduct: CODE_OF_CONDUCT.md
     - Values: values.md
   - Documentation:
-    - Structure: structure.md
+    - Architecture: architecture.md
     - Make Your Own: making-your-own.md
   - FAQ: faq.md
   - Contributing: CONTRIBUTING.md
