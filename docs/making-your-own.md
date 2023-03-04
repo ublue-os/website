@@ -1,8 +1,3 @@
----
-hide:
-  - navigation
----
-
 # Purpose
 
 This project generates [operating system images](images.md) that you can use on your own PC.
@@ -31,8 +26,8 @@ However, people like to tinker, so instead of [layering packages](https://docs.f
    - Changing it to `IMAGE_NAME: beagles` will name the final image: `ghcr.io/yourusername/beagles` - so you'll likely want that to be your cool name instead of `base`
 1. Choose your own Adventure:
    - Edit [recipe.yaml](https://github.com/ublue-os/base/blob/main/recipe.yml) 
-     - The rpms section adds stuff to your image
-     - The flatpaks section adds apps on the first reboot after installation
+     - The rpms section adds rpm packages to your image
+     - The flatpaks section adds flatpak apps to be installed on the first boot or by manually running `just setup-flatpaks`
 1. Generate a keypair
    - Install the [cosign CLI tool](https://edu.chainguard.dev/open-source/sigstore/cosign/how-to-install-cosign/)
    - Run `cosign generate-key-pair`
