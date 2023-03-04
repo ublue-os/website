@@ -44,3 +44,9 @@ Use this method if you want to just make changes to a published image:
 <div class="artifacthub-widget" data-url="https://artifacthub.io/packages/container/ubuntu/ubuntu" data-theme="light" data-header="false" data-stars="true" data-responsive="true"><blockquote><p lang="en" dir="ltr"><b>ubuntu</b>: Fedora Silverblue for Ubuntu Expatriates</p>&mdash; Open in <a href="https://artifacthub.io/packages/container/ubuntu/ubuntu">Artifact Hub</a></blockquote></div><script async src="https://artifacthub.io/artifacthub-widget.js"></script>
 
 <div class="artifacthub-widget" data-url="https://artifacthub.io/packages/container/vauxite-nvidia/vauxite-nvidia" data-theme="light" data-header="false" data-stars="true" data-responsive="true"><blockquote><p lang="en" dir="ltr"><b>vauxite-nvidia</b>: Vanilla Vauxite with Nvidia drivers added</p>&mdash; Open in <a href="https://artifacthub.io/packages/container/vauxite-nvidia/vauxite-nvidia">Artifact Hub</a></blockquote></div><script async src="https://artifacthub.io/artifacthub-widget.js"></script>
+
+## Base Images for Alternate Desktops
+
+These images are a starting point, just add your own desktop or window manager:
+
+<div class="artifacthub-widget" data-url="https://artifacthub.io/packages/container/base-main/base-main" data-theme="light" data-header="false" data-stars="true" data-responsive="true"><blockquote><p lang="en" dir="ltr"><b>base-main</b>: A base base-main image with batteries included</p>&mdash; Open in <a href="https://artifacthub.io/packages/container/base-main/base-main">Artifact Hub</a></blockquote></div><script async src="https://artifacthub.io/artifacthub-widget.js"></script>
