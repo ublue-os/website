@@ -20,7 +20,11 @@ However, people like to tinker, so instead of [layering packages](https://docs.f
 
 # Making your Own
 
-1. Fork the ublue-os/base repo:
+!!! warning
+
+    Ensure you are forking the repository and NOT choosing "Use this template". The project moves quickly and it's important for you to get updates!
+
+1. Fork the [ublue-os/base](https://github.com/ublue-os/main) repo:
 1. Ensure your [GitHub Actions](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository) and [GitHub Packages](https://docs.github.com/en/packages) are set up and enabled
 1. Change the [image name in the action](https://github.com/ublue-os/base/blob/aab8078cfdc7d2354e057a0ca4771d3a53d2df4c/.github/workflows/build.yml#L14) to match what you want to call your image
    - Changing it to `IMAGE_NAME: beagles` will name the final image: `ghcr.io/yourusername/beagles` - so you'll likely want that to be your cool name instead of `base`
