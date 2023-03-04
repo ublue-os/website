@@ -38,13 +38,13 @@ Use this method if you want to just make changes to a published image:
 
 <div class="artifacthub-widget" data-url="https://artifacthub.io/packages/container/sericea-main/sericea-main" data-theme="light" data-header="false" data-stars="true" data-responsive="true"><blockquote><p lang="en" dir="ltr"><b>sericea-main</b>: A Sericea (Sway) image with batteries included</p>&mdash; Open in <a href="https://artifacthub.io/packages/container/sericea-main/sericea-main">Artifact Hub</a></blockquote></div><script async src="https://artifacthub.io/artifacthub-widget.js"></script>
 
-<div class="artifacthub-widget" data-url="https://artifacthub.io/packages/container/ubuntu/ubuntu" data-theme="light" data-header="false" data-stars="true" data-responsive="false"><blockquote><p lang="en" dir="ltr"><b>ubuntu</b>: Fedora Silverblue for Ubuntu Expatriates</p>&mdash; Open in <a href="https://artifacthub.io/packages/container/ubuntu/ubuntu">Artifact Hub</a></blockquote></div><script async src="https://artifacthub.io/artifacthub-widget.js"></script>
+<div class="artifacthub-widget" data-url="https://artifacthub.io/packages/container/ubuntu/ubuntu" data-theme="light" data-header="false" data-stars="true" data-responsive="true"><blockquote><p lang="en" dir="ltr"><b>ubuntu</b>: Fedora Silverblue for Ubuntu Expatriates</p>&mdash; Open in <a href="https://artifacthub.io/packages/container/ubuntu/ubuntu">Artifact Hub</a></blockquote></div><script async src="https://artifacthub.io/artifacthub-widget.js"></script>
 
 ## Images with Nvidia Drivers
 
 These include all the quality-of-life features of the main images plus Nvidia drivers. 
 
-- https://github.com/ublue-os/nvidia
+- [Check them out on GitHub](https://github.com/ublue-os/nvidia)
 
 ## Base Images for Alternate Desktops
 
