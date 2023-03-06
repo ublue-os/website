@@ -25,6 +25,7 @@ theme:
         icon: material/brightness-4
         name: Switch to system preference
   features:
+    - navigation.footer
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
@@ -36,6 +37,13 @@ extra:
   analytics:
     provider: google
     property: G-QJBLY50M60
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/WEu6BdFEtp
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/c/JorgeCastro/videos
+    - icon: fontawesome/brands/mastodon
+      link: https://hachyderm.io/jorge
 nav: 
   - Home: index.md
   - Images: images.md
