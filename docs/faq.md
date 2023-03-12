@@ -50,6 +50,24 @@ uBlue is not officially endorsed or a part of the Fedora project, it's a group o
 This project tends to exercise new features in ostree and Fedora, and as a result we might be the first ones to run into an issue.
 We endevaour to be a healthy contributing partner to the Fedora ecosystem, so please be cognizant of that when reporting issues, we want to help where we can!
 
+## How do I configure automatic updates?
+
+!!! warning
+
+    Disabling automatic updates is an unsupported configuration.
+
+With that said, you can individually disable which automatic update timers [ublue-os/config](https://github.com/ublue-os/config) provides with the following commands:
+
+* flatpak system: `sudo systemctl disable flatpak-system-update.timer`
+* flatpak user: `sudo systemctl --global disable flatpak-user-update.timer`
+
+You can also configure automatic `rpm-ostree` updates by editing `/etc/rpm-ostreed.conf` and changing "AutomaticUpdatePolicy" to "none" or "check":
+
+```
+[Daemon]
+AutomaticUpdatePolicy=check
+```
+
 ## I can't find what I want!
 
 It's still early days, as the community grows we expect more images and more awesome stuff.
