@@ -39,7 +39,7 @@ jobs:
         pip install git+https://github.com/ublue-os/image-scanner-md.git#egg=ublue-scanner
       env:
         POETRY_VIRTUALENVS_CREATE: false
-    - mame: Build image list
+    - name: Build image list
       run: ublue-scan --org ublue-os --config .github/ublue-scan.yml --output md > docs/_generated_image_list.md
     - name: Build MkDocs
       run: mkdocs build
