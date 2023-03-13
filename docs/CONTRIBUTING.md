@@ -129,7 +129,9 @@ Check out CoreOS's [layering examples](https://github.com/coreos/layering-exampl
 We endevaour to be a good partner for Fedora.
 
 This project is consuming new features in Fedora and ostree, it is not uncommon to find an issue.
-Issues should be reported upstream, and in some cases we can help test and find fixes.
+It is strongly recommended that you attempt to reproduce the issue with a vanilla Fedora installation to see if it's a uBlue issue or a Fedora issue. 
+If you are confused and can't confirm, ask in chat or post in the forums and see if someone more experienced can help out.
+Issues that you can confirm should be reported upstream, and in some cases we can help test and find fixes.
 Some of the issues you find may involve other dependencies in other projects, in those cases the Fedora team will tell you where to report the issue. 
 
 Upstream bug tracker: [https://github.com/fedora-silverblue/issue-tracker/issues](https://github.com/fedora-silverblue/issue-tracker/issues)
