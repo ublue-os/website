@@ -41,6 +41,8 @@ jobs:
         POETRY_VIRTUALENVS_CREATE: false
     - name: Build image list
       run: ublue-scan --org ublue-os --config .github/ublue-scan.yml --output md > docs/_generated_image_list.md
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
     - name: Build MkDocs
       run: mkdocs build
     - name: Upload site artifact
