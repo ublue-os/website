@@ -37,6 +37,8 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - markdown_include.include:
+      base_path: docs
 extra:
   analytics:
     provider: google
