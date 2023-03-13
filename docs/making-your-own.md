@@ -37,7 +37,7 @@ However, people like to tinker, so instead of [layering packages](https://docs.f
    - Edit [packages.json](https://github.com/ublue-os/main/blob/main/packages.json) 
      - Add the rpm's you'd like to be included in your image
      - Flatpaks are a work in progress but you'll be able to edit a file
-5. Generate a keypair
+1. Generate a keypair
    - Install the [cosign CLI tool](https://edu.chainguard.dev/open-source/sigstore/cosign/how-to-install-cosign/)
    - Run `cosign generate-key-pair`
    - In your repository settings, under Secrets and Variables -> Actions
