@@ -33,7 +33,7 @@ However, people like to tinker, so instead of [layering packages](https://docs.f
 1. [Optional] Install the [Semantic PRs](https://github.com/marketplace/semantic-prs) GitHub app if you want nice changelogs
 1. Change the [image name in the action](https://github.com/ublue-os/base/blob/aab8078cfdc7d2354e057a0ca4771d3a53d2df4c/.github/workflows/build.yml#L14) to match what you want to call your image
    - Changing it to `IMAGE_NAME: beagles` will name the final image: `ghcr.io/yourusername/beagles` - so you'll likely want that to be your cool name instead of `base`
-4. Choose your own Adventure:
+1. Choose your own Adventure:
    - Edit [packages.json](https://github.com/ublue-os/main/blob/main/packages.json) 
      - Add the rpm's you'd like to be included in your image
      - Flatpaks are a work in progress but you'll be able to edit a file
