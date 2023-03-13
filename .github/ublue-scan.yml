@@ -2,8 +2,6 @@ ignores:
 - udev-rules
 - config
 - base
-- base-main
-- base-nvidia
 - akmods-nvidia
 - boxkit
 - gnome-vrr
