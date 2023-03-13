@@ -21,5 +21,5 @@ You will need [Python version 3.10 or higher](https://www.python.org/downloads/)
 ## Editing the Image list
 
 Edit `.github/ublue-scan.yml` to add images to the ignore list.
-Use this for images that you don't want to be shown on ublue.it/images. 
+Use this for images that you don't want to be shown on [ublue.it/images](https://ublue.it/images/). 
 Typically we only want to show user-facing images on the site. 
