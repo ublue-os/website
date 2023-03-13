@@ -1,0 +1,8 @@
+ignores:
+- udev-rules
+- config
+- base
+- akmods-nvidia
+- boxkit
+- gnome-vrr
+- startingpoint

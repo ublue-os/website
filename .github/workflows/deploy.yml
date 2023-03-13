@@ -1,5 +1,7 @@
 name: deploy
 on:
+  schedule:
+    - cron: '0 */12 * * *'
   push:
     branches:
     - main
@@ -34,8 +36,11 @@ jobs:
       run: |
         pip install poetry
         poetry install
+        pip install git+https://github.com/ublue-os/image-scanner-md.git#egg=ublue-scanner
       env:
         POETRY_VIRTUALENVS_CREATE: false
+    - mame: Build image list
+      run: ublue-scan --org ublue-os --config .github/ublue-scan.yml --output md > docs/_generated_image_list.md
     - name: Build MkDocs
       run: mkdocs build
     - name: Upload site artifact
