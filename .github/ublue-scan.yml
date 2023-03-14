@@ -1,8 +1,15 @@
 ignores:
-- udev-rules
-- config
-- base
+
 - akmods-nvidia
+- base
+- bazzite-arch
 - boxkit
+- config
+- experimental
 - gnome-vrr
+- kinoite
+- nvidia
+- silverblue
 - startingpoint
+- ubuntu
+- udev-rules
