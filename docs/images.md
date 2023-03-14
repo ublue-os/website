@@ -3,10 +3,11 @@ hide:
   - navigation
 ---
 
-This list is in alphabetical order, organized by build method.
+This list is in alphabetical order. 
 
-- **Users:** the build method doesn't matter to you, use whichever image fits your use case.
-- **Creators:** The method that the image is built might be important to you
+- Images ending in `-main` are suitable for AMD/Intel GPU users
+- Images ending in `-nvidia` are suitable for NVidia GPU users
+- `base-main` and `base-nvidia` do not come with desktops and are generally useful for [making your own image](/making-your-own)
 
 !!! warning
 
