@@ -40,7 +40,7 @@ jobs:
       env:
         POETRY_VIRTUALENVS_CREATE: false
     - name: Build image list
-      run: ublue-scan --org ublue-os --config .github/ublue-scan.yml --output md > docs/_generated_image_list.md
+      run: ublue-scan --org ublue-os --config .github/ublue-scan.yml --output badge > docs/_generated_image_list.md
       env:
         GITHUB_TOKEN: ${{ secrets.READ_PACKAGES_TOKEN }}
     - name: Build MkDocs

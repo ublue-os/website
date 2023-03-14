@@ -1,5 +1,4 @@
 ignores:
-
 - akmods-nvidia
 - base
 - bazzite-arch
@@ -13,3 +12,13 @@ ignores:
 - startingpoint
 - ubuntu
 - udev-rules
+filters:
+  tags:
+    include:
+      - "^[0-9]{2}$"
+      - "^[0-9]{2}-(.*)"
+      - "^([a-z]+)$"
+    exclude:
+      - "([0-9]{8})"
+      - "\\.sig$"
+      - "^pr-.*"
