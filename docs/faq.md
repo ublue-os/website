@@ -38,6 +38,12 @@ This may or may not be important to you depending on your usage, available disk 
 !!! note
 
     Rebasing between images will not affect your installed applications, those are handled by Flatpak.
+    
+## Why are you making another distro?
+
+This isn't a distribution, you can always rebase back to Fedora without reinstalling.
+This is a unique relationship between an upstream and downstream that is popular in cloud, but still new to the Linux desktop.
+"Custom images" seems to be a decent place to start since that's what people call them in cloud.
 
 ## Why does it download more changes than it seems like it should?
 
