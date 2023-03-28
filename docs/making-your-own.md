@@ -28,7 +28,7 @@ However, people like to tinker, so instead of [layering packages](https://docs.f
 
     Ensure you are forking the repository and NOT choosing "Use this template". The project moves quickly and it's important for you to get updates!
 
-1. Fork the [ublue-os/base](https://github.com/ublue-os/main) repo:
+1. Fork the [ublue-os/main](https://github.com/ublue-os/main) repo:
 1. Ensure your [GitHub Actions](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository) and [GitHub Packages](https://docs.github.com/en/packages) are set up and enabled
 1. [Optional] Install the [Semantic PRs](https://github.com/marketplace/semantic-prs) GitHub app if you want nice changelogs
 1. Change the [image name in the action](https://github.com/ublue-os/base/blob/aab8078cfdc7d2354e057a0ca4771d3a53d2df4c/.github/workflows/build.yml#L14) to match what you want to call your image
