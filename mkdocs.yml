@@ -59,8 +59,9 @@ extra:
       link: https://hachyderm.io/jorge
 nav: 
   - Home: index.md
-  - Images: images.md
-  - Toolboxes: toolboxes.md
+  - Installation: installation.md
+    - Images: images.md
+    - Toolboxes: toolboxes.md
   - Community:
     - Code of Conduct: CODE_OF_CONDUCT.md
     - Values: values.md
