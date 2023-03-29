@@ -60,7 +60,7 @@ extra:
 nav: 
   - Home: index.md
   - Installation: 
-    - Installation: installation.md
+    - installation.md
     - Images: images.md
     - Toolboxes: toolboxes.md
   - Community:
