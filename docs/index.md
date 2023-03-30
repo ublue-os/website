@@ -9,7 +9,7 @@ This is a collection of container images using Fedora's support for OCI/Docker c
 
 This project's purpose is to:
 
-- Provide a diverse set of Fedora based images for people to use as their desktop operating system
+- Provide a diverse set of [continuously delivered](https://en.wikipedia.org/wiki/Continuous_delivery) Fedora-based images for people to use as their desktop operating system
 - Provide a diverse set of tools and reusable automation "kits" for more technical users so that they can customize and share their images with others
 - Act as a proving ground for new ideas around the Linux desktop
 - Help new contributors to start their cloud native and open source journeys no matter their skill level
@@ -39,8 +39,8 @@ These images reflect a more [cloud-native](https://www.youtube.com/watch?v=vZ1LR
     - Significantly reduced configuration drift
     - No compiling or building Nvidia drivers on the local client, they come premade on the image
 - Clean seperation of the base system from applications and your data
-    - Integration of Flatpak applications
-    - Toolbox and Distrobox support, run applications from any distribution in a containerized environment 
+    - Integration of Flatpak applications via [Flathub](https://flathub.org/home)
+    - [Toolbox](https://github.com/containers/toolbox) and [Distrobox](https://github.com/89luca89/distrobox) support, run applications from any distribution in a containerized environment 
 - Unbridled customization
     - Craft your perfect image from scratch or derive from others   
 - Reuses standards-based tooling from cloud
@@ -51,6 +51,7 @@ These images reflect a more [cloud-native](https://www.youtube.com/watch?v=vZ1LR
 
 ### Other Features
 
+- Rebase back to pure [Fedora](https://getfedora.org/en/) without reinstallation
 - Fast updates: minimum of once-a-day updates so you're never behind Fedora
 - Hosted on ghcr.io
     - Ninety (90) days of image archives allowing for flexible rollback options  
@@ -63,7 +64,7 @@ We're always looking for people to help, all skill levels and areas of expertise
 
 - [Join our Discord](https://discord.gg/WEu6BdFEtp)
   - We strive for a safe, inclusive community   
-- Pull requests wanted and accepted!
-- Experimentation encouraged!
+- Pull requests wanted and accepted
+- Experimentation encouraged
 
 If you're building your own custom images feel free to add them to [our awesome list](https://github.com/ublue-os/awesome-custom-images)!
