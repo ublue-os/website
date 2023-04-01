@@ -90,15 +90,13 @@ This part is important, users must have a method of verifying the image. The Lin
 
 ## Modification 
 
-
-1. Choose your own Adventure:
-   - Edit [packages.json](https://github.com/ublue-os/main/blob/main/packages.json) 
-     - Add the rpm's you'd like to be included in your image
-     - Flatpaks are a work in progress but you'll be able to edit a file
-1. Start making modifications to your Containerfile!
-    - Change a few things and keep an eye on your Actions and Packages section of your repo, you'll generate a new image one every merge and additionally every day. 
-    - Follow the instructions at the top of this repo but this time with the `ghcr.io/yourusername/beagles` url and then you'll be good to go!
-    - Hang out in the [discussions forums](https://github.com/orgs/ublue-os/discussions) with others to share tips and get help, enjoy!
+1. Edit `recipe.yml` to add packages
+    - All packages under `rpms:` will be installed in the image using `rpm-ostree`
+    - All packages under `flatpaks:` will be installed on the first boot, or when running `just setup-flatpaks`. You can also install Flatpaks locally after installing your image, they just won't be automatically installed for every new user of your image.
+1. Edit the `Containerfile` for more in-depth changes such as adding configuration files
+    - For example, if you have a folder called `etc` inside your repository, you can add it to the image by adding `COPY etc /etc` to the `Containerfile`. Then you can add any system configuration files inside `etc` and they will be shipped with your image.
+1. After you've changed a few things and keep an eye on your Actions and Packages section of your repo, you'll generate a new image on every merge and additionally every day. 
+1. Hang out in the [discussions forums](https://github.com/orgs/ublue-os/discussions) with others to share tips and get help, enjoy!
 
 # Best Practices
 
