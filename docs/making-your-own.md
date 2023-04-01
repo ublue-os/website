@@ -45,28 +45,45 @@ git merge upstream/main -m "chore: merging upstream changes"
 
     Ensure you are forking the repository and NOT choosing "Use this template". The project moves quickly and it's important for you to get updates!
 
+### Create and configure your repository
+
 1. Fork the [ublue-os/main](https://github.com/ublue-os/main) repo:
+1. Change the [image name in the action](https://github.com/ublue-os/main/blob/aab8078cfdc7d2354e057a0ca4771d3a53d2df4c/.github/workflows/build.yml#L14) to match what you want to call your image
+    - Changing it to `IMAGE_NAME: beagles` will name the final image: `ghcr.io/yourusername/beagles` - you'll likely want that to be your cool name instead of `base`
 1. Ensure your [GitHub Actions](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository) and [GitHub Packages](https://docs.github.com/en/packages) are set up and enabled
 1. [Optional] Install the [Semantic PRs](https://github.com/marketplace/semantic-prs) GitHub app if you want nice changelogs
-1. Change the [image name in the action](https://github.com/ublue-os/base/blob/aab8078cfdc7d2354e057a0ca4771d3a53d2df4c/.github/workflows/build.yml#L14) to match what you want to call your image
-   - Changing it to `IMAGE_NAME: beagles` will name the final image: `ghcr.io/yourusername/beagles` - so you'll likely want that to be your cool name instead of `base`
+
+### Set up container signing
+
+Container signing is important for end-user security and is enabled on all uBlue images. It is highly recommended you set this up, and by default the image builds *will fail* if you don't.
+
+This part is important, users must have a method of verifying the image. The Linux desktop must not lag behind in cloud when it comes to supply chain security, so we're starting right from the start! (Seriously don't skip this part) 
+
+!!! warning
+
+    Be careful to *never* accidentally commit `cosign.key` into your git repo.
+
+1. Generate a key pair
+    1. Install the [cosign CLI tool](https://edu.chainguard.dev/open-source/sigstore/cosign/how-to-install-cosign/)
+    1. Run `cosign generate-key-pair` inside your repo folder
+        - Do NOT put in a password when it asks you to, just press enter. The signing key will be used in GitHub Actions and will not work if it is encrypted. 
+    1. Add the private key to GitHub
+        - You can do this easily if you have the `github-cli` installed by running `gh secret set SIGNING_SECRET < cosign.key`
+        - This can also be done manually, by going to your repository settings, under Secrets and Variables -> Actions
+        ![image](https://user-images.githubusercontent.com/1264109/216735595-0ecf1b66-b9ee-439e-87d7-c8cc43c2110a.png)
+        Name the secret `SIGNING_SECRET` and then paste the contents of `cosign.key` into the secret field and save it. Be careful to make sure it's the .key file and not the .pub file. Once done, it should look like this:  
+        ![image](https://user-images.githubusercontent.com/1264109/216735690-2d19271f-cee2-45ac-a039-23e6a4c16b34.png)
+    1. Add the public key to GitHub
+        - Commit the `cosign.pub` file into your git repository
+        - In the *Verification* section of `README.md`, change the default image URL to your images URL. This will allow your possible users to verify the image's signature.
+
+## Modification 
+
+
 1. Choose your own Adventure:
    - Edit [packages.json](https://github.com/ublue-os/main/blob/main/packages.json) 
      - Add the rpm's you'd like to be included in your image
      - Flatpaks are a work in progress but you'll be able to edit a file
-1. Generate a keypair
-   - Install the [cosign CLI tool](https://edu.chainguard.dev/open-source/sigstore/cosign/how-to-install-cosign/)
-   - Run `cosign generate-key-pair`
-   - In your repository settings, under Secrets and Variables -> Actions
-     - Create a new secret, make sure that you don't put a password on the key as this will be used by an action:
-     ![image](https://user-images.githubusercontent.com/1264109/216735595-0ecf1b66-b9ee-439e-87d7-c8cc43c2110a.png)
-     - Call it `SIGNING_SECRET` and then paste the contents of `cosign.key` into the field and save it. Be careful to make sure it's the .key file and not the .pub file. It should look like this:  
-     ![image](https://user-images.githubusercontent.com/1264109/216735690-2d19271f-cee2-45ac-a039-23e6a4c16b34.png)
-     - Copy the `cosign.pub` key into the root of your repository, replacing the key you got from here.
-     - Copy the instructions from the verification section of this readme and make adjustments to your container url. This part is important, users must have a method of verifying the image. The linux desktop must not lag behind in cloud when it comes to supply chain security, so we're starting right from the start! (Seriously don't skip this part) 
-
-## Modification 
-
 1. Start making modifications to your Containerfile!
     - Change a few things and keep an eye on your Actions and Packages section of your repo, you'll generate a new image one every merge and additionally every day. 
     - Follow the instructions at the top of this repo but this time with the `ghcr.io/yourusername/beagles` url and then you'll be good to go!
