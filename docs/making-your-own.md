@@ -24,6 +24,23 @@ However, people like to tinker, so instead of [layering packages](https://docs.f
 
 # Making your Own
 
+## Automatic setup 
+
+You can quickly set up a GitHub repository that builds a functional native container image based on [ublue-os/startingpoint](https://github.com/ublue-os/startingpoint) using the (experimental) community-maintained [`create-ublue-image`-tool](https://github.com/EinoHR/create-ublue-image).
+
+1. Ensure you have [Podman](https://podman.io/) installed. If you're already using Fedora Silverblue, you should already have it.
+2. Run the command `podman run -v "$(pwd)":/host:z -it ghcr.io/einohr/create-ublue-image`
+    - This will mount the current directory for modification inside the container. If you want the folder containing your repo to be in a certain directory like `~/dev`, you should `cd` into that before executing the tool.
+3. Follow the instructions the tool gives you
+
+In order to update changes from the upstream repository, run:
+```
+git fetch upstream
+git merge upstream/main -m "chore: merging upstream changes"
+```
+
+## Manual setup
+
 !!! warning
 
     Ensure you are forking the repository and NOT choosing "Use this template". The project moves quickly and it's important for you to get updates!
@@ -47,10 +64,13 @@ However, people like to tinker, so instead of [layering packages](https://docs.f
      ![image](https://user-images.githubusercontent.com/1264109/216735690-2d19271f-cee2-45ac-a039-23e6a4c16b34.png)
      - Copy the `cosign.pub` key into the root of your repository, replacing the key you got from here.
      - Copy the instructions from the verification section of this readme and make adjustments to your container url. This part is important, users must have a method of verifying the image. The linux desktop must not lag behind in cloud when it comes to supply chain security, so we're starting right from the start! (Seriously don't skip this part) 
+
+## Modification 
+
 1. Start making modifications to your Containerfile!
-   - Change a few things and keep an eye on your Actions and Packages section of your repo, you'll generate a new image one every merge and additionally every day. 
-   - Follow the instructions at the top of this repo but this time with the `ghcr.io/yourusername/beagles` url and then you'll be good to go!
-   - Hang out in the [discussions forums](https://github.com/orgs/ublue-os/discussions) with others to share tips and get help, enjoy!
+    - Change a few things and keep an eye on your Actions and Packages section of your repo, you'll generate a new image one every merge and additionally every day. 
+    - Follow the instructions at the top of this repo but this time with the `ghcr.io/yourusername/beagles` url and then you'll be good to go!
+    - Hang out in the [discussions forums](https://github.com/orgs/ublue-os/discussions) with others to share tips and get help, enjoy!
 
 # Best Practices
 
