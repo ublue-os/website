@@ -24,6 +24,17 @@ However, people like to tinker, so instead of [layering packages](https://docs.f
 
 # Making your Own
 
+## Should I use [`ublue-os/main`](https://github.com/ublue-os/main) or [`ublue-os/startingpoint`](https://github.com/ublue-os/startingpoint)?
+
+The instructions below recommend `startingpoint` because it is:  
+
+- Intended for modification and to be a simple template
+- Better for people making images for personal usage that only build one version
+- Has an easier to edit configuration format, YAML, which also supports comments and inline documentation
+
+Making a custom image using `main` instead would be better if you intend on having multiple versions (such as a version with GNOME and another with KDE), but its modification is a bit more involved and if you want to leverage the images already built at `ublue-os/main` or `ublue-os/nvidia` you have to modify the `build.yml`.  
+If you do decide to use `main` the *Manual setup* steps below still apply.
+
 ## Automatic setup 
 
 You can quickly set up a GitHub repository that builds a functional native container image based on [ublue-os/startingpoint](https://github.com/ublue-os/startingpoint) using the (experimental) community-maintained [`create-ublue-image`-tool](https://github.com/EinoHR/create-ublue-image).
@@ -47,9 +58,9 @@ git merge upstream/main -m "chore: merging upstream changes"
 
 ### Create and configure your repository
 
-1. Fork the [ublue-os/main](https://github.com/ublue-os/main) repo:
-1. Change the [image name in the action](https://github.com/ublue-os/main/blob/aab8078cfdc7d2354e057a0ca4771d3a53d2df4c/.github/workflows/build.yml#L14) to match what you want to call your image
-    - Changing it to `IMAGE_NAME: beagles` will name the final image: `ghcr.io/yourusername/beagles` - you'll likely want that to be your cool name instead of `base`
+1. Fork the [ublue-os/startingpoint](https://github.com/ublue-os/startingpoint) repo:
+1. Change the image name in [the action](https://github.com/ublue-os/startingpoint/blob/main/.github/workflows/build.yml) (you can just replace "startingpoint" with the name of your choice) to match what you want to call your image
+    - Changing it to `beagles` will name the final image: `ghcr.io/yourusername/beagles` - you'll likely want that to be your cool name instead of `base`
 1. Ensure your [GitHub Actions](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository) and [GitHub Packages](https://docs.github.com/en/packages) are set up and enabled
 1. [Optional] Install the [Semantic PRs](https://github.com/marketplace/semantic-prs) GitHub app if you want nice changelogs
 
