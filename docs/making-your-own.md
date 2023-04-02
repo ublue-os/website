@@ -79,14 +79,14 @@ This part is important, users must have a method of verifying the image. The Lin
     1. Run `cosign generate-key-pair` inside your repo folder
         - Do NOT put in a password when it asks you to, just press enter. The signing key will be used in GitHub Actions and will not work if it is encrypted. 
     1. Add the private key to GitHub
-        - You can do this easily if you have the `github-cli` installed by running `gh secret set SIGNING_SECRET < cosign.key`
-        - This can also be done manually, by going to your repository settings, under Secrets and Variables -> Actions
+        - If you have the `github-cli` installed, run `gh secret set SIGNING_SECRET < cosign.key`
+        - This can also be done manually. Go to your repository settings, under Secrets and Variables -> Actions
         ![image](https://user-images.githubusercontent.com/1264109/216735595-0ecf1b66-b9ee-439e-87d7-c8cc43c2110a.png)
-        Name the secret `SIGNING_SECRET` and then paste the contents of `cosign.key` into the secret field and save it. Be careful to make sure it's the .key file and not the .pub file. Once done, it should look like this:  
+        Add a new secret and name it `SIGNING_SECRET`, then paste the contents of `cosign.key` into the secret and save it. Make sure it's the .key file and not the .pub file. Once done, it should look like this:  
         ![image](https://user-images.githubusercontent.com/1264109/216735690-2d19271f-cee2-45ac-a039-23e6a4c16b34.png)
     1. Add the public key to GitHub
         - Commit the `cosign.pub` file into your git repository
-        - In the *Verification* section of `README.md`, change the default image URL to your images URL. This will allow your possible users to verify the image's signature.
+        - In the *Verification* section of `README.md`, change the default image URL to your images URL. This will allow your users to verify the image's signature.
 
 ## Modification 
 
