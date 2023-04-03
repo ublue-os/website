@@ -16,8 +16,10 @@ It is recommended to use your PCs BIOS/UEFI boot menu for dual boot configuratio
 Each uBlue image has a corresponding netinstall ISO (~670MB) that will install that custom image onto your PC
 
 1. Download the ISO of your choice
-   - GNOME, KDE, XFCE, LXQt, MATE, and Sway [images for Intel/AMD GPU users](https://github.com/ublue-os/main/releases)
-   - GNOME, KDE, XFCE, LXQt, MATE, and Sway [images for Nvidia GPU users](https://github.com/ublue-os/nvidia/releases) 
+
+   - [Images for Intel/AMD GPU users](https://github.com/ublue-os/main/releases)
+   - [Images for Nvidia GPU users](https://github.com/ublue-os/nvidia/releases) 
+  
 1. Use the [Fedora Media Writer](https://flathub.org/apps/details/org.fedoraproject.MediaWriter) to write the ISO to a USB stick. Mac and Windows users can [download it here](https://getfedora.org/en/workstation/download/). Or use a tool of your choice.
 1. If you are familiar with Anaconda there are a few changes you might notice:
 
