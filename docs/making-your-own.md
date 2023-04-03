@@ -32,7 +32,7 @@ The instructions below recommend `startingpoint` because it is:
 - Better for people making images for personal usage that only build one version
 - Has an easier to edit configuration format, YAML, which also supports comments and inline documentation
 
-Making a custom image using `main` instead would be better if you intend on having multiple versions (such as a version with GNOME and another with KDE), but its modification is a bit more involved and if you want to leverage the images already built at `ublue-os/main` or `ublue-os/nvidia` you have to modify the `build.yml`.  
+Making a custom image using `main` instead would be better if you intend on having multiple versions (such as a version with GNOME and another with KDE), but modification is more involved and if you want to leverage the images already built at `ublue-os/main` or `ublue-os/nvidia` you have to modify the `build.yml`.  
 If you do decide to use `main` the *Manual setup* steps below still apply.
 
 ## Automatic setup 
