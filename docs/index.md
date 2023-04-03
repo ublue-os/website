@@ -14,19 +14,24 @@ This project's purpose is to:
 - Act as a proving ground for new ideas around the Linux desktop
 - Help new contributors to start their cloud native and open source journeys no matter their skill level
 
-!!! example "Join us on the Journey"
-
-    [Full list of images](https://ublue.it/images)
-
-Our images offer GNOME, KDE, XFXE, LXQt, and MATE, with more being added on the regular. Our NVIDIA images offer a unique blend of reliability and ease of use that you won't find anywhere else.
+Our images offer GNOME, KDE, XFCE, LXQt, and MATE, with more being added on the regular. Our NVIDIA images offer a unique blend of reliability and ease of use that you won't find anywhere else.
 
 ## Usage
 
-Currently we're waiting for installer support in Anaconda. In order to use these images you'll need to download [Fedora Silverblue](https://silverblue.fedoraproject.org/download) or [Kinoite](https://kinoite.fedoraproject.org/) and then follow the instructions for the image you're interested in to "rebase" to it. 
-Don't worry, that operation is image-based, so you'll always have what's supposed to be there. 
+Choose your image based on your hardware:
+
+!!! example "AMD/Intel GPU Users"
+
+    [Installation Media](https://github.com/ublue-os/main/releases)
+
+!!! question "NVidia GPU Users"
+
+    [Installation Media](https://github.com/ublue-os/nvidia/releases) 
+
+You can always rebase from one image to another, don't worry, that operation is image-based, so you'll always have what's supposed to be there. 
 
 Image based updates inherently don't allow for cruft to accumulate, allowing for a level of stability and upgrade resilience that has been missing on the Linux desktop, until now. 
-Our goal is to for one install to last the life of the hardware, while allowing you to rebase onto other images. 
+Our goal is to for one install to last the life of the hardware.
 
 ## Why would I use these?
 
