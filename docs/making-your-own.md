@@ -90,9 +90,8 @@ This part is important, users must have a method of verifying the image. The Lin
 
 ## Modification 
 
-1. Edit `recipe.yml` to add packages
-    - All packages under `rpms:` will be installed in the image using `rpm-ostree`
-    - All packages under `flatpaks:` will be installed on the first boot, or when running `just setup-flatpaks`. You can also install Flatpaks locally after installing your image, they just won't be automatically installed for every new user of your image.
+1. Edit `recipe.yml` to modify your image
+    - You can configure what packages to install, what to name the image, with more information inside the file
 1. Edit the `Containerfile` for more in-depth changes such as adding configuration files
     - For example, if you have a folder called `etc` inside your repository, you can add it to the image by adding `COPY etc /etc` to the `Containerfile`. Then you can add any system configuration files inside `etc`, and they will be shipped with your image.
     - Files cannot be added under `/var`
