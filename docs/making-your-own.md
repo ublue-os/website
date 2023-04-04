@@ -29,7 +29,7 @@ However, people like to tinker, so instead of [layering packages](https://docs.f
 The instructions below recommend `startingpoint` because it is:  
 
 - Intended for modification and to be a simple template
-- Better for people making images for personal usage that only build one version
+- More suitable for personal usage
 - Has an easier to edit configuration format, YAML, which also supports comments and inline documentation
 
 Making a custom image using `main` instead would be better if you intend on having multiple versions (such as a version with GNOME and another with KDE), but modification is more involved and if you want to leverage the images already built at `ublue-os/main` or `ublue-os/nvidia` you have to modify the `build.yml`.  
