@@ -26,10 +26,10 @@ However, people like to tinker, so instead of [layering packages](https://docs.f
 
 ## Should I use [`ublue-os/main`](https://github.com/ublue-os/main) or [`ublue-os/startingpoint`](https://github.com/ublue-os/startingpoint)?
 
-The instructions below recommend `startingpoint` because it is:  
+The instructions below recommend `startingpoint` because it:  
 
-- Intended for modification and to be a simple template
-- More suitable for personal usage
+- Is made to be modified and customized
+- Is more suitable for personal usage
 - Has an easier to edit configuration format, YAML, which also supports comments and inline documentation
 
 Making a custom image using `main` instead would be better if you intend on having multiple versions (such as a version with GNOME and another with KDE), but modification is more involved and if you want to leverage the images already built at `ublue-os/main` or `ublue-os/nvidia` you have to modify the `build.yml`.  
