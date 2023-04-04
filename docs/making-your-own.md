@@ -60,7 +60,7 @@ git merge upstream/main -m "chore: merging upstream changes"
 
 1. Fork the [ublue-os/startingpoint](https://github.com/ublue-os/startingpoint) repo:
 1. Change the image name in [the action](https://github.com/ublue-os/startingpoint/blob/main/.github/workflows/build.yml) (you can just replace "startingpoint" with the name of your choice) to match what you want to call your image
-    - Changing it to `beagles` will name the final image: `ghcr.io/yourusername/beagles` - you'll likely want that to be your cool name instead of `base`
+    - Changing it to `beagles` will name the final image: `ghcr.io/yourusername/beagles` - you'll likely want that to be your cool name instead of `startingpoint`
 1. Ensure your [GitHub Actions](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository) and [GitHub Packages](https://docs.github.com/en/packages) are set up and enabled
 1. [Optional] Install the [Semantic PRs](https://github.com/marketplace/semantic-prs) GitHub app if you want nice changelogs
 
