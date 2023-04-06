@@ -13,7 +13,9 @@ It is recommended to use your PCs BIOS/UEFI boot menu for dual boot configuratio
 
 ## Installation Instructions
 
-Each uBlue image has a corresponding netinstall ISO (~670MB) that will install that custom image onto your PC
+Each uBlue image can be installed from the boot menu of the installation ISO. If you're using an existing Fedora Silverblue/Kinoite system check out the [/images] for rebasing information (you don't need to reinstall).
+
+For new systems, follow the instructions below: 
 
 1. [Download the ISO](https://github.com/ublue-os/main/releases)
 1. Use the [Fedora Media Writer](https://flathub.org/apps/details/org.fedoraproject.MediaWriter) to write the ISO to a USB stick. Mac and Windows users can [download it here](https://getfedora.org/en/workstation/download/). Or use a tool of your choice.
@@ -39,3 +41,5 @@ Each uBlue image has a corresponding netinstall ISO (~670MB) that will install t
 ![image](https://user-images.githubusercontent.com/1264109/228309296-993f7058-7bc7-4157-b1da-3fe908889e37.png)
 
 When the installationn is complete it will ask you to reboot, then you're done!
+
+Please [file an issue](https://github.com/ublue-os/main/issues) if you encounter any problems. 
