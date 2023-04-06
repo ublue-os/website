@@ -5,7 +5,7 @@ Notably:
 - Dual boot configurations are not supported
 - Manual partitioning is not suppported.
 
-!!! Info "These ISOs are experimental"
+!!! Info "This ISO is experimental"
 
     This method of consuming Fedora is new, and will not be integrated into Fedora until at least F39. Though this method is typically more reliable than traditional distributions, take care to [read the user guide](https://docs.fedoraproject.org/en-US/fedora-silverblue/) and manage your expectations accordingly. As with all operating systems, make a point to back up the data you care about! 
 
@@ -15,13 +15,13 @@ It is recommended to use your PCs BIOS/UEFI boot menu for dual boot configuratio
 
 Each uBlue image has a corresponding netinstall ISO (~670MB) that will install that custom image onto your PC
 
-1. Download the ISO of your choice
-
-   - [Images for Intel/AMD GPU users](https://github.com/ublue-os/main/releases)
-   - [Images for Nvidia GPU users](https://github.com/ublue-os/nvidia/releases) 
-  
+1. [Download the ISO](https://github.com/ublue-os/main/releases)
 1. Use the [Fedora Media Writer](https://flathub.org/apps/details/org.fedoraproject.MediaWriter) to write the ISO to a USB stick. Mac and Windows users can [download it here](https://getfedora.org/en/workstation/download/). Or use a tool of your choice.
-1. If you are familiar with Anaconda there are a few changes you might notice:
+1. Select the image you want to install from the boot menu. The `main` images will work on systems with Intel and AMD GPUs, and the images tagged with `nvidia` include the proper drivers: 
+![installer](https://user-images.githubusercontent.com/1264109/230446211-a0c4b2e8-2d31-44cb-9179-202f4b9fc52d.png)
+![installer2](https://user-images.githubusercontent.com/1264109/230446224-ae43322f-9e4d-4a17-8133-a8bf6def3e64.png)
+
+1.. If you are familiar with Anaconda there are a few changes you might notice:
 
 ![image](https://user-images.githubusercontent.com/1264109/228308230-4cd981f7-d524-44c3-80ff-49e1b62e58fd.png)
 
