@@ -20,11 +20,11 @@ Our images offer GNOME, KDE, XFCE, LXQt, and MATE, with more being added on the 
 
 !!! example "Try it today!"
 
-    [Installation Media](https://github.com/ublue-os/main/releases)
+    [Installation Media](https://github.com/ublue-os/main/releases) - netinstall installation
     
 !!! example "... and then follow this!"
 
-    [Installation Instructions](/installation]
+    [Installation Instructions](/installation)
 
 You can always rebase from one image to another, don't worry, that operation is image-based, so you'll always have what's supposed to be there 
 
