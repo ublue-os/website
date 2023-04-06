@@ -13,7 +13,7 @@ It is recommended to use your PCs BIOS/UEFI boot menu for dual boot configuratio
 
 ## Installation Instructions
 
-Each uBlue image can be installed from the boot menu of the installation ISO. If you're using an existing Fedora Silverblue/Kinoite system check out the [/images] for rebasing information (you don't need to reinstall).
+Each uBlue image can be installed from the boot menu of the installation ISO. If you're using an existing Fedora Silverblue/Kinoite system check out the [image page](/images) for rebasing information (you don't need to reinstall).
 
 For new systems, follow the instructions below: 
 
