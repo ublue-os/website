@@ -18,17 +18,15 @@ Our images offer GNOME, KDE, XFCE, LXQt, and MATE, with more being added on the 
 
 ## Usage
 
-Choose your image based on your hardware:
+!!! example "Try it today!"
 
-!!! example "AMD/Intel GPU Users"
+    [Installation Media](https://github.com/ublue-os/main/releases) - netinstall installation
+    
+!!! example "... and then follow this!"
 
-    [Installation Media](https://github.com/ublue-os/main/releases)
+    [Installation Instructions](/installation)
 
-!!! question "NVidia GPU Users"
-
-    [Installation Media](https://github.com/ublue-os/nvidia/releases) 
-
-You can always rebase from one image to another, don't worry, that operation is image-based, so you'll always have what's supposed to be there. 
+You can always rebase from one image to another, don't worry, that operation is image-based, so you'll always have what's supposed to be there 
 
 Image based updates inherently don't allow for cruft to accumulate, allowing for a level of stability and upgrade resilience that has been missing on the Linux desktop, until now. 
 Our goal is to for one install to last the life of the hardware.
