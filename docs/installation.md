@@ -23,7 +23,11 @@ For new systems, follow the instructions below:
 ![installer](https://user-images.githubusercontent.com/1264109/230446211-a0c4b2e8-2d31-44cb-9179-202f4b9fc52d.png)
 ![installer2](https://user-images.githubusercontent.com/1264109/230446224-ae43322f-9e4d-4a17-8133-a8bf6def3e64.png)
 
-1.. If you are familiar with Anaconda there are a few changes you might notice:
+!!! Info "Disk check"
+
+    The installer will do an integrity check after you've made a selection, this is normal but can be skipped by hitting Escape. 
+
+1. If you are familiar with Anaconda there are a few changes you might notice:
 
 ![image](https://user-images.githubusercontent.com/1264109/228308230-4cd981f7-d524-44c3-80ff-49e1b62e58fd.png)
 
