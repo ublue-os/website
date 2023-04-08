@@ -2,14 +2,12 @@ Check out the [upstream installation documentation](https://docs.fedoraproject.o
 
 Notably:
 
-- Dual boot configurations are not supported
+- Dual boot configurations are not supported. We recommend using your PC's BIOS/UEFI boot menu for dual boot configuration so that each OS has its own disk. 
 - Manual partitioning is not suppported.
 
 !!! Info "This ISO is experimental"
 
     This method of consuming Fedora is new, and will not be integrated into Fedora until at least F39. Though this method is typically more reliable than traditional distributions, take care to [read the user guide](https://docs.fedoraproject.org/en-US/fedora-silverblue/) and manage your expectations accordingly. As with all operating systems, make a point to back up the data you care about! 
-
-It is recommended to use your PCs BIOS/UEFI boot menu for dual boot configurations so that each OS has its own disk. 
 
 ## Installation Instructions
 
@@ -25,13 +23,14 @@ For new systems, follow the instructions below:
 
 !!! Info "Disk check"
 
-    The installer will do an integrity check after you've made a selection, this is normal but can be skipped by hitting Escape. 
+    The installer will do an integrity check after you've made a selection, this is normal but can be skipped by hitting Escape. The disk detection step might also take longer than expected.
 
 1. If you are familiar with Anaconda there are a few changes you might notice:
 
 ![image](https://user-images.githubusercontent.com/1264109/228308230-4cd981f7-d524-44c3-80ff-49e1b62e58fd.png)
 
 1. "Kickstart Insufficient" is expected, select that item and select the disk to install to and click Done at the top left of the screen. User creation is also done at this step instead of first boot.
+1. Ensure the machine is on the network by configuring that, otherwise you will get an error (see below)!
 1. Select each screen with a warning triangle and make the selection you want until the screen looks similar to this:
 
 ![image](https://user-images.githubusercontent.com/1264109/228308903-d3289faf-8d53-4999-9296-2facc364d07b.png)
@@ -46,4 +45,8 @@ For new systems, follow the instructions below:
 
 When the installationn is complete it will ask you to reboot, then you're done!
 
-Please [file an issue](https://github.com/ublue-os/main/issues) if you encounter any problems. 
+## Reporting Issues
+
+Please [file an issue](https://github.com/ublue-os/main/issues) if you encounter any problems. An error screen usually looks like this:  
+
+![229818630-cb7e4fb5-42a4-4890-8e75-f92d0ea8dd5b](https://user-images.githubusercontent.com/1264109/230695149-b2c30851-ead0-46f5-8c28-e6aed2b4f6de.png)
