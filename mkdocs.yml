@@ -3,6 +3,7 @@ repo_name: ublue-os/main
 repo_url: https://github.com/ublue-os/main
 theme:
   name: material
+  custom_dir: overrides
   palette:
 
     # Palette toggle for automatic mode
