@@ -36,6 +36,7 @@ If you like the project, but just don't have time to contribute, that's fine. Th
 - [Building Locally](#building-locally)
 - [Styleguides](#styleguides)
 - [Commit Messages](#commit-messages)
+- [Why we insist on using GitHub](#why-we-insist-on-using-github)
 - [Join The Project Team](#join-the-project-team)
 
 ## Code of Conduct
@@ -151,6 +152,30 @@ style: convert tabs to spaces
 test: ensure Tayne retains clothing
 ```
 
+## Why we insist on using GitHub
+
+If you come to the Discord you might be asked to report an issue to GitHub. DON'T PANIC! 
+
+We do this for a few reasons:
+
+- Scalability - we're purposely designing this project to scale, and that means a focus on:
+- Asynchronous Communication - OSS is a worldwide phenonmenon for a reason, forcing us to write everything down and capturing as much data is crucial to our ability to move quickly, at some point we'll have people in every time zone, and keeping that efficient is the key. 
+  - Discord search is not an engineering tool, it's for chat, it's extremely difficuly for even the most experienced person to "spin up" by tracking a chat than an issue on GitHub.
+  - It feels slow! It does, but over the long term, it is much more efficient, because you are also solving the problem for as many people as you can, so we gotta make it count!
+- Leverage chat as much as you can to debug and move fast
+  - But when things get over a few messages, start to copying stuff into a text editor so you have it
+  - and then file an issue, you can always edit and fix it up later, concentrate on the capture.
+  - It's hard to have that discipline, that's why we have teammates.
+  - "Oh I'll just file it later" is a good way to learn something, twice. It's going to happen but knowing the trap is a good way to avoid it (or end up gravitating towards it!)
+- **DON'T BE AFRAID OF FILING AN ISSUE**
+  - Part of our culture is to _teach_ and help each other grow
+  - Better to file an issue and have it closed than let a subtle problem spiral out of control
+    - Having an issue closed means you've ruled something out, that can be just as important as a solution!
+  - That also doesn't mean to file 47 issues around your favorite feature in a 10 minute period
+    - If something needs more discussion, [file a proposal](https://github.com/orgs/ublue-os/discussions?discussions_q=is%3Aopen+label%3Aproposal)
+- You've earned it
+  - The commons depends on everyone chipping in, be proud of your contribution!
+    
 ## Join The Project Team
 
 If you're interested in _maintaining_ something then let us know!
