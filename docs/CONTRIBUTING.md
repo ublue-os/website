@@ -154,7 +154,7 @@ test: ensure Tayne retains clothing
 
 ## Why we insist on using GitHub
 
-If you come to the Discord you might be asked to report an issue to GitHub. DON'T PANIC! 
+If you come to the Discord you might be asked to report an issue or start a discussion on GitHub. DON'T PANIC! 
 
 We do this for a few reasons:
 
