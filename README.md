@@ -23,3 +23,12 @@ You will need [Python version 3.10 or higher](https://www.python.org/downloads/)
 Edit `.github/ublue-scan.yml` to add images to the ignore list.
 Use this for images that you don't want to be shown on [ublue.it/images](https://ublue.it/images/). 
 Typically we only want to show user-facing images on the site. 
+
+## [![Repography logo](https://images.repography.com/logo.svg)](https://repography.com) / Recent activity [![Time period](https://images.repography.com/35181738/ublue-os/website/recent-activity/SdqIfcQSR-z77fWYqUAaMF4VLejiPo7SjYuESFGqH1w/JQCzzJexnEhmDyF4qC8VF6W5CVe79qKT2EkOcS4F2Is_badge.svg)](https://repography.com)
+[![Timeline graph](https://images.repography.com/35181738/ublue-os/website/recent-activity/SdqIfcQSR-z77fWYqUAaMF4VLejiPo7SjYuESFGqH1w/JQCzzJexnEhmDyF4qC8VF6W5CVe79qKT2EkOcS4F2Is_timeline.svg)](https://github.com/ublue-os/website/commits)
+[![Issue status graph](https://images.repography.com/35181738/ublue-os/website/recent-activity/SdqIfcQSR-z77fWYqUAaMF4VLejiPo7SjYuESFGqH1w/JQCzzJexnEhmDyF4qC8VF6W5CVe79qKT2EkOcS4F2Is_issues.svg)](https://github.com/ublue-os/website/issues)
+[![Pull request status graph](https://images.repography.com/35181738/ublue-os/website/recent-activity/SdqIfcQSR-z77fWYqUAaMF4VLejiPo7SjYuESFGqH1w/JQCzzJexnEhmDyF4qC8VF6W5CVe79qKT2EkOcS4F2Is_prs.svg)](https://github.com/ublue-os/website/pulls)
+[![Activity map](https://images.repography.com/35181738/ublue-os/website/recent-activity/SdqIfcQSR-z77fWYqUAaMF4VLejiPo7SjYuESFGqH1w/JQCzzJexnEhmDyF4qC8VF6W5CVe79qKT2EkOcS4F2Is_map.svg)](https://github.com/ublue-os/website/commits)
+
+## [![Repography logo](https://images.repography.com/logo.svg)](https://repography.com) / Top contributors
+[![Top contributors](https://images.repography.com/35181738/ublue-os/website/top-contributors/SdqIfcQSR-z77fWYqUAaMF4VLejiPo7SjYuESFGqH1w/JQCzzJexnEhmDyF4qC8VF6W5CVe79qKT2EkOcS4F2Is_table.svg)](https://github.com/ublue-os/website/graphs/contributors)
