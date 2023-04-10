@@ -36,7 +36,9 @@ If you like the project, but just don't have time to contribute, that's fine. Th
 - [Building Locally](#building-locally)
 - [Styleguides](#styleguides)
 - [Commit Messages](#commit-messages)
+- [Making a Release](#making-a-release)
 - [Join The Project Team](#join-the-project-team)
+
 
 ## Code of Conduct
 
@@ -150,6 +152,19 @@ refactor: share logic between 4d3d3d3 and flarhgunnstow
 style: convert tabs to spaces
 test: ensure Tayne retains clothing
 ```
+
+## Making a Release
+
+Releases are automated via [Release Please](https://github.com/googleapis/release-please) with additional modifications to publish images. Since the ISOs are netinstalls and always pull the latest image you usually don't need to do a release unless new ISOs are needed or for human reasons like incrementing a version number.
+
+1. Release please always opens a draft PR in https://github.com/ublue-os/main that tracks changes from the last release
+1. Approving then merging the open PR will kick off the release action
+   - If there is no open PR commiting anything to the repo will force the action to open a PR
+   - `chore:` is ignored, so it must be something else, `fix:` or `docs:` is recommended 
+1. The release action will then make a release
+   - There is a delay as the ISOs need to be built, they will get attached to the same release after, this can take as long as 10 minutes.
+   - Do not touch `CHANGELOG.md`, the action handles that.
+   - It might be prudent to edit the release directly after to add topical links (website, gotchas) since we don't have a release template, we should make one.
 
 ## Join The Project Team
 
