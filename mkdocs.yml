@@ -66,6 +66,8 @@ nav:
     - Toolboxes: toolboxes.md
   - Community:
     - Code of Conduct: CODE_OF_CONDUCT.md
+    - Mission: mission.md
+    - Scope: scope.md
     - Values: values.md
   - Documentation:
     - Architecture: architecture.md
