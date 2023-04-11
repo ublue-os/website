@@ -17,6 +17,12 @@ When people refer to "uBlue" they will likely mean this:
     - Additional udev rules for better [controller support](https://github.com/ublue-os/config#udev-rules) and 2FA keys
 - Main and Nvidia are "Light Touch"
     - They are intended to be close(ish) to Fedora
+    - Exceptions to this may granted if multiple maintainers agree based on community feedback in an issue
+      - If an application is available as a Flatpak it will NOT be included
+      - If it works in a Distrobox: SHOULD NOT be included
+      - If it only works on the host AND is required for hardware functionality: SHOULD be included
+    - Kernel modules MUST NOT be included, they are added to `ublue-os/akmods` and `ublue-os/nvidia`
+    - If it only works on the host AND IS NOT required for hardware functionality: MAY be included
 
 # uBlue Toolkit
 
