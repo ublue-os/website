@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 Thanks for taking the time to look into helping out!
 All contributions are appreciated! 
 Please refer to our [Code of Conduct](CODE_OF_CONDUCT.md) while you're at it!
@@ -14,38 +19,23 @@ The community looks forward to your contributions!
 
 If you like the project, but just don't have time to contribute, that's fine. There are other easy ways to support the project and show your appreciation, which we would also be very happy about:
 
-    - Star the project
-    - Toot about it
-    - Refer this project in your project's readme
-    - Mention the project at local meetups and tell your friends/colleagues
+  - Star the project
+  - Toot about it
+  - Refer this project in your project's readme
+  - Mention the project at local meetups and tell your friends/colleagues
 
-## Table of Contents
-
-- [Code of Conduct](#code-of-conduct)
-- [I Have a Question](#i-have-a-question)
-- [I Want To Contribute](#i-want-to-contribute)
-- [Reporting Bugs](#reporting-bugs)
-- [How to test incoming changes](#how-to-test-incoming-changes)
-- [Building Locally](#building-locally)
-- [Styleguides](#styleguides)
-- [Commit Messages](#commit-messages)
-- [Making a Release](#making-a-release)
-- [Why we insist on using GitHub](#why-we-insist-on-using-github)
-- [Join The Project Team](#join-the-project-team)
-
-
-## Code of Conduct
+# Code of Conduct
 
 This project and everyone participating in it is governed by the
 [CONTRIBUTING.md Code of Conduct](blob/master/CODE_OF_CONDUCT.md).
 By participating, you are expected to uphold this code.
 Please report unacceptable behavior to jorge.castro@gmail.com
 
-## I Have a Question
+# I Have a Question
 
 > If you want to ask a question, ask in the [discussion forum](https://github.com/orgs/ublue-os/discussions) or come hang out on [the Discord server](https://discord.gg/WEu6BdFEtp)
 
-## I Want To Contribute
+# I Want To Contribute
 
 > ### Legal Notice 
 > When contributing to this project, you must agree that you have authored 100% of the content, that you have the necessary rights to the content and that the content you contribute may be provided under the project license.
@@ -55,9 +45,9 @@ Generally speaking we try to follow the [Lazy Concensus](http://lazyconcens.us/)
     - We want people to be opinionated in their builds so we're more of a loose confederation of repos than a top-down org
     - Try not to merge your own stuff, ask for a review. At some point when we have enough reviewers we'll be turning on branch protection
 
-### Reporting Bugs
+# Reporting Bugs
 
-#### Before Submitting a Bug Report
+## Before Submitting a Bug Report
 
 A good bug report should describe the issue in detail. Generally speaking:
 
@@ -69,7 +59,32 @@ A good bug report should describe the issue in detail. Generally speaking:
 - Possibly your input and the output
 - Can you reliably reproduce the issue? And can you also reproduce it with older versions?
 
-### How to test incoming changes
+## Why we insist on using GitHub
+
+If you come to the Discord you might be asked to report an issue or start a discussion on GitHub. DON'T PANIC! 
+
+We do this for a few reasons:
+
+- Scalability - we're purposely designing this project to scale, and that means a focus on:
+- Asynchronous Communication - OSS is a worldwide phenonmenon for a reason, forcing us to write everything down and capturing as much data is crucial to our ability to move quickly, at some point we'll have people in every time zone, and keeping that efficient is the key. 
+    - Discord search is not an engineering tool, it's for chat, it's extremely difficuly for even the most experienced person to "spin up" by tracking a chat than an issue on GitHub.
+    - It feels slow! It does, but over the long term, it is much more efficient, because you are also solving the problem for as many people as you can, so we gotta make it count!
+- Leverage chat as much as you can to debug and move fast
+    - But when things get over a few messages, start to copying stuff into a text editor so you have it
+    - and then file an issue, you can always edit and fix it up later, concentrate on the capture.
+    - It's hard to have that discipline, that's why we have teammates.
+    - "Oh I'll just file it later" is a good way to learn something, twice. It's going to happen but knowing the trap is a good way to avoid it (or end up gravitating towards it!)
+- **DON'T BE AFRAID OF FILING AN ISSUE**
+    - Part of our culture is to _teach_ and help each other grow
+    - Better to file an issue and have it closed than let a subtle problem spiral out of control
+        - Having an issue closed means you've ruled something out, that can be just as important as a solution!
+    - That also doesn't mean to file 47 issues around your favorite feature in a 10 minute period
+        - If something needs more discussion, [file a proposal](https://github.com/orgs/ublue-os/discussions?discussions_q=is%3Aopen+label%3Aproposal)
+    - You've earned it
+        - The commons depends on everyone chipping in, be proud of your contribution!
+
+
+## How to test incoming changes
 
 One of the nice things about the image model is that we can generate an entire OS image for every change we want to commit, so this makes testing way easier than in the past.
 You can rebase to it, see if it works, and then move back.
@@ -92,16 +107,16 @@ At some point we'll have a bot that will leave you instructions on how to rebase
 
 Here's an example: https://github.com/ublue-os/nvidia/pull/49
 
-## Building Locally
+# Building Locally
 
 The minimum tools required are git and a working machine with podman enabled and configured. 
 Building locally is much faster than building in GitHub and is a good way to move fast before pushing to a remote.
 
-### Clone the repo you want
+## Clone the repo you want
 
     git clone https://github.com/ublue-os/base.git
 
-### Build the image
+## Build the image
     
 First make sure you can build an existing image: 
     
@@ -113,14 +128,14 @@ Then confirm your image built:
 
 TODO: Set up and push to your own local registry
     
-### Make your changes
+## Make your changes
 
 This usually involved editing the `Containerfile`.
 Most techniques for building containers apply here, if you're new to containers using the term "Dockerfile" in your searches usually shows more results when you're searching for information. 
 
 Check out CoreOS's [layering examples](https://github.com/coreos/layering-examples) for more information on customizing. 
 
-### Reporting problems to Fedora
+# Reporting problems to Fedora
 
 We endevaour to be a good partner for Fedora.
 
@@ -132,8 +147,8 @@ Some of the issues you find may involve other dependencies in other projects, in
 
 Upstream bug tracker: [https://github.com/fedora-silverblue/issue-tracker/issues](https://github.com/fedora-silverblue/issue-tracker/issues)
 
-## Styleguides
-### Commit Messages
+# Styleguides
+## Commit Messages
 
 We use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) and enforce them with a bot to keep the changelogs tidy:
 
@@ -147,7 +162,7 @@ style: convert tabs to spaces
 test: ensure Tayne retains clothing
 ```
 
-## Making a Release
+# Making a Release
 
 Releases are automated via [Release Please](https://github.com/googleapis/release-please) with additional modifications to publish images. Since the ISOs are netinstalls and always pull the latest image you usually don't need to do a release unless new ISOs are needed or for human reasons like incrementing a version number.
 
@@ -160,33 +175,9 @@ Releases are automated via [Release Please](https://github.com/googleapis/releas
     - Do not touch `CHANGELOG.md`, the action handles that.
     - It might be prudent to edit the release directly after to add topical links (website, gotchas) since we don't have a release template, we should make one.
 
-## Why we insist on using GitHub
-
-If you come to the Discord you might be asked to report an issue or start a discussion on GitHub. DON'T PANIC! 
-
-We do this for a few reasons:
-
-- Scalability - we're purposely designing this project to scale, and that means a focus on:
-- Asynchronous Communication - OSS is a worldwide phenonmenon for a reason, forcing us to write everything down and capturing as much data is crucial to our ability to move quickly, at some point we'll have people in every time zone, and keeping that efficient is the key. 
-    - Discord search is not an engineering tool, it's for chat, it's extremely difficuly for even the most experienced person to "spin up" by tracking a chat than an issue on GitHub.
-    - It feels slow! It does, but over the long term, it is much more efficient, because you are also solving the problem for as many people as you can, so we gotta make it count!
-- Leverage chat as much as you can to debug and move fast
-    - But when things get over a few messages, start to copying stuff into a text editor so you have it
-    - and then file an issue, you can always edit and fix it up later, concentrate on the capture.
-    - It's hard to have that discipline, that's why we have teammates.
-    - "Oh I'll just file it later" is a good way to learn something, twice. It's going to happen but knowing the trap is a good way to avoid it (or end up gravitating towards it!)
-- **DON'T BE AFRAID OF FILING AN ISSUE**
-    - Part of our culture is to _teach_ and help each other grow
-    - Better to file an issue and have it closed than let a subtle problem spiral out of control
-      - Having an issue closed means you've ruled something out, that can be just as important as a solution!
-    - That also doesn't mean to file 47 issues around your favorite feature in a 10 minute period
-      - If something needs more discussion, [file a proposal](https://github.com/orgs/ublue-os/discussions?discussions_q=is%3Aopen+label%3Aproposal)
-    - You've earned it
-      - The commons depends on everyone chipping in, be proud of your contribution!
-
-## Join The Project Team
+# Join The Project Team
 
 If you're interested in _maintaining_ something then let us know!
 
-## Attribution
+# Attribution
 This guide is based on the **contributing.md**. [Make your own](https://contributing.md/)!
