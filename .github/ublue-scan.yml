@@ -12,6 +12,7 @@ ignores:
 - startingpoint
 - ubuntu
 - udev-rules
+- vauxite
 filters:
   tags:
     include:
