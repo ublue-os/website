@@ -2,7 +2,7 @@
 
 - Strive to be a well managed open source project
     - Decentralized governance in line with what people expect
-        - We should be able to pass most open source project health checks a typical OSPO would use when doing due diligence. We're not there yet but it's an achievable goal
+        - We should be able to pass most open source project health checks a [typical OSPO](https://todogroup.org/guides/#ospo-guides) would use when doing due diligence. We're not there yet but it's an achievable goal
     - Project resources designed to be shared and decentralized, no BDFL-like structures
     - Goal to join a foundation or cooperative that can ensure long-term viability of the project
     - Ensure that we're meeting our transparency goals, long term trust is a goal for us so we have to have processes in place to avoid the bus factor
