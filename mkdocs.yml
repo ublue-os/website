@@ -28,6 +28,8 @@ theme:
   features:
     - announce.dismiss
     - navigation.footer
+    - navigation.path
+    - navigation.prune
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
