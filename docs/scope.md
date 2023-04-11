@@ -1,6 +1,4 @@
-### Scope
-
-## uBlue Images (main/nvidia)
+# uBlue Images (main/nvidia)
 
 When people refer to "uBlue" they will likely mean this: 
 
@@ -9,7 +7,7 @@ When people refer to "uBlue" they will likely mean this:
   - Additionally MATE and LXQt are provided since Fedora does not offer these images
   - Continuously built and delivered via an OCI container from a registry (currently ghcr.io)
 - Focus on things that Fedora CANNOT ship
-  - Hardware enablement, non-free codecs .. this translates to "a bunch of that RPMFusion stuff"
+  - Hardware enablement, non-free codecs aka "a bunch of that RPMFusion stuff"
   - Built in Nvidia drivers with multiple version support
 - Quality of Life Services
   - Automatic Updates
@@ -18,7 +16,7 @@ When people refer to "uBlue" they will likely mean this:
   - Additional udev rules for better [controller support](https://github.com/ublue-os/config#udev-rules) and 2FA keys
 - Generally speaking these are "light touch" to keep them close(ish) to Fedora
 
-## uBlue Toolkit
+# uBlue Toolkit
 
 - The actions and scripts we use to make the uBlue images should be designed for consumption by others so that they can make whatever they want 
 - [Starting Point](https://github.com/ublue-os/startingpoint) is the repo designed to be cloned
@@ -27,7 +25,7 @@ When people refer to "uBlue" they will likely mean this:
   - We want to enable orgs like asus-linux, linux-surface, Framework laptops, etc. to end up on vanilla Fedora, we should act as an unofficial playground for them to prototype, and be flexible enough to want to work with us to just fix the stuff they need. I want to explicitly say "base off of us" if it gets people working computers. If it works, we act as an on ramp for Fedora. 
   - We should help them enable their repos if they want to do custom images, don't force them to come here and integrate, if they want to start on our images and then do their own thing, cool, whatever, just give people working computers --- by now everyone knows the sustainable way is by working upstream
 
-## Project Scope
+# Project Scope
 
 - Focus on long-term sustainability of the installation
   - A fraction of a computer's life is day 0-3, we purposely invest in the idea that this installation should last for the life of the hardware
@@ -35,7 +33,7 @@ When people refer to "uBlue" they will likely mean this:
   - If we have to make a thing, it's because we have no choice, and if we do have to make it, we're not happy about it.
   - But we want to experiment too, hence [Fleek](https://getfleek.dev/), [Yafti](https://github.com/ublue-os/yafti), and [Boxkit](https://github.com/ublue-os/boxkit)
 
-### Bazzite, Bluefin, LXQt, and MATE
+## Bazzite, Bluefin, LXQt, and MATE
 
 These images are "Hello World" examples of deriving from the `ublue-os/main` and `ublue-os/nvidia`. They offer stronger opinions and choices.
 
