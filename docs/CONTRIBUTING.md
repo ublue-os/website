@@ -1,10 +1,3 @@
----
-hide:
-  - navigation
----
-
-# Contributing
-
 Thanks for taking the time to look into helping out!
 All contributions are appreciated! 
 Please refer to our [Code of Conduct](CODE_OF_CONDUCT.md) while you're at it!
