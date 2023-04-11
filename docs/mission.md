@@ -21,10 +21,10 @@
   - We are 100% doing things that Fedora cannot do and I'm sure there will be Fedora maintainers who will disagree with at least some aspects with we're doing.
   - Nevertheless, we exist, so we're going for it
   - We want to leverage as much QA from Fedora as possible, so we shouldn't ship kernel patches or any other thing that adds extra maintenance
-    - If someone has a kernel patch that magically gives them 56 extra fps in a video game then cool,  we're not going to give up kernel QA, make the scientific argument in Fedora, that's what it's there for
-  - The vibe I am looking for is a speed shop, like [Hoonigan](https://www.hoonigan.com/), but we want to remain sustainable, the fork button is always there in github, so if people want to go harder they have the freedom to do so
+  - Instead we encourage people to participate in Fedora, that's what it's there for. 
+  - The vibe we're looking for is a speed shop, like [Hoonigan](https://www.hoonigan.com/), but we want to remain sustainable, the fork button is always there in github, so if people want to go harder they have the freedom to do so
   - They have a really cool mission statement, which I will paste below:
 
-!! quote "Mission Statement"
+!!! quote "Mission Statement"
 
     Our mission is not to get caught up in mission statements. A mission statement locks us into a certain mindset. We need to be nimble, because our audience changes faster than you can write a mission statement. Our mission: Just make Linux fun.
