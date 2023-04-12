@@ -5,7 +5,6 @@ theme:
   name: material
   custom_dir: overrides
   palette:
-
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
       toggle:
@@ -14,7 +13,7 @@ theme:
 
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
-      scheme: default 
+      scheme: default
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
@@ -33,6 +32,7 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
+    - toc.integrate
     - search.highlight
     - search.suggest
     - search.share
@@ -50,6 +50,8 @@ markdown_extensions:
   - markdown_include.include:
       base_path: docs
       inheritHeadingDepth: True
+  - toc:
+      permalink: true
 extra:
   analytics:
     provider: google
@@ -61,20 +63,20 @@ extra:
       link: https://www.youtube.com/c/JorgeCastro/videos
     - icon: fontawesome/brands/mastodon
       link: https://hachyderm.io/jorge
-nav: 
+nav:
   - Home: index.md
-  - Installation: 
-    - installation.md
-    - Images: images.md
-    - Toolboxes: toolboxes.md
+  - Installation:
+      - installation.md
+      - Images: images.md
+      - Toolboxes: toolboxes.md
   - Community:
-    - Code of Conduct: CODE_OF_CONDUCT.md
-    - Mission: mission.md
-    - Scope: scope.md
-    - Values: values.md
+      - Code of Conduct: CODE_OF_CONDUCT.md
+      - Mission: mission.md
+      - Scope: scope.md
+      - Values: values.md
   - Documentation:
-    - Architecture: architecture.md
-    - Make Your Own: making-your-own.md
-    - Codecs: codecs.md
+      - Architecture: architecture.md
+      - Make Your Own: making-your-own.md
+      - Codecs: codecs.md
   - FAQ: faq.md
   - Contributing: CONTRIBUTING.md
