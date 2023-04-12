@@ -27,9 +27,9 @@ theme:
         name: Switch to system preference
   features:
     - announce.dismiss
+    - navigation.expand
     - navigation.footer
     - navigation.path
-    - navigation.prune
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
