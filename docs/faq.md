@@ -2,11 +2,7 @@
 
 This is a list of some common questions/issues:
 
-## Why is there no installer?
-
-The current Anaconda installer doesn't support installing custom images. Here's the [upstream issue](https://bugzilla.redhat.com/show_bug.cgi?id=2125655). Note that kickstart scripts run in a chroot, so adding a rebase at the end of a kickstart script won't work, we tried that. :) 
-
-For now we recommend reading the [Administrator's Handbook](https://coreos.github.io/rpm-ostree/administrator-handbook/) so that you can learn how to pin, rollback, and switch between images. 
+We recommend reading the [Administrator's Handbook](https://coreos.github.io/rpm-ostree/administrator-handbook/) so that you can learn how to pin, rollback, and switch between images. 
 
 !!! note "Default applications"
 
