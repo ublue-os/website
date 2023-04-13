@@ -70,6 +70,10 @@ plugins:
       css_style:
         width: "50%"
         height: "22.172vw"
+  - git-committers:
+      repository: ublue-os/website
+      branch: main
+      
 nav:
   - Home: index.md
   - Installation:
