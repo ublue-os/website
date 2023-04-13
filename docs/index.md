@@ -24,9 +24,9 @@ These images reflect a more [cloud-native](https://en.wikipedia.org/wiki/Cloud-n
 
 ## Usage
 
-!!! example "Try it today!"
+[Download the ISO :fontawesome-comment-heart](#){ .md-button .md-button--primary }
 
-    [Network Installation Media](https://github.com/ublue-os/main/releases) - One small ISO with options to install GNOME, KDE, XFCE, LXQt, and MATE, as well as Nvidia-integrated versions of each. 
+One small ISO with options to install GNOME, KDE, XFCE, LXQt, and MATE, as well as Nvidia-integrated versions of each. 
     
 !!! example "... and then follow this!"
 
