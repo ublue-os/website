@@ -69,6 +69,7 @@ extra:
     - icon: fontawesome/brands/mastodon
       link: https://hachyderm.io/jorge
 plugins:
+  - external-markdown
   - mkdocs-video:
       video_muted: True
       video_controls: True
