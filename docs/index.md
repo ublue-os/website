@@ -16,6 +16,12 @@ This project's purpose is to:
 
 Our images offer GNOME, KDE, XFCE, LXQt, and MATE, with more being added on the regular. Our NVIDIA images offer a unique blend of reliability and ease of use that you won't find anywhere else.
 
+## Why would I use these?
+
+These images reflect a more [cloud-native] approach to running Linux on your desktop. We feel that a dedicated group of enthusiasts can automate a large amount of toil that plagues existing Linux desktops today.
+
+![type:video](https://www.youtube.com/embed/vZ1LRe_foJY)
+
 ## Usage
 
 !!! example "Try it today!"
@@ -30,12 +36,6 @@ You can always rebase from one image to another, don't worry, that operation is 
 
 Image based updates inherently don't allow for cruft to accumulate, allowing for a level of stability and upgrade resilience that has been missing on the Linux desktop, until now. 
 Our goal is to for one install to last the life of the hardware.
-
-## Why would I use these?
-
-These images reflect a more [cloud-native] approach to running Linux on your desktop. We feel that a dedicated group of enthusiasts can automate a large amount of toil that plagues existing Linux desktops today.
-
-![type:video](https://www.youtube.com/embed/vZ1LRe_foJY)
 
 ### Advantages over traditional Linux desktops 
 
