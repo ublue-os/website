@@ -1,5 +1,6 @@
 ignores:
 - akmods-nvidia
+- base
 - base-main
 - base-nvidia
 - bazzite-arch
