@@ -35,6 +35,8 @@ Our goal is to for one install to last the life of the hardware.
 
 These images reflect a more [cloud-native](https://www.youtube.com/watch?v=vZ1LRe_foJY) approach to running Linux on your desktop. We feel that a dedicated group of enthusiasts can automate a large amount of toil that plagues existing Linux desktops today, here's the [video summary](https://www.youtube.com/watch/X8h304Jp9N8?t=435).
 
+![type:video](https://www.youtube.com/embed/X8h304Jp9N8?start=435)
+
 ### Advantages over traditional Linux desktops 
 
 - Reliable, atomic updates with built in rollback
