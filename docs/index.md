@@ -18,7 +18,7 @@ Our images offer GNOME, KDE, XFCE, LXQt, and MATE, with more being added on the 
 
 ## Why would I use these?
 
-These images reflect a more [cloud-native] approach to running Linux on your desktop. We feel that a dedicated group of enthusiasts can automate a large amount of toil that plagues existing Linux desktops today.
+These images reflect a more [cloud-native](https://en.wikipedia.org/wiki/Cloud-native_computing) approach to running Linux on your desktop. We feel that a dedicated group of enthusiasts can automate a large amount of toil that plagues existing Linux desktops today.
 
 ![type:video](https://www.youtube.com/embed/vZ1LRe_foJY)
 
