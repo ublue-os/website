@@ -3,7 +3,7 @@
 When people refer to "uBlue" they will likely mean this: 
 
 - Daily, automatic ingestion of [Fedora OSTree desktops](https://quay.io/organization/fedora-ostree-desktops/)
-    - Silverblue, Kinoite, Vauxite, Sericia, and others
+    - Silverblue, Kinoite, Vauxite, Sericea, and others
     - Additionally MATE and LXQt are provided since Fedora does not offer these images
     - Continuously built and delivered via an OCI container from a registry (currently ghcr.io)
 - Focus on things that Fedora CANNOT ship
