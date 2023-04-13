@@ -63,6 +63,13 @@ extra:
       link: https://www.youtube.com/c/JorgeCastro/videos
     - icon: fontawesome/brands/mastodon
       link: https://hachyderm.io/jorge
+plugins:
+  - mkdocs-video:
+      video_muted: True
+      video_controls: True
+      css_style:
+        width: "50%"
+        height: "22.172vw"
 nav:
   - Home: index.md
   - Installation:
