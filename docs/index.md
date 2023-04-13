@@ -16,6 +16,12 @@ This project's purpose is to:
 
 Our images offer GNOME, KDE, XFCE, LXQt, and MATE, with more being added on the regular. Our NVIDIA images offer a unique blend of reliability and ease of use that you won't find anywhere else.
 
+## Why would I use these?
+
+These images reflect a more [cloud-native] approach to running Linux on your desktop. We feel that a dedicated group of enthusiasts can automate a large amount of toil that plagues existing Linux desktops today.
+
+![type:video](https://www.youtube.com/embed/vZ1LRe_foJY)
+
 ## Usage
 
 !!! example "Try it today!"
@@ -30,12 +36,6 @@ You can always rebase from one image to another, don't worry, that operation is 
 
 Image based updates inherently don't allow for cruft to accumulate, allowing for a level of stability and upgrade resilience that has been missing on the Linux desktop, until now. 
 Our goal is to for one install to last the life of the hardware.
-
-## Why would I use these?
-
-These images reflect a more [cloud-native](https://www.youtube.com/watch?v=vZ1LRe_foJY) approach to running Linux on your desktop. We feel that a dedicated group of enthusiasts can automate a large amount of toil that plagues existing Linux desktops today, here's the [video summary](https://www.youtube.com/watch/X8h304Jp9N8?t=435).
-
-![type:video](https://www.youtube.com/embed/X8h304Jp9N8?start=435)
 
 ### Advantages over traditional Linux desktops 
 
@@ -62,6 +62,9 @@ These images reflect a more [cloud-native](https://www.youtube.com/watch?v=vZ1LR
     - Ninety (90) days of image archives allowing for flexible rollback options  
     - Globally distributed via CDN for fast image downloads, thanks Microsoft!
 - Images signed with standard [sigstore tools](https://www.sigstore.dev/)
+- And some more features explained here:
+
+![type:video](https://www.youtube.com/embed/X8h304Jp9N8?start=435)
 
 ## Join Us
 
