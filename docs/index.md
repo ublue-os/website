@@ -24,7 +24,7 @@ These images reflect a more [cloud-native](https://en.wikipedia.org/wiki/Cloud-n
 
 ## Usage
 
-[Download the ISO :fontawesome-comment-heart:](https://github.com/ublue-os/main/releases){ .md-button .md-button--primary }
+[Download the ISO :fontawesome-solid-heart:](https://github.com/ublue-os/main/releases){ .md-button .md-button--primary }
 
 One small ISO with options to install GNOME, KDE, XFCE, LXQt, and MATE, as well as Nvidia-integrated versions of each. 
     
