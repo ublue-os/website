@@ -71,6 +71,7 @@ plugins:
         width: "50%"
         height: "22.172vw"
   - git-committers:
+      enabled: true
       repository: ublue-os/website
       branch: main
       
