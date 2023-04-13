@@ -7,7 +7,6 @@ This list is in alphabetical order.
 
 - Images ending in `-main` are suitable for AMD/Intel GPU users
 - Images ending in `-nvidia` are suitable for NVidia GPU users
-- `base-main` and `base-nvidia` do not come with desktops and are generally useful for [making your own image](/making-your-own)
 
 !!! warning
 
