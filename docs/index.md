@@ -10,15 +10,15 @@ This is a collection of container images using Fedora's support for OCI/Docker c
 This project's purpose is to:
 
 - Provide a diverse set of [continuously delivered](https://en.wikipedia.org/wiki/Continuous_delivery) Fedora-based images for people to use as their desktop operating system
-- Provide a diverse set of tools and reusable automation "kits" for more technical users so that they can customize and share their images with others
-- Act as a proving ground for new ideas around the Linux desktop
+- Provide a diverse set of tools and [a reusable automation kit](https://github.com/ublue-os/startingpoint) for more technical users so that they can customize and share their images with others
+- Act as a proving ground for new ideas around the Linux desktop like [Fleek](https://getfleek.dev/), [Yafti](https://github.com/ublue-os/yafti), and [Boxkit](https://github.com/ublue-os/boxkit)
 - Help new contributors to start their cloud native and open source journeys no matter their skill level
 
 Our images offer GNOME, KDE, XFCE, LXQt, and MATE, with more being added on the regular. Our NVIDIA images offer a unique blend of reliability and ease of use that you won't find anywhere else.
 
 ## Why would I use these?
 
-These images reflect a more [cloud-native](https://en.wikipedia.org/wiki/Cloud-native_computing) approach to running Linux on your desktop. We feel that a dedicated group of enthusiasts can automate a large amount of toil that plagues existing Linux desktops today.
+These images reflect a more [cloud-native](https://en.wikipedia.org/wiki/Cloud-native_computing) approach to running Linux on your desktop. We feel that a dedicated group of enthusiasts can automate a large amount of toil that plagues existing Linux desktops today. This is achieved by reusing cloud technologies as a delivery mechanism to deliver a more reliable experience. 
 
 ![type:video](https://www.youtube.com/embed/vZ1LRe_foJY)
 
@@ -26,7 +26,7 @@ These images reflect a more [cloud-native](https://en.wikipedia.org/wiki/Cloud-n
 
 !!! example "Try it today!"
 
-    [Installation Media](https://github.com/ublue-os/main/releases) - netinstall installation
+    [Network Installation Media](https://github.com/ublue-os/main/releases) - One small ISO with options to install GNOME, KDE, XFCE, LXQt, and MATE, as well as Nvidia-integrated versions of each. 
     
 !!! example "... and then follow this!"
 
@@ -68,11 +68,10 @@ Our goal is to for one install to last the life of the hardware.
 
 ## Join Us
 
-We're always looking for people to help, all skill levels and areas of expertise are welcome.
+We're always looking for people to help, all skill levels and areas of expertise are welcome. Check out [the roadmap](https://github.com/orgs/ublue-os/projects/1) and [proposals](https://github.com/orgs/ublue-os/discussions?discussions_q=is%3Aopen+label%3Aproposal) to get a feel for the project, then: 
 
 - [Join our Discord](https://discord.gg/WEu6BdFEtp)
   - We strive for a safe, inclusive community   
-- Pull requests wanted and accepted
-- Experimentation encouraged
+- Pull requests encouraged and accepted
 
 If you're building your own custom images feel free to add them to [our awesome list](https://github.com/ublue-os/awesome-custom-images)!
