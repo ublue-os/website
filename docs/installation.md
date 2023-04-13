@@ -54,6 +54,12 @@ When the installationn is complete it will ask you to reboot, then you're done!
 - The generated USB stick will always pull the latest image, you shouldn't need to generate a new USB stick often 
 - We are looking for volunteers to help generate proper "offline" ISOs
 
+## Video Overview
+
+This video goes over what it should like like, but note that the video refers to multiple ISOs, there is now just one ISO image that you choose to boot off of. The rest of the installation looks the same as the video.  
+
+![type:video](https://www.youtube.com/embed/SaPxDJtjoB8)
+
 ## Reporting Issues
 
 Please [file an issue](https://github.com/ublue-os/main/issues) if you encounter any problems. An error screen usually looks like this:  
