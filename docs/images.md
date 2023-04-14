@@ -1,8 +1,3 @@
----
-hide:
-  - navigation
----
-
 This list is in alphabetical order. 
 
 - Images ending in `-main` are suitable for AMD/Intel GPU users
