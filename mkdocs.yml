@@ -80,7 +80,7 @@ plugins:
       enabled: true
       repository: ublue-os/website
       branch: main
-      
+  - search    
 nav:
   - Home: index.md
   - Installation:
