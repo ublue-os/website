@@ -5,7 +5,7 @@ This list is in alphabetical order.
 
 !!! warning
 
-    If you're coming from an existing Fedora installation you should ensure that you don't have layered packages. If you're not familiar with usage of rpm-ostree we strongly recommend [reading the documentation](https://coreos.github.io/rpm-ostree/).
+    If you're coming from an existing Fedora installation **please ensure you remove layered packages before rebasing!** If you're not familiar with the usage of rpm-ostree we strongly recommend [reading the documentation](https://coreos.github.io/rpm-ostree/).
 
 ## Image List
 
