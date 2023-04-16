@@ -104,25 +104,75 @@ Here's an example: https://github.com/ublue-os/nvidia/pull/49
 
 ## Building Locally
 
-The minimum tools required are git and a working machine with podman enabled and configured. 
+The minimum tools required are `git` and a working machine with `podman` enabled and configured.
 Building locally is much faster than building in GitHub and is a good way to move fast before pushing to a remote.
 
-### Clone the repo you want
+### Prerequisites
 
-    git clone https://github.com/ublue-os/base.git
+#### On the developer host
+
+- Add and entry for the container registry to your `/etc/hosts` file
+
+   ```ini
+   # Container registry
+   127.0.0.1 registry.dev.local
+   ```  
+
+- Start the container registry
+
+   `podman run -d --name registry.dev.local -p 5000:5000 docker.io/library/registry:latest`
+
+#### On the VM where you want to test the image
+
+- Find out the ip address for the default gateway
+
+  `ip route | grep "default via" | cut -d ' ' -f 3` 
+
+  _Example:_
+  
+  ```sh
+  $ ip route | grep "default via" | cut -d ' ' -f 3
+  10.0.2.2
+  ```
+
+- The VM needs to find the container registry on the host system. Add the ip address of the default gateway to the `/etc/hosts` file
+
+   ```ini
+   # Container registry
+   10.0.2.2 registry.dev.local
+   ```
+
+- Since the container registry is running in "insecure" mode we have to create the file `/etc/containers/registries.conf.d/ublue-dev.conf`
+   with the following configuration.
+
+   ```toml
+   [[registry]]
+   location = "registry.dev.local:5000"
+   insecure = true
+   ```
+
+### Clone the repository
+
+Clone the repository of your choice. In this example we are using <https://github.com/ublue-os/main>
+
+`git clone https://github.com/ublue-os/main.git`
 
 ### Build the image
-    
-First make sure you can build an existing image: 
-    
-    podman build . -t something
-    
-Then confirm your image built:
-    
-    podman image ls 
 
-TODO: Set up and push to your own local registry
-    
+- Make sure you can build the existing image
+
+   `podman build . -t registry.dev.local:5000/ublue-main:dev-latest`
+
+- Upload image to the container registry
+
+   `podman push --tls-verify=false registry.dev.local:5000/ublue-main:dev-latest`
+
+### Rebase to DEV image
+
+To rebase your test VM to the DEV image you can run
+
+`rpm-ostree rebase ostree-unverified-registry:registry.dev.local:5000/ublue-main:dev-latest`
+
 ### Make your changes
 
 This usually involved editing the `Containerfile`.
