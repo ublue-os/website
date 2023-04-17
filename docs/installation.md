@@ -15,7 +15,8 @@ Each uBlue image can be installed from the boot menu of the installation ISO. If
 
 For new systems, follow the instructions below: 
 
-1. [Download the ISO](https://github.com/ublue-os/main/releases)
+[Download the ISO :fontawesome-solid-heart:](https://github.com/ublue-os/main/releases){ .md-button .md-button--primary }
+
 1. Use the [Fedora Media Writer](https://flathub.org/apps/details/org.fedoraproject.MediaWriter) to write the ISO to a USB stick. Mac and Windows users can [download it here](https://getfedora.org/en/workstation/download/). Or use a tool of your choice.
 1. Select the image you want to install from the boot menu. The `main` images will work on systems with Intel and AMD GPUs, and the images tagged with `nvidia` include the proper drivers: 
 ![installer](https://user-images.githubusercontent.com/1264109/230446211-a0c4b2e8-2d31-44cb-9179-202f4b9fc52d.png)
