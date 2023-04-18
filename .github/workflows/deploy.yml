@@ -36,7 +36,7 @@ jobs:
       run: |
         pip install poetry
         poetry install
-        pip install git+https://${GH_TOKEN}@github.com/ublue-os/mkdocs-material-inside.git#egg=mkdocs-material
+        pip install git+https://${GH_TOKEN}@github.com/ublue-os/mkdocs-material-insiders.git#egg=mkdocs-material
         pip install git+https://github.com/ublue-os/image-scanner-md.git#egg=ublue-scanner
       env:
         POETRY_VIRTUALENVS_CREATE: false
