@@ -8,15 +8,15 @@ license = "Apache 2.0"
 [tool.poetry.dependencies]
 python = "^3.10"
 mkdocs = "^1.4.2"
-mkdocs-material = "^9.0.12"
+mkdocs-material = "^9.1.6"
 markdown-include = "^0.8.1"
 mkdocs-video = "^1.5.0"
 mkdocs-git-committers-plugin-2 = "^1.1.2"
 mkdocs-embed-external-markdown = "^2.3.0"
 
-[tool.poetry.dev-dependencies]
+[tool.poetry.group.dev.dependencies]
 black = "^23.1.0"
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
+requires = ["poetry-core>=1.2.0"]
 build-backend = "poetry.core.masonry.api"
