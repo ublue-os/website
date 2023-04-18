@@ -10,6 +10,12 @@ You will need [Python version 3.10 or higher](https://www.python.org/downloads/)
 2. Run the local development server `poetry run mkdocs serve`
 3. Open a browser to [localhost:8000](http://localhost:8000). This will auto-reload on file changes
 
+If you have access to mkdocs-material-insiders, run the following to install it:
+
+```sh
+pip install git+ssh://git@github.com/squidfunk/mkdocs-material-insiders.git
+```
+
 ## Contributing
 
 1. Create a [fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) of this repository
