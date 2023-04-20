@@ -11,6 +11,10 @@ Notably:
 
 ## Installation Instructions
 
+!!! Info "There is a known issue with Ventoy"
+
+    Currently we are aware of an issue where booting from the ISO with Ventoy leads to a black screen with a cursor and nothing happening. This is due to an upstream bug with Anaconda and the way Ventoy sets up loop mounts. We are working on a workaround to enable this workflow but in the meantime please do not create a new issue on GitHub. You can react with a thumbs up on this [issue](https://github.com/ublue-os/main/issues/108) so we can track how many people want this feature.
+
 Each uBlue image can be installed from the boot menu of the installation ISO. If you're using an existing Fedora Silverblue/Kinoite system check out the [image page](/images) for rebasing information (you don't need to reinstall).
 
 For new systems, follow the instructions below: 
