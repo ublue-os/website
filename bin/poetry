@@ -1,0 +1,17 @@
+#!/bin/bash
+
+if ! [ -d "$HOME/.cache/pypoetry" ]; then
+    mkdir -v "$HOME/.cache/pypoetry"
+fi
+if ! podman image exists website:builder; then
+    podman build -t website:builder .
+fi
+
+exec podman run --rm -it \
+    --security-opt label=disable \
+    -v "$PWD:$PWD" \
+    -v "$HOME/.cache/pypoetry:/root/.cache/pypoetry" \
+    -w "$PWD" \
+    --net=host \
+    --pid=host \
+    website:builder poetry "$@"

@@ -4,6 +4,19 @@ This is the MkDocs repository that hosts the website for [ublue.it](https://ublu
 
 ## Developing
 
+### Quick Setup
+
+Use the power of containers so you can quickly contribute and test your changes locally! Just clone this repo and run:
+
+```
+./bin/poetry install
+./bin/poetry run mkdocs serve
+```
+
+The embedded script will automatically create a container with the poetry dependencies so you don't need to install anything on your host!
+
+### Manual Setup
+
 You will need [Python version 3.10 or higher](https://www.python.org/downloads/) and [Poetry](https://python-poetry.org/docs/).
 
 1. Setup project dependencies `poetry install`
