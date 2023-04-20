@@ -56,6 +56,16 @@ When the installationn is complete it will ask you to reboot, then you're done!
 - We are looking for volunteers to help generate proper "offline" ISOs
 - If you're still having problems with the ISO you can always [install Fedora Silverblue](https://docs.fedoraproject.org/en-US/fedora-silverblue/installation/) and then rebase to one of [our images](/images.md)
 
+## Secure Boot
+
+If you choose to install an nvidia variant of ublue-os and have secure boot enabled, the installer will automatically use `mokutil` to import the ublue-os nvidia module signing key as a Machine Owner Key (MOK) in your UEFI secure boot database.
+
+During the post-install reboot, your system will prompt to verify enrollment of the key.
+
+The installer uses a default password for MOK enrollment: **ublue-os**
+
+Warning: If you use secureboot and do not enroll the MOK, you will boot to a blank screen, as nouveau has been disabled since nvidia drivers were installed but unable to load without the MOK.
+
 ## Video Overview
 
 This video goes over what it should like like, but note that the video refers to multiple ISOs, there is now just one ISO image that you choose to boot off of. The rest of the installation looks the same as the video.  
