@@ -54,6 +54,10 @@ Our goal is to for one install to last the life of the hardware.
     - Consume packages and software from any repo without risking breakage on the client
     - Easy consumption of other OCI images, if it's on the [CNCF Landscape](https://landscape.cncf.io/) it's a first class citizen thanks to Podman!
 
+!!! example "What we mean by reliability"
+
+    An important concept with this model is that the system is designed to reliably deliver your software. That means that if you were destined to get a kernel bug that day ... well, at least the package got to you in way better condition than your last carrier. At least you have a safe rollback. This might sound counterintuitive at first, but be level of efficiency improves so dramatically over the long term that allows it developers to catch issues like that earlier in the testing process. 
+
 ### Other Features
 
 - Rebase back to pure [Fedora](https://getfedora.org/en/) without reinstallation
