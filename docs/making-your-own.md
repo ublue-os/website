@@ -112,7 +112,17 @@ The following are some best practices based on experience with learning how to m
     - It looks more like `podman run --name podman-nginx -p 8080:80 -d nginx`
     - IDEs are still a problem area 
 
+### Set up the pipeline first
+
+Don't try to add something complicated out of the box, start with something basic, make a small change. 
+Then ensure that the builds are working, are signed properly, and you get used to making changes in your repository.
+This will save you a ton of time, because you can rev faster long term instead of getting stuck on something unrelated, spending a ton of time fixing it, and then realizing that you still have to fix the rest of the pipe.
+
+- Get the water flowing first!
+
 ### Resist the urge to add the entire universe 
  - Systems like this are designed for a _small, lean, mean, maintainable, and performant core_. Remember that updates to the _base image_ require a reboot, so ideally you want that surface area to be small - let Flatpak handle the rest.
  - But also remember that these systems are atomic, you don't need to manually clean up an old decision, the user will just get a new pristine image (ideally every day), so if you need to add a bunch of packages to get the desired outcome then you can always trim it down later - just remember that you need to account for the user's data!
  - This means: be cognizant where you put stuff. When making an image you can't put things in `/usr/local` or other common places to put custom things, in this context you're the distro now: so probably `/usr/bin`. Don't worry, you got this.
+
+
