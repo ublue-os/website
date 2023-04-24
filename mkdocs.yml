@@ -100,5 +100,6 @@ nav:
       - Architecture: architecture.md
       - Make Your Own: making-your-own.md
       - Codecs: codecs.md
+      - Thumbnails: thumbnails.md
   - FAQ: faq.md
   - Contributing: CONTRIBUTING.md
