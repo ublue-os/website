@@ -1,4 +1,4 @@
-Universal Blue images have thumbnail support out of the box for videos with patented codecs.  Every desktop environment have a different implementation. 
+Universal Blue images have thumbnail support out of the box for videos with patented codecs.  Every desktop environment has a different implementation. 
 
 You can look at this [packages.json file](https://github.com/ublue-os/main/blob/main/packages.json) for more information.
 
