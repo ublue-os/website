@@ -50,6 +50,11 @@ git fetch upstream
 git merge upstream/main -m "chore: merging upstream changes"
 ```
 
+If you want to use GitHub through SSH after setting up the repo automatically, run:
+```
+git remote set-url origin git@github.com:UserName/RepoName.git
+```
+
 ## Manual setup
 
 !!! warning
