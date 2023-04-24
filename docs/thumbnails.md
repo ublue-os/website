@@ -1,3 +1,5 @@
-uBlue have thumbnails support ootb for video with patented codec, every desktop environment have their implementation. you can look at [ublue-main](https://github.com/ublue-os/main/blob/main/packages.json) for more information.
+Universal Blue images have thumbnail support out of the box for videos with patented codecs.  Every desktop environment have a different implementation. 
+
+You can look at this [packages.json file](https://github.com/ublue-os/main/blob/main/packages.json) for more information.
 
 If you rebasing from Fedora image to uBlue image, you need to deleting thumbnails folder cache at ```~/.cache/thumbnails```.
