@@ -39,7 +39,7 @@ flatpak run io.mpv.Mpv
 
 ## Toolbox
 
-Toolboxes are little CLI podman containers that you can install anything into without it polluting your host system. Read more on [the dedicated page](/usersguide/toolbox).
+Toolboxes are little CLI podman containers that you can install anything into without it polluting your host system. Read more on [the dedicated page](/guide/toolbox).
 
 ## Fleek / Nix
 

@@ -98,10 +98,10 @@ nav:
       - Values: values.md
   - Documentation:
       - User's Guide:
-        - Installing Software: usersguide/software.md
-        - Toolboxes: usersguide/toolbox.md
-        - Codecs: usersguide/codecs.md
-        - Thumbnails: usersguide/thumbnails.md
+        - Installing Software: guide/software.md
+        - Toolboxes: guide/toolbox.md
+        - Codecs: guide/codecs.md
+        - Thumbnails: guide/thumbnails.md
       - Architecture: architecture.md
       - Make Your Own: making-your-own.md
   - FAQ: faq.md
