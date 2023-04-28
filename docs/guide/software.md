@@ -16,6 +16,8 @@ sudo rpm-ostree install micro neovim helix
 
 To apply the staged new staged image that includes your packages, reboot your computer. 
 
+There is no search functionality in `rpm-ostree`, but you can use a general package search website such as [pkgs.org](https://pkgs.org/) or [Repology](https://repology.org/).
+
 ## Flatpak
 
 Flatpak is the default way of installing GUI applications on immutable Fedora variants. [Flathub](https://flathub.org/) is the largest repository of Flatpak applications. On Fedora versions below 38, you might need to add the Flathub repository by running
