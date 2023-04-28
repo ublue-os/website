@@ -1,7 +1,5 @@
 # Setting Up a Toolbox
 
-Unlike on more traditional Linux desktops, on an immutable Linux distribution like Silverblue or uBlue you probably shouldn't install software development tools like interpreters, compilers or IDEs directly onto your base system.
-
 When you want to install applications not required on your base system and not available as flatpaks, you can use a "toolbox" program. Toolbox programs run OS containers using [Podman](https://podman.io/) allowing you to enter into the containers command lines and use them transparently with access to files in your home directory. For example, you could have one toolbox where all of your software development -related packages and programs live.
 
 Toolboxes don't require as much maintenance as running the distribution on bare metal, and you can very easily have multiple side-by-side, remove existing ones, and replace them with new entirely fresh ones.
