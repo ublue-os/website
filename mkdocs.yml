@@ -97,9 +97,12 @@ nav:
       - Scope: scope.md
       - Values: values.md
   - Documentation:
+      - User's Guide:
+        - Installing Software: guide/software.md
+        - Toolboxes: guide/toolbox.md
+        - Codecs: guide/codecs.md
+        - Thumbnails: guide/thumbnails.md
       - Architecture: architecture.md
       - Make Your Own: making-your-own.md
-      - Codecs: codecs.md
-      - Thumbnails: thumbnails.md
   - FAQ: faq.md
   - Contributing: CONTRIBUTING.md
