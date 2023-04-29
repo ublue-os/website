@@ -42,6 +42,7 @@ You can quickly set up a GitHub repository that builds a functional native conta
 1. Ensure you have [Podman](https://podman.io/) installed. If you're already using Fedora Silverblue, you should already have it.
 2. Run the command `podman run -v "$(pwd)":/host:z -it ghcr.io/einohr/create-ublue-image`
     - This will mount the current directory for modification inside the container. If you want the folder containing your repo to be in a certain directory like `~/dev`, you should `cd` into that before executing the tool.
+    - If you have any issues, read [the project's](https://github.com/EinoHR/create-ublue-image) README and submit to its issue tracker.
 3. Follow the instructions the tool gives you
 
 In order to update changes from the upstream repository, run:
