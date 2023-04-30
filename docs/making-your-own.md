@@ -104,6 +104,9 @@ This part is important, users must have a method of verifying the image. The Lin
 1. After you've changed a few things and keep an eye on your Actions and Packages section of your repo, you'll generate a new image on every merge and additionally every day. 
 1. Hang out in the [discussions forums](https://github.com/orgs/ublue-os/discussions) with others to share tips and get help, enjoy!
 
+## Local Testing
+see [Local Testing](/local-testing)
+
 # Best Practices
 
 The following are some best practices based on experience with learning how to move to this new model:
