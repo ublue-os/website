@@ -20,6 +20,7 @@ podman build . -t <name>
 ```
 podman push localhost/<name>:latest localhost:5000/<name>:latest
 ```
+
 ### In VM
 5. Create `/etc/containers/registries.conf.d/local.conf` with:
 ```
