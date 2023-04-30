@@ -16,6 +16,11 @@ podman run -d -p 5000:5000 --restart=always --name registry registry:2
 ```
 podman build . -t <name>
 ```
+For [startingpoint](https://github.com/ublue-os/startingpoint) forks:
+```
+podman build . --build-arg=FEDORA_MAJOR_VERSION=<fedora-version> --build-arg=BASE_IMAGE_URL=<base-image> --build-arg=RECIPE=./recipe.yml -t <name>
+```
+Fill the `build-arg`s from your recipe, e.g. `fedora-version` = latest, `base-image` = ghcr.io/ublue-os/silverblue-main.
 4. Push image
 ```
 podman push localhost/<name>:latest localhost:5000/<name>:latest
