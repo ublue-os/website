@@ -58,7 +58,7 @@ When the installationn is complete it will ask you to reboot, then you're done!
     - Using an ethernet connection is usually more reliable
 - The generated USB stick will always pull the latest image, you shouldn't need to generate a new USB stick often 
 - We are looking for volunteers to help generate proper "offline" ISOs
-- If you're still having problems with the ISO you can always [install Fedora Silverblue](https://docs.fedoraproject.org/en-US/fedora-silverblue/installation/) and then rebase to one of [our images](/images.md)
+- If you're still having problems with the ISO you can always [install Fedora Silverblue](https://docs.fedoraproject.org/en-US/fedora-silverblue/installation/) and then rebase to one of [our images](/images)
 
 ## Secure Boot
 
