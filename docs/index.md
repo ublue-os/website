@@ -7,14 +7,36 @@ hide:
 
 This is a collection of container images using Fedora's support for OCI/Docker containers as a [transport and delivery mechanism for operating system content](https://fedoraproject.org/wiki/Changes/OstreeNativeContainerStable). That's nerdspeak for the ultimate Linux client: the reliability of a Chromebook, but with the flexibility and power of a traditional Linux desktop. At long last, we've ascended. 
 
-This project's purpose is to:
+This project provides ... 
 
-- Provide a diverse set of [continuously delivered](https://en.wikipedia.org/wiki/Continuous_delivery) Fedora-based images for people to use as their desktop operating system
-- Provide a diverse set of tools and [a reusable automation kit](https://github.com/ublue-os/startingpoint) for more technical users so that they can customize and share their images with others
-- Act as a proving ground for new ideas around the Linux desktop like [Fleek](https://getfleek.dev/), [Yafti](https://github.com/ublue-os/yafti), and [Boxkit](https://github.com/ublue-os/boxkit)
-- Help new contributors to start their cloud native and open source journeys no matter their skill level
+<div class="grid cards" markdown>
 
+-   :material-train-car-container:{ .lg .middle } __Images__
+
+    ---
+    A diverse set of [continuously delivered](https://en.wikipedia.org/wiki/Continuous_delivery) Fedora-based images for people to use as their desktop operating system
+    
+
+-   :material-toolbox:{ .lg .middle } __Toolkit__
+
+    ---
+    A diverse set of tools and [a reusable automation kit](https://github.com/ublue-os/startingpoint) for more technical users so that they can customize and share their images with others
+
+-   :material-speedometer:{ .lg .middle } __Experiment__
+
+    ---
+    Act as a proving ground for new ideas around the Linux desktop like [Fleek](https://getfleek.dev/), [Forge](https://github.com/ublue-os/forge), [Yafti](https://github.com/ublue-os/yafti), and [Boxkit](https://github.com/ublue-os/boxkit)
+
+
+-   :material-heart:{ .lg .middle } __Community__
+
+    ---
+    Help new contributors to start their cloud native and open source journeys no matter their skill level
+
+</div>
+ 
 Our images offer GNOME, KDE, XFCE, LXQt, and MATE, with more being added on the regular. Our NVIDIA images offer a unique blend of reliability and ease of use that you won't find anywhere else.
+
 
 ## Why would I use these?
 
