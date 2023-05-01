@@ -34,11 +34,10 @@ jobs:
       run: |
         pip install poetry
         poetry install
-        pip install git+https://${TOKEN}@github.com/ublue-os/mkdocs-material-insiders.git
+        pip install git+https://${{ secrets.INSIDERS_PAT }}@github.com/ublue-os/mkdocs-material-insiders.git
         pip install git+https://github.com/ublue-os/image-scanner-md.git#egg=ublue-scanner
       env:
         POETRY_VIRTUALENVS_CREATE: false
-        TOKEN: ${{ secrets.INSIDERS_PAT }}
     - name: Build image list
       run: ublue-scan --org ublue-os --config .github/ublue-scan.yml --output badge > docs/_generated_image_list.md
       env:
