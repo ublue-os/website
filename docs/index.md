@@ -9,26 +9,11 @@ This is a collection of container images using Fedora's support for OCI/Docker c
 
 This project's purpose is to:
 
-<div class="grid cards" markdown> 
+- Provide a diverse set of [continuously delivered](https://en.wikipedia.org/wiki/Continuous_delivery) Fedora-based images for people to use as their desktop operating system
+- Provide a diverse set of tools and [a reusable automation kit](https://github.com/ublue-os/startingpoint) for more technical users so that they can customize and share their images with others
+- Act as a proving ground for new ideas around the Linux desktop like [Fleek](https://getfleek.dev/), [Yafti](https://github.com/ublue-os/yafti), and [Boxkit](https://github.com/ublue-os/boxkit)
+- Help new contributors to start their cloud native and open source journeys no matter their skill level
 
-- :fontawesome-container-storage: { .lg .middle } __Images__
-  --- 
-  Provide a diverse set of [continuously delivered](https://en.wikipedia.org/wiki/Continuous_delivery) Fedora-based images for people to use as their desktop operating system
-  
-- :fontawesome-screwdriver-wrench: { .lg .middle } __Toolkit__
-  ---
-  Provide a diverse set of tools and [a reusable automation kit](https://github.com/ublue-os/startingpoint) for more technical users so that they can customize and share their images with others
-  
-- :fontawesome-explosion: { .lg .middle } __Experimentation__
-  ---
-  Act as a proving ground for new ideas around the Linux desktop like [Fleek](https://getfleek.dev/), [Yafti](https://github.com/ublue-os/yafti), and [Boxkit](https://github.com/ublue-os/boxkit)
-  
-- :fontawesome-heart: { .lg .middle } __Contributions__
-  ---
-  Help new contributors to start their cloud native and open source journeys no matter their skill level
-
-</div> 
-  
 Our images offer GNOME, KDE, XFCE, LXQt, and MATE, with more being added on the regular. Our NVIDIA images offer a unique blend of reliability and ease of use that you won't find anywhere else.
 
 ## Why would I use these?
