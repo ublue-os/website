@@ -34,8 +34,9 @@ This project provides ...
     Help new contributors to start their cloud native and open source journeys no matter their skill level
 
 </div>
-  
-Our images offer GNOME, KDE, XFCE, LXQt, Budgie, and MATE, with more being added regularly. Our NVIDIA images offer a unique blend of reliability and ease of use that you won't find anywhere else.
+ 
+Our images offer GNOME, KDE, XFCE, LXQt, and MATE, with more being added on the regular. Our NVIDIA images offer a unique blend of reliability and ease of use that you won't find anywhere else.
+
 
 ## Why would I use these?
 
