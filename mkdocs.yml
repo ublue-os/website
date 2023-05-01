@@ -103,7 +103,8 @@ nav:
         - Codecs: guide/codecs.md
         - Thumbnails: guide/thumbnails.md
       - Architecture: architecture.md
-      - Make Your Own: making-your-own.md
+      - Customization Guide: 
+        - Make Your Own: making-your-own.md
         - Local Testing: local-testing.md
   - FAQ: faq.md
   - Contributing: CONTRIBUTING.md
