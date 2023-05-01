@@ -25,5 +25,5 @@
     - We are doing things that Fedora cannot do and there will be Fedora maintainers who will disagree with at least some aspects of this project
     - Nevertheless, we exist, so we're going for it
     - We want to leverage as much QA from Fedora as possible, so we shouldn't ship kernel patches or any other thing that adds extra maintenance
-        - Instead we encourage people to participate in Fedora, that's what it's there for. 
-        - The vibe we're looking for is a speed shop, like [Hoonigan](https://www.hoonigan.com/), but we want to remain sustainable, the fork button is always there in github, so if people want to go harder they have the freedom to do so, hence:
+        - Instead we encourage people to participate in Fedora, that's what it's there for
+        - The vibe we're looking for is a speed shop, like [Hoonigan](https://www.hoonigan.com/), but we want to remain sustainable, the fork button is always there in github
