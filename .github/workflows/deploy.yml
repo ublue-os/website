@@ -1,8 +1,12 @@
 name: deploy
 on:
+  push:
+    branches:
+    - main
   schedule:
     - cron: '0 */12 * * *'
   merge_group:
+  pull_request:
   workflow_dispatch:
 
 permissions:
@@ -34,6 +38,7 @@ jobs:
       run: |
         pip install poetry
         poetry install
+        pip install git+https://${{ secrets.INSIDERS_PAT }}@github.com/ublue-os/mkdocs-material-insiders.git
         pip install git+https://github.com/ublue-os/image-scanner-md.git#egg=ublue-scanner
       env:
         POETRY_VIRTUALENVS_CREATE: false
@@ -49,6 +54,7 @@ jobs:
         path: ./site
 
   deploy:
+    if: github.ref_name == 'main'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
