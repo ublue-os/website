@@ -3,6 +3,7 @@ on:
   schedule:
     - cron: '0 */12 * * *'
   merge_group:
+  pull_request:
   workflow_dispatch:
 
 permissions:
@@ -50,6 +51,7 @@ jobs:
         path: ./site
 
   deploy:
+    if: github.event_name != 'pull_request'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
