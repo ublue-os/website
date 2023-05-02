@@ -13,6 +13,7 @@ markdown-include = "^0.8.1"
 mkdocs-video = "^1.5.0"
 mkdocs-git-committers-plugin-2 = "^1.1.2"
 mkdocs-embed-external-markdown = "^2.3.0"
+mkdocs-rss-plugin = "^1.6.0" 
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.1.0"
