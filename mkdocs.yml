@@ -69,6 +69,7 @@ extra:
     - icon: fontawesome/brands/mastodon
       link: https://hachyderm.io/jorge
 plugins:
+  - blog
   - external-markdown
   - mkdocs-video:
       video_muted: True
@@ -92,8 +93,8 @@ nav:
       - Bluefin: images/bluefin.md
       - Toolboxes: toolboxes.md
   - Community:
-      - Code of Conduct: CODE_OF_CONDUCT.md
       - Mission: mission.md
+      - Code of Conduct: CODE_OF_CONDUCT.md
       - Scope: scope.md
       - Values: values.md
   - Documentation:
@@ -106,3 +107,5 @@ nav:
       - Make Your Own: making-your-own.md
   - FAQ: faq.md
   - Contributing: CONTRIBUTING.md
+  - Blog: 
+    - blog/index.md
