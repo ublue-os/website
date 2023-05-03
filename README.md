@@ -4,23 +4,38 @@ This is the MkDocs repository that hosts the website for [ublue.it](https://ublu
 
 ## Developing
 
-### Quick Setup
+### Install Poetry
 
-Use the power of containers so you can quickly contribute and test your changes locally! Just clone this repo and run:
+#### Quick Setup
+
+Use the power of containers so you can quickly contribute and test your changes locally!
+
+Add the following alias to your `~/.bashrc` (or your shell's comparable file), and source that rc file (or start a new terminal):
 
 ```
-./bin/poetry install
-./bin/poetry run mkdocs serve
+alias poetry='if ! [ -d "$HOME/.cache/pypoetry" ]; \
+  then \
+    mkdir -p "$HOME/.cache/pypoetry"; \
+  fi; \
+  podman run --rm -it \
+    --security-opt label=disable \
+    -v "$PWD:/pwd" \
+    -v "$HOME/.cache/pypoetry:/root/.cache/pypoetry" \
+    --net=host \
+    ghcr.io/bsherman/poetry:latest "$@"'
 ```
+When run, the `poetry` alias automatically downloads and runs a poetry image in a container so you don't need to install it or dependencies on your host.
 
-The embedded script will automatically create a container with the poetry dependencies so you don't need to install anything on your host!
+#### Manual Setup
 
-### Manual Setup
+If you don't want to use the poetry container alias, you will need [Python version 3.10 or higher](https://www.python.org/downloads/) and then to install [Poetry](https://python-poetry.org/docs/) following the official documentation.
 
-You will need [Python version 3.10 or higher](https://www.python.org/downloads/) and [Poetry](https://python-poetry.org/docs/).
+### Run and Test
 
-1. Setup project dependencies `poetry install`
-2. Run the local development server `poetry run mkdocs serve`
+Once poetry is installed:
+
+1. Setup project dependencies: `poetry install`
+2. Run the local development server: `poetry run mkdocs serve`
 3. Open a browser to [localhost:8000](http://localhost:8000). This will auto-reload on file changes
 
 If you have access to mkdocs-material-insiders, run the following to install it:
