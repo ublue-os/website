@@ -1,6 +1,9 @@
 site_name: Universal Blue
 repo_name: ublue-os/main
 repo_url: https://github.com/ublue-os/main
+site_description: Custom Operating System images based on Fedora
+site_name: Universal Blue 
+site_url: https://ublue.it
 theme:
   name: material
   custom_dir: overrides
@@ -84,10 +87,12 @@ plugins:
       repository: ublue-os/website
       branch: main
   - rss:
+      
       match_path: blog/posts/.* 
       date_from_meta:
         as_creation: date    
-  - search    
+  - search
+  - social   
 nav:
   - Home: index.md
   - Installation:
