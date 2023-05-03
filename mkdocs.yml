@@ -68,6 +68,8 @@ extra:
       link: https://www.youtube.com/c/JorgeCastro/videos
     - icon: fontawesome/brands/mastodon
       link: https://hachyderm.io/jorge
+    - icon: fontawesome/solid/rss
+      link: https://ublue.it/feed_rss_updated.xml    
 plugins:
   - blog
   - external-markdown
