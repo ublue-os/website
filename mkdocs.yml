@@ -87,10 +87,12 @@ plugins:
       repository: ublue-os/website
       branch: main
   - rss:
+      
       match_path: blog/posts/.* 
       date_from_meta:
         as_creation: date    
-  - search    
+  - search
+  - social   
 nav:
   - Home: index.md
   - Installation:
