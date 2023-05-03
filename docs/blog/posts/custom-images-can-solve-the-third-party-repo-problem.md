@@ -78,3 +78,19 @@ There are no correct instructions to layer RPMFusion properly on Fedora Silverbl
 What Universal Blue does is add an additional layer of protection by ensuring that a non-working image never makes it to your PC. The conflicting repo causes a [build failure](https://github.com/ublue-os/main/actions/runs/4736674877/jobs/8428174904). Your PC keeps the working image until the issue is resolved, then you get a new one, no dealing with repositories at all!
 
 
+<script src="https://giscus.app/client.js"
+        data-repo="ublue-os/base"
+        data-repo-id="R_kgDOIlRXgw"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOIlRXg84CTCvR"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
+
