@@ -69,6 +69,7 @@ extra:
     - icon: fontawesome/brands/mastodon
       link: https://hachyderm.io/jorge
 plugins:
+  - blog
   - external-markdown
   - mkdocs-video:
       video_muted: True
@@ -80,6 +81,10 @@ plugins:
       enabled: true
       repository: ublue-os/website
       branch: main
+  - rss:
+      match_path: blog/posts/.* 
+      date_from_meta:
+        as_creation: date    
   - search    
 nav:
   - Home: index.md
@@ -106,3 +111,5 @@ nav:
       - Make Your Own: making-your-own.md
   - FAQ: faq.md
   - Contributing: CONTRIBUTING.md
+  - Blog: 
+      - blog/index.md
