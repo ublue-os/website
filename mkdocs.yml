@@ -114,9 +114,11 @@ nav:
         - Toolboxes: guide/toolbox.md
         - Codecs: guide/codecs.md
         - Thumbnails: guide/thumbnails.md
-      - Architecture: architecture.md
-      - Make Your Own: making-your-own.md
+      - Contributor's Guide:  
+        - Architecture: architecture.md
+        - Contributing: CONTRIBUTING.md
+        - Make Your Own: making-your-own.md
   - FAQ: faq.md
-  - Contributing: CONTRIBUTING.md
+  
   - Blog: 
       - blog/index.md
