@@ -1,6 +1,5 @@
 # Media
-
-What people are saying about Universal Blue
+### What people are saying about Universal Blue
 
 ## Blogs and Websites
 
