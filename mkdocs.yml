@@ -105,9 +105,12 @@ nav:
       - Toolboxes: toolboxes.md
   - Community:
       - Code of Conduct: CODE_OF_CONDUCT.md
+      - Discord Chat: https://discord.gg/WEu6BdFEtp
+      - Discussion Forums: https://github.com/orgs/ublue-os/discussions
       - Mission: mission.md
       - Scope: scope.md
       - Values: values.md
+      - Videos: https://www.youtube.com/c/JorgeCastro/videos
   - Documentation:
       - User's Guide:
         - Installing Software: guide/software.md
