@@ -3,8 +3,8 @@ Universal Blue images are based on the rpm-ostree native container images hosted
 
 There are three major components to Universal Blue's images: 
 
-- [ublue-os/config](https://github.com/ublue-os/config) are a collection of udev rules and system services used by all uBlue images
+- [ublue-os/config](https://github.com/ublue-os/config) are a collection of udev rules and system services used by all Universal Blue images
 - [ublue-os/main](https://github.com/ublue-os/main) are the main images built from Fedora images 
 - [ublue-os/nvidia](https://github.com/ublue-os/nvidia) are the same as the main images but include slipstreamed Nvidia drivers
 
-![Graph of the Ublue structure. Upstream Fedora images on the top, and only the opinionated main inherits from it. Users are on the bottom, and users get the Ublue main image, a hypothetical image intended for Amd gpus and another existing one for Nvidia gpus. A starting point image inherits from the main, Amd and Nvidia images, and it is inteded for further customization by tinkerers into community-built images.](ublue-architecture-graph.png)
+![Graph of the uBlue structure. Upstream Fedora images on the top, and only the opinionated main inherits from it. Users are on the bottom, and users get the Universal Blue main image, a hypothetical image intended for Amd gpus and another existing one for Nvidia gpus. A starting point image inherits from the main, Amd and Nvidia images, and it is inteded for further customization by tinkerers into community-built images.](ublue-architecture-graph.png)

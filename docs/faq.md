@@ -41,9 +41,9 @@ This is a unique relationship between an upstream and downstream that is popular
 Ideally we'd get one lovely zstd-compressed container diff every day but it's not there yet.
 Check out this [upstream issue](https://github.com/coreos/rpm-ostree/issues/4012) for more information on progress in this area.
 
-## What is the relationship between uBlue and Fedora?
+## What is the relationship between Universal Blue and Fedora?
 
-uBlue is not officially endorsed or a part of the Fedora project, it's a group of enthusiasts who want to play in this new sandbox that Fedora has created.
+Universal Blue is not officially endorsed or a part of the Fedora project, it's a group of enthusiasts who want to play in this new sandbox that Fedora has created.
 This project tends to exercise new features in ostree and Fedora, and as a result we might be the first ones to run into an issue.
 We endevaour to be a healthy contributing partner to the Fedora ecosystem, so please be cognizant of that when reporting issues, we want to help where we can!
 

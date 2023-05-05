@@ -24,9 +24,9 @@ When people refer to "uBlue" they will likely mean this:
     - Kernel modules MUST NOT be included, they are added to `ublue-os/akmods` and `ublue-os/nvidia`
     - If it only works on the host AND IS NOT required for hardware functionality: MAY be included
 
-# uBlue Toolkit
+# Universal Blue Toolkit
 
-- The actions and scripts we use to make the uBlue images should be designed for consumption by others so that they can make whatever they want 
+- The actions and scripts we use to make the Universal Blue images should be designed for consumption by others so that they can make whatever they want 
 - [Starting Point](https://github.com/ublue-os/startingpoint) is the repo designed to be cloned
 - Both the toolkit and the images are a work in progress, so we're kind of building the bridge while we're crossing the river so we need volunteers here who are willing to experiment.
 - Special consideration for existing open source projects that consume Fedora  
