@@ -72,7 +72,7 @@ git remote set-url origin git@github.com:UserName/RepoName.git
 
 ### Set up container signing
 
-Container signing is important for end-user security and is enabled on all uBlue images. It is highly recommended you set this up, and by default the image builds *will fail* if you don't.
+Container signing is important for end-user security and is enabled on all Universal Blue images. It is highly recommended you set this up, and by default the image builds *will fail* if you don't.
 
 This part is important, users must have a method of verifying the image. The Linux desktop must not lag behind in cloud when it comes to supply chain security, so we're starting right from the start! (Seriously don't skip this part) 
 

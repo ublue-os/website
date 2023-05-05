@@ -15,7 +15,7 @@ Notably:
 
     Currently we are aware of an issue where booting from the ISO with Ventoy leads to a black screen with a cursor and nothing happening. This is due to an upstream bug with Anaconda and the way Ventoy sets up loop mounts. We are working on a workaround to enable this workflow but in the meantime please do not create a new issue on GitHub. You can react with a thumbs up on this [issue](https://github.com/ublue-os/main/issues/108) so we can track how many people want this feature.
 
-Each uBlue image can be installed from the boot menu of the installation ISO. If you're using an existing Fedora Silverblue/Kinoite system check out the [image page](/images) for rebasing information (you don't need to reinstall).
+Each Universal Blue image can be installed from the boot menu of the installation ISO. If you're using an existing Fedora Silverblue/Kinoite system check out the [image page](/images) for rebasing information (you don't need to reinstall).
 
 For new systems, follow the instructions below: 
 
@@ -62,7 +62,7 @@ When the installationn is complete it will ask you to reboot, then you're done!
 
 ## Secure Boot
 
-If you choose to install an nvidia variant of ublue-os and have secure boot enabled, the installer will automatically use `mokutil` to import the ublue-os nvidia module signing key as a Machine Owner Key (MOK) in your UEFI secure boot database.
+If you choose to install an nvidia variant of and have secure boot enabled, the installer will automatically use `mokutil` to import the ublue-os nvidia module signing key as a Machine Owner Key (MOK) in your UEFI secure boot database.
 
 During the post-install reboot, your system will prompt to verify enrollment of the key.
 
