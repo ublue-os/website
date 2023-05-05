@@ -22,7 +22,7 @@ This project provides ...
     ---
     A diverse set of tools and [a reusable automation kit](https://github.com/ublue-os/startingpoint) for more technical users so that they can customize and share their images with others
 
--   :material-speedometer:{ .lg .middle } __Experiment__
+-   :material-speedometer:{ .lg .middle } __Experimental Applications__
 
     ---
     Act as a proving ground for new ideas around the Linux desktop like [Fleek](https://getfleek.dev/), [Forge](https://github.com/ublue-os/forge), [Yafti](https://github.com/ublue-os/yafti), and [Boxkit](https://github.com/ublue-os/boxkit)
