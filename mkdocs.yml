@@ -126,6 +126,8 @@ nav:
         - Roadmap: https://github.com/orgs/ublue-os/projects/1
         
   - FAQ: faq.md
-  
+
+  - Media: media.md
+
   - Blog: 
       - blog/index.md
