@@ -4,8 +4,8 @@ comments: true
 authors: 
   - castrojo
 links:
-  - https://github.com/ublue-os/budgie
-  - https://github.com/ublue-os/cinnamon
+  - Budgie: https://github.com/ublue-os/budgie
+  - Cinnamon: https://github.com/ublue-os/cinnamon
 ---
 
 # Budgie and Cinnamon Builds now available
