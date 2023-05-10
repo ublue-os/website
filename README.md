@@ -13,7 +13,13 @@ You will need [Python version 3.10 or higher](https://www.python.org/downloads/)
 If you have access to mkdocs-material-insiders, run the following to install it:
 
 ```sh
-pip install git+ssh://git@github.com/squidfunk/mkdocs-material-insiders.git
+poetry run pip install git+ssh://git@github.com/squidfunk/mkdocs-material-insiders.git@29bd630bf94c3a3c0eef8118cf1289c226252636
+```
+
+Then use
+
+```sh
+poetry run mkdocs serve -f mkdocs.insiders.yml
 ```
 
 ## Contributing
