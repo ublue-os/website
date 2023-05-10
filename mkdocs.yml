@@ -2,7 +2,6 @@ site_name: Universal Blue
 repo_name: ublue-os/main
 repo_url: https://github.com/ublue-os/main
 site_description: Custom Operating System images based on Fedora
-site_name: Universal Blue 
 site_url: https://ublue.it
 theme:
   name: material
@@ -55,7 +54,7 @@ markdown_extensions:
           case: lower
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg        
+      emoji_generator: !!python/name:materialx.emoji.to_svg
   - markdown_include.include:
       base_path: docs
       inheritHeadingDepth: True
@@ -73,9 +72,8 @@ extra:
     - icon: fontawesome/brands/mastodon
       link: https://hachyderm.io/jorge
     - icon: fontawesome/solid/rss
-      link: https://ublue.it/feed_rss_updated.xml    
+      link: https://ublue.it/feed_rss_updated.xml
 plugins:
-  - blog
   - external-markdown
   - mkdocs-video:
       video_muted: True
@@ -88,12 +86,9 @@ plugins:
       repository: ublue-os/website
       branch: main
   - rss:
-      
-      match_path: blog/posts/.* 
+      match_path: blog/posts/.*
       date_from_meta:
-        as_creation: date    
-  - search
-  - social   
+        as_creation: date
 nav:
   - Home: index.md
   - Installation:
@@ -114,20 +109,17 @@ nav:
       - Videos: https://www.youtube.com/c/JorgeCastro/videos
   - Documentation:
       - User's Guide:
-        - Installing Software: guide/software.md
-        - Toolboxes: guide/toolbox.md
-        - Codecs: guide/codecs.md
-        - Thumbnails: guide/thumbnails.md
-      - Contributor's Guide:  
-        - Architecture: architecture.md
-        - Contributing: CONTRIBUTING.md
-        - Make Your Own: making-your-own.md
-        - Proposals: https://github.com/orgs/ublue-os/discussions?discussions_q=is%3Aopen+label%3Aproposal
-        - Roadmap: https://github.com/orgs/ublue-os/projects/1
-        
+          - Installing Software: guide/software.md
+          - Toolboxes: guide/toolbox.md
+          - Codecs: guide/codecs.md
+          - Thumbnails: guide/thumbnails.md
+      - Contributor's Guide:
+          - Architecture: architecture.md
+          - Contributing: CONTRIBUTING.md
+          - Make Your Own: making-your-own.md
+          - Proposals: https://github.com/orgs/ublue-os/discussions?discussions_q=is%3Aopen+label%3Aproposal
+          - Roadmap: https://github.com/orgs/ublue-os/projects/1
   - FAQ: faq.md
-
   - Media: media.md
-
-  - Blog: 
+  - Blog:
       - blog/index.md

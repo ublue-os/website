@@ -1,2 +1,3 @@
 site/*
 docs/_generated_image_list.md
+.cache
