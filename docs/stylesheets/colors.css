@@ -26,3 +26,14 @@
   --md-footer-bg-color: #1e2335;
   --md-footer-bg-color--dark: #1b1f2c;
 }
+
+.md-typeset .admonition.abstract,
+.md-typeset details.abstract {
+  border-color: var(--md-accent-fg-color) !important;
+}
+
+.md-typeset .abstract > .admonition-title,
+.md-typeset .abstract > summary {
+  background-color: transparent !important;
+  border-bottom: 1px solid var(--md-accent-fg-color) !important;
+}
