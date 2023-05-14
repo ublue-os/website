@@ -10,12 +10,16 @@ theme:
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
+      primary: custom
+      accent: custom
       toggle:
         icon: material/brightness-auto
         name: Switch to light mode
 
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
+      primary: custom
+      accent: custom
       scheme: default
       toggle:
         icon: material/brightness-7
@@ -23,6 +27,8 @@ theme:
 
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
+      primary: custom
+      accent: custom
       scheme: slate
       toggle:
         icon: material/brightness-4
@@ -41,6 +47,8 @@ theme:
     - search.share
     - toc.integrate
     - content.tabs.link
+extra_css:
+  - stylesheets/colors.css
 markdown_extensions:
   - admonition
   - attr_list
