@@ -2,6 +2,7 @@
 date: 2023-05-03
 authors: 
   - castrojo
+comments: true 
 links:
   - Setting yourself up for success before moving to Fedora Silverblue: https://www.ypsidanger.com/setting-yourself-up-for-success-before-moving-to-fedora-silverblue/
   - Also got hit with the Freeworld issue: https://www.reddit.com/r/Fedora/comments/136lf7j/also_got_hit_with_the_freeworld_issue/
