@@ -41,7 +41,7 @@ Our images offer GNOME, KDE, XFCE, LXQt, Budgie, and MATE, with more being added
 
 These images reflect a more [cloud-native](https://en.wikipedia.org/wiki/Cloud-native_computing) approach to running Linux on your desktop. We feel that a dedicated group of enthusiasts can automate a large amount of toil that plagues existing Linux desktops today. This is achieved by reusing cloud technologies as a delivery mechanism to deliver a more reliable experience. 
 
-![type:video](https://www.youtube.com/embed/vZ1LRe_foJY)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vZ1LRe_foJY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
 
 ## Usage
 
@@ -89,7 +89,7 @@ Our goal is to for one install to last the life of the hardware.
 - Images signed with standard [sigstore tools](https://www.sigstore.dev/)
 - And some more features explained here:
 
-![type:video](https://www.youtube.com/embed/X8h304Jp9N8?start=435)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/X8h304Jp9N8?start=435" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
 
 ## Join Us
 
