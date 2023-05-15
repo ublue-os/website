@@ -12,7 +12,18 @@
 ## Videos
 
 **Brodie Robertson** 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/HsKKh3WS1q0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HsKKh3WS1q0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<br/>
+<br/>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2cCtPu6V8-E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<br/>
+<br/>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PNEbSP81KH4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 **Adam Grubbs**
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CDdjDVm2KLY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
