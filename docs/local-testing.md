@@ -41,3 +41,9 @@ insecure = true
 ``` 
 rpm-ostree rebase --reboot ostree-unverified-registry:<host IP>:5000/<name>:latest
 ```
+
+7. Upgrade
+After rebasing once, just upgrade after pushing a new version with the same image name:
+```
+rpm-ostree upgrade --reboot
+```
