@@ -63,6 +63,10 @@ git remote set-url origin git@github.com:UserName/RepoName.git
 ### Create and configure your repository
 
 1. Fork the [ublue-os/startingpoint](https://github.com/ublue-os/startingpoint) repo:
+1. Create a new branch called `live` based on the `template` branch and make sure you're checked out in it while you do your changes.
+    - The `live` branch is the only branch that will be published, while all branches will still be built. 
+    - You should make the `live` branch your repos default branch in your repos settings.
+    - You should periodically sync changes from `ublue-os/startingpoint:template` into your repo's `template` branch. Then to get the updates into your customized `live` branch you can either rebase it on top of `template`, or merge changes to it from `template`.
 1. Change the image name in [the recipe](https://github.com/ublue-os/startingpoint/blob/main/recipe.yml) (you can just replace "startingpoint" with the name of your choice) to match what you want to call your image
     - In [ublue-os/main](https://github.com/ublue-os/main), this change is done manually in [the GitHub action](https://github.com/ublue-os/main/blob/main/.github/workflows/build.yml)
 1. Ensure your [GitHub Actions](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository) and [GitHub Packages](https://docs.github.com/en/packages) are set up and enabled
