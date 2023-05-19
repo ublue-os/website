@@ -1,4 +1,4 @@
-# Purpose
+# Making your Own
 
 This project generates [operating system images](images.md) that you can use on your own PC.
 However, one of the main goals is to provide a custom toolkit for you to make your own custom image. 
@@ -21,8 +21,6 @@ However, people like to tinker, so instead of [layering packages](https://docs.f
     - But still be able to ingest all the improvements from Fedora every day
 - You might need a specific kernel or module to get your hardware to work
 - It's fun
-
-# Making your Own
 
 ## Should I use [`ublue-os/main`](https://github.com/ublue-os/main) or [`ublue-os/startingpoint`](https://github.com/ublue-os/startingpoint)?
 
