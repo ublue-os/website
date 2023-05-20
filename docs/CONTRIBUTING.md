@@ -219,6 +219,7 @@ Releases are automated via [Release Please](https://github.com/googleapis/releas
     - There is a delay as the ISOs need to be built, they will get attached to the same release after, this can take as long as 10 minutes.
     - Do not touch `CHANGELOG.md`, the action handles that.
     - It might be prudent to edit the release directly after to add topical links (website, gotchas) since we don't have a release template, we should make one.
+    - If checks fail for some reason may need to force merge to kick off the ISO generation, the release please action does work after the images have been built.  
 
 ## Join The Project Team
 
