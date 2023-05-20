@@ -111,6 +111,12 @@ This part is important, users must have a method of verifying the image. The Lin
 ## Local Testing
 see [Local Testing](/local-testing)
 
+## Common Issues found in Testing
+
+- Greetd has SELinux policy issues when trying to install it in `recipe.yml`: [github issue]()
+- installing SDDM the way it is doesn't work as the SDDM user needs to exist in order to work
+    - You can get around this by executing `adduser sddm` before running sddm
+
 # Best Practices
 
 The following are some best practices based on experience with learning how to move to this new model:
