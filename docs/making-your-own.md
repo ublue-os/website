@@ -63,6 +63,10 @@ git remote set-url origin git@github.com:UserName/RepoName.git
 ### Create and configure your repository
 
 1. Fork the [ublue-os/startingpoint](https://github.com/ublue-os/startingpoint) repo:
+1. Create a new branch called `live` based on the `template` branch and make sure you're checked out in it while you do your changes.
+    - The `live` branch is the only branch that will be published, while all branches will still be built. 
+    - You should make the `live` branch your repos default branch in your repos settings.
+    - You should periodically sync changes from `ublue-os/startingpoint:template` into your repo's `template` branch. Then to get the updates into your customized `live` branch you can either rebase it on top of `template`, or merge changes to it from `template`.
 1. Change the image name in [the recipe](https://github.com/ublue-os/startingpoint/blob/main/recipe.yml) (you can just replace "startingpoint" with the name of your choice) to match what you want to call your image
     - In [ublue-os/main](https://github.com/ublue-os/main), this change is done manually in [the GitHub action](https://github.com/ublue-os/main/blob/main/.github/workflows/build.yml)
 1. Ensure your [GitHub Actions](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository) and [GitHub Packages](https://docs.github.com/en/packages) are set up and enabled
@@ -94,11 +98,13 @@ This part is important, users must have a method of verifying the image. The Lin
 
 ## Modification 
 
+!!! note
+
+    The best place to find information about customizing your repo based on the `startingpoint` template is documentation in the [`README`](https://github.com/ublue-os/startingpoint) and [`recipe.yml`](https://github.com/ublue-os/startingpoint/blob/template/recipe.yml) files.
+
 1. Edit `recipe.yml` to modify your image
     - You can configure what packages to install, what to name the image, with more information inside the file
-1. Edit the `Containerfile` for more in-depth changes such as adding configuration files
-    - For example, if you have a folder called `etc` inside your repository, you can add it to the image by adding `COPY etc /etc` to the `Containerfile`. Then you can add any system configuration files inside `etc`, and they will be shipped with your image.
-    - Files cannot be added under `/var`
+1. Add scripts for more in-depth changes that will be executed at the build step. Remember that files cannot be added under `/var`.
 1. After you've changed a few things and keep an eye on your Actions and Packages section of your repo, you'll generate a new image on every merge and additionally every day. 
 1. Hang out in the [discussions forums](https://github.com/orgs/ublue-os/discussions) with others to share tips and get help, enjoy!
 
