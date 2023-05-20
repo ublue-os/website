@@ -114,7 +114,7 @@ see [Local Testing](/local-testing)
 ## Common Issues found in Testing
 
 - Greetd has SELinux policy issues when trying to install it in `recipe.yml`: [github issue](https://github.com/ublue-os/main/issues/223)
-- installing SDDM the way it is doesn't work as the SDDM user needs to exist in order to work: [github issue](https://github.com/ublue-os/main/issues/224)
+- Installing SDDM the way it is doesn't work as the SDDM user needs to exist: [github issue](https://github.com/ublue-os/main/issues/224)
     - You can get around this by executing `adduser sddm` before running sddm
 
 # Best Practices
