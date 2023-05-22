@@ -110,6 +110,7 @@ nav:
   - Documentation:
       - User's Guide:
           - Installing Software: guide/software.md
+          - just: guide/just.md
           - Toolboxes: guide/toolbox.md
           - Codecs: guide/codecs.md
           - Thumbnails: guide/thumbnails.md
