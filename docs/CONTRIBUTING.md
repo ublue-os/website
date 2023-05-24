@@ -221,6 +221,11 @@ style: convert tabs to spaces
 test: ensure Tayne retains clothing
 ```
 
+### Documentation
+
+- We use [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) for the website/docs. 
+- Avoid the usage of terms likes "simply" or "easy", see [justsimply.dev](https://justsimply.dev/) for more information. 
+ 
 ## Making a Release
 
 Releases are automated via [Release Please](https://github.com/googleapis/release-please) with additional modifications to publish images. Since the ISOs are netinstalls and always pull the latest image you usually don't need to do a release unless new ISOs are needed or for human reasons like incrementing a version number.
