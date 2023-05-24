@@ -40,6 +40,20 @@ Generally speaking we try to follow the [Lazy Concensus](http://lazyconcens.us/)
     - We want people to be opinionated in their builds so we're more of a loose confederation of repos than a top-down org
     - Try not to merge your own stuff, ask for a review. At some point when we have enough reviewers we'll be turning on branch protection
 
+## Submitting Pull Requests
+
+If you want to contribute code to the project, the general workflow is as follows:
+
+1. [Fork the desired project repository on GitHub](https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository).
+2. [Clone your fork to your own local machine](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
+3. Create a new branch in your local repository.
+4. Make the code changes locally in your cloned repository's directory.
+5. Commit your changes, and be sure to use [correctly formatted commit titles](#commit-messages).
+6. Push your new branch to your own GitHub fork.
+7. Visit GitHub in a web browser to [submit the pull request back to the original repository](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request#creating-the-pull-request).
+
+If you're new to Git, it's a good idea to use a graphical user interface such as [GitHub Desktop](https://desktop.github.com/) to simplify all of these steps.
+
 ## Reporting Bugs
 
 ### Before Submitting a Bug Report
