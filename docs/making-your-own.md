@@ -29,8 +29,9 @@ The instructions below recommend `startingpoint` because it:
 - Is made to be modified and customized
 - Is more suitable for personal usage
 - Has an easier to edit configuration format, YAML, which also supports comments and inline documentation
+- Advanced customization can be accomplished at build time by [placing scripts in the appropriate folders](https://github.com/ublue-os/startingpoint/blob/template/scripts/README.md)
 
-Making a custom image using `main` instead would be better if you intend on having multiple versions (such as a version with GNOME and another with KDE), but modification is more involved and if you want to leverage the images already built at `ublue-os/main` or `ublue-os/nvidia` you have to modify the `build.yml`.  
+Making a custom image using `main` instead would be better if you intend on having multiple versions (such as a version with GNOME and another with KDE), but modification is more involved and if you want to leverage the images already built at `ublue-os/main` or `ublue-os/nvidia` you have to modify their `build.yml`.
 If you do decide to use `main` the *Manual setup* steps below still apply.
 
 ## Automatic setup 
@@ -43,13 +44,29 @@ You can quickly set up a GitHub repository that builds a functional native conta
     - If you have any issues, read [the project's](https://github.com/EinoHR/create-ublue-image) README and submit to its issue tracker.
 3. Follow the instructions the tool gives you
 
-In order to update changes from the upstream repository, run:
+In order to update changes from the upstream repository, run the following commands:
+
 ```
-git fetch upstream
-git merge upstream/main -m "chore: merging upstream changes"
+# Retrieve latest changes from upstream's template.
+git fetch upstream template
+git checkout template
+git merge --ff-only upstream/template
+git push
+
+# Rebase your own "live" changes onto the latest template.
+git checkout live
+git rebase --onto live template
+
+# Perform a force-push to update your "live" branch on GitHub, to deploy.
+# The "lease" ensures that you won't overwrite "live" if GitHub's version
+# is different than your local version (ie. if a team member pushed to it).
+git push --force-with-lease
 ```
 
-If you want to use GitHub through SSH after setting up the repo automatically, run:
+Most of the time, the rebased changes will be applied automatically without any need for manual editing. However, if you've modified any core files from the template, then you might have merge conflicts which need to be manually resolved. It's therefore recommended that you use a GUI such as [GitHub Desktop](https://desktop.github.com/) to do your rebase in a visual manner, to handle any conflicts.
+
+Note that the `create-ublue-image` sets up the "origin" remote to use HTTPS URLs. If you want to connect to GitHub through SSH instead, run the following command to update your local repository's URL:
+
 ```
 git remote set-url origin git@github.com:UserName/RepoName.git
 ```
@@ -58,19 +75,20 @@ git remote set-url origin git@github.com:UserName/RepoName.git
 
 !!! warning
 
-    Ensure you are forking the repository and NOT choosing "Use this template". The project moves quickly and it's important for you to get updates!
+    Ensure that you are forking the repository and NOT choosing "Use this template". The project moves quickly and it's important for you to get updates!
 
 ### Create and configure your repository
 
-1. Fork the [ublue-os/startingpoint](https://github.com/ublue-os/startingpoint) repo:
-1. Create a new branch called `live` based on the `template` branch and make sure you're checked out in it while you do your changes.
-    - The `live` branch is the only branch that will be published, while all branches will still be built. 
-    - You should make the `live` branch your repos default branch in your repos settings.
-    - You should periodically sync changes from `ublue-os/startingpoint:template` into your repo's `template` branch. Then to get the updates into your customized `live` branch you can either rebase it on top of `template`, or merge changes to it from `template`.
-1. Change the image name in [the recipe](https://github.com/ublue-os/startingpoint/blob/main/recipe.yml) (you can just replace "startingpoint" with the name of your choice) to match what you want to call your image
-    - In [ublue-os/main](https://github.com/ublue-os/main), this change is done manually in [the GitHub action](https://github.com/ublue-os/main/blob/main/.github/workflows/build.yml)
-1. Ensure your [GitHub Actions](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository) and [GitHub Packages](https://docs.github.com/en/packages) are set up and enabled
-1. [Optional] Install the [Semantic PRs](https://github.com/marketplace/semantic-prs) GitHub app if you want nice changelogs
+1. [Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository) the [ublue-os/startingpoint](https://github.com/ublue-os/startingpoint) repository on GitHub.
+2. Go into the "Settings" tab of your fork at GitHub, and disable the "Template repository" checkbox.
+3. Create a new branch called `live` based on the `template` branch, and make sure that you only do changes on the `live` branch (you should never modify `template`).
+    - The `live` branch is the only branch that will be published to your image container registry. However, all branches will be built, which ensures that other branches and pull requests will still be checked for build errors.
+    - You should make the `live` branch your repo's default branch in your GitHub fork's settings.
+    - You should periodically sync changes from `ublue-os/startingpoint:template` into your repo's `template` branch. Then, to get the updates into your customized `live` branch, you can either rebase it on top of `template`, or create a merge-commit with the latest changes from `template`. See the "[automatic setup](#automatic-setup)" section for more information about how to perform the syncing and rebasing of your `live` changes, which is the easiest and cleanest way to update yourself to the latest `template` version, since all of your Git commit history will remain clean and logical.
+4. Change the image name in [the recipe](https://github.com/ublue-os/startingpoint/blob/main/recipe.yml). Replace the word `startingpoint` with any custom name of your choice. This is what your image will be called when it's uploaded to your container repository.
+    - In [ublue-os/main](https://github.com/ublue-os/main), this change is done manually in [the GitHub action](https://github.com/ublue-os/main/blob/main/.github/workflows/build.yml).
+5. Ensure that your [GitHub Actions](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository) and [GitHub Packages](https://docs.github.com/en/packages) are set up and enabled.
+6. [Optional] Install the [Semantic PRs](https://github.com/marketplace/semantic-prs) GitHub app if you want to enforce nice commit messages for your changelogs.
 
 ### Set up container signing
 
