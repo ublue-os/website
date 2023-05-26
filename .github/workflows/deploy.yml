@@ -47,6 +47,7 @@ jobs:
       if: ${{ github.ref_name == 'main' }}
       run: pip install git+https://${{ secrets.INSIDERS_PAT }}@github.com/ublue-os/mkdocs-material-insiders.git
     - name: Build image list
+      if: ${{ github.ref_name == 'main' }}
       run: ublue-scan --org ublue-os --config .github/ublue-scan.yml --output badge > docs/_generated_image_list.md
       env:
         GITHUB_TOKEN: ${{ secrets.READ_PACKAGES_TOKEN }}
