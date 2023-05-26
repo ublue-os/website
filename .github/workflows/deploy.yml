@@ -40,16 +40,22 @@ jobs:
       run: |
         pip install poetry
         poetry install
-        pip install git+https://${{ secrets.INSIDERS_PAT }}@github.com/ublue-os/mkdocs-material-insiders.git
         pip install git+https://github.com/ublue-os/image-scanner-md.git#egg=ublue-scanner
       env:
         POETRY_VIRTUALENVS_CREATE: false
+    - name: Install Insiders
+      if: ${{ github.ref_name == 'main' }}
+      run: pip install git+https://${{ secrets.INSIDERS_PAT }}@github.com/ublue-os/mkdocs-material-insiders.git
     - name: Build image list
       run: ublue-scan --org ublue-os --config .github/ublue-scan.yml --output badge > docs/_generated_image_list.md
       env:
         GITHUB_TOKEN: ${{ secrets.READ_PACKAGES_TOKEN }}
     - name: Build MkDocs
+      if: ${{ github.ref_name == 'main' }}
       run: mkdocs build -f mkdocs.insiders.yml
+    - name: Build MkDocs
+      if: ${{ github.ref_name != 'main' }}
+      run: mkdocs build
     - name: Upload site artifact
       uses: actions/upload-pages-artifact@v1
       with:
