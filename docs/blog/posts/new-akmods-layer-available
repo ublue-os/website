@@ -13,7 +13,7 @@ links:
 
 # Akmods Image now Available
 
-Up to today the Nvidia images have been building the required kernel modules for the Nvidia drivers. While this approach worked great it started to become apparent that the akmods would need to be split off into it's own layer: 
+Up to today our [Nvidia repository](https://github.com/ublue-os/nvidia) have been building the required kernel modules for the Nvidia drivers. While this approach worked great at first it became apparent that the akmods would need to be split off into it's own layer: 
 
 ![image](https://user-images.githubusercontent.com/1264109/223513413-45c425a4-bd90-4d33-af47-52a4aac70908.png)
 
