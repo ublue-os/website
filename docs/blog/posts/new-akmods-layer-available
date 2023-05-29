@@ -27,4 +27,8 @@ First we [needed to migrate to a new signing key](https://ublue.it/blog/2023/05/
 - The installer ISO installs BOTH the old and new keys
 - The `nvidia` repo is still signing the Nvidia kmods with the old key (and provides both old and new key in RPM)
 
-Sometime on June 17th we will cutover `nvidia` to the new signing key on June 17 so that existing users can [migrate to the new key ahead of time](https://ublue.it/blog/2023/05/19/important-secure-boot-changes-required-for-nvidia-image-users/).
+Sometime on June 17th we will cutover `nvidia` to the new signing key so that existing users can [migrate to the new key ahead of time](https://ublue.it/blog/2023/05/19/important-secure-boot-changes-required-for-nvidia-image-users/).
+
+## Special Thanks
+
+This work was patiently prototyped by [@dhoell](https://github.com/dhoell) over the course of many months while juggling a busy school schedule. Thanks for your contribution David!
