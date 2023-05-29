@@ -1,0 +1,30 @@
+---
+date: 2023-05-29
+comments: true
+authors: 
+  - bsherman
+links:
+  - Community Discussion: https://github.com/orgs/ublue-os/discussions/106
+  - Akmods: https://github.com/ublue-os/akmods
+  - Config: https://github.com/ublue-os/config
+  - Main: https://github.com/ublue-os/main
+  - Nvidia: https://github.com/ublue-os/nvidia
+---
+
+# Akmods Image now Available
+
+Up to today the Nvidia images have been building the required kernel modules for the Nvidia drivers. While this approach worked great it started to become apparent that the akmods would need to be split off into it's own layer: 
+
+![image](https://user-images.githubusercontent.com/1264109/223513413-45c425a4-bd90-4d33-af47-52a4aac70908.png)
+
+This kicked off a [nice community discussion](https://github.com/orgs/ublue-os/discussions/106) where the team figured out an approach.
+
+First we [needed to migrate to a new signing key](https://ublue.it/blog/2023/05/19/important-secure-boot-changes-required-for-nvidia-image-users/) and then begin splitting the akmods into [its own repository](https://github.com/ublue-os/akmods). This will also conveniently allow us to include more things like `v4l2loopback` so that Universal Blue users can have that working out of the box. Over time we hope to add more hardware enablement akmods like XBox Wireless controllers, OpenRazer, and some older Broadcom wireless drivers. 
+
+### Current status:
+- The `config` repo provides `just` commands to import the new akmod key AND the older legacy nvidia key
+- The `akmods` repo signs kmods with new key (and provides key in an RPM)
+- The installer ISO installs BOTH the old and new keys
+- The `nvidia` repo is still signing the Nvidia kmods with the old key (and provides both old and new key in RPM)
+
+Sometime on June 17th we will cutover `nvidia` to the new signing key on June 17 so that existing users can [migrate to the new key ahead of time](https://ublue.it/blog/2023/05/19/important-secure-boot-changes-required-for-nvidia-image-users/).
