@@ -74,19 +74,19 @@ extra:
     - icon: fontawesome/solid/rss
       link: https://ublue.it/feed_rss_updated.xml
 plugins:
-  - search
-  - external-markdown
-  - mkdocs-video:
+  search: {}
+  external-markdown: {}
+  mkdocs-video:
       video_muted: True
       video_controls: True
       css_style:
         width: "50%"
         height: "22.172vw"
-  - git-committers:
+  git-committers:
       enabled: true
       repository: ublue-os/website
       branch: main
-  - rss:
+  rss:
       match_path: blog/posts/.*
       date_from_meta:
         as_creation: date
