@@ -1,5 +1,4 @@
 INHERIT: mkdocs.yml
 plugins:
   - blog
-  - search
   - social
