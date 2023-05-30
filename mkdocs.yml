@@ -74,6 +74,7 @@ extra:
     - icon: fontawesome/solid/rss
       link: https://ublue.it/feed_rss_updated.xml
 plugins:
+  - search
   - external-markdown
   - mkdocs-video:
       video_muted: True
