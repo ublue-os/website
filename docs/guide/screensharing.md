@@ -6,4 +6,8 @@ Fortunately we now have xwaylandvideobridge, which is a bridge between the app a
 
 Only uBlue Kinoite has xwaylandvideobridge installed by default, since GNOME and wlroots have various issues with it.
 
-Kinoite user can run ```just fixscreenshare``` for enabling Xwaylandvideobridge at startup
+Kinoite user can run ```just fixscreenshare``` for enabling Xwaylandvideobridge at startup.
+
+Source:\
+[Xwaylandvideobridge announcement](https://blog.davidedmundson.co.uk/blog/xwaylandvideobridge/)\
+[Xwaylandvideobridge Gitlab repo](https://invent.kde.org/system/xwaylandvideobridge)

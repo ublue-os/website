@@ -115,6 +115,7 @@ nav:
           - Toolboxes: guide/toolbox.md
           - Codecs: guide/codecs.md
           - Thumbnails: guide/thumbnails.md
+          - Screensharing on Wayland: guide/screensharing.md
       - Contributor's Guide:
           - Architecture: architecture.md
           - Contributing: CONTRIBUTING.md
