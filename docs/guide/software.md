@@ -2,7 +2,7 @@
 
 ## Flatpak
 
-Flatpak is the default way of installing GUI applications on immutable Fedora variants. [Flathub](https://flathub.org/) is the largest repository of Flatpak applications. On Fedora versions below 38, you might need to add the Flathub repository by running
+Flatpak is the default way of installing GUI applications on image-based Fedora variants. [Flathub](https://flathub.org/) is the largest repository of Flatpak applications. On Fedora versions below 38, you might need to add the Flathub repository by running
 ```
 flatpak remote-add --if-not-exists --user flathub https://flathub.org/repo/flathub.flatpakrepo
 ```
@@ -40,7 +40,7 @@ Read [the Fleek docs](https://getfleek.dev/) for more information.
 
 ## `rpm-ostree`
 
-`rpm-ostree` is the system package manager for immutable Fedora variants. Unlike on more traditional Linux desktops, on an immutable Linux distribution you probably shouldn't install everything directly onto your base system. The more liberally you use the system package manager, the more likely you are to run into some instability that affects your base operating system, therefore we recommend that you use it sparingly.
+`rpm-ostree` is the system package manager for image-based Fedora variants. Unlike more traditional Linux desktops, on an image-based Linux distribution you probably shouldn't install everything directly onto your base system. The more liberally you use the system package manager, the more likely you are to run into some instability that affects your base operating system, therefore we recommend that you use it sparingly.
 
 To install a single package (for example, `zsh`), run
 ```
