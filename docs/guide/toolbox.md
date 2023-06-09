@@ -4,7 +4,7 @@ When you want to install applications not required on your base system and not a
 
 Toolboxes don't require as much maintenance as running the distribution on bare metal, and you can very easily have multiple side-by-side, remove existing ones, and replace them with new entirely fresh ones.
 
-The immutable Fedora variants come with [`toolbx`](https://containertoolbx.org/) and the uBlue images come with both `toolbx` and [`distrobox`](https://distrobox.privatedns.org/), but this page will only cover `distrobox`.
+Fedora comes with [`toolbx`](https://containertoolbx.org/) and the Universal Blue images come with both `toolbx` and [`distrobox`](https://distrobox.privatedns.org/), but this page will only cover `distrobox`.
 
 ## Creating and using a Distrobox
 
