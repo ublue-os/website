@@ -53,7 +53,7 @@ When the installationn is complete it will ask you to reboot, then you're done!
 ## Other gotchas
 
 - Reminder: this is a netinstaller!
-- If the network connection is spotty the installation download of the image might stall or time out, resulting in an erorr below
+- If the network connection is spotty the installation download of the image might stall or time out, resulting in an error below
     - Retrying the installation might help depending on network conditions
     - Using an ethernet connection is usually more reliable
 - The generated USB stick will always pull the latest image, you shouldn't need to generate a new USB stick often 
