@@ -11,6 +11,7 @@ ignores:
 - kinoite
 - nvidia
 - silverblue
+- silverblue-experimental
 - startingpoint
 - ubuntu
 - udev-rules
