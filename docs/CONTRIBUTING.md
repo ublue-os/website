@@ -240,6 +240,12 @@ Releases are automated via [Release Please](https://github.com/googleapis/releas
     - It might be prudent to edit the release directly after to add topical links (website, gotchas) since we don't have a release template, we should make one.
     - If checks fail for some reason may need to force merge to kick off the ISO generation, the release please action does work after the images have been built.  
 
+## Nvidia
+
+Please note, RPM Fusion supports the initial Nvidia driver release available with each Fedora version as well as the latest version. Any intermittent versions are not maintained by RPM Fusion after they have been superceded with a new version.
+
+Keep in mind checks, other than building the akmods, do fail in pull requests.
+
 ## Join The Project Team
 
 If you're interested in _maintaining_ something then let us know!
