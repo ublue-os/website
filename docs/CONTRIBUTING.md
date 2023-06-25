@@ -246,6 +246,15 @@ Please note, RPM Fusion supports the initial Nvidia driver release available wit
 
 Keep in mind checks, other than building the akmods, do fail in pull requests.
 
+## Pinning a package version
+
+In some cases there might be a regression in upstream Fedora that needs a fix. Packages can be "pinned" to a certain version can be added to the main Containerfiles similar to this snippet.
+
+    # Revert to older version of ostree to fix Flatpak installations
+    RUN rpm-ostree override replace https://bodhi.fedoraproject.org/updates/FEDORA-2023-cab8a89753
+
+And then subsequently removed after Fedora has fixed the issue. 
+
 ## Join The Project Team
 
 If you're interested in _maintaining_ something then let us know!
