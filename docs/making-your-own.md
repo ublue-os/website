@@ -23,7 +23,7 @@ However, people like to tinker, so instead of [layering packages](https://docs.f
 
 ## Automatic setup 
 
-You can quickly set up a GitHub repository that builds a functional native container image based on [ublue-os/startingpoint](https://github.com/ublue-os/startingpoint) using the (experimental) community-maintained [`create-ublue-image`-tool](https://github.com/EinoHR/create-ublue-image).
+You can quickly set up a GitHub repository that builds a native container image based on [ublue-os/startingpoint](https://github.com/ublue-os/startingpoint) using the (experimental) community-maintained [`create-ublue-image`-tool](https://github.com/EinoHR/create-ublue-image).
 
 1. Ensure you have [Podman](https://podman.io/) installed. If you're already using Fedora Silverblue, you should already have it.
 2. Run the command `podman run -v "$(pwd)":/host:z -it ghcr.io/einohr/create-ublue-image`
@@ -62,12 +62,13 @@ git remote set-url origin git@github.com:UserName/RepoName.git
 
 !!! warning
 
-    Ensure that you are forking the repository and NOT choosing "Use this template". The project moves quickly and it's important for you to get updates!
+    Ensure that you are forking the repository and NOT choosing "Use this template". The project moves quickly and it's important for you to get updates! If you want to create multiple repositories (as GitHub doesn't support multiple forks), you have to make sure to keep up-to-date manually.
 
 ### Create and configure your repository
 
 1. [Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository) the [ublue-os/startingpoint](https://github.com/ublue-os/startingpoint) repository on GitHub.
 2. Go into the "Settings" tab of your fork at GitHub, and disable the "Template repository" checkbox.
+    - Not strictly necessary, but your customized image repo is not a "template" anymore.
 3. Create a new branch called `live` based on the `template` branch, and make sure that you only do changes on the `live` branch (you should never modify `template`).
     - The `live` branch is the only branch that will be published to your image container registry. However, all branches will be built, which ensures that other branches and pull requests will still be checked for build errors.
     - You should make the `live` branch your repo's default branch in your GitHub fork's settings.
@@ -81,7 +82,7 @@ git remote set-url origin git@github.com:UserName/RepoName.git
 
 Container signing is important for end-user security and is enabled on all Universal Blue images. It is highly recommended you set this up, and by default the image builds *will fail* if you don't.
 
-This part is important, users must have a method of verifying the image. The Linux desktop must not lag behind in cloud when it comes to supply chain security, so we're starting right from the start! (Seriously don't skip this part) 
+This part is important, as users must have a method of verifying the image. The Linux desktop must not lag behind in cloud when it comes to supply chain security, so we're starting right from the start! (Seriously don't skip this part) 
 
 !!! warning
 
@@ -89,6 +90,7 @@ This part is important, users must have a method of verifying the image. The Lin
 
 1. Generate a key pair
     1. Install the [cosign CLI tool](https://edu.chainguard.dev/open-source/sigstore/cosign/how-to-install-cosign/)
+        - It's recommended you use [a toolbox](https://universal-blue.org/guide/toolbox/).
     1. Run `cosign generate-key-pair` inside your repo folder
         - Do NOT put in a password when it asks you to, just press enter. The signing key will be used in GitHub Actions and will not work if it is encrypted. 
     1. Add the private key to GitHub
