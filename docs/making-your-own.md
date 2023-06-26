@@ -1,7 +1,6 @@
 # Making your Own
 
-This project generates [operating system images](images.md) that you can use on your own PC.
-However, one of the main goals is to provide a custom toolkit for you to make your own custom image. 
+[Universal Blue](https://universal-blue.org/) is both a collection of native container images based on Fedora and a toolkit for you to make your own.
 
 !!! Note "This is moving fast"
 
@@ -9,30 +8,18 @@ However, one of the main goals is to provide a custom toolkit for you to make yo
 
 ## Why make your own image?
 
-The concept around image based operating systems balances on the idea that the core image is ready to go, ideally users don't need to touch it.
+The concept around image based operating systems balances on the idea that the core image is ready to go, ideally users don't need to touch it.  
 However, people like to tinker, so instead of [layering packages](https://docs.fedoraproject.org/en-US/iot/adding-layered/) that compromise the integrity of upgrades, the idea is to just make your own image so that you can just have a pristine setup over time for the life of the hardware.
 
 ### Reasons to make your own image
-- You want the reliability of image based operating systems like ChromeOS or Android but want more flexibility
+- You want the reliability of image based operating systems, but want to customize them to your liking
     - A complete Fedora experience with all the benefits of your preferences shipped out of the box
     - Ship your own terminal CLI experience on whatever distribution you like
 - Draw "outside the lines" of what Fedora provides in a repeatable manner
     - Make your own custom image without the overhead or responsibility of "making your own distro"
-    - But still be able to ingest all the improvements from Fedora every day
+    - Retain the ability to ingest all the improvements from Fedora and uBlue every day
 - You might need a specific kernel or module to get your hardware to work
 - It's fun
-
-## Should I use [`ublue-os/main`](https://github.com/ublue-os/main) or [`ublue-os/startingpoint`](https://github.com/ublue-os/startingpoint)?
-
-The instructions below recommend `startingpoint` because it:  
-
-- Is made to be modified and customized
-- Is more suitable for personal usage
-- Has an easier to edit configuration format, YAML, which also supports comments and inline documentation
-- Advanced customization can be accomplished at build time by [placing scripts in the appropriate folders](https://github.com/ublue-os/startingpoint/blob/template/scripts/README.md)
-
-Making a custom image using `main` instead would be better if you intend on having multiple versions (such as a version with GNOME and another with KDE), but modification is more involved and if you want to leverage the images already built at `ublue-os/main` or `ublue-os/nvidia` you have to modify their `build.yml`.
-If you do decide to use `main` the *Manual setup* steps below still apply.
 
 ## Automatic setup 
 
@@ -116,15 +103,16 @@ This part is important, users must have a method of verifying the image. The Lin
 
 ## Modification 
 
-!!! note
+!!! warning "Attention"
 
-    The best place to find information about customizing your repo based on the `startingpoint` template is documentation in the [`README`](https://github.com/ublue-os/startingpoint) and [`recipe.yml`](https://github.com/ublue-os/startingpoint/blob/template/recipe.yml) files.
+    The best place to find information about customizing your image if it's based on the `startingpoint` template is the documentation in the [`README`](https://github.com/ublue-os/startingpoint) and [`recipe.yml`](https://github.com/ublue-os/startingpoint/blob/template/recipe.yml) files.
 
-1. Edit `recipe.yml` to modify your image
+* Edit `recipe.yml` to modify your image
     - You can configure what packages to install, what to name the image, with more information inside the file
-1. Add scripts for more in-depth changes that will be executed at the build step. Remember that files cannot be added under `/var`.
-1. After you've changed a few things and keep an eye on your Actions and Packages section of your repo, you'll generate a new image on every merge and additionally every day. 
-1. Hang out in the [discussions forums](https://github.com/orgs/ublue-os/discussions) with others to share tips and get help, enjoy!
+* Add scripts for more in-depth changes that will be executed at the build step. Remember that files cannot be added under `/var`.
+* After you've changed a few things and keep an eye on your Actions and Packages section of your repo, you'll generate a new image on every merge and additionally every day. 
+* Read the [best practices section](#best-practices) for DOs and DONTs.
+* Hang out in the [discussions forums](https://github.com/orgs/ublue-os/discussions) with others to share tips and get help, enjoy!
 
 ## Local Testing
 see [Local Testing](/local-testing)
@@ -135,31 +123,44 @@ see [Local Testing](/local-testing)
 - Installing SDDM the way it is doesn't work as the SDDM user needs to exist: [github issue](https://github.com/ublue-os/main/issues/224)
     - You can get around this by executing `adduser sddm` before running sddm
 
-# Best Practices
+## Best Practices
 
 The following are some best practices based on experience with learning how to move to this new model:
 
+### What repo to fork?
+
+The instructions here recommend using the [`startingpoint`](https://github.com/ublue-os/startingpoint) template because it:  
+
+- Is made to be modified and customized
+- Is more suitable for personal usage
+- Has an easier to edit configuration format, YAML, which also supports comments and inline documentation
+- Advanced customization can be accomplished at build time by [placing scripts in the appropriate folders](https://github.com/ublue-os/startingpoint/blob/template/scripts/README.md)
+
+Making a custom image by forking a differently structured repository such as [`main`](https://github.com/ublue-os/main) or [`bluefin`](https://github.com/ublue-os/bluefin) might be more appropriate if you intend on having multiple versions (such as a version with GNOME and another with KDE), but that will require you to be more knowledgeable in building containers. Modification is more involved and if you want to leverage the images already built at `ublue-os/main` or `ublue-os/nvidia` you might have to modify their `build.yml`.
+If you do decide to use [`main`](https://github.com/ublue-os/main) the *Manual setup* steps above still apply.
+
 ### You need to read the documentation
 - There's no way around this, we're terraforming a new planet, you'll save a ton of time by reading the documentation:
-    - [CoreOS](https://docs.fedoraproject.org/en-US/fedora-coreos/)
-    - [Kinoite](https://docs.fedoraproject.org/en-US/fedora-kinoite/)
     - [Silverblue](https://docs.fedoraproject.org/en-US/fedora-silverblue/)
-- Additionally, your developer users might not be familiar with [Podman](https://podman.io/)
+    - [Kinoite](https://docs.fedoraproject.org/en-US/fedora-kinoite/)
+    - [CoreOS](https://docs.fedoraproject.org/en-US/fedora-coreos/)
+    - [startingpoint](https://github.com/ublue-os/startingpoint)
+- You and your users might be more used to traditional desktops
+    - On immutable systems, most software development tools shouldn't be installed directly on your base system. They should be run separate from the host system in some way, like using [a toolbox](https://universal-blue.org/guide/toolbox/) or [Podman](https://podman.io/) directly.
     - Most documentation around "How do I install a webserver in Fedora" will not apply
     - It looks more like `podman run --name podman-nginx -p 8080:80 -d nginx`
-    - IDEs are still a problem area 
 
 ### Set up the pipeline first
 
 Don't try to add something complicated out of the box, start with something basic, make a small change. 
 Then ensure that the builds are working, are signed properly, and you get used to making changes in your repository.
-This will save you a ton of time, because you can rev faster long term instead of getting stuck on something unrelated, spending a ton of time fixing it, and then realizing that you still have to fix the rest of the pipe.
+This will save you a ton of time, because you can do revisions faster long term instead of getting stuck on something unrelated, spending a ton of time fixing it, and then realizing that you still have to fix the rest of the pipe.
 
-- Get the water flowing first!
+> Get the water flowing first!
 
 ### Resist the urge to add the entire universe 
- - Systems like this are designed for a _small, lean, mean, maintainable, and performant core_. Remember that updates to the _base image_ require a reboot, so ideally you want that surface area to be small - let Flatpak handle the rest.
+ - Systems like this are designed for a _small, lean, mean, maintainable, and performant core_. Remember that updates to the _base image_ require a reboot, so ideally you want that surface area to be small - let Flatpak and other userspace tools handle the rest.
  - But also remember that these systems are atomic, you don't need to manually clean up an old decision, the user will just get a new pristine image (ideally every day), so if you need to add a bunch of packages to get the desired outcome then you can always trim it down later - just remember that you need to account for the user's data!
- - This means: be cognizant where you put stuff. When making an image you can't put things in `/usr/local` or other common places to put custom things, in this context you're the distro now: so probably `/usr/bin`. Don't worry, you got this.
 
-
+### Remember where you _can_ add files
+When making an image you can't put things in `/usr/local` or `/var/` (which includes the home directory) or other common places to put custom things as a system administrator. In this context you are the distro now; write to system directories like `/usr/bin`.
