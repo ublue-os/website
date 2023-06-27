@@ -253,7 +253,13 @@ In some cases there might be a regression in upstream Fedora that needs a fix. P
     # Revert to older version of ostree to fix Flatpak installations
     RUN rpm-ostree override replace https://bodhi.fedoraproject.org/updates/FEDORA-2023-cab8a89753
 
-And then subsequently removed after Fedora has fixed the issue. 
+And then subsequently removed after Fedora has fixed the issue.
+
+## Reverting a Pinned Package
+
+Fedora publishes images every 24h, local testing may show a fixed regression but that fix might not be in the final image until the next run. 
+
+Budget for a 24 hour delay after Fedora has fixed a regression before removing it. 
 
 ## Join The Project Team
 
