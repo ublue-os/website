@@ -8,18 +8,7 @@
 
 ## Why make your own image?
 
-The concept around image based operating systems balances on the idea that the core image is ready to go, ideally users don't need to touch it.  
-However, people like to tinker, so instead of [layering packages](https://docs.fedoraproject.org/en-US/iot/adding-layered/) that compromise the integrity of upgrades, the idea is to just make your own image so that you can just have a pristine setup over time for the life of the hardware.
-
-### Reasons to make your own image
-- You want the reliability of image based operating systems, but want to customize them to your liking
-    - A complete Fedora experience with all the benefits of your preferences shipped out of the box
-    - Ship your own terminal CLI experience on whatever distribution you like
-- Draw "outside the lines" of what Fedora provides in a repeatable manner
-    - Make your own custom image without the overhead or responsibility of "making your own distro"
-    - Retain the ability to ingest all the improvements from Fedora and uBlue every day
-- You might need a specific kernel or module to get your hardware to work
-- It's fun
+The concept around image based operating systems balances on the idea that the core image is ready to go, and ideally users don't need to touch it, but we understand that people like to tinker. Instead of layering packages that compromise the integrity of upgrades, we provide the tools for you to make your own image allowing you to have a pristine setup with just the configuration you want with minimal maintenance.
 
 ## Automatic setup 
 
