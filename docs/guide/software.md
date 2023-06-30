@@ -44,12 +44,12 @@ Read [the Fleek docs](https://getfleek.dev/) for more information.
 
 To install a single package (for example, `zsh`), run
 ```
-sudo rpm-ostree install zsh
+rpm-ostree install zsh
 ```
 
 To install multiple packages (for example, various CLI text editors), run
 ```
-sudo rpm-ostree install micro neovim helix
+rpm-ostree install micro neovim helix
 ```
 
 To apply the staged new staged image that includes your packages, reboot your computer. 
