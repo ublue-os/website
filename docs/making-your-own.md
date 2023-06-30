@@ -96,7 +96,7 @@ This part is important, as users must have a method of verifying the image. The 
 
 !!! warning "Attention"
 
-    The best place to find information about customizing your image if it's based on the `startingpoint` template is the documentation in the [`README`](https://github.com/ublue-os/startingpoint) and [`recipe.yml`](https://github.com/ublue-os/startingpoint/blob/template/recipe.yml) files.
+    The best place to find information about customizing your image is the documentation in the [`README`](https://github.com/ublue-os/startingpoint) and [`recipe.yml`](https://github.com/ublue-os/startingpoint/blob/template/recipe.yml) files.
 
 * Edit `recipe.yml` to modify your image
     - You can configure what packages to install, what to name the image, with more information inside the file
