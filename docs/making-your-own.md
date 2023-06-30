@@ -145,7 +145,7 @@ If you do decide to use [`main`](https://github.com/ublue-os/main) the *Manual s
 
 Don't try to add something complicated out of the box, start with something basic, make a small change. 
 Then ensure that the builds are working, are signed properly, and you get used to making changes in your repository.
-This will save you a ton of time, because you can do revisions faster long term instead of getting stuck on something unrelated, spending a ton of time fixing it, and then realizing that you still have to fix the rest of the pipe.
+This will save you a ton of time, because you can make revisions faster long term instead of getting stuck on something unrelated, spending a ton of time fixing it, and then realizing that you still have to fix the rest of the pipe.
 
 > Get the water flowing first!
 
