@@ -7,6 +7,7 @@ ignores:
 - boxkit
 - config
 - experimental
+- images-website
 - gnome-vrr
 - kinoite
 - nvidia
