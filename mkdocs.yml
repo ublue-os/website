@@ -109,6 +109,7 @@ nav:
       - Values: values.md
       - Videos: https://www.youtube.com/c/JorgeCastro/videos
   - Documentation:
+      - Introduction: introduction.md
       - User's Guide:
           - Installing Software: guide/software.md
           - just: guide/just.md
