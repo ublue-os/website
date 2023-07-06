@@ -65,6 +65,12 @@ You can also configure automatic `rpm-ostree` updates by editing `/etc/rpm-ostre
 AutomaticUpdatePolicy=check
 ```
 
+### How do I use tools that expect Docker to be available?
+
+Some tools (like `docker-compose`) expect to talk to the Docker socket. Check the Podman documentation for more information on setting this up: 
+
+- [Podman Socket Activation](https://github.com/containers/podman/blob/main/docs/tutorials/socket_activation.md)
+
 ## I can't find what I want!
 
 It's still early days, as the community grows we expect more images and more awesome stuff.
