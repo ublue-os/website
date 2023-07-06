@@ -123,7 +123,9 @@ nav:
           - Proposals: https://github.com/orgs/ublue-os/discussions?discussions_q=is%3Aopen+label%3Aproposal
           - Roadmap: https://github.com/orgs/ublue-os/projects/1
       - Tinkerer's Guide:
-          - Make Your Own: tinker/making-your-own.md
+          - 0. Introduction: tinker/0-make-your-own.md
+          - 1. Getting in the right mindset: tinker/1-mindset.md
+          - Make Your Own (to be removed): tinker/making-your-own.md
   - FAQ: faq.md
   - Media: media.md
   - Blog:
