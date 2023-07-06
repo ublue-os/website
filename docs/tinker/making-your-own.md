@@ -137,7 +137,7 @@ If you do decide to use [`main`](https://github.com/ublue-os/main) the *Manual s
     - [CoreOS](https://docs.fedoraproject.org/en-US/fedora-coreos/)
     - [startingpoint](https://github.com/ublue-os/startingpoint)
 - You and your users might be more used to traditional desktops
-    - On immutable systems, most software development tools shouldn't be installed directly on your base system. They should be run separate from the host system in some way, like using [a toolbox](https://universal-blue.org/guide/toolbox/) or [Podman](https://podman.io/) directly.
+    - On image-based systems, most software development tools shouldn't be installed directly on your base system. They should be run separate from the host system in some way, like using [a toolbox](https://universal-blue.org/guide/toolbox/) or [Podman](https://podman.io/) directly.
     - Most documentation around "How do I install a webserver in Fedora" will not apply
     - It looks more like `podman run --name podman-nginx -p 8080:80 -d nginx`
 
