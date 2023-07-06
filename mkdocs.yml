@@ -122,7 +122,7 @@ nav:
           - Proposals: https://github.com/orgs/ublue-os/discussions?discussions_q=is%3Aopen+label%3Aproposal
           - Roadmap: https://github.com/orgs/ublue-os/projects/1
       - Tinkerer's Guide:
-          - Make Your Own: making-your-own.md
+          - Make Your Own: tinker/making-your-own.md
   - FAQ: faq.md
   - Media: media.md
   - Blog:
