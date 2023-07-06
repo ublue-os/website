@@ -23,7 +23,7 @@ All of Universal Blue rests on the idea of [cloud-native](https://en.wikipedia.o
 
 Best practices when using an image-based Linux distribution differ from the usual ways of managing your system in more traditional Linux environments. For example, when installing software you shouldn't always reach for the system package manager, `rpm-ostree` in this case. When keeping the amount of packages layered on top of the base image to a minimal, system updates will be quicker and are more likely to succeed, for example. [Read more about other ways of installing software here.](https://universal-blue.org/guide/software/)
 
-Most documentation around "how do I do XYZ in Fedora/Linux" will not apply. Instead, you can do simple things such as running a webserver with [`podman`](https://podman.io/) and containers. And for setting up development or installing software not available as Flatpaks you should use some encapsulated userspace environment such as a [toolbox](https://universal-blue.org/guide/toolbox/) or [devbox](https://www.jetpack.io/devbox/).
+Most documentation around "how do I do XYZ in Fedora/Linux" will not apply. Instead, you can do things such as running a webserver with [`podman`](https://podman.io/) and containers. And for setting up development or installing software not available as Flatpaks you should use some encapsulated userspace environment such as a [toolbox](https://universal-blue.org/guide/toolbox/) or [devbox](https://www.jetpack.io/devbox/).
 
 You should familiarize yourself with the documentation of Universal Blue and related projects:
 
