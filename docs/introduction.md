@@ -26,3 +26,9 @@ You should familiarize yourself with the documentation of uBlue and related proj
 - [CoreOS](https://docs.fedoraproject.org/en-US/fedora-coreos/)
 - [IoT](https://docs.fedoraproject.org/en-US/iot/)
 - [rpm-ostree](https://coreos.github.io/rpm-ostree/)
+
+## Read-only and writable directories
+
+Immutable Fedora variants follow the [Filesystem Hierarchy Standard](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard) while mounting some directories as read-only and symlinking some from their actual location to their FHS-compatible location.
+
+`/usr/` is read-only when booted while `/var/` and `/etc/` are writable. Everything in `/var/` is locally managed and cannot be directly changed by images. Certain directories in the root directory are symlinked to either `/usr/` or `/var/`, for example, `/home/` is symlinked to `/var/home/`. `/usr/local/` is writable and files can be added, and system configuration modified there. 
