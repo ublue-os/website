@@ -27,6 +27,8 @@ You should familiarize yourself with the documentation of uBlue and related proj
 - [IoT](https://docs.fedoraproject.org/en-US/iot/)
 - [rpm-ostree](https://coreos.github.io/rpm-ostree/)
 
+You can always ask for help from our [Community](https://universal-blue.org/CODE_OF_CONDUCT/) (see sidebar).
+
 ## Read-only and writable directories
 
 Immutable Fedora variants follow the [Filesystem Hierarchy Standard](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard) while mounting some directories as read-only and symlinking some from their actual location to their FHS-compatible location.
