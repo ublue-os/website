@@ -25,7 +25,7 @@ Best practices when using an image-based Linux distribution differ from the usua
 
 Most documentation around "how do I do XYZ in Fedora/Linux" will not apply. Instead, you can do simple things such as running a webserver with [`podman`](https://podman.io/) and containers. And for setting up development or installing software not available as Flatpaks you should use some encapsulated userspace environment such as a [toolbox](https://universal-blue.org/guide/toolbox/) or [devbox](https://www.jetpack.io/devbox/).
 
-You should familiarize yourself with the documentation of uBlue and related projects:
+You should familiarize yourself with the documentation of Universal Blue and related projects:
 
 - [Silverblue](https://docs.fedoraproject.org/en-US/fedora-silverblue/)
 - [Kinoite](https://docs.fedoraproject.org/en-US/fedora-kinoite/)
