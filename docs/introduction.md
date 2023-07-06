@@ -17,7 +17,7 @@ We also provide tools for the average Linux nerd to build their own image using 
 
 ## Cloud-native
 
-All of Universal Blue rests on the idea of [cloud-native](https://en.wikipedia.org/wiki/Cloud-native_computing). We leverage standard cloud tools like the OCI standard and the GitHub Container Registry to build our images. This is a much lighter and faster way of building and deploying Linux environments to users that allows professionals in the industry to leverage their pre-existing knowledge to create a better desktop Linux experience.
+All of Universal Blue rests on the idea of [cloud-native](https://en.wikipedia.org/wiki/Cloud-native_computing). We leverage standard cloud tools like the [OCI standard](https://opencontainers.org/) and the GitHub Container Registry to build our images. This is a much lighter and faster way of building and deploying Linux environments to users that allows professionals in the industry to leverage their pre-existing knowledge to create a better desktop Linux experience.
 
 ## Mindset
 
