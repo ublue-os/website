@@ -35,6 +35,7 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
+    - navigation.indexes 
     - toc.integrate
     - search.highlight
     - search.suggest
@@ -125,6 +126,11 @@ nav:
       - Tinkerer's Guide:
           - 0. Introduction: tinker/0-make-your-own.md
           - 1. Getting in the right mindset: tinker/1-mindset.md
+          - 2. Setting up the repository:
+            - tinker/2-setup/index.md
+            - Automatic setup (cli): tinker/2-setup/auto-cli.md
+            - Automatic setup (web): tinker/2-setup/auto-web.md
+            - Manual setup: tinker/2-setup/manual.md
           - Make Your Own (to be removed): tinker/making-your-own.md
   - FAQ: faq.md
   - Media: media.md
