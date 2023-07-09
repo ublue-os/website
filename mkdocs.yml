@@ -131,6 +131,7 @@ nav:
             - Automatic setup (cli): tinker/2-setup/auto-cli.md
             - Automatic setup (web): tinker/2-setup/auto-web.md
             - Manual setup: tinker/2-setup/manual.md
+          - 3. Modification: tinker/3-modification.md
           - Make Your Own (to be removed): tinker/making-your-own.md
   - FAQ: faq.md
   - Media: media.md
