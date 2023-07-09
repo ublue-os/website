@@ -21,3 +21,5 @@ rpm:
   install:
     - micro
 ```
+
+[Next up: Community](/tinker/4-community/){ .md-button }
