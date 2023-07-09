@@ -125,8 +125,8 @@ nav:
           - Roadmap: https://github.com/orgs/ublue-os/projects/1
       - Tinkerer's Guide:
           - 0. Introduction: tinker/0-make-your-own.md
-          - 1. Getting in the right mindset: tinker/1-mindset.md
-          - 2. Setting up the repository:
+          - 1. Mindset: tinker/1-mindset.md
+          - 2. Setup:
             - tinker/2-setup/index.md
             - Automatic setup (cli): tinker/2-setup/auto-cli.md
             - Automatic setup (web): tinker/2-setup/auto-web.md
