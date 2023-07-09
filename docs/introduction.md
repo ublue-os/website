@@ -4,9 +4,11 @@ Image-based in the context of Linux distributions means that the operating syste
 
 ## Isn't this just another immutable Linux distribution?
 
-Fedora Silverblue, Kinoite, Sericea, etc. are all called immutable. So is VanillaOS.   
-We think that it is a misleading term with the connotation of the end user losing their power.
-TODO: figure out this section
+Fedora Silverblue, Kinoite, Sericea, and many other projects are all often called immutable Linux distributions.
+We think that it is a misleading term with the connotation of the end user losing their power.  
+To us, the ideas espoused by so-called immutable distributions mean increased stability through separating the stable core from the programs added by the user. The existence of Universal Blue proves that that stable core is not unchangeable. 
+
+Universal Blue is not really even a distribution, it's more a community seeking to augment Fedora Silverblue and it's peers,and giving you the tools to do it too.
 
 ## What does uBlue do?
 
