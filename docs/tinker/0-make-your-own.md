@@ -7,3 +7,5 @@ This guide will help you set up your own GitHub repository to build a custom ima
 This guide requires you know at least the basics of using `git` and GitHub. If you are not yet familiar with the tools, you should understand some basics, like what is a repository, committing and pushing, what are branches, etc. You can start from reading the GitHub documentation [for getting started with git](https://docs.github.com/en/get-started/getting-started-with-git) and [for using git](https://docs.github.com/en/get-started/using-git).
 
 The template is built such that for simple use cases you don't need to know any [`Containerfile` syntax](https://docs.docker.com/engine/reference/builder/) or how [GitHub Actions](https://docs.github.com/en/actions) work, or even having much shell scripting experience, but knowing how those tools work will make more advanced modification possible. 
+
+[Next up: Get in the right mindset](/tinker/1-mindset/){ .md-button }

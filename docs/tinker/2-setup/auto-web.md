@@ -9,3 +9,5 @@ A new web interface for automatic setup [is currently in a beta/demo phase](http
 !!! note
 
     Due to the settings of the ublue-os GitHub organization, this tool currently gives errors when you have already forked `ublue-os/startingpoint` and it tries to generate a repository using the template.
+
+[Next up: Modification](/tinker/modification/){ .md-button }
