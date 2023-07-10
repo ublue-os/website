@@ -30,6 +30,8 @@ Toolboxes are little CLI podman containers that you can install anything into wi
 [Fleek](https://getfleek.dev/) is a wrapper for [Nix](https://nixos.org/manual/nix/stable/) [home-manager](https://github.com/nix-community/home-manager) that can be used to easily install different packages with Nix. The packages are not isolated or containerized in any way, but they are still not part of your base system, as they are installed into Nix-specific directories. 
 Fleek & home-manager also take over some of your dotfiles such as your `.zshrc` or `.bashrc`.
 
+Follow the [installation instructions](https://getfleek.dev/docs/installation) to add Fleek to your environment.
+
 To install a package (for example, `micro`) with Fleek, run
 ```
 fleek add -a micro
