@@ -30,6 +30,14 @@ This may or may not be important to you depending on your usage, available disk 
 
     Rebasing between images will not affect your installed applications, those are handled by Flatpak.
     
+## Isn't this just another immutable Linux distribution?
+
+Fedora Silverblue, Kinoite, Sericea, and many other projects are all often called immutable Linux distributions.
+We think that it is a misleading term with the connotation of the end user losing their power.  
+To us, the ideas espoused by so-called immutable distributions mean increased stability through separating the stable core from the programs added by the user. The existence of Universal Blue proves that that stable core is not unchangeable. 
+
+Universal Blue is not really even a distribution, it's more a community seeking to augment Fedora Silverblue and it's peers,and giving you the tools to do it too.
+
 ## Why are you making another distro?
 
 This isn't a distribution, you can always rebase back to Fedora without reinstalling.

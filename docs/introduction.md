@@ -2,14 +2,6 @@
 
 Image-based in the context of Linux distributions means that the operating system is packaged as a sort of image and everything added by the user is considered a separate layer. In image-based distributions the root filesystem is mounted as read-only while the OS is booted. This means that all the changes to the base system are only applied after a reboot. Fedora uses [`ostree`](https://ostreedev.github.io/ostree/) (like git for the filesystem) for its atomic filesystem updates and [`rpm-ostree`](https://docs.fedoraproject.org/en-US/fedora/latest/system-administrators-guide/package-management/rpm-ostree/) (specialized equivalent of Fedora's `dnf`) for the image and package management system.
 
-## Isn't this just another immutable Linux distribution?
-
-Fedora Silverblue, Kinoite, Sericea, and many other projects are all often called immutable Linux distributions.
-We think that it is a misleading term with the connotation of the end user losing their power.  
-To us, the ideas espoused by so-called immutable distributions mean increased stability through separating the stable core from the programs added by the user. The existence of Universal Blue proves that that stable core is not unchangeable. 
-
-Universal Blue is not really even a distribution, it's more a community seeking to augment Fedora Silverblue and it's peers,and giving you the tools to do it too.
-
 ## What does uBlue do?
 
 Universal Blue uses ["OSTree Native Containers"](https://fedoraproject.org/wiki/Changes/OstreeNativeContainerStable) which enables "rebasing" (changing out the base system while keeping user data) the operating system to an [OCI](https://opencontainers.org/) container image (same thing as Docker container images).  
