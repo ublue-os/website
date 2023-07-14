@@ -1,6 +1,6 @@
-# uBlue Website
+# Universal Blue Website
 
-This is the MkDocs repository that hosts the website for [ublue.it](https://ublue.it).
+This is the MkDocs repository that hosts the website for [Universal Blue]([https://ublue.it](https://universal-blue.org)).
 
 ## Developing
 
