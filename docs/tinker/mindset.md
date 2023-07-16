@@ -15,5 +15,3 @@ Also remember that these systems are atomic, you don't need to manually clean up
 When making the image, you cannot do things that require a booted system, like creating user accounts and groups or writing to `/var/` where the user's files are stored. Instead, you should write to system directories like `/usr/bin/` and `/usr/etc/`, the proper place for default system configuration that is applied to the `/etc/` directory when the image is booted.
 
 Some RPM packages might have issues because they try to create users or user groups, or write to the `/opt/` directory. The easiest workaround in these cases is to manually layer them on the booted image.
-
-[Next up: Set up your repository](/tinker/2-setup/){ .md-button }

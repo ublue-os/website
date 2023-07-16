@@ -56,5 +56,3 @@ This part is important, as users must have a method of verifying the image. The 
 Change the image `name:` in [the recipe](https://github.com/ublue-os/startingpoint/blob/template/recipe.yml). This is what your image will be called when it's uploaded to your container repository. Your image should start building once the change is committed and pushed.
 
 It is also recommended to change references of `ublue-os/startingpoint` in the `README.md` to your username and image name, change the main title to your images name, and add a short description like "This is my personal image based on Vauxite".
-
-[Next up: Modification](/tinker/modification/){ .md-button }

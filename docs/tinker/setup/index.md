@@ -8,5 +8,3 @@ There are two ways to do this step automatically, with a command line program an
 [Automatic setup using a web interface](/tinker/2-setup/auto-web/){ .md-button }
 
 We also supply manual instructions for setting up the repository. They require a bit more familiarity with the command line and reading comprehension, but it's not too hard to do.
-
-[Manual setup](/tinker/2-setup/manual/){ .md-button }

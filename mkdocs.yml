@@ -124,15 +124,15 @@ nav:
           - Proposals: https://github.com/orgs/ublue-os/discussions?discussions_q=is%3Aopen+label%3Aproposal
           - Roadmap: https://github.com/orgs/ublue-os/projects/1
       - Tinkerer's Guide:
-          - 0. Introduction: tinker/0-make-your-own.md
-          - 1. Mindset: tinker/1-mindset.md
+          - 0. Introduction: tinker/make-your-own.md
+          - 1. Mindset: tinker/mindset.md
           - 2. Setup:
-            - tinker/2-setup/index.md
-            - Automatic setup (cli): tinker/2-setup/auto-cli.md
-            - Automatic setup (web): tinker/2-setup/auto-web.md
-            - Manual setup: tinker/2-setup/manual.md
-          - 3. Modification: tinker/3-modification.md
-          - 4. Community: tinker/4-community.md
+            - tinker/setup/index.md
+            - Automatic setup (cli): tinker/setup/auto-cli.md
+            - Automatic setup (web): tinker/setup/auto-web.md
+            - Manual setup: tinker/setup/manual.md
+          - 3. Modification: tinker/modification.md
+          - 4. Community: tinker/community.md
   - FAQ: faq.md
   - Media: media.md
   - Blog:
