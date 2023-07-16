@@ -99,6 +99,7 @@ nav:
       - Full Image List: images.md
       - Main Images: images/main.md
       - Nvidia Images: images/nvidia.md
+      - Bazzite: images/bazzite.md
       - Bluefin: images/bluefin.md
       - Toolboxes: toolboxes.md
   - Community:
