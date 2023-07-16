@@ -45,5 +45,3 @@ Note that the `create-ublue-image` sets up the "origin" remote to use HTTPS URLs
 ```
 git remote set-url origin git@github.com:UserName/RepoName.git
 ```
-
-[Next up: Modification](/tinker/modification/){ .md-button }
