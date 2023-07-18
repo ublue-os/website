@@ -104,6 +104,7 @@ nav:
       - Toolboxes: toolboxes.md
   - Community:
       - Code of Conduct: CODE_OF_CONDUCT.md
+      - Contributor Metrics: contributors.md
       - Discord Chat: https://discord.gg/WEu6BdFEtp
       - Discussion Forums: https://github.com/orgs/ublue-os/discussions
       - Mission: mission.md
