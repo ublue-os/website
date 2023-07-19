@@ -1,6 +1,8 @@
 # [`just`](https://just.systems)
 
-`just` is a task runner similar to make, but designed to run project-specific commands, it's not a build system. This allows us to ship common aliases and scripts through one unified command. It can run scripts, accept command line arguments, and generally serve as a common tool for us to ship "custom commands" to users via a common framework. All Universal Blue images include `just` and `justfiles` with quality-of-life commands and other convenient shortcuts that have been submitted by the community.
+`just` is a task runner similar to make, but designed to run project-specific commands, it's not a build system. This allows us to ship common aliases and scripts through one unified command. It can run scripts, accept command line arguments, and gives us the flexibility to ship shared aliases. In Universal Blue we use `just` to have a set of community maintained aliases because that's a really great cloud-native pattern that we can apply to the desktop. 
+
+All Universal Blue images include `just` and `justfiles` with quality-of-life commands and other convenient shortcuts that have been submitted by the community. Contributions accepted! 
 
 ## Example Commands
 
