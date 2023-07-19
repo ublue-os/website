@@ -14,7 +14,7 @@ This list is in alphabetical order.
 
         rpm-ostree ostree-unverified-registry:docker://ghcr.io/ublue-os/silverblue-main
    
-4. Then reboot, next rebase to a signed image of your choice below: 
+3. Then reboot, next rebase to a signed image of your choice below: 
 
 ## Image List
 
