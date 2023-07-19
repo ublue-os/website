@@ -9,11 +9,12 @@ This list is in alphabetical order.
 
 ## Preparing to Rebase
 
-1. `rpm-ostree reset` will remove all your layered packages and prepare for rebasing/
-2. Import the [Universal Blue policy.json](https://raw.githubusercontent.com/ublue-os/config/main/files/usr/etc/containers/policy.json):
-   
-       sudo curl -L https://github.com/ublue-os/config/raw/main/files/usr/etc/containers/policy.json -o /etc/containers/policy.json`
+1. `rpm-ostree reset` will remove all your layered packages and prepare for rebasing. 
+2. Rebase to an *unsigned* Universal Blue image:
 
+        rpm-ostree ostree-unverified-registry:docker://ghcr.io/ublue-os/silverblue-main
+   
+4. Then reboot, next rebase to your image of choice below: 
 
 ## Image List
 
