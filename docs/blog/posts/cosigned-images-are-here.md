@@ -1,5 +1,5 @@
 ---
-date: 2023-07-18
+date: 2023-07-19
 comments: true
 authors: 
   - castrojo
@@ -39,6 +39,10 @@ Thanks to the [upstream efforts in rpm-ostree](https://github.com/coreos/rpm-ost
 And then reboot.
 
 Check the [images](/images) page for updated rebase commands for your system. You'll now be on a signed image and be good to go, `rpm-ostree` and `skopeo` will handle the rest.
+
+## Upgrading from stock Fedora
+
+The policies in stock Fedora don't support migrating to a signed Universal Blue image directly. For now we're recommending to [rebase to an unsigned image first](https://universal-blue.org/images/#preparing-to-rebase) to get the right policies and keys in place, and then rebasing using the `ostree-image-signed:docker://` snippet. If you have any ideas on how to make this smoother feel free to open a PR or file an issue!
 
 # Conclusion and Thanks!
 
