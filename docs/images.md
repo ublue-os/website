@@ -12,7 +12,7 @@ This list is in alphabetical order.
 1. `rpm-ostree reset` will remove all your layered packages and prepare for rebasing. 
 2. Rebase to an *unsigned* Universal Blue image, this will ensure that you have the proper keys and policies on your machine:
 
-        rpm-ostree ostree-unverified-registry:ghcr.io/ublue-os/silverblue-main
+        rpm-ostree rebase ostree-unverified-registry:ghcr.io/ublue-os/silverblue-main
    
 3. Then reboot, next rebase to a signed image of your choice below: 
 
