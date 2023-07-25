@@ -56,5 +56,5 @@ sudo rpm-ostree install micro neovim helix
 
 To apply the staged new staged image that includes your packages, reboot your computer. 
 
-There is no search functionality in `rpm-ostree`, but you can use a general package search website such as [pkgs.org](https://pkgs.org/) or [Repology](https://repology.org/).
+There is no search functionality in `rpm-ostree`, but you can use a general package search website such as [Repology](https://repology.org/).
 There is also no command to enable [copr](https://copr.fedorainfracloud.org/) or other repositories in `rpm-ostree`, but you can add the repo files manually to `/etc/yum.repos.d/`
