@@ -12,4 +12,5 @@ jobs:
       - name: Link Checker
         uses: lycheeverse/lychee-action@v1.8.0
         with:
+          args: --exclude-all-private 
           fail: true
