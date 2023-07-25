@@ -17,6 +17,7 @@ This list is in alphabetical order.
 🚨IMAGE_NAME_HERE🚨 examples are `kinoite-main`, `silverblue-main`, `bazzite`, `bluefin-dx`, and so on. Yes, we know this command is ridiculous. 
 
 - NVidia users should check [the NVIDIA README](https://universal-blue.org/images/nvidia/) for important instructions to set up kernel parameters.
+- After your system is on a Universal Blue image it will have the proper signing keys, so you do not need to run that command again. Thank goodness! You can just use the commands provided below. Go get some!
    
 ## Image List
 
