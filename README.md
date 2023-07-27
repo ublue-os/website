@@ -1,6 +1,6 @@
 # Universal Blue Website
 
-This is the MkDocs repository that hosts the website for [Universal Blue]([https://ublue.it](https://universal-blue.org)).
+This is the MkDocs repository that hosts the website for [Universal Blue](https://universal-blue.org).
 
 ## Developing
 
@@ -8,7 +8,7 @@ You will need [Python version 3.10 or higher](https://www.python.org/downloads/)
 
 1. Setup project dependencies `poetry install`
 2. Run the local development server `poetry run mkdocs serve`
-3. Open a browser to [localhost:8000](http://localhost:8000). This will auto-reload on file changes
+3. Open a browser to `localhost:8000`. This will auto-reload on file changes
 
 If you have access to mkdocs-material-insiders, run the following to install it:
 
