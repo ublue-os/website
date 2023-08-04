@@ -6,13 +6,6 @@ This doc outlines the various responsibilities of contributor roles in Universal
 
 This document is derived from [Kubernetes](https://github.com/kubernetes/community/blob/master/community-membership.md). 
 
-| Role | Responsibilities | Requirements |
-| -----| ---------------- | ------------ |
-| Member | Active contributor in the community | Sponsored by 2 reviewers and multiple contributions |
-| Reviewer | Review contributions from other members | History of review and authorship | 
-| Approver | | Highly experienced active reviewer and contributor |
-| Owner | | Demonstrated responsibility and excellent technical judgement |
-
 ## New contributors
 
 New contributors should be welcomed to the community by existing members,
