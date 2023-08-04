@@ -125,7 +125,7 @@ they are not expected to be actively contributing forever.
 
 However, being a member of one of the Universal Blue GitHub organizations comes with
 an elevated set of permissions. These capabilities should not be used by those
-that are not familiar with the current state of the Kubernetes project.
+that are not familiar with the current state of the project.
 
 Therefore members with an extended period away from the project with no activity
 will be removed from the Universal Blue GitHub Organizations and will be required to
