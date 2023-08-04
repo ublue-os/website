@@ -11,6 +11,13 @@
 
 ## Videos
 
+**Alphabits**
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/er65_6F3zJk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<br/>
+<br/>
+
 **The Linux Cast**
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pSBuCFMUEdA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
