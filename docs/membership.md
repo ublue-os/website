@@ -16,7 +16,16 @@ This informal level is designed for drive-by contributors or those who might be
 interested in participating in open source and using this project to learn how.
 
 We encourage anyone to participate, and for those who wish to earn more responsibilities 
-and begin their open source journey with us ... apply within. Vegeta tests us all. 
+and begin their open source journey with us ... apply within. Vegeta tests us all.
+
+## Fellow Guardians
+
+Since Universal Blue is meant to be a toolkit, we strive to generate fun experiments. 
+Our example for this our collaboration with Cassidy James Blaede on GNOME Beyond, where
+Cassidy is given direct Approver role of that repository along with our maintainers. 
+
+We hope to continue this trend, in the hopes that it spreads the cloud native desktop pattern
+to as many projects that want to take advantage of it. 
 
 ## Members and Approvers
 
