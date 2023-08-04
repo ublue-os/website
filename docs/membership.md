@@ -151,15 +151,15 @@ After an extended period away from the project with no activity
 those members would need to re-familiarize themselves with the current state
 before being able to contribute effectively.
 
-
 ## Owner
 
-Jorge Castro (@castrojo) and Marco Ceppi (@ceppimarco) are in the owner group for a few reasons.
+Jorge Castro (@castrojo) and Marco Ceppi (@ceppimarco) are in the owner group for a few reasons:
 
 - Administrative things like billing info, and later on taxes and stuff.
 - Distributed ownership is hard thing for a small open source project
-  - Therefor are codified as as adminstrative owners
+  - Therefore are codified as as adminstrative owners, not a community leadership group
   - Are just Approvers that get stuck with the cloud bill
 
+Defined by: Inclusion in the Owners team in the Universal Blue GitHub organization
 
 [contributor guide]: /contributors/guide/README.md
