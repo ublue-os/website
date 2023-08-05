@@ -2,20 +2,22 @@
 
 Dedicated developer image with bundled tools. It endevaours to be the world's most powerful cloud native developer environment. :) It includes everything in the base image plus the following tools:
 
-# Visual Studio Code
+## Visual Studio Code
 
 [Visual Studio Code](https://code.visualstudio.com/) is included on the image to facilitate local development. 
 
 ## Devpod 
 
 [DevPod](https://devpod.sh/docs/what-is-devpod) is included to provide infrastructure-independent and client-only reproducible developer environments, powered by [devcontainers](https://containers.dev/)
-    - Follow [Quickstart VS Code](https://devpod.sh/docs/getting-started/quickstart-vscode) to set up your envitronment.
+ 
+- Follow [Quickstart VS Code](https://devpod.sh/docs/getting-started/quickstart-vscode) to set up your envitronment.
   
 ## Devbox
 
 Nix-powered Development Experience powered by [Devbox](https://www.jetpack.io/devbox) and [Fleek](https://getfleek.dev)
-      - `just nix-devbox` to get started
-      - `just nix-devbox-global` to install a global profile
+
+- `just nix-devbox` to get started
+- `just nix-devbox-global` to install a global profile
 
 ## Containerized Development with Distrobox
 
