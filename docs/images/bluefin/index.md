@@ -118,7 +118,7 @@ The authors recommend the following extensions if you'd like to round out your e
 
 > What about codecs?
 
-Everything you need is included. You will need to [configure Firefox for hardware acceleration](https://ublue.it/codecs/)
+Everything you need is included. You will need to [configure Firefox for hardware acceleration](/guide/codecs/)
 
 > How do I get my GNOME back to normal Fedora defaults?
 
