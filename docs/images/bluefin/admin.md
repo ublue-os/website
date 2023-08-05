@@ -1,8 +1,48 @@
 # Bluefin Administration
 
-## Management (Todo)
+## Day to Day Operation
 
-Bluefin includes Cockpit for machine management. We're hoping to include more out of the box management templates, please file an issue if you're interested in helping complete this feature
+### System Updates
+
+Bluefin is designed to be "hands off", System updates apply once a day and Flatpaks update twice a day in the background. 
+
+See [configuration of updates](/faq/#how-do-i-configure-automatic-updates) if you want to change the default behavior. 
+
+Machine firmware updates are provided through the standard Software Center (see below)
+
+## Installing Applications
+
+Use the GNOME Software Center to [install applications from Flathub](https://flathub.org/):
+
+Unlike stock Fedora System updates and upgrades are not handled by this application, it's scope has been reduced to only install Flatpaks from Flathub.
+
+## Upgrades and Throttle Settings
+
+!!! Info "This feature is incomplete"
+
+Bluefin is available with two throttle settings. 
+
+The latest stable release of Fedora is always tagged `latest`. The still-supported but older release is labelled as `gts`, which is slang for "Grand Touring Series`, for those who wish to enjoy the ride from a slower cadence. It is the default Bluefin experience starting with Fedora 39. 
+
+Explicit version tags of the Fedora release are available for users who wish to manually handle their upgrade cycle:
+
+To lock to Fedora 39
+
+     sudo rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bluefin:39
+
+To always be on the latest stable release:
+
+     sudo rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bluefin:latest
+
+Additionally rebasing to a specific date tag is encouraged if you need to "pin" to a specific day or version:
+
+    sudo rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bluefin:38-20231101
+
+Check the [Fedora Silverblue User Guide](https://docs.fedoraproject.org/en-US/fedora-silverblue/) for more information. 
+
+## Remote Management (Todo)
+
+Bluefin includes Cockpit for machine management. We're hoping to include more out of the box management templates, please file an issue if you're interested in helping complete this feature.
 
 ## Verification
 

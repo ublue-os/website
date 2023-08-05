@@ -1,6 +1,4 @@
-## Framework Images
-
-Bluefin is available as an image for the Framework 13 laptop that comes preconfigured with tlp and the [recommended power settings](https://github.com/ublue-os/bluefin/blob/main/framework/etc/tlp.d/50-framework.conf) from the [Framework Knowledge Base](https://knowledgebase.frame.work/en_us/optimizing-fedora-battery-life-r1baXZh)
+Bluefin is available as an image for the Framework 13 laptop that comes preconfigured with tlp and the [recommended power settings](https://github.com/ublue-os/bluefin/blob/main/framework/etc/tlp.d/50-framework.conf) from the [Framework Knowledge Base](https://knowledgebase.frame.work/en_us/optimizing-fedora-battery-life-r1baXZh).
 
 Note that the default image works fine on the Framework 13, this image provides tweaks and further improvements. Additionally if you have power profiles that you think would be useful for the community please send a pull request! 
 
@@ -20,3 +18,7 @@ Note that the default image works fine on the Framework 13, this image provides 
        just framework-13
 
 Then reboot one more time and you're done!
+
+## Support for various other Framework laptops
+
+The initial release supports the 13th generation Intel Framework 13. It is entirely possible for machine-specific tweaks as part of the image. [Contributions are welcome](/CONTRIBUTING) if you want to enable a specific model. 
