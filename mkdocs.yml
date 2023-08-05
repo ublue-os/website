@@ -100,7 +100,11 @@ nav:
       - Main Images: images/main.md
       - Nvidia Images: images/nvidia.md
       - Bazzite: images/bazzite.md
-      - Bluefin: images/bluefin.md
+      - Bluefin: 
+          - Introduction: images/bluefin/index.md
+          - Developer Experience: images/bluefin/developer-experience.md
+          - Administrator's Guide: images/bluefin/admin.md
+          - Framework: images/bluefin/framework.md
       - Toolboxes: toolboxes.md
   - Community:
       - Code of Conduct: CODE_OF_CONDUCT.md
