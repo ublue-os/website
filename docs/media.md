@@ -8,6 +8,10 @@
 { .card }
 </div>
 
+<div class="grid" markdown>
+**Open at Intel**:   [Open Source: The Nerd Version of Formula One](https://openatintel.podbean.com/e/open-source-the-nerd-version-of-formula-one/)
+{ .card }
+</div>
 
 ## Videos
 
