@@ -53,7 +53,7 @@ Bluefin includes a NGC container that includes the latest [stable PyTorch from N
 ## Pre-requisites
 
 You must already be using `bluefin-dx-nvidia` as its meant for those GPUs and has nvidia container toolkit support. Try running              
-    ´´´nvidia-smi´´´ 
+    nvidia-smi
 
 in a regular `distrobox create --nvidia -i ubuntu` to check that all works fine if you want to test before downloading the large nvidia container. To create the box use the following command. Note that this container is large (20+ GB!):
 
