@@ -29,7 +29,7 @@ Open Source succeeds best whene contributors come together to solve a problem. T
 
 We want to allow Linux users to share this knowledge and expertise with each other to fulfill the true potential of the Framework. We'll [use science](https://www.youtube.com/watch?v=BABM3EUo990) and the wonders of modern automation to accomplish this!
 
-And lastly, right now `-framework` is a one-off done for Bluefin. It is entirely feasible for Universal Blue to adopt this across all the base images, but we'd need some help, devops ninjas, inquire within.
+And lastly, right now `-framework` is a one-off created for Bluefin. It is entirely feasible for Universal Blue to adopt this across all the base images, but we'd need some help, devops ninjas, inquire within.
 
 - [Thread on the Framework forums](https://community.frame.work/t/custom-fedora-oci-images-for-framework-laptops/34253/10) - general feedback welcome here, the co-creator of Bluefin dogfoods this image on a 13th gen Framework 13. Yes, it is glorious. 
 - [Contributions welcome!](https://github.com/ublue-os/bluefin)
