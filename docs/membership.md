@@ -34,6 +34,10 @@ principles in this document, familiarity with project organization, roles,
 policies, procedures, conventions, etc., and technical and/or writing ability.
 Role-specific expectations, responsibilities, and requirements are enumerated
 below.
+
+### Needs of the Project
+
+In places where the project has a strong need for expertise in an area that lacks contributors, Approvers may make exceptions to grant elevated review permissions to underserved areas of the project. This is determined by lazy concensus of at least three Approvers.  
  
 ### Member
 
