@@ -1,10 +1,12 @@
 Bluefin is available as an image for the Framework 13 laptop that comes preconfigured with tlp and the [recommended power settings](https://github.com/ublue-os/bluefin/blob/main/framework/etc/tlp.d/50-framework.conf) from the [Framework Knowledge Base](https://knowledgebase.frame.work/en_us/optimizing-fedora-battery-life-r1baXZh).
 
-Note that the default image works fine on the Framework 13, this image provides tweaks and further improvements. Additionally if you have power profiles that you think would be useful for the community please send a pull request! 
+Follow the [installation instructions](/installation) - `bluefin-framework` and `bluefin-dx-framework` are available in the boot options in the installer. 
+
+Note that the default image works fine on the Framework 13, this image provides tweaks and further improvements. 
 
 ## Changes
 
-Implements the changes from Framework's [Optimizing Fedora Battery Life](https://knowledgebase.frame.work/en_us/optimizing-fedora-battery-life-r1baXZh) knowledgebase article:
+Like all Universal Blue images, hardware acceleration and codecs are [included out of the box](/guide/codecs) and the system strives for a zero-maintenance based approach.
 
 - Replaces `power-profiles-daemon` with `tlp`
 - Ships the [recommended power profile](https://github.com/ublue-os/bluefin/blob/main/framework/etc/tlp.d/50-framework.conf) for `tlp`
@@ -27,9 +29,24 @@ Open Source succeeds best whene contributors come together to solve a problem. T
 
 We want to allow Linux users to share this knowledge and expertise with each other to fulfill the true potential of the Framework. We'll [use science](https://www.youtube.com/watch?v=BABM3EUo990) and the wonders of modern automation to accomplish this!
 
-[Contributions welcome!](https://github.com/ublue-os/bluefin) 
+And lastly, right now `-framework` is a one-off created for Bluefin. It is entirely feasible for Universal Blue to adopt this across all the base images, but we'd need some help, devops ninjas, inquire within.
+
+- [Thread on the Framework forums](https://community.frame.work/t/custom-fedora-oci-images-for-framework-laptops/34253/10) - general feedback welcome here, the co-creator of Bluefin dogfoods this image on a 13th gen Framework 13. Yes, it is glorious. 
+- [Contributions welcome!](https://github.com/ublue-os/bluefin)
 
 ## Instructions
+
+### Fresh installs
+
+1. Run this command to set the right kernel arguments for the brightness keys to work:
+  
+        just framework-13
+
+and then reboot one more time! We strive to make that the last piece of operating system maintenance you'll have to do for the life of the machine. 
+
+### Rebasing from another image.
+
+If you're rebasing from another image follow these instructions!
 
 1. Rebase to the -framework image: 
 
