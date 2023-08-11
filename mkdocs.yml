@@ -2,7 +2,7 @@ site_name: Universal Blue
 repo_name: ublue-os/main
 repo_url: https://github.com/ublue-os/main
 site_description: Custom Operating System images based on Fedora
-site_url: https://ublue.it
+site_url: https://universal-blue.org
 theme:
   name: material
   custom_dir: overrides
@@ -73,7 +73,7 @@ extra:
     - icon: fontawesome/brands/mastodon
       link: https://hachyderm.io/@jorge
     - icon: fontawesome/solid/rss
-      link: https://ublue.it/feed_rss_updated.xml
+      link: https://universal-blue.org/feed_rss_updated.xml
 plugins:
   search: {}
   external-markdown: {}
