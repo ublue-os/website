@@ -6,7 +6,7 @@ All Universal Blue images include `just` and `justfiles` with quality-of-life co
 
 ## Example Commands
 
-Typing `just` in the command line will show possible commands. Here are some common commands included in the Universal Blue images:
+Typing `just` in the command line will show possible commands and descriptions. Here are some common commands included in the Universal Blue images:
 
 - `just bios` - boot into UEFI/bios. Useful for multiple boot systems
 - `just changelogs` - show a changelog between the running system and the latest updates
