@@ -6,6 +6,10 @@ Dedicated developer image with bundled tools. It endevaours to be the world's mo
 
 [Visual Studio Code](https://code.visualstudio.com/) is included on the image to facilitate local development. 
 
+## JetBrains 
+
+`just jetbrains-toolbox` will fetch and install the [JetBrains Toolbox](https://www.jetbrains.com/toolbox-app) application, which will manage the installation of the JetBrains set of tools. This application will handle installation, removal, and upgrade of the JetBrains products, and is handled completely in your home directory, independent of the operating system image.
+
 ## Devpod 
 
 [DevPod](https://devpod.sh/docs/what-is-devpod) is included to provide infrastructure-independent and client-only reproducible developer environments, powered by [devcontainers](https://containers.dev/)
