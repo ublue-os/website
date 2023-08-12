@@ -8,13 +8,16 @@ Bluefin is designed to be "hands off", System updates apply once a day and Flatp
 
 See [configuration of updates](/faq/#how-do-i-configure-automatic-updates) if you want to change the default behavior. 
 
-Machine firmware updates are provided through the standard Software Center (see below)
+Machine firmware updates are provided through the standard Software Center:
+
+![Firmware updates](https://github.com/ublue-os/website/assets/1264109/b6706ae4-d519-4508-b350-defce27aa8e4)
 
 ## Installing Applications
 
-Use the GNOME Software Center to [install applications from Flathub](https://flathub.org/):
+Use the GNOME Software Center to [install applications from Flathub](https://flathub.org/). Unlike stock Fedora, system updates and upgrades are not handled by this application, it's scope has been reduced to only install Flatpaks from Flathub.
 
-Unlike stock Fedora System updates and upgrades are not handled by this application, it's scope has been reduced to only install Flatpaks from Flathub.
+![GNOME Software Center](https://github.com/ublue-os/website/assets/1264109/86e06ae4-0aec-46ef-9709-936c3e938f70)
+
 
 ## Upgrades and Throttle Settings
 
@@ -40,9 +43,11 @@ Additionally rebasing to a specific date tag is encouraged if you need to "pin" 
 
 Check the [Fedora Silverblue User Guide](https://docs.fedoraproject.org/en-US/fedora-silverblue/) for more information. 
 
-## Remote Management (Todo)
+## Remote Management
 
-Bluefin includes Cockpit for machine management. We're hoping to include more out of the box management templates, please file an issue if you're interested in helping complete this feature.
+!!! Info "This feature is incomplete"
+
+Bluefin includes Cockpit for machine management. We're hoping to include more out of the box management templates, please [check this issue](https://github.com/ublue-os/bluefin/issues/271) if you're interested in volunteering. 
 
 ## Verification
 
