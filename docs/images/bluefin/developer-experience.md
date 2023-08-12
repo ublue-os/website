@@ -1,6 +1,11 @@
 # bluefin-dx - The Bluefin Developer Experience
 
-Dedicated developer image with bundled tools. It endevaours to be the world's most powerful cloud native developer environment. :) It includes everything in the base image plus the following tools:
+Blufin Developer Experience (`bluefin-dx`) is a dedicated developer image with bundled tools. 
+It is designed to meet the following use cases: 
+
+- Endevaours to be the world's most powerful [cloud native developer environment](https://landscape.cncf.io/)
+- Full virtualization support
+- Provide fleet management of Bluefin and other Linux systems via [Cockpit](https://cockpit-project.org/) (Incomplete)
 
 ## Visual Studio Code
 
