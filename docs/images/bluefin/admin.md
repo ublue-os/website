@@ -4,7 +4,7 @@
 
 ### System Updates
 
-Bluefin is designed to be "hands off", System updates apply once a day and Flatpaks update twice a day in the background. 
+Bluefin is designed to be "hands off". System updates apply once a day and Flatpaks update twice a day [in the background](https://github.com/ublue-os/config/tree/main/files/usr/lib/systemd). Updates are applied when the system reboots, therefore it is recommended to just regularly power off your device when it's not being used to ensure kernel updates are being applied. Application updates (like the browser) happen independently of this and don't require a reboot.
 
 See [configuration of updates](/faq/#how-do-i-configure-automatic-updates) if you want to change the default behavior. 
 
