@@ -1,7 +1,17 @@
 # bluefin-dx - The Bluefin Developer Experience
 
-Dedicated developer image with bundled tools. It endevaours to be the world's most powerful cloud native developer environment. :) It includes everything in the base image plus the following tools:
+Dedicated developer image with bundled tools. It endevaours to be the world's most powerful cloud native developer environment. :) It includes everything in the base image plus a curated set of developer tools and convenience shortcuts..
 
+## Instructions
+
+You can rebase to `bluefin-dx` manually by using the commands on the [image page](/images), however there are convenience shortcuts that allow you to freely switch a machine back and forth:
+
+- `just devmode-on` will switch a `bluefin` image to a `bluefin-dx` image 
+- `just devmode-off` will switch a `bluefin-dx` image back to stock `bluefin`
+
+Like all Universal Blue images, switching is atomic, allowing for clean switching between modes depending on the use case.
+
+# Features
 ## Visual Studio Code
 
 [Visual Studio Code](https://code.visualstudio.com/) is included on the image to facilitate local development. 
@@ -52,9 +62,7 @@ Bluefin includes a NGC container that includes the latest [stable PyTorch from N
 
 ## Pre-requisites
 
-You must already be using `bluefin-dx-nvidia` as its meant for those GPUs and has nvidia container toolkit support. Try running              
-    nvidia-smi
-
+You must already be using `bluefin-dx-nvidia` as its meant for those GPUs and has nvidia container toolkit support. Run `nvidia-smi` 
 in a regular `distrobox create --nvidia -i ubuntu` to check that all works fine if you want to test before downloading the large nvidia container. To create the box use the following command. Note that this container is large (20+ GB!):
 
     just distrobox-mlbox
