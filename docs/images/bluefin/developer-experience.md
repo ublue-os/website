@@ -53,7 +53,7 @@ Nix-powered Development Experience powered by [Devbox](https://www.jetpack.io/de
 
 ## Homebrew
 
-`just brew` will install homebrew, and `just brew-shell` will set it up for you. For your Mac enthusiasts out there, remember, we're on this stupidly long journey to get you back, so we know you need this. 
+`just brew` will install homebrew, and `just brew-shell` will set it up for you. For you Mac enthusiasts out there, remember, we're on this stupidly long journey to get you back, so we know you need this. 
 
 # Kubernetes and other Cloud Native Tooling
 
