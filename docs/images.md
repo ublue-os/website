@@ -15,7 +15,7 @@ This list is in alphabetical order.
 
 !!! warning
 
-    You only need to run this command once, if you want to rebase skip this entirely and use the commands in the image list section!
+    You only need to run this command once, after you are on a Universal Blue image you will have our signing key. If you want to rebase to another image afterwards you can skip this step entirely!
 
         podman pull ghcr.io/ublue-os/config && rpm-ostree install --assumeyes --apply-live --force-replacefiles $(find ~/.local/share/containers -name ublue-os-signing.noarch.rpm 2>/dev/null) && rpm-ostree rebase --uninstall $(rpm -q ublue-os-signing-* --queryformat '%{NAME}-%{VERSION}-%{RELEASE}.%{Arch}') ostree-image-signed:docker://ghcr.io/ublue-os/🚨IMAGE_NAME_HERE🚨:latest
 
