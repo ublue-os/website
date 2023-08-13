@@ -51,6 +51,10 @@ Nix-powered Development Experience powered by [Devbox](https://www.jetpack.io/de
     - GNOME Terminal
       - `Ctrl`-`Alt`-`t` - will launch a host-level GNOME Terminal if you need to do host-level things in Fedora (you shouldn't need to do much).   
 
+## Homebrew
+
+`just brew` will install homebrew, and `just brew-shell` will set it up for you. For your Mac enthusiasts out there, remember, we're on this stupidly long journey to get you back, so we know you need this. 
+
 # Kubernetes and other Cloud Native Tooling
 
 - [kind](https://kind.sigs.k8s.io/) - Run a Kubernetes cluster on your machine. Do a `kind create cluster` on the host to get started!
