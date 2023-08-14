@@ -65,7 +65,6 @@ Nix-powered Development Experience powered by [Devbox](https://www.jetpack.io/de
 
 - [virt-manager](https://virt-manager.org/) and associated tooling
 - Podman and Docker extras
-  - Automatically aliases the `docker` command to `podman`
   - podman.socket on by default so existing tools expecting a Docker socket work out of the box
 - [LXC](https://linuxcontainers.org/) and [LXD](https://ubuntu.com/lxd) provide system containers
 
