@@ -43,7 +43,7 @@ These images reflect a more [cloud-native](https://en.wikipedia.org/wiki/Cloud-n
 
 > A toplevel goal is that every tool and technique a Linux system administrator knows around how to build, inspect, mirror and manage application containers also applies to bootable host systems.
 
-We like the sound of that, and we're hoping to be your "Desktop DevOps team", and if you want to learn how to really up your Linux game, come hang out. We're hear to teach and learn from each other. 
+We like the sound of that, and we're hoping to be your "Desktop DevOps team", and if you want to learn, come hang out. We are here to teach and learn from each other. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vZ1LRe_foJY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
 
