@@ -41,6 +41,6 @@ In short, Wayland and X11 (also known as Xorg or the X Window System) are window
 * Wayland is the default for most of the images and the recommended option for Bazzite.  However, the Nvidia images default to X11
 * X11 is a legacy windowing system.  While we recommend to stick with Wayland, there may be scenarios where X11 would have to be used.  Nvidia GPUs may have issues with Wayland.
 
-## What about Weston?
+## Waydroid
 
-This is for using [Waydroid](https://waydro.id/) under X11.  You do not need to use this if you use Wayland, and the only intended use case for it is running Android applications if you have to use X11.
+If you wish to use Waydroid, a setup guide can be found [here](waydroid.md).
