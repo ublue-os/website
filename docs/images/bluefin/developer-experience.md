@@ -1,10 +1,29 @@
 # bluefin-dx - The Bluefin Developer Experience
 
-Dedicated developer image with bundled tools. It endevaours to be the world's most powerful cloud native developer environment. :) It includes everything in the base image plus the following tools:
+Blufin Developer Experience (`bluefin-dx`) is a dedicated developer image with bundled tools. 
+It is designed to meet the following use cases: 
 
+- Endeavors to be the world's most powerful [cloud native developer environment](https://landscape.cncf.io/)
+- Full virtualization support
+- Provide fleet management of Bluefin and other Linux systems via [Cockpit](https://cockpit-project.org/) (Incomplete)
+
+## Instructions
+
+You can rebase to `bluefin-dx` manually by using the commands on the [image page](/images), however there are convenience shortcuts that allow you to freely switch a machine back and forth:
+
+- `just devmode-on` will switch a `bluefin` image to a `bluefin-dx` image 
+- `just devmode-off` will switch a `bluefin-dx` image back to stock `bluefin`
+
+Like all Universal Blue images, switching is atomic, allowing for clean switching between modes depending on the use case.
+
+# Features
 ## Visual Studio Code
 
 [Visual Studio Code](https://code.visualstudio.com/) is included on the image to facilitate local development. 
+
+## JetBrains 
+
+`just jetbrains-toolbox` will fetch and install the [JetBrains Toolbox](https://www.jetbrains.com/toolbox-app) application, which will manage the installation of the JetBrains set of tools. This application will handle installation, removal, and upgrade of the JetBrains products, and is handled completely in your home directory, independent of the operating system image.
 
 ## Devpod 
 
@@ -32,6 +51,10 @@ Nix-powered Development Experience powered by [Devbox](https://www.jetpack.io/de
     - GNOME Terminal
       - `Ctrl`-`Alt`-`t` - will launch a host-level GNOME Terminal if you need to do host-level things in Fedora (you shouldn't need to do much).   
 
+## Homebrew
+
+`just brew` will install homebrew, and `just brew-shell` will set it up for you. For your Mac enthusiasts out there, remember, we're on this stupidly long journey to get you back, so we know you need this. 
+
 # Kubernetes and other Cloud Native Tooling
 
 - [kind](https://kind.sigs.k8s.io/) - Run a Kubernetes cluster on your machine. Do a `kind create cluster` on the host to get started!
@@ -42,9 +65,41 @@ Nix-powered Development Experience powered by [Devbox](https://www.jetpack.io/de
 
 - [virt-manager](https://virt-manager.org/) and associated tooling
 - Podman and Docker extras
-  - Automatically aliases the `docker` command to `podman`
   - podman.socket on by default so existing tools expecting a Docker socket work out of the box
 - [LXC](https://linuxcontainers.org/) and [LXD](https://ubuntu.com/lxd) provide system containers
+
+# Machine Learning
+
+Bluefin includes a NGC container that includes the latest [stable PyTorch from Nvidia](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/pytorch) on top of Ubuntu LTS. It includes python3, pip3 , pandas, matplotlib, and scikit-learn. The additional pip packages are commonly used ones but not comprehensive. Only pip is used and mamba or conda were not tested yet.
+
+## Pre-requisites
+
+You must already be using `bluefin-dx-nvidia` as its meant for those GPUs and has nvidia container toolkit support. Run `nvidia-smi` 
+in a regular `distrobox create --nvidia -i ubuntu` to check that all works fine if you want to test before downloading the large nvidia container. To create the box use the following command. Note that this container is large (20+ GB!):
+
+    just distrobox-mlbox
+
+To enter the working environment:
+
+    distrobox enter mlbox
+    
+Then the init-hooks will run once only after which you should be able to run:
+
+    nvidia-smi
+
+To check if GPUs are seen and enter the python repl to run:
+
+    import torch;torch.cuda.is_available()
+
+Some possible tests can be to run a transformers inference or training job or git clone a pytorch benchmarks repo and run single or multi gpu commands: E.g. to test multi-gpu setup on two 3090s:
+
+    git clone https://github.com/aime-team/pytorch-benchmarks.git
+    cd pytorch-benchmarks
+    python3 main.py --num_gpus 2 --compile --model bert-large-uncased --data_name squad --global_batch_size 24
+    
+On other operating systems use [this .ini file](https://github.com/ublue-os/bluefin/blob/730f39caae21e48fb91f00010cf0cf8d32ee44bd/dx/usr/share/ublue-os/distrobox/pytorch-nvidia.ini) and run:
+
+    distrobox assemble create --file /path/to/your/mlbox.ini
 
 # Quality of Life Improvements
 
