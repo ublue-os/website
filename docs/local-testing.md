@@ -29,6 +29,13 @@ Fill the `build-arg`s from your recipe, e.g. `fedora-version` = latest, `base-im
 podman push localhost/<name>:latest localhost:5000/<name>:latest
 ```
 
+### Running off a local tarball
+
+```
+podman build -t oci-archive:/var/home/$USER/container.tar.gz .
+rpm-ostree rebase ostree-unverified-image:oci-archive:/var/home/$USER/container.tar.gz
+```
+
 ### In VM
 5. Create `/etc/containers/registries.conf.d/local.conf` with:
 ```
