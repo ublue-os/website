@@ -3,7 +3,7 @@ Check out the [upstream installation documentation](https://docs.fedoraproject.o
 Notably:
 
 - Dual boot configurations are not supported. We recommend using your PC's BIOS/UEFI boot menu for dual boot configuration so that each OS has its own disk. 
-- Manual partitioning is not suppported.
+- Manual partitioning is not supported.
 
 !!! Info "This ISO is experimental"
 
