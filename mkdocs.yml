@@ -99,7 +99,10 @@ nav:
       - Full Image List: images.md
       - Main Images: images/main.md
       - Nvidia Images: images/nvidia.md
-      - Bazzite: images/bazzite.md
+      - Bazzite: 
+          - Introduction: images/bazzite/index.md
+          - Installation: images/bazzite/installation.md
+          - Waydroid Configuration: images/bazzite/waydroid.md
       - Bluefin: 
           - Introduction: images/bluefin/index.md
           - Developer Experience: images/bluefin/developer-experience.md
