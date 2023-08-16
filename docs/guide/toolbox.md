@@ -72,7 +72,7 @@ You can fix this by adding the following shell script to your `~/.local/bin/` an
 if [ ! -e /run/.containerenv ] && [ ! -e /.dockerenv ]; then # if not inside a container
     /usr/bin/xdg-open $@ # run xdg-open normally
 else
-	distrobox-host-exec /usr/bin/xdg-open $@ # run xdg-open on the host
+    distrobox-host-exec /usr/bin/xdg-open $@ # run xdg-open on the host
 fi
 ```
 
