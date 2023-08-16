@@ -1,1 +1,0 @@
-{{ external_markdown('https://raw.githubusercontent.com/ublue-os/bazzite/main/README.md', '') }}
