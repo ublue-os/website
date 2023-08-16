@@ -43,4 +43,4 @@ In short, Wayland and X11 (also known as Xorg or the X Window System) are window
 
 ## Waydroid
 
-If you wish to use Waydroid, a setup guide can be found [here](waydroid.md).
+If you wish to use Waydroid, a setup guide can be found [here](/images/bazzite/waydroid).
