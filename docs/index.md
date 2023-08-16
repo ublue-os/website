@@ -39,7 +39,11 @@ Our images offer GNOME, KDE, XFCE, LXQt, Budgie, and MATE, with more being added
 
 ## Why would I use these?
 
-These images reflect a more [cloud-native](https://en.wikipedia.org/wiki/Cloud-native_computing) approach to running Linux on your desktop. We feel that a dedicated group of enthusiasts can automate a large amount of toil that plagues existing Linux desktops today. This is achieved by reusing cloud technologies as a delivery mechanism to deliver a more reliable experience. 
+These images reflect a more [cloud-native](https://en.wikipedia.org/wiki/Cloud-native_computing) approach to running Linux on your desktop. We feel that a dedicated group of enthusiasts can automate a large amount of toil that plagues existing Linux desktops today. This is achieved by reusing cloud technologies as a delivery mechanism to deliver a more reliable experience. To quote the [goals of bootc](https://github.com/containers/bootc):
+
+> A toplevel goal is that every tool and technique a Linux system administrator knows around how to build, inspect, mirror and manage application containers also applies to bootable host systems.
+
+We like the sound of that, and we're hoping to be your "Desktop DevOps team", and if you want to learn, come hang out. We are here to teach and learn from each other. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vZ1LRe_foJY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
 
