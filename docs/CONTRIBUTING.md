@@ -238,7 +238,9 @@ Releases are automated via [Release Please](https://github.com/googleapis/releas
     - There is a delay as the ISOs need to be built, they will get attached to the same release after, this can take as long as 10 minutes.
     - Do not touch `CHANGELOG.md`, the action handles that.
     - It might be prudent to edit the release directly after to add topical links (website, gotchas) since we don't have a release template, we should make one.
-    - If checks fail for some reason may need to force merge to kick off the ISO generation, the release please action does work after the images have been built.  
+    - If checks fail for some reason may need to force merge to kick off the ISO generation, the release please action does work after the images have been built.
+  
+Considerations in the Action: The isogenerator action should [always be pinned to a specific version](https://github.com/ublue-os/main/blob/8941081abb0d6cc06ca9db63c1bd243a0c2c2acc/.github/workflows/release-please.yml#L36) and never to `latest`. This is to ensure that isogenerator development and testing can happen using other images while keeping main in a releaseable state on a known good version.
 
 ## Nvidia
 
