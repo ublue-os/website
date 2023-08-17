@@ -37,16 +37,17 @@ However if your game is not listed or has a broken script, you can manually add 
 ![image](https://github.com/ublue-os/website/assets/121328689/a8822f49-691d-4bb3-a43c-43592ceba003)
 
 ## What is a Proton/WINE Prefix?
-Simply, it's the glue that holds everything together when you run a game through WINE/Proton.  It also is responsible for containing any of the files the game would drop outside of the installation folder. (i.e. .../steamapps/common/game)
 
-Tons of PC games drop files in Windows folders like "My Documents" or "Appdata\Roaming" and these files are dropped in the prefix.
+It's the glue that holds everything together when you run a game through WINE/Proton.  It also is responsible for containing any of the files the game would drop outside of the installation folder. (i.e. .../steamapps/common/game)
 
-For games on Steam, they are located in your ~/.steam/root/steamapps/compatdata/ and then the ID number of the game.  Continue to .../pfx/drive_c/ and wherever the game drops the file on Windows.
+Many PC games drop files in Windows folders like "My Documents" or "Appdata\Roaming" and these files are dropped in the prefix.
 
-Non-Steam games can have the prefix folder anywhere you specify, but by default Lutris likes to use ~/.wine as the main folder.  Sometimes it's in ~/Games too.
+For games on Steam, they are located in your `~/.steam/root/steamapps/compatdata/` folder, and then the ID number of the game.  Continue to `.../pfx/drive_c/` and wherever the game drops the file on Windows.
+
+Non-Steam games can have the prefix folder anywhere you specify, but by default Lutris uses `~/.wine` as the main folder.  Sometimes it's in `~/Games` also.
 
 # Extras
 
-* Recommended to use ProtonUp-Qt to grab the latest [GE-Proton](https://github.com/GloriousEggroll/proton-ge-custom) and [Luxtorpeda](https://github.com/luxtorpeda-dev/luxtorpeda) for Steam.
-* May want to install Protontricks for certain games that may need it.
-* You can install [AUR](https://aur.archlinux.org/) and pacman packages with bazzite-arch.
+* It is recommended to use ProtonUp-Qt (included) to update the latest [GE-Proton](https://github.com/GloriousEggroll/proton-ge-custom) and [Luxtorpeda](https://github.com/luxtorpeda-dev/luxtorpeda) for Steam.
+* You may want to install Protontricks for certain games that may need it.
+* You can install [AUR](https://aur.archlinux.org/) and pacman packages insode of `bazzite-arch`.
