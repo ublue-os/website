@@ -1,4 +1,5 @@
 # Installing Bazzite and Initial Setup
+
 This guide is a visual guide for those who are unfamiliar with desktop Linux and want to install Bazzite.
 
 # Prerequisites:
