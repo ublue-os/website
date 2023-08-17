@@ -76,4 +76,3 @@ For a quick runthrough of the basics of gaming on desktop Linux take a look [her
 
 ## Waydroid
 
-If you wish to use Waydroid, a setup guide can be found [here](https://universal-blue.org/images/bazzite/waydroid/).
