@@ -141,13 +141,13 @@ Despite this project also being image-based, you are able to install any Fedora 
 
 Bazzite ships with the latest Linux kernel and SELinux enabled by default with full support for secure boot and disk encryption, making this a sensible solution for general computing. <sup><sub>(Yes, you can print from Bazzite)</sub></sup>
 
-![KDE Vapor Theme](/repo_content/desktop1.png?raw=true "KDE Vapor Theme")
-![KDE VGUI2 Theme](/repo_content/desktop2.png?raw=true "KDE VGUI2 Theme")
-![Steam Game Mode](/repo_content/gamemode.png?raw=true "Steam Game Mode")
-![Waydroid](/repo_content/waydroid.png?raw=true "Waydroid")
-![OpenGamepadUI](/repo_content/opengamepadui.png?raw=true "OpenGamepadUI")
-![GNOME Vapor Theme](/repo_content/gnome1.png?raw=true "GNOME Vapor Theme")
-![GNOME VGUI2 Theme](/repo_content/gnome2.png?raw=true "GNOME VGUI2 Theme")
+![KDE Vapor Theme](https://github.com/ublue-os/bazzite/raw/main/repo_content/desktop1.png?raw=true "KDE Vapor Theme")
+![KDE VGUI2 Theme](https://github.com/ublue-os/bazzite/raw/main/repo_content/desktop2.png?raw=true "KDE VGUI2 Theme")
+![Steam Game Mode](https://github.com/ublue-os/bazzite/raw/main/repo_content/gamemode.png?raw=true "Steam Game Mode")
+![Waydroid](https://github.com/ublue-os/bazzite/raw/main/repo_content/waydroid.png?raw=true "Waydroid")
+![OpenGamepadUI](https://github.com/ublue-os/bazzite/raw/main/repo_content/opengamepadui.png?raw=true "OpenGamepadUI")
+![GNOME Vapor Theme](https://github.com/ublue-os/bazzite/raw/main/repo_content/gnome1.png?raw=true "GNOME Vapor Theme")
+![GNOME VGUI2 Theme](https://github.com/ublue-os/bazzite/raw/main/repo_content/gnome2.png?raw=true "GNOME VGUI2 Theme")
 
 ## Custom Packages
 
