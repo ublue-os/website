@@ -72,7 +72,7 @@ If you need any additional applications check out the software center that comes
 
 ## Gaming Tips and Tricks
 
-For a quick runthrough of the basics of gaming on desktop Linux take a look [here.](https://github.com/ublue-os/website/blob/main/docs/images/bazzite/gaming_guide.md)
+For a quick runthrough of the basics of gaming on desktop Linux take a look [here.](/images/bazzite/gaming_guide)
 
 ## Waydroid
 
