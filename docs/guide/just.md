@@ -12,13 +12,13 @@ Typing `just` in the command line will show possible commands and descriptions. 
 - `just changelogs` - show a changelog between the running system and the latest updates
 - `just clean` - clean up old containers and packaging metadata
 - `just distrobox-<name-of-distro>` - E.g. `just distrobox-fedora` - pre-made distroboxes of common distributions
+- `just enroll-secure-boot-key` - import boot key used to sign all [uBlue built kernel modules](https://github.com/ublue-os/akmods)
 - `just update` - update all packages, flatpaks, and distroboxes
 
 ### Nvidia Images
 
 - `just set-kargs-nvidia` - set boot arguments to blacklist nouveau
-- `just enroll-secure-boot-key-legacy-nvidia` - import boot key
-- `just test-cuda`- test CUDA
+- `just test-cuda` - test CUDA
 - `just setup-firefox-flatpak-vaapi-nvidia` - set the flatpak override to get VAAPI working
 
 Commands are updated and maintained by the community, feel free to [submit a command](https://github.com/ublue-os/config/tree/main/build/ublue-os-just) if you feel it is something that would be useful for all users.
