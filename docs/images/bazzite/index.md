@@ -37,14 +37,15 @@ Bazzite is built from [ublue-os/main](https://github.com/ublue-os/main) and [ubl
 - [GCAdapter_OC](https://github.com/hannesmann/gcadapter-oc-kmod) driver for overclocking Nintendo's Gamecube Controller Adapter to 1000hz polling.
 - Out of the box support for [Wooting](https://wooting.io/) keyboards.
 
-### Desktop/Home Theater PCs (HTPCs)
+### Desktop
 
-Common variant available as `bazzite` and suitable for desktops and HTPCs.
+Common variant available as `bazzite`, suitable for desktop computers.
 
 - Runs Steam and Lutris in a [custom Arch Linux OCI](https://github.com/ublue-os/bazzite-arch/) via Distrobox.
 - Option to automatically launch Steam in Big Picture Mode on boot for HTPCs.
 
-**For new installs ISOs can be downloaded from our releases page [here](https://github.com/ublue-os/bazzite/releases).**
+> [!IMPORTANT]
+> **ISOs can be downloaded from our releases page [here](https://github.com/ublue-os/bazzite/releases), and a helpful install guide can be found [here](https://universal-blue.org/images/bazzite/installation/).**
 
 If you're on an existing Universal Blue image follow [these instructions](https://universal-blue.org/images/#image-list). To rebase an existing upstream Fedora Silverblue/Kinoite ostree system to this image:
 
@@ -60,9 +61,9 @@ podman pull ghcr.io/ublue-os/config && rpm-ostree install --assumeyes --apply-li
 
 **For users with Secure Boot enabled:** Once you've installed or rebased to a Nvidia build, [be sure to follow step 3 from the ublue-os/nvidia guide](https://github.com/ublue-os/nvidia#3-enable-secure-boot-support).
 
-### Steam Deck
+### Steam Deck/Home Theater PCs (HTPCs)
 
-Variant designed for usage as an alternative to SteamOS on the Steam Deck, available as `bazzite-deck`:
+Variant designed for usage as an alternative to SteamOS on the Steam Deck, and for a console-like experience on HTPCs, available as `bazzite-deck`:
 
 - Directly boots to Gamemode matching SteamOS's behavior.
 - **Automatic `duperemove` greatly trims the size of compatdata.**
@@ -88,11 +89,13 @@ Variant designed for usage as an alternative to SteamOS on the Steam Deck, avail
     - Built in support for display overclocking. For example, add `GAMESCOPE_OVERRIDE_REFRESH_RATE=40,70` to `/etc/environment`.
     - Ability to switch back to X11 on the desktop if desired by editing `/etc/default/desktop-wayland`.
     - 32GB RAM mod your Steam Deck? Enjoy double the maximum VRAM amount, automatically applied. <sup><sub>(Can you share your soldering skills?)</sub></sup>
+- Steam Deck hardware-specific services can be disabled by running `just disable-deck-services` in the terminal, useful for trying this image on other handhelds or for use on HTPCs.
 
 > [!WARNING]  
 > **Due to an upstream bug, Bazzite cannot be used on Steam Decks with 64GB eMMC storage at this time.**
 
-**For new installs ISOs can be downloaded from our releases page [here](https://github.com/ublue-os/bazzite/releases).**
+> [!IMPORTANT]
+> **ISOs can be downloaded from our releases page [here](https://github.com/ublue-os/bazzite/releases), and a helpful install guide can be found [here](https://universal-blue.org/images/bazzite/installation/).**
 
 If you're on an existing Universal Blue image follow [these instructions](https://universal-blue.org/images/#image-list). To rebase an existing upstream Fedora Silverblue/Kinoite ostree system to this image: 
 
@@ -110,7 +113,8 @@ Builds with the GNOME desktop environment are available in both desktop and deck
 - Features optional Valve-inspired themes matching Vapor and VGUI2 from SteamOS.
 - [Optional important user experience fix](https://www.youtube.com/watch?v=nbCg9_YgKgM).
 
-**For new installs ISOs can be downloaded from our releases page [here](https://github.com/ublue-os/bazzite/releases).**
+> [!IMPORTANT]
+> **ISOs can be downloaded from our releases page [here](https://github.com/ublue-os/bazzite/releases), and a helpful install guide can be found [here](https://universal-blue.org/images/bazzite/installation/).**
 
 To rebase an existing ostree system to the **desktop** release:
 
@@ -127,7 +131,7 @@ podman pull ghcr.io/ublue-os/config && rpm-ostree install --assumeyes --apply-li
 > [!WARNING]  
 > **Due to an upstream bug, Bazzite cannot be used on Steam Decks with 64GB eMMC storage at this time.**
 
-To rebase an existing ostree system to the **Steam Deck** release: 
+To rebase an existing ostree system to the **Steam Deck/HTPC** release: 
 
 ```bash
 podman pull ghcr.io/ublue-os/config && rpm-ostree install --assumeyes --apply-live --force-replacefiles $(find ~/.local/share/containers -name ublue-os-signing.noarch.rpm 2>/dev/null) && rpm-ostree rebase --uninstall $(rpm -q ublue-os-signing-* --queryformat '%{NAME}-%{VERSION}-%{RELEASE}.%{Arch}') ostree-image-signed:docker://ghcr.io/ublue-os/bazzite-deck-gnome:latest
@@ -145,7 +149,6 @@ Bazzite ships with the latest Linux kernel and SELinux enabled by default with f
 ![KDE VGUI2 Theme](https://github.com/ublue-os/bazzite/raw/main/repo_content/desktop2.png?raw=true "KDE VGUI2 Theme")
 ![Steam Game Mode](https://github.com/ublue-os/bazzite/raw/main/repo_content/gamemode.png?raw=true "Steam Game Mode")
 ![Waydroid](https://github.com/ublue-os/bazzite/raw/main/repo_content/waydroid.png?raw=true "Waydroid")
-![OpenGamepadUI](https://github.com/ublue-os/bazzite/raw/main/repo_content/opengamepadui.png?raw=true "OpenGamepadUI")
 ![GNOME Vapor Theme](https://github.com/ublue-os/bazzite/raw/main/repo_content/gnome1.png?raw=true "GNOME Vapor Theme")
 ![GNOME VGUI2 Theme](https://github.com/ublue-os/bazzite/raw/main/repo_content/gnome2.png?raw=true "GNOME VGUI2 Theme")
 
@@ -223,6 +226,6 @@ Bazzite is a community effort and wouldn't exist without everyone's support. Bel
 
 Bazzite is built entirely in GitHub and creating your own custom version of it is as easy as forking this repository, adding a private signing key, and enabling GitHub actions.
 
-[Read the docs](https://docs.github.com/en/actions/security-guides/encrypted-secrets) on keeping secrets in github. You need to [generate a new keypair](https://docs.sigstore.dev/cosign/overview/) with cosign. The public key can be in your public repo (your users need it to check the signatures), and you can paste the private key in Settings -> Secrets -> Actions.
+[Familiarize yourself](https://docs.github.com/en/actions/security-guides/encrypted-secrets) on keeping secrets in github. You'll need to [generate a new keypair](https://docs.sigstore.dev/cosign/overview/) with cosign. The public key can be in your public repo <sub><sup>(Your users need it to check the signatures)</sup></sub>, and you can paste the private key in `Settings -> Secrets -> Actions` with the name `SIGNING_SECRET`.
 
-We also ship a config for the popular [pull bot](https://github.com/apps/pull) if you'd like to keep your fork in sync with upstream. Enable this bot on your repo to keep track of Bazzite changes while also making your own modifications.
+We also ship a config for the popular [pull app](https://github.com/apps/pull) if you'd like to keep your fork in sync with upstream. Enable this app on your repo to keep track of Bazzite changes while also making your own modifications.
