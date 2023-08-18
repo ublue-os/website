@@ -1,3 +1,5 @@
+# Linux Gaming Guide
+
 # Useful Websites
 * [ProtonDB](https://www.protondb.com/) - User reports for games running through proton or have a Linux port. 
 * [Are We Anti-Cheat Yet?](https://areweanticheatyet.com/) - List of popular games utilizing anti-cheat software and how well they run on Linux.
@@ -8,7 +10,9 @@
 # Steam
 Steam can run Windows games on Linux.  It utilizes a wide range of projects like WINE, DXVK, VKD3D, and a bunch of patches all packed into a piece of software built-in to Steam called Proton.
 ## Enabling Proton for all Steam Games 
+
 **Skip this section if you're using bazzite-deck or bazzite-deck-gnome**
+
 * Currently Steam only allows whitelisted games to run by default.
 * You can change this by going into the Steam settings > Compatibility > Check "Enable Steam Play for all other titles."
 
@@ -27,7 +31,7 @@ Steam can run Windows games on Linux.  It utilizes a wide range of projects like
 * **It is recommended to use Lutris for _most_ non-steam games.**
 * However using [Heroic](https://heroicgameslauncher.com) for Epic, GOG, and Amazon Games Launcher would be easier for those specific launchers.
 * [Bottles](https://usebottles.com/) is also a good alternative if you wish to use that.
-* A few games and/or launchers are avalaible in the software center (_Discover, GNOME Software_) like itch.io.
+* Other games and launchers are avalaible in the software center (_Discover, GNOME Software_) like Xonotic and itch.io.
 
 ## Lutris
 
