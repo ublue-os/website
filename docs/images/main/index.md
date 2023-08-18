@@ -26,12 +26,12 @@ You should be familiar with [image-based desktops](https://silverblue.fedoraproj
   - Several pre-built [drivers/akmods](https://github.com/ublue-os/akmods)
   - Various other tools: check out the [complete list of packages](https://github.com/ublue-os/main/blob/main/packages.json)
 - Sets automatic staging of updates for the system
-- Sets flatpaks to update twice a day
+- Sets `flatpaks` to update twice a day
 - Everything else (desktop, artwork, etc) remains stock so you can use this as a good starting image
 
 ## Tips and Tricks
 
-Unlike traditional Linux distributions, the base image is intended to be used "out of the box" as it is, packages are installed via Flatpak whenever possible (execpt for IDEs in some cases, more below).
+Unlike traditional Linux distributions, the base image is intended to be used "out of the box" as it is, packages are installed via Flatpak whenever possible (except for IDEs in some cases, more below).
 Should that not be possible, you can use [distrobox](https://github.com/89luca89/distrobox) to have images of mutable distributions where you can install applications normally.
 Want an application that is only available on Arch Linux *and* one that is only on Ubuntu? Well, now can have both!
 
@@ -42,15 +42,18 @@ ublue-os/base-main is also very well suited for servers, and users are expected 
 ## How to Install
 
 [Follow these instructions](/installation)
-1. [File an issue](https://github.com/ublue-os/main/issues) if you find a problem
+
+[File an issue](https://github.com/ublue-os/main/issues) if you find a problem
 
 ## Verification
 
 These images are signed with sigstore's [cosign](https://docs.sigstore.dev/cosign/overview/). You can verify the signature by downloading the `cosign.pub` key from this repo and running the following command:
 
-    cosign verify --key cosign.pub ghcr.io/ublue-os/silverblue-main
+```bash
+cosign verify --key cosign.pub ghcr.io/ublue-os/silverblue-main
+```
 
-If you're forking this repo you should [read the docs](https://docs.github.com/en/actions/security-guides/encrypted-secrets) on keeping secrets in github. You need to [generate a new keypair](https://docs.sigstore.dev/cosign/overview/) with cosign. The public key can be in your public repo (your users need it to check the signatures), and you can paste the private key in Settings -> Secrets -> Actions.
+If you're forking this repo you should [read the docs](https://docs.github.com/en/actions/security-guides/encrypted-secrets) on keeping secrets in github. You need to [generate a new key-pair](https://docs.sigstore.dev/cosign/overview/) with `cosign`. The public key can be in your public repo (your users need it to check the signatures), and you can paste the private key in Settings -> Secrets -> Actions.
 
 ## [![Repography logo](https://images.repography.com/logo.svg)](https://repography.com) / Recent activity [![Time period](https://images.repography.com/35181738/ublue-os/main/recent-activity/xrA_PaNuNMQaiMXAgCjt1WHFLAbONeWxJABDiQSIMJI/sadhuTBbL8fbqM2jXKHWg-T1EsqHwZ2NlnlT6FB-e7Q_badge.svg)](https://repography.com)
 [![Timeline graph](https://images.repography.com/35181738/ublue-os/main/recent-activity/xrA_PaNuNMQaiMXAgCjt1WHFLAbONeWxJABDiQSIMJI/sadhuTBbL8fbqM2jXKHWg-T1EsqHwZ2NlnlT6FB-e7Q_timeline.svg)](https://github.com/ublue-os/main/commits)

@@ -11,15 +11,13 @@ For automatic setup using the command line, there is a community-built tool call
     - If you have any issues, read [the project's](https://github.com/EinoHR/create-ublue-image) README and submit to its issue tracker.
 2. Follow the instructions the tool gives you
 
-!!! note
-
-    This tool currently does not fork the `ublue-os/startingpoint` repository. This will slightly complicate syncinh with upstream.
+> **NOTE:** This tool currently does not fork the `ublue-os/startingpoint` repository. This will slightly complicate syncing with upstream.
 
 ## Syncing
 
 In order to sync new changes from the upstream template, run the following commands:
 
-```
+```bash
 # Retrieve latest changes from upstream's template.
 git fetch upstream template
 git checkout template
@@ -42,6 +40,6 @@ Most of the time, the rebased changes will be applied automatically without any 
 
 Note that the `create-ublue-image` sets up the "origin" remote to use HTTPS URLs. If you want to connect to GitHub through SSH instead, run the following command to update your local repository's URL:
 
-```
+```bash
 git remote set-url origin git@github.com:UserName/RepoName.git
 ```
