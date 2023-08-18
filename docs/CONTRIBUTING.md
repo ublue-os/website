@@ -39,6 +39,7 @@ If you want to ask a question, ask in the [discussion forum](https://github.com/
 > **WARNING: "Legal Notice"**
     When contributing to this project, you must agree that you have authored 100% of the content, that you have the necessary rights to the content and that the content you contribute may be provided under the project license.
 
+
 Generally speaking we try to follow the [Lazy Concensus](http://lazyconcens.us/) model of development to keep the builds healthy and ourselves happy.
 
 - If you're looking for consensus to make a decision post an issue for feedback and remember to account for timezones and weekends/holidays/work time.
