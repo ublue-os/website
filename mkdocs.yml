@@ -97,8 +97,10 @@ nav:
       - installation.md
   - Images:
       - Full Image List: images.md
-      - Main Images: images/main.md
-      - Nvidia Images: images/nvidia.md
+      - Main Images: 
+          - images/main.md
+      - Nvidia Images: 
+          - images/nvidia.md
       - Bazzite: 
           - Introduction: images/bazzite/index.md
           - Installation: images/bazzite/installation.md
@@ -110,12 +112,12 @@ nav:
           - Framework: images/bluefin/framework.md
       - Toolboxes: toolboxes.md
   - Community:
-      - Code of Conduct: CODE_OF_CONDUCT.md
-      - Discord Chat: https://discord.gg/WEu6BdFEtp
-      - Discussion Forums: https://github.com/orgs/ublue-os/discussions
       - Mission: mission.md
       - Scope: scope.md
       - Values: values.md
+      - Code of Conduct: CODE_OF_CONDUCT.md
+      - Discord Chat: https://discord.gg/WEu6BdFEtp
+      - Discussion Forums: https://github.com/orgs/ublue-os/discussions
       - Videos: https://www.youtube.com/c/JorgeCastro/videos
   - Documentation:
       - Introduction: introduction.md
