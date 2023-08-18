@@ -36,7 +36,8 @@ If you want to ask a question, ask in the [discussion forum](https://github.com/
 
 ## I Want To Contribute
 
-    When contributing to this project, you must agree that you have authored 100% of the content, that you have the necessary rights to the content and that the content you contribute may be provided under the project license.
+!!! warning "Legal Notice"
+When contributing to this project, you must agree that you have authored 100% of the content, that you have the necessary rights to the content and that the content you contribute may be provided under the project license.
 
 
 Generally speaking we try to follow the [Lazy Concensus](http://lazyconcens.us/) model of development to keep the builds healthy and ourselves happy.
