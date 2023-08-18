@@ -6,7 +6,7 @@ This guide will use "you" to refer to the creator of the custom image, and "the 
 
 ## Resist the urge to add the entire universe
 
-Systems like this are designed for a _small, lean, mean, maintainable, and performant core_. Remember that updates to the _base image_ require a reboot, so ideally you want that surface area to be small - let Flatpak and other userspace tools handle the rest. You can build a toolbox image that contains software and configuration not needed on the base image but useful to the image's user.
+Systems like this are designed for a _small, lean, mean, maintainable, and performant core_. Remember that updates to the _base image_ require a reboot, so ideally you want that surface area to be small - let Flatpak and other user-space tools handle the rest. You can build a toolbox image that contains software and configuration not needed on the base image but useful to the image's user.
 
 Also remember that these systems are atomic, you don't need to manually clean up an old decision, the user will just get a new pristine image (ideally every day), so if you need to add a bunch of packages to get the desired outcome then you can always trim it down later - just remember that you need to account for the user's data!
 

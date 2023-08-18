@@ -7,6 +7,7 @@ Documentation for modifying images based on the [`ublue-os/startingpoint`](https
 In the `recipe.yml` set `base-image:` to the URL of the desired image without the protocol identifier such as `https://`. Find the list of images at [universal-blue.org/images](https://universal-blue.org/images/).
 
 Example: Changing to `kinoite-nvidia`.
+
 ```yaml
 base-image: ghcr.io/ublue-os/kinoite-nvidia
 ```
@@ -16,6 +17,7 @@ base-image: ghcr.io/ublue-os/kinoite-nvidia
 In the `recipe.yml` under the `rpm:` section there is a list of packages to `install:`. Add your desired packages there and commit.
 
 Example: Adding `micro`.
+
 ```yaml
 rpm:
   install:
