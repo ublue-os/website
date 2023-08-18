@@ -35,7 +35,8 @@ Container signing is important for end-user security and is enabled on all Unive
 
 This part is important, as users must have a method of verifying the image. The Linux desktop must not lag behind in cloud when it comes to supply chain security, so we're starting right from the start! (Seriously don't skip this part)
 
-> **WARNING:** Be careful to *never* accidentally commit `cosign.key` into your git repo.
+!!! warning 
+Be careful to *never* accidentally commit `cosign.key` into your git repo.
 
 1. Install the [cosign CLI tool](https://edu.chainguard.dev/open-source/sigstore/cosign/how-to-install-cosign/)
     - It's recommended you use [a toolbox](https://universal-blue.org/guide/toolbox/).
