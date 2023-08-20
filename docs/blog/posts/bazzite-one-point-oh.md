@@ -48,10 +48,9 @@ Additionally, Bazzite adds the following features:
 - [Waydroid](https://waydro.id/) preinstalled for running Android apps. Future releases will offer to set this up for you. <sub><sup>(Not available on Nvidia builds)</sup></sub>
 
 <figure markdown>
-  ![Waydroid](https://raw.githubusercontent.com/ublue-os/bazzite/main/repo_content/gamemode.png){ width="600" }
-  <figcaption>Steam Game Mode</figcaption>
+  ![Waydroid](https://raw.githubusercontent.com/ublue-os/bazzite/main/repo_content/waydroid.png){ width="600" }
+  <figcaption>Waydroid</figcaption>
 </figure>
-
 
 
 - [OpenRGB](https://gitlab.com/CalcProgrammer1/OpenRGB) i2c-piix4 and i2c-nct6775 drivers for controlling RGB on certain motherboards.
