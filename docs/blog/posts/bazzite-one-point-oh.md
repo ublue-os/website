@@ -47,7 +47,12 @@ Additionally, Bazzite adds the following features:
 - [Nix](https://nixos.org/) package manager optionally available.
 - [Waydroid](https://waydro.id/) preinstalled for running Android apps. Future releases will offer to set this up for you. <sub><sup>(Not available on Nvidia builds)</sup></sub>
 
-![Waydroid](https://raw.githubusercontent.com/ublue-os/bazzite/main/repo_content/gamemode.png)
+<figure markdown>
+  ![Waydroid](https://raw.githubusercontent.com/ublue-os/bazzite/main/repo_content/gamemode.png){ width="600" }
+  <figcaption>Steam Game Mode</figcaption>
+</figure>
+
+
 
 - [OpenRGB](https://gitlab.com/CalcProgrammer1/OpenRGB) i2c-piix4 and i2c-nct6775 drivers for controlling RGB on certain motherboards.
 - [GCAdapter_OC](https://github.com/hannesmann/gcadapter-oc-kmod) driver for overclocking Nintendo's Gamecube Controller Adapter to 1000hz polling.
