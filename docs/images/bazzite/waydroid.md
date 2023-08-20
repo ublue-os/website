@@ -193,7 +193,7 @@ You should now have successfully installed Waydroid, but you may still want to r
 To do so, run the following command:
 
 ```bash
-git clone https://github.com/casualsnek/waydroid_script && cd waydroid_script && python -m venv venv && source venv/bin/activate && sudo pip install -r requirements.txt && sudo python main.py
+just configure-waydroid
 ```
 
 Now, press <kbd>ENTER</kbd> to select Android 11, press enter to select Install, then press the up and down arrow keys and the space bar to select the following:
