@@ -89,7 +89,7 @@ Variant designed for usage as an alternative to SteamOS on the Steam Deck, and f
     - 32GB RAM mod your Steam Deck? Enjoy double the maximum VRAM amount, automatically applied. <sup><sub>(Can you share your soldering skills?)</sub></sup>
 - Steam Deck hardware-specific services can be disabled by running `just disable-deck-services` in the terminal, useful for trying this image on other handhelds or for use on HTPCs.
 
-!!! Note "For 64GB Deck users
+!!! Note "For 64GB Deck users"
 
     Due to an upstream bug, Bazzite cannot be used on Steam Decks with 64GB eMMC storage at this time.
 
@@ -129,7 +129,7 @@ To rebase an existing ostree system to the **desktop with Nvidia drivers** relea
 podman pull ghcr.io/ublue-os/config && rpm-ostree install --assumeyes --apply-live --force-replacefiles $(find ~/.local/share/containers -name ublue-os-signing.noarch.rpm 2>/dev/null) && rpm-ostree rebase --uninstall $(rpm -q ublue-os-signing-* --queryformat '%{NAME}-%{VERSION}-%{RELEASE}.%{Arch}') ostree-image-signed:docker://ghcr.io/ublue-os/bazzite-gnome-nvidia:latest
 ```
 
-!!! Note "For 64GB Deck users
+!!! Note "For 64GB Deck users"
 
     Due to an upstream bug, Bazzite cannot be used on Steam Decks with 64GB eMMC storage at this time.
 
