@@ -41,10 +41,11 @@ Common variant available as `bazzite`, suitable for desktop computers.
 - Runs Steam and Lutris in a [custom Arch Linux OCI](https://github.com/ublue-os/bazzite-arch/) via Distrobox.
 - Option to automatically launch Steam in Big Picture Mode on boot for HTPCs.
 
-> [!IMPORTANT]  
-> **ISOs can be downloaded from our releases page [here](https://github.com/ublue-os/bazzite/releases), and a helpful install guide can be found [here](https://universal-blue.org/images/bazzite/installation/).**
+!!! note "ISO Downloads"  
 
-If you're on an existing Universal Blue image follow [these instructions](https://universal-blue.org/images/#image-list). To rebase an existing upstream Fedora Silverblue/Kinoite ostree system to this image:
+    ISOs can be downloaded from our releases page [here](https://github.com/ublue-os/bazzite/releases), and a helpful install guide can be found [here](https://universal-blue.org/images/bazzite/installation/).
+
+If you're on an existing Universal Blue image follow [these instructions](/images/#image-list). To rebase an existing upstream Fedora Silverblue/Kinoite ostree system to this image:
 
 ```bash
 podman pull ghcr.io/ublue-os/config && rpm-ostree install --assumeyes --apply-live --force-replacefiles $(find ~/.local/share/containers -name ublue-os-signing.noarch.rpm 2>/dev/null) && rpm-ostree rebase --uninstall $(rpm -q ublue-os-signing-* --queryformat '%{NAME}-%{VERSION}-%{RELEASE}.%{Arch}') ostree-image-signed:docker://ghcr.io/ublue-os/bazzite:latest
@@ -88,13 +89,15 @@ Variant designed for usage as an alternative to SteamOS on the Steam Deck, and f
     - 32GB RAM mod your Steam Deck? Enjoy double the maximum VRAM amount, automatically applied. <sup><sub>(Can you share your soldering skills?)</sub></sup>
 - Steam Deck hardware-specific services can be disabled by running `just disable-deck-services` in the terminal, useful for trying this image on other handhelds or for use on HTPCs.
 
-> [!WARNING]  
-> **Due to an upstream bug, Bazzite cannot be used on Steam Decks with 64GB eMMC storage at this time.**
+!!! Note "For 64GB Deck users
 
-> [!IMPORTANT]  
-> **ISOs can be downloaded from our releases page [here](https://github.com/ublue-os/bazzite/releases), and a helpful install guide can be found [here](https://universal-blue.org/images/bazzite/installation/).**
+    Due to an upstream bug, Bazzite cannot be used on Steam Decks with 64GB eMMC storage at this time.
 
-If you're on an existing Universal Blue image follow [these instructions](https://universal-blue.org/images/#image-list). To rebase an existing upstream Fedora Silverblue/Kinoite ostree system to this image: 
+!!! Note "ISO Downloads" 
+
+    ISOs can be downloaded from our releases page [here](https://github.com/ublue-os/bazzite/releases), and a helpful install guide can be found [here](/images/bazzite/installation/).
+
+If you're on an existing Universal Blue image follow [these instructions](/images/#image-list). To rebase an existing upstream Fedora Silverblue/Kinoite ostree system to this image: 
 
 ```bash
 podman pull ghcr.io/ublue-os/config && rpm-ostree install --assumeyes --apply-live --force-replacefiles $(find ~/.local/share/containers -name ublue-os-signing.noarch.rpm 2>/dev/null) && rpm-ostree rebase --uninstall $(rpm -q ublue-os-signing-* --queryformat '%{NAME}-%{VERSION}-%{RELEASE}.%{Arch}') ostree-image-signed:docker://ghcr.io/ublue-os/bazzite-deck:latest
@@ -110,8 +113,9 @@ Builds with the GNOME desktop environment are available in both desktop and deck
 - Features optional Valve-inspired themes matching Vapor and VGUI2 from SteamOS.
 - [Optional important user experience fix](https://www.youtube.com/watch?v=nbCg9_YgKgM).
 
-> [!IMPORTANT]  
-> **ISOs can be downloaded from our releases page [here](https://github.com/ublue-os/bazzite/releases), and a helpful install guide can be found [here](https://universal-blue.org/images/bazzite/installation/).**
+!!! Note "ISO Downloads" 
+
+    ISOs can be downloaded from our releases page [here](https://github.com/ublue-os/bazzite/releases), and a helpful install guide can be found [here](/images/bazzite/installation/).
 
 To rebase an existing ostree system to the **desktop** release:
 
@@ -125,8 +129,9 @@ To rebase an existing ostree system to the **desktop with Nvidia drivers** relea
 podman pull ghcr.io/ublue-os/config && rpm-ostree install --assumeyes --apply-live --force-replacefiles $(find ~/.local/share/containers -name ublue-os-signing.noarch.rpm 2>/dev/null) && rpm-ostree rebase --uninstall $(rpm -q ublue-os-signing-* --queryformat '%{NAME}-%{VERSION}-%{RELEASE}.%{Arch}') ostree-image-signed:docker://ghcr.io/ublue-os/bazzite-gnome-nvidia:latest
 ```
 
-> [!WARNING]  
-> **Due to an upstream bug, Bazzite cannot be used on Steam Decks with 64GB eMMC storage at this time.**
+!!! Note "For 64GB Deck users
+
+    Due to an upstream bug, Bazzite cannot be used on Steam Decks with 64GB eMMC storage at this time.
 
 To rebase an existing ostree system to the **Steam Deck/HTPC** release: 
 
