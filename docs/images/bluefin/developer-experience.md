@@ -122,9 +122,7 @@ distrobox assemble create --file /path/to/your/mlbox.ini
 
 - [Cockpit](https://cockpit-project.org/) for local and remote management
 - A collection of well curated monospace fonts
-- hashicorp repo included and enabled
-  - None of them installed by default, but you can just add them to the Containerfile as you need them
-    - systemd shutdown timers adjusted to 15 seconds
-    - [Tailscale](https://tailscale.com/) for VPN
-    - [Just](https://github.com/casey/just) task runner for post-install automation tasks. Check out [our documentation](https://universal-blue.org/guide/just/) for more information on using and customizing just.
-    - `fish` and `zsh` available as optional shells, use `just fish` or `just zsh` and follow the prompts to configure them
+- systemd shutdown timers adjusted to 15 seconds
+- [Tailscale](https://tailscale.com/) for VPN
+- [Just](https://github.com/casey/just) task runner for post-install automation tasks. Check out [our documentation](https://universal-blue.org/guide/just/) for more information on using and customizing just.
+- `fish` and `zsh` available as optional shells, use `just fish` or `just zsh` and follow the prompts to configure them
