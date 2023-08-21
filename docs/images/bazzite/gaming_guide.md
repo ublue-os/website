@@ -6,6 +6,11 @@
 * [PC Gaming Wiki](https://www.pcgamingwiki.com/wiki/Home) - General information, workarounds, and enhancements with PC games.
 * [General Emulation Wiki](https://emulation.gametechwiki.com/index.php/Main_Page) - Wiki dedicated to video game emulation.
 
+# Filesystem
+
+Most of time the average user will be under `Home` since that is where most of the user files will be located.  `Home` will include anything from personal files (like Documents, Videos, Pictures, Music, etc.) to application data.  Applications installed from the software center will be located in `~/.var/app/`
+
+Where is this `.var` mentioned above, and where is the Steam folder?  They are hidden directories. You can show hidden files by clicking the hamburger menu (3 horizontal lines near the top right of your file manager) and select "Show Hidden Files" to see every directory and file that is hidden by default.  They all start with a "." before it.
 
 # Steam
 Steam can run Windows games on Linux.  It utilizes a wide range of projects like WINE, DXVK, VKD3D, and a bunch of patches all packed into a piece of software built-in to Steam called Proton.
