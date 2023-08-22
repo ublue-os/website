@@ -9,7 +9,7 @@ This guide is a visual guide for those who are unfamiliar with desktop Linux and
 * A working wired or wireless internet connection.
 * Download an ISO release [here.](https://github.com/ublue-os/bazzite/releases)
 * Software to flash the image to your flash drive or external drive.  We recommend using [Fedora Media Writer,](https://www.fedoraproject.org/en/workstation/download/) [Balena Etcher,](https://etcher.balena.io/) or [Rufus.](https://rufus.ie/en/) **Ventoy is unsupported.**
-* Bazzite requires a physical keyboard to install properly.
+* Bazzite requires a physical keyboard to install properly on a Steam Deck
 * Manual partitioning is unsupported.
 * See [Fedora Kinoite documentation](https://docs.fedoraproject.org/en-US/fedora-kinoite/installation/) and [Fedora Silverblue documentation](https://docs.fedoraproject.org/en-US/fedora-silverblue/installation/) for more information.
 
