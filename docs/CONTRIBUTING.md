@@ -1,30 +1,34 @@
 # Contributing
+
 Thanks for taking the time to look into helping out!
-All contributions are appreciated! 
+All contributions are appreciated!
+
 Please refer to our [Code of Conduct](/CODE_OF_CONDUCT) while you're at it!
 
-Feel free to report issues as you find them, and [helping others in the discussions]() is always appreciated.
+Feel free to report issues as you find them, and [helping others in the discussions](https://github.com/orgs/ublue-os/discussions) is always appreciated.
 
 ## Getting Started
 
 All types of contributions are encouraged and valued.
-Please make sure to read the relevant section before making your contribution.
-It will make it a lot easier for us maintainers and smooth out the experience for all involved.
+
+Please make sure to read the relevant section before making your contribution. Your familiarity will ensure an efficient review process by the maintainers, and will smooth out the experience for all involved.
+
 The community looks forward to your contributions!
 
 If you like the project, but just don't have time to contribute, that's fine. There are other easy ways to support the project and show your appreciation, which we would also be very happy about:
 
-  - Star the project
-  - Toot about it
-  - Refer this project in your project's readme
-  - Mention the project at local meetups and tell your friends/colleagues
+- Star the project
+- Share it on all your social media (we 💙 Mastodon)
+- Refer this project in your project's readme.
+- Mention the project at local meetups and tell your friends/colleagues!
 
 ## Code of Conduct
 
 This project and everyone participating in it is governed by the
-[CONTRIBUTING.md Code of Conduct](/CODE_OF_CONDUCT).
+[Code of Conduct](/CODE_OF_CONDUCT).
+
 By participating, you are expected to uphold this code.
-Please report unacceptable behavior to jorge.castro@gmail.com
+Please report unacceptable behavior to `jorge.castro@gmail.com`
 
 ## I Have a Question
 
@@ -33,12 +37,14 @@ If you want to ask a question, ask in the [discussion forum](https://github.com/
 ## I Want To Contribute
 
 !!! warning "Legal Notice"
-    When contributing to this project, you must agree that you have authored 100% of the content, that you have the necessary rights to the content and that the content you contribute may be provided under the project license.
+When contributing to this project, you must agree that you have authored 100% of the content, that you have the necessary rights to the content and that the content you contribute may be provided under the project license.
 
-Generally speaking we try to follow the [Lazy Concensus](http://lazyconcens.us/) model of development to keep the builds healthy and ourselves happy. 
-    - If you're looking for concensus to make a decision post an issue for feedback and remember to account for timezones and weekends/holidays/work time 
-    - We want people to be opinionated in their builds so we're more of a loose confederation of repos than a top-down org
-    - Try not to merge your own stuff, ask for a review. At some point when we have enough reviewers we'll be turning on branch protection
+
+Generally speaking we try to follow the [Lazy Concensus](http://lazyconcens.us/) model of development to keep the builds healthy and ourselves happy.
+
+- If you're looking for consensus to make a decision post an issue for feedback and remember to account for timezones and weekends/holidays/work time.
+- We want people to be opinionated in their builds so we're more of a loose confederation of repos than a top-down org.
+- Try not to merge your own stuff, ask for a review. At some point when we have enough reviewers we'll be turning on branch protection.
 
 ## Submitting Pull Requests
 
@@ -52,7 +58,7 @@ If you want to contribute code to the project, the general workflow is as follow
 6. Push your new branch to your own GitHub fork.
 7. Visit GitHub in a web browser to [submit the pull request back to the original repository](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request#creating-the-pull-request).
 
-If you're new to Git, it's a good idea to use a graphical user interface such as [GitHub Desktop](https://desktop.github.com/) to simplify all of these steps.
+If you're new to `git`, it's a good idea to use a graphical user interface such as [GitHub Desktop](https://desktop.github.com/) to simplify all of these steps.
 
 ## Reporting Bugs
 
@@ -60,65 +66,66 @@ If you're new to Git, it's a good idea to use a graphical user interface such as
 
 A good bug report should describe the issue in detail. Generally speaking:
 
-- Make sure that you are using the latest version
+- Make sure that you are using the latest version.
 - Remember that these are unofficial builds, it's usually prudent to investigate an issue before reporting it here or in Fedora!
 - Collect information about the bug:
-    - `rpm-ostree status -v` usually helps
-- Image and Version 
-- Possibly your input and the output
+  - `rpm-ostree status -v` usually helps.
+- Image and Version.
+- Possibly your input and the output.
 - Can you reliably reproduce the issue? And can you also reproduce it with older versions?
 
 ### Why we insist on using GitHub
 
-If you come to the Discord you might be asked to report an issue or start a discussion on GitHub. DON'T PANIC! 
+If you come to the Discord you might be asked to report an issue or start a discussion on GitHub. DON'T PANIC!
 
 We do this for a few reasons:
 
 - Scalability - we're purposely designing this project to scale, and that means a focus on:
-- Asynchronous Communication - OSS is a worldwide phenonmenon for a reason, forcing us to write everything down and capturing as much data is crucial to our ability to move quickly, at some point we'll have people in every time zone, and keeping that efficient is the key. 
-    - Discord search is not an engineering tool, it's for chat, it's extremely difficuly for even the most experienced person to "spin up" by tracking a chat than an issue on GitHub.
-    - It feels slow! It does, but over the long term, it is much more efficient, because you are also solving the problem for as many people as you can, so we gotta make it count!
+- Asynchronous Communication - OSS is a worldwide phenomenon for a reason, forcing us to write everything down and capturing as much data is crucial to our ability to move quickly, at some point we'll have people in every time-zone, and keeping that efficient is the key.
+  - Discord search is not an engineering tool, it's for chat, it's extremely difficult for even the most experienced person to "spin up" by tracking a chat vs. an issue on GitHub.
+  - It feels slow! It does, but over the long term, it is much more efficient, because you are also solving the problem for as many people as you can, so we gotta make it count!
 - Leverage chat as much as you can to debug and move fast
-    - But when things get over a few messages, start to copying stuff into a text editor so you have it
-    - and then file an issue, you can always edit and fix it up later, concentrate on the capture.
-    - It's hard to have that discipline, that's why we have teammates.
-    - "Oh I'll just file it later" is a good way to learn something, twice. It's going to happen but knowing the trap is a good way to avoid it (or end up gravitating towards it!)
+  - But when things get over a few messages, start copying stuff into a text editor so you have it.
+  - and then file an issue, you can always edit and fix it up later, concentrate on the capture.
+  - It's hard to have that discipline, that's why we have teammates.
+  - "Oh I'll just file it later" is a good way to learn something twice. It's going to happen, but knowing the trap is a good way to avoid it (or end up gravitating towards it!).
 - **DON'T BE AFRAID OF FILING AN ISSUE**
-    - Part of our culture is to _teach_ and help each other grow
-    - Better to file an issue and have it closed than let a subtle problem spiral out of control
-        - Having an issue closed means you've ruled something out, that can be just as important as a solution!
-    - That also doesn't mean to file 47 issues around your favorite feature in a 10 minute period
-        - If something needs more discussion, [file a proposal](https://github.com/orgs/ublue-os/discussions?discussions_q=is%3Aopen+label%3Aproposal)
-    - You've earned it
-        - The commons depends on everyone chipping in, be proud of your contribution!
+  - Part of our culture is to _teach_ and help each other grow.
+  - Better to file an issue and have it closed than let a subtle problem spiral out of control.
+    - Having an issue closed means you've ruled something out, that can be just as important as a solution!
+    - That also doesn't mean to file 47 issues around your favorite feature in a 10 minute period:
+      - If something needs more discussion, [file a proposal.](https://github.com/orgs/ublue-os/discussions?discussions_q=is%3Aopen+label%3Aproposal)
+    - You've earned it:
+      - The commons depends on everyone chipping in, be proud of your contribution!
 
 
 ### How to test incoming changes
 
 One of the nice things about the image model is that we can generate an entire OS image for every change we want to commit, so this makes testing way easier than in the past.
 You can rebase to it, see if it works, and then move back.
-This also means we can increase the amount of testers! 
+This also means we can increase the amount of testers!
 
 We strive towards a model where proposed changes are more thoroughly reviewed and tested by the community.
-If you see a pull request that is opened up on an image you're following you can leave a review on how it's working for you.
-At the bottom of every PR you'll see something like this: 
+If you see a pull request that is opened up on an image you're following, you can leave a review on how it's working for you.
+At the bottom of every PR you'll see something like this:
 
 ![image](https://user-images.githubusercontent.com/1264109/221305388-3860fc07-212c-4eb9-80d9-5d7a35a77f46.png)
 
-Click on "Add your review", and then you'll see this: 
+Click on "Add your review", then, after adding your comments, click on the green "Review Changes" button and you'll see this:
 
 ![image](https://user-images.githubusercontent.com/1264109/221307636-5e312e48-821f-4206-848f-7fbc2c91cd78.png)
 
 Don't worry, you can't mess anything up, all the merging and stuff will be done by the maintainer, what this does is lets us gather information in a more formal manner than just shoving everything in a forum thread.
 The more people are reviewing and testing images, the better off we'll be, especially for images that are new.
 
-At some point we'll have a bot that will leave you instructions on how to rebase to the image and all that stuff, but in the meantime we'll leave instructions manually. 
+At some point we'll have a bot that will leave you instructions on how to rebase to the image and all that stuff, but in the meantime we'll leave instructions manually.
 
 Here's an example: https://github.com/ublue-os/nvidia/pull/49
 
 ## Building Locally
 
 The minimum tools required are `git` and a working machine with `podman` enabled and configured.
+
 Building locally is much faster than building in GitHub and is a good way to move fast before pushing to a remote.
 
 ### Prerequisites
@@ -134,22 +141,26 @@ Building locally is much faster than building in GitHub and is a good way to mov
 
 - Start the container registry
 
-   `podman run -d --name registry.dev.local -p 5000:5000 docker.io/library/registry:latest`
+   ```bash
+   podman run -d --name registry.dev.local -p 5000:5000 docker.io/library/registry:latest
+   ```
 
 #### On the VM where you want to test the image
 
-- Find out the ip address for the default gateway
+- Find out the IP address for the default gateway
 
-  `ip route | grep "default via" | cut -d ' ' -f 3` 
+  ```bash
+  ip route | grep "default via" | cut -d ' ' -f 3`
+  ``` 
 
-  _Example:_
+  _Example Output:_
   
-  ```sh
+  ```bash
   $ ip route | grep "default via" | cut -d ' ' -f 3
   10.0.2.2
   ```
 
-- The VM needs to find the container registry on the host system. Add the ip address of the default gateway to the `/etc/hosts` file
+- The VM needs to find the container registry on the host system. Add the IP address of the default gateway to the `/etc/hosts` file
 
    ```ini
    # Container registry
@@ -169,40 +180,51 @@ Building locally is much faster than building in GitHub and is a good way to mov
 
 Clone the repository of your choice. In this example we are using <https://github.com/ublue-os/main>
 
-`git clone https://github.com/ublue-os/main.git`
+```bash
+git clone https://github.com/ublue-os/main.git`
+```
 
 ### Build the image
 
 - Make sure you can build the existing image
 
-   `podman build . -t registry.dev.local:5000/ublue-main:dev-latest`
+```bash
+podman build . -t registry.dev.local:5000/ublue-main:dev-latest
+```
 
 - Upload image to the container registry
 
-   `podman push --tls-verify=false registry.dev.local:5000/ublue-main:dev-latest`
+```bash
+podman push --tls-verify=false registry.dev.local:5000/ublue-main:dev-latest
+```
 
 ### Rebase to DEV image
 
 To rebase your test VM to the DEV image you can run
 
-`rpm-ostree rebase ostree-unverified-registry:registry.dev.local:5000/ublue-main:dev-latest`
+```bash
+rpm-ostree rebase ostree-unverified-registry:registry.dev.local:5000/ublue-main:dev-latest
+```
 
 ### Make your changes
 
 This usually involved editing the `Containerfile`.
-Most techniques for building containers apply here, if you're new to containers using the term "Dockerfile" in your searches usually shows more results when you're searching for information. 
+Most techniques for building containers apply here, if you're new to containers, using the term "Dockerfile" in your searches usually shows more results when you're searching for information.
 
-Check out CoreOS's [layering examples](https://github.com/coreos/layering-examples) for more information on customizing. 
+Check out CoreOS's [layering examples](https://github.com/coreos/layering-examples) for more information on customizing.
 
 ## Reporting problems to Fedora
 
-We endevaour to be a good partner for Fedora.
+We endeavour to be a good partner to Fedora.
 
-This project is consuming new features in Fedora and ostree, it is not uncommon to find an issue.
-It is strongly recommended that you attempt to reproduce the issue with a vanilla Fedora installation to see if it's a Universal Blue issue or a Fedora issue. 
+This project is consuming new features in Fedora and `ostree`, it is not uncommon to find an issue.
+
+It is **strongly recommended** that you attempt to reproduce the issue with a vanilla Fedora installation to see if it's a Universal Blue issue or a Fedora issue.
+
 If you are confused and can't confirm, ask in chat or post in the forums and see if someone more experienced can help out.
 Issues that you can confirm should be reported upstream, and in some cases we can help test and find fixes.
-Some of the issues you find may involve other dependencies in other projects, in those cases the Fedora team will tell you where to report the issue. 
+
+Some of the issues you find may involve other dependencies in other projects, in those cases the Fedora team will tell you where to report the issue.
 
 Upstream bug tracker: [https://github.com/fedora-silverblue/issue-tracker/issues](https://github.com/fedora-silverblue/issue-tracker/issues)
 
@@ -211,7 +233,7 @@ Upstream bug tracker: [https://github.com/fedora-silverblue/issue-tracker/issues
 
 We use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) and enforce them with a bot to keep the changelogs tidy:
 
-```
+```ini
 chore: add Oyster build script
 docs: explain hat wobble
 feat: add beta sequence
@@ -223,45 +245,50 @@ test: ensure Tayne retains clothing
 
 ### Documentation
 
-- We use [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) for the website/docs. 
-- Avoid the usage of terms likes "simply" or "easy", see [justsimply.dev](https://justsimply.dev/) for more information. 
- 
+- We use [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) for the website/docs.
+- Avoid the usage of terms likes "simply" or "easy", see [justsimply.dev](https://justsimply.dev/) for more information.
+
 ## Making a Release
 
-Releases are automated via [Release Please](https://github.com/googleapis/release-please) with additional modifications to publish images. Since the ISOs are netinstalls and always pull the latest image you usually don't need to do a release unless new ISOs are needed or for human reasons like incrementing a version number.
+Releases are automated via [Release Please](https://github.com/googleapis/release-please) with additional modifications to publish images. Since the ISOs are `netinstalls`, and always pull the latest image, you usually don't need to do a release unless new ISOs are needed or for human reasons like incrementing a version number.
 
-1. Release please always opens a draft PR in https://github.com/ublue-os/main that tracks changes from the last release
-1. Approving then merging the open PR will kick off the release action
-    - If there is no open PR commiting anything to the repo will force the action to open a PR
-    - `chore:` is ignored, so it must be something else, `fix:` or `docs:` is recommended 
-1. The release action will then make a release
+1. `release please` always opens a draft PR in https://github.com/ublue-os/main that tracks changes from the last release.
+2. Approving then merging the open PR will kick off the release action.
+    - If there is no open PR, committing anything to the repo will force the action to open a PR.
+    - `chore:` is ignored, so it must be something else, `fix:` or `docs:` is recommended.
+3. The release action will then make a release.
     - There is a delay as the ISOs need to be built, they will get attached to the same release after, this can take as long as 10 minutes.
     - Do not touch `CHANGELOG.md`, the action handles that.
-    - It might be prudent to edit the release directly after to add topical links (website, gotchas) since we don't have a release template, we should make one.
-    - If checks fail for some reason may need to force merge to kick off the ISO generation, the release please action does work after the images have been built.
+    - It might be prudent to edit the release directly after the build to add topical links (website, gotchas) since we don't have a release template [To-Do: Release Template Needed].
+    - If checks fail for some reason, you may need to force merge to kick off the ISO generation.
+    - The `release please` action does work after the images have been built.
   
-Considerations in the Action: The isogenerator action should [always be pinned to a specific version](https://github.com/ublue-os/main/blob/8941081abb0d6cc06ca9db63c1bd243a0c2c2acc/.github/workflows/release-please.yml#L36) and never to `latest`. This is to ensure that isogenerator development and testing can happen using other images while keeping main in a releaseable state on a known good version.
+Considerations in the Action: The `isogenerator` action should [always be pinned to a specific version](https://github.com/ublue-os/main/blob/8941081abb0d6cc06ca9db63c1bd243a0c2c2acc/.github/workflows/release-please.yml#L36) and never to `latest`. This is to ensure that `isogenerator` development and testing can happen using other images while keeping main in a release-able state on a "known good" version.
 
 ## Nvidia
 
-Please note, RPM Fusion supports the initial Nvidia driver release available with each Fedora version as well as the latest version. Any intermittent versions are not maintained by RPM Fusion after they have been superceded with a new version.
+Please note, RPM Fusion supports the initial Nvidia driver release available with each Fedora version, as well as the latest version provided by Nvidia. Any intermittent versions are not maintained by RPM Fusion after they have been superseded with a new version.
 
-Keep in mind checks, other than building the akmods, do fail in pull requests.
+In other words, each Fedora release has access to their chosen Nvidia driver version, but driver versions (e.g. beta versions) can also be installed from Nvidia directly. Once RPM Fusion switches to their newest desired version, the previous version is no longer available from their repositories.
+
+Keep in mind, checks, other than building the akmods, do fail in pull requests.
 
 ## Pinning a package version
 
-In some cases there might be a regression in upstream Fedora that needs a fix. Packages can be "pinned" to a certain version can be added to the main Containerfiles similar to this snippet.
+In some cases there might be a regression in upstream Fedora that needs a fix. Packages can be "pinned" to a certain version, and can be added to the main Containerfiles similar to this snippet.
 
-    # Revert to older version of ostree to fix Flatpak installations
-    RUN rpm-ostree override replace https://bodhi.fedoraproject.org/updates/FEDORA-2023-cab8a89753
+```ini
+# Revert to older version of ostree to fix Flatpak installations
+RUN rpm-ostree override replace https://bodhi.fedoraproject.org/updates/FEDORA-2023-cab8a89753
+```
 
 And then subsequently removed after Fedora has fixed the issue.
 
 ## Reverting a Pinned Package
 
-Fedora publishes images every 24h, local testing may show a fixed regression but that fix might not be in the final image until the next run. 
+Fedora publishes images every 24h; local testing may show a fixed regression but that fix might not be in the final image until the next run.
 
-Budget for a 24 hour delay after Fedora has fixed a regression before removing it. 
+Budget for a 24 hour delay after Fedora has fixed a regression before removing it.
 
 ## Join The Project Team
 

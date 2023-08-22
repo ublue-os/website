@@ -75,7 +75,8 @@ You can now type `exit` to leave the Waydroid shell.
 
 ## 5. Changing the resolution on Waydroid
 
-**Note:** Changing DPI will be done on a later step. This is more relevant on the Steam Deck, just hold tight.
+!!! note
+ Changing DPI will be done on a later step. This is more relevant on the Steam Deck, just hold tight.
 
 This is pretty easy! Just open up your terminal and enter the following commands. Just change the number at the end to fit whatever display resolution you are using, just as an example I'll show you the commands for 1280x800:
 
@@ -192,7 +193,7 @@ You should now have successfully installed Waydroid, but you may still want to r
 To do so, run the following command:
 
 ```bash
-git clone https://github.com/casualsnek/waydroid_script && cd waydroid_script && python -m venv venv && source venv/bin/activate && sudo pip install -r requirements.txt && sudo python main.py
+just configure-waydroid
 ```
 
 Now, press <kbd>ENTER</kbd> to select Android 11, press enter to select Install, then press the up and down arrow keys and the space bar to select the following:

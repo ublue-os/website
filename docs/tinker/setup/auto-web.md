@@ -6,6 +6,5 @@
 
 A new web interface for automatic setup [is currently in a beta/demo phase](https://github.com/orgs/ublue-os/discussions/173). To try it out, go to [https://ublue-images-demo.netlify.app/](https://ublue-images-demo.netlify.app/). If you encounter any issues with it, you can report the in [the issue tracker](https://github.com/ublue-os/images-website/issues).
 
-!!! note
-
-    Due to the settings of the ublue-os GitHub organization, this tool currently gives errors when you have already forked `ublue-os/startingpoint` and it tries to generate a repository using the template.
+> !!! note
+ Due to the settings of the ublue-os GitHub organization, this tool currently gives errors when you have already forked `ublue-os/startingpoint` and it tries to generate a repository using the template.
