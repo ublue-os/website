@@ -6,7 +6,8 @@
 
 [Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository) the [ublue-os/startingpoint](https://github.com/ublue-os/startingpoint) repository on GitHub. Forking makes syncing updates from the upstream template to your repository easier.
 
-Note that a GitHub user can only create one fork per repository. You can also "Use this template", but then you'll have to manage syncing with the template yourself.
+!!! Note
+        GitHub users can only create one fork per repository. You can also "Use this template", but then you'll have to manage syncing with the template yourself.
 
 ![](repo-create.png)
 
@@ -27,16 +28,17 @@ In the "Actions" tab of your repository, enable the workflows.
 ![](actions.png)
 ![](actions-2.png)
 
-Optionally you can install the [Semantic PRs](https://github.com/marketplace/semantic-prs) GitHub app if you want to enforce nice commit messages.
+Optionally, you can install the [Semantic PRs](https://github.com/marketplace/semantic-prs) GitHub app if you want to enforce nice commit messages.
 
 ### 3. Set up container signing
 
-Container signing is important for end-user security and is enabled on all Universal Blue images. It is highly recommended you set this up, and by default the image builds *will fail* if you don't.
+!!! Info
+        Container signing is important for end-user security and is enabled on all Universal Blue images. It is highly recommended you set this up, and by default the image builds *will fail* if you don't.
 
 This part is important, as users must have a method of verifying the image. The Linux desktop must not lag behind in cloud when it comes to supply chain security, so we're starting right from the start! (Seriously don't skip this part)
 
 !!! warning 
-Be careful to *never* accidentally commit `cosign.key` into your git repo.
+        Be careful to *never* accidentally commit `cosign.key` into your git repo.
 
 1. Install the [cosign CLI tool](https://edu.chainguard.dev/open-source/sigstore/cosign/how-to-install-cosign/)
     - It's recommended you use [a toolbox](https://universal-blue.org/guide/toolbox/).
