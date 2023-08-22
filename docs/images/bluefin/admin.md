@@ -20,7 +20,8 @@ Use the GNOME Software Center to [install applications from Flathub](https://fla
 
 ## Upgrades and Throttle Settings
 
-**NOTE:** "This feature is incomplete"
+!!! note
+ "This feature is incomplete"
 
 Bluefin is available with two throttle settings.
 
@@ -50,7 +51,8 @@ Check the [Fedora Silverblue User Guide](https://docs.fedoraproject.org/en-US/fe
 
 ## Remote Management
 
-**NOTE:** "This feature is incomplete"
+!!! note
+ "This feature is incomplete"
 
 Bluefin includes Cockpit for machine management. We're hoping to include more out-of-the-box management templates, please [check this issue](https://github.com/ublue-os/bluefin/issues/271) if you're interested in volunteering.
 

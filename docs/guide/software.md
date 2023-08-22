@@ -16,7 +16,8 @@ You can also install Flatpaks (for example, `mpv`) from the CLI by running:
 flatpak install flathub io.mpv.Mpv
 ```
 
-> **NOTE:** The CLI method will be necessary for desktop-environments other than GNOME or KDE.
+> !!! note
+ The CLI method will be necessary for desktop-environments other than GNOME or KDE.
 
 You can also browse [the Flathub website](https://flathub.org/) and when deciding you want to install something copy the proper command from the section "Manual Install" at the bottom of the page.
 

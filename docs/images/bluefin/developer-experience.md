@@ -72,7 +72,8 @@ Nix-powered Development Experience powered by [Devbox](https://www.jetpack.io/de
 
 Bluefin includes a NGC container that includes the latest [stable PyTorch from Nvidia](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/pytorch) on top of Ubuntu LTS. It includes `python3`, `pip3` , `pandas`, `matplotlib`, and `scikit-learn`. 
 
-**NOTE:** The additional `pip` packages are commonly used but not comprehensive. Only `pip` is used and `mamba` or `conda` are not currently tested.
+!!! note
+ The additional `pip` packages are commonly used but not comprehensive. Only `pip` is used and `mamba` or `conda` are not currently tested.
 
 ### Pre-requisites
 
@@ -121,9 +122,7 @@ distrobox assemble create --file /path/to/your/mlbox.ini
 
 - [Cockpit](https://cockpit-project.org/) for local and remote management
 - A collection of well curated monospace fonts
-- hashicorp repo included and enabled
-  - None of them installed by default, but you can just add them to the Containerfile as you need them
-    - systemd shutdown timers adjusted to 15 seconds
-    - [Tailscale](https://tailscale.com/) for VPN
-    - [Just](https://github.com/casey/just) task runner for post-install automation tasks. Check out [our documentation](https://universal-blue.org/guide/just/) for more information on using and customizing just.
-    - `fish` and `zsh` available as optional shells, use `just fish` or `just zsh` and follow the prompts to configure them
+- systemd shutdown timers adjusted to 15 seconds
+- [Tailscale](https://tailscale.com/) for VPN
+- [Just](https://github.com/casey/just) task runner for post-install automation tasks. Check out [our documentation](https://universal-blue.org/guide/just/) for more information on using and customizing just.
+- `fish` and `zsh` available as optional shells, use `just fish` or `just zsh` and follow the prompts to configure them

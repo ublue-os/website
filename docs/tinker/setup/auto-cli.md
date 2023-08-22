@@ -11,7 +11,8 @@ For automatic setup using the command line, there is a community-built tool call
     - If you have any issues, read [the project's](https://github.com/EinoHR/create-ublue-image) README and submit to its issue tracker.
 2. Follow the instructions the tool gives you
 
-> **NOTE:** This tool currently does not fork the `ublue-os/startingpoint` repository. This will slightly complicate syncing with upstream.
+> !!! note
+ This tool currently does not fork the `ublue-os/startingpoint` repository. This will slightly complicate syncing with upstream.
 
 ## Syncing
 
