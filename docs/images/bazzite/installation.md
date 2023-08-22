@@ -22,7 +22,7 @@ This guide is a visual guide for those who are unfamiliar with desktop Linux and
 * **bazzite-nvidia** is _bazzite_ but for PCs running Nvidia GPUs as they include their proprietary drivers in the image.
 
 
-* **bazzite-deck** is a special Steam Deck image of Bazzite.  More details on that [here.](https://github.com/ublue-os/bazzite#steam-deck)
+* **bazzite-deck** is a special Steam Deck image of Bazzite.  More details on that [here.](https://github.com/ublue-os/bazzite#steam-deckhome-theater-pcs-htpcs)
 
 
 * **bazzite-gnome** is bazzite, but instead of using [KDE Plasma](https://kde.org/plasma-desktop/) as the desktop environment, it uses [GNOME.](https://www.gnome.org/)
