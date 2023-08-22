@@ -12,6 +12,10 @@ Most of time the average user will be under `Home` since that is where most of t
 
 Where is this `.var` mentioned above, and where is the Steam folder?  They are hidden directories. You can show hidden files by clicking the hamburger menu (3 horizontal lines near the top right of your file manager) and select "Show Hidden Files" to see every directory and file that is hidden by default.  They all start with a "." before it.
 
+![image](https://github.com/nicknamenamenick/website/assets/121328689/f427114b-9c97-445d-8498-8e0e919fab2d)
+![image](https://github.com/nicknamenamenick/website/assets/121328689/ec367ef3-3893-421c-a4fc-c892f368933d)
+Hidden files and Flatpak application data on _bazzite-gnome_.
+
 # Steam
 Steam can run Windows games on Linux.  It utilizes a wide range of projects like WINE, DXVK, VKD3D, and a bunch of patches all packed into a piece of software built-in to Steam called Proton.
 ## Enabling Proton for all Steam Games 
