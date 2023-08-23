@@ -1,6 +1,6 @@
 # How do I install Bazzite onto my device?
 
-Follow this [guide.](https://universal-blue.org/images/bazzite/installation/)
+Follow this [guide](/images/bazzite/installation/).
 
 # Can I dual/multi-boot?
 
