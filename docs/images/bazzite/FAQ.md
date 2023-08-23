@@ -60,7 +60,9 @@ Note that AppImages are not supported in other Universal Blue images.
 
 ### Distrobox
 
-Distrobox containers can be made with the host terminal following this [documentation.](https://github.com/89luca89/distrobox/blob/main/docs/usage/distrobox-create.md)  Keep in mind that `bazzite-arch` is a distrobox container that uses pacman as the package manager and can utilize the [AUR.](https://aur.archlinux.org/)  Take a look at other distros you can run inside of a container [here.](https://github.com/89luca89/distrobox/blob/main/docs/compatibility.md#containers-distros)
+Distrobox containers can be made with the host terminal following this [documentation](https://github.com/89luca89/distrobox/blob/main/docs/usage/distrobox-create.md). Keep in mind that `bazzite-arch` is a distrobox container that uses pacman as the package manager and can utilize the [AUR](https://aur.archlinux.org/).
+
+You can use [other distributions](https://github.com/89luca89/distrobox/blob/main/docs/compatibility.md#containers-distros) inside the container.
 
 ### Nix
 
