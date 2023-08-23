@@ -71,8 +71,7 @@ If you opted to use Nix packages at the first boot, then they can be installed b
 
 ### rpm-ostree
 
-If you need something to be at a "host level" like an obscure VPN client or virt-manager. Open a host terminal and enter `rpm-ostree install <package>` and **reboot** the device after it has finished.  These packages are Fedora packages that substitute both `dnf` and `yum` on a tradtional Fedora Linux system.  
-**NOTE:** This may take a while since it's not only installing the package(s) you entered, but also deploying a new image of the OS with these packages overlayed onto it. 
+Fedora has [documentation](https://docs.fedoraproject.org/en-US/fedora/latest/system-administrators-guide/package-management/rpm-ostree/) on rpm-ostree.
 
 # Do I have to reboot after every `system` update or layering a package?
 
