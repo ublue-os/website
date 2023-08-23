@@ -28,7 +28,7 @@ We have a Linux gaming guide [here](https://universal-blue.org/images/bazzite/ga
 
 # How do I run Android applications?
 
-We have a guide on that [here.](https://universal-blue.org/images/bazzite/waydroid/)
+Follow the [Waydroid guide](/images/bazzite/waydroid/).
 
 # How do updates work?
 
