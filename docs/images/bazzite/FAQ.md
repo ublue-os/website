@@ -50,7 +50,7 @@ Alternatively, you can open a host terminal and enter `just update` then reboot 
 
 ### Flatpak
 
-Typically it is recommended to use Flatpak for most software.  These can be installed via the software center that is preinstalled like *Discover* or *GNOME Software*.  Take a look at the [selection.](https://flathub.org/apps/collection/popular/1)
+Typically it is recommended to use Flatpak for most software.  These can be installed via the software center that is preinstalled like *Discover* or *GNOME Software*.  Take a look at the [selection](https://flathub.org/apps/collection/popular/1).
 
 ### AppImage
 
