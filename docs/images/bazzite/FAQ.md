@@ -54,7 +54,9 @@ Typically it is recommended to use Flatpak for most software.  These can be inst
 
 ### AppImage
 
-AppImages can be installed by downloading any file with an `.AppImage` extension.  These are usually found on a project's website, [Appimage Hub](https://www.appimagehub.com/) or if you install [Appimage Pool.](https://flathub.org/apps/io.github.prateekmedia.appimagepool)  Then giving the AppImage application executable permssions in the file's properties to run.
+AppImages can be installed by downloading any file with an `.AppImage` extension.  These are usually found on a project's website, [Appimage Hub](https://www.appimagehub.com/) or if you install [Appimage Pool](https://flathub.org/apps/io.github.prateekmedia.appimagepool). Then giving the AppImage application executable permssions in the file's properties to run.
+
+Note that AppImages are not supported in other Universal Blue images.
 
 ### Distrobox
 
