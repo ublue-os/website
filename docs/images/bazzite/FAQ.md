@@ -18,7 +18,7 @@ Windows dual-booting can be made to work, but is **not recommended** since Windo
 
 # I'm new to Linux gaming!  Where should I start?
 
-We have a Linux gaming guide [here.](https://universal-blue.org/images/bazzite/gaming_guide/)
+We have a Linux gaming guide [here](https://universal-blue.org/images/bazzite/gaming_guide/).
 
 # How do I run Windows applications?
 
