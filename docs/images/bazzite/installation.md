@@ -2,12 +2,14 @@
 
 This guide is a visual guide for those who are unfamiliar with desktop Linux and want to install Bazzite.
 
-# Prerequisites:
+# Pre-Requisites:
 * Make sure you meet the [system requirements](https://docs.fedoraproject.org/en-US/fedora/latest/release-notes/welcome/Hardware_Overview/) for Fedora.
 * A graphics card that can utilize Vulkan 1.3 or later, but most modern AMD, Nvidia, and Intel GPUs should be fine.
 * A USB flash drive, external drive, or microSD card with at least 3GB of free space on it. **(Keep in mind this will remove existing data on it!)**
+* A working wired or wireless internet connection.
 * Download an ISO release [here.](https://github.com/ublue-os/bazzite/releases)
-* Software to flash the image to your flash drive or external drive.  We recommend using [Fedora Media Writer,](https://www.fedoraproject.org/en/workstation/download/) [Balena Etcher,](https://etcher.balena.io/) or [Rufus.](https://rufus.ie/en/)
+* Software to flash the image to your flash drive or external drive.  We recommend using [Fedora Media Writer,](https://www.fedoraproject.org/en/workstation/download/) [Balena Etcher,](https://etcher.balena.io/) or [Rufus.](https://rufus.ie/en/) **Ventoy is unsupported.**
+* Bazzite requires a physical keyboard to install properly on a Steam Deck
 * Manual partitioning is unsupported.
 * See [Fedora Kinoite documentation](https://docs.fedoraproject.org/en-US/fedora-kinoite/installation/) and [Fedora Silverblue documentation](https://docs.fedoraproject.org/en-US/fedora-silverblue/installation/) for more information.
 
