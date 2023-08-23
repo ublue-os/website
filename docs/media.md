@@ -24,7 +24,7 @@
 </div>
 
 <div class="grid" markdown>
-**Techspot**: [Linux desktop users can get the Steam Deck experience with Bazzite]([https://www.gamingonlinux.com/2023/08/bazzite-is-a-new-fedora-based-linux-for-steam-deck-and-gaming-pcs/](https://www.techspot.com/news/99902-linux-desktop-users-can-get-steam-deck-experience.html))
+**Techspot**: [Linux desktop users can get the Steam Deck experience with Bazzite](https://www.techspot.com/news/99902-linux-desktop-users-can-get-steam-deck-experience.html)
 { .card }
 </div>
 
