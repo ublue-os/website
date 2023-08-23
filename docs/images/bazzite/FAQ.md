@@ -83,17 +83,19 @@ No.  They just won't apply until shutdown.  You can attempt to layer package(s) 
 SteamOS is based on Arch Linux, but the base packages and drivers get updates at a much slower pace than using vanilla Arch and updating yourself.  Bazzite will follow Fedora's updates which means it will always be ahead of SteamOS in terms of newer software and drivers.
 
 
-# Is Bazzite "immutable?"
+# How does Bazzite differ from other Linux distributions?
 
 Yes.  Like SteamOS, there are read-only root files for stability purposes.
 
-The immutable desktop version of Fedora is built on [libostree](https://ostreedev.github.io/ostree/) which has advantages such as:
+Bazzite is built off of the desktop versions of Fedora is built [libostree](https://ostreedev.github.io/ostree/) which has advantages such as:
 * Atomic upgrades.
 * Containerized applications. (**No dependency hell!**)
 * Overlay system packages to the host.
 * Smoother upgrade process from major Fedora point releases.
 * Very little risk of an unbootable or broken system.
 * Rollback system updates.
+
+Check out the [Universal Blue homepage](https://universal-blue.org) for more information. 
 
 
 # Is this another fringe distro?
