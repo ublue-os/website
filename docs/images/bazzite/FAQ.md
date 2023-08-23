@@ -4,7 +4,7 @@ Follow this [guide.](https://universal-blue.org/images/bazzite/installation/)
 
 # Can I dual/multi-boot?
 
-Windows dual-booting works, but is **not recommended** since Windows has a habit of destroying your bootloader.  The best method would be running Windows on a different drive than the one containing Bazzite, like an external one.  Other Linux distributions **cannot** be dual/multi-booted due to how Bazzite mounts certain things.
+Windows dual-booting can be made to work, but is **not recommended** since Windows has a habit of destroying your bootloader.  The best method would be running Windows on a different drive than the one containing Bazzite, like an external one.  Other Linux distributions **cannot** be dual/multi-booted due to how Bazzite mounts certain things.
 
 # Why use Linux for gaming?
 
