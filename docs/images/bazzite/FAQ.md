@@ -6,20 +6,6 @@ Follow this [guide](/images/bazzite/installation/).
 
 Windows dual-booting can be made to work, but is **not recommended** since Windows has a habit of destroying your bootloader.  The best method would be running Windows on a different drive than the one containing Bazzite, like an external one.  Other Linux distributions **cannot** be dual/multi-booted due to how Bazzite mounts certain things.
 
-# Why use Linux for gaming?
-
-* Free.
-* The source code is available publicly for most of the packages that Bazzite ships.  Steam is about the only packages that does not have their source code available.
-* Respects your privacy.
-* Secure by default.  Most applications you install allow you to easily modify their permissions.
-* Updates do not get in the way.
-* Fine-tune and customization.
-* [Some games run better in Proton than running on Windows 10 or 11.](https://arstechnica.com/gaming/2022/03/how-valve-made-steam-deck-the-first-pc-to-smoothly-run-elden-ring/)
-
-# I'm new to Linux gaming!  Where should I start?
-
-We have a Linux gaming guide [here](https://universal-blue.org/images/bazzite/gaming_guide/).
-
 # How do I run Windows applications?
 
 * Use Lutris (preinstalled.) 
