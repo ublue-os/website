@@ -1,6 +1,6 @@
 # Installing Bazzite and Initial Setup
 
-This guide is a visual guide for those who are unfamiliar with desktop Linux and want to install Bazzite.
+This guide is a visual guide for installing Bazzite.
 
 # Pre-Requisites:
 * Make sure you meet the [system requirements](https://docs.fedoraproject.org/en-US/fedora/latest/release-notes/welcome/Hardware_Overview/) for Fedora.
