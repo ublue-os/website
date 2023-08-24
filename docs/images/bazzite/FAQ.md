@@ -1,4 +1,9 @@
-# How do I install Bazzite onto my device?
+# FAQ
+
+## Why is it called Bazzite?
+
+Fedora's image-based variants are usually named after either [minerals](https://fedoraproject.org/kinoite/) or [flowers](https://fedoraproject.org/sericea/).
+## How do I install Bazzite onto my device?
 
 Follow this [guide](/images/bazzite/installation/).
 
@@ -89,7 +94,7 @@ No. Bazzite is not a distribution. This is Fedora Kinoite/Silverblue (depending 
 
 Unlike traditional Linux distributions, much of the maintenance and security updates are done upstream by Fedora and Universal Blue while Bazzite only configures a great gaming experience out of the box. Check the [mission statement](/mission) for more information.
 
-# Why run Steam in an Arch Linux Distrobox container as opposed to Flatpak?
+## For the desktop edition, why run Steam in an Arch Linux Distrobox container as opposed to Flatpak?
 
 Steam is not built with flatpak in mind. Valve does not contribute to it, and as a result there are many workarounds that the Arch package does not have to worry about it. The Steam Deck uses the Arch package, and to stay consistent with SteamOS so do we.
 
