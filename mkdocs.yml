@@ -93,9 +93,9 @@ plugins:
         as_creation: date
 nav:
   - Home: index.md
-  - Installation:
-      - installation.md
-  - Images:
+  - FAQ: faq.md
+  - Media Coverage: media.md
+  - Download Images:
       - Full Image List: images.md
       - Main Images: 
           - images/main.md
@@ -121,6 +121,7 @@ nav:
       - Videos: https://www.youtube.com/c/JorgeCastro/videos
   - Documentation:
       - Introduction: introduction.md
+      - Installation: installation.md
       - User's Guide:
           - Installing Software: guide/software.md
           - just: guide/just.md
@@ -144,7 +145,5 @@ nav:
           - Installation: tinker/installation.md
           - Modification: tinker/modification.md
           - Community: tinker/community.md
-  - FAQ: faq.md
-  - Media: media.md
   - Blog:
       - blog/index.md
