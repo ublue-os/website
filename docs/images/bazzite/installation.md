@@ -1,6 +1,6 @@
 # Installing Bazzite and Initial Setup
 
-This guide is a visual guide for installing Bazzite.
+This is a visual guide for installing Bazzite.
 
 # Video Guide
 
