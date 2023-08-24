@@ -3,6 +3,8 @@ hide:
   - navigation
 ---
 
+# Toolboxes
+
 These convenience toolboxes are designed to run in [toolbx](https://containertoolbx.org/) and [distrobox](https://github.com/89luca89/distrobox).
 They can be used on any host OS:
 
