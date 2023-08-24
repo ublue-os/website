@@ -1,7 +1,10 @@
 # Media
+
 ### What people are saying about Universal Blue
 
 ## Blogs and Websites
+
+### Universal Blue
 
 <div class="grid" markdown>
 **Jack Wallen / ZDNet**: [Universal Blue is a new paradigm for the Linux desktop and it's brilliant](https://www.zdnet.com/article/universal-blue-is-a-new-paradigm-for-the-linux-desktop-and-its-brilliant/)
@@ -13,7 +16,27 @@
 { .card }
 </div>
 
+### Bazzite
+
+<div class="grid" markdown>
+**Gaming on Linux**: [Bazzite is a new Fedora-based Linux for Steam Deck and gaming PCs](https://www.gamingonlinux.com/2023/08/bazzite-is-a-new-fedora-based-linux-for-steam-deck-and-gaming-pcs/)
+{ .card }
+</div>
+
+<div class="grid" markdown>
+**Techspot**: [Linux desktop users can get the Steam Deck experience with Bazzite](https://www.techspot.com/news/99902-linux-desktop-users-can-get-steam-deck-experience.html)
+{ .card }
+</div>
+
+
 ## Videos
+
+**Hi-Tech Lo-Life**  
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aaeRk8_i1Ds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<br/>
+<br/>
 
 **Alphabits**
 
