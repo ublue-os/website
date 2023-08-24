@@ -1,4 +1,4 @@
-# Media
+# Media Coverage
 
 ### What people are saying about Universal Blue
 
