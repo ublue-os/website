@@ -39,7 +39,7 @@ Steam can run Windows games on Linux.  It utilizes a wide range of projects like
 # Non-Steam Games
 * **It is recommended to use Lutris for _most_ non-steam games.**
 * However using [Heroic](https://heroicgameslauncher.com) for Epic, GOG, and Amazon Games Launcher would be easier for those specific launchers.
-* [Bottles](https://usebottles.com/) is also a good alternative if you wish to use that.  It also works great for general purpose Windows software too.
+* [Bottles](https://usebottles.com/) is also a good alternative if you wish to use that.
 * Other games and launchers are avalaible in the software center (_Discover, GNOME Software_) like Xonotic and itch.io.
 
 ## Lutris
