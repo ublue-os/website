@@ -2,6 +2,12 @@
 
 This guide is a visual guide for installing Bazzite.
 
+# Video Guide
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/aaeRk8_i1Ds?si=GopDcKXcCUCxdie8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+Installation tutorial begins at [1:37](https://youtu.be/aaeRk8_i1Ds?feature=shared&t=97).
+
 ## Pre-Requisites
 
 * Make sure you meet the [system requirements](https://docs.fedoraproject.org/en-US/fedora/latest/release-notes/welcome/Hardware_Overview/) for Fedora.
@@ -25,7 +31,7 @@ This guide is a visual guide for installing Bazzite.
 
 * **bazzite-deck** is a special Steam Deck image of Bazzite.  More details on that [here.](https://github.com/ublue-os/bazzite#steam-deckhome-theater-pcs-htpcs)
 
-* **bazzite-gnome** is bazzite, but instead of using [KDE Plasma](https://kde.org/plasma-desktop/) as the desktop environment, it uses [GNOME.](https://www.gnome.org/)
+* **bazzite-gnome** is _bazzite_, but instead of using [KDE Plasma](https://kde.org/plasma-desktop/) as the desktop environment, it uses [GNOME.](https://www.gnome.org/)
 
 * **bazzite-gnome-nvidia** is _bazzite-gnome_ but for PCs running Nvidia GPUs as they include their proprietary drivers in the image.
 
@@ -83,3 +89,7 @@ For a quick run-through of the basics of gaming on desktop Linux, take a look [h
 ## Waydroid
 
 Check out the Waydroid guide [here.](/images/bazzite/waydroid)
+
+## Frequently Asked Questions
+
+Link to that [here](/images/bazzite/FAQ).
