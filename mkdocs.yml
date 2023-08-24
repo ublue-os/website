@@ -95,7 +95,8 @@ nav:
   - Home: index.md
   - FAQ: faq.md
   - Media Coverage: media.md
-  - Download Images:
+  - Download + Images:
+      - Installation: installation.md
       - Full Image List: images.md
       - Main Images: 
           - images/main.md
@@ -121,7 +122,6 @@ nav:
       - Videos: https://www.youtube.com/c/JorgeCastro/videos
   - Documentation:
       - Introduction: introduction.md
-      - Installation: installation.md
       - User's Guide:
           - Installing Software: guide/software.md
           - just: guide/just.md
