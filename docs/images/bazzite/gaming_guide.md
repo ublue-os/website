@@ -7,6 +7,15 @@
 * [PC Gaming Wiki](https://www.pcgamingwiki.com/wiki/Home) - General information, workarounds, and enhancements with PC games.
 * [General Emulation Wiki](https://emulation.gametechwiki.com/index.php/Main_Page) - Wiki dedicated to video game emulation.
 
+# Filesystem
+
+Most of time the average user will be under `Home` since that is where most of the user files will be located.  `Home` will include anything from personal files (like Documents, Videos, Pictures, Music, etc.) to application data.  Applications installed from the software center will be located in `~/.var/app/`
+
+Where is this `.var` mentioned above, and where is the Steam folder?  They are hidden directories. You can show hidden files by clicking the hamburger menu (3 horizontal lines near the top right of your file manager) and select "Show Hidden Files" to see every directory and file that is hidden by default.  They all start with a "." before it.
+
+![image](https://github.com/nicknamenamenick/website/assets/121328689/f427114b-9c97-445d-8498-8e0e919fab2d)
+![image](https://github.com/nicknamenamenick/website/assets/121328689/ec367ef3-3893-421c-a4fc-c892f368933d)
+Hidden files and Flatpak application data on _bazzite-gnome_.
 
 ## Steam
 

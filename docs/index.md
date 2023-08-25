@@ -5,7 +5,9 @@ hide:
 
 # Custom Operating System images based on Fedora
 
-This is a collection of container images using Fedora's support for OCI/Docker containers as a [transport and delivery mechanism for operating system content](https://fedoraproject.org/wiki/Changes/OstreeNativeContainerStable). That's nerdspeak for the ultimate Linux client: the reliability of a Chromebook, but with the flexibility and power of a traditional Linux desktop. At long last, we've ascended. 
+This is a collection of container images using Fedora's support for OCI/Docker containers as a [transport and delivery mechanism for operating system content](https://fedoraproject.org/wiki/Changes/OstreeNativeContainerStable). That's nerdspeak for the ultimate Linux client: the reliability of a Chromebook, but with the flexibility and power of a traditional Linux desktop. At long last, we've ascended.
+
+For a more in-depth explanation, refer to our [Documentation,](/introduction) and [Media Coverage](/media) sections.
 
 This project provides ... 
 
@@ -29,7 +31,7 @@ This project provides ...
 - :material-heart:{ .lg .middle } __Community__
 
     ---
-    Help new contributors to start their cloud native and open source journeys no matter their skill level
+    Help new contributors to start their cloud native and open source journeys no matter their skill level.
 
 </div>
   
