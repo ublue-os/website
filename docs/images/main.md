@@ -5,11 +5,11 @@
 A common main image for all other uBlue images, with minimal (but important) adjustments to Fedora. 💙
 
 1. [Features](#Features)
-1. [Tips and Tricks](#Tips-and-Tricks)
-1. [How to Install](#How-to-Install)
-1. [Verification](#Verification)
-1. [Configuring Automatic Updates](#Configuring-Automatic-Updates)
-1. [Making your own](#Making-your-own)
+2. [Tips and Tricks](#Tips-and-Tricks)
+3. [How to Install](#How-to-Install)
+4. [Verification](#Verification)
+5. [Configuring Automatic Updates](#Configuring-Automatic-Updates)
+6. [Making your own](#Making-your-own)
 
 ## What is this?
 
