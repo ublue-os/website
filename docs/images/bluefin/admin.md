@@ -2,6 +2,14 @@
 
 ## Day to Day Operation
 
+### Overwriting System Defaults
+
+Most Bluefin system defaults are shipped on the base image along with Fedora configuration in `/usr/etc`. Most of these can be overriden by placing a file in `/etc`. 
+
+For example, the Distrobox configuration is in `/usr/etc/distrobox/distrobox.ini`. Your customization options will be placed in `/etc/distrobox/distrobox.ini`.
+
+Check the [XDG Base Directory Specification](https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html) for more information on configuration options, in particular `~/.local` and `~/.config`. 
+
 ### System Updates
 
 Bluefin is designed to be "hands off". System updates apply once a day, and Flatpaks update twice a day [in the background](https://github.com/ublue-os/config/tree/main/files/usr/lib/systemd). Updates are applied when the system reboots. Therefore, it is recommended to routinely power off your device when it's not being used to ensure kernel updates are being applied. Application updates (like the browser) happen independently of this and don't require a reboot.
