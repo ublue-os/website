@@ -2,7 +2,7 @@
 date: 2023-08-26
 comments: true
 authors: 
-  - nicknamenick
+  - nicknamenamenick
   - castrojo
 links:
   - Bazzite Commits: https://github.com/ublue-os/bazzite/commits/main
