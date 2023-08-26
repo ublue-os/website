@@ -45,7 +45,7 @@ Every issue we will go over some of the most exciting changes, and we'll always 
 - Preserve Decky launcher after updates.
 - Decky now uses the "release" branch as opposed to "pre-release" by default.
 - Added missing dependency for Lutris.
-- Added missing dependency to SteamTinkerLauncher.
+- Added missing dependency for SteamTinkerLauncher.
 - Major Distrobox cleanup for a more stable experience.
 - Fixed battery limit service to match SteamOS.
 - Fixed fish shell not working system-wide.
