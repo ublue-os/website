@@ -12,11 +12,11 @@ links:
 
 Bazite 1.0 released last week, but the hum of progress continues! 
 
-If you are new to a Universal Blue project here's some back filler: These images follow the [continuous delivery](https://continuousdelivery.com/) methodology of development. 
+If you are new to a Universal Blue project here's some back filler: these images follow the [continuous delivery](https://continuousdelivery.com/) methodology of development. 
 
-We build on top of the Fedora base and then build our customizations on top every day and on every change. That means when we fix something or add a new feature everyone gets it. So if we fix one of your issues it can be in your device in less than 15 minutes, and usually faster. Neat. The more people help out, the greater the pace of features and goodies.
+We build on top of the Fedora base and then build our customizations on top every day and on every change. That means when we fix something or add a new feature everyone gets it. So if we fix one of your issues it can be in your device in less than 15 minutes, and usually faster.  The more people help out, the greater the pace of features and goodies.
 
-In order to help with that we'll start publishing these Bazzite notes regularly so you can keep pace with what's happening. Here's a great tour video from Hi-Tech Lo-Life showing off some Bazzite features.
+In order to help with that we'll start publishing notes on Bazzite regularly so you can keep pace with what's happening. Here's a great tour video from Hi-Tech Lo-Life showing off some Bazzite features and an installation guide.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/aaeRk8_i1Ds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <br/>
@@ -38,8 +38,8 @@ Every issue we will go over some of the most exciting changes, and we'll always 
 - Added new features and fixed issues with GNOME variants of Bazzite.
     - Removed unnecessary preinstalled applications.
     - Added [Extension Manager](https://flathub.org/apps/com.mattjakeman.ExtensionManager) to replace Extensions.
-    - Fixed VRR not working.
-    - Removed AppIndicator as a preinstalled extension.
+    - Fixed VRR not working due to AppIndicator.  Removed it as a preinstalled extension, but can be installed again just be aware that VRR breaks.
+
 
 ## Fixes
 - Preserve Decky launcher after updates.
@@ -52,3 +52,5 @@ Every issue we will go over some of the most exciting changes, and we'll always 
 - Fixed Bazzite Portal not installing certain things and relaunching at every boot.
 - Multiple fixes to Waydroid.
 - The Steam Deck variant defaults to X11 in Desktop Mode by default to resolve issues.  Wayland is still an option.
+
+Thanks for the support!  If you run into any issues, please post it to our [issue tracker](https://github.com/ublue-os/bazzite/issues) or open a thread on our [Discord](https://discord.gg/WnrmSQVna9).
