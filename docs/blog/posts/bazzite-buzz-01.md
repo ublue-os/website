@@ -4,6 +4,8 @@ comments: true
 authors: 
   - nicknamenick
   - castrojo
+links:
+  - Bazzite Commits: https://github.com/ublue-os/bazzite/commits/main
 ---
 
 # Bazzite Buzz No. 1
@@ -19,6 +21,8 @@ In order to help with that we'll start publishing these Bazzite notes regularly 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/aaeRk8_i1Ds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <br/>
 <br/>
+
+Every issue we will go over some of the most exciting changes, and we'll always link to the [Bazzite commits](https://github.com/ublue-os/bazzite/commits/main) so you can inspect them for yourself. Ok let's get rolling:
 
 ## Features
 
