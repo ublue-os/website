@@ -11,9 +11,7 @@ links:
 
 # Bazzite Buzz No. 1
 
-Bazite 1.0 released last week, but the hum of progress continues! 
-
-If you are new to a Universal Blue project here's some back filler: These images follow the [continuous delivery](https://continuousdelivery.com/) methodology of development. 
+Bazite 1.0 released last week, but the hum of progress continues! Welcome to the Bazzite Buzz, our newsletter for all the good things we hope to bring gamers over the next few months. If you are new to a Universal Blue project here's some back filler: These images follow the [continuous delivery](https://continuousdelivery.com/) methodology of development. 
 
 We build on top of the Fedora base and then build our customizations on top every day and on every change. That means when we fix something or add a new feature everyone gets it. So if we fix one of your issues it can be in your device in less than 15 minutes, and usually faster. Neat. The more people help out, the greater the pace of features and goodies.
 
