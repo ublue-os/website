@@ -2,48 +2,49 @@
 
 [![build-ublue](https://github.com/ublue-os/main/actions/workflows/build.yml/badge.svg)](https://github.com/ublue-os/main/actions/workflows/build.yml)
 
-A common main image for all other uBlue images, with minimal (but important) adjustments to Fedora. <3  
+A common main image for all other uBlue images, with minimal (but important) adjustments to Fedora. 💙
 
 1. [Features](#Features)
-1. [Tips and Tricks](#Tips-and-Tricks)
-1. [How to Install](#How-to-Install)
-1. [Verification](#Verification)
-1. [Configuring Automatic Updates](#Configuring-Automatic-Updates)
-1. [Making your own](#Making-your-own)
+2. [Tips and Tricks](#Tips-and-Tricks)
+3. [How to Install](#How-to-Install)
+4. [Verification](#Verification)
+5. [Configuring Automatic Updates](#Configuring-Automatic-Updates)
+6. [Making your own](#Making-your-own)
 
 ## What is this?
 
-You should be familiar with [image-based desktops](https://silverblue.fedoraproject.org/about). These are Fedora OStree images that have been modified with the following quality of life features:
+For context, please familiarize yourself with [image-based desktops](https://silverblue.fedoraproject.org/about). These are Fedora OStree images that have been modified with the following quality of life features:
 
 ## Features
 
-- Start with a Fedora image
+- Starts with a Fedora image,
 - Adds the following packages to the base image:
-  - Hardware acceleration and codecs
+  - Hardware acceleration and codecs,
   - `distrobox` for terminal CLI and user package installation
-  - A selection of [udev rules and service units](https://github.com/ublue-os/config)
-  - [libratbag](https://github.com/libratbag/libratbag), to configure supported mice via [piper](https://github.com/libratbag/piper)
-  - Several pre-built [drivers/akmods](https://github.com/ublue-os/akmods)
-  - Various other tools: check out the [complete list of packages](https://github.com/ublue-os/main/blob/main/packages.json)
-- Sets automatic staging of updates for the system
-- Sets `flatpaks` to update twice a day
-- Everything else (desktop, artwork, etc) remains stock so you can use this as a good starting image
+  - A selection of [udev rules and service units](https://github.com/ublue-os/config),
+  - [libratbag](https://github.com/libratbag/libratbag), to configure supported mice via [piper](https://github.com/libratbag/piper),
+  - Several pre-built [drivers/akmods](https://github.com/ublue-os/akmods),
+  - Various other tools: check out the [complete list of packages](https://github.com/ublue-os/main/blob/main/packages.json).
+- Sets automatic staging of updates for the system.
+- Sets `flatpaks` to update twice a day.
+- Everything else (desktop, artwork, etc) remains stock so you can use this as a good starting image.
 
 ## Tips and Tricks
 
-Unlike traditional Linux distributions, the base image is intended to be used "out of the box" as it is, packages are installed via Flatpak whenever possible (except for IDEs in some cases, more below).
+Unlike traditional Linux distributions, the base image is intended to be used "out-of-the-box" as it is. Packages are installed via Flatpak whenever possible (except for IDEs in some cases, more below).
 Should that not be possible, you can use [distrobox](https://github.com/89luca89/distrobox) to have images of mutable distributions where you can install applications normally.
+
 Want an application that is only available on Arch Linux *and* one that is only on Ubuntu? Well, now can have both!
 
-Distrobox is very powerful, for example you can use to [host your entire development environment](https://github.com/89luca89/distrobox/blob/main/docs/posts/integrate_vscode_distrobox.md) completely separate from your host system. Or use it to run a [container for your virtual machines](https://github.com/89luca89/distrobox/blob/main/docs/posts/run_libvirt_in_distrobox.md).
+Distrobox is very powerful; for example, you can use it to [host your entire development environment](https://github.com/89luca89/distrobox/blob/main/docs/posts/integrate_vscode_distrobox.md) completely separate from your host system. Or use it to run a [container for your virtual machines](https://github.com/89luca89/distrobox/blob/main/docs/posts/run_libvirt_in_distrobox.md).
 
-ublue-os/base-main is also very well suited for servers, and users are expected to make full use of `podman` to host containers running "typical" server software i.e. `nginx`, `caddy` and others. 
+`ublue-os/base-main` is also very well suited for servers, and users are expected to make full use of `podman` to host containers running "typical" server software i.e. `nginx`, `caddy` and others.
 
 ## How to Install
 
-[Follow these instructions](/installation)
+[Follow these instructions](/installation).
 
-[File an issue](https://github.com/ublue-os/main/issues) if you find a problem
+[File an issue](https://github.com/ublue-os/main/issues) if you find a problem.
 
 ## Verification
 
