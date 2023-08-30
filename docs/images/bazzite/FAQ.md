@@ -58,8 +58,7 @@ You can use [other distributions](https://github.com/89luca89/distrobox/blob/mai
 
 ### Nix
 
-If you opted to use Nix packages at the first boot, then they can be installed by entering:  
-`nix-env --install <package>` in a host terminal.  Click [here](https://search.nixos.org/packages) to search for Nix packages.
+If you opted to use Nix packages at the first boot, then you can use the Nix package manager.  More information on that [here](https://zero-to-nix.com/).
 
 ### rpm-ostree
 
