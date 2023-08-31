@@ -24,3 +24,25 @@
    - The bot will create pull requests for your fork as upstream receives changes, and later merge those pull requests automatically, kicking off an automatic build of your forked image.
 1. Check the actions tab to monitor the build. Then rebase to your personal image. The package name and URL will be in your packages section of github, like this: https://github.com/castrojo?tab=packages
 1. Neat huh? Tell your friends how cool this is. 
+
+## Advanced
+If you are a contributor or want to become one in the future, it could be handy to use a more advanced approach. You will have the best of both worlds: being able to contribute to the upstream project and use your own changes.
+
+The following example is based on the `bluefin` project.
+
+1. Create a second branch on your fork called `bluefin-main`
+1. Change the `.github/pull.yml` on your `main` branch to keep `bluefin-main` in sync with the upstream branch and merge it with your `main` branch of your fork. Like in the following example:
+```
+version: "1"
+rules:
+  - base: bluefin-main
+    upstream: ublue-os:main
+    mergeMethod: hardreset
+    mergeUnstable: false
+  - base: main
+    upstream: bluefin-main
+    mergeMethod: merge
+    mergeUnstable: false
+label: ":arrow_heading_down: pull"
+conflictLabel: "merge-conflict"
+```
