@@ -8,6 +8,8 @@
 * [General Emulation Wiki](https://emulation.gametechwiki.com/index.php/Main_Page) - Wiki dedicated to video game emulation.
 
 # Filesystem
+!!! Notice
+    **If you are coming from Windows, backup your current drives because Linux does not play well with NTFS, and any current secondary drives would have to be reformatted to ext4 or btrfs.**
 
 Most of time the average user will be under `Home` since that is where most of the user files will be located.  `Home` will include anything from personal files (like Documents, Videos, Pictures, Music, etc.) to application data.  Applications installed from the software center will be located in `~/.var/app/`
 
