@@ -137,11 +137,11 @@ nav:
       - Tinkerer's Guide:
           - Introduction: tinker/make-your-own.md
           - Mindset: tinker/mindset.md
-          - Setup:
+          - Automatic Setup:
             - tinker/setup/index.md
             - Automatic setup (cli): tinker/setup/auto-cli.md
             - Automatic setup (web): tinker/setup/auto-web.md
-            - Manual setup: tinker/setup/manual.md
+          - Manual setup: tinker/setup/manual.md
           - Installation: tinker/installation.md
           - Modification: tinker/modification.md
           - Community: tinker/community.md

@@ -7,4 +7,4 @@ There are two ways to do this step automatically, with a command line program an
 [Automatic setup using the command line](/tinker/setup/auto-cli/){ .md-button }
 [Automatic setup using a web interface](/tinker/setup/auto-web/){ .md-button }
 
-We also supply manual instructions for setting up the repository. These instructions require a bit more reading, familiarity with the command line.
+We also supply [manual](/tinker/setup/manual/) instructions for setting up the repository. These instructions require a bit more reading, familiarity with the command line.

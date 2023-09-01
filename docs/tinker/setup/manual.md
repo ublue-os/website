@@ -4,7 +4,7 @@
 
 ### 1. Fork the repository
 
-[Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository) the [ublue-os/startingpoint](https://github.com/ublue-os/startingpoint) repository on GitHub. Forking makes syncing updates from the upstream template to your repository easier.
+[Fork](https://universal-blue.org/tinker/fork-your-own/) the [ublue-os/startingpoint](https://github.com/ublue-os/startingpoint) repository on GitHub. Forking makes syncing updates from the upstream template to your repository easier.
 
 !!! Note
         GitHub users can only create one fork per repository. You can also "Use this template", but then you'll have to manage syncing with the template yourself.
