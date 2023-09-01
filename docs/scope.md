@@ -1,27 +1,29 @@
-# uBlue Images (main/nvidia)
+# Main Images 
 
-When people refer to "uBlue" they will likely mean this:
+When people refer to Universal Blue or "uBlue" they will likely [mean the base images](https://github.com/ublue-os/main). These are described as "OCI base images of Fedora with batteries included". This means: 
 
 - Daily, automatic ingestion of [Fedora OSTree desktops](https://quay.io/organization/fedora-ostree-desktops/).
     - Silverblue, Kinoite, Vauxite, Sericea, and others.
+    - Note that these are unofficially built images, Fedora doesn't expect to publish official images until F40. 
     - Additionally MATE and LXQt are provided since Fedora does not offer these images.
     - Continuously built and delivered via an OCI container from a registry (currently ghcr.io).
 - Focus on things that Fedora CANNOT ship:
     - Hardware enablement,
-    - Non-free codecs aka "a bunch of that RPMFusion stuff,"
+    - Non-free codecs aka. "a bunch of that RPMFusion stuff".
     - Built in Nvidia drivers with multiple version support.
 - Quality of Life Services:
     - Automatic Updates,
       - System set to auto stage updates,
       - Flatpaks set to auto update.
     - Additional udev rules for better [controller support](https://github.com/ublue-os/config#udev-rules) and 2FA keys.
-- Main and Nvidia are "Light Touch:"
+- The images are "Light Touch:"
     - They are intended to be close(ish) to Fedora.
+      - In certain cases we may add packages that are in Fedora Workstation but not in Silverblue to offer a more consistent experience.     
     - Exceptions to this may granted if multiple maintainers agree based on community feedback in an issue.
       - If an application is available as a Flatpak it will NOT be included.
       - If it works in a Distrobox: SHOULD NOT be included.
       - If it only works on the host AND is required for hardware functionality: SHOULD be included.
-    - Kernel modules MUST NOT be included, they are added to `ublue-os/akmods` and `ublue-os/nvidia`.
+    - Kernel modules MUST NOT be included, they are added to `ublue-os/akmods`.
     - If it only works on the host AND IS NOT required for hardware functionality: MAY be included.
 
 # Universal Blue Toolkit
