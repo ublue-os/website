@@ -1,7 +1,7 @@
 # Community and Project
 
 - Strive to be a well-managed open-source project.
-    - [Decentralized governance](/membership] in line with what people expect:
+    - [Decentralized governance](/membership) in line with what people expect:
         - We should be able to pass most open source project health checks a [typical OSPO](https://todogroup.org/guides/#ospo-guides) would use when doing due diligence. We're not there yet but it's an achievable goal.
     - Project resources designed to be shared and decentralized, no BDFL-like structures.
     - Goal to join a foundation or cooperative that can ensure long-term viability of the project.
