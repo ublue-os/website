@@ -13,7 +13,7 @@ links:
 
 Startingpoint, the 'template' repository for creating custom images that includes a simplified configuration format `recipe.yml`, has been going through a rewrite for almost a month now. The rewrite is going to be merged as soon as it and the documentation is ready and tested, and this post will guide you through the changes.
 
-The rewrite brings startingpoint from a single `build.sh` where incrementally added features were added, to a collection of modules ran by a very simple build script in the order specified in the `recipe.yml` configuration. This fundamental change makes startingpoint more extensible and customizable, allowing you to add and remove features as you please. It also allows for sharing of certain configuration, such as packages lists, between multiple images built in the same repository.
+The rewrite brings startingpoint from a single `build.sh` where incrementally added features were piled up, to a collection of modules run by a very simple build script in the order specified in the `recipe.yml` configuration. This fundamental change makes startingpoint more extensible and customizable, allowing you to add and remove features as you please. It also allows for sharing of certain configuration, such as packages lists, between multiple images built in the same repository.
 
 Unfortunately, breaking changes have been made to the configuration (recipe) and the script system.   
 For maintainers of custom images, there are a couple of ways to deal with this.
@@ -84,7 +84,7 @@ As a minor change, all user configuration has been moved into the `config/` dire
 
 ## When can I expect the PR to merge?
 
-When it is fully ready, tested, and documentation changes have been PRd onto the website. A while after there'll be a more newcomer-friendly announcement post. The new version will be considered a '1.0', and the amount of breaking changes will be kept as zero for as long as possible. 
+When it is fully ready, tested, and documentation changes have been PRd onto the documentation website. A while after the merge there'll be a more newcomer-friendly announcement post. The new version will be considered a '1.0', and the amount of breaking changes will be kept as zero for as long as possible. 
    
 For post-release I have plans for a PR that would allow the configuration of _multiple_ modules be included using the `from-file:` syntax, a PR that would allow an entire directory full of build scripts to be run at once, without having to specify each one individually, and a blog post that would showcase high-level technical details of the repository without needing to get in the weeds by reading source code.
 
