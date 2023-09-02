@@ -7,7 +7,7 @@
 ## 1. Disabling SELinux and enabling the Waydroid container
 
 SELinux is a kernel module used by Fedora (and thus Bazzite) to increase security on a Linux system. 
-Currently there is an issue with SELinux file re-labeling in OCI images that prevents Waydroid from being used without SELinux being in permissive first.
+Currently there is an issue with SELinux file re-labeling in OCI images that prevents Waydroid from being used without SELinux being set to permissive first.
 
 To disable SELinux, run:
 
