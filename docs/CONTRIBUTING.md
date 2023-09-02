@@ -292,7 +292,7 @@ Budget for a 24 hour delay after Fedora has fixed a regression before removing i
 
 ## Join The Project Team
 
-If you're interested in _maintaining_ something then let us know!
+If you're interested in _maintaining_ something then check the [membership page](/membership) for more information. 
 
 ## Attribution
 This guide is based on the **contributing.md**. [Make your own](https://contributing.md/)!
