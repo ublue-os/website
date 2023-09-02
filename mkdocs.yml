@@ -105,6 +105,7 @@ nav:
       - Bazzite: 
           - Introduction: images/bazzite/index.md
           - Installation: images/bazzite/installation.md
+          - Bazzite FAQ: images/bazzite/FAQ.md
           - Waydroid Configuration: images/bazzite/waydroid.md
       - Bluefin: 
           - Introduction: images/bluefin/index.md
@@ -117,6 +118,7 @@ nav:
       - Scope: scope.md
       - Values: values.md
       - Code of Conduct: CODE_OF_CONDUCT.md
+      - Membership: membership.md
       - Discord Chat: https://discord.gg/WEu6BdFEtp
       - Discussion Forums: https://github.com/orgs/ublue-os/discussions
       - Videos: https://www.youtube.com/c/JorgeCastro/videos
