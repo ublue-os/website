@@ -7,7 +7,7 @@
 ## 1. Disabling SELinux and enabling the Waydroid container
 
 SELinux is a kernel module used by Fedora (and thus Bazzite) to increase security on a Linux system. 
-Currently there is an issue with SELinux file re-labeling in OCI images that prevents Waydroid from being used without SELinux being disabled first.
+Currently there is an issue with SELinux file re-labeling in OCI images that prevents Waydroid from being used without SELinux being in permissive first.
 
 To disable SELinux, run:
 
@@ -24,7 +24,7 @@ SELINUX=enforcing
 to instead be
 
 ```bash
-SELINUX=disabled
+SELINUX=permissive
 ```
 
 Then press <kbd>CTRL</kbd>+<kbd>s</kbd>, then <kbd>CTRL</kbd>+<kbd>x</kbd> to save and quit.
@@ -72,6 +72,11 @@ When you run this command, your terminal should output `android_id|` and some nu
 Paste the number in the box that says "Google Services Framework ID", answer the captcha (If one is present), then hit register. You should see a popup saying "Device Registered" in the bottom left.
 
 You can now type `exit` to leave the Waydroid shell.
+
+Stop the Waydroid container and relaunch Waydroid.
+```bash
+waydroid session stop
+```
 
 ## 5. Changing the resolution on Waydroid
 
