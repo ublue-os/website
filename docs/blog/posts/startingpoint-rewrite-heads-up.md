@@ -17,6 +17,7 @@ The rewrite brings startingpoint from a single `build.sh` where incrementally ad
 
 Unfortunately, breaking changes have been made to the configuration (recipe) and the script system.   
 For maintainers of custom images, there are a couple of ways to deal with this.
+
 - Create a new repository and port your changes
     - This approach will be easiest if you are not that familiar with `git` and your changes are small.
     - This approach has the advantage that you can keep using your old repository while porting all of your changes to the new one.
@@ -86,7 +87,7 @@ As a minor change, all user configuration has been moved into the `config/` dire
 
 When it is fully ready, tested, and documentation changes have been PRd onto the documentation website. A while after the merge there'll be a more newcomer-friendly announcement post. The new version will be considered a '1.0', and the amount of breaking changes will be kept as zero for as long as possible. 
 
-To quicken or effect the process, feel free to give comments and read through [the PR](https://github.com/ublue-os/startingpoint/pull/135)
+To quicken or effect the process, feel free to give comments, read through, and help in testing [the PR](https://github.com/ublue-os/startingpoint/pull/135).
    
 For post-release I have plans for a PR that would allow the configuration of _multiple_ modules be included using the `from-file:` syntax, a PR that would allow an entire directory full of build scripts to be run at once, without having to specify each one individually, and a blog post that would showcase high-level technical details of the repository without needing to get in the weeds by reading source code.
 
