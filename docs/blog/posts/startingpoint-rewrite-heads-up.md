@@ -19,14 +19,14 @@ Unfortunately, breaking changes have been made to the configuration (recipe) and
 For maintainers of custom images, there are a couple of ways to deal with this.
 
 - Create a new repository and port your changes
-        - This approach will be easiest if you are not that familiar with `git` and your changes are small.
-        - This approach has the advantage that you can keep using your old repository while porting all of your changes to the new one.
-        - If your old repository is a fork of startingpoint, you might want to [detach](https://support.github.com/contact?tags=rr-forks&subject=Detach%20Fork&flow=detach_fork) it from startingpoint. This would allow you to fork startingpoint again to create your new repository (GitHub allows only one fork per-repo per-account).
+    - This approach will be easiest if you are not that familiar with `git` and your changes are small.
+    - This approach has the advantage that you can keep using your old repository while porting all of your changes to the new one.
+    - If your old repository is a fork of startingpoint, you might want to [detach](https://support.github.com/contact?tags=rr-forks&subject=Detach%20Fork&flow=detach_fork) it from startingpoint. This would allow you to fork startingpoint again to create your new repository (GitHub allows only one fork per-repo per-account).
 - Do a manual merge of the rewrite into your repository
-        - You'll need to be familiar with using some software that allows you to do manual git merges. You want to accept all incoming files that are not configuration files, and manually figure out the configuration files.
-        - This approach has the advantage of keeping your git history, and allowing you to easily move all your custom scripts into the new build at once.
+    - You'll need to be familiar with using some software that allows you to do manual git merges. You want to accept all incoming files that are not configuration files, and manually figure out the configuration files.
+    - This approach has the advantage of keeping your git history, and allowing you to easily move all your custom scripts into the new build at once.
 - Do nothing
-        - Perhaps you've got a great custom build system going, you've done a lot of changes to `build.sh`, you've added new features you need. Or you just can't be bothered? Cool! You don't need to keep up-to-date with the startingpoint template if you don't want to. You'll still get OS updates, your current setup won't break. You just won't be able to take advantage of new features that might get added to startingpoint.
+    - Perhaps you've got a great custom build system going, you've done a lot of changes to `build.sh`, you've added new features you need. Or you just can't be bothered? Cool! You don't need to keep up-to-date with the startingpoint template if you don't want to. You'll still get OS updates, your current setup won't break. You just won't be able to take advantage of new features that might get added to startingpoint.
 
 ## Ok, but what actually changed?
 
