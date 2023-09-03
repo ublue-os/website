@@ -17,6 +17,7 @@ The rewrite brings startingpoint from a single `build.sh` where incrementally ad
 
 Unfortunately, breaking changes have been made to the configuration (recipe) and the script system.   
 For maintainers of custom images, there are a couple of ways to deal with this.
+
 - Create a new repository and port your changes
     - This approach will be easiest if you are not that familiar with `git` and your changes are small.
     - This approach has the advantage that you can keep using your old repository while porting all of your changes to the new one.
