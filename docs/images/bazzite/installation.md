@@ -2,11 +2,17 @@
 
 This is a visual guide for installing Bazzite.
 
-# Video Guide
+## Video Overview
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/aaeRk8_i1Ds?si=GopDcKXcCUCxdie8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 Installation tutorial begins at [1:37](https://youtu.be/aaeRk8_i1Ds?feature=shared&t=97).
+
+## Video Installation Guide
+
+This is a shorter video focusing only on the installation: 
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/doQW1FyAISQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Pre-Requisites
 
