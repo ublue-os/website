@@ -24,7 +24,7 @@ This list is in alphabetical order.
 
 !!! warning
 
-    You need to run this command, and then reboot. Afterwards
+    You need to run this command, and then reboot afterwards:
 
         rpm-ostree rebase ostree-unverified-registry:ghcr.io/ublue-os/🚨IMAGE_NAME_HERE🚨
 
