@@ -98,7 +98,3 @@ Unlike traditional Linux distributions, much of the maintenance and security upd
 Steam is not built with flatpak in mind. Valve does not contribute to it, and as a result there are many workarounds that the Arch package does not have to worry about it. The Steam Deck uses the Arch package, and to stay consistent with SteamOS so do we.
 
 Also currently there is a [minor performance impact](https://github.com/flatpak/flatpak/issues/4187) if you run/attempt to run Flatpak games. However you would really only notice this in edge cases anyways.
-
-# Why isn't Night Mode or color saturation working on my Steam Deck?
-
-For some users, Night Mode or color saturation settings only seem to work when in the home screen or when the QAM or Steam menus are present. To fix this, enable Developer Mode in Settings, General. Then, in the newly accessible Developer menu at the bottom of Settings, enable Force Composite.
