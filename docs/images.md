@@ -19,18 +19,20 @@ This list is in alphabetical order.
 
 2. `rpm-ostree reset` will remove all your layered packages and prepare for rebasing.
 3. Ensure your system is up-to-date with an: `rpm-ostree update` and reboot.
-4. Now you need to pull our signing key out of one of our images so that you can rebase to one of ours. This command will do that and then rebase to the image you want in one step. Please ensure you fill in the image part of the URL below with the image name you want to use:
+
+## Rebase to an unsigned image first
 
 !!! warning
 
-    You only need to run this command once, after you are on a Universal Blue image you will have our signing key. If you want to rebase to another image afterwards you can skip this step entirely!
+    You need to run this command, and then reboot afterwards:
 
-        podman pull ghcr.io/ublue-os/config && rpm-ostree install --assumeyes --apply-live --force-replacefiles $(find ~/.local/share/containers -name ublue-os-signing.noarch.rpm 2>/dev/null) && rpm-ostree rebase --uninstall $(rpm -q ublue-os-signing-* --queryformat '%{NAME}-%{VERSION}-%{RELEASE}.%{Arch}') ostree-image-signed:docker://ghcr.io/ublue-os/🚨IMAGE_NAME_HERE🚨:latest
+        rpm-ostree rebase ostree-unverified-registry:ghcr.io/ublue-os/🚨IMAGE_NAME_HERE🚨
 
-🚨IMAGE_NAME_HERE🚨 examples are `kinoite-main`, `silverblue-main`, `bazzite`, `bluefin-dx`, and so on. Yes, we know this command is ridiculous.
+🚨IMAGE_NAME_HERE🚨 examples are `kinoite-main`, `silverblue-main`, `bazzite`, `bluefin-dx`, and so on.
 
-- Nvidia users should check [the NVIDIA README](https://universal-blue.org/images/nvidia/) for important instructions to set up kernel parameters.
-- After your system is on a Universal Blue image it will have the proper signing keys, so you do not need to run that command again. Thank goodness! You can just use the commands provided below. Go get some!
+- Nvidia users should check [the NVIDIA README](https://universal-blue.org/images/nvidia/) for important instructions to set up kernel parameters after boot
+
+After you have rebooted, switch to the signed image by running one of the commands below for the image you want. If you're already on the signed image then switching over should be a quick rebase, and then reboot.
 
 ## Image List
 

@@ -11,6 +11,13 @@ Follow this [guide](/images/bazzite/installation/).
 
 Windows dual-booting can be made to work, but is **not recommended** since Windows has a habit of destroying your boot loader.  The best method would be running Windows on a different drive than the one containing Bazzite, like an external one.  Other Linux distributions **should not** be dual/multi-booted due to how Bazzite mounts certain things.
 
+## Why is my installer not working (dracut issue / black screen)
+
+This is currently a known [issue](https://github.com/ublue-os/bazzite/issues/109).  There is a [workaround](https://github.com/ublue-os/bazzite/issues/109#issuecomment-1691090533) that requires either the stock Fedora Silverblue or Fedora Kinoite ISO and rebasing to Bazzite from there after installation.  
+!!! warning
+
+    Keep in mind that the Steam Deck will not scale properly with the installer, and the buttons on the bottom of the screen will be cut off.  This will require use of the `TAB` key on your keyboard to navigate the installer blindly.
+
 ## How do I run Windows applications?
 
 * Use Lutris (preinstalled).
@@ -97,8 +104,10 @@ Unlike traditional Linux distributions, much of the maintenance and security upd
 
 Steam is not built with flatpak in mind. Valve does not contribute to it, and as a result there are many workarounds that the Arch package does not have to worry about it. The Steam Deck uses the Arch package, and to stay consistent with SteamOS so do we.
 
-Also currently there is a [minor performance impact](https://github.com/flatpak/flatpak/issues/4187) if you run/attempt to run Flatpak games. However you would really only notice this in edge cases anyways.
+Running Steam in Distrobox has the advantage of using [LatencyFleX](https://github.com/ishitatsuyuki/LatencyFleX) can be added to the container.  It can also utilize the latest Mesa drivers releases without the end user having to worry about ABI considerations.
 
-# Why isn't Night Mode or color saturation working on my Steam Deck?
+There is a [minor performance impact](https://github.com/flatpak/flatpak/issues/4187) if you run/attempt to run Flatpak games. However it is only noticeable with certain edge cases.
+
+## Why isn't Night Mode or color saturation working on my Steam Deck?
 
 For some users, Night Mode or color saturation settings only seem to work when in the home screen or when the QAM or Steam menus are present. To fix this, enable Developer Mode in Settings, General. Then, in the newly accessible Developer menu at the bottom of Settings, enable Force Composite.
