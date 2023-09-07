@@ -5,6 +5,8 @@ authors:
   - nicknamenamenick
 links:
   - Bazzite Commits: https://github.com/ublue-os/bazzite/commits/main
+  - Bazzite documentation: https://universal-blue.org/images/bazzite/
+  - Bazzite repository: https://github.com/ublue-os/bazzite/
 ---
 
 # Bazzite Buzz No. 2
