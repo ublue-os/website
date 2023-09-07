@@ -9,7 +9,7 @@ links:
 
 # Bazzite Buzz No. 2
 
-Bazzite has hit over 1,000 commits in a little over 200 days since the project's inception!  We now own the domains https://bazzite.gg and https://metrics.bazzite.gg for this project.  Offline ISOs are mostly ready to go, check it out below!
+Bazzite has hit over 1,000 commits in a little over 200 days since the project's inception!  We now own the domains [bazzite.gg](https://bazzite.gg) and [metrics.bazzite.gg](https://metrics.bazzite.gg) for this project.  Offline ISOs are mostly ready to go, check it out below!
 
 ![](https://hackmd.io/_uploads/rkEiCkO6h.png)
 <p style="text-align: center;">All hail the cube.</p>
