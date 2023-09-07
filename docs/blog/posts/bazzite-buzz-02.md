@@ -18,7 +18,7 @@ Before we move on to the changes we've got a new installation video from [Justin
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/doQW1FyAISQ?si=2397_sSRIyC8fV5L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-# Features
+# Features and Fixes
 
 ## New ISOs
 
