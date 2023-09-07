@@ -22,6 +22,12 @@ Before we move on to the changes we've got a new installation video from [Justin
 
 # Features and Fixes
 
+## Bazzite 1.1 is out!
+
+- [Full changelog](https://github.com/ublue-os/bazzite/releases/tag/v1.1.0)
+
+Here's the quick summary: 
+
 ## New ISOs
 
 Thanks to [akdev1l](https://github.com/akdev1l/) we now have fresh offline ISOs available for testing! 
