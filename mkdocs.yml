@@ -147,5 +147,13 @@ nav:
           - Installation: tinker/installation.md
           - Modification: tinker/modification.md
           - Community: tinker/community.md
+          - Modules:
+            - tinker/modules/index.md
+            - bling: tinker/modules/bling.md
+            - files: tinker/modules/files.md
+            - rpm-ostree: tinker/modules/rpm-ostree.md
+            - script: tinker/modules/script.md
+            - systemd: tinker/modules/systemd.md
+            - yafti: tinker/modules/yafti.md
   - Blog:
       - blog/index.md
