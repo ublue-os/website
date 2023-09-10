@@ -11,6 +11,10 @@ links:
 
 # Startingpoint rewrite heads-up – What you need to know
 
+!!! note
+
+  This post was edited on 2023-09-09 to change some inaccurate details. The PR has now been merged.
+
 Startingpoint, the 'template' repository for creating custom images that includes a simplified configuration format `recipe.yml`, has been going through a rewrite for almost a month now. The rewrite is going to be merged as soon as it and the documentation is ready and tested, and this post will guide you through the changes.
 
 The rewrite brings startingpoint from a single `build.sh` where incrementally added features were piled up, to a collection of modules run by a very simple build script in the order specified in the `recipe.yml` configuration. This fundamental change makes startingpoint more extensible and customizable, allowing you to add and remove features as you please. It also allows for sharing of certain configuration, such as packages lists, between multiple images built in the same repository.
@@ -41,15 +45,23 @@ description: A starting point for further customization of uBlue images. Make yo
 base-image: ghcr.io/ublue-os/silverblue-main
 image-version: 38 # latest is also supported if you want new updates ASAP
 
-# list of modules that will be executed in order
-# you can include multiple of the same module
+# list of modules, executed in order
+# you can include multiple instances of the same module
 modules:
+
+  - type: files
+    files:
+      - usr: /usr # copy static configurations
+                  # configuration you wish to end up in /etc/ on the booted system should be 
+                  # added into /usr/etc/ as that is the proper "distro" config directory on ostree
+                  # read more in the files module's README
+
   - type: rpm-ostree
-    repos: 
+    repos:
       # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
     install:
-      - python3-pip # required for yafti
-      - libadwaita # required for yafti
+      # - micro
+      # - starship
     remove:
       - firefox # default firefox removed in favor of flatpak
       - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
@@ -66,22 +78,23 @@ modules:
       # - devpod # https://devpod.sh/ as an rpm
 
 
-  - type: yafti # if included, https://github.com/ublue-os/yafti will be installed and set up
+  - type: yafti # if included, yafti and it's dependencies (pip & libadwaita)
+                #  will be installed and set up
     custom-flatpaks: # this section is optional
-      - Celluloid: io.github.celluloid_player.Celluloid
-      - Krita: org.kde.krita
+      # - Celluloid: io.github.celluloid_player.Celluloid
+      # - Krita: org.kde.krita
 
   - type: script
     scripts:
       # this sets up the proper policy & signing files for signed images to work
-      - signing.sh 
+      - signing.sh
 ```
 
 You'll see that instead of top-level configuration keys like `rpm:` or `firstboot:`, there's one top-level array `modules:` that includes most of the previous configuration as *modules*. Modules are scripts, executed in the specified order, that take in yaml configuration from the recipe. Anyone can create a module by just putting a script in a subdirectory the `modules/` directory. You can remove modules by just removing the entry in the `modules:` array, you can include multiple of the same type of module, and you can even share modules between recipes (images) using the `- from-file: example.yml` syntax.
 
 This modular system changes the role of scripts a little. Scripts are no longer *intended* to read `recipe.yml`, instead they do a single (or a collection of) commands that are not intended to be configurable in the recipe. If you want to create a script that takes in configuration, create a *module*. Furthermore, scripts in the `pre/` and `post/` directories will no longer be executed by default, as there is no set "pre" and "post" phase with the modular system.
 
-As a minor change, all user configuration has been moved into the `config/` directory in the root of the repository. This might make manual merging from the old version a bit more convoluted, but should ease merges in the future. The whole of the config directory is copied into `/usr/share/ublue-os/startingpoint/` where it's contents can be read on the booted system.
+As a minor change, all user configuration has been moved into the `config/` directory in the root of the repository. This might make manual merging from the old version a bit more convoluted, but should ease merges in the future.
 
 ## When can I expect the PR to merge?
 
