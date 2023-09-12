@@ -131,7 +131,7 @@ nav:
           - Codecs: guide/codecs.md
           - Thumbnails: guide/thumbnails.md
           - Screensharing on Wayland: guide/screensharing.md
-          - Fork Your Own: fork-your-own.md
+          - Fork Your Own: guide/fork-your-own.md
       - Contributor's Guide:
           - Architecture: architecture.md
           - Contributing: CONTRIBUTING.md
