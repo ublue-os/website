@@ -4,11 +4,11 @@
     <source src="https://user-images.githubusercontent.com/60004820/252016808-4ebe18a2-6bdb-43cb-b2b6-407f62ad1b78.mp4" type="video/mp4">
 </video>
 
-For automatic setup using the command line, there is a community-built tool called [`create-ublue-image`](https://github.com/EinoHR/create-ublue-image). The tools uses `github-cli` which technically has a lot more access to your GitHub account than needed, if this is a concern to you, you can read the source code. It is packaged as a container you can run with [Podman](https://podman.io/), which is installed by default on Universal Blue images.
+For automatic setup using the command line, there is a community-built tool called [`create-ublue-image`](https://github.com/xynydev/create-ublue-image). The tools uses `github-cli` which technically has a lot more access to your GitHub account than needed, if this is a concern to you, you can read the source code. It is packaged as a container you can run with [Podman](https://podman.io/), which is installed by default on Universal Blue images.
 
-1. Run the command `podman run -v "$(pwd)":/host --security-opt label=disable -it ghcr.io/einohr/create-ublue-image` in a subdirectory of your home directory
+1. Run the command `podman run -v "$(pwd)":/host --security-opt label=disable -it ghcr.io/xynydev/create-ublue-image` in a subdirectory of your home directory
     - This will mount the current directory for modification inside the container. If you want the folder containing your repo to be in a certain directory like `~/dev`, you should `cd` into that before executing the tool.
-    - If you have any issues, read [the project's](https://github.com/EinoHR/create-ublue-image) README and submit to its issue tracker.
+    - If you have any issues, read [the project's](https://github.com/xynydev/create-ublue-image) README and submit to its issue tracker.
 2. Follow the instructions the tool gives you
 
 > !!! note
