@@ -56,7 +56,7 @@ jobs:
       run: mkdocs build -f mkdocs.insiders.yml
     - name: Build MkDocs
       if: ${{ github.ref_name != 'main' }}
-      run: mkdocs build
+      run: mkdocs build --strict
     - name: Upload site artifact
       uses: actions/upload-pages-artifact@v1
       with:
