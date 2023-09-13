@@ -107,3 +107,7 @@ Steam is not built with flatpak in mind. Valve does not contribute to it, and as
 Running Steam in Distrobox has the advantage of using [LatencyFleX](https://github.com/ishitatsuyuki/LatencyFleX) can be added to the container.  It can also utilize the latest Mesa drivers releases without the end user having to worry about ABI considerations.
 
 There is a [minor performance impact](https://github.com/flatpak/flatpak/issues/4187) if you run/attempt to run Flatpak games. However it is only noticeable with certain edge cases.
+
+##  I am experiencing a bug or want to request a feature, but I'm not sure where to report it.
+
+Explain your issue or proposal in our [issue tracker](https://github.com/ublue-os/bazzite/issues) or [Github Discussions Page](https://github.com/orgs/ublue-os/discussions).
