@@ -63,6 +63,10 @@ Nix-powered Development Experience powered by [Devbox](https://www.jetpack.io/de
   - [kubectl](https://kubernetes.io/docs/reference/kubectl/) - Administer Kubernetes Clusters
   - helm, ko, flux, minio-client -- if it's an incubated project we intend to add it where appropriate
 
+### Docker Engine
+
+The most current [Docker Engine](https://docs.docker.com/engine/) is included by default. Use `just docker` to turn it on, this will turn on the service and add your users to the `docker` group.
+
 ### Virtualization and Container Runtimes
 
 - [virt-manager](https://virt-manager.org/) and associated tooling
