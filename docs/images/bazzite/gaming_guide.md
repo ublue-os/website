@@ -36,6 +36,9 @@ Steam can run Windows games on Linux.  It utilizes a wide range of projects like
 
 ### Forcing a specific Proton / Steam Play Tool Version
 
+!!! Note
+    If you're using a device with an older GPU that does not support Vulkan 1.3 or later, you need to use older Proton and Wine builds like Proton/WINE 6 or earlier.  Even older devices may need to resort to WINED3D for OpenGL translation, which performs much worse.  Check which Vulkan version your GPU uses, enter `vulkaninfo | grep 'Instance Version'` in a terminal.
+
 * Games with a native Linux port will use that by default
 * If the game runs better in Proton you can force it to run a specific version by going into the game's properties > Compatibility > Force the use of a specific Steam Play compatibility tool.
 
