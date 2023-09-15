@@ -1,6 +1,6 @@
 # Contributor Health
 
-A quick summary of contributions across the Universal Blue organization.
+We think it is important for users to have insight on the health of the projects they depend on. Here's a quick summary of contributions across the Universal Blue organization. 
 Thanks [repobeats](https://repobeats.axiom.co/) for their support.
 
 ## Main
@@ -11,7 +11,7 @@ Main repository of images
 
 ## Config
 
-Service units and configuration filees
+Service units and configuration files
 
 ![Alt](https://repobeats.axiom.co/api/embed/8e36cadc13075a30e15a27a133df8e56389bbfc7.svg "Repobeats analytics image")
 
