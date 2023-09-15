@@ -102,7 +102,7 @@ Check out the [Universal Blue homepage](https://universal-blue.org) for more inf
 
 No. Bazzite is not a distribution. This is Fedora Kinoite/Silverblue (depending on the desktop environment you choose) with a recipe on top of it.  
 
-Unlike traditional Linux distributions, much of the maintenance and security updates are done upstream by Fedora and Universal Blue while Bazzite only configures a great gaming experience out of the box. Check the [mission statement](/mission) for more information.
+Unlike traditional Linux distributions, much of the maintenance and security updates are done upstream by Fedora and Universal Blue while Bazzite only configures a great gaming experience out of the box. Check the [mission statement](/mission) and [documentation](https://universal-blue.org/introduction/) for more information.
 
 ## For the desktop edition, why run Steam in an Arch Linux Distrobox container as opposed to Flatpak?
 
