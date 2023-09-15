@@ -86,11 +86,11 @@ If you need any additional applications check out the software center that comes
 
 ## Linux Gaming Guide
 
-For a quick run-through of the basics of gaming on desktop Linux, take a look [here.](/images/bazzite/gaming_guide)
+For a quick run-through of the basics of gaming on desktop Linux, take a look [here](/images/bazzite/gaming_guide).
 
 ## Waydroid
 
-Check out the Waydroid guide [here.](/images/bazzite/waydroid)
+Check out the Waydroid guide [here](/images/bazzite/waydroid).
 
 ## Frequently Asked Questions
 
