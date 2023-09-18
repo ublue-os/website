@@ -7,10 +7,7 @@ links:
   - Bazzite Commits: https://github.com/ublue-os/bazzite/commits/main
   - Bazzite 1.0: https://universal-blue.org/blog/2023/08/20/bazzite-10/
 ---
-[comment]: <> (last commit I wrote here: f46de9b)
-
 # Bazzite Buzz No. 3
-[command]: <> (*Words, images, videos, GIFs, go here*)
 
 ![](https://hackmd.io/_uploads/BJm93mSka.png)
 <p style="text-align: center;font-weight: bold">Type "just" in a host terminal to see a list of custom convenience commands.</p>
