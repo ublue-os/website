@@ -1,6 +1,6 @@
 # Framework Computers
 
-Bluefin is available as an image for the Framework 13 laptop that comes preconfigured with tlp and the [recommended power settings](https://github.com/ublue-os/bluefin/blob/main/framework/etc/tlp.d/50-framework.conf) from the [Framework Knowledge Base](https://knowledgebase.frame.work/en_us/optimizing-fedora-battery-life-r1baXZh).
+Bluefin is available as an image for the Framework 13 laptop that comes preconfigured with tlp and the [recommended power settings](https://github.com/ublue-os/bluefin/blob/main/framework/usr/etc/tlp.d/50-framework.conf) from the [Framework Knowledge Base](https://knowledgebase.frame.work/en_us/optimizing-fedora-battery-life-r1baXZh).
 
 Follow the [installation instructions](/installation) - `bluefin-framework` and `bluefin-dx-framework` are available boot options in the installer.
 
@@ -11,8 +11,8 @@ Note that the default image works fine on the Framework 13, this image provides 
 Like all Universal Blue images, hardware acceleration and codecs are [included out of the box](/guide/codecs) and the system strives for a zero-maintenance based approach.
 
 - Replaces `power-profiles-daemon` with `tlp`
-- Ships the [recommended power profile](https://github.com/ublue-os/bluefin/blob/main/framework/etc/tlp.d/50-framework.conf) for `tlp`
-- Sets the text scaling factor in GNOME to [1.25](https://github.com/ublue-os/bluefin/blob/main/framework/etc/dconf/db/local.d/01-ublue-framework)
+- Ships the [recommended power profile](https://github.com/ublue-os/bluefin/blob/main/framework/usr/etc/tlp.d/50-framework.conf) for `tlp`
+- Sets the text scaling factor in GNOME to [1.25](https://github.com/ublue-os/bluefin/blob/main/framework/usr/etc/dconf/db/local.d/01-ublue-framework)
   - Since Bluefin comes with fractional scaling already enabled by default you may want to adjust those settings, however this will case Electron apps to become blurry. Setting the text font larger seems to be the "least-worst" solution available.
   - Add's the following kernel arguments: `"module_blacklist=hid_sensor_hub" "nvme.noacpi=1" "tpm_tis.interrupts=0"`
     - Note that kernel arguments are applied after first boot with the command `just framework-13`. See the [instructions](# instructions) below.
