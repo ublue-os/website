@@ -2,3 +2,7 @@ INHERIT: mkdocs.yml
 plugins:
   blog: {}
   social: {}
+  git-committers:
+    enabled: true
+    repository: ublue-os/website
+    branch: main
