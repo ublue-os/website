@@ -24,7 +24,7 @@ New hardware support and a ton of general fixes have been the main focus over th
 
 As time goes on, we plan to release an image dedicated to the Asus ROG Ally.  This device needs a specific kernel and some other tweaks to have Bazzite function correctly on it.  Discussion on this can be found [here](https://github.com/ublue-os/bazzite/pull/162), and for progress on general handheld controls take a look [here](https://github.com/ublue-os/bazzite/pull/201).
 
-[Hippie Hacker](https://github.com/hh) has created this [guide](https://sharing.io/deck.html) to get [iimatey](https://github.com/ii/matey) working on a Steam Deck installation of Bazzite for a command line apporach to  installing it. This may solve issues with the current GUI installer or for those who prefer this command line interface method for installation.
+[Hippie Hacker](https://github.com/hh) has created this [guide](https://sharing.io/deck.html) to get [iimatey](https://github.com/ii/matey) working on a Steam Deck installation of Bazzite for a command line approach to  installing it. This may solve issues with the current GUI installer or for those who prefer this command line interface method for installation.
 
 Finally, most of the new features from the SteamOS 3.5 preview are already available in the Bazzite Steam Deck images right now.  This includes gamescope's new scaling and color options.  We also are already using newer base packages than SteamOS 3.5.
 
