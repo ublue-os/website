@@ -1,5 +1,6 @@
 ---
 date: 2023-09-19
+comments: true
 authors: 
   - bobslept
 links:
