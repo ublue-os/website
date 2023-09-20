@@ -69,7 +69,7 @@ If you opted to use Nix packages at the first boot, then you can use the Nix pac
 
 ### rpm-ostree
 
-Fedora has [documentation](https://docs.fedoraproject.org/en-US/fedora/latest/system-administrators-guide/package-management/rpm-ostree/) on rpm-ostree.
+Fedora has [documentation](https://docs.fedoraproject.org/en-US/fedora/latest/system-administrators-guide/package-management/rpm-ostree/) on rpm-ostree.  The most common command you will use is `rpm-ostree install <package>` to layer Fedora's RPM packages to the image.  After that has finished you will be required to reboot your system to use it.  However, it is highly recommended to only use this command as the last resort especially if the package can be obtained through the above methods.
 
 ## Do I have to reboot after every `system` update or layering a package?
 
