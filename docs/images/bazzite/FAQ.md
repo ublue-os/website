@@ -120,3 +120,9 @@ You can also rebase to a stock Fedora imaged-based desktop image by entering in 
 
 ##  I am experiencing a bug or want to request a feature, but I'm not sure where to report it.
 Explain your issue or proposal in our [issue tracker](https://github.com/ublue-os/bazzite/issues) or [Github Discussions Page](https://github.com/ublue-os/bazzite/discussions).
+
+In order to troubleshoot the issue properly, you should add a log or terminal output of the issue.  
+
+Example 1: For a game running on Steam through Proton, go to the game's properties and type `PROTON_LOG=1 %command%` in the launch options section.  Play the game and the log should appear by the appid in Home.  Make sure to attach that to the issue you have.
+
+Example 2: For a Flatpak application that has issues, get the Flatpak package name of all installed applications by entering `flatpak list` (you may need to readjust the terminal window to get the package name to fit beforehand.)  After you got the name, enter `flatpak run <flatpak.package.name>` and a console output will appear.  Copy and paste into a text file, save it, and attach it.
