@@ -114,7 +114,7 @@ There is a [minor performance impact](https://github.com/flatpak/flatpak/issues/
 
 ## How do I switch to a different Bazzite image?
 
-You can rebase to a Bazzite or general Universal Blue image by entering the command in a host terminal found on this [page].  After it is finished, reboot your system.
+You can rebase to a Bazzite or general Universal Blue image by entering the command in a host terminal found on this [page](https://universal-blue.org/images/).  After it is finished, reboot your system.
 
 You can also rebase to a stock Fedora imaged-based desktop image by entering in a host terminal `ostree remote refs fedora` to see a list of available Fedora images that you can rebase to.  Afterwards enter `rpm-ostree rebase <image>` and wait for it to install the image then reboot.
 
