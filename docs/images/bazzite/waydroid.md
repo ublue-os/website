@@ -246,3 +246,6 @@ ro.hardware.gralloc=minigbm_gbm_mesa
 ```
 
 That's it, you're done!
+
+!!! note
+ If your PC is running multiple GPUs and you experience graphical corruption then execute this [script](https://raw.githubusercontent.com/Quackdoc/waydroid-scripts/main/waydroid-choose-gpu.sh) to fix it.
