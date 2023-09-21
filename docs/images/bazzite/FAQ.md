@@ -112,5 +112,11 @@ Running Steam in Distrobox has the advantage of using [LatencyFleX](https://gith
 
 There is a [minor performance impact](https://github.com/flatpak/flatpak/issues/4187) if you run/attempt to run Flatpak games. However it is only noticeable with certain edge cases.
 
+## How do I switch to a different Bazzite image?
+
+You can rebase to a Bazzite or general Universal Blue image by entering the command in a host terminal found on this [page].  After it is finished, reboot your system.
+
+You can also rebase to a stock Fedora imaged-based desktop image by entering in a host terminal `ostree remote refs fedora` to see a list of available Fedora images that you can rebase to.  Afterwards enter `rpm-ostree rebase <image>` and wait for it to install the image then reboot.
+
 ##  I am experiencing a bug or want to request a feature, but I'm not sure where to report it.
 Explain your issue or proposal in our [issue tracker](https://github.com/ublue-os/bazzite/issues) or [Github Discussions Page](https://github.com/ublue-os/bazzite/discussions).
