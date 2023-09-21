@@ -28,6 +28,8 @@ Installation tutorial begins at [1:37](https://youtu.be/aaeRk8_i1Ds?feature=shar
 
 ![image](https://github.com/nicknamenamenick/bazzite/assets/121328689/6d52a35b-ec89-4180-8940-173ce37a6200)
 
+Bazzite offers multiple images, but most images will be following one of these two formats: Desktop and Steam Deck/HTPC.  Desktop images are meant for general desktop computing and attempt to mimic SteamOS's Desktop Mode in terms of functionality.  Steam Deck/HTPC images boot directly into Game Mode and are intended for handheld PCs and home theater PCs.  These images also come with the choice of KDE Plasma or GNOME as the desktop environment.
+
 * **bazzite** is the AMD/Intel GPU general desktop image intended for most personal computers.
 
 * **bazzite-nvidia** is _bazzite_ but for PCs running Nvidia GPUs as they include their proprietary drivers in the image.
@@ -39,6 +41,8 @@ Installation tutorial begins at [1:37](https://youtu.be/aaeRk8_i1Ds?feature=shar
 * **bazzite-gnome-nvidia** is _bazzite-gnome_ but for PCs running Nvidia GPUs as they include their proprietary drivers in the image.
 
 * **bazzite-deck-gnome** is _bazzite-deck_ but instead of using [KDE Plasma](https://kde.org/plasma-desktop/) as the desktop environment, it uses [GNOME.](https://www.gnome.org/)
+
+There are also images specific to specialized hardware like **bazzite-framework**, **bazzite-surface**, etc. 
 
 ## KDE Plasma and GNOME Desktop Environments Differences at a Glance
 
