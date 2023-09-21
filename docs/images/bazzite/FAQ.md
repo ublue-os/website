@@ -69,7 +69,7 @@ If you opted to use Nix packages at the first boot, then you can use the Nix pac
 
 ### rpm-ostree
 
-Fedora has [documentation](https://docs.fedoraproject.org/en-US/fedora/latest/system-administrators-guide/package-management/rpm-ostree/) on rpm-ostree.
+Fedora has [documentation](https://docs.fedoraproject.org/en-US/fedora/latest/system-administrators-guide/package-management/rpm-ostree/) on rpm-ostree.  The most common command you will use is `rpm-ostree install <package>` to layer Fedora's RPM packages to the image.  After that has finished you will be required to reboot your system to use it.  However, it is highly recommended to only use this command as the last resort especially if the package can be obtained through the above methods.
 
 ## Do I have to reboot after every `system` update or layering a package?
 
@@ -108,9 +108,21 @@ Unlike traditional Linux distributions, much of the maintenance and security upd
 
 Steam is not built with flatpak in mind. Valve does not contribute to it, and as a result there are many workarounds that the Arch package does not have to worry about it. The Steam Deck uses the Arch package, and to stay consistent with SteamOS so do we.
 
-Running Steam in Distrobox has the advantage of using [LatencyFleX](https://github.com/ishitatsuyuki/LatencyFleX) can be added to the container.  It can also utilize the latest Mesa drivers releases without the end user having to worry about ABI considerations.
+Running Steam in Distrobox has the advantage of using [LatencyFleX](https://github.com/ishitatsuyuki/LatencyFleX) and other packages added to the container.  It can also utilize the latest Mesa drivers releases without the end user having to worry about ABI considerations.
 
 There is a [minor performance impact](https://github.com/flatpak/flatpak/issues/4187) if you run/attempt to run Flatpak games. However it is only noticeable with certain edge cases.
 
+## How do I switch to a different Bazzite image?
+
+You can rebase to a Bazzite or general Universal Blue image by entering the command in a host terminal found on this [page](https://universal-blue.org/images/).  After it is finished, reboot your system.
+
+You can also rebase to a stock Fedora imaged-based desktop image by entering in a host terminal `ostree remote refs fedora` to see a list of available Fedora images that you can rebase to.  Afterwards enter `rpm-ostree rebase <image>` and wait for it to install the image then reboot.
+
 ##  I am experiencing a bug or want to request a feature, but I'm not sure where to report it.
 Explain your issue or proposal in our [issue tracker](https://github.com/ublue-os/bazzite/issues) or [Github Discussions Page](https://github.com/ublue-os/bazzite/discussions).
+
+In order to troubleshoot the issue properly, you should add a log or terminal output of the issue.  
+
+Example 1: For a game running on Steam through Proton, go to the game's properties and type `PROTON_LOG=1 %command%` in the launch options section.  Play the game and the log should appear by the appid in Home.  Make sure to attach that to the issue you have.
+
+Example 2: For a Flatpak application that has issues, get the Flatpak package name of all installed applications by entering `flatpak list` (you may need to readjust the terminal window to get the package name to fit beforehand.)  After you got the name, enter `flatpak run <flatpak.package.name>` and a console output will appear.  Copy and paste into a text file, save it, and attach it.
