@@ -52,7 +52,7 @@ Typically it is recommended to use Flatpak for most software.  These can be inst
 
 ### AppImage
 
-AppImages can be installed by downloading any file with an `.AppImage` extension.  These are usually found on a project's website, [Appimage Hub](https://www.appimagehub.com/) or if you install [Appimage Pool](https://flathub.org/apps/io.github.prateekmedia.appimagepool). Then giving the AppImage application executable permssions in the file's properties to run.
+AppImages can be installed by downloading any file with an `.AppImage` extension.  These are usually found on a project's website, [Appimage Hub](https://www.appimagehub.com/) or if you install [Appimage Pool](https://flathub.org/apps/io.github.prateekmedia.appimagepool). Then giving the AppImage application executable permssions in the file's properties so the application can run properly.
 
 !!! Note
     AppImages are not supported in other Universal Blue images.
@@ -71,7 +71,7 @@ If you opted to use Nix packages at the first boot, then you can use the Nix pac
 
 Fedora has [documentation](https://docs.fedoraproject.org/en-US/fedora/latest/system-administrators-guide/package-management/rpm-ostree/) on rpm-ostree.  The most common command you will use is `rpm-ostree install <package>` to layer Fedora's RPM packages to the image.  After that has finished you will be required to reboot your system to use it.  However, it is highly recommended to only use this command as the last resort especially if the package can be obtained through the above methods.
 
-## Do I have to reboot after every `system` update or layering a package?
+## Do I have to reboot after every system update or layering a package?
 
 No. They just won't apply until shutdown.  You can attempt to layer package(s) without rebooting with `rpm-ostree install --apply-live <package>` but sometimes this still requires a reboot depending on the package(s) you installed.
 
@@ -90,10 +90,10 @@ Like SteamOS, Bazzite makes use of read-only root files for stability purposes.
 Bazzite is built off of desktop versions of Fedora built with [libostree](https://ostreedev.github.io/ostree/) which has advantages such as:
 
 * Atomic upgrades.
-* Containerized applications. (**No dependency hell!**)
+* Containerized applications which means dependencies issues should rarely happen.
 * Overlay system packages to the host.
 * Smoother upgrade process from major Fedora point releases.
-* Very little risk of a non-booting or broken system.
+* Very little risk of an unbootable or broken system.
 * Rollback system updates.
 
 Check out the [Universal Blue homepage](https://universal-blue.org) for more information.
@@ -112,6 +112,8 @@ Running Steam in Distrobox has the advantage of using [LatencyFleX](https://gith
 
 There is a [minor performance impact](https://github.com/flatpak/flatpak/issues/4187) if you run/attempt to run Flatpak games. However it is only noticeable with certain edge cases.
 
+If you so desire, you can still install the Flatpak Steam at any time.
+
 ## How do I switch to a different Bazzite image?
 
 You can rebase to a Bazzite or general Universal Blue image by entering the command in a host terminal found on this [page](https://universal-blue.org/images/).  After it is finished, reboot your system.
@@ -123,6 +125,6 @@ Explain your issue or proposal in our [issue tracker](https://github.com/ublue-o
 
 In order to troubleshoot the issue properly, you should add a log or terminal output of the issue.  
 
-Example 1: For a game running on Steam through Proton, go to the game's properties and type `PROTON_LOG=1 %command%` in the launch options section.  Play the game and the log should appear by the appid in Home.  Make sure to attach that to the issue you have.
+Example 1: For a game running on Steam through Proton, go to the game's properties and type `PROTON_LOG=1 %command%` in the launch options section.  Play the game and the log should appear by the appid in your `Home` directory, and make sure to attach that to the issue you have opened.
 
 Example 2: For a Flatpak application that has issues, get the Flatpak package name of all installed applications by entering `flatpak list` (you may need to readjust the terminal window to get the package name to fit beforehand.)  After you got the name, enter `flatpak run <flatpak.package.name>` and a console output will appear.  Copy and paste into a text file, save it, and attach it.
