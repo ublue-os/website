@@ -11,8 +11,9 @@ links:
 
 ![](https://hackmd.io/_uploads/BJm93mSka.png)
 <p style="text-align: center;font-weight: bold">Type "just" in a host terminal to see a list of custom convenience commands.</p>
-
 <hr>
+
+Welcome to Bazzite Buzz #3! [Bazzite](https://universal-blue.org/images/bazzite/) is a custom image of Fedora 38 designed to bring the best in Linux gaming to your PC and handheld devices. This newsletter highlights all the work we are working on over the past few weeks. If you are new to a Universal Blue project here's some back filler: These images follow the [continuous delivery](https://continuousdelivery.com/) methodology of development. That means we're constantly adding new things, so let's get started! 
 
 **IMPORTANT:** Nvidia GPU users should recreate the `bazzite-arch` Distrobox container.  Open a host terminal and enter: `just install-bazzite-arch` to do this.  The issue stemmed from missing 32-bit libraries that require the user to remake the container. As a result of this, it unfortunately means this fix requires manual intervention.
 <hr>
