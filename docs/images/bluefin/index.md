@@ -154,13 +154,6 @@ If you prefer a vanilla GNOME installation check out [silverblue-main](https://g
 
 This is all hosted, built, and pushed on GitHub. As far as if I'm a trustable fellow, here's my [bio](https://www.ypsidanger.com/about/). If you've made it this far, then hopefully you've come to the conclusion on how easy it would be to build all of this on your own trusted machinery. :smile:
 
-## [![Repography logo](https://images.repography.com/logo.svg)](https://repography.com) / Recent activity [![Time period](https://images.repography.com/35181738/ublue-os/bluefin/recent-activity/FQtB4TpTHzW4xXgqpImZRpCa_73e9torMuxJiEGHGyI/dQfbRYx1KQiBimZnq3kUtRc3TOPc1aWB9etI3c1KNLs_badge.svg)](https://repography.com)
+### Contributor Metrics
 
-[![Timeline graph](https://images.repography.com/35181738/ublue-os/bluefin/recent-activity/FQtB4TpTHzW4xXgqpImZRpCa_73e9torMuxJiEGHGyI/dQfbRYx1KQiBimZnq3kUtRc3TOPc1aWB9etI3c1KNLs_timeline.svg)](https://github.com/ublue-os/bluefin/commits)
-[![Issue status graph](https://images.repography.com/35181738/ublue-os/bluefin/recent-activity/FQtB4TpTHzW4xXgqpImZRpCa_73e9torMuxJiEGHGyI/dQfbRYx1KQiBimZnq3kUtRc3TOPc1aWB9etI3c1KNLs_issues.svg)](https://github.com/ublue-os/bluefin/issues)
-[![Pull request status graph](https://images.repography.com/35181738/ublue-os/bluefin/recent-activity/FQtB4TpTHzW4xXgqpImZRpCa_73e9torMuxJiEGHGyI/dQfbRYx1KQiBimZnq3kUtRc3TOPc1aWB9etI3c1KNLs_prs.svg)](https://github.com/ublue-os/bluefin/pulls)
-[![Activity map](https://images.repography.com/35181738/ublue-os/bluefin/recent-activity/FQtB4TpTHzW4xXgqpImZRpCa_73e9torMuxJiEGHGyI/dQfbRYx1KQiBimZnq3kUtRc3TOPc1aWB9etI3c1KNLs_map.svg)](https://github.com/ublue-os/bluefin/commits)
-
-## [![Repography logo](https://images.repography.com/logo.svg)](https://repography.com) / Top contributors
-
-[![Top contributors](https://images.repography.com/35181738/ublue-os/bluefin/top-contributors/FQtB4TpTHzW4xXgqpImZRpCa_73e9torMuxJiEGHGyI/dQfbRYx1KQiBimZnq3kUtRc3TOPc1aWB9etI3c1KNLs_table.svg)](https://github.com/ublue-os/bluefin/graphs/contributors)
+![Bluefin](https://repobeats.axiom.co/api/embed/40b85b252bf6ea25eb90539d1adcea013ccae69a.svg "Repobeats analytics image")

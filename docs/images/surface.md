@@ -30,3 +30,7 @@ We want to allow Linux users to share this knowledge and expertise with each oth
 ### Rebasing from another image
 
 If you're rebasing from another image follow these instructions!
+
+### Contributor Metrics
+
+![Surface](https://repobeats.axiom.co/api/embed/53b366be450dbb713efa2fee9e2f95abe2ded62e.svg "Repobeats analytics image")
