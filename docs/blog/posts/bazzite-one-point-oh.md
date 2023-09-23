@@ -4,6 +4,8 @@ comments: true
 authors: 
   - KyleGospo
   - EyeCantCU
+categories:
+  - bazzite
 links:
   - Bazzite: https://github.com/ublue-os/bazzite
   
