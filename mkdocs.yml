@@ -108,7 +108,6 @@ nav:
           - Introduction: images/bluefin/index.md
           - Developer Experience: images/bluefin/developer-experience.md
           - Administrator's Guide: images/bluefin/admin.md
-          - Framework: images/bluefin/framework.md
       - Toolboxes: toolboxes.md
   - Community:
       - Mission: mission.md
