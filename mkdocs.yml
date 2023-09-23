@@ -96,8 +96,9 @@ nav:
       - Full Image List: images.md
       - Main Images: 
           - images/main.md
-      - Nvidia Images: 
-          - images/nvidia.md
+      - Framework Images: images/framework.md
+      - Nvidia Images: images/nvidia.md
+      - Surface Images: images/surface.md
       - Bazzite: 
           - Introduction: images/bazzite/index.md
           - Installation: images/bazzite/installation.md
