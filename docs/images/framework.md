@@ -78,3 +78,7 @@ If you're rebasing from another image follow these instructions!
 ## Support for various other Framework laptops
 
 The initial release supports the 13th generation Intel Framework 13. It is entirely possible for machine-specific tweaks to be added as part of the image. [Contributions are welcome](/CONTRIBUTING) if you want to enable a specific model.
+
+## Contributor Metrics
+
+![Framework](https://repobeats.axiom.co/api/embed/e3129d64593dc0d96aa244d1fd5beb8e9315d381.svg "Repobeats analytics image")
