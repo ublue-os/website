@@ -3,6 +3,8 @@ date: 2023-09-06
 comments: true
 authors: 
   - nicknamenamenick
+categories:
+  - bazzite
 links:
   - Bazzite Commits: https://github.com/ublue-os/bazzite/commits/main
   - Bazzite documentation: https://universal-blue.org/images/bazzite/
