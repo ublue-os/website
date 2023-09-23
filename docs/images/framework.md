@@ -1,10 +1,12 @@
 # Framework Computers
 
-Bluefin is available as an image for the Framework 13 laptop that comes preconfigured with tlp and the [recommended power settings](https://github.com/ublue-os/framework/blob/main/system_files/shared/usr/etc/tlp.d/50-framework.conf) from the [Framework Knowledge Base](https://knowledgebase.frame.work/en_us/optimizing-fedora-battery-life-r1baXZh).
+Universal Blue images are available for the Framework 13 laptop. It comes preconfigured with tlp and the [recommended power settings](https://github.com/ublue-os/framework/blob/main/system_files/shared/usr/etc/tlp.d/50-framework.conf) from the [Framework Knowledge Base](https://knowledgebase.frame.work/en_us/optimizing-fedora-battery-life-r1baXZh).
 
-Follow the [installation instructions](/installation) - `bluefin-framework` and `bluefin-dx-framework` are available boot options in the installer.
+Follow the [installation instructions](/installation) to select a Framework image. These images end with `-framework` in their name. 
 
-Note that the default image works fine on the Framework 13, this image provides tweaks and further improvements.
+Note that the default image work fine on the Framework 13, these images provide tweaks and further improvements and are optional for people who prefer to use `tlp`. These images will also work fine on non-Framework laptops.
+
+- [ublue-os/framework](https://github.com/ublue-os/framework) - repository for generating these images
 
 ## Changes
 
@@ -13,9 +15,9 @@ Like all Universal Blue images, hardware acceleration and codecs are [included o
 - Replaces `power-profiles-daemon` with `tlp`
 - Ships the [recommended power profile](https://github.com/ublue-os/framework/blob/main/system_files/shared/usr/etc/tlp.d/50-framework.conf) for `tlp`
 - Sets the text scaling factor in GNOME to [1.25](https://github.com/ublue-os/framework/blob/main/system_files/silverblue/usr/etc/dconf/db/local.d/01-ublue-framework)
-  - Since Bluefin comes with fractional scaling already enabled by default you may want to adjust those settings, however this will case Electron apps to become blurry. Setting the text font larger seems to be the "least-worst" solution available.
-  - Add's the following kernel arguments: `"module_blacklist=hid_sensor_hub" "nvme.noacpi=1" "tpm_tis.interrupts=0"`
-    - Note that kernel arguments are applied after first boot with the command `just framework-13`. See the [instructions](# instructions) below.
+  - Some images (like Bluefin) come with fractional scaling already enabled by default. You may want to adjust those settings, however this will case Electron apps to become blurry. Setting the text font larger seems to be the "least-worst" solution available.
+- Add's the following kernel arguments: `"module_blacklist=hid_sensor_hub" "nvme.noacpi=1" "tpm_tis.interrupts=0"`
+  - Note that kernel arguments are applied with the command `just framework-13` and a subsequent reboot. See the [instructions](# instructions) below.
 
 ## Additional Diagnostic Tools
 
@@ -30,8 +32,6 @@ Open Source succeeds best when contributors come together to solve a problem. Th
 - Benchmarking tools. It would be nice to be able to run a continuous benchmark that exercises the laptop and can run unattended so that we can automate power testing.
 
 We want to allow Linux users to share this knowledge and expertise with each other to fulfill the true potential of Framework laptops. We'll [use science](https://www.youtube.com/watch?v=BABM3EUo990) and the wonders of modern automation to accomplish this!
-
-And lastly, right now `-framework` is a one-off created for Bluefin. It is entirely feasible for Universal Blue to adopt this across all the base images, but we'd need some help, devops ninjas, inquire within.
 
 - [Thread on the Framework forums](https://community.frame.work/t/custom-fedora-oci-images-for-framework-laptops/34253/) - general feedback welcome here, the co-creator of Bluefin "dog-foods" this image on a 13th gen Framework 13. Yes, it is glorious.
 - [Contributions welcome!](https://github.com/ublue-os/bluefin)
