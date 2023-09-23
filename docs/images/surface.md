@@ -13,12 +13,6 @@ Like all Universal Blue images, hardware acceleration and codecs are [included o
 - Replaces the stock Fedora kernel with the [Surface kernel](https://github.com/linux-surface/linux-surface/tree/master/pkg/fedora)
 - Replaces `power-profiles-daemon` with `tlp`
 
-
-## Additional Diagnostic Tools
-
-- `just benchmark` - will run [stress-ng](https://github.com/ColinIanKing/stress-ng) for 1 minute
-- [`powertop`](https://github.com/fenrus75/powertop) - allows you to monitor power consumption in real time
-
 ## How to Help
 
 Open Source succeeds best when contributors come together to solve a problem. These are areas where contributions would be appreciated:

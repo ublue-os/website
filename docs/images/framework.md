@@ -17,7 +17,7 @@ Like all Universal Blue images, hardware acceleration and codecs are [included o
 - Sets the text scaling factor in GNOME to [1.25](https://github.com/ublue-os/framework/blob/main/system_files/silverblue/usr/etc/dconf/db/local.d/01-ublue-framework)
   - Some images (like Bluefin) come with fractional scaling already enabled by default. You may want to adjust those settings, however this will case Electron apps to become blurry. Setting the text font larger seems to be the "least-worst" solution available.
 - Add's the following kernel arguments: `"module_blacklist=hid_sensor_hub" "nvme.noacpi=1" "tpm_tis.interrupts=0"`
-  - Note that kernel arguments are applied after first boot with the command `just framework-13`. See the [instructions](# instructions) below.
+  - Note that kernel arguments are applied with the command `just framework-13` and a subsequent reboot. See the [instructions](# instructions) below.
 
 ## Additional Diagnostic Tools
 
