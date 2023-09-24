@@ -18,7 +18,6 @@ Like all Universal Blue images, hardware acceleration and codecs are [included o
 
 Open Source succeeds best when contributors come together to solve a problem. These are areas where contributions would be appreciated:
 
-- Additional `tlp` configurations. The image is designed to allow shipping multiple power profiles; we just need to collect and curate a set that would be the most useful for people.
 - Benchmarking tools. It would be nice to be able to run a continuous benchmark that exercises the laptop and can run unattended so that we can automate power testing.
 
 We want to allow Linux users to share this knowledge and expertise with each other to fulfill the true potential of Surface devices. We'll [use science](https://www.youtube.com/watch?v=BABM3EUo990) and the wonders of modern automation to accomplish this!
