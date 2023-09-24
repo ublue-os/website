@@ -1,4 +1,4 @@
-# Microsoft Surface Images
+# Asus Images
 
 From the [asus-linux.org project](https://asus-linux.org/)
 
