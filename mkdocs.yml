@@ -96,6 +96,7 @@ nav:
       - Full Image List: images.md
       - Main Images: 
           - images/main.md
+      - Asus Images: images/asus.md
       - Framework Images: images/framework.md
       - Nvidia Images: images/nvidia.md
       - Surface Images: images/surface.md
