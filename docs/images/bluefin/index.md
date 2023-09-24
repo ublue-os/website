@@ -101,6 +101,7 @@ System updates are image-based and automatic. Applications are logically separat
   - System designed for automatic staging of updates.
     - If you've never used an image-based Linux before just use your computer normally.
     - Don't overthink it, just shut your computer off when you're not using it.
+- [Starship](https://starship.rs) is enabled by default to give you a nice shell prompt.
 
 ### Roadmap and Future Features
 
@@ -149,6 +150,14 @@ sudo dconf update
 ```
 
 If you prefer a vanilla GNOME installation check out [silverblue-main](https://github.com/ublue-os/main) or [silverblue-nvidia](https://github.com/ublue-os/nvidia) for a more upstream experience.
+
+> Starship is not for me, how do I disable it?
+
+You can remove or comment the line below in `/etc/bashrc` to restore the default prompt.
+
+```bash
+eval "$(starship init bash)"
+```
 
 > Should I trust you?
 
