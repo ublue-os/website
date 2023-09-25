@@ -34,6 +34,26 @@ This list is in alphabetical order.
 
 After you have rebooted, switch to the signed image by running one of the commands below for the image you want. If you're already on the signed image then switching over should be a quick rebase, and then reboot.
 
+## Image Categorization
+- Flagship Images
+    - [Bluefin](https://github.com/ublue-os/bluefin)
+    - [Bazzite](https://github.com/ublue-os/bazzite/)
+    - [Beyond](https://github.com/ublue-os/beyond)
+- Opinionated Fedora Silverblue Images
+    - More information on changes from stock Fedora Silverblue [here](https://universal-blue.org/images/main/). 
+    - Offers different desktop environments and window managers if desired.
+    - Download the ISO for all different desktop variants [here](https://github.com/ublue-os/main/releases).
+- Specialized Hardware
+    - Unique images for specific hardware (Framework, Surface, etc.)
+    -  Overlaps with the other images.
+        -  `bazzite-framework` as an example.
+- [Community Images](https://github.com/ublue-os/awesome-custom-images)
+    - You can make your own too!  Check out [Making Your Own](https://universal-blue.org/tinker/make-your-own/) and [Forking Your Own](https://universal-blue.org/guide/fork-your-own/).
+- Other images
+    - Base images that include only the necessary Fedora packages as a starting point.
+    - Images without kernel modules or kernel packages.
+    - Images intended only for use inside of another image and **not** installed by itself on a desktop.
+
 ## Image List
 
 {!_generated_image_list.md!}
