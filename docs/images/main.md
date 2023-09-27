@@ -8,7 +8,7 @@ A common main image for all other uBlue images, with minimal (but important) adj
 2. [Tips and Tricks](#Tips-and-Tricks)
 3. [How to Install](#How-to-Install)
 4. [Verification](#Verification)
-5. [Configuring Automatic Updates](https://universal-blue.org/faq/?h=timer#how-do-i-configure-automatic-updates)
+5. [Configuring Automatic Updates](/faq/#how-do-i-configure-automatic-updates)
 6. [Making your own](https://universal-blue.org/tinker/make-your-own/)
 
 ## What is this?
