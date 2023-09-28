@@ -49,7 +49,7 @@ We'd like to thank all of our contributors and those who are helping us troubles
 - Oversteer is now added via udev rules so it does not have to be layered. 
 - Removed AdwSteamGtk since it is recommended to install this theme via the [CSS Loader](https://github.com/suchmememanyskill/SDH-CssLoader) Decky plugin.
 - `vm.max_map_count` increased to match SteamOS.
-- Signing is now removed from Bazzite Portal since it now automatic.
+- Signing is now removed from Bazzite Portal since it is now automatic.
 - Nvidia images now has a helpful message about secure boot.
 - GNOME images now play a sound when the battery is low.
 - GNOME images now include the [gamerzilla-shell-extension](https://github.com/dulsi/gamerzilla-shell-extension)
