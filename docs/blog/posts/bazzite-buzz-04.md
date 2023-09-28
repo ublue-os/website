@@ -17,8 +17,7 @@ links:
 
 Bazzite is a custom image of Fedora 38 designed to being the best in Linux gaming to your PCs, including the Steam Deck. This newsletter highlights all the work we are doing to bring gamers the best goodies for their PCs and handheld gaming devices.
 
-If you are new to a Universal Blue project then here's some back filler:    
-These images follow the [continuous delivery](https://continuousdelivery.com/) methodology of development. That means we're constantly adding new things, so let's get started!
+If you are new to a Universal Blue project then here's some back filler. These images follow the [continuous delivery](https://continuousdelivery.com/) methodology of development. That means we're constantly adding new things, so let's get started!
 
 Today we have released a new batch of online ISOs.  Our offline ISOs that we had released earlier had some issues with the Steam Deck's resolution, but eventually this will all be sorted out. When that happens we will release a new batch of offline ISOs in the future.  In the meantime, grab the latest online ISO and **make sure to connect to the internet in the installer.**
    
@@ -37,9 +36,10 @@ We'd like to thank all of our contributors and those who are helping us troubles
 
 
 # New Features
-- Added support for Framework devices.
-- Added support for ASUS devices.
-- Added support for Lenovo Legion devices.
+- Added support for [Framework devices](https://github.com/ublue-os/framework) - thanks for the inspiration [pitstoptech](https://www.youtube.com/watch?v=zd6WtTUf-30)!
+- Added support for [ASUS devices](https://github.com/ublue-os/asus/) - note that the Ally does not work yet, star that repository to follow along, we're pretty close! 
+- Added support for [Lenovo Legion](https://github.com/ublue-os/legion) devices.
+- Might as well remind you that we have [Microsoft Surface images](https://github.com/ublue-os/surface) too
 - Added nct6687 driver for `lm_sensors` since it is needed on certain AMD B550 motherboards.
 - Added [handygccs](https://github.com/ShadowBlip/HandyGCCS) for handheld PCs.
 - Added [Tailscale](https://github.com/tailscale/tailscale) support out of the box.
