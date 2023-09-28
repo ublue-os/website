@@ -15,9 +15,9 @@ links:
 
 Bazzite is a custom image of Fedora 38 designed to being the best in Linux gaming to your PCs, including the Steam Deck. This newsletter highlights all the work we are doing to bring gamers the best goodies for their PCs and handheld gaming devices.
 
-If you are new to a Universal Blue project here's some back filler: These images follow the [continuous delivery](https://continuousdelivery.com/) methodology of development. That means we're constantly adding new things, so let's get started!
+If you are new to a Universal Blue project then here's some back filler: These images follow the [continuous delivery](https://continuousdelivery.com/) methodology of development. That means we're constantly adding new things, so let's get started!
 
-Today, we have released a new batch of online ISOs.  Our offline ISOs that we have released earlier had some issues with the Steam Deck's resolution, but eventually this will all be sorted out. When that happens we will release a new batch of offline ISOs in the future.  In the meantime, grab the latest online ISO and **make sure to connect to the internet in the installer.**
+Today we have released a new batch of online ISOs.  Our offline ISOs that we had released earlier had some issues with the Steam Deck's resolution, but eventually this will all be sorted out. When that happens we will release a new batch of offline ISOs in the future.  In the meantime, grab the latest online ISO and **make sure to connect to the internet in the installer.**
 
     
 Initial work has been done to have Bazzite boot on the Asus ROG Ally handheld PC!  If you are interested in testing and trying it out then download [Fedora Kinoite](https://fedoraproject.org/kinoite/download/) and install it like you normally would Bazzite.  Follow our installation instructions [here](https://universal-blue.org/images/bazzite/installation/).  Once you reach the desktop, open Konsole and enter either:
