@@ -15,16 +15,12 @@ links:
 
 Bazzite is a custom image of Fedora 38 designed to being the best in Linux gaming to your PCs, including the Steam Deck. This newsletter highlights all the work we are doing to bring gamers the best goodies for their PCs and handheld gaming devices.
 
-If you are new to a Universal Blue project then here's some back filler: These images follow the [continuous delivery](https://continuousdelivery.com/) methodology of development. That means we're constantly adding new things, so let's get started!
+If you are new to a Universal Blue project then here's some back filler:    
+These images follow the [continuous delivery](https://continuousdelivery.com/) methodology of development. That means we're constantly adding new things, so let's get started!
 
 Today we have released a new batch of online ISOs.  Our offline ISOs that we had released earlier had some issues with the Steam Deck's resolution, but eventually this will all be sorted out. When that happens we will release a new batch of offline ISOs in the future.  In the meantime, grab the latest online ISO and **make sure to connect to the internet in the installer.**
-
-    
-Initial work has been done to have Bazzite boot on the Asus ROG Ally handheld PC!  If you are interested in testing and trying it out then download [Fedora Kinoite](https://fedoraproject.org/kinoite/download/) and install it like you normally would Bazzite.  Follow our installation instructions [here](https://universal-blue.org/images/bazzite/installation/).  Once you reach the desktop, open Konsole and enter either:
-`rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bazzite-ally:latest` for KDE Plasma or `rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bazzite-ally-gnome:latest` 
-for GNOME. You are now rebasing to the ally image.  After it has finished rebasing then reboot the device.  Be aware that it may have issues, but please report them on our [Github Issue Tracker](https://github.com/ublue-os/bazzite/issues).
-    
-We also now support Framework, Lenovo Legion, and ASUS devices with their own special images.  Generic controller support for handheld PCs with our addition of `hanygccs`.  In addition, Tailscale now has support out of the box and the GNOME images include the Tailscale status extension too.  Fleek is temporary removed until non-interactive installer is finished.  KDE images can now share their screen properly on Wayland with the inclusion of xwaylandbridge.  We also added `android-udev-rules` to the base image and a `just` command to add scrcpy.  This can also give you access to [guiscrcpy](https://guiscrcpy.srev.in/) to mirror your Android phone.
+   
+We also now support Framework, Lenovo Legion, and ASUS devices with their own special images.  Generic controller support for handheld PCs with our addition of `hanygccs`.  In addition, Tailscale now has support out of the box and the GNOME images include the Tailscale status extension too.  Fleek is temporary removed until the non-interactive installer is finished.  KDE images can now share their screen properly on Wayland with the inclusion of xwaylandbridge.  We also added `android-udev-rules` to the base image and a `just` command to add scrcpy.  This can also give you access to [guiscrcpy](https://guiscrcpy.srev.in/) to mirror your Android phone.
 
 ![](https://hackmd.io/_uploads/SyQMrBCkp.png)
 
