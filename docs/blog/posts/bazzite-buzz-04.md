@@ -15,7 +15,7 @@ links:
 
 <p style="color: blue"> Welcome to Bazzite Buzz #4!</p> 
 
-Bazzite is a custom image of Fedora 38 designed to being the best in Linux gaming to your PCs, including the Steam Deck. This newsletter highlights all the work we are doing to bring gamers the best goodies for their PCs and handheld gaming devices.
+Bazzite is a custom image of Fedora 38 designed to bring the best in Linux gaming to your PCs, including the Steam Deck. This newsletter highlights all the work we are doing to bring gamers the best goodies for their PCs and handheld gaming devices.
 
 If you are new to a Universal Blue project then here's some back filler. These images follow the [continuous delivery](https://continuousdelivery.com/) methodology of development. That means we're constantly adding new things, so let's get started!
 
