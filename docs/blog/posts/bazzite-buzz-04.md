@@ -24,7 +24,7 @@ Initial work has been done to have Bazzite boot on the Asus ROG Ally handheld PC
 `rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bazzite-ally:latest` for KDE Plasma or `rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bazzite-ally-gnome:latest` 
 for GNOME. You are now rebasing to the ally image.  After it has finished rebasing then reboot the device.  Be aware that it may have issues, but please report them on our [Github Issue Tracker](https://github.com/ublue-os/bazzite/issues).
     
-We also now support Framework, Lenovo, and ASUS devices with their own special images.  Generic controller support for handheld PCs with our addition of hanygccs which should improve controller support.  In addition, Tailscale now has support out of the box and the GNOME images include the Tailscale status extension too.  Fleek is temporary removed until non-interactive installer is finished.  KDE images can now share their screen properly on Wayland with the inclusion of xwaylandbridge.  We also added `android-udev-rules` to the base image and a `just` command to add scrcpy.  This can also give you access to [guiscrcpy](https://guiscrcpy.srev.in/) to mirror your Android phone.
+We also now support Framework, Lenovo, and ASUS devices with their own special images.  Generic controller support for handheld PCs with our addition of `hanygccs`.  In addition, Tailscale now has support out of the box and the GNOME images include the Tailscale status extension too.  Fleek is temporary removed until non-interactive installer is finished.  KDE images can now share their screen properly on Wayland with the inclusion of xwaylandbridge.  We also added `android-udev-rules` to the base image and a `just` command to add scrcpy.  This can also give you access to [guiscrcpy](https://guiscrcpy.srev.in/) to mirror your Android phone.
 
 ![](https://hackmd.io/_uploads/SyQMrBCkp.png)
 
@@ -78,5 +78,6 @@ We'd like to thank all of our contributors and those who are helping us troubles
 -  Fixed justfile creation.  Currently, this only gets written if the file exists. Create it when the file doesn't exist instead.
 -  Reorganized `just` commands.
 -  Lutris dependency for PCEM is now added.
+
 
 Full changelog and ISOs for the 1.2.0 release [here](https://github.com/ublue-os/bazzite/releases/tag/v1.2.0).
