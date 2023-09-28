@@ -79,4 +79,4 @@ We'd like to thank all of our contributors and those who are helping us troubles
 -  Reorganized `just` commands.
 -  Lutris dependency for PCEM is now added.
 
-Full changelog and ISOs for the 1.2.0 release [here](https://github.com/ublue-os/bazzite/pull/273#issue-1886248136).
+Full changelog and ISOs for the 1.2.0 release [here](https://github.com/ublue-os/bazzite/releases/tag/v1.2.0).
