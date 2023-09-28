@@ -13,7 +13,7 @@ links:
 
 ![](https://hackmd.io/_uploads/rJy2vAjka.jpg)
 
-<p style="color: blue"> Welcome to Bazzite Buzz #4!</p> 
+Welcome to Bazzite Buzz #4!</p> 
 
 Bazzite is a custom image of Fedora 38 designed to bring the best in Linux gaming to your PCs, including the Steam Deck. This newsletter highlights all the work we are doing to bring gamers the best goodies for their PCs and handheld gaming devices.
 
