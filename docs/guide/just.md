@@ -12,7 +12,6 @@ Typing `just` in the command line will show possible commands and descriptions. 
 - `just changelogs` - show a changelog between the running system and the latest updates
 - `just clean` - clean up old containers and packaging metadata
 - `just distrobox-<name-of-distro>` - E.g. `just distrobox-fedora` - pre-made distroboxes of common distributions
-- `just enroll-secure-boot-key` - import boot key used to sign all [uBlue built kernel modules](https://github.com/ublue-os/akmods)
 - `just update` - update all packages, flatpaks, and distroboxes
 
 ### Nvidia Images
@@ -20,6 +19,7 @@ Typing `just` in the command line will show possible commands and descriptions. 
 - `just set-kargs-nvidia` - set boot arguments to blacklist nouveau
 - `just test-cuda` - test CUDA
 - `just setup-firefox-flatpak-vaapi-nvidia` - set the flatpak override to get VAAPI working
+- `just enroll-secure-boot-key` - import boot key used to sign all [uBlue built kernel modules](https://github.com/ublue-os/akmods)
 
 Commands are updated and maintained by the community, feel free to [submit a command](https://github.com/ublue-os/config/tree/main/build/ublue-os-just) if you feel it is something that would be useful for all users.
 
@@ -30,14 +30,22 @@ Commands are updated and maintained by the community, feel free to [submit a com
 `just` comes set up with Universal Blue images out of the box. There should be a `.justfile` in your home directory with the following contents:
 
 ```just
-!include /usr/share/ublue-os/just/main.just
-!include /usr/share/ublue-os/just/nvidia.just
-!include /usr/share/ublue-os/just/custom.just
+!include /usr/share/ublue-os/just/00-default.just
+!include /usr/share/ublue-os/just/10-update.just
+!include /usr/share/ublue-os/just/20-clean.just
+!include /usr/share/ublue-os/just/30-distrobox.just
+!include /usr/share/ublue-os/just/40-nvidia.just
+!include /usr/share/ublue-os/just/50-akmods.just
+!include /usr/share/ublue-os/just/60-custom.just
 ```
 
-- `main.just` is a `justfile` available in all `main` and derived images. It includes common system recipes such as `just update`.
-- `nvidia.just` is a `justfile` available in all `nvidia` and derived images. It includes Nvidia-specific recipes such as `just set-kargs-nvidia`.
-- `custom.just` is a `justfile` available in `startingpoint` and derived images. It is intended to have recipes provided by the custom image maintainer.
+- `00-default.just` is a `justfile` available in all `main` and derived images. It includes common system recipes such as `just update`.
+- `10-update.just` is a `justfile` available in all `main` and derived images.  It is specifically designed around updating your image and updates your system packages, installed flatpak applications, and containers all at once.
+- `20-clean.just` is a `justfile` available in all `main` and derived images.  It is designed around cleaning your system.  Cleans up containers, unused flatpak dependencies, optimises Nix if installed, and cleans up older system deployments.
+- `30-distrobox.just` is a `justfile` available in all `main` and derived images.  It is centered around creating Distrobox containers with ease.
+- `40-nvidia.just` is a `justfile` available in all `nvidia` and derived images. It includes Nvidia-specific recipes such as `just set-kargs-nvidia`.
+- `50-akmods.just` is a `justfile` available in `nvidia` and derived images.  It may also be in some speciality images too.  It is a layer to add extra kernel modules to the image and is mainly used for better hardware support.
+- `60-custom.just` is a `justfile` available in `startingpoint` and derived images. It is intended to have recipes provided by the custom image maintainer.
 
 You can in-line more aliases in this file, or add custom includes. The included `justfiles` are there so that derived images can use the common community pattern while allowing extensibility.  
 
