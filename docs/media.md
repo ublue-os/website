@@ -28,6 +28,16 @@
 { .card }
 </div>
 
+<div class="grid" markdown>
+**Tom's Hardware**: [Bazzite is a SteamOS Clone That Supports Gaming PCs and the Steam Deck](https://www.tomshardware.com/news/bazzite-is-a-steamos-clone-that-supports-gaming-pcs-and-the-steam-deck)
+{ .card }
+</div>
+
+<div class="grid" markdown>
+**It's FOSS**: [Bazzite: A Distro for Linux Gaming on Steam Deck and PCs](https://news.itsfoss.com/bazzite/)
+{ .card }
+</div>
+
 
 ## Videos
 
