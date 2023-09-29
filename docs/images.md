@@ -40,7 +40,7 @@ After you have rebooted, switch to the signed image by running one of the comman
     - [Bazzite](https://github.com/ublue-os/bazzite/)
     - [Beyond](https://github.com/ublue-os/beyond)
 - Opinionated Fedora Silverblue Images
-    - More information on changes from stock Fedora Silverblue [here](https://universal-blue.org/images/main/). 
+    - More information on changes from stock Fedora Silverblue [here](/images/main/). 
     - Offers different desktop environments and window managers if desired.
     - Download the ISO for all different desktop variants [here](https://github.com/ublue-os/main/releases).
 - Specialized Hardware
@@ -48,7 +48,7 @@ After you have rebooted, switch to the signed image by running one of the comman
     -  Overlaps with the other images.
         -  `bazzite-framework` as an example.
 - [Community Images](https://github.com/ublue-os/awesome-custom-images)
-    - You can make your own too!  Check out [Making Your Own](https://universal-blue.org/tinker/make-your-own/) and [Forking Your Own](https://universal-blue.org/guide/fork-your-own/).
+    - You can make your own too!  Check out [Making Your Own](/tinker/make-your-own/) and [Forking Your Own](/guide/fork-your-own/).
 - Other images
     - Base images that include only the necessary Fedora packages as a starting point.
     - Images without kernel modules or kernel packages.
