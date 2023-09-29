@@ -35,7 +35,7 @@ This list is in alphabetical order.
 After you have rebooted, switch to the signed image by running one of the commands below for the image you want. If you're already on the signed image then switching over should be a quick rebase, and then reboot.
 
 ## Image Categorization
-- Flagship Images
+- Featured Images
     - [Bluefin](https://github.com/ublue-os/bluefin)
     - [Bazzite](https://github.com/ublue-os/bazzite/)
     - [Beyond](https://github.com/ublue-os/beyond)
