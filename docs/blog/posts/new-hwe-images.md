@@ -19,6 +19,9 @@ Over the past few weeks contributors [reworked parts of our build system](https:
 
 Devices like certain Asus laptops sometimes need special tools, and these laptops are supported by projects like [asus-linux](https://asus-linux.org/). They not only provide tools, they also hook you up with the right kernels that you need. Similarly, the [linux-surface](https://github.com/linux-surface/linux-surface) project provides special kernels for those devices. They provide the tools and repositories needed to get Fedora working great on those devices. But you have to set that up by hand. Ewww. 
 
+![Bazzite on a Surface](https://github.com/ublue-os/website/assets/1264109/f916e5ec-351d-4157-8d8e-6afd4899f08c)
+
+
 One of the strengths of the cloud-native pattern is our ability to use existing Fedora base images, and then automate the post-installation steps as new composable layers, and then mix and match what we need. Both Asus and Surface devices can also come with Nvidia cards, which means we can use the existing Nvidia images to help us compose Nvidia-enabled images on top of the good stuff we need from asus-linux and linux-surface! These are now ready to test!  
 
 - [ublue-os/nvidia](https://github.com/ublue-os/nvidia) are the same as the main images but include slip-streamed Nvidia drivers
@@ -33,6 +36,9 @@ One of the strengths of the cloud-native pattern is our ability to use existing 
 The [Framework 13 laptop](https://community.frame.work/t/custom-fedora-oci-images-for-framework-laptops/34253?u=jorge_castro) was a unique prototype in this. Initially only available as a custom spin of [Bluefin](/images/bluefin) to gauge interest. We've reworked that repo to line up with the rest, so instead of being Bluefin-specific you can now enjoy a [wider variety of images](https://github.com/orgs/ublue-os/packages?repo_name=framework) for your Framework.
 
 If you're wondering if we plan on supporting the Framework 16 and new AMD Framework 13 then you're in luck, it's just another set of parameters we can add. We're hoping to get feedback from folks who get this hardware so we can enable it! 
+
+![PXL_20230717_145444220](https://github.com/ublue-os/website/assets/1264109/b3acde75-6d04-4208-bf0f-bf0b10f02f01)
+
 
 ## Why do it this way?
 
