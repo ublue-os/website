@@ -4,12 +4,12 @@
 
 **This guide also has a lot of copy pasting to terminal. To copy from terminal, you use <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>c</kbd>, to paste you use <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>v</kbd>**
 
-## 1. Disabling SELinux and enabling the Waydroid container
+## 1. Set SELinux to permissve and enabling the Waydroid container
 
 SELinux is a kernel module used by Fedora (and thus Bazzite) to increase security on a Linux system. 
 Currently there is an issue with SELinux file re-labeling in OCI images that prevents Waydroid from being used without SELinux being set to permissive first.
 
-To disable SELinux, run:
+To set SELinux in permissive, run:
 
 ```bash
 sudo nano /etc/selinux/config
