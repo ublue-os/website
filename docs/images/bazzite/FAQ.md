@@ -13,7 +13,7 @@ Windows dual-booting can be made to work, but is **not recommended** since Windo
 
 ## Why is my installer not working (dracut issue / black screen)
 
-This is currently a known [issue](https://github.com/ublue-os/bazzite/issues/109).  There is a [workaround](https://github.com/ublue-os/bazzite/issues/109#issuecomment-1691090533) that requires either the stock Fedora Silverblue or Fedora Kinoite ISO and rebasing to Bazzite from there after installation.  
+This is currently a known issue.  There is a workaround that requires either the stock Fedora Silverblue or Fedora Kinoite ISO and rebasing to Bazzite from there after installation.
 !!! warning
 
     Keep in mind that the Steam Deck will not scale properly with the installer, and the buttons on the bottom of the screen will be cut off.  This will require use of the `TAB` key on your keyboard to navigate the installer blindly.
@@ -121,7 +121,7 @@ You can rebase to a Bazzite or general Universal Blue image by entering the comm
 You can also rebase to a stock Fedora imaged-based desktop image by entering in a host terminal `ostree remote refs fedora` to see a list of available Fedora images that you can rebase to.  Afterwards enter `rpm-ostree rebase <image>` and wait for it to install the image then reboot.
 
 ##  I am experiencing a bug or want to request a feature, but I'm not sure where to report it.
-Explain your issue or proposal in our [issue tracker](https://github.com/ublue-os/bazzite/issues) or [Github Discussions Page](https://github.com/ublue-os/bazzite/discussions).
+Explain your issue or proposal in our [Github Discussions Page](https://github.com/ublue-os/bazzite/discussions).
 
 In order to troubleshoot the issue properly, you should add a log or terminal output of the issue.  
 
