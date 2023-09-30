@@ -15,7 +15,7 @@ links:
 ---
 # Announcing expanded support for Asus, Framework and Surface Devices
 
-Over the past few weeks contributors [reworked parts of our build system](https://github.com/ublue-os/main/issues/356) to  support more hardware. Reusing cloud patterns allows Universal Blue to offer [pretty awesome Nvidia support](/images/nvidia/) that's baked right into the image. This has always been a special case, we've now successfully productized the pattern into something that we can repeat quickly.
+Over the past few weeks contributors [reworked parts of our build system](https://github.com/ublue-os/main/issues/356) to  support more hardware. Reusing cloud patterns allows Universal Blue to offer [pretty awesome Nvidia support](/images/nvidia/) that's baked right into the image. This has always been a special case, we've now successfully [productized the pattern](https://youtu.be/cHZl2naX1Xk?si=QUdVeUOHIHZjMiZq&t=281) into something that we can repeat quickly.
 
 Devices like certain Asus laptops sometimes need special tools, and these laptops are supported by projects like [asus-linux](https://asus-linux.org/). They not only provide tools, they also hook you up with the right kernels that you need. Similarly, the [linux-surface](https://github.com/linux-surface/linux-surface) project provides special kernels for those devices. They provide the tools and repositories needed to get Fedora working great on those devices. But you have to set that up by hand. Ewww. 
 
