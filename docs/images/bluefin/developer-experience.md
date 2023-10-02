@@ -65,7 +65,15 @@ Nix-powered Development Experience powered by [Devbox](https://www.jetpack.io/de
 
 ### Docker Engine
 
-The most current [Docker Engine](https://docs.docker.com/engine/) is included by default. Use `just docker` to turn it on, this will turn on the service and add your users to the `docker` group.
+The most current [Docker Engine](https://docs.docker.com/engine/) is included by default. Use `just docker` to turn it on, this will turn on the service and add your users to the `docker` group. You will then need to log out and back into your desktop. 
+
+To configure Visual Studio Code to use Docker go to the extensions section, and click the gear on the bottom right of the remote containers extension to configure it: 
+
+![image](https://github.com/ublue-os/website/assets/1264109/e0eed8e9-ce92-4d68-92af-fb8d1244fcd9)
+
+Then change the following defaults to point to `docker-compose` and `docker`: 
+
+![image](https://github.com/ublue-os/website/assets/1264109/47bb202a-fc57-4cb0-8f24-340e9d86a250)
 
 ### Virtualization and Container Runtimes
 
