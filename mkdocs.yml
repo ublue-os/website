@@ -150,6 +150,7 @@ nav:
             - tinker/modules/index.md
             - bling: tinker/modules/bling.md
             - files: tinker/modules/files.md
+            - fonts: tinker/modules/fonts.md
             - rpm-ostree: tinker/modules/rpm-ostree.md
             - script: tinker/modules/script.md
             - systemd: tinker/modules/systemd.md
