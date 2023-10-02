@@ -120,7 +120,18 @@ You can rebase to a Bazzite or general Universal Blue image by entering the comm
 
 You can also rebase to a stock Fedora imaged-based desktop image by entering in a host terminal `ostree remote refs fedora` to see a list of available Fedora images that you can rebase to.  Afterwards enter `rpm-ostree rebase <image>` and wait for it to install the image then reboot.
 
+
+## How do I disable update notifications for desktop images?
+
+Open the directory `/etc/ublue-update/` and open `ublue-update.toml` with a text editor.
+
+Change:
+`dbus_notify = true` to `dbus_notify = false`
+
+Notifications for updates are now suppressed.
+
 ##  I am experiencing a bug or want to request a feature!  Help!
+
 Explain your issue or proposal in our [issue tracker](https://github.com/ublue-os/bazzite/issues) or [Github Discussions Page](https://github.com/ublue-os/bazzite/discussions).
 
 In order to troubleshoot the issue properly, you should add a log or terminal output of the issue.  
