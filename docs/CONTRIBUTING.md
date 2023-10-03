@@ -39,12 +39,13 @@ If you want to ask a question, ask in the [discussion forum](https://github.com/
 !!! warning "Legal Notice"
 When contributing to this project, you must agree that you have authored 100% of the content, that you have the necessary rights to the content and that the content you contribute may be provided under the project license.
 
-
 Generally speaking we try to follow the [Lazy Concensus](http://lazyconcens.us/) model of development to keep the builds healthy and ourselves happy.
 
 - If you're looking for consensus to make a decision post an issue for feedback and remember to account for timezones and weekends/holidays/work time.
 - We want people to be opinionated in their builds so we're more of a loose confederation of repos than a top-down org.
 - Try not to merge your own stuff, ask for a review. At some point when we have enough reviewers we'll be turning on branch protection.
+
+Ashley Willis has a great introductory post called [How to Be a Good Open Source Contributor During Hacktoberfest and Beyond](https://dev.to/github/how-to-be-a-good-open-source-contributor-during-hacktoberfest-and-beyond-cdi) that has useful tips if you are just getting started.
 
 ## Submitting Pull Requests
 
