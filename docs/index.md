@@ -9,7 +9,7 @@ This is a collection of container images using Fedora's support for OCI/Docker c
 
 For a more in-depth explanation, refer to our [Documentation,](/introduction) and [Media Coverage](/media) sections.
 
-This project provides ... 
+This project provides: 
 
 <div class="grid cards" markdown>
 
@@ -28,25 +28,54 @@ This project provides ...
     ---
     Act as a proving ground for new ideas around the Linux desktop like [Fleek](https://getfleek.dev/), [Forge](https://github.com/ublue-os/forge), [Yafti](https://github.com/ublue-os/yafti), and [Boxkit](https://github.com/ublue-os/boxkit)
 
-- :material-heart:{ .lg .middle } __Community__
+- :material-package-variant-closed-check:{ .lg .middle } __Codecs Included__
 
     ---
-    Help new contributors to start their cloud native and open source journeys no matter their skill level.
+    Several different [codecs](https://universal-blue.org/guide/codecs/?h=codecs) are already preinstalled and ready to be decoded and encoded at will
+
+- :material-heart:{ .lg .middle } __Customization__
+
+    ---
+    It's still the same Linux desktop that you are already familiar with when it comes to unbridled customization
+
+- :material-tools:{ .lg .middle } __Community__
+
+    ---
+    Help new contributors to start their cloud native and open source journeys no matter their skill level
 
 </div>
-  
-Our images offer GNOME, KDE, XFCE, LXQt, Budgie, and MATE, with more being [added regularly](/images). Our [NVIDIA images](/images/nvidia) offer a unique blend of reliability and ease of use that you won't find anywhere else. These are offered in a variety of images to fit your needs:
 
+### Main/Nvidia Images:
+
+Our images offer:
+- GNOME
+- KDE
+- XFCE 
+- LXQt 
+- Budgie
+- MATE
+- Cinnamon
+- Sway
+
+More desktop environments and standalone window managers are being [added regularly](/images). Our [NVIDIA images](/images/nvidia) offer a unique blend of reliability and ease of use that you won't find anywhere else. 
+
+**These are also offered in a variety of images to fit your needs:**
+
+### Specialized Hardware Images:
 - [Asus](/images/asus) - Fedora-based images with [asus-linux.org](https://asus-linux.org) kernels
 - [Framework](/images/framework) - Framework's recommended Fedora settings 
 - [Legion](/images/legion) - Fedora-based images with support Lenovo Legion laptops and Legion Go
 - [Surface](/images/surface) - Fedora-based images with [linux-surface](https://github.com/linux-surface/linux-surface) kernels
 
-Check out [Bazzite](/images/bazzite), the ultimate gaming setup for your PC, Steam Deck, ASUS ROG Ally and Legion Go. Fedora's upstream pipeline automated directly to your device, nice. 
+### Featured Custom Images:
 
-[Bluefin](/images/bluefin) is a simple to use desktop with the mission of serving a mass audience. The [Bluefin DX](/images/bluefin/developer-experience) edition is designed to be the ultimate Linux workstation for open source developers.
+- Check out [Bazzite](/images/bazzite), the ultimate gaming setup for your PC, Steam Deck, ASUS ROG Ally and Legion Go. Fedora's upstream pipeline automated directly to your device, nice. 
 
-And last, but not least, check out [Beyond](https://github.com/ublue-os/beyond), our collaboration with [Cassidy James Blaede](https://cassidyjames.com/), a peek into his vision of a future GNOME desktop. 
+- [Bluefin](/images/bluefin) is a simple to use desktop with the mission of serving a mass audience. The [Bluefin DX](/images/bluefin/developer-experience) edition is designed to be the ultimate Linux workstation for open source developers.
+
+- And last, but not least, check out [Beyond](https://github.com/ublue-os/beyond), our collaboration with [Cassidy James Blaede](https://cassidyjames.com/), a peek into his vision of a future GNOME desktop. 
+
+If you choose one of these images and want to try another one without losing any of your user data then rebase to one of our images listed [here](https://universal-blue.org/images/).
 
 ## Why would I use these?
 
@@ -112,6 +141,24 @@ Our goal is to for one install to last the life of the hardware.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/X8h304Jp9N8?start=435" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
 
+## Showcase
+
+![](https://hackmd.io/_uploads/Bkc89Awe6.png)
+<p style="text-align: center;font-weight: bold">Fedora Silverblue with batteries included</p>
+
+![](https://hackmd.io/_uploads/ByyXJ6wgp.png)
+
+<p style="text-align: center;font-weight: bold">Main image using the xfce desktop environment</p>
+
+![](https://hackmd.io/_uploads/HyfFqCve6.png)
+
+<p style="text-align: center;font-weight: bold">Bazzite desktop image</p>
+
+![](https://hackmd.io/_uploads/Sy4tvhDla.png)
+<p style="text-align: center;font-weight: bold">Bluefin Alpha</p>
+
+
+
 ## Join Us
 
 We're always looking for people to help, all skill levels and areas of expertise are welcome. Check out [the roadmap](https://github.com/orgs/ublue-os/projects/1) and [proposals](https://github.com/orgs/ublue-os/discussions?discussions_q=is%3Aopen+label%3Aproposal) to get a feel for the project, then: 
@@ -120,4 +167,4 @@ We're always looking for people to help, all skill levels and areas of expertise
   - We strive for a safe, inclusive community.
 - Pull requests encouraged and accepted.
 
-If you're building your own custom images feel free to add them to [our awesome list](https://github.com/ublue-os/awesome-custom-images)!
+If you're building your own custom images feel free to add them to [our awesome list](https://github.com/ublue-os/awesome-custom-images
