@@ -3,7 +3,7 @@
 ![](https://hackmd.io/_uploads/rJonVYveT.jpg)
 <p style="text-align: center; font-weight: 600; color: red">We want YOU to contribute to Bazzite and Universal Blue. </p>
 
-Bazzite is an image from [Universal Blue](https://universal-blue.org/) and you should follow Universal Blue's [contribution guidelines](https://universal-blue.org/CONTRIBUTING/) before proceeding.  
+Bazzite is an image from [Universal Blue](https://universal-blue.org/) and you should follow Universal Blue's [contribution guidelines](/CONTRIBUTING/) before proceeding.  
 
 Check out the Bazzite's [issue tracker](https://github.com/ublue-os/bazzite/issues) to see what issues users are currently experiencing.  Also check out the current [roadmap](https://github.com/orgs/ublue-os/projects/1/views/1) for Universal Blue.
 
