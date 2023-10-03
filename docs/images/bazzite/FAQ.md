@@ -113,7 +113,7 @@ You can also rebase to a stock Fedora imaged-based desktop image by entering in 
 ## What are some of the unique applications that Bazzite uses?
 
 - [Bazzite Portal, also known as YAFTI](https://github.com/ublue-os/yafti/), acts as both a first-boot utility and general software configuration and installation tool.
-- [Just](https://github.com/casey/just) is for executing custom commands based on recipes.  Type `just` in a host terminal to see what commands are available.  See some example commands [here](https://universal-blue.org/guide/just/).
+- [Just](https://github.com/casey/just) is for executing custom commands based on recipes.  Type `just` in a host terminal to see what commands are available.  See some example commands [here](/guide/just/).
 - [Fleek](https://getfleek.dev/) is a [Nix](https://search.nixos.org/packages) package manager wrapper and `$HOME` manager using YAML.
 
 ## For the desktop edition, why run Steam in an Arch Linux Distrobox container as opposed to Flatpak?
