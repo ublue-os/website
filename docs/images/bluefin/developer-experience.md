@@ -22,7 +22,7 @@ Like all Universal Blue images, switching is atomic, allowing for clean switchin
 
 [Visual Studio Code](https://code.visualstudio.com/) is included on the image to facilitate local development. It comes configured for usage with [devcontainers] and Podman via a small [default configuration file](https://github.com/ublue-os/bluefin/blob/main/dx/usr/etc/skel.d/.config/Code/User/settings.json).
 
-- [Dev Containers Documentation](https://code.visualstudio.com/docs/devcontainers/containers) - you can skip most of the installation instructions and go directly to [the tutorial](https://code.visualstudio.com/docs/devcontainers/tutorial)
+- [Dev Containers Documentation](https://code.visualstudio.com/docs/devcontainers/containers) - you can skip most of the installation instructions and go directly to [the tutorial](https://code.visualstudio.com/docs/devcontainers/tutorial#_install-the-extension)
 - [Dev Containers Specification](https://containers.dev/) 
 - [Beginner's Series to: Dev Containers](https://www.youtube.com/watch?v=b1RavPr_878) - great introductory tutorial from the [VS Code YouTube channel](https://www.youtube.com/@code/videos)
 
