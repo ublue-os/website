@@ -104,6 +104,18 @@ No. Bazzite is not a distribution. This is Fedora Kinoite/Silverblue (depending 
 
 Unlike traditional Linux distributions, much of the maintenance and security updates are done upstream by Fedora and Universal Blue while Bazzite only configures a great gaming experience out of the box. Check the [mission statement](/mission) and [documentation](https://universal-blue.org/introduction/) for more information.
 
+## How do I switch to a different Bazzite or other Universal Blue image?
+
+You can rebase to a Bazzite or general Universal Blue image by entering the command in a host terminal found on this [page](https://universal-blue.org/images/).  After it is finished, reboot your system.
+
+You can also rebase to a stock Fedora imaged-based desktop image by entering in a host terminal `ostree remote refs fedora` to see a list of available Fedora images that you can rebase to.  Afterwards enter `rpm-ostree rebase <image>` and wait for it to install the image then reboot.
+
+## What are some of the unique applications that Bazzite uses?
+
+- [Bazzite Portal, also known as YAFTI](https://github.com/ublue-os/yafti/), acts as both a first-boot utility and general software configuration and installation tool.
+- [Just](https://github.com/casey/just) is task execution.  Type `just` in a host terminal to see what commands are available.  See some example commands [here](https://universal-blue.org/guide/just/).
+- [Fleek](https://getfleek.dev/) is a [Nix](https://search.nixos.org/packages) package manager wrapper and `$HOME` manager using YAML.
+
 ## For the desktop edition, why run Steam in an Arch Linux Distrobox container as opposed to Flatpak?
 
 Steam is not built with flatpak in mind. Valve does not contribute to it, and as a result there are many workarounds that the Arch package does not have to worry about it. The Steam Deck uses the Arch package, and to stay consistent with SteamOS so do we.
@@ -113,13 +125,6 @@ Running Steam in Distrobox has the advantage of using [LatencyFleX](https://gith
 There is a [minor performance impact](https://github.com/flatpak/flatpak/issues/4187) if you run/attempt to run Flatpak games. However it is only noticeable with certain edge cases.
 
 If you so desire, you can still install the Flatpak Steam at any time.
-
-## How do I switch to a different Bazzite or other Universal Blue image?
-
-You can rebase to a Bazzite or general Universal Blue image by entering the command in a host terminal found on this [page](https://universal-blue.org/images/).  After it is finished, reboot your system.
-
-You can also rebase to a stock Fedora imaged-based desktop image by entering in a host terminal `ostree remote refs fedora` to see a list of available Fedora images that you can rebase to.  Afterwards enter `rpm-ostree rebase <image>` and wait for it to install the image then reboot.
-
 
 ## How do I disable update notifications for desktop images?
 
