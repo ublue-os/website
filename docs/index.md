@@ -148,7 +148,7 @@ Our goal is to for one install to last the life of the hardware.
 
 ![](https://hackmd.io/_uploads/ByyXJ6wgp.png)
 
-<p style="text-align: center;font-weight: bold">Main image using the xfce desktop environment</p>
+<p style="text-align: center;font-weight: bold">Main image using the Xfce desktop environment</p>
 
 ![](https://hackmd.io/_uploads/HyfFqCve6.png)
 
