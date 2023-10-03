@@ -30,7 +30,7 @@ Follow the [Waydroid guide](/images/bazzite/waydroid/).
 
 ## How do updates work?
 
-### **For *bazzite*, *bazzite-nvidia*, *bazzite-gnome*, and *bazzite-gnome-nvidia*:**
+### Desktop images (*bazzite*, *bazzite-nvidia*, *bazzite-gnome*, and *bazzite-gnome-nvidia*, etc.)
 
 System updates happen automatically daily.  They will be downloaded in the background and will apply on shutdown.  No forced reboots or worrying about manually updating your system.
 
@@ -38,7 +38,7 @@ Flatpak applications (installed from *Discover* or *GNOME Software*) update twic
 
 You can however force update to the whole system (base packages, applications, and containers) at any time by opening your host terminal and entering `just update` then reboot your device after it has finished.
 
-### **For *bazzite-deck* and *bazzite-deck-gnome*:**
+### Steam Deck and HTPC images (*bazzite-deck* and *bazzite-deck-gnome*, etc.)
 
 Similar to SteamOS, updates are handled by Steam.  In Game Mode, go to Settings > System > click "Apply"
 
@@ -114,17 +114,28 @@ There is a [minor performance impact](https://github.com/flatpak/flatpak/issues/
 
 If you so desire, you can still install the Flatpak Steam at any time.
 
-## How do I switch to a different Bazzite image?
+## How do I switch to a different Bazzite or other Universal Blue image?
 
 You can rebase to a Bazzite or general Universal Blue image by entering the command in a host terminal found on this [page](https://universal-blue.org/images/).  After it is finished, reboot your system.
 
 You can also rebase to a stock Fedora imaged-based desktop image by entering in a host terminal `ostree remote refs fedora` to see a list of available Fedora images that you can rebase to.  Afterwards enter `rpm-ostree rebase <image>` and wait for it to install the image then reboot.
 
-##  I am experiencing a bug or want to request a feature, but I'm not sure where to report it.
+
+## How do I disable update notifications for desktop images?
+
+Open the directory `/etc/ublue-update/` and open `ublue-update.toml` with a text editor.
+
+Change:
+`dbus_notify = true` to `dbus_notify = false`
+
+Notifications for updates are now suppressed.
+
+##  I am experiencing a bug or want to request a feature!  Help!
+
 Explain your issue or proposal in our [issue tracker](https://github.com/ublue-os/bazzite/issues) or [Github Discussions Page](https://github.com/ublue-os/bazzite/discussions).
 
 In order to troubleshoot the issue properly, you should add a log or terminal output of the issue.  
 
-Example 1: For a game running on Steam through Proton, go to the game's properties and type `PROTON_LOG=1 %command%` in the launch options section.  Play the game and the log should appear by the appid in your `Home` directory, and make sure to attach that to the issue you have opened.
+**Example 1:** For a game running on Steam through Proton, go to the game's properties and type `PROTON_LOG=1 %command%` in the launch options section.  Play the game and the log should appear by the appid in your `Home` directory, and make sure to attach that to the issue you have opened.
 
-Example 2: For a Flatpak application that has issues, get the Flatpak package name of all installed applications by entering `flatpak list` (you may need to readjust the terminal window to get the package name to fit beforehand.)  After you got the name, enter `flatpak run <flatpak.package.name>` and a console output will appear.  Copy and paste into a text file, save it, and attach it.
+**Example 2**: For a Flatpak application that has issues, get the Flatpak package name of all installed applications by entering `flatpak list` (you may need to readjust the terminal window to get the package name to fit beforehand.)  After you got the name, enter `flatpak run <flatpak.package.name>` and a console output will appear.  Copy and paste into a text file, save it, and attach it.
