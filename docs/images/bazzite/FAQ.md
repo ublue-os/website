@@ -18,32 +18,6 @@ This is currently a known [issue](https://github.com/ublue-os/bazzite/issues/109
 
     Keep in mind that the Steam Deck will not scale properly with the installer, and the buttons on the bottom of the screen will be cut off.  This will require use of the `TAB` key on your keyboard to navigate the installer blindly.
 
-## How do I run Windows applications?
-
-* Use Lutris (preinstalled).
-* [Bottles](https://flathub.org/apps/com.usebottles.bottles) for general purpose applications or as an alternative to Lutris.
-* [Heroic](https://flathub.org/apps/com.heroicgameslauncher.hgl) for Epic, GOG, and Amazon Games Launcher.
-
-## How do I run Android applications?
-
-Follow the [Waydroid guide](/images/bazzite/waydroid/).
-
-## How do updates work?
-
-### Desktop images (*bazzite*, *bazzite-nvidia*, *bazzite-gnome*, and *bazzite-gnome-nvidia*, etc.)
-
-System updates happen automatically daily.  They will be downloaded in the background and will apply on shutdown.  No forced reboots or worrying about manually updating your system.
-
-Flatpak applications (installed from *Discover* or *GNOME Software*) update twice a day automatically.
-
-You can however force update to the whole system (base packages, applications, and containers) at any time by opening your host terminal and entering `just update` then reboot your device after it has finished.
-
-### Steam Deck and HTPC images (*bazzite-deck* and *bazzite-deck-gnome*, etc.)
-
-Similar to SteamOS, updates are handled by Steam.  In Game Mode, go to Settings > System > click "Apply"
-
-Alternatively, you can open a host terminal and enter `just update` then reboot your device after it has finished.
-
 ## How do I install additional software?
 
 ### Flatpak
@@ -71,6 +45,32 @@ If you opted to use Nix packages at the first boot, then you can use the Nix pac
 
 Fedora has [documentation](https://docs.fedoraproject.org/en-US/fedora/latest/system-administrators-guide/package-management/rpm-ostree/) on rpm-ostree.  The most common command you will use is `rpm-ostree install <package>` to layer Fedora's RPM packages to the image.  After that has finished you will be required to reboot your system to use it.  However, it is highly recommended to only use this command as the last resort especially if the package can be obtained through the above methods.
 
+## How do I run Windows applications?
+
+* Use Lutris (preinstalled).
+* [Bottles](https://flathub.org/apps/com.usebottles.bottles) for general purpose applications or as an alternative to Lutris.
+* [Heroic](https://flathub.org/apps/com.heroicgameslauncher.hgl) for Epic, GOG, and Amazon Games Launcher.
+
+## How do I run Android applications?
+
+Follow the [Waydroid guide](/images/bazzite/waydroid/).
+
+## How do updates work?
+
+### Desktop images (*bazzite*, *bazzite-nvidia*, *bazzite-gnome*, and *bazzite-gnome-nvidia*, etc.)
+
+System updates happen automatically daily.  They will be downloaded in the background and will apply on shutdown.  No forced reboots or worrying about manually updating your system.
+
+Flatpak applications (installed from *Discover* or *GNOME Software*) update twice a day automatically.
+
+You can however force update to the whole system (base packages, applications, and containers) at any time by opening your host terminal and entering `just update` then reboot your device after it has finished.
+
+### Steam Deck and HTPC images (*bazzite-deck* and *bazzite-deck-gnome*, etc.)
+
+Similar to SteamOS, updates are handled by Steam.  In Game Mode, go to Settings > System > click "Apply"
+
+Alternatively, you can open a host terminal and enter `just update` then reboot your device after it has finished.
+
 ## Do I have to reboot after every system update or layering a package?
 
 No. They just won't apply until shutdown.  You can attempt to layer package(s) without rebooting with `rpm-ostree install --apply-live <package>` but sometimes this still requires a reboot depending on the package(s) you installed.
@@ -78,6 +78,10 @@ No. They just won't apply until shutdown.  You can attempt to layer package(s) w
 ## How do I rollback a system update?
 
 Read Fedora's official [documentation](https://docs.fedoraproject.org/en-US/fedora-silverblue/updates-upgrades-rollbacks/#rolling-back) on this.  You can pin your current deployment with `sudo ostree admin pin 0` in a host terminal.  You can also rollback in the GRUB menu.
+
+## I am new to Linux gaming.  Where do I start?
+
+We have a Linux gaming starter guide [here](/images/bazzite/gaming_guide).
 
 ## Why use Fedora? SteamOS is based on Arch Linux.
 
@@ -100,21 +104,21 @@ Check out the [Universal Blue homepage](https://universal-blue.org) for more inf
 
 ## Is this another fringe distro?
 
-No. Bazzite is not a distribution. This is Fedora Kinoite/Silverblue (depending on the desktop environment you choose) with a recipe on top of it.  
+No. Bazzite is not a distribution. This is Fedora Kinoite/Silverblue (depending on the desktop environment you choose) with a recipe on top of it.  A hypothetical scenario where everyone involved with Universal Blue could stop maintaining the project and it will still continue to receive updates directly from Fedora.  We are utilizing the [Open Container Initiative](https://opencontainers.org/) to create these images, and most of these images are simply adding packages, services, etc. Bazzite's goal is Fedora Linux, but it provides a great gaming experience out of the box.
 
-Unlike traditional Linux distributions, much of the maintenance and security updates are done upstream by Fedora and Universal Blue while Bazzite only configures a great gaming experience out of the box. Check the [mission statement](/mission) and [documentation](https://universal-blue.org/introduction/) for more information.
-
-## How do I switch to a different Bazzite or other Universal Blue image?
-
-You can rebase to a Bazzite or general Universal Blue image by entering the command in a host terminal found on this [page](/images/).  After it is finished, reboot your system.
-
-You can also rebase to a stock Fedora imaged-based desktop image by entering in a host terminal `ostree remote refs fedora` to see a list of available Fedora images that you can rebase to.  Afterwards enter `rpm-ostree rebase <image>` and wait for it to install the image then reboot.
+Unlike traditional Linux distributions, much of the maintenance and security updates are done upstream by Fedora and Universal Blue while Bazzite only configures a great gaming experience out of the box. Check out the [mission statement](/mission) and [documentation](https://universal-blue.org/introduction/) for more information.
 
 ## What are some of the unique applications that Bazzite uses?
 
 - [Bazzite Portal, also known as YAFTI](https://github.com/ublue-os/yafti/), acts as both a first-boot utility and general software configuration and installation tool.
 - [Just](https://github.com/casey/just) is for executing custom commands based on recipes.  Type `just` in a host terminal to see what commands are available.  See some example commands [here](/guide/just/).
 - [Fleek](https://getfleek.dev/) is a [Nix](https://search.nixos.org/packages) package manager wrapper and `$HOME` manager using YAML.
+
+## How do I switch to a different Bazzite or other Universal Blue image?
+
+You can rebase to a Bazzite or general Universal Blue image by entering the command in a host terminal found on this [page](/images/).  After it is finished, reboot your system.
+
+You can also rebase to a stock Fedora imaged-based desktop image by entering in a host terminal `ostree remote refs fedora` to see a list of available Fedora images that you can rebase to.  Afterwards enter `rpm-ostree rebase <image>` and wait for it to install the image then reboot.
 
 ## For the desktop edition, why run Steam in an Arch Linux Distrobox container as opposed to Flatpak?
 
