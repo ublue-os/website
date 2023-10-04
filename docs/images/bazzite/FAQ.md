@@ -1,29 +1,5 @@
 # FAQ
 
----
-### Table of Contents
-
-- [Why is it called Bazzite?](/images/bazzite/FAQ/#why-is-it-called-bazzite)
-- [Can I dual/multi-boot?](/images/bazzite/FAQ/#can-i-dualmulti-boot)
-- [Why is my installer not working (dracut issue / black screen)](/images/bazzite/FAQ/#why-is-my-installer-not-working-dracut-issue-black-screen)
-- [How do I install additional software](/images/bazzite/FAQ/#how-do-i-install-additional-software)
-- [How do I run Windows applications?](/images/bazzite/FAQ/#how-do-i-run-windows-applications)
-- [How do I run Android applications?](/images/bazzite/FAQ/#how-do-i-run-android-applications)
-- [How do updates work](/images/bazzite/FAQ/#how-do-updates-work)
-- [Do I have to reboot after every system update or layering a package](/images/bazzite/FAQ/#do-i-have-to-reboot-after-every-system-update-or-layering-a-package)
-- [How do I rollback a system update](/images/bazzite/FAQ/#how-do-i-rollback-a-system-update)
-- [I am new to Linux gaming.  Where do I start?](/images/bazzite/FAQ/#i-am-new-to-linux-gaming-where-doi-start)
-- [Why use Fedora? SteamOS is based on Arch Linux.](/images/bazzite/FAQ/#why-use-fedora-steamos-is-based-on-arch-linux)
-- [How does Bazzite differ from other Linux distributions](/images/bazzite/FAQ/#how-does-bazzite-differ-from-other-linux-distributions)
-- [Is this another fringe distro?](/images/bazzite/FAQ/#is-this-another-fringe-distro)
-- [What are some of the unique applications that Bazzite uses](/images/bazzite/FAQ/#what-are-some-of-the-unique-applications-that-bazzite-uses)
-- [How do I switch to a different Bazzite or other Universal Blue image?](/images/bazzite/FAQ/#how-do-i-switch-to-a-different-bazzite-or-other-universal-blue-image)
-- [For the desktop edition, why run Steam in an Arch Linux Distrobox container as opposed to Flatpak?](/images/bazzite/FAQ/#for-the-desktop-edition-why-run-steam-in-an-arch-linux-distrobox-container-as-opposed-to-flatpak)
-- [How do I disable update notifications for desktop images?](/images/bazzite/FAQ/#how-do-i-disable-update-notifications-for-desktop-images)
-- [I am experiencing a bug or want to request a feature!  Help!](/images/bazzite/FAQ/#i-am-experiencing-a-bug-or-want-to-request-a-feature-help)
-
----
-
 ## Why is it called Bazzite?
 
 Fedora's image-based variants are usually named after either [minerals](https://fedoraproject.org/kinoite/) or [flowers](https://fedoraproject.org/sericea/).
