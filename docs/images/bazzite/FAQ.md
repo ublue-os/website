@@ -128,9 +128,9 @@ Check out the [Universal Blue homepage](https://universal-blue.org) for more inf
 
 ## Is this another fringe distro?
 
-No. Bazzite is not a distribution. This is Fedora Kinoite/Silverblue (depending on the desktop environment you choose) with a recipe on top of it.  
+No. Bazzite is not a distribution. This is Fedora Kinoite/Silverblue (depending on the desktop environment you choose) with a recipe on top of it.  A hypothetical scenario where everyone involved with Universal Blue could stop maintaining the project and it will still continue to receive updates directly from Fedora.  We are utilizing the [Open Container Initiative](https://opencontainers.org/) to create these images, and most of these images are simply adding packages, services, etc. Bazzite's goal is Fedora Linux, but it provides a great gaming experience out of the box.
 
-Unlike traditional Linux distributions, much of the maintenance and security updates are done upstream by Fedora and Universal Blue while Bazzite only configures a great gaming experience out of the box. Check the [mission statement](/mission) and [documentation](https://universal-blue.org/introduction/) for more information.
+Unlike traditional Linux distributions, much of the maintenance and security updates are done upstream by Fedora and Universal Blue while Bazzite only configures a great gaming experience out of the box. Check out the [mission statement](/mission) and [documentation](https://universal-blue.org/introduction/) for more information.
 
 ## What are some of the unique applications that Bazzite uses?
 
