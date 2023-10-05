@@ -38,7 +38,7 @@ Waydroid support has also been both streamlined and improved tremendously.  Cont
 
 <p style="text-align: left;font-weight: bold;font-size: 12px">Waydroid on the Steam Deck running in Game Mode</p>
 
-Open a host terminal and enter `just init-waydroid` and it should setup Waydroid for you.  Keep in mind you may need to set SELinux to permissive, but there has been conflicting reports on this.  If you are experiencing issues then enter `sudo nano /etc/selinux/config` and changing `SELINUX=enforcing` to `SELINUX=permissive`.  If you want extra goodies to Waydroid like ARM translation then enter `just configure-waydroid`.
+Open a host terminal and enter `just init-waydroid` and it should setup Waydroid for you.  Keep in mind you may need to set SELinux to permissive, but there has been conflicting reports on this.  If you are experiencing issues then enter `sudoedit /etc/selinux/config` and changing `SELINUX=enforcing` to `SELINUX=permissive`.  If you want extra goodies to Waydroid like ARM translation then enter `just configure-waydroid`.
 
 We are now focusing on having an extremely stable and consistent experience across different hardware.  We are also planning on proper support for the ASUS ROG Ally and other handheld PCs, and have already accomplished some of the ground work necessary.  We still urge that both the ROG Ally and other handheld PCs are still only in the testing  phase at this moment, and users will encounter major issues until they are resolved.
 
