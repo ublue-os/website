@@ -144,18 +144,18 @@ Our goal is to for one install to last the life of the hardware.
 ## Showcase
 
 ![](https://hackmd.io/_uploads/Bkc89Awe6.png)
-<p style="text-align: center;font-weight: bold">Fedora Silverblue with batteries included</p>
+<p style="text-align: left;font-weight: bold;font-size: 14px">Fedora Silverblue with batteries included</p>
 
 ![](https://hackmd.io/_uploads/ByyXJ6wgp.png)
 
-<p style="text-align: center;font-weight: bold">Main image using the Xfce desktop environment</p>
+<p style="text-align: left;font-weight: bold;font-size: 14px">Main image using the Xfce desktop environment</p>
 
 ![](https://hackmd.io/_uploads/HyfFqCve6.png)
 
-<p style="text-align: center;font-weight: bold">Bazzite desktop image</p>
+<p style="text-align: left;font-weight: bold;font-size: 14px">Bazzite desktop image</p>
 
 ![](https://hackmd.io/_uploads/Sy4tvhDla.png)
-<p style="text-align: center;font-weight: bold">Bluefin Alpha</p>
+<p style="text-align: left;font-weight: bold;font-size: 14px">Bluefin in action</p>
 
 
 
@@ -167,4 +167,4 @@ We're always looking for people to help, all skill levels and areas of expertise
   - We strive for a safe, inclusive community.
 - Pull requests encouraged and accepted.
 
-If you're building your own custom images feel free to add them to [our awesome list](https://github.com/ublue-os/awesome-custom-images
+If you're building your own custom images feel free to add them to [our awesome list](https://github.com/ublue-os/awesome-custom-images)!
