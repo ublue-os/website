@@ -7,6 +7,9 @@ links:
   - Bazzite Commits: https://github.com/ublue-os/bazzite/commits/main
   - Bazzite 1.0: https://universal-blue.org/blog/2023/08/20/bazzite-10/
 ---
+
+# Bazzite Buzz No. 5
+
 ![](https://hackmd.io/_uploads/ryvAQvC16.jpg)
 <hr>
 
@@ -14,8 +17,6 @@ links:
 
 If you installed a Bazzite image on any device **before September 22, 2023** or used the **older offline ISO** then open a host terminal and enter `rpm-ostree update`, and wait for it to upgrade to the latest build.  Reboot your device after it has finished.  More information on this [here](https://github.com/ublue-os/bazzite/issues/382).
 <hr>
-
-<p style="font-weight:900; font-size: 25px">Welcome to Bazzite Buzz #5!</p>
 
 Bazzite is a custom image of Fedora 38 designed to being the best in Linux gaming to your PCs, including the Steam Deck. This newsletter highlights all the work we have been doing to bring gamers the best goodies for their PCs and handheld gaming devices.
 
