@@ -40,7 +40,7 @@ Waydroid support has also been both streamlined and improved tremendously.  Cont
 
 Open a host terminal and enter `just init-waydroid` and it should setup Waydroid for you.  Keep in mind you may need to set SELinux to permissive, but there has been conflicting reports on this.  If you are experiencing issues then enter `sudoedit /etc/selinux/config` and changing `SELINUX=enforcing` to `SELINUX=permissive`.  If you want extra goodies to Waydroid like ARM translation then enter `just configure-waydroid`.
 
-We are now focusing on having an extremely stable and consistent experience across different hardware.  We are also planning on proper support for the ASUS ROG Ally and other handheld PCs, and have already accomplished some of the ground work necessary.  We still urge that both the ROG Ally and other handheld PCs are still only in the testing  phase at this moment, and users will encounter major issues until they are resolved.
+We are now focusing on having an extremely stable and consistent experience across different hardware.  We are also planning on proper support for the ASUS ROG Ally and other handheld PCs, and have already accomplished some of the ground work necessary.  We still consider both the ROG Ally and other handheld PCs as an alpha at this moment, and users will encounter major issues until they are resolved.
 
 As always, we'd like to thank all of our contributors and those who are helping us troubleshoot any issues in our newer builds.  The next Bazzite Buzz will focus on the transition from Fedora 38 to Fedora 39, so stay tuned for that.
 
