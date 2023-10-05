@@ -1,14 +1,24 @@
 ignores:
 - akmods-nvidia
+- arch-distrobox
+- arch-distrobox-amdgpupro
 - base
+- base-asus
+- base-asus-nvidia
+- base-framework
 - base-main
+- base-nokmods
 - base-nvidia
+- base-surface
+- base-surface-nvidia
 - bazzite-arch
 - boxkit
 - config
 - experimental
-- images-website
+- fedora-distrobox
 - gnome-vrr
+- images-website
+- images-website
 - kinoite
 - nvidia
 - silverblue
