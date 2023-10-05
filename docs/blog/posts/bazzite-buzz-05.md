@@ -7,6 +7,8 @@ links:
   - Bazzite Commits: https://github.com/ublue-os/bazzite/commits/main
   - Bazzite 1.0: https://universal-blue.org/blog/2023/08/20/bazzite-10/
 ---
+# Bazzite Buzz No. 5
+
 ![](https://hackmd.io/_uploads/ryvAQvC16.jpg)
 <hr>
 
