@@ -21,7 +21,7 @@ Bazzite is a custom image of Fedora 38 designed to being the best in Linux gamin
 
 If you are new to a Universal Blue project then here's how they work then here's how they work. They follow the [continuous delivery](https://continuousdelivery.com/) methodology of development. That means we're constantly adding new things, so let's get started!
 
-We have been preparing for the stable release of Fedora 38 and will plan to switch builds over there within the next two weeks.  Nvidia images for ASUS and Microsoft Surface hardware is now available.  We also added dependencies needed for the [DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve) video editor in case you wanted that.  The [`unrar`](https://github.com/aawc/unrar) library is included in the image which should resolve issues users may experience with certain compressed file formats.
+We have been preparing for the stable release of Fedora 39 and will plan to switch builds over there within the next two weeks.  Nvidia images for ASUS and Microsoft Surface hardware is now available.  We also added dependencies needed for the [DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve) video editor in case you wanted that.  The [`unrar`](https://github.com/aawc/unrar) library is included in the image which should resolve issues users may experience with certain compressed file formats.
 
 ![](https://hackmd.io/_uploads/HJ7I-9jlp.png)
 
