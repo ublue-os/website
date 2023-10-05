@@ -28,7 +28,7 @@ We have been preparing for the stable release of Fedora 39 and will plan to swit
 <p style="text-align: left;font-weight: bold;font-size: 12px">Bazzite Portal has new additions</p>
 
 
-Bazzite Portal now features more software including the [Brew package manager](https://github.com/Homebrew/brew), [OpenTabletDriver](https://github.com/OpenTabletDriver/OpenTabletDriver), and [Wootility](https://wootility.io/).  It also features the unofficial [Final Fantasy XIV launcher](https://github.com/goatcorp/FFXIVQuickLauncher) since it works better on Linux.
+Bazzite Portal now features more software including the [Brew package manager](https://github.com/Homebrew/brew), [OpenTabletDriver](https://github.com/OpenTabletDriver/OpenTabletDriver), and [Wootility](https://wootility.io/).  It also features the unofficial [Final Fantasy XIV launcher](https://github.com/goatcorp/FFXIVQuickLauncher) since it works better for Linux than the default method.
 
 Steam Deck images now include a ton of performance optimizations taken from this [Medium article](https://medium.com/@a.b.t./here-are-some-possibly-useful-tweaks-for-steamos-on-the-steam-deck-fcb6b571b577).  These tweaks in theory should give a slight performance increase versus stock SteamOS, but we never attempted benchmarks yet to actually confirm this.  Maybe for a later time unless someone out there wants to volunteer and [benchmark](https://github.com/flightlessmango/MangoHud#fps-logging) both operating systems.
 
