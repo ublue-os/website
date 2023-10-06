@@ -25,6 +25,7 @@ As one of our [oldest feature requests](https://github.com/ublue-os/ucore/issues
 What could this feature provide a CoreOS/ucore user with an NVIDIA card?
 
 Typically its going to be one of:
+
 - [CUDA](https://developer.nvidia.com/cuda-gpus) for AI, or other GPU accelerated workloads
 - [transcoding video](https://developer.nvidia.com/video-encode-and-decode-gpu-support-matrix-new), especially useful for users lacking newer Intel GPUs with QuickSync
 
