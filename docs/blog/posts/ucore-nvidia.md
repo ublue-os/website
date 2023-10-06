@@ -10,7 +10,7 @@ links:
 
 Universal Core is a Universal Blue custom image of Fedora CoreOS. 
 
-While Universal Blue has rightly been receiving much attention on the desktop; [Universal Core (ucore)](https://github.com/ublue-os/ucore) has been quietly growing its own set of features for the server side of things.
+While Universal Blue has been receiving much attention on the desktop; [Universal Core (ucore)](https://github.com/ublue-os/ucore) has been quietly growing its own set of features for the server side of things.
 
 ## Announcing NVIDIA Support
 
