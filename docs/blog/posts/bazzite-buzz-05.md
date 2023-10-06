@@ -52,6 +52,9 @@ New users who want to give Bazzite a try, here is the the latest [**online ISO**
 
 # Features
 - Nvidia support for ASUS and Microsoft Surface images.
+    - Not available on the current ISO.  Until new ones are released, you could still rebase to these.  Start with a bazzite-nvidia installation and rebase:
+        - ASUS Nvidia:  `rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bazzite-asus-nvidia:latest`
+        - Surface Nvidia:  `rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bazzite-surface-nvidia:latest`
 - Streamlined Waydroid by adding [Weston launcher](https://wiki.archlinux.org/title/Weston) using polkit to start and stop the service. 
 - Added controller support to Waydroid.
 - The frame limiter in Game Mode now works for Android games in Waydroid.
