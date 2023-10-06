@@ -9,7 +9,8 @@ links:
 ---
 # Bazzite Buzz No. 5
 
-![](https://hackmd.io/_uploads/ryvAQvC16.jpg)
+![image](https://github.com/ublue-os/website/assets/121328689/6641f906-6e6d-4836-85be-16547d8681bb)
+
 <hr>
 
 <p style="text-align: center; font-weight: 600; color: red">IMPORTANT: MANUAL INTERVENTION REQUIRED</p>
@@ -25,7 +26,7 @@ If you are new to a Universal Blue project then here's how they work then here's
 
 We have been preparing for the stable release of Fedora 39 and will plan to switch builds over there within the next two weeks.  Nvidia images for ASUS and Microsoft Surface hardware is now available.  We also added dependencies needed for the [DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve) video editor in case you wanted that.  The [`unrar`](https://github.com/aawc/unrar) library is included in the image which should resolve issues users may experience with certain compressed file formats.
 
-![](https://hackmd.io/_uploads/HJ7I-9jlp.png)
+![image](https://github.com/ublue-os/website/assets/121328689/d613e61f-6135-45e3-a610-4d0e6d42a98c)
 
 <p style="text-align: left;font-weight: bold;font-size: 12px">Bazzite Portal has new additions</p>
 
@@ -36,7 +37,7 @@ Steam Deck images now include a ton of performance optimizations taken from this
 
 Waydroid support has also been both streamlined and improved tremendously.  Controllers, including the Steam Deck's controls, should work well with it now.  Steam Deck images should have a working quick access menu with it and plus the addition of the framerate limiter working with Android applications to our surprise.
 
-![](https://hackmd.io/_uploads/BJV4J75l6.png)
+![image](https://github.com/ublue-os/website/assets/121328689/a7a46161-6670-4932-b10c-80a68210c2dc)
 
 <p style="text-align: left;font-weight: bold;font-size: 12px">Waydroid on the Steam Deck running in Game Mode</p>
 
