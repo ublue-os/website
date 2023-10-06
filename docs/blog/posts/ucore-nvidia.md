@@ -14,7 +14,7 @@ While Universal Blue has been receiving much attention on the desktop; [Universa
 
 ## Announcing NVIDIA Support
 
-Today we get to announce a big feature indeed: **ucore finally has nvidia drivers built in!** *(optionally built-in, of course, not everyone wants/needs it)*
+Today we get to announce a long awaited feature:  **ucore finally has images available with Nvidia drivers built in!** 
 
 As one of our [oldest feature requests](https://github.com/ublue-os/ucore/issues/18), which also happend to be created on April 1st, some probably wondered if it was an April Fools Day joke. But no, 6 months later, the feature has landed.
 
