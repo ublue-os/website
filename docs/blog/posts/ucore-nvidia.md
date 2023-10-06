@@ -59,6 +59,7 @@ Universal Core has plenty to offer even if you don't run NVIDIA GPUs in your ser
 Here's a quick summary of what we have to offer:
 
 `ucore` images add the following to CoreOS:
+
 - [cockpit](https://cockpit-project.org) - GUI for managing the server
 - [distrobox](https://github.com/89luca89/distrobox)
 - guest VM agents (`qemu-guest-agent` and `open-vm-tools`)
@@ -70,6 +71,7 @@ Here's a quick summary of what we have to offer:
     - [ZFS](https://openzfs.github.io/openzfsdocs/Getting%20Started/Fedora/index.html)
 
 `ucore-hci` builds upon `ucore` to provide "hyper-converged infrastructure". These images add more hardware/driver support, more storage tools, and virtualization(hypervisor) support:
+
 - [cockpit-machines](https://github.com/cockpit-project/cockpit-machines): Cockpit GUI for managing virtual machines
 - Intel WiFi firmware - CoreOS omits this despite including Atheros WiFi firmware
 - [libvirt](https://libvirt.org/): libvirt KVM hypervisor management daemon and client tools
