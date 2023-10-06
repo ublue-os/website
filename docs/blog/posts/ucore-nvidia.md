@@ -6,7 +6,9 @@ authors:
 links:
   - ucore Commits: https://github.com/ublue-os/ucore/commits/main
 ---
-# Universal Core("ublue" for the server) Gains NVIDIA Support
+# Universal Core Gains NVIDIA Support
+
+Universal Core is a Universal Blue custom image of Fedora CoreOS. 
 
 While Universal Blue has rightly been receiving much attention on the desktop; [Universal Core (ucore)](https://github.com/ublue-os/ucore) has been quietly growing its own set of features for the server side of things.
 
