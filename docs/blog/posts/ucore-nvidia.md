@@ -23,8 +23,9 @@ As one of our [oldest feature requests](https://github.com/ublue-os/ucore/issues
 What could this feature provide a CoreOS/ucore user with an NVIDIA card?
 
 Typically its going to be one of:
-- [transcoding video](https://developer.nvidia.com/video-encode-and-decode-gpu-support-matrix-new) is quite popular, especially if you don't have a later gen Intel CPU with QuickSync
 - [CUDA](https://developer.nvidia.com/cuda-gpus) for AI, or other GPU accelerated workloads
+- [transcoding video](https://developer.nvidia.com/video-encode-and-decode-gpu-support-matrix-new) is quite popular, especially if you don't have a later gen Intel CPU with QuickSync
+
 
 [FrigateNVR](https://frigate.video) is a great example of a self-hostable open source project which can use both [video transcode](https://docs.frigate.video/configuration/hardware_acceleration#nvidia-gpus) capabilities and [compute](https://docs.frigate.video/configuration/detectors#nvidia-tensorrt-detector) capabilities to power a smart home camera solution.
 
