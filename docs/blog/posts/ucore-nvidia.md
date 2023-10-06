@@ -3,6 +3,8 @@ date: 2023-10-06
 comments: true
 authors: 
   - bsherman
+categories:
+  - ucore
 links:
   - ucore Commits: https://github.com/ublue-os/ucore/commits/main
 ---
