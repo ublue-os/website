@@ -71,7 +71,7 @@ Here's a quick summary of what we have to offer:
 
 `ucore-hci` builds upon `ucore` to provide "hyper-converged infrastructure". These images add more hardware/driver support, more storage tools, and virtualization(hypervisor) support:
   - [cockpit-machines](https://github.com/cockpit-project/cockpit-machines): Cockpit GUI for managing virtual machines
-  - intel wifi firmware - CoreOS omits this despite including atheros wifi firmware
+  - Intel WiFi firmware - CoreOS omits this despite including Atheros WiFi firmware
   - [libvirt](https://libvirt.org/): libvirt KVM hypervisor management daemon and client tools
   - [mergerfs](https://github.com/trapexit/mergerfs)
   - [snapraid](https://www.snapraid.it/)
