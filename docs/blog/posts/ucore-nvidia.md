@@ -69,7 +69,7 @@ Here's a quick summary of what we have to offer:
 - [tmux](https://github.com/tmux/tmux/wiki/Getting-Started)
 - *Optionally*
     - [NVIDIA](#details)
-    - [ZFS](https://openzfs.github.io/openzfsdocs/Getting%20Started/Fedora/index.html)
+    - [ZFS](https://github.com/openzfs/zfs)
 
 `ucore-hci` builds upon `ucore` to provide "hyper-converged infrastructure". These images add more hardware/driver support, more storage tools, and virtualization(hypervisor) support:
 
