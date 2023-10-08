@@ -130,6 +130,10 @@ There is a [minor performance impact](https://github.com/flatpak/flatpak/issues/
 
 If you so desire, you can still install the Flatpak Steam at any time.
 
+## Does the Steam Deck image recieve BIOS updates like SteamOS?
+
+Yes it does.  If a BIOS update is available then it will install when you update Bazzite normally.  We even included a special command to **disable** these BIOS updates **at your own risk:** `just disable-bios-updates`.
+
 ## How do I disable update notifications for desktop images?
 
 Open the directory `/etc/ublue-update/` and open `ublue-update.toml` with a text editor.
