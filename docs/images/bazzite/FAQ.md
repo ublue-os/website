@@ -18,6 +18,15 @@ This is currently a known [issue](https://github.com/ublue-os/bazzite/issues/109
 
     Keep in mind that the Steam Deck will not scale properly with the installer, and the buttons on the bottom of the screen will be cut off.  This will require use of the `TAB` key on your keyboard to navigate the installer blindly.
 
+There is also two other **alternaitve** methods that may work:  
+Installing with basic graphics mode in the installer or using this [advanced guide](https://sharing.io/deck.html).
+
+Keep in mind we do not support booting using Ventoy.
+
+## Error occured while installing the payload
+
+Make sure you are connected to the internet if you are using an online ISO.  If you are, and there is still an issue, there might be an issue with your network adapter and Linux.  Recommended to use a wired connection if you can if this occurs.
+
 ## I am new to Linux gaming.  Where do I start?
 
 We have a gaming starter guide [here](/images/bazzite/gaming_guide).  If you own a Steam Deck then it should be a similar experience.
