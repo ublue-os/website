@@ -18,6 +18,10 @@ This is currently a known [issue](https://github.com/ublue-os/bazzite/issues/109
 
     Keep in mind that the Steam Deck will not scale properly with the installer, and the buttons on the bottom of the screen will be cut off.  This will require use of the `TAB` key on your keyboard to navigate the installer blindly.
 
+## I am new to Linux gaming.  Where do I start?
+
+We have a gaming starter guide [here](/images/bazzite/gaming_guide).  If you own a Steam Deck then it should be a similar experience.
+
 ## How do I install additional software?
 
 ### Flatpak
@@ -78,10 +82,6 @@ No. They just won't apply until shutdown.  You can attempt to layer package(s) w
 ## How do I rollback a system update?
 
 Read Fedora's official [documentation](https://docs.fedoraproject.org/en-US/fedora-silverblue/updates-upgrades-rollbacks/#rolling-back) on this.  You can pin your current deployment with `sudo ostree admin pin 0` in a host terminal.  You can also rollback in the GRUB menu.
-
-## I am new to Linux gaming.  Where do I start?
-
-We have a Linux gaming starter guide [here](/images/bazzite/gaming_guide).
 
 ## Why use Fedora? SteamOS is based on Arch Linux.
 
@@ -152,3 +152,7 @@ In order to troubleshoot the issue properly, you should add a log or terminal ou
 **Example 1:** For a game running on Steam through Proton, go to the game's properties and type `PROTON_LOG=1 %command%` in the launch options section.  Play the game and the log should appear by the appid in your `Home` directory, and make sure to attach that to the issue you have opened.
 
 **Example 2**: For a Flatpak application that has issues, get the Flatpak package name of all installed applications by entering `flatpak list` (you may need to readjust the terminal window to get the package name to fit beforehand.)  After you got the name, enter `flatpak run <flatpak.package.name>` and a console output will appear.  Copy and paste into a text file, save it, and attach it.
+
+## I would like to contribute to Bazzite, where do I start?
+
+We have documentation on that [here](/images/bazzite/CONTRIBUTING).  This documentation also links to our roadmap.
