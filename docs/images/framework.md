@@ -1,6 +1,10 @@
-# Framework Computers
+# Framework Computers (Intel only)
 
 Universal Blue images are available for the Framework 13 laptop. It comes preconfigured with tlp and the [recommended power settings](https://github.com/ublue-os/framework/blob/main/system_files/shared/usr/etc/tlp.d/50-framework.conf) from the [Framework Knowledge Base](https://knowledgebase.frame.work/en_us/optimizing-fedora-battery-life-r1baXZh).
+
+!!! info "Important information for AMD-based sytems" 
+
+    Framework recommends NOT using `tlp` on the new AMD-based Framework 13. These images use `tlp`, so it is currently recommended to use the non-framework images if you own an AMD Framework 13. Check the [community thread](https://community.frame.work/t/announcement-linux-on-your-framework-laptop-13-amd-ryzen-7040-series/37367/36) for the latest information.
 
 Follow the [installation instructions](/installation) to select a Framework image. These images end with `-framework` in their name. 
 

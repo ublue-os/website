@@ -26,7 +26,7 @@ Steam can run Windows games on Linux.  It utilizes a wide range of projects like
 ### Enabling Proton for all Steam Games
 
 !!! Info
-    **Skip this section if you're using bazzite-deck or bazzite-deck-gnome**
+    **Skip this section if you're using a Steam Deck / Handheld PC / HTPC image**
 
 * Currently Steam only allows whitelisted games to run by default.
 * You can change this by going into the Steam settings > Compatibility > Check "Enable Steam Play for all other titles."
@@ -83,6 +83,6 @@ Non-Steam games can have the prefix folder anywhere you specify, but by default 
 ## Extras
 
 * It is recommended to use ProtonUp-Qt (included) to update the latest [GE-Proton](https://github.com/GloriousEggroll/proton-ge-custom) and [Luxtorpeda](https://github.com/luxtorpeda-dev/luxtorpeda) for Steam.
-* You may want to install Protontricks for certain games that may need it.
-* You can install [pacman](https://archlinux.org/packages/) and [AUR](https://aur.archlinux.org/) packages inside of the `bazzite-arch` container.
+* You may want to use Protontricks for certain games that may require it.
+* You can install [pacman](https://archlinux.org/packages/) and [AUR](https://aur.archlinux.org/) packages inside of the `bazzite-arch` container on desktop images.
 * You can overlay [RPM](https://packages.fedoraproject.org/) packages to the host by using `rpm-ostree install <package>` in your host terminal **at your own risk.**
