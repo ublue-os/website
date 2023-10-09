@@ -59,7 +59,7 @@ Nix-powered Development Experience powered by [Devbox](https://www.jetpack.io/de
 
 ### Homebrew
 
-`just brew` will install homebrew, and `just brew-shell` will set it up for you. For Mac enthusiasts out there, we know homebrew is essential. We hope this will encourage you to use Linux for future development.
+`just brew` will install homebrew, and `just brew-shell` will set it up for you. For Mac enthusiasts out there, we know homebrew is essential. We hope this will encourage you to use Linux for future development. Thanks to [Osama Albahrani](https://github.com/osalbahr) for [implementing it](https://github.com/Homebrew/brew/pull/15656) in Homebrew.
 
 ### Kubernetes and other Cloud Native Tooling
 
