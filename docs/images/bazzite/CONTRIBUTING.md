@@ -10,6 +10,8 @@ Check out the Bazzite's [issue tracker](https://github.com/ublue-os/bazzite/issu
 If you feel comfortable with bash scripting, working with containers, or anything upstream (Fedora, Flatpak, etc.) then contributing to Bazzite and the Universal Blue project might be the thing for you!
 
 ### Major Overhauls
+- Installation process
+    - Skills in [Lorax](https://weldr.io/lorax/f28-branch/lorax.html) and the [Anaconda installer](https://www.fedoraproject.org/wiki/Anaconda).
 - [YAFTI (Bazzite Portal)](https://github.com/ublue-os/yafti/)
     - Prior Python knowledge would be helpful.
     - Intended as both a first-time boot application **AND** system configurator that can be used anytime.
