@@ -11,7 +11,7 @@ These images are based on the experimental `ostree` native container images host
 
 ## Core image features
 
-- Multiple Nvidia driver streams (525xx, 520xx, and 470xx)
+- Multiple Nvidia driver streams (535xx and 470xx)
 - CUDA support
 - [Container runtime support](https://github.com/ublue-os/nvidia#using-nvidia-gpus-in-containers)
 - Secure boot
@@ -87,10 +87,11 @@ rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/silverblue-nvidi
 !!! Note
     The Fedora release and Nvidia version can be set with the image tag as well (see table below). Some **older Nvidia cards** (GTX 700 series or older) **REQUIRE** Driver version `470`.
 
-   |     | 535xx series (latest, best supported) | 530xx series (deprecated) | 470xx series (Kepler 2012-2014 support) |
-   |-----|---------------------------------------|---------------------------|-----------------------------------------|
-   | F37 | :37 / :37-535 / :37-current |                           | :37-470                                 |
-   | F38 | :latest / :38 / :38-535 / :38-current           | :38-530                   | :38-470                                 |
+   |     | 535xx series (latest, best supported) | 470xx series (Kepler 2012-2014 support) |
+   |-----|---------------------------------------|-----------------------------------------|
+   | F37 | :37 / :37-535 / :37-current | :37-470 |
+   | F38 | :latest / :38 / :38-535 / :38-current | :38-470 |
+   | F39 | :latest / :39 / :39-535 / :39-current | :39-470 |
 
 !!! Warning "Driver Support Subject to Change"
     - Drivers are provided by Nvidia and packaged by RPMFusion, therefore we cannot make any guarantees on support outside of the support these two organizations provide.
@@ -165,7 +166,7 @@ podman run \
     --security-opt=no-new-privileges \
     --cap-drop=ALL \
     --security-opt label=type:nvidia_container_t  \
-    docker.io/mirrorgooglecontainers/cuda-vector-add:v0.1
+    docker.io/nvidia/samples:vectoradd-cuda11.2.1
 ```
 
 ## Video playback

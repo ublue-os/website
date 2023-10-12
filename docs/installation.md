@@ -7,13 +7,13 @@ Notably:
 - Dual boot configurations are not supported. We recommend using your PC's BIOS/UEFI boot menu for dual boot configuration so that each OS has its own disk.
 - Manual partitioning is not supported.
 
-!!! Info "This ISO is experimental"
+!!! Warning "This ISO is experimental"
 
     This method of consuming Fedora is new, and will not be integrated into Fedora until at least F39. Though this method is typically more reliable than traditional distributions, take care to [read the user guide](https://docs.fedoraproject.org/en-US/fedora-silverblue/) and manage your expectations accordingly. As with all operating systems, make a point to back up the data you care about! 
 
 ## Installation Instructions
 
-!!! Info "There is a known issue with Ventoy"
+!!! Warning "There is a known issue with Ventoy"
 
     We are aware of an issue where booting from the ISO with Ventoy leads to a black screen with a cursor and nothing happening. This is due to an upstream bug with Anaconda and the way Ventoy sets up loop mounts. We are preparing a workaround to enable this workflow. In the meantime, please do not create a new issue on GitHub. You can react with a thumbs up on this [issue](https://github.com/ublue-os/main/issues/108) so we can track how many people want this feature.
 

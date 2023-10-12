@@ -23,11 +23,17 @@ For context, please familiarize yourself with [image-based desktops](https://sil
   - `distrobox` for terminal CLI and user package installation
   - A selection of [udev rules and service units](https://github.com/ublue-os/config),
   - [libratbag](https://github.com/libratbag/libratbag), to configure supported mice via [piper](https://github.com/libratbag/piper),
-  - Several pre-built [drivers/akmods](https://github.com/ublue-os/akmods),
   - Various other tools: check out the [complete list of packages](https://github.com/ublue-os/main/blob/main/packages.json).
 - Sets automatic staging of updates for the system.
 - Sets `flatpaks` to update twice a day.
 - Everything else (desktop, artwork, etc) remains stock so you can use this as a good starting image.
+
+
+!!!Note
+    Universal Blue `*-main` images ***previously included*** a selection of pre-built kernel drivers (kmods) (`xpadneo, xpad-noone, xone, openrazer, v4l2loopback, wl`).
+    Starting with the Fedora 39 release, [these are no longer included](https://github.com/ublue-os/main/issues/369) as they proved too opinionated, causing issues for downstream image builders using alternative kernels, etc.
+
+    Downstream images are still encouraged to include these drivers in their builds.  See [Universal Blue akmods](https://github.com/ublue-os/akmods).
 
 ## Tips and Tricks
 
