@@ -1,12 +1,6 @@
 name: deploy
 on:
-  push:
-    branches:
-    - main
-  schedule:
-    - cron: '0 */12 * * *'
   merge_group:
-  pull_request:
   workflow_dispatch:
 
 permissions:
