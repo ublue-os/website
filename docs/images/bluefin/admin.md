@@ -28,14 +28,11 @@ Use the GNOME Software Center to [install applications from Flathub](https://fla
 
 ## Upgrades and Throttle Settings
 
-!!! note
- "This feature is incomplete"
-
 Bluefin is available with two throttle settings.
 
-The latest stable release of Fedora is always tagged `latest`. The still-supported but older release is labelled as `gts`, which is slang for "Grand Touring Series`, for those who wish to enjoy the ride from a slower cadence. It is the default Bluefin experience starting with Fedora 39.
+The latest stable release of Fedora is always tagged `latest`. The still-supported but older release is labelled as `gts`, which is slang for "Grand Touring Series`, for those who wish to enjoy the ride from a slower cadence. It is the default Bluefin experience starting with Fedora 38.
 
-Explicit version tags of the Fedora release are available for users who wish to manually handle their upgrade cycle:
+Explicit version tags of the Fedora release are available for users who wish to manually handle their upgrade cycle manually:
 
 To lock to Fedora 39
 
@@ -60,7 +57,8 @@ Check the [Fedora Silverblue User Guide](https://docs.fedoraproject.org/en-US/fe
 ## Remote Management
 
 !!! note
- "This feature is incomplete"
+
+    This feature is incomplete and needs contributors to make it a reality
 
 Bluefin includes Cockpit for machine management. We're hoping to include more out-of-the-box management templates, please [check this issue](https://github.com/ublue-os/bluefin/issues/271) if you're interested in volunteering.
 
