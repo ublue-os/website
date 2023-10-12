@@ -1,5 +1,8 @@
 # Installing Bazzite and Initial Setup
 
+!!! WARNING
+    Fedora's installer has some issues with OCI images currently which is due to how new all of this is.  If you have any issues installing, please consult our FAQ page [here](/images/bazzite/FAQ/#i-am-having-issues-installing-bazzite-onto-my-hardware).
+
 This is a visual guide for installing Bazzite.
 
 # Video Guides
