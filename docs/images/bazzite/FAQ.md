@@ -186,4 +186,4 @@ One of the goals of this project is to have the convenience of never worrying ab
 
 ## I would like to contribute to Bazzite, where do I start?
 
-Thank you for being so eager to contribute to the project!  We have documentation on [here](/images/bazzite/CONTRIBUTING).  This documentation also links to our roadmap for future plans with the project.
+Thank you for being so eager to contribute to the project!  We have documentation for contributing [here](/images/bazzite/CONTRIBUTING).  This documentation also links to our roadmap for future plans with the project.
