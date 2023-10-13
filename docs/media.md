@@ -38,6 +38,11 @@
 { .card }
 </div>
 
+<div class="grid" markdown>
+**Apple Insider**: [How to turn your vintage Mac into a Steam gaming machine using Bazzite](https://appleinsider.com/inside/mac/tips/how-to-turn-your-vintage-mac-into-a-steam-gaming-machine-using-bazzite)
+{ .card }
+</div>
+
 
 ## Videos
 
