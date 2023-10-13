@@ -10,34 +10,40 @@ just init-waydroid
 
 Open a host terminal and enter `just configure-waydroid`
 
-## SELinux in permissive mode (only if you have issues with any of the above!)
+## Google Play Certification (Optional but recommended if you plan to install apps from the Play Store)
 
-SELinux is a kernel module used by Fedora (and thus Bazzite) to increase security on a Linux system. 
-There may be an issue with SELinux file re-labeling in OCI images that prevents Waydroid from being used without SELinux being set to permissive first.
-
-To put SELinux in permissive mode, open a host terminal and enter:
+With waydroid open, open a terminal window and run
 
 ```bash
-sudoedit /etc/selinux/config
+sudo waydroid shell
 ```
 
-Then, change the line that says:
+Once you've entered the waydroid shell (It should just say `:/ #` before your text cursor), enter the command:
 
 ```bash
-SELINUX=enforcing
+ANDROID_RUNTIME_ROOT=/apex/com.android.runtime ANDROID_DATA=/data ANDROID_TZDATA_ROOT=/apex/com.android.tzdata ANDROID_I18N_ROOT=/apex/com.android.i18n sqlite3 /data/data/com.google.android.gsf/databases/gservices.db "select * from main where name = \"android_id\";"
 ```
 
-to instead be
+When you run this command, your terminal should output `android_id|` and some numbers. Copy the numbers, then visit [this website](<https://www.google.com/android/uncertified>).
 
+Paste the number in the box that says "Google Services Framework ID", answer the captcha (If one is present), then hit register. You should see a popup saying "Device Registered" in the bottom left.
+
+You can now type `exit` to leave the Waydroid shell.
+
+Stop the Waydroid container and relaunch Waydroid.
 ```bash
-SELINUX=permissive
+waydroid session stop
 ```
-
-Save this file and reboot.
 
 ## Hybrid Graphics Fix
 
-If your PC is running multiple GPUs and you experience graphical corruption then execute this [script](https://raw.githubusercontent.com/Quackdoc/waydroid-scripts/main/waydroid-choose-gpu.sh) to fix it.
+If your PC is running multiple GPUs and you experience either graphical corruption or Waydroid does not launch, then execute this [script](https://raw.githubusercontent.com/Quackdoc/waydroid-scripts/main/waydroid-choose-gpu.sh) to fix it.  
+
+Easiest way to run this script is to copy all of this text into a text file save it as `waydroid_fix.sh` to your Home directory.  Open a host terminal and entering: 
+```bash
+sudo ./waydroid_fix.sh
+```
+Then select your dedicated GPU.
 
 ## Reset Waydroid
 !!! note
