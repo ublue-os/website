@@ -162,7 +162,7 @@ Change:
 
 Notifications for updates are now suppressed.
 
-##  I'm using the Steam Deck image on my HTPC, but there are games force specific Steam Deck features I do not want like a specific controller layout.  Help?
+##  I'm using the Steam Deck image on my HTPC, but there are games that force specific Steam Deck features I do not want like a specific controller layout.  Help?
 
 Open the game's properties and under "LAUNCH OPTIONS", add: `SteamDeck=0 %command%` to force a game's "Steam Deck" features to be turned off.
 
