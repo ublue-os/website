@@ -10,7 +10,7 @@ just init-waydroid
 
 Open a host terminal and enter `just configure-waydroid`
 
-## Google Play Certification (Optional but recommended)
+## Google Play Certification (Optional but recommended if you plan to install apps from the Play Store)
 
 With waydroid open, open a terminal window and run
 
