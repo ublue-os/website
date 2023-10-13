@@ -17,8 +17,8 @@ Installation tutorial begins at [1:37](https://youtu.be/aaeRk8_i1Ds?feature=shar
 
 * Make sure you meet the [system requirements](https://docs.fedoraproject.org/en-US/fedora/latest/release-notes/welcome/Hardware_Overview/) for Fedora.
 * A graphics card that can utilize Vulkan 1.3 or later, but most modern AMD, Nvidia, and Intel GPUs should be fine.
-* The drive that Bazzite is installed to must have at least 20GB unallocated drive space.
-* A USB flash drive, external drive, or microSD card with at least 3GB of free space on it. **(Keep in mind this will remove existing data on it!)**
+* The drive that Bazzite is installed to must have at least 32GB unallocated drive space.
+* A USB flash drive, external drive, or microSD card with at least 4GB of free space on it. **(Keep in mind this will remove existing data on it!)**
 * A working, stable, wired or wireless internet connection.
 * Download an ISO release [here.](https://github.com/ublue-os/bazzite/releases)
 * Software to flash the image to your flash drive or external drive.  We recommend using [Fedora Media Writer,](https://www.fedoraproject.org/en/workstation/download/) [Balena Etcher,](https://etcher.balena.io/) or [Rufus.](https://rufus.ie/en/) **Ventoy is unsupported.**
