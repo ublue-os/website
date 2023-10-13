@@ -102,9 +102,9 @@ No. They just won't apply until shutdown.  You can attempt to layer package(s) w
 
 Read Fedora's official [documentation](https://docs.fedoraproject.org/en-US/fedora-silverblue/updates-upgrades-rollbacks/#rolling-back) on this.  You can pin your current deployment with `sudo ostree admin pin 0` in a host terminal.  You can also rollback in the GRUB menu.
 
-## Why use Fedora? SteamOS is based on Arch Linux
+## SteamOS is based on Arch Linux, so why use Fedora as the base? 
 
-SteamOS is based on Arch Linux, but the base packages and drivers get updates at a much slower pace than using vanilla Arch and updating yourself. Bazzite will follow Fedora's updates which means it will always be ahead of SteamOS in terms of newer software and drivers.
+SteamOS is based on Arch Linux, but the base packages and drivers get updates at a much slower pace than using vanilla Arch and updating yourself. Bazzite will follow Fedora's updates which means it will always be ahead of SteamOS in terms of newer software and drivers.  Also Fedora currently is the only Linux distribution that supports OCI custom images that this whole project is built around.  The end user typically shouldn't notice too much of a difference between Bazzite and SteamOS. 
 
 ## How does Bazzite differ from other Linux distributions?
 
