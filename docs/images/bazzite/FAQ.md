@@ -174,7 +174,7 @@ Currently, an example of a game where this is needed is Warframe.  Without this 
 
 This would be out of scope for our project due it being an issue currently with Steam itself and not Bazzite, but we had enough support tickets surrounding it that we are including the fix in our FAQ.
 
-Recently, Steam breaks if you have hybrid graphics in your PC.  The solution is simply right clicking the Steam icon on the desktop and opening it with a text editor (Kate, Text Editor, etc.), and adding this to the last line under `[Desktop Entry]`:
+Recently, Steam breaks if you have hybrid graphics in your PC.  The solution is simply locating the .desktop file for Steam (non-Flatpak versions are located in: `~/.local/share/applications/`) and opening it with a text editor (Kate, Text Editor, etc.), and adding this to the last line under `[Desktop Entry]`:
 ```bash
 PrefersNonDefaultGPU=false
 X-KDE-RunOnDiscreteGpu=true
