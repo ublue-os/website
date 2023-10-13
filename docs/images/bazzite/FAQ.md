@@ -11,7 +11,7 @@ Follow this [guide](/images/bazzite/installation/).
 
 Windows dual-booting can be made to work, but is **not recommended** since Windows has a habit of destroying your boot loader.  The best method would be running Windows on a different drive than the one containing Bazzite, like an external one.  Other Linux distributions **should not** be dual/multi-booted due to how Bazzite mounts certain things.  However you can probably do it if the other Linux OS is on a separate drive.
 
-## I am having issues installing Bazzite onto my hardware
+## I am having issues installing Bazzite onto my hardware?  What's up?
 
 OCI images are very new and the Fedora installer, Anaconda, has some issues with this.  If you have skills in [Lorax](https://weldr.io/lorax/f28-branch/lorax.html) and the [Anaconda installer](https://www.fedoraproject.org/wiki/Anaconda), please help by contributing!  We are at a crossroads here because this is one of the most difficult hurdles that Bazzite and the Universal Blue project face.  We are essentially dependent on upstream to resolve the issues.
 
@@ -22,12 +22,12 @@ OCI images are very new and the Fedora installer, Anaconda, has some issues with
 This is currently a known [issue](https://github.com/ublue-os/bazzite/issues/109).  There is a [workaround](https://github.com/ublue-os/bazzite/issues/109#issuecomment-1691090533) that requires either the stock Fedora Silverblue or Fedora Kinoite ISO and rebasing to Bazzite from there after installation.  
 !!! warning
 
-    Keep in mind that the Steam Deck will not scale properly with the installer, and the buttons on the bottom of the screen will be cut off.  This will require use of the `TAB` key on your keyboard to navigate the installer blindly.
+    Keep in mind that the Steam Deck will not scale properly with the installer, and the buttons on the bottom of the screen will be cut off.  This will require use of the <kbd>TAB</kbd> key on your keyboard to navigate the installer blindly.
 
-There is also two other **alternaitve** methods that may work:  
+There is also two other **alternative** methods that may work:  
 Installing with basic graphics mode in the installer or using this [advanced guide](https://sharing.io/deck.html).
 
-Keep in mind we do not support booting using Ventoy.
+Keep in mind we do **not** support booting using Ventoy.
 
 ### Error occured while installing the payload
 
@@ -102,7 +102,7 @@ No. They just won't apply until shutdown.  You can attempt to layer package(s) w
 
 Read Fedora's official [documentation](https://docs.fedoraproject.org/en-US/fedora-silverblue/updates-upgrades-rollbacks/#rolling-back) on this.  You can pin your current deployment with `sudo ostree admin pin 0` in a host terminal.  You can also rollback in the GRUB menu.
 
-## Why use Fedora? SteamOS is based on Arch Linux.
+## Why use Fedora? SteamOS is based on Arch Linux
 
 SteamOS is based on Arch Linux, but the base packages and drivers get updates at a much slower pace than using vanilla Arch and updating yourself. Bazzite will follow Fedora's updates which means it will always be ahead of SteamOS in terms of newer software and drivers.
 
@@ -170,7 +170,20 @@ Open the game's properties and under "LAUNCH OPTIONS", add: `SteamDeck=0 %comman
 
 Currently, an example of a game where this is needed is Warframe.  Without this option, you cannot play Warframe on the Steam Deck images with a keyboard and mouse.
 
-##  I am experiencing a bug or want to request a feature!  Help!
+## Steam is not starting, what should I do? (Also I have 2 GPUs)
+
+This would be out of scope for our project due it being an issue currently with Steam itself and not Bazzite, but we had enough support tickets surrounding it that we are including the fix in our FAQ.
+
+Recently, Steam breaks if you have hybrid graphics in your PC.  The solution is simply right clicking the Steam icon on the desktop and opening it with a text editor (Kate, Text Editor, etc.), and adding this to the last line under `[Desktop Entry]`:
+```bash
+PrefersNonDefaultGPU=false
+X-KDE-RunOnDiscreteGpu=true
+```
+Save the file.  Steam should now launch.
+
+Read more about this issue [here](https://github.com/ValveSoftware/steam-for-linux/issues/9940).
+
+##  I am experiencing a bug or want to request a feature! Help!
 
 In order to troubleshoot the issue properly, you should add a log or terminal output of the issue.  
 
