@@ -170,6 +170,12 @@ Open the game's properties and under "LAUNCH OPTIONS", add: `SteamDeck=0 %comman
 
 Currently, an example of a game where this is needed is Warframe.  Without this option, you cannot play Warframe on the Steam Deck images with a keyboard and mouse.
 
+## On Steam Deck, Handheld PC, and HTPC images I am stuck updating at 99%, and the changelog is the same after every update.  What gives?
+
+The update indicator is actually faked due to the limitations of Steam itself depending on SteamOS for that progress bar.  There is a set schedule for that to stop showing the progress indicator after a certain time, but sometimes this fails.  If it's still at 99% and it's been an unrealistic amount of time then do not worry about it.  It most likely applied the updates to your system, flatpaks, and distrobox containers.  If you are still paranoid then go into Desktop Mode, open a host terminal, and enter: `ublue-update`, and if it there's no errors, you're good.  That is exactly the same method as how you would update in Game Mode anyways.
+
+As for the changelog, those are for SteamOS and not Bazzite.  Some of it may apply since we share a lot of the same packages, but regardless it will always show SteamOS changelogs by Valve and has no relation to the updates for Bazzite.  Check our [newsletters](https://universal-blue.org/blog/category/bazzite/) for major changes and features. If you want to see the patch notes in real time, check the newest [commits](https://github.com/ublue-os/bazzite/commits/main) on Github.
+
 ## Steam is not starting, what should I do? (Also I have 2 GPUs)
 
 This would be out of scope for our project due it being an issue currently with Steam itself and not Bazzite, but we had enough support tickets surrounding it that we are including the fix in our FAQ.
