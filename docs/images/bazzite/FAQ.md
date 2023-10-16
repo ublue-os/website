@@ -105,6 +105,15 @@ Read Fedora's official [documentation](https://docs.fedoraproject.org/en-US/fedo
 !!! Note
     Steam Deck/HTPC/Handheld PC images do not show the GRUB menu by default, so when you boot up your device press "B" or <kbd>Esc</kbd> on a physical keyboard for it to appear.
 
+
+## How do I disable automatic updates for system, Flatpaks, and Distrobox containers?
+
+!!! warning
+
+    Disabling automatic updates is an unsupported configuration.
+
+Open a host terminal and simply enter: `systemctl disable ublue-update`. **This is not recommended.**
+
 ## SteamOS is based on Arch Linux, so why use Fedora as the base? 
 
 SteamOS is based on Arch Linux, but the base packages and drivers get updates at a much slower pace than using vanilla Arch and updating yourself. Bazzite will follow Fedora's updates which means it will always be ahead of SteamOS in terms of newer software and drivers.  Also Fedora currently is the only Linux distribution that supports OCI custom images that this whole project is built around.  The end user typically shouldn't notice too much of a difference between Bazzite and SteamOS. 
