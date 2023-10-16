@@ -100,7 +100,19 @@ No. They just won't apply until shutdown.  You can attempt to layer package(s) w
 
 ## How do I rollback a system update?
 
-Read Fedora's official [documentation](https://docs.fedoraproject.org/en-US/fedora-silverblue/updates-upgrades-rollbacks/#rolling-back) on this.  You can pin your current deployment with `sudo ostree admin pin 0` in a host terminal.  You can also rollback in the GRUB menu.
+Read Fedora's official [documentation](https://docs.fedoraproject.org/en-US/fedora-silverblue/updates-upgrades-rollbacks/#rolling-back) on this.  You can pin your current deployment with `sudo ostree admin pin 0` in a host terminal.  You can also rollback in the GRUB menu by choosing the previous boot entry. Your personal files will NOT be affected by this, and you can still update to the newest builds on older system builds.
+
+!!! Note
+    Steam Deck/HTPC/Handheld PC images do not show the GRUB menu by default, so when you boot up your device press "B" or <kbd>Esc</kbd> on a physical keyboard for it to appear.
+
+
+## How do I disable automatic updates for system, Flatpaks, and Distrobox containers?
+
+!!! warning
+
+    Disabling automatic updates is an unsupported configuration.
+
+Open a host terminal and simply enter: `systemctl disable ublue-update`. **This is not recommended.**
 
 ## SteamOS is based on Arch Linux, so why use Fedora as the base? 
 
