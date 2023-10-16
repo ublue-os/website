@@ -10,30 +10,32 @@ just init-waydroid
 
 Open a host terminal and enter `just configure-waydroid`
 
-## Google Play Certification (Optional but recommended if you plan to install apps from the Play Store)
+## Google Play Certification (Recommended)
 
-With waydroid open, open a terminal window and run
+Run Waydroid and open a host terminal window and run:
 
 ```bash
 sudo waydroid shell
 ```
 
-Once you've entered the waydroid shell (It should just say `:/ #` before your text cursor), enter the command:
+Inside the Waydroid shell (It should just say `:/ #` before the text cursor), enter this command:
 
 ```bash
 ANDROID_RUNTIME_ROOT=/apex/com.android.runtime ANDROID_DATA=/data ANDROID_TZDATA_ROOT=/apex/com.android.tzdata ANDROID_I18N_ROOT=/apex/com.android.i18n sqlite3 /data/data/com.google.android.gsf/databases/gservices.db "select * from main where name = \"android_id\";"
 ```
 
-When you run this command, your terminal should output `android_id|` and some numbers. Copy the numbers, then visit [this website](<https://www.google.com/android/uncertified>).
+When you run this command, your terminal should output `android_id|` and some numbers. Copy the **numbers**, then visit [this website](<https://www.google.com/android/uncertified>).
 
-Paste the number in the box that says "Google Services Framework ID", answer the captcha (If one is present), then hit register. You should see a popup saying "Device Registered" in the bottom left.
+Paste the number in the box that says "Google Services Framework ID", answer the captcha (If one is present), then hit register. You should see a popup saying "Device Registered" on the bottom left.
 
-You can now type `exit` to leave the Waydroid shell.
+You can now type `exit` in your terminal to leave the Waydroid shell.
 
-Stop the Waydroid container and relaunch Waydroid.
+Stop the Waydroid container
 ```bash
 waydroid session stop
 ```
+
+Relaunch Waydroid and you should now have Google Play certification
 
 ## Hybrid Graphics Fix
 
