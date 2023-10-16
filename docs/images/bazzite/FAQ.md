@@ -114,7 +114,7 @@ Read Fedora's official [documentation](https://docs.fedoraproject.org/en-US/fedo
 
 If you are disabling this for performance concerns, there is no need.  There are checks in place to prevent updates when the system is under heavy use, including gaming.
 
-Open a host terminal and simply enter: `systemctl disable ublue-update`.
+Open a host terminal and enter: `systemctl disable ublue-update`.
 
 **This is not recommended.** 
 
