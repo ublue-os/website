@@ -9,7 +9,7 @@ It is designed to meet the following use cases:
 
 ## Instructions
 
-You can rebase to `bluefin-dx` manually by using the commands on the [image page](/images), however there are convenience shortcuts that allow you to freely switch a machine back and forth:
+You can rebase to `bluefin-dx` by using the following commands:
 
 - `just devmode-on` will switch a `bluefin` image to a `bluefin-dx` image
 - `just devmode-off` will switch a `bluefin-dx` image back to stock `bluefin`
@@ -81,10 +81,9 @@ Then change the following defaults to point to `docker-compose` and `docker`:
 
 ### Virtualization and Container Runtimes
 
-- [virt-manager](https://virt-manager.org/) and associated tooling
-- Podman and Docker extras
-  - podman.socket on by default so existing tools expecting a Docker socket work out of the box
-- [LXC](https://linuxcontainers.org/) and [LXD](https://ubuntu.com/lxd) provide system containers
+- [virt-manager](https://virt-manager.org/) and associated tooling (KVM, qemu)
+- [Incus](https://linuxcontainers.org/incus/) provides system containers
+  - [LXC](https://linuxcontainers.org/) and [LXD](https://ubuntu.com/lxd) are also provided for compatability reasons 
 
 ## Machine Learning
 
