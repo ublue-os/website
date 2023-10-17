@@ -11,9 +11,9 @@
 !!! Notice
     **If you are coming from Windows, backup your current drives because Linux does not play well with NTFS, and any current secondary drives would have to be reformatted to ext4 or btrfs.**
 
-Most of time the average user will be under `Home` since that is where most of the user files will be located.  `Home` will include anything from personal files (like Documents, Videos, Pictures, Music, etc.) to application data.  Applications installed from the software center will be located in `~/.var/app/`
+Most of the time, the average user will spend time in their `Home` directory, since that is where most of the user files will be located.  `Home` will include anything from personal files (like Documents, Videos, Pictures, Music, etc.) to application data.  Applications installed from the software center will have their userdata specifically located in `~/.var/app/`
 
-Where is this `.var` mentioned above, and where is the Steam folder?  They are hidden directories. You can show hidden files by clicking the hamburger menu (3 horizontal lines near the top right of your file manager) and select "Show Hidden Files" to see every directory and file that is hidden by default.  They all start with a "." before it.
+Where is this `~/.var` mentioned above, and where is the Steam folder?  They are hidden directories. You can show hidden files by clicking the hamburger menu (3 horizontal lines near the top right of your file manager) and select "Show Hidden Files" to see every directory and file that is hidden by default.  They all start with a "." before it.
 
 ![image](https://github.com/nicknamenamenick/website/assets/121328689/f427114b-9c97-445d-8498-8e0e919fab2d)
 ![image](https://github.com/nicknamenamenick/website/assets/121328689/ec367ef3-3893-421c-a4fc-c892f368933d)
@@ -39,8 +39,9 @@ Steam can run Windows games on Linux.  It utilizes a wide range of projects like
 !!! Note
     If you're using a device with an older GPU that does not support Vulkan 1.3 or later, you need to use older Proton and Wine builds like Proton/WINE 6 or earlier.  Even older devices may need to resort to WINED3D for OpenGL translation, which performs much worse.  Check which Vulkan version your GPU uses, enter `vulkaninfo | grep 'Instance Version'` in a terminal.
 
-* Games with a native Linux port will use that by default
-* If the game runs better in Proton you can force it to run a specific version by going into the game's properties > Compatibility > Force the use of a specific Steam Play compatibility tool.
+* Games with a native Linux port will be used first by default on desktop images.
+* Valve selects the default runner on Steam Deck, HTPC, and Handheld PC images.
+* If the game runs better with a specific Proton then you can force it to run that specific version by going into the game's properties > Compatibility > Force the use of a specific Steam Play compatibility tool.
 
 ![image](https://github.com/ublue-os/website/assets/121328689/cbc4d1b8-db18-49a1-a552-c478cd1868c7)
 ![image](https://github.com/ublue-os/website/assets/121328689/25493df4-689e-42d0-8fb1-0d7bb080e755)
@@ -54,12 +55,12 @@ Steam can run Windows games on Linux.  It utilizes a wide range of projects like
 
 ### Lutris
 
-[A large portion of non-steam games](ttps://lutris.net/games) can be easily installed by searching for it and using Lutris scripts.
+[A large portion of non-steam games](https://lutris.net/games) can be easily installed by searching for it and using Lutris scripts.
 
 ![image](https://github.com/ublue-os/website/assets/121328689/ff54c7e4-3b1f-4742-9528-a7db93d33ea5)
 ![image](https://github.com/ublue-os/website/assets/121328689/046c2c98-5d71-4599-9a73-672b753631ea)
 
-However if your game is not listed or has a broken script, you can manually add the executable. Here is an example of what your game options should look like, roughly.
+However if your game is not listed or has a broken script, you can manually add the executable. Here is an example of what your game options should roughly look like.
 
 ![image](https://github.com/ublue-os/website/assets/121328689/3a2a09cd-2597-49ba-8e3a-c8f152284ba2)
 
