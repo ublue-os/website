@@ -1,7 +1,7 @@
 # Installing Bazzite and Initial Setup
 
 !!! WARNING
-    Fedora's installer has some issues with OCI images currently which is due to how new all of this is.  If you have any issues installing, please consult our FAQ page [here](/images/bazzite/FAQ/#i-am-having-issues-installing-bazzite-onto-my-hardware).
+    Fedora's installer has some issues with OCI images currently since this feature is still new.  If you have any issues installing, please consult our FAQ page [here](/images/bazzite/FAQ/#i-am-having-issues-installing-bazzite-onto-my-hardware).
 
 This is a visual guide for installing Bazzite.
 
@@ -15,11 +15,11 @@ Installation tutorial begins at [1:37](https://youtu.be/aaeRk8_i1Ds?feature=shar
 
 ## Pre-Requisites
 
-* Make sure you meet the [system requirements](https://docs.fedoraproject.org/en-US/fedora/latest/release-notes/welcome/Hardware_Overview/) for Fedora.
+* Make sure you meet the [system requirements](https://docs.fedoraproject.org/en-US/fedora/latest/release-notes/welcome/Hardware_Overview/) for Fedora Linux.
 * A graphics card that can utilize Vulkan 1.3 or later, but most modern AMD, Nvidia, and Intel GPUs should be fine.
 * The drive that Bazzite is installed to must have at least 32GB unallocated drive space.
 * A USB flash drive, external drive, or microSD card with at least 4GB of free space on it. **(Keep in mind this will remove existing data on it!)**
-* A working, stable, wired or wireless internet connection.
+* A working and stable wired or wireless internet connection.
 * Download an ISO release [here.](https://github.com/ublue-os/bazzite/releases)
 * Software to flash the image to your flash drive or external drive.  We recommend using [Fedora Media Writer,](https://www.fedoraproject.org/en/workstation/download/) [Balena Etcher,](https://etcher.balena.io/) or [Rufus.](https://rufus.ie/en/) **Ventoy is unsupported.**
 * Bazzite requires a physical keyboard to install properly on a Steam Deck.
@@ -29,8 +29,8 @@ Installation tutorial begins at [1:37](https://youtu.be/aaeRk8_i1Ds?feature=shar
 
 ## Bazzite Variants
 - Bazzite offers multiple images, but most images will be following one of these **two** formats: *Desktop* and *Steam Deck/HTPC*.  
-   - *Desktop* images are meant for general desktop computing and attempt to mimic SteamOS's Desktop Mode in terms of functionality.  
-   - *Steam Deck/HTPC* images boot directly into Game Mode and are intended for handheld PCs and home theater PCs.
+       - *Desktop* images are for general desktop computing and attempt to mimic SteamOS's Desktop Mode in terms of functionality.  
+       - *Steam Deck/HTPC* images boot directly into Game Mode and are intended for handheld PCs and home theater PCs.
 - These images also come with the choice of KDE Plasma or GNOME for their desktop environments.
    
 ### Common images:
@@ -48,7 +48,7 @@ Installation tutorial begins at [1:37](https://youtu.be/aaeRk8_i1Ds?feature=shar
 
 * **bazzite-deck-gnome** is _bazzite-deck_ but instead of using [KDE Plasma](https://kde.org/plasma-desktop/) as the desktop environment, it uses [GNOME.](https://www.gnome.org/)
 
-There are also images specific to specialized hardware like **bazzite-framework**, **bazzite-surface**, etc. 
+There are also images specific to specialized hardware like **bazzite-framework** (Framework hardware), **bazzite-surface** (Microsoft Surface hardware), etc. 
 
 ## KDE Plasma and GNOME Desktop Environments Differences at a Glance
 
@@ -72,13 +72,6 @@ You will be presented with an installation screen.
 
 _Root account is mainly used on PCs with multiple users. You can give an administrator password to a single user for root privileges._
 
-## Wayland and X11
-
-In short, Wayland and X11 (also known as Xorg or the X Window System) are windowing systems for desktop Linux.
-
-* Wayland is the default for most of the images and the recommended option for Bazzite.
-* X11 is a legacy windowing system. While we recommend to stick with Wayland, there may be scenarios where X11 would have to be used. Nvidia GPUs may have issues with Wayland.
-
 ## First Boot Setup
 
 After logging in for the first time after installation a window will pop up saying "Welcome to Bazzite."  This is a utility that allows you to tailor Bazzite to your liking by configuring and pre-installing applications.  
@@ -87,7 +80,14 @@ Click "Next" to begin configuring Bazzite.  Press the toggle switch button next 
 
 ![image](https://github.com/ublue-os/website/assets/121328689/2aa3773d-4ab6-4520-abe2-fe7c98664e0b)
 
-Reboot your device when you finish.
+Login to Steam **(required for Steam Deck, HTPC, and Handheld PC images)**, and reboot your device when you finish.
+
+## Wayland and X11
+
+In short, Wayland and X11 (also known as Xorg or the X Window System) are windowing systems for desktop Linux.
+
+* Wayland is the default for most of the images and the recommended option for Bazzite.
+* X11 is a legacy windowing system. While we recommend to stick with Wayland, there may be scenarios where X11 would have to be used. Nvidia GPUs may have issues with Wayland, so for now we default those images to this.
 
 ## Game on!
 
@@ -101,8 +101,8 @@ For a quick run-through of the basics of gaming on desktop Linux, take a look [h
 
 ## Waydroid
 
-Check out the Waydroid guide [here](/images/bazzite/waydroid).
+Check out the Waydroid [setup guide](/images/bazzite/waydroid) for Android support in Bazzite.
 
 ## Frequently Asked Questions
 
-Link to that [here](/images/bazzite/FAQ).
+Check out the FAQ [here](/images/bazzite/FAQ).
