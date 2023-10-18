@@ -117,7 +117,11 @@ Read Fedora's official [documentation](https://docs.fedoraproject.org/en-US/fedo
 
     Disabling automatic updates is an unsupported configuration.
 
-Open a host terminal and simply enter: `systemctl disable ublue-update`. **This is not recommended.**
+If you are disabling this for performance concerns, there is no need.  There are checks in place to prevent updates when the system is under heavy use, including gaming.
+
+Open a host terminal and enter: `systemctl disable ublue-update`.
+
+**This is not recommended.** 
 
 ## SteamOS is based on Arch Linux, so why use Fedora as the base? 
 
