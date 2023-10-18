@@ -1,6 +1,7 @@
 # Waydroid Configuration
 !!! note
- Nvidia images are not supported.
+
+    Nvidia images are not supported.
 
 Open a host terminal and enter this command to setup Waydroid:
 
