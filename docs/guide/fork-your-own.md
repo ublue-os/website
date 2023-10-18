@@ -46,3 +46,55 @@ rules:
 label: ":arrow_heading_down: pull"
 conflictLabel: "merge-conflict"
 ```
+
+## Ensuring proper image metadata
+
+### Ublue-update and `image-info.sh`
+
+When forking to create your own image, or using Bluefin as a base image be aware to use the correct values for `image-info.sh`. This script is used to create a file that lives in the container image called `image-info.json`. An example of that file in bluefin-dx shown below stored in `/usr/share/ublue-os/image-info.json`:
+```
+{
+  "image-name": "bluefin-dx",
+  "image-flavor": "main",
+  "image-vendor": "ublue-os",
+  "image-ref": "ostree-image-signed:docker://ghcr.io/ublue-os/bluefin-dx",
+  "image-tag":"latest",
+  "base-image-name": "",
+  "fedora-version": "38"
+}
+```
+
+This information is used by the [ublue-update service](https://github.com/ublue-os/ublue-update/tree/main/files/usr/lib/systemd), to get unverified installations to automatically rebase to `ostree-image-signed` versions. It is also used by the offline ISO to rebase from a local image to the correct remote one. When you create your own image based on Bluefin, or fork these information must be set up correctly to use your fork. The `image-info.sh` uses variables in the `Containerfile` to write the correct information into the json file. 
+
+```
+{
+  "image-name": "$IMAGE_NAME",
+  "image-flavor": "$IMAGE_FLAVOR",
+  "image-vendor": "$IMAGE_VENDOR",
+  "image-ref": "$IMAGE_REF",
+  "image-tag":"$IMAGE_TAG",
+  "base-image-name": "$BASE_IMAGE_NAME",
+  "fedora-version": "$FEDORA_MAJOR_VERSION"
+}
+```
+
+So make sure your Container file has the following in it:
+
+A copy of the `image-info.sh` script to help generate the `image-info.json` file
+
+`COPY image-info.sh /tmp/image-info.sh`
+
+A command to run the `image-info.sh` script
+
+`RUN /tmp/image-info.sh`
+
+Be sure that the variables used in the image-info.sh script are set to the right values. 
+```
+ARG IMAGE_NAME="${IMAGE_NAME}"
+ARG IMAGE_VENDOR="ublue-os"
+ARG IMAGE_FLAVOR="${IMAGE_FLAVOR}"
+ARG BASE_IMAGE_NAME="${BASE_IMAGE_NAME}"
+ARG FEDORA_MAJOR_VERSION="${FEDORA_MAJOR_VERSION}"
+```
+
+The IMAGE_VENDOR equals the name of your Github account. In our case we set it to "ublue-os". All the other variables are passed in via build arguments of the container.
