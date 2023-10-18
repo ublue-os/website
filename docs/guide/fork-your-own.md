@@ -49,9 +49,13 @@ conflictLabel: "merge-conflict"
 
 ## Ensuring proper image metadata
 
+Bluefin and Bazzite use [ublue-update](https://github.com/ublue-os/ublue-update) to manage updates. It includes functionality to rebase to signed images. To not use ublue-update in your image put this in your `Containerfile`:
+
+            RUN systemctl disable ublue-update.timer
+
 ### Ublue-update and `image-info.sh`
 
-When forking to create your own image, or using Bluefin as a base image be aware to use the correct values for `image-info.sh`. This script is used to create a file that lives in the container image called `image-info.json`. An example of that file in bluefin-dx shown below stored in `/usr/share/ublue-os/image-info.json`:
+To use ublue-update you'll need to adapt your `Containerfile`. When forking to create your own image, or using Bluefin as a base image be aware to use the correct values for `image-info.sh`. This script is used to create a file that lives in the container image called `image-info.json`. An example of that file in bluefin-dx shown below stored in `/usr/share/ublue-os/image-info.json`:
 ```
 {
   "image-name": "bluefin-dx",
