@@ -37,7 +37,7 @@ Bazzite Portal now features more software including the [Brew package manager](h
 
 Steam Deck images now include a ton of performance optimizations taken from this [Medium article](https://medium.com/@a.b.t./here-are-some-possibly-useful-tweaks-for-steamos-on-the-steam-deck-fcb6b571b577).  These tweaks in theory should give a slight performance increase versus stock SteamOS, but we never attempted benchmarks yet to actually confirm this.  Maybe for a later time unless someone out there wants to volunteer and [benchmark](https://github.com/flightlessmango/MangoHud#fps-logging) both operating systems.
 
-Waydroid support has also been both streamlined and improved tremendously.  Controllers, including the Steam Deck's controls, should work well with it now.  Steam Deck images should have a working quick access menu with it and plus the addition of the framerate limiter working with Android applications to our surprise.
+Waydroid support has also been both streamlined and improved tremendously.  Controllers should work well with it now.  Steam Deck images should have a working quick access menu with it and plus the addition of the framerate limiter working with Android applications to our surprise.
 
 ![image](https://github.com/ublue-os/website/assets/121328689/a7a46161-6670-4932-b10c-80a68210c2dc)
 
