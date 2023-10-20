@@ -72,13 +72,15 @@ There are also images specific to specialized hardware like **bazzite-framework*
 
 You will be presented with an installation screen.  
 
+![image](https://github.com/ublue-os/website/assets/121328689/04660187-1df7-4766-8b16-1a6ec9e35925)
+
 * Select your language, region, keyboard layout, and time zone.
 * Select your network. (**You need to be connected to internet for this to install properly!**)
 * Select/Add the drive you would like to install Bazzite to.  (**This will delete all of the data on the drive!**)
 * Optionally encrypt the drive with a password if you wish.  (**If you lose this password, you will not be able to decrypt your drive!**)
 * Setup a user account and **optionally** a root account, and begin the installation.
 
-_Root account is mainly used on PCs with multiple users. You can give an administrator password to a single user for root privileges._
+_Root account is mainly used on PCs with multiple users. You can give an **administrator password** to a single user account for root privileges._
 
 ## First Boot Setup
 
@@ -89,13 +91,6 @@ Click "Next" to begin configuring Bazzite.  Press the toggle switch button next 
 ![image](https://github.com/ublue-os/website/assets/121328689/2aa3773d-4ab6-4520-abe2-fe7c98664e0b)
 
 Login to Steam **(required for Steam Deck, HTPC, and Handheld PC images)**, and reboot your device when you finish.
-
-## Wayland and X11
-
-In short, Wayland and X11 (also known as Xorg or the X Window System) are windowing systems for desktop Linux.
-
-* Wayland is the default for most of the images and the recommended option for Bazzite.
-* X11 is a legacy windowing system. While we recommend to stick with Wayland, there may be scenarios where X11 would have to be used. Nvidia GPUs may have issues with Wayland, so for now we default those images to this.
 
 ## Game on!
 
