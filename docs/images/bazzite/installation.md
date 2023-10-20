@@ -4,9 +4,11 @@
     Fedora's installer has some issues with OCI images currently since this feature is still new.  If you have any issues installing, please consult our FAQ page [here](/images/bazzite/FAQ/#i-am-having-issues-installing-bazzite-onto-my-hardware).
 
 !!! ATTENTION
-    **Most of our ISOs require an internet connection!**  Make sure to connect to either a wired or wireless network inside the installer under the "Network" category to properly install it.
+
+    Most of our ISOs require an internet connection! Make sure to connect to either a wired or wireless network inside the installer under the "Network" category to properly install it.
 
 !!! ATTENTION
+
     It is **HIGHLY RECOMMENDED** to install Bazzite with a user password (w/ root privileges) so you can install certain software.
 
 This is a visual guide for installing Bazzite.
