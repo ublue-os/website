@@ -1,6 +1,8 @@
 # `bluefin-dx` - The Bluefin Developer Experience
 
 Bluefin Developer Experience (`bluefin-dx`) is a dedicated developer image with bundled tools.
+Unlike traditional Linux systems, the operating system and developer environment are explicitly and purposely decoupled. 
+This means that tooling is not installed on the host, and is instead containerized, in a virtual machine, or scoped to the user's home directory. 
 It is designed to meet the following use cases:
 
 - Endeavors to be the world's most powerful [cloud native developer environment](https://landscape.cncf.io/)
@@ -18,6 +20,8 @@ Like all Universal Blue images, switching is atomic, allowing for clean switchin
 
 ## Features
 
+Bluefin offers four "default" developer workflows. Since development is not dependant on the operating system image, you can use whatever you want.
+
 ### Visual Studio Code
 
 [Visual Studio Code](https://code.visualstudio.com/) is included on the image to facilitate local development. It comes configured for usage with devcontainers and Podman via a small [default configuration file](https://github.com/ublue-os/bluefin/blob/main/dx/usr/etc/skel.d/.config/Code/User/settings.json).
@@ -26,11 +30,11 @@ Like all Universal Blue images, switching is atomic, allowing for clean switchin
 - [Dev Containers Specification](https://containers.dev/) 
 - [Beginner's Series to: Dev Containers](https://www.youtube.com/watch?v=b1RavPr_878) - great introductory tutorial from the [VS Code YouTube channel](https://www.youtube.com/@code/videos)
 
-### JetBrains
+### Homebrew
 
-`just jetbrains-toolbox` will fetch and install the [JetBrains Toolbox](https://www.jetbrains.com/toolbox-app) application, which will manage the installation of the JetBrains set of tools. This application will handle installation, removal, and upgrade of the JetBrains products, and is handled completely in your home directory, independent of the operating system image.
+`just brew` will install homebrew, and `just brew-shell` will set it up for you. 
 
-Check the [Jetbrains documentation](https://www.jetbrains.com/help/idea/podman.html) for integrating those tools with the podman runtime. 
+For Mac enthusiasts out there, we know homebrew is essential. We hope this will encourage you to use Linux for future development. Thanks to [Osama Albahrani](https://github.com/osalbahr) for [implementing it](https://github.com/Homebrew/brew/pull/15656) in Homebrew.
 
 ### Devpod
 
@@ -57,9 +61,13 @@ Nix-powered Development Experience powered by [Devbox](https://www.jetpack.io/de
 - Refer to the [Distrobox documentation](https://distrobox.privatedns.org/#distrobox) for more information on using and configuring custom images
 - GNOME Terminal - <kbd>Ctrl</kbd>-<kbd>Alt</kbd>-<kbd>t</kbd> - will launch a host-level GNOME Terminal if you need to do host-level things in Fedora (you shouldn't need to do much).
 
-### Homebrew
+## Other Tooling
 
-`just brew` will install homebrew, and `just brew-shell` will set it up for you. For Mac enthusiasts out there, we know homebrew is essential. We hope this will encourage you to use Linux for future development. Thanks to [Osama Albahrani](https://github.com/osalbahr) for [implementing it](https://github.com/Homebrew/brew/pull/15656) in Homebrew.
+### JetBrains
+
+`just jetbrains-toolbox` will fetch and install the [JetBrains Toolbox](https://www.jetbrains.com/toolbox-app) application, which will manage the installation of the JetBrains set of tools. This application will handle installation, removal, and upgrade of the JetBrains products, and is handled completely in your home directory, independent of the operating system image.
+
+Check the [Jetbrains documentation](https://www.jetbrains.com/help/idea/podman.html) for integrating those tools with the podman runtime. 
 
 ### Kubernetes and other Cloud Native Tooling
 

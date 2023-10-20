@@ -2,15 +2,11 @@
 
 !!! Note "**This image is considered Beta**"
 
-[![Bluefin Build](https://github.com/ublue-os/bluefin/actions/workflows/build.yml/badge.svg)](https://github.com/ublue-os/bluefin/actions/workflows/build.yml)
-
-[![Ubuntu Toolbox Build](https://github.com/ublue-os/bluefin/actions/workflows/build-ubuntu-toolbox.yml/badge.svg)](https://github.com/ublue-os/bluefin/actions/workflows/build-ubuntu-toolbox.yml)
-
 A familiar(ish) Ubuntu desktop for Fedora Silverblue. It strives to cover these three use cases:
 
-- For end users it provides a system as reliable as a Chromebook with near-zero maintenance, with the power of Ubuntu and Fedora fused together.
+- For users it provides a system as reliable as a Chromebook with near-zero maintenance, with the power of Ubuntu and Fedora fused together.
 - For developers we endeavour to provide the best cloud-native developer experience by enabling easy consumption of the [industry's leading tools](https://landscape.cncf.io/card-mode?sort=stars). These are included in dedicated `bluefin-dx` and `bluefin-dx-nvidia` images.
-- For gamers we strive to deliver a world-class Flathub gaming experience.
+- For gamers we strive to deliver a world-class gaming experience via Flathub or [bazzite-arch](https://github.com/ublue-os/bazzite-arch)
 
 ![image](https://user-images.githubusercontent.com/1264109/224488462-ac4ed2ad-402d-4116-bd08-15f61acce5cf.png)
 
@@ -27,6 +23,10 @@ A familiar(ish) Ubuntu desktop for Fedora Silverblue. It strives to cover these 
 ### Rebase
 
 For existing Silverblue/Kinoite users **AMD/Intel GPU users only**:
+
+!!! warning "Rebasing and Flatpaks
+
+    Bluefin will prompt you to modify your Flatpak remotes and will remove the Fedora remote. Cancel out of the first-run wizard if you want to leave your Flatpak configuration unchanged. 
 
 1. After you reboot you should [pin the working deployment](https://docs.fedoraproject.org/en-US/fedora-silverblue/faq/#_about_using_silverblue) so you can safely rollback.
 2. Open a terminal and rebase the OS to this image:
@@ -45,7 +45,7 @@ sudo rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bluefin-dx:
 
 **Nvidia GPU users only** 
 
-1. open a terminal and rebase the OS to this image:
+1. Open a terminal and rebase the OS to this image:
 
     Bluefin:
 
@@ -89,19 +89,22 @@ System updates are image-based and automatic. Applications are logically separat
 
 - Ubuntu-like GNOME layout.
   - Includes the following GNOME Extensions:
-    - Dash to Dock - for a more Unity-like dock,
-    - Appindicator - for tray-like icons in the top right corner,
-    - GSConnect - Integrate your mobile device with your desktop,
-    - Blur my Shell - for that bling.
+    - Dash to Dock - for a more Unity-like dock
+    - Appindicator - for tray-like icons in the top right corner
+    - GSConnect - Integrate your mobile device with your desktop    
+    - Blur my Shell - for that bling
 - GNOME Software with [Flathub](https://flathub.org):
-  - Use a familiar software center UI to install graphical software.
-- Built on top of the the [Universal Blue main image](https://github.com/ublue-os/main).
-  - Extra udev rules for game controllers and [other devices](https://github.com/ublue-os/config) included out of the box.
-  - All multimedia codecs included.
-  - System designed for automatic staging of updates.
-    - If you've never used an image-based Linux before just use your computer normally.
-    - Don't overthink it, just shut your computer off when you're not using it.
-- [Starship](https://starship.rs) is enabled by default to give you a nice shell prompt.
+  - Use a familiar software center UI to install graphical software
+- Built on top of the the [Universal Blue main image](https://github.com/ublue-os/main)
+  - Extra udev rules for game controllers and [other devices](https://github.com/ublue-os/config) included out of the box
+  - All multimedia codecs included
+  - System designed for automatic staging of updates
+    - If you've never used an image-based Linux before just use your computer normally
+    - Don't overthink it, just shut your computer off when you're not using it
+- [Starship](https://starship.rs) is enabled by default to give you a nice shell prompt
+- [Solaar](https://github.com/pwr-Solaar/Solaar) - included for Logitech mouse management along with `libratbagd`
+- [Tailscale](https://tailscale.com) - included for VPN along with `wireguard-tools`
+- `zsh` and `fish` optional
 
 ### Roadmap and Future Features
 
@@ -110,13 +113,12 @@ System updates are image-based and automatic. Applications are logically separat
 
 These are currently unimplemented ideas that we plan on adding:
 
-- Provide a `:gts` tag aliased to the Fedora -1 release for an approximation of Ubuntu's release cadence.
 - Provide a `:lts` tag derived from CentOS Stream for a more enterprise-like cadence.
-- [Firecracker](https://github.com/firecracker-microvm/firecracker) - help wanted with this!
+- More robust system management via Cockpit
 
 ### Applications
 
-- Mozilla Firefox, Mozilla Thunderbird, Extension Manager, Libreoffice, DejaDup, FontDownloader, Flatseal, and the Celluloid Media Player.
+- Mozilla Firefox, Extension Manager, Libreoffice, DejaDup, FontDownloader, Flatseal, and the Celluloid Media Player.
 - Core GNOME Applications installed from Flathub:
   - GNOME Calculator, Calendar, Characters, Connections, Contacts, Evince, Firmware, Logs, Maps, NautilusPreviewer, TextEditor, Weather, baobab, clocks, eog, and font-viewer.
 - All applications installed per user instead of system wide, similar to openSUSE MicroOS. Thanks for the inspiration Team Green!
@@ -131,8 +133,6 @@ The authors recommend the following extensions if you'd like to round out your e
     Installing extensions via extensions.gnome.org won't work, the extensions must be installed via this application.
 
 - [Tailscale Status](https://extensions.gnome.org/extension/5112/tailscale-status/) for VPN.
-- [Pano](https://extensions.gnome.org/extension/5278/pano/) for clipboard management.
-- [Desktop Cube](https://extensions.gnome.org/extension/4648/desktop-cube/) if you really want to go retro.
 
 ## Frequently Asked Questions
 
@@ -141,6 +141,8 @@ The authors recommend the following extensions if you'd like to round out your e
 Everything you need is included. You will need to [configure Firefox for hardware acceleration](/guide/codecs/)
 
 > How do I get my GNOME back to normal Fedora defaults?
+
+You can turn off the Dash to Dock and appindicator extensions to get a more stock Fedora experience. 
 
 We set the default dconf keys in `/etc/dconf/db/local`, removing those keys and updating the database will take you back to the fedora default:
 

@@ -2,6 +2,8 @@
 
 ## Day to Day Operation
 
+Bluefin is designed to be installed for the life of the hardware without reinstallation. Unlike traditional operating systems the image is always pristine and "clean", making upgrades less problematic. Updates are automatic and silent by default. 
+
 ### Overwriting System Defaults
 
 Most Bluefin system defaults are shipped on the base image along with Fedora configuration in `/usr/etc`. Most of these can be overriden by placing a file in `/etc`. 
@@ -30,26 +32,30 @@ Use the GNOME Software Center to [install applications from Flathub](https://fla
 
 Bluefin is available with two throttle settings.
 
-The latest stable release of Fedora is always tagged `latest`. The still-supported but older release is labelled as `gts`, which is slang for "Grand Touring Series`, for those who wish to enjoy the ride from a slower cadence. It is the default Bluefin experience starting with Fedora 38.
+The latest stable release of Fedora is always tagged `latest`. The still-supported but older release is labelled as `gts`, which is slang for "Grand Touring Series", for those who wish to enjoy the ride from a slower cadence. It is the default Bluefin experience starting with Fedora 38. In the future we hope to offer `lts` -> `gts` -> `latest` as settings. 
 
 Explicit version tags of the Fedora release are available for users who wish to manually handle their upgrade cycle manually:
 
-To lock to Fedora 39
+To lock to Fedora 39, first ensure you don't have any layered packages. Most people will not unless you explicitly install them.
 
 ```bash
-sudo rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bluefin:39
+sudo rpm-ostree reset
+```
+
+```bash
+sudo bootc switch ghcr.io/ublue-os/bluefin:39
 ```
 
 To always be on the latest stable release:
 
 ```bash
-sudo rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bluefin:latest
+sudo bootc switch ghcr.io/ublue-os/bluefin:latest
 ```
 
 Additionally rebasing to a specific date tag is encouraged if you need to "pin" to a specific day or version:
 
 ```bash
-sudo rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bluefin:38-20231101
+sudo bootc switch ghcr.io/ublue-os/bluefin:38-20231101
 ```
 
 Check the [Fedora Silverblue User Guide](https://docs.fedoraproject.org/en-US/fedora-silverblue/) for more information.
