@@ -176,13 +176,12 @@ You can rebase to a Bazzite or general Universal Blue image by entering the comm
 
 You can also rebase to a stock Fedora imaged-based desktop image by entering in a host terminal `ostree remote refs fedora` to see a list of available Fedora images that you can rebase to.  Afterwards, enter `rpm-ostree rebase <image>` and wait for it to install the image then reboot.
 
-## For the AMD/Intel desktop images, why run Steam in an Arch Linux Distrobox container as opposed to Flatpak?
+## What is Wayland and X11?
 
-Steam is not built with flatpak in mind. Valve does not contribute to it, and as a result there are many workarounds that the Arch package does not have to worry about it. The Steam Deck uses the Arch package, and to stay consistent with SteamOS so do we.
+In short, Wayland and X11 (also known as Xorg or the X Window System) are windowing systems for desktop Linux.
 
-Running Steam in Distrobox has the advantage of using [LatencyFleX](https://github.com/ishitatsuyuki/LatencyFleX) and other packages added to the container.  It can also utilize the latest GPU driver releases without the end user having to worry about ABI considerations.
-
-A user can install the Flatpak Steam at any time and use both verisons of Steam if they desire.
+* Wayland is the default for most of the images and the recommended option for Bazzite.
+* X11 is a legacy windowing system. While we recommend to stick with Wayland, there may be scenarios where X11 would have to be used. Nvidia GPUs may have issues with Wayland, so for now we default those images to this.
 
 ##  How similar is Bazzite to SteamOS on Steam Deck hardware?
 
@@ -193,6 +192,14 @@ Third-party software like Decky Loader, Emudeck, RetroDeck, etc. work and can be
 ## Does the Steam Deck image recieve BIOS updates like SteamOS?
 
 Yes it does.  If a BIOS update is available then it will install when you update Bazzite normally.  We even included a special command to **disable** these BIOS updates **at your own risk:** `just disable-bios-updates`.
+
+## For the AMD/Intel desktop images, why run Steam in an Arch Linux Distrobox container as opposed to Flatpak?
+
+Steam is not built with flatpak in mind. Valve does not contribute to it, and as a result there are many workarounds that the Arch package does not have to worry about it. The Steam Deck uses the Arch package, and to stay consistent with SteamOS so do we.
+
+Running Steam in Distrobox has the advantage of using [LatencyFleX](https://github.com/ishitatsuyuki/LatencyFleX) and other packages added to the container.  It can also utilize the latest GPU driver releases without the end user having to worry about ABI considerations.
+
+A user can install the Flatpak Steam at any time and use both verisons of Steam if they desire.
 
 ## How do I disable update notifications for desktop images?
 
