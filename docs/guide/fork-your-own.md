@@ -88,13 +88,15 @@ A command to run the `image-info.sh` script
 
 `RUN /tmp/image-info.sh`
 
-Be sure that the variables used in the image-info.sh script are set to the right values. 
+Be sure that the variables used in the `image-info.sh` script are set to the right values.
 ```
 ARG IMAGE_NAME="${IMAGE_NAME}"
-ARG IMAGE_VENDOR="ublue-os"
+ARG IMAGE_VENDOR="${IMAGE_VENDOR}"
 ARG IMAGE_FLAVOR="${IMAGE_FLAVOR}"
 ARG BASE_IMAGE_NAME="${BASE_IMAGE_NAME}"
 ARG FEDORA_MAJOR_VERSION="${FEDORA_MAJOR_VERSION}"
 ```
 
-The IMAGE_VENDOR equals the name of your Github account. In our case we set it to "ublue-os". All the other variables are passed in via build arguments of the container.
+All the variables are passed in via build arguments of the container. And should be good to go on a normal fork.
+
+When something goes wrong, double check the values in `/usr/share/ublue-os/image-info.json`. If you think it is all setup correctly, but still encounter problems? Please let us know by filing an [issue](https://github.com/ublue-os/ublue-update/issues/new) and in the mean time disable the service with `systemctl disable ublue-update.timer`.
