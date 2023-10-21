@@ -11,7 +11,7 @@ just init-waydroid
 
 ## Gapps, ARM translation, and [other goodies](https://github.com/casualsnek/waydroid_script#waydroid-extras-script)
 
-Open a host terminal and enter `just configure-waydroid`
+Open a host terminal and enter `just configure-waydroid`.
 
 ## Google Play Certification (Recommended)
 
@@ -33,12 +33,12 @@ Paste the number in the box that says "Google Services Framework ID", answer the
 
 You can now type `exit` in your terminal to leave the Waydroid shell.
 
-Stop the Waydroid container
+Stop the Waydroid container.
 ```bash
 waydroid session stop
 ```
 
-Relaunch Waydroid and you should now have Google Play certification
+Relaunch Waydroid and you should now have Google Play certification.
 
 ## Hybrid Graphics Fix
 
