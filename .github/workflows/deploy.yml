@@ -3,6 +3,9 @@ on:
   schedule:
     - cron: '0 */12 * * *'
   pull_request:
+  push:
+    branches:
+    - main
   merge_group:
   workflow_dispatch:
 
