@@ -29,13 +29,21 @@ Installation tutorial begins at [1:37](https://youtu.be/aaeRk8_i1Ds?feature=shar
 * A USB flash drive, external drive, or microSD card with at least 4GB of free space on it. **(Keep in mind this will remove existing data on it!)**
 * A working and stable wired or wireless internet connection.
 * Download an ISO release [here.](https://github.com/ublue-os/bazzite/releases)
-* Software to flash the image to your flash drive or external drive.  We recommend using [Fedora Media Writer,](https://www.fedoraproject.org/en/workstation/download/) [Balena Etcher,](https://etcher.balena.io/) or [Rufus.](https://rufus.ie/en/) **Ventoy is unsupported.**
+* Software to flash the image to your flash drive, external drive, or microSD card.  We recommend using [Fedora Media Writer,](https://www.fedoraproject.org/en/workstation/download/) [Balena Etcher,](https://etcher.balena.io/) or [Rufus.](https://rufus.ie/en/) **Ventoy is unsupported.**
 * Bazzite requires a physical keyboard to install properly on a Steam Deck.
 * Manual partitioning is unsupported.
 * See [Fedora Kinoite documentation](https://docs.fedoraproject.org/en-US/fedora-kinoite/installation/) and [Fedora Silverblue documentation](https://docs.fedoraproject.org/en-US/fedora-silverblue/installation/) for more information.
 
+## Boot into your installation medium.
+
+Connect your bootable medium to your device and boot into it.  This depends on your hardware, most of the time it's the function keys (ex: <kbd>F9</kbd>.  It's very dependent on the motherboard in your device.  Sometimes you need to consult the manual or read any hotkeys when you boot your PC.  You can alternatively change BIOS settings, which can also be any of the function keys, to boot with your flash drive first before your current storage, but this is not recommended to keep on after installing.
+
+For the Steam Deck, hold the 'Volume Down' button and click the Power Button, and when you hear the chime, let go of the Volume Down button, and you'll be booted into the Boot Manager.  
+
+When you get to the boot menu, select your bootable device to boot into the Bazzite installer.
 
 ## Bazzite Variants
+
 - Bazzite offers multiple images, but most images will be following one of these **two** formats: *Desktop* and *Steam Deck/HTPC*.  
        - *Desktop* images are for general desktop computing and attempt to mimic SteamOS's Desktop Mode in terms of functionality.  
        - *Steam Deck/HTPC* images boot directly into Game Mode and are intended for handheld PCs and home theater PCs.
@@ -64,23 +72,38 @@ There are also images specific to specialized hardware like **bazzite-framework*
 
 ![image](https://github.com/nicknamenamenick/bazzite/assets/121328689/afd257bd-1a66-48d2-980c-dc7ef6614d47)
 
+
+- KDE Plasma's default interace has a traditional and familiar layout.
+- Highly customizable.
+- Uses Qt for GUI.
+- Fedora Kinoite & SteamOS uses KDE Plasma.
+
 ### GNOME
 
-![image](https://github.com/nicknamenamenick/bazzite/assets/121328689/0a4ff5fe-322d-4806-b13e-7f7081d48ca0)
+![image](https://github.com/ublue-os/website/assets/121328689/eac38977-404e-4363-9621-a801056c0135)
+
+
+- GNOME's default interface has an elegant and touch-friendly layout.
+- Workflow is designed to be out of the user's way.
+- Uses GTK (GNOME Toolkit) for GUI.
+- Fedora Workstation & Fedora Silverblue use GNOME.
 
 ## Installing Bazzite
 
-You will be presented with an installation screen.  
+After selecting the image the installation setup screen should come up:
 
 ![image](https://github.com/ublue-os/website/assets/121328689/04660187-1df7-4766-8b16-1a6ec9e35925)
 
 * Select your language, region, keyboard layout, and time zone.
 * Select your network. (**You need to be connected to internet for this to install properly!**)
 * Select/Add the drive you would like to install Bazzite to.  (**This will delete all of the data on the drive!**)
+        * **WARNING:  Make sure to only check the drive you plan to install Bazzite too since all of your drive might be selected!**
 * Optionally encrypt the drive with a password if you wish.  (**If you lose this password, you will not be able to decrypt your drive!**)
 * Setup a user account and **optionally** a root account, and begin the installation.
 
 _Root account is mainly used on PCs with multiple users. You can give an **administrator password** to a single user account for root privileges._
+
+Proceed with the installation.  This may take a long time to install and the progress indicator may not be accurate.
 
 ## First Boot Setup
 
