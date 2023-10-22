@@ -29,7 +29,7 @@ Installation tutorial begins at [1:37](https://youtu.be/aaeRk8_i1Ds?feature=shar
 * A USB flash drive, external drive, or microSD card with at least 4GB of free space on it. **(Keep in mind this will remove existing data on it!)**
 * A working and stable wired or wireless internet connection.
 * Download an ISO release [here.](https://github.com/ublue-os/bazzite/releases)
-* Software to flash the image to your flash drive, external drive or microSD card.  We recommend using [Fedora Media Writer,](https://www.fedoraproject.org/en/workstation/download/) [Balena Etcher,](https://etcher.balena.io/) or [Rufus.](https://rufus.ie/en/) **Ventoy is unsupported.**
+* Software to flash the image to your flash drive, external drive, or microSD card.  We recommend using [Fedora Media Writer,](https://www.fedoraproject.org/en/workstation/download/) [Balena Etcher,](https://etcher.balena.io/) or [Rufus.](https://rufus.ie/en/) **Ventoy is unsupported.**
 * Bazzite requires a physical keyboard to install properly on a Steam Deck.
 * Manual partitioning is unsupported.
 * See [Fedora Kinoite documentation](https://docs.fedoraproject.org/en-US/fedora-kinoite/installation/) and [Fedora Silverblue documentation](https://docs.fedoraproject.org/en-US/fedora-silverblue/installation/) for more information.
