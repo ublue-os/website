@@ -65,6 +65,12 @@ You can use [other distributions](https://github.com/89luca89/distrobox/blob/mai
 
 If you opted to use Nix packages at the first boot, then you can use the Nix package manager.  More information on that [here](https://zero-to-nix.com/).
 
+### Brew
+
+Brew is a popular package manager that was intended as a community-driven package manager for macOS.
+
+Brew is available by entering `just install-brew` and `just install-brew-to-shell`.  Read the [official documentation](https://docs.brew.sh/Homebrew-on-Linux) on how to use it.
+
 ### rpm-ostree
 
 Fedora has [documentation](https://docs.fedoraproject.org/en-US/fedora/latest/system-administrators-guide/package-management/rpm-ostree/) on rpm-ostree.  The most common command you will use is `rpm-ostree install <package>` to layer Fedora's RPM packages to the image.  After that has finished you will be required to reboot your system to use it.  However, it is highly recommended to only use this command as the last resort especially if the package can be obtained through the above methods.
@@ -169,6 +175,7 @@ Unlike traditional Linux distributions, much of the maintenance and security upd
 - [Bazzite Portal, also known as YAFTI](https://github.com/ublue-os/yafti/), acts as both a first-boot utility and general software configuration and installation tool.
 - [Just](https://github.com/casey/just) is for executing custom commands based on recipes.  Type `just` in a host terminal to see what commands are available.  See some example commands [here](/guide/just/).
 - [Fleek](https://getfleek.dev/) is a [Nix](https://search.nixos.org/packages) package manager wrapper and `$HOME` manager using YAML.
+- [OBS-Portable OCI Image](https://github.com/ublue-os/obs-studio-portable) is the universal installation of method of the [OBS-Portable](https://github.com/wimpysworld/obs-studio-portable) which aims to be OBS Studio with codecs and several popular plugins preinstalled.
 
 ## How do I switch to a different Bazzite or other Universal Blue image?
 
