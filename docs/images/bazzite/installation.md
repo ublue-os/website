@@ -9,7 +9,7 @@
 
 !!! ATTENTION
 
-    It is **HIGHLY RECOMMENDED** to install Bazzite with a user password (w/ root privileges) so you can install certain software.
+    It is **HIGHLY RECOMMENDED** to install Bazzite with a user password that has administrative privileges so you can install certain software.
 
 This is a visual guide for installing Bazzite.
 
@@ -36,7 +36,9 @@ Installation tutorial begins at [1:37](https://youtu.be/aaeRk8_i1Ds?feature=shar
 
 ## Boot into your installation medium.
 
-Connect your bootable medium to your device and boot into it.  This depends on your hardware, most of the time it's the function keys (ex: <kbd>F9</kbd>.  It's very dependent on the motherboard in your device.  Sometimes you need to consult the manual or read any hotkeys when you boot your PC.  You can alternatively change BIOS settings, which can also be any of the function keys, to boot with your flash drive first before your current storage, but this is not recommended to keep on after installing.
+Connect your bootable medium to your device and boot into it.  This depends on your hardware, most of the time it's the function keys (ex: <kbd>F9</kbd>).  It's very dependent on the motherboard in your device.  
+
+Sometimes you need to consult the manual or read any hotkeys when you boot your PC.  You can alternatively change BIOS settings, which can also be any of the function keys, to boot with your flash drive first before your current storage, but this is not recommended to keep on after installing.
 
 For the Steam Deck, hold the 'Volume Down' button and click the Power Button, and when you hear the chime, let go of the Volume Down button, and you'll be booted into the Boot Manager.  
 
@@ -44,7 +46,9 @@ When you get to the boot menu, select your bootable device to boot into the Bazz
 
 ## Bazzite Variants
 
-- Bazzite offers multiple images, but most images will be following one of these **two** formats: *Desktop* and *Steam Deck/HTPC*.  
+When you boot into the installer, you will be presented a list of Bazzite images.
+
+- Bazzite offers multiple images, but most images will be following **one of these two formats****: *Desktop* and *Steam Deck/HTPC*.  
        - *Desktop* images are for general desktop computing and attempt to mimic SteamOS's Desktop Mode in terms of functionality.  
        - *Steam Deck/HTPC* images boot directly into Game Mode and are intended for handheld PCs and home theater PCs.
 - These images also come with the choice of KDE Plasma or GNOME for their desktop environments.
