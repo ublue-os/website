@@ -81,6 +81,10 @@ For games on Steam, they are located in your `~/.steam/root/steamapps/compatdata
 
 Non-Steam games can have the prefix folder anywhere you specify, but by default Lutris uses `~/.wine` as the main folder.  Sometimes it's also in `~/Games`.
 
+## Modding Quickstart
+
+Steam Workshop is the easiest way to obtain mods, but is not supported for every title and requires you to own the game on Steam.  You can still add or replace files and directories, but there may be some extra steps on the Linux desktop.  Some mods require a "WINE DLL OVERRIDE" environment variable like `WINEDLLOVERRIDES="dinput8=n,b" %command%` for a DirectX 8 title that has a `dinput8.dll` file.  If the game is on Steam, this can be accomplished with a launch option with that command and adding %command% after it.
+
 ## Extras
 
 * It is recommended to use ProtonUp-Qt (included) to update the latest [GE-Proton](https://github.com/GloriousEggroll/proton-ge-custom) and [Luxtorpeda](https://github.com/luxtorpeda-dev/luxtorpeda) for Steam.
