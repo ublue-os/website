@@ -149,6 +149,7 @@ nav:
           - Modules:
             - tinker/modules/index.md
             - bling: tinker/modules/bling.md
+            - default-flatpaks: tinker/modules/default-flatpaks.md
             - files: tinker/modules/files.md
             - fonts: tinker/modules/fonts.md
             - rpm-ostree: tinker/modules/rpm-ostree.md
