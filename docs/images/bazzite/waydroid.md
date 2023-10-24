@@ -51,7 +51,8 @@ sudo ./waydroid_fix.sh
 Then select your dedicated GPU.
 
 ## Reset Waydroid
+
 !!! note
- This will delete all of your current Waydroid data!
+    This will delete all of your current Waydroid data!
 
 Enter `just reset-waydroid` if you run into any major issues.
