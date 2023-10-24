@@ -10,7 +10,7 @@ links:
   
 ---
 
-# Bluefin is on it's way to Beta
+# Bluefin is on its way to Beta
 
 After nearly two(!) years of prototyping and testing, [Bluefin](/images/bluefin) is on it's way to Beta! We're hoping to do the final release of the beta on November 1st, so we'd like to spend a some time testing the ISO. 
 
