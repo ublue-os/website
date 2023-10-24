@@ -10,7 +10,9 @@ Follow this [guide](/images/bazzite/installation/).
 
 ## Can I dual/multi-boot?
 
-Windows dual-booting can be made to work, but is **not recommended** since Windows has a habit of destroying your boot loader.  The best method would be running Windows on a different drive than the one containing Bazzite, like an external one.  Other Linux distributions **should not** be dual/multi-booted due to how Bazzite mounts certain things.  However, you can probably do it if the other Linux OS is on a separate drive.
+**Short answer:** it's unsupported.
+
+**Long answer:**  Windows dual-booting can work, but is **not recommended** since Windows has a habit of destroying your bootloader.  The best method would be running Windows on a different drive than the one containing Bazzite.  Other Linux distributions will probably have issues dual/multi-booted due to how Bazzite mounts certain things.  However, if the other Linux OS is on a separate drive then it may work.
 
 ## I am having issues installing Bazzite on my hardware! What's going on?
 
@@ -30,7 +32,7 @@ This is currently a known [issue](https://github.com/ublue-os/bazzite/issues/109
     Keep in mind that the Steam Deck will not scale properly with the installer, and the buttons on the bottom of the screen will be cut off.  This will require the use of the <kbd>TAB</kbd> key on your keyboard to navigate the installer blindly.
 
 There is also two other **alternative** methods that may work:  
-Installing with basic graphics mode in the installer or using this [advanced guide](https://sharing.io/deck.html).
+Installing with basic graphics mode in the installer or using this [advanced guide](https://sharing.io/deck.html) that is very command-line heavy.
 
 Keep in mind we do **not** support booting using Ventoy.
 
@@ -40,7 +42,7 @@ Make sure you are connected to the internet if you are using an online ISO.  If 
 
 ## I am new to Linux gaming.  Where do I start?
 
-We have a gaming starter guide [here](/images/bazzite/gaming_guide).  If you own a Steam Deck then it should be a similar experience.
+We have a gaming starter guide [here](/images/bazzite/gaming_guide).  The Steam Deck image should be very similar to SteamOS to the end user.
 
 ## How do I install additional software?
 
@@ -67,13 +69,13 @@ If you opted to use Nix packages at the first boot, then you can use the Nix pac
 
 ### Brew
 
-Brew is a popular package manager that was intended as a community-driven package manager for macOS.
+Brew is a popular package manager that was intended as a community-driven package manager for macOS.  There is also a Linux port for it.
 
 Brew is available by entering `just install-brew` and `just install-brew-to-shell`.  Read the [official documentation](https://docs.brew.sh/Homebrew-on-Linux) on how to use it.
 
 ### rpm-ostree
 
-Fedora has [documentation](https://docs.fedoraproject.org/en-US/fedora/latest/system-administrators-guide/package-management/rpm-ostree/) on rpm-ostree.  The most common command you will use is `rpm-ostree install <package>` to layer Fedora's RPM packages to the image.  After that has finished you will be required to reboot your system to use it.  However, it is highly recommended to only use this command as the last resort especially if the package can be obtained through the above methods.
+Fedora has [documentation](https://docs.fedoraproject.org/en-US/fedora/latest/system-administrators-guide/package-management/rpm-ostree/) on rpm-ostree.  The most common command you will use is `rpm-ostree install <package>` to layer Fedora's RPM packages to the image.  After that has finished you will be required to reboot your system to use it.  However, it is highly recommended to only use this command as the last resort especially if the package can be obtained through the above methods.  Layering packages to your image using this is mostly intended for system-level packages, but any package available in Fedora can be layered using rpm-ostree.
 
 ## How do I run Windows applications?
 
@@ -107,7 +109,7 @@ Your system should automatically update when our new builds based on that new po
 
 ## Do I have to reboot after every system update or layering a package?
 
-No. They just won't apply until shutdown.  You can attempt to layer package(s) without rebooting with `rpm-ostree install --apply-live <package>` but sometimes this still requires a reboot depending on the package(s) you installed.
+No, but update won't apply until shutdown.  You can attempt to layer package(s) without rebooting with `rpm-ostree install --apply-live <package>` however sometimes this still requires a reboot depending on the package(s) you installed.
 
 ## How do I rollback a system update?
 
@@ -166,16 +168,16 @@ Check out the [Universal Blue homepage](https://universal-blue.org) for more inf
 
 ## Is this another fringe distro?
 
-No. Bazzite is not a distribution. These images are literally [Fedora Kinoite (KDE)](https://fedoraproject.org/kinoite/) and [Fedora Silverblue (GNOME)](https://fedoraproject.org/silverblue/) with a recipe on top of it.  This is a new "container-native" that Fedora has been testing, and we are taking full advantage of this.  We are utilizing the [Open Container Initiative](https://opencontainers.org/) to create these images, and are simply adding packages, services, kernel modules, etc. to existing Fedora images.  Bazzite's goal is Fedora Linux, but provide a great gaming experience out of the box.
+Bazzite is not a distribution in the same sense that other Fedora-based distributions are.  These images are [Fedora Kinoite (KDE)](https://fedoraproject.org/kinoite/) and [Fedora Silverblue (GNOME)](https://fedoraproject.org/silverblue/) with a recipe on top of it.  This is a new "container-native" method that Fedora has been testing, and we are taking full advantage of this.  We are utilizing the [Open Container Initiative](https://opencontainers.org/) to create these images, and are simply adding packages, services, kernel modules, etc. to existing Fedora images.  Bazzite takes from the "main" Universal Blue Fedora image and adds to it.  Bazzite's goal is Fedora Linux, but provide a great gaming experience out of the box.
 
-Unlike traditional Linux distributions, much of the maintenance and security updates are done upstream by Fedora and Universal Blue while Bazzite only has to focus on the gaming aspects of it.  A hypothetical scenario where everyone involved with Universal Blue could stop maintaining the project at once, and it will still continue to receive updates directly from Fedora.  Check out the [mission statement](/mission) and [documentation](https://universal-blue.org/introduction/) for more information.
+Unlike traditional Linux distributions, much of the maintenance and security updates are done upstream by Fedora and Universal Blue while Bazzite only has to focus on the gaming aspects of it.  A hypothetical scenario where everyone involved with Bazzite could stop maintaining the project at once and it will still continue to receive updates directly from Fedora.  Check out the [mission statement](/mission) and [documentation](https://universal-blue.org/introduction/) for more information.
 
 ## What are some of the unique applications that Bazzite uses?
 
 - [Bazzite Portal, also known as YAFTI](https://github.com/ublue-os/yafti/), acts as both a first-boot utility and general software configuration and installation tool.
 - [Just](https://github.com/casey/just) is for executing custom commands based on recipes.  Type `just` in a host terminal to see what commands are available.  See some example commands [here](/guide/just/).
 - [Fleek](https://getfleek.dev/) is a [Nix](https://search.nixos.org/packages) package manager wrapper and `$HOME` manager using YAML.
-- [OBS-Portable OCI Image](https://github.com/ublue-os/obs-studio-portable) is the universal installation of method of the [OBS-Portable](https://github.com/wimpysworld/obs-studio-portable) which aims to be OBS Studio with codecs and several popular plugins preinstalled.
+- [OBS-Portable OCI Image](https://github.com/ublue-os/obs-studio-portable) is the universal installation method of the [OBS-Portable](https://github.com/wimpysworld/obs-studio-portable) which aims to be OBS Studio with codecs and several popular plugins preinstalled, and as the name implies it's a portable application too.
 
 ## How do I switch to a different Bazzite or other Universal Blue image?
 
@@ -260,4 +262,4 @@ One of the goals of this project is to have the convenience of never worrying ab
 
 ## I would like to contribute to Bazzite.  Where do I start?
 
-Thank you for being so eager to contribute to the project!  We have documentation for contributing [here](/images/bazzite/CONTRIBUTING).  This documentation also links to our roadmap for future plans with the project.
+Thank you for being so eager to contribute to the project!  We have documentation for contributing [here](/images/bazzite/CONTRIBUTING).  This documentation also links to our roadmap for future plans with the project.  Testing Bazzite and reporting issues is some of the most helpful contribution in its current state.
