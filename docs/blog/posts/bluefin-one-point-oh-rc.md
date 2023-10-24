@@ -6,7 +6,7 @@ authors:
 categories:
   - bluefin
 links:
-  - Bazzite: https://github.com/ublue-os/bluefin
+  - Bluefin: https://github.com/ublue-os/bluefin
   
 ---
 
