@@ -46,7 +46,7 @@ Images are split up between **2 types of images**:
 
 **Desktop**        
 - AMD/Intel Desktop Images: Steam and other gaming utilities are installed in a [customized Arch Linux](https://github.com/ublue-os/bazzite-arch) [Distrobox container](https://github.com/89luca89/distrobox).  No "Game Mode" on these images, but is similar to SteamOS's "Desktop Mode" from an end user point of view.
-- Nvidia Desktop Images: Very similar to their AMD/Intel desktop counterparts, but Steam and other gaming utilites are part of the image itself and are missing certain features like Waydroid.
+- Nvidia Desktop Images: Very similar to their AMD/Intel desktop counterparts, but Steam and other gaming utilities are part of the image itself and are missing certain features like Waydroid.
 
 **Steam Deck / HTPC / Handheld PC**
 - Mimics SteamOS with "Game Mode" with most of the features you would expect from SteamOS.
