@@ -121,7 +121,7 @@ Alternatively, you can open a host terminal and enter `just update`, then reboot
 
 ## How does updating to a new Fedora point release work?
 
-Your system should automatically update when our new builds based on that new point release are ready.  Bazzite usually aims for the same day when the new Fedora releases.  Advanced users can test early builds by rebasing to them when avaliable at their own risk.
+Your system should automatically update when our new builds based on that new point release are ready on Desktop images, and Steam Deck images should update to the new release when you update in Game Mode.  Bazzite usually aims for the same day when the new Fedora releases.  Advanced users can test early builds by [rebasing](/images/bazzite/FAQ/#i-think-i-installed-the-wrong-bazzite-image-do-i-have-to-reinstall) to a beta image when avaliable at their own risk.
 
 ## Do I have to reboot after every system update or layering a package?
 
@@ -176,7 +176,7 @@ Bazzite is built off of desktop versions of Fedora built with [libostree](https:
 * Automatic and atomic updates for system and applications.
 * Containerized applications which means dependencies issues should rarely happen.
 * Overlay system packages to the host so they survive updates.
-* Smoother upgrade process from major Fedora point releases.
+* Smooth upgrade process from major Fedora point releases.
 * Very little risk of an unbootable or broken system.
 * Rollback system updates and pin your current deployment.
 
