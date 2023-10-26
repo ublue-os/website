@@ -51,7 +51,7 @@ When you boot into the installer, you will be presented a list of Bazzite images
 - Bazzite offers multiple images, but most images will be following **one of these two formats****: *Desktop* and *Steam Deck/HTPC*.  
        - *Desktop* images are for general desktop computing and attempt to mimic SteamOS's Desktop Mode in terms of functionality.  
        - *Steam Deck/HTPC* images boot directly into Game Mode and are intended for handheld PCs and home theater PCs.
-- These images also come with the choice of KDE Plasma or GNOME for their desktop environments.
+- These images also come with the choice of [KDE Plasma](https://kde.org/plasma-desktop/) or [GNOME](https://www.gnome.org/) for their desktop environments.
    
 ### Common images:
 ![image](https://github.com/nicknamenamenick/bazzite/assets/121328689/6d52a35b-ec89-4180-8940-173ce37a6200)
@@ -62,13 +62,13 @@ When you boot into the installer, you will be presented a list of Bazzite images
 
 * **bazzite-deck** is a special Steam Deck image of Bazzite.  More details on that [here.](https://github.com/ublue-os/bazzite#steam-deckhome-theater-pcs-htpcs)
 
-* **bazzite-gnome** is _bazzite_, but instead of using [KDE Plasma](https://kde.org/plasma-desktop/) as the desktop environment, it uses [GNOME.](https://www.gnome.org/)
+* **bazzite-gnome** is _bazzite_, but instead of using KDE Plasma as the desktop environment, it uses GNOME.
 
 * **bazzite-gnome-nvidia** is _bazzite-gnome_ but for PCs running Nvidia GPUs as they include their proprietary drivers in the image.
 
-* **bazzite-deck-gnome** is _bazzite-deck_ but instead of using [KDE Plasma](https://kde.org/plasma-desktop/) as the desktop environment, it uses [GNOME.](https://www.gnome.org/)
+* **bazzite-deck-gnome** is _bazzite-deck_ but instead of using KDE Plasma as the desktop environment, it uses GNOME.
 
-There are also images specific to specialized hardware like **bazzite-framework** (Framework hardware), **bazzite-surface** (Microsoft Surface hardware), etc. 
+There are also images specific to specialized hardware like **bazzite-framework** (Framework hardware), **bazzite-surface** (Microsoft Surface hardware), etc.
 
 ## KDE Plasma and GNOME Desktop Environments Differences at a Glance
 
@@ -119,6 +119,12 @@ Click "Next" to begin configuring Bazzite.  Press the toggle switch button next 
 
 Login to Steam **(required for Steam Deck, HTPC, and Handheld PC images)**, and reboot your device when you finish.
 
+!!! NOTE
+
+    For users with Secure Boot enabled: 
+    
+Run `just enroll-secure-boot-key` in the host terminal and enter the password `ublue-os` if prompted to enroll the required key!
+
 ## Game on!
 
 You have installed Bazzite!  
@@ -129,10 +135,10 @@ If you need any additional applications check out the software center that comes
 
 For a quick run-through of the basics of gaming on desktop Linux, take a look [here](/images/bazzite/gaming_guide).
 
-## Waydroid
+## Waydroid Setup
 
-Check out the Waydroid [setup guide](/images/bazzite/waydroid) for Android support in Bazzite.
+Check out the [Waydroid setup guide](/images/bazzite/waydroid) for Android support in Bazzite.
 
 ## Frequently Asked Questions
 
-Check out the FAQ [here](/images/bazzite/FAQ).
+Check out the Bazzite [FAQ](/images/bazzite/FAQ).
