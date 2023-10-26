@@ -12,14 +12,18 @@ For Nvidia graphics cards, there is no official support for VA-API. However, the
 
 Regardless of your graphics hardware, uBlue includes the packages you need to enable Hardware-accelerated codecs using VA-API.
 
-## How to check that hardware-accelerated codecs are working
+## How to check that hardware-accelerated codecs are properly detected
 
-To check if hardware-accelerated codecs are working, you can use Firefox:
+To check if hardware-accelerated codecs are being recognized by your system, you can use Firefox:
 
 1. Open Firefox.
 2. In the address bar, type `about:support` and press Enter.
 3. Look for the section titled "Media"
-4. If hardware-accelerated codecs are working you should see `HW` listed next to some codecs. For example ![firefox-with-hw-codecs](https://user-images.githubusercontent.com/815081/229374952-a345de0c-fb2a-4f22-9de3-1c0a7184d1d0.png)
+4. If hardware-accelerated codecs are detected you should see `HW` listed next to some codecs. For example ![firefox-with-hw-codecs](https://user-images.githubusercontent.com/815081/229374952-a345de0c-fb2a-4f22-9de3-1c0a7184d1d0.png)
+
+## (nvidia) How to check that hardware-accelerated codecs are in use
+
+While playing or encoding a video, open a terminal and run `nvidia-smi dmon`. If the GPU codec is in use, there will be a positive value under the "dec" (decoder) or enc (encoder) columns. For troubleshooting, check the [nvidia page](/images/nvidia/).
 
 ## How to configure the Firefox flatpak to use hardware-accelerated codecs
 
@@ -31,6 +35,8 @@ The Firefox flatpak may require a small configuration change to enable hardware-
 4. Search for `media.ffmpeg.vaapi.enable`.
 5. Set the value to **true**.
 6. Restart firefox to apply the change.
+
+Nvidia users will need to follow [additional steps](/images/nvidia/#video-playback).
 
 ## How to Install the `ffmpeg-full` Flatpak Runtime
 
