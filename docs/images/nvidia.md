@@ -13,12 +13,12 @@ These images are based on the experimental `ostree` native container images host
 
 - Multiple Nvidia driver streams (535xx and 470xx)
 - CUDA support
-- [Container runtime support](https://github.com/ublue-os/nvidia#using-nvidia-gpus-in-containers)
+- [Container runtime support](#using-nvidia-gpus-in-containers)
 - Secure boot
-- [Hardware-accelerated video playback](https://github.com/ublue-os/nvidia#video-playback)
+- [Hardware-accelerated video playback](#video-playback)
 - Selinux support
-- [Multiple Fedora flavors and releases](https://github.com/ublue-os/nvidia#setup)
-- Post-install setup with [`just`](https://github.com/ublue-os/config/blob/main/build/ublue-os-just/nvidia.just)
+- [Multiple Fedora flavors and releases](#setup)
+- Post-install setup with [`just`](https://github.com/ublue-os/config/blob/main/build/ublue-os-just/40-nvidia.just)
 - Multi-GPU support with [`supergfxctl`](https://gitlab.com/asus-linux/supergfxctl) ([optional Gnome Shell extension](https://extensions.gnome.org/extension/5344/supergfxctl-gex/))
 
 ## Setup
@@ -166,6 +166,7 @@ podman run \
     --security-opt=no-new-privileges \
     --cap-drop=ALL \
     --security-opt label=type:nvidia_container_t  \
+    --device=nvidia.com/gpu=all \
     docker.io/nvidia/samples:vectoradd-cuda11.2.1
 ```
 
@@ -177,7 +178,13 @@ Additional runtime packages are added for enabling hardware-accelerated video pl
 - `media.ffmpeg.vaapi.enabled`
 - `widget.dmabuf.force-enabled`
 
-Extensive host access and reduced sand-boxing is needed for Firefox flatpak to use `/usr/lib64/dri/nvidia_drv_video.so`:
+RPM users will need to run Firefox with the following environment variables to use `/usr/lib64/dri/nvidia_drv_video.so`:
+
+```
+env LIBVA_DRIVER_NAME=nvidia MOZ_DISABLE_RDD_SANDBOX=1 NVD_BACKEND=direct firefox
+```
+
+Flatpak users will also need to provide more extensive host access and reduced sand-boxing:
 
 ```bash
 flatpak override \
@@ -191,6 +198,8 @@ flatpak override \
     --env=MOZ_ENABLE_WAYLAND=1 \
     org.mozilla.firefox
 ```
+
+You can verify whether the GPU is being used for video decoding by running `nvidia-smi dmon` while the video is playing.
 
 ## Acknowledgements
 
