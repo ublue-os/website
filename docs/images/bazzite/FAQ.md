@@ -8,11 +8,9 @@ Fedora's image-based variants are usually named after either [minerals](https://
 
 Follow this [guide](/images/bazzite/installation/).
 
-## Can I dual/multi-boot?
+## Can I dual-boot?
 
-**Short answer:** it's unsupported.
-
-**Long answer:**  Windows dual-booting can work, but is **not recommended** since Windows has a habit of destroying your bootloader.  The best method would be running Windows on a different drive than the one containing Bazzite.  Other Linux distributions will probably have issues dual/multi-booted due to how Bazzite mounts certain things.  However, if the other Linux OS is on a separate drive then it may work.
+Dual-boot is supported, but it is recommended if the other operating systems are on a separate drive.
 
 ## I am having issues installing Bazzite on my hardware! What's going on?
 
@@ -44,15 +42,19 @@ Make sure you are connected to the internet if you are using an online ISO.  If 
 
 Images are split up between **2 types of images**: 
 
-**Desktop**        
-- AMD/Intel Desktop Images: Steam and other gaming utilities are installed in a [customized Arch Linux](https://github.com/ublue-os/bazzite-arch) [Distrobox container](https://github.com/89luca89/distrobox).  No "Game Mode" on these images, but is similar to SteamOS's "Desktop Mode" from an end user point of view.
-- Nvidia Desktop Images: Very similar to their AMD/Intel desktop counterparts, but Steam and other gaming utilities are part of the image itself and are missing certain features like Waydroid.
+### Desktop
 
-**Steam Deck / HTPC / Handheld PC**
-- Mimics SteamOS with "Game Mode" with most of the features you would expect from SteamOS.
-- Can be used on most devices using a modern AMD/Intel GPU.
+_AMD/Intel Desktop Images_: Steam and other gaming utilities are installed in a [customized Arch Linux](https://github.com/ublue-os/bazzite-arch) [Distrobox container](https://github.com/89luca89/distrobox).  No "Game Mode" on these images, but is similar to SteamOS's "Desktop Mode" from an end user point of view.  
 
-These images also come with the choice of using KDE Plasma or GNOME for the desktop environment and made with specific hardware in mind.
+_Nvidia Desktop Images_: Very similar to their AMD/Intel desktop counterparts, but Steam and other gaming utilities are part of the image itself and are missing certain features like Waydroid.
+
+### Steam Deck / HTPC / Handheld PC
+
+Mimics SteamOS with "Game Mode" with most of the features you would expect from SteamOS.  Can be used on most devices using a modern AMD/Intel GPU.
+
+### Desktop Environments & Specific Hardware
+
+All of the images also come with the choice of using KDE Plasma or GNOME for the desktop environment and made with specific hardware in mind.
 
 There is more information about this on the [installation documentation](images/bazzite/installation/#bazzite-variants). 
 
