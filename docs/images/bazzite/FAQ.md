@@ -10,9 +10,7 @@ Follow this [guide](/images/bazzite/installation/).
 
 ## Can I dual/multi-boot?
 
-**Short answer:** it's unsupported.
-
-**Long answer:**  Windows dual-booting can work, but is **not recommended** since Windows has a habit of destroying your bootloader.  The best method would be running Windows on a different drive than the one containing Bazzite.  Other Linux distributions will probably have issues dual/multi-booted due to how Bazzite mounts certain things.  However, if the other Linux OS is on a separate drive then it may work.
+Windows dual-boot is supported, but it is recommended if it is on a separate drive.  Other Linux distributions may be unsupported due to how Bazzite mounts certain things, but you should be able to get by on a separate drive.
 
 ## I am having issues installing Bazzite on my hardware! What's going on?
 
