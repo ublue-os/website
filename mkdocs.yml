@@ -158,3 +158,7 @@ nav:
             - yafti: tinker/modules/yafti.md
   - Blog:
       - blog/index.md
+  - Cheatsheet:
+      - Just: cheatsheet/just.md
+      - OStree: cheatsheet/ostree.md
+      - Distrobox: cheatsheet/distrobox.md
