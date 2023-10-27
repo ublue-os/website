@@ -1,5 +1,5 @@
 ---
-date: 2023-10-27
+date: 2023-10-28
 comments: true
 authors: 
   - nicknamenamenick
@@ -77,7 +77,7 @@ Translations to Bazzite's [documentation](https://github.com/ublue-os/website/tr
 
 While we're on the topic of media coverage, special thanks to everyone who has made a video or written an article about Bazzite.  We are humbled by all of the support from our community and are grateful for those promoting the project.
 
-## Closing Thoughts, Fedora 39 Testing, and Survey
+## Closing Thoughts, Fedora 39 Testing, Bluefin, and Survey
 
 We are nearing the 2.0 release of Bazzite.  It has been both a bumpy yet exciting ride few months releasing Bazzite out into the wild.  Our goal is to have Bazzite remain a very stable and consistent experience across different hardware and configurations when the Fedora 39 builds are out.  We had fixed edge-case scenarios and issues that had gone overlooked for the last three months.  However, one of the major issues that has plagued Bazzite since we released ISOs is Fedora's installer not cooperating with our OCI image method.  Please check our [FAQ](https://universal-blue.org/images/bazzite/FAQ/#i-am-having-issues-installing-bazzite-onto-my-hardware) if you have issues installing Bazzite.
 
@@ -89,7 +89,9 @@ Refer to the Universal Blue [full image list](https://universal-blue.org/images/
 
 For those waiting on ASUS ROG Ally support, a lot of work has been done these past weeks to get it working properly.  The current state of Bazzite on the Ally is that it's slowly working.  We are hoping to resolve this in the coming months, but for those curious, the `bazzite-ally` does boot with major controller issues right now.  If you would like to help debug Bazzite on the ASUS ROG Ally, or other unique handheld hardware, then get in touch with us.  There are already trackers for [other handheld hardware](https://github.com/ublue-os/bazzite/issues/468) right now. We would like to thank everyone who has been helping us with proper support for all of the other handheld devices on the market.
 
-We would like to thank our community for helping the project grow into what it is today.  New users who want to give Bazzite a try, here is the the [**latest releases**](https://github.com/ublue-os/bazzite/releases). Check out the [installation guide](https://universal-blue.org/images/bazzite/installation/) and [FAQ](https://universal-blue.org/images/bazzite/FAQ/), and if you experience any issues, then please refer to our [issue tracker](https://github.com/ublue-os/bazzite/issues).  Also, discuss any feature requests or questions you have about Bazzite [here](https://github.com/orgs/ublue-os/discussions/categories/bazzite).
+We would like to thank our community for helping the project grow into what it is today.  Universal Blue has [announced](https://www.ypsidanger.com/announcing-project-bluefin/) a new image coming to beta soon known as [Bluefin](https://projectbluefin.io/).  It is a Fedora Linux image which is a curated GNOME experience that has the reliability of ChromeOS, but with the power of the modern Linux desktop.  Bazzite is the more gaming focused between the two, but Bluefin offers the [`bazzite-arch`](https://github.com/ublue-os/bazzite-arch) Distrobox container which is utilized in the Bazzite desktop images.  Bluefin also allows developers to have access to many of the standard tools and container-focused work environments with a single command. Give it a try sometime, and this is a reminder that [anyone can make their own custom image for Fedora](https://universal-blue.org/guide/fork-your-own/).
+
+New users who want to give Bazzite a try, here is the the [**latest releases**](https://github.com/ublue-os/bazzite/releases). Check out the [installation guide](https://universal-blue.org/images/bazzite/installation/) and [FAQ](https://universal-blue.org/images/bazzite/FAQ/), and if you experience any issues, then please refer to our [issue tracker](https://github.com/ublue-os/bazzite/issues).  Also, discuss any feature requests or questions you have about Bazzite [here](https://github.com/orgs/ublue-os/discussions/categories/bazzite).
 
 Lastly, we have a [**survey**](https://opnform.com/forms/your-bazzite-experience-sohzei) out now that we encourage you to fill out for feedback on the project.  We also want to gather statistics on what hardware that Bazzite is being installed on.  Thank you in advance if you participate in it.  This should only take about 5 minutes to complete.
 
@@ -125,6 +127,7 @@ Lastly, we have a [**survey**](https://opnform.com/forms/your-bazzite-experience
 - Added Winesync/Fastsync/NTSync support.
 - Disabled split lock mitigation for increased gaming performance. (Thanks [Saber J2X!](https://github.com/SaberJ2X))
 - Added message to plymouth during long `bazzite-hardware-setup` steps.
+- RazorGenie is now added to OpenRazor installation in the Bazzite Portal.
 - Added icons for Windows applications (`.exe`, `.msi`, etc.) in the file manager.
 - Enable automounting of hugepages with 1GB pagesize if specific kernel arguments are present.
 - Include `vulkan-tools` and `clinfo` in all images.
@@ -166,6 +169,7 @@ Lastly, we have a [**survey**](https://opnform.com/forms/your-bazzite-experience
 - Enabled initramfs generation for LUKS. 
 - Remove non-working gsetting call.
 - Minor cleanup to `just`.
+- Fixed EmuDeck not working on Steam Deck imgaes.
 - Increased default battery limit on Steam Deck images.
 - Fixed a lot of issues with Nvidia images.
 - Fixed bluetooth controllers disconnecting.
