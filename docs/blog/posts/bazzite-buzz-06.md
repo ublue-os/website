@@ -15,7 +15,7 @@ links:
 
 ### Happy Early Halloween! 🎃
 
-It has been a while since our last newsletter, and this was intended to be published with the release of Fedora 39.  Fedora 39 builds were intended to release originally on October 24th.  Fedora 39 was delayed until October 31st, and now it lands on November 7th after another delay.  However, you can test and preview the Fedora 39 builds of Bazzite right now.  Instructions on that later on. This post has to cover a ton of new features that came out since the last newsletter, so let's get started!
+It has been a while since our last newsletter, and this was intended to be published with the release of Fedora 39.  Fedora 39 builds were intended to release originally on October 24th.  Fedora 39 was delayed until October 31st, and now it lands on November 7th after another delay unless the blockers get resolved before.  However, you can test and preview the Fedora 39 builds of Bazzite right now.  Instructions on that later on. This post has to cover a ton of new features that came out since the last newsletter, so let's get started!
 
 Bazzite is a custom image of [**Fedora 38** (and eventually 39)](https://www.fedoraproject.org/) utilizing Universal Blue's custom image framework designed to bring users the best in Linux gaming for their PCs, including the Steam Deck. This newsletter highlights all of the work we have been doing to bring gamers the best features ready to go for their PCs, home theater setups, and handheld gaming devices.
 
