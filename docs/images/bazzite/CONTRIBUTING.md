@@ -21,7 +21,6 @@ If you feel comfortable with bash scripting, working with containers, or anythin
     - Our images are able to produce 90 days of rollbacks from Github.
 - GUI for rebasing images without having to enter a terminal command.
 - GUI for other `just` commands that don't fit in the first-boot utility.
-- Implementing [Glamour](https://github.com/charmbracelet/glamour) and [Gum](https://github.com/charmbracelet/gum) in Bazzite.
 
 ### The Little Things Add Up
 - Adding features or fixing bugs by submitting a pull request.
