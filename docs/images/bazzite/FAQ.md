@@ -8,9 +8,9 @@ Fedora's image-based variants are usually named after either [minerals](https://
 
 Follow this [guide](/images/bazzite/installation/).
 
-## Can I dual/multi-boot?
+## Can I dual-boot?
 
-Windows dual-boot is supported, but it is recommended if it is on a separate drive.  Other Linux distributions may be unsupported due to how Bazzite mounts certain things, but you should be able to get by on a separate drive.
+Dual-boot is supported, but it is recommended if the other operating systems are on a separate drive.
 
 ## I am having issues installing Bazzite on my hardware! What's going on?
 
