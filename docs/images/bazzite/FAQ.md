@@ -42,15 +42,19 @@ Make sure you are connected to the internet if you are using an online ISO.  If 
 
 Images are split up between **2 types of images**: 
 
-**Desktop**        
-- AMD/Intel Desktop Images: Steam and other gaming utilities are installed in a [customized Arch Linux](https://github.com/ublue-os/bazzite-arch) [Distrobox container](https://github.com/89luca89/distrobox).  No "Game Mode" on these images, but is similar to SteamOS's "Desktop Mode" from an end user point of view.
-- Nvidia Desktop Images: Very similar to their AMD/Intel desktop counterparts, but Steam and other gaming utilities are part of the image itself and are missing certain features like Waydroid.
+### Desktop
 
-**Steam Deck / HTPC / Handheld PC**
-- Mimics SteamOS with "Game Mode" with most of the features you would expect from SteamOS.
-- Can be used on most devices using a modern AMD/Intel GPU.
+_AMD/Intel Desktop Images_: Steam and other gaming utilities are installed in a [customized Arch Linux](https://github.com/ublue-os/bazzite-arch) [Distrobox container](https://github.com/89luca89/distrobox).  No "Game Mode" on these images, but is similar to SteamOS's "Desktop Mode" from an end user point of view.  
 
-These images also come with the choice of using KDE Plasma or GNOME for the desktop environment and made with specific hardware in mind.
+_Nvidia Desktop Images_: Very similar to their AMD/Intel desktop counterparts, but Steam and other gaming utilities are part of the image itself and are missing certain features like Waydroid.
+
+### Steam Deck / HTPC / Handheld PC
+
+Mimics SteamOS with "Game Mode" with most of the features you would expect from SteamOS.  Can be used on most devices using a modern AMD/Intel GPU.
+
+### Desktop Environments & Specific Hardware
+
+All of the images also come with the choice of using KDE Plasma or GNOME for the desktop environment and made with specific hardware in mind.
 
 There is more information about this on the [installation documentation](images/bazzite/installation/#bazzite-variants). 
 
