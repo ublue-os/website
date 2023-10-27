@@ -77,7 +77,7 @@ There are also images specific to specialized hardware like **bazzite-framework*
 ![image](https://github.com/nicknamenamenick/bazzite/assets/121328689/afd257bd-1a66-48d2-980c-dc7ef6614d47)
 
 
-- KDE Plasma's default interace has a traditional and familiar layout.
+- KDE Plasma's default interface has a traditional and familiar layout.
 - Highly customizable.
 - Uses Qt for GUI.
 - Fedora Kinoite & SteamOS uses KDE Plasma.
