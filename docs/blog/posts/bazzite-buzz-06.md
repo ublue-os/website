@@ -48,7 +48,7 @@ Bazzite has rebranded thanks to the design work of [rei0260](https://discord.com
     src="https://github.com/ublue-os/website/assets/121328689/f052aa47-4bc6-4d6e-b173-3ecfbd6093fc"  
     alt="New GNOME avatars">
 </img>
-<p style="text-align: center;font-weight: bold;font-size: 16">New Valve themed avatars for KDE (above) & GNOME (below) user avatars. </p>
+<p style="text-align: center;font-weight: bold;font-size: 16">New Valve themed avatars for KDE & GNOME user avatars. </p>
 
 ## Nvidia Rework, OBS-VKCapture, and Other New Additions
 
