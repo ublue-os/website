@@ -64,7 +64,7 @@ Nvidia images have now been reworked to  Steam, Lutris vkBasalt, MangoHUD, Vulka
 ![image](https://github.com/ublue-os/website/assets/121328689/f99acba7-0186-48c3-891c-4d61bf95eeb8)
 <p style="text-align: left;font-weight: bold;font-size: 12px">Example of a GNOME desktop nested inside of a GNOME desktop.
 
-Other new features like the ability for your Steam Deck, handheld PC, or HTPC to have nested desktops.  Now you can run Desktop Mode inside of Game Mode without the inconvenience of switching between the two. Also, these Game Mode centric images can turn off the screen when the device shuts off through [libCEC](https://libcec.pulse-eight.com/) with compatible devices and HDMI cables. Windows files will now display metadata information for the appropriate files.  For example, Windows executables that have an icon will now display that icon in the file manager.
+Other new features like the ability for your Steam Deck, handheld PC, or HTPC to have nested desktops.  Now you can run Desktop Mode inside of Game Mode without the inconvenience of switching between the two. Unfortunately, GNOME images cannot run applications in this nested desktop currently, but KDE images work fine right now.  Also, these Game Mode centric images can turn off the screen when the device shuts off through [libCEC](https://libcec.pulse-eight.com/) with compatible devices and HDMI cables. Windows files will now display metadata information for the appropriate files.  For example, Windows executables that have an icon will now display that icon in the file manager.
 
 ## Media Coverage & Translations
 
@@ -145,6 +145,7 @@ Lastly, we have a [**survey**](https://opnform.com/forms/your-bazzite-experience
 - Doubled zram size on 32GB of RAM hardware modded Steam Decks.
 - Deck images have Steam shortcuts for Waydroid including icons and input settings.
 - Deck images have a new SteamOS Nested Desktop feature.
+    - GNOME images cannot launch any application in these nested desktop sessions currrently due to upstream issues. 
 - Deck images now have increased ZRAM size to 4GB by defaul & performance improvements. (Thanks [Saber J2X](https://github.com/SaberJ2X)!) 
 - Deck images now block additional AMD watchdog kernel modules to improve performance.
     - We also added the option to enable these watchdog kernel modules back
