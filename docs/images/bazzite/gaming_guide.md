@@ -81,7 +81,7 @@ Non-Steam games can have the prefix folder anywhere you specify, but by default 
 
 - Steam Workshop is the easiest way to obtain mods, but is not supported for every title and requires you to own the game on Steam.  
 - You can still add or replace files and directories, but there may be some extra steps on the Linux desktop.
-      - Some mods require a "WINE DLL OVERRIDE" environment variable like `WINEDLLOVERRIDES="dinput8=n,b" %command%` for a DirectX 8 title that has a `dinput8.dll` file.
+      - Some mods require a "WINE DLL OVERRIDE" environment variable like `WINEDLLOVERRIDES="dinput8=n,b" %command%` or something similar.
             - If the game is on Steam, this can be accomplished with a launch option with the appropriate environment variable and adding `%command%` after it.
 - You can also play around with [Steam Tinker Launch](https://github.com/sonic2kk/steamtinkerlaunch) which can be installed via ProtonUp-Qt (for KDE images) or ProtonPlus (for GNOME images.)
 
