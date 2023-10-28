@@ -169,7 +169,7 @@ Lastly, we have a [**survey**](https://opnform.com/forms/your-bazzite-experience
 - Enabled initramfs generation for LUKS. 
 - Remove non-working gsetting call.
 - Minor cleanup to `just`.
-- Fixed EmuDeck not working on Steam Deck imgaes.
+- Fixed EmuDeck not working on Steam Deck images.
 - Increased default battery limit on Steam Deck images.
 - Fixed a lot of issues with Nvidia images.
 - Fixed bluetooth controllers disconnecting.
