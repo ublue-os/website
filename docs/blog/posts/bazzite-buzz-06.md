@@ -1,5 +1,5 @@
 ---
-date: 2023-10-28
+date: 2023-10-27
 comments: true
 authors: 
   - nicknamenamenick
@@ -35,19 +35,19 @@ Bazzite has rebranded thanks to the design work of [rei0260](https://discord.com
     style="display: block; 
            margin-left: auto;
            margin-right: auto;
-           width: 40%;"
+           width: 30%;"
     src="https://github.com/ublue-os/website/assets/121328689/d2d4927e-b66f-4611-9bd1-48df045b485e"
     alt="New KDE avatars">
-    
 </img>
 <img
     style="display: block; 
            margin-left: auto;
            margin-right: auto;
-           width: 65%;"
+           width: 45%;"
     src="https://github.com/ublue-os/website/assets/121328689/f052aa47-4bc6-4d6e-b173-3ecfbd6093fc"  
     alt="New GNOME avatars">
 </img>
+
 <p style="text-align: center;font-weight: bold;font-size: 16">New Valve themed avatars for KDE & GNOME user avatars. </p>
 
 ## Nvidia Rework, OBS-VKCapture, and Other New Additions
@@ -82,8 +82,10 @@ While we're on the topic of media coverage, special thanks to everyone who has m
 We are nearing the 2.0 release of Bazzite.  It has been both a bumpy yet exciting ride few months releasing Bazzite out into the wild.  Our goal is to have Bazzite remain a very stable and consistent experience across different hardware and configurations when the Fedora 39 builds are out.  We had fixed edge-case scenarios and issues that had gone overlooked for the last three months.  However, one of the major issues that has plagued Bazzite since we released ISOs is Fedora's installer not cooperating with our OCI image method.  Please check our [FAQ](https://universal-blue.org/images/bazzite/FAQ/#i-am-having-issues-installing-bazzite-onto-my-hardware) if you have issues installing Bazzite.
 
 Fedora 39 can be tested right now by rebasing to the 39 builds.  These Bazzite builds are considered "Release Candidate (RC)" right now, but there will be missing packages since many repositories do not build for unstable versions of Fedora.  If you want to test it now, open a host terminal and enter the command based on the image you're using.  Here are some examples:
-- `rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bazzite:39` for the AMD/Intel Desktop image
-- `rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bazzite-deck:39` for the Steam Deck / HTPC image.
+
+`rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bazzite:39` for the AMD/Intel Desktop image
+
+`rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bazzite-deck:39` for the Steam Deck / HTPC image.
 
 Refer to the Universal Blue [full image list](https://universal-blue.org/images/#latest) and replace `:latest` with `:39` for the image you're currently on to upgrade to the Fedora 39 builds right now.  **Please note:** Once you rebase to the 39 testing builds, you will have to rebase back to `:latest` once Fedora 39 is out.    When Fedora 39 has a stable release, then it will be upgraded for everyone in an update.
 
