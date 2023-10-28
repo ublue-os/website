@@ -109,17 +109,17 @@ Follow the [Waydroid guide](/images/bazzite/waydroid/).
 
 ### Desktop images (*bazzite*, *bazzite-nvidia*, *bazzite-gnome*, and *bazzite-gnome-nvidia*, etc.)
 
-System updates happen automatically daily.  They will be downloaded in the background and will apply on shutdown.  No forced reboots or worrying about manually updating your system.
+System updates happen automatically daily.  They will be downloaded in the background and will apply on shutdown or a reboot.  These system updates are NOT forced.  Bazzite downloads the latest patches in the background and they will be applied as soon as you shut down.  The next reboot will contain the newest changes.   No need for worrying about manually upgrading your system.
 
-Flatpak applications (installed from *Discover* or *GNOME Software*) update twice a day automatically.
+Flatpak applications (installed from *Discover* or *GNOME Software*) also update twice a day automatically.  Distrobox containers are also automatically updated too.
 
-You can force an update to the whole system (base packages, applications, and containers) at any time by opening your host terminal and entering `just update` then reboot your device after it has finished.
+You can force an update to the whole system (base packages, applications, and containers) at any time by opening your host terminal and entering `ublue-update` then reboot your device after it has finished.
 
 ### Steam Deck and HTPC images (*bazzite-deck* and *bazzite-deck-gnome*, etc.)
 
 Similar to SteamOS, updates are handled by Steam.  In Game Mode, go to Settings > System > click "Apply"
 
-Alternatively, you can open a host terminal and enter `just update`, then reboot your device after it has finished.
+Alternatively, you can open a host terminal and enter `ublue-update`, then reboot your device after it has finished.  Updates upgrade your system, Flatpak applications, and distrobox containers all at once.
 
 ## How does updating to a new Fedora point release work?
 
