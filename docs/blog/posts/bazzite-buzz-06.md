@@ -36,16 +36,14 @@ Bazzite has rebranded thanks to the design work of [rei0260](https://discord.com
            margin-left: auto;
            margin-right: auto;
            width: 30%;"
-    src="https://github.com/ublue-os/website/assets/121328689/d2d4927e-b66f-4611-9bd1-48df045b485e"
-    alt="New KDE avatars">
+    src="https://github.com/ublue-os/website/assets/121328689/d2d4927e-b66f-4611-9bd1-48df045b485e">
 </img>
 <img
     style="display: block; 
            margin-left: auto;
            margin-right: auto;
            width: 45%;"
-    src="https://github.com/ublue-os/website/assets/121328689/f052aa47-4bc6-4d6e-b173-3ecfbd6093fc"  
-    alt="New GNOME avatars">
+    src="https://github.com/ublue-os/website/assets/121328689/f052aa47-4bc6-4d6e-b173-3ecfbd6093fc">
 </img>
 
 <p style="text-align: center;font-weight: bold;font-size: 16">New Valve themed avatars for KDE & GNOME user avatars. </p>
@@ -188,8 +186,6 @@ Lastly, we have a [**survey**](https://opnform.com/forms/your-bazzite-experience
     - Will re-introduce as an option in Bazzite Portal at a later time.
 - Removed `rd.luks.options=discard` & use `--append-if-missing` for kernel arguments.
 - GNOME images have restored [appindicator extension](https://github.com/ubuntu/gnome-shell-extension-appindicator).
-
-[Full changelog](https://github.com/ublue-os/bazzite/commits/main)
 
 <hr>
 
