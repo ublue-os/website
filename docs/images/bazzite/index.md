@@ -160,13 +160,13 @@ Check out the [FAQ](https://universal-blue.org/images/bazzite/FAQ/) for other to
 
 ## Showcase
 
-![KDE Vapor Theme](/repo_content/desktop1.png?raw=true "KDE Vapor Theme")
-![KDE VGUI2 Theme](/repo_content/desktop2.png?raw=true "KDE VGUI2 Theme")
-![Steam Game Mode](/repo_content/gamemode.png?raw=true "Steam Game Mode")
-![Waydroid](/repo_content/waydroid.png?raw=true "Waydroid")
-![Distrobox Terminals](/repo_content/distrobox.png?raw=true "Distrobox Terminals")
-![GNOME Vapor Theme](/repo_content/gnome1.png?raw=true "GNOME Vapor Theme")
-![GNOME VGUI2 Theme](/repo_content/gnome2.png?raw=true "GNOME VGUI2 Theme")
+![KDE Vapor Theme](https://github.com/ublue-os/website/assets/121328689/24d8f60d-7610-4f00-a7cc-1d6868f0902c)
+![KDE VGUI2 Theme](https://github.com/ublue-os/website/assets/121328689/babbbee0-658c-42d8-9f12-e89e84bdcf6e)
+![Steam Game Mode](https://github.com/ublue-os/website/assets/121328689/4084a52a-b7c9-4ec7-a27f-87a6104b4dea)
+![Waydroid](https://github.com/ublue-os/website/assets/121328689/11f29b2f-af00-420e-9cf0-1ff16be2f275)
+![Distrobox Terminals](https://github.com/ublue-os/website/assets/121328689/58024aa1-b632-4bf9-9201-1e2218868e19)
+![GNOME Vapor Theme](https://github.com/ublue-os/website/assets/121328689/985c1707-8e37-4e54-ae02-2258ef536ebc)
+![GNOME VGUI2 Theme](https://github.com/ublue-os/website/assets/121328689/d457780a-df3f-4036-864b-2080b30145e1)
 
 Check out our [newsletters](https://universal-blue.org/blog/category/bazzite/) that get published on a regular basis for updates on the project.
 
