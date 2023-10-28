@@ -62,7 +62,7 @@ Nvidia images have now been reworked to  Steam, Lutris vkBasalt, MangoHUD, Vulka
 [OBS-VKCapture](https://github.com/nowrep/obs-vkcapture) is now added to easily record videos using hardware acceleration.  This also works in Game Mode meaning you can record your games without the use of a capture card.  If you are interested in trying this out in Game Mode, then open the game properties for the game you want to record and enter `OBS_VKCAPTURE=1 %command%` in the launch options.
 
 ![image](https://github.com/ublue-os/website/assets/121328689/f99acba7-0186-48c3-891c-4d61bf95eeb8)
-<p style="text-align: left;font-weight: bold;font-size: 12px">Example of a GNOME desktop nested inside of a GNOME desktop.
+<p style="text-align: left;font-weight: bold;font-size: 12px">Example of a GNOME desktop nested inside of a GNOME desktop.</p>
 
 Other new features like the ability for your Steam Deck, handheld PC, or HTPC to have nested desktops.  Now you can run Desktop Mode inside of Game Mode without the inconvenience of switching between the two. Unfortunately, GNOME images cannot run applications in this nested desktop currently, but KDE images work fine right now.  Also, these Game Mode centric images can turn off the screen when the device shuts off through [libCEC](https://libcec.pulse-eight.com/) with compatible devices and HDMI cables. Windows files will now display metadata information for the appropriate files.  For example, Windows executables that have an icon will now display that icon in the file manager.
 
