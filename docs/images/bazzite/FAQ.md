@@ -109,17 +109,17 @@ Follow the [Waydroid guide](/images/bazzite/waydroid/).
 
 ### Desktop images (*bazzite*, *bazzite-nvidia*, *bazzite-gnome*, and *bazzite-gnome-nvidia*, etc.)
 
-System updates happen automatically daily.  They will be downloaded in the background and will apply on shutdown.  No forced reboots or worrying about manually updating your system.
+System updates happen automatically daily.  They will be downloaded in the background and will apply on shutdown or a reboot.  These system updates are NOT forced.  Bazzite downloads the latest patches in the background and they will be applied as soon as you shut down.  The next reboot will contain the newest changes.   No need for worrying about manually upgrading your system.
 
-Flatpak applications (installed from *Discover* or *GNOME Software*) update twice a day automatically.
+Flatpak applications (installed from *Discover* or *GNOME Software*) also update twice a day automatically.  Distrobox containers are also automatically updated too.
 
-You can force an update to the whole system (base packages, applications, and containers) at any time by opening your host terminal and entering `just update` then reboot your device after it has finished.
+You can force an update to the whole system (base packages, applications, and containers) at any time by opening your host terminal and entering `ublue-update` then reboot your device after it has finished.
 
 ### Steam Deck and HTPC images (*bazzite-deck* and *bazzite-deck-gnome*, etc.)
 
 Similar to SteamOS, updates are handled by Steam.  In Game Mode, go to Settings > System > click "Apply"
 
-Alternatively, you can open a host terminal and enter `just update`, then reboot your device after it has finished.
+Alternatively, you can open a host terminal and enter `ublue-update`, then reboot your device after it has finished.  Updates upgrade your system, Flatpak applications, and distrobox containers all at once.
 
 ## How does updating to a new Fedora point release work?
 
@@ -176,7 +176,7 @@ Like SteamOS, Bazzite makes use of read-only root files for stability purposes.
 Bazzite is built off of desktop versions of Fedora built with [libostree](https://ostreedev.github.io/ostree/) which has advantages such as:
 
 * Automatic and atomic updates for system and applications.
-* Containerized applications which means dependencies issues should rarely happen.
+* Containerized applications which means dependency conflicts should not be a problem.
 * Overlay system packages to the host so they survive updates.
 * Smooth upgrade process from major Fedora point releases.
 * Very little risk of an unbootable or broken system.
@@ -288,4 +288,4 @@ One of the goals of this project is to have the convenience of never worrying ab
 
 ## I would like to contribute to Bazzite.  Where do I start?
 
-Thank you for being so eager to contribute to the project!  We have documentation for contributing [here](/images/bazzite/CONTRIBUTING).  This documentation also links to our roadmap for future plans with the project.  Testing Bazzite and reporting issues is some of the most helpful contribution in its current state.
+Thank you for being so eager to contribute to the project!  Bazzite has a [suggestions thread](https://github.com/orgs/ublue-os/discussions/246) where you can suggest any feedback to the project.  If you want to develop or provide documentation for Bazzite, then read the contributing [guide](/images/bazzite/CONTRIBUTING).  This guide also links to our roadmap for future plans with the project.  Reporting issues is also very helpful to the project.
