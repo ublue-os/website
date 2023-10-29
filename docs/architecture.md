@@ -1,4 +1,4 @@
-# Architecture Diagram
+# Architecture
 
 Universal Blue images are based on the `rpm-ostree` native container images hosted at [quay.io](https://quay.io/organization/fedora-ostree-desktops). These are based on the build scripts in this [testing repository](https://gitlab.com/fedora/ostree/ci-test). In the future, Fedora will likely provide the base container images in a more official fashion.
 
@@ -27,5 +27,13 @@ These tend to have more opinions and are more "end prodcuct" base than base imag
 - [Beyond](https://github.com/ublue-os/beyond)
 - [Bluefin](https://github.com/ublue-os/bluefin)
 
+## Architecture diagram
 
-![Graph of the uBlue structure. Upstream Fedora images on the top, and only the opinionated main inherits from it. Users are on the bottom, and users get the Universal Blue main image, a hypothetical image intended for Amd gpus and another existing one for Nvidia gpus. A starting point image inherits from the main, Amd and Nvidia images, and it is intended for further customization by tinkerers into community-built images.](ublue-architecture-graph.png)
+![Diagram of the Universal Blue layered image architecture explaining same things as the above text in a visual manner.](ublue-architecture-graph.png)
+
+### Term explanation
+
+- OCI: [Open Container Initiative](https://opencontainers.org/), an open governance structure and set of standards for Linux containers.
+- native container image: a standard OCI image with [ostree native container](https://fedoraproject.org/wiki/Changes/OstreeNativeContainerStable) support.
+- OCI `FROM`-layer relationship: a reference to `Containerfile`s where the keyword [`FROM`](https://docs.docker.com/engine/reference/builder/#from) is used to select the base layer image that the new image is going to be built on top of.
+- OCI `COPY --from`-layer relationship: a reference to `Containerfile`s where the keyword [`COPY --from`](https://docs.docker.com/build/building/multi-stage/#use-an-external-image-as-a-stage) is used to copy files from the file system of another OCI image.
