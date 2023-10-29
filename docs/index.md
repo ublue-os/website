@@ -9,31 +9,25 @@ This is a collection of container images using Fedora's support for OCI/Docker c
 
 For a more in-depth explanation, refer to our [Documentation,](/introduction) and [Media Coverage](/media) sections.
 
-This project provides ... 
+## This project provides
 
-<div class="grid cards" markdown>
+<div class="ublue-card-grid" markdown>
 
-- :material-train-car-container:{ .lg .middle } __Images__
+- ### :material-train-car-container: Images
+A diverse set of [continuously delivered](https://en.wikipedia.org/wiki/Continuous_delivery) Fedora-based images for people to use as their desktop operating system.
+    
 
-    ---
-    A diverse set of [continuously delivered](https://en.wikipedia.org/wiki/Continuous_delivery) Fedora-based images for people to use as their desktop operating system
+- ### :material-toolbox: Toolkit
+A diverse set of tools and [a reusable automation kit](https://github.com/ublue-os/startingpoint) for more technical users so that they can customize and share their images with others.
 
-- :material-toolbox:{ .lg .middle } __Toolkit__
+- ### :material-speedometer: Experimental Applications
+Act as a proving ground for new ideas around the Linux desktop like [Fleek](https://getfleek.dev/), [Forge](https://github.com/ublue-os/forge), [Yafti](https://github.com/ublue-os/yafti), and [Boxkit](https://github.com/ublue-os/boxkit).
 
-    ---
-    A diverse set of tools and [a reusable automation kit](https://github.com/ublue-os/startingpoint) for more technical users so that they can customize and share their images with others
-
-- :material-speedometer:{ .lg .middle } __Experimental Applications__
-
-    ---
-    Act as a proving ground for new ideas around the Linux desktop like [Fleek](https://getfleek.dev/), [Forge](https://github.com/ublue-os/forge), [Yafti](https://github.com/ublue-os/yafti), and [Boxkit](https://github.com/ublue-os/boxkit)
-
-- :material-heart:{ .lg .middle } __Community__
-
-    ---
-    Help new contributors to start their cloud native and open source journeys no matter their skill level.
+- ### :material-heart: Community
+Help new contributors to start their cloud native and open source journeys no matter their skill level.
 
 </div>
+
   
 Our images offer GNOME, KDE, XFCE, LXQt, Budgie, and MATE, with more being [added regularly](/images). Our [NVIDIA images](/images/nvidia) offer a unique blend of reliability and ease of use that you won't find anywhere else. These are offered in a variety of images to fit your needs:
 
