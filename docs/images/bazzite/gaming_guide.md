@@ -15,7 +15,7 @@ Most of the time, the average user will spend time in their `Home` directory, si
 
 Where is this `~/.var` mentioned above, and where is the Steam folder?  These are hidden directories. You can show hidden files by clicking the hamburger menu (3 horizontal lines near the top right of your file manager) and select "Show Hidden Files" to see every directory and file that is hidden by default.  They all start with a "." before it.
 
-If you have multiple drives, like a drive where you plan to play your video games from, you can mount it and set it up with KDE Parititon Manager (KDE images) or GNOME Disks (GNOME images).
+If you have multiple drives, like a drive where you plan to play your video games from, you can mount it and set it up with KDE Partition Manager (KDE images) or GNOME Disks (GNOME images).
 
 ## Steam
 
