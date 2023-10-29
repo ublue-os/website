@@ -25,7 +25,7 @@ If you feel comfortable with bash scripting, working with containers, or anythin
 ### The Little Things Add Up
 - Adding features or fixing bugs by submitting a pull request.
 - Reporting issues and feature requests to either our [issue tracker](https://github.com/ublue-os/bazzite/issues) or [discussions](https://github.com/orgs/ublue-os/discussions/categories/bazzite).
-- Documentation surrounding Bazzite and Universal Blue.
+- [Documentation](https://github.com/ublue-os/website/tree/main/docs/images/bazzite) surrounding Bazzite and Universal Blue.
     - Language translations are also welcomed.
 - Testing Bazzite on unique hardware configurations.
     - Troubleshooting other handheld PCs that are NOT the Steam Deck would be appreciated.
