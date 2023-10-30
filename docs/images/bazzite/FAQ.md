@@ -56,7 +56,7 @@ Mimics SteamOS with "Game Mode" with most of the features you would expect from 
 
 All of the images also come with the choice of using KDE Plasma or GNOME for the desktop environment and made with specific hardware in mind.
 
-There is more information about this on the [installation documentation](/installation/#bazzite-variants). 
+There is more information about this on the [installation documentation](/images/bazzite/installation/bazzite-variants). 
 
 ## I am new to Linux gaming.  Where do I start?
 
