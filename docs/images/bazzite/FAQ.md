@@ -165,7 +165,7 @@ Open a host terminal and enter `rpm-ostree override remove <package>` and reboot
 
 However, if you installed a package via rpm-ostree and want to remove it from the image, then enter `rpm-ostree uninstall <package>` and reboot.  Unlike removing packages that came preinstalled with Bazzite, there isn't consequences to doing this.
 
-## SteamOS is based on Arch Linux, so why use Fedora as the base? 
+## SteamOS is based on Arch Linux, so why use Fedora Linux as the base? 
 
 SteamOS is based on Arch Linux, but the base packages and drivers get updates at a much slower pace than using vanilla Arch and updating yourself. Bazzite will follow Fedora's updates which means it will always be ahead of SteamOS in terms of newer software and drivers.  Also Fedora currently is the only Linux distribution that supports OCI custom images that this whole project is built around.  The end user typically shouldn't notice too much of a difference between Bazzite and SteamOS. 
 
