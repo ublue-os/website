@@ -127,7 +127,7 @@ Your system should automatically update when our new builds based on that new po
 
 ## Do I have to reboot after every system update or layering a package?
 
-No, but update won't apply until shutdown.  You can attempt to layer package(s) without rebooting with `rpm-ostree install --apply-live <package>` however sometimes this still requires a reboot depending on the package(s) you installed.
+No, but the upgrade won't apply until the next reboot and the package you layered to the image through `rpm-ostree` won't be there either.  You can attempt to layer package without rebooting with `rpm-ostree install --apply-live <package>` but sometimes this still requires a reboot depending on the package(s) you installed.
 
 ## How do I rollback a system update?
 
@@ -165,7 +165,7 @@ Open a host terminal and enter `rpm-ostree override remove <package>` and reboot
 
 However, if you installed a package via rpm-ostree and want to remove it from the image, then enter `rpm-ostree uninstall <package>` and reboot.  Unlike removing packages that came preinstalled with Bazzite, there isn't consequences to doing this.
 
-## SteamOS is based on Arch Linux, so why use Fedora as the base? 
+## SteamOS is based on Arch Linux, so why use Fedora Linux as the base? 
 
 SteamOS is based on Arch Linux, but the base packages and drivers get updates at a much slower pace than using vanilla Arch and updating yourself. Bazzite will follow Fedora's updates which means it will always be ahead of SteamOS in terms of newer software and drivers.  Also Fedora currently is the only Linux distribution that supports OCI custom images that this whole project is built around.  The end user typically shouldn't notice too much of a difference between Bazzite and SteamOS. 
 
@@ -175,14 +175,14 @@ Like SteamOS, Bazzite makes use of read-only root files for stability purposes.
 
 Bazzite is built off of desktop versions of Fedora built with [libostree](https://ostreedev.github.io/ostree/) which has advantages such as:
 
-* Automatic and atomic updates for system and applications.
-* Containerized applications which means dependency conflicts should not be a problem.
-* Overlay system packages to the host so they survive updates.
+* Atomic updates for system and applications.
+* Containerized applications that do not interfere with your host system.
+* Overlay RPM packages to the host that survive upgrades.
 * Smooth upgrade process from major Fedora point releases.
-* Very little risk of an unbootable or broken system.
-* Rollback system updates and pin your current deployment.
+* Low risk of an unbootable or broken system. 
+* Rollback system updates if necessary and the ability pin your current deployment as a backup "save state."
 
-Check out the [Universal Blue homepage](https://universal-blue.org) for more information.
+Check out [Fedora Silverblue](https://fedoraproject.org/silverblue/) and [Universal Blue homepage](https://universal-blue.org) for more information on what the libostree project is capable of.
 
 ## Is this another fringe distro?
 
@@ -205,7 +205,7 @@ You can also rebase to a stock Fedora imaged-based desktop image by entering in 
 
 ##  How similar is Bazzite to SteamOS on Steam Deck hardware?
 
-It should nearly be identical to the end user overall.  Bazzite Steam Deck images include the latest Gamescope which means we are always ahead of SteamOS in terms of Game Mode features.  The quick access menu (The **...** button that has scaling and framerate settings) is functional for TDP, framerate caps, etc.  Performance should be on par with SteamOS, and every game SteamOS plays should play well on Bazzite.
+It should nearly be identical to the end user overall.  Bazzite Steam Deck images include the latest Gamescope which means we are always ahead of SteamOS in terms of Game Mode features.  The quick access menu (The <kbd>...</kbd> button that has scaling and framerate settings) is functional for TDP, framerate caps, etc.  Performance should be on par with SteamOS, and every game SteamOS plays should play well on Bazzite.
 
 Third-party software like Decky Loader, Emudeck, RetroDeck, etc. work and can be installed from the Bazzite Portal, but certain tools like CryoUtilities does not work.  If you want the swap functionality from CryoUtilities, then you can switch to swap and adjust the size in the Bazzite Portal, but it's not recommended.  Desktop Mode still has access to all of the applications in Discover that SteamOS has.  The only missing feature that SteamOS has over Bazzite currently is HDR support, but this should change once Fedora supports it.
 
