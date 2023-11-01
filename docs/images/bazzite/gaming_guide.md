@@ -15,6 +15,8 @@ Most of the time, the average user will spend time in their `Home` directory, si
 
 Where is this `~/.var` mentioned above, and where is the Steam folder?  These are hidden directories. You can show hidden files by clicking the hamburger menu (3 horizontal lines near the top right of your file manager) and select "Show Hidden Files" to see every directory and file that is hidden by default.  They all start with a "." before it.
 
+If you have multiple drives, like a drive where you plan to play your video games from, you can mount it and set it up with KDE Partition Manager (KDE images) or GNOME Disks (GNOME images).
+
 ## Steam
 
 Steam can run Windows games on Linux.  It utilizes a wide range of projects like WINE, DXVK, VKD3D, and a bunch of patches all packed into a piece of software built-in to Steam called Proton.
@@ -81,13 +83,12 @@ Non-Steam games can have the prefix folder anywhere you specify, but by default 
 
 - Steam Workshop is the easiest way to obtain mods, but is not supported for every title and requires you to own the game on Steam.  
 - You can still add or replace files and directories, but there may be some extra steps on the Linux desktop.
-      - Some mods require a "WINE DLL OVERRIDE" environment variable like `WINEDLLOVERRIDES="dinput8=n,b" %command%` or something similar.
-            - If the game is on Steam, this can be accomplished with a launch option with the appropriate environment variable and adding `%command%` after it.
+- Some mods require a "WINE DLL OVERRIDE" environment variable like `WINEDLLOVERRIDES="dinput8=n,b" %command%` or something similar.
 - You can also play around with [Steam Tinker Launch](https://github.com/sonic2kk/steamtinkerlaunch) which can be installed via ProtonUp-Qt (for KDE images) or ProtonPlus (for GNOME images.)
 
 ## Extras
 
 * It is recommended to use ProtonUp-Qt or ProtonPlus (included on Bazzite) to update the latest [GE-Proton](https://github.com/GloriousEggroll/proton-ge-custom) and [Luxtorpeda](https://github.com/luxtorpeda-dev/luxtorpeda) for Steam.
-* You may want to use Protontricks for certain games that may require it.
-* You can install [pacman](https://archlinux.org/packages/) and [AUR](https://aur.archlinux.org/) packages inside of the `bazzite-arch` container on desktop images.
+* Some games require Protontricks (included) or Winetricks (for non-Steam games, included with Lutris) to function properly.
+* You can install [pacman](https://archlinux.org/packages/) and [AUR](https://aur.archlinux.org/) packages inside of the `bazzite-arch` container on AMD/Intel desktop images.
 * You can overlay [RPM](https://packages.fedoraproject.org/) packages to the host by using `rpm-ostree install <package>` in your host terminal **at your own risk.**
