@@ -28,23 +28,28 @@ A familiar(ish) Ubuntu desktop for Fedora Silverblue. It strives to cover these 
 
 For existing Silverblue/Kinoite users **AMD/Intel GPU users only**:
 
-!!! warning "Rebasing and Flatpaks
+!!! warning "Rebasing and Flatpaks"
 
     Bluefin will prompt you to modify your Flatpak remotes and will remove the Fedora remote. Cancel out of the first-run wizard if you want to leave your Flatpak configuration unchanged. 
 
 1. After you reboot you should [pin the working deployment](https://docs.fedoraproject.org/en-US/fedora-silverblue/faq/#_about_using_silverblue) so you can safely rollback.
+
 2. Open a terminal and rebase the OS to this image:
 
 Bluefin:
 
+!!! note "If you're rebasing from upstream Fedora"
+
+    You need to rebase to an unsigned image first since our signing key is not on Fedora's images
+
 ```bash
-sudo rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bluefin:38
+sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/ublue-os/bluefin:gts
 ```
 
-Bluefin Developer Experience:
+Then reboot and rebase to the signed image, this second step shouldn't take nearly as long: 
 
 ```bash
-sudo rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bluefin-dx:38
+sudo rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bluefin:gts
 ```
 
 **Nvidia GPU users only** 
@@ -57,12 +62,6 @@ sudo rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bluefin-dx:
     sudo rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bluefin-nvidia:38
     ```
 
-    Bluefin Developer Experience:
-
-    ```bash
-    sudo rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bluefin-dx-nvidia:38
-    ```  
-  
 2. Reboot the system and you're done!
 
 ### Revert
@@ -73,15 +72,15 @@ To revert back run:
   sudo rpm-ostree rebase fedora:fedora/38/x86_64/silverblue
   ```
 
-  Check the [Silverblue documentation](https://docs.fedoraproject.org/en-US/fedora-silverblue/) for instructions on how to use rpm-ostree.
+Check the [Silverblue documentation](https://docs.fedoraproject.org/en-US/fedora-silverblue/) for instructions on how to use rpm-ostree.
 
-  We build date tags as well, so if you want to rebase to a particular day's release you can use the version number and date to boot off of that specific image:
+We build date tags as well, so if you want to rebase to a particular day's release you can use the version number and date to boot off of that specific image:
   
   ```bash
   sudo rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bluefin:37-20230310
   ```
 
-The `latest` tag will automatically point to the latest build.
+The `latest` tag will automatically point to the latest build. The `gts` tag will default to the previous stable release and is the recommended default.
 
 ## Features
 
