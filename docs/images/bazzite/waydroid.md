@@ -3,6 +3,8 @@
 
     Nvidia images are not supported.
 
+![Waydroid](https://github.com/ublue-os/website/assets/121328689/606c2ff2-2c4a-466b-ad01-0d648e25a5f5)
+
 Open a host terminal and enter this command to setup Waydroid:
 
 ```bash
