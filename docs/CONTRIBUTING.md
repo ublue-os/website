@@ -133,7 +133,7 @@ Building locally is much faster than building in GitHub and is a good way to mov
 
 #### On the developer host
 
-- Add and entry for the container registry to your `/etc/hosts` file
+- Add an entry for the container registry to your `/etc/hosts` file
 
    ```ini
    # Container registry
