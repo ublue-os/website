@@ -111,7 +111,7 @@ Proceed with the installation.  This may take a long time to install and the pro
 
 ## First Boot Setup
 
-After logging in for the first time after installation a window will pop up saying "Welcome to Bazzite."  This is a utility that allows you to tailor Bazzite to your liking by configuring and pre-installing applications.  
+After booting up for the first time after installation, a window will pop up saying "Welcome to Bazzite."  This is a utility that allows you to tailor Bazzite to your liking by configuring it and pre-installing applications.  It is necessary that you complete this step after installation.  
 
 Click "Next" to begin configuring Bazzite.  Press the toggle switch button next to the item to have the option enabled or disabled for your installation, some are already toggled on by default.  If you want to adjust and customize any of the options, press the arrow next to the toggle switch button if available.
 
@@ -122,8 +122,7 @@ Login to Steam **(required for Steam Deck, HTPC, and Handheld PC images)**, and 
 !!! NOTE
 
     For users with Secure Boot enabled: 
-    
-Run `just enroll-secure-boot-key` in the host terminal and enter the password `ublue-os` if prompted to enroll the required key!
+    Run `just enroll-secure-boot-key` in the host terminal and enter the password `ublue-os` if prompted to enroll the required key!
 
 ## Game on!
 
