@@ -27,13 +27,14 @@ Bazzite is built from [ublue-os/main](https://github.com/ublue-os/main) and [ubl
 - Automated `duperemove` and `rmlint` services for reducing the disk space used by wine prefix contents.
 - Support for HDMI CEC via [libCEC](https://libcec.pulse-eight.com/).
 - [System76-Scheduler](https://github.com/pop-os/system76-scheduler) preinstalled, providing automatic process priority tweaks to your focused application and keeping CPU time for background processes to a minimum.
-- Customized System76-Scheduler config with additional rules and CFS parameters from [Linux-TKG](https://github.com/Frogging-Family/linux-tkg).
+- Customized System76-Scheduler config with additional rules.
 - Uses [Google's BBR TCP congestion control](https://github.com/google/bbr) by default.
 - [Input Remapper](https://github.com/sezanzeb/input-remapper) preinstalled and enabled. <sub><sup>(Available but default-disabled on the Deck variant)</sup></sub>
 - Bazzite Portal provides an easy way to install numerous applications and tweaks, including installing [CoreCtrl](https://gitlab.com/corectrl/corectrl) and [GreenWithEnvy](https://gitlab.com/leinardi/gwe).
 - [Nix](https://nixos.org/) package manager with [Fleek](https://getfleek.dev/) optionally available for install via Bazzite Portal.
 - [Brew](https://brew.sh/) package manager optionally available for install via Bazzite Portal.
 - [Waydroid](https://waydro.id/) preinstalled for running Android apps. Future releases will offer to set this up for you through Bazzite Portal. <sub><sup>(Not available on Nvidia builds)</sup></sub>
+- Manage applications using [Flatseal](https://github.com/tchx84/Flatseal), [Warehouse](https://github.com/flattool/warehouse), and [Gear Lever](https://github.com/mijorus/gearlever).
 - [OpenRGB](https://gitlab.com/CalcProgrammer1/OpenRGB) i2c-piix4 and i2c-nct6775 drivers for controlling RGB on certain motherboards.
 - [OpenRazer](https://openrazer.github.io) drivers built in, Select OpenRazer in Bazzite Portal or run `just install-openrazer` in a terminal to begin using it.
 - [OpenTabletDriver](https://opentabletdriver.net/) udev rules built in, with the full software suite installable via Bazzite Portal or by running `just install-opentabletdriver` in a terminal.
@@ -160,13 +161,13 @@ Check out the [FAQ](https://universal-blue.org/images/bazzite/FAQ/) for other to
 
 ## Showcase
 
-![KDE Vapor Theme](https://github.com/ublue-os/website/assets/121328689/24d8f60d-7610-4f00-a7cc-1d6868f0902c)
-![KDE VGUI2 Theme](https://github.com/ublue-os/website/assets/121328689/babbbee0-658c-42d8-9f12-e89e84bdcf6e)
-![Steam Game Mode](https://github.com/ublue-os/website/assets/121328689/4084a52a-b7c9-4ec7-a27f-87a6104b4dea)
-![Waydroid](https://github.com/ublue-os/website/assets/121328689/11f29b2f-af00-420e-9cf0-1ff16be2f275)
-![Distrobox Terminals](https://github.com/ublue-os/website/assets/121328689/58024aa1-b632-4bf9-9201-1e2218868e19)
-![GNOME Vapor Theme](https://github.com/ublue-os/website/assets/121328689/985c1707-8e37-4e54-ae02-2258ef536ebc)
-![GNOME VGUI2 Theme](https://github.com/ublue-os/website/assets/121328689/d457780a-df3f-4036-864b-2080b30145e1)
+![KDE Vapor Theme](/repo_content/desktop1.png?raw=true "KDE Vapor Theme")
+![KDE VGUI2 Theme](/repo_content/desktop2.png?raw=true "KDE VGUI2 Theme")
+![Steam Game Mode](/repo_content/gamemode.png?raw=true "Steam Game Mode")
+![Waydroid](/repo_content/waydroid.png?raw=true "Waydroid")
+![Distrobox Terminals](/repo_content/distrobox.png?raw=true "Distrobox Terminals")
+![GNOME Vapor Theme](/repo_content/gnome1.png?raw=true "GNOME Vapor Theme")
+![GNOME VGUI2 Theme](/repo_content/gnome2.png?raw=true "GNOME VGUI2 Theme")
 
 Check out our [newsletters](https://universal-blue.org/blog/category/bazzite/) that get published on a regular basis for updates on the project.
 
@@ -181,7 +182,8 @@ Ported SteamOS and ChimeraOS packages, among others used by Bazzite, are built o
 |duperemove|![Build Status](https://copr.fedorainfracloud.org/coprs/kylegospo/bazzite/package/duperemove/status_image/last_build.png?)|
 |[extest](https://github.com/Supreeeme/extest)|![Build Status](https://copr.fedorainfracloud.org/coprs/kylegospo/bazzite-multilib/package/extest/status_image/last_build.png?)|
 |gamescope|![Build Status](https://copr.fedorainfracloud.org/coprs/kylegospo/bazzite-multilib/package/gamescope/status_image/last_build.png?)|
-|[gamescope-session](https://github.com/ChimeraOS/gamescope-session)|![Build Status](https://copr.fedorainfracloud.org/coprs/kylegospo/bazzite/package/gamescope-session/status_image/last_build.png?)|
+|[gamescope-session-plus](https://github.com/ChimeraOS/gamescope-session)|![Build Status](https://copr.fedorainfracloud.org/coprs/kylegospo/bazzite/package/gamescope-session-plus/status_image/last_build.png?)|
+|[gamescope-session-steam](https://github.com/ChimeraOS/gamescope-session-steam)|![Build Status](https://copr.fedorainfracloud.org/coprs/kylegospo/bazzite/package/gamescope-session-steam/status_image/last_build.png?)|
 |[gnome-randr-rust](https://github.com/maxwellainatchi/gnome-randr-rust)|![Build Status](https://copr.fedorainfracloud.org/coprs/kylegospo/bazzite/package/gnome-randr-rust/status_image/last_build.png?)|
 |gnome-shell-extension-bazzite-menu|![Build Status](https://copr.fedorainfracloud.org/coprs/kylegospo/bazzite/package/gnome-shell-extension-bazzite-menu/status_image/last_build.png?)|
 |[gnome-shell-extension-caribou-blocker](https://extensions.gnome.org/extension/1326/block-caribou/)|![Build Status](https://copr.fedorainfracloud.org/coprs/kylegospo/bazzite/package/gnome-shell-extension-caribou-blocker/status_image/last_build.png?)|
