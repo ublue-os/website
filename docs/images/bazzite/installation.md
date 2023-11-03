@@ -24,13 +24,13 @@ Installation tutorial begins at [1:37](https://youtu.be/aaeRk8_i1Ds?feature=shar
 ## Pre-Requisites
 
 * Make sure you meet the [system requirements](https://docs.fedoraproject.org/en-US/fedora/latest/release-notes/welcome/Hardware_Overview/) for Fedora Linux.
-* A graphics card that can utilize Vulkan 1.3 or later, but most modern AMD, Nvidia, and Intel GPUs should be fine.
+* A graphics card that can utilize Vulkan 1.3 or later.  Most modern AMD, Nvidia, and Intel GPUs should be fine.
 * The drive that Bazzite is installed to must have at least 32GB unallocated drive space.
-* A USB flash drive, external drive, or microSD card with at least 4GB of free space on it. **(Keep in mind this will remove existing data on it!)**
+* A USB flash drive, external drive, or microSD card with at least 5GB of free space on it. **(This will remove existing data on it!)**
 * A working and stable wired or wireless internet connection.
-* Download an ISO release [here.](https://github.com/ublue-os/bazzite/releases)
+* Download the latest ISO release [here](https://github.com/ublue-os/bazzite/releases).
 * Software to flash the image to your flash drive, external drive, or microSD card.  We recommend using [Fedora Media Writer,](https://www.fedoraproject.org/en/workstation/download/) [Balena Etcher,](https://etcher.balena.io/) or [Rufus.](https://rufus.ie/en/) **Ventoy is unsupported.**
-* Bazzite requires a physical wired keyboard to install properly on a Steam Deck.
+* Bazzite requires a physical wired keyboard to install properly.
 * Manual partitioning is unsupported.
 * See [Fedora Kinoite documentation](https://docs.fedoraproject.org/en-US/fedora-kinoite/installation/) and [Fedora Silverblue documentation](https://docs.fedoraproject.org/en-US/fedora-silverblue/installation/) for more information.
 
@@ -80,7 +80,7 @@ There are also images specific to specialized hardware like **bazzite-framework*
 - KDE Plasma's default interface has a traditional and familiar layout.
 - Highly customizable.
 - Uses Qt for GUI.
-- Fedora Kinoite & SteamOS uses KDE Plasma.
+- Fedora Kinoite & SteamOS use KDE Plasma.
 
 ### GNOME
 
@@ -90,7 +90,7 @@ There are also images specific to specialized hardware like **bazzite-framework*
 - GNOME's default interface has an elegant and touch-friendly layout.
 - Workflow is designed to be out of the user's way.
 - Uses GTK (GNOME Toolkit) for GUI.
-- Fedora Workstation & Fedora Silverblue use GNOME.
+- Fedora Silverblue & Ubuntu use GNOME.
 
 ## Installing Bazzite
 
@@ -101,7 +101,7 @@ After selecting the image the installation setup screen should come up:
 * Select your language, region, keyboard layout, and time zone.
 * Select your network. (**You need to be connected to internet for this to install properly!**)
 * Select/Add the drive you would like to install Bazzite to.  (**This will delete all of the data on the drive!**)
-        * **WARNING:  Make sure to only check the drive you plan to install Bazzite too since all of your drive might be selected!**
+* Make sure to only check the drive you plan to install Bazzite since all of your drives might be selected including microSD!
 * Optionally encrypt the drive with a password if you wish.  (**If you lose this password, you will not be able to decrypt your drive!**)
 * Setup a user account and **optionally** a root account, and begin the installation.
 
@@ -126,9 +126,9 @@ Login to Steam **(required for Steam Deck, HTPC, and Handheld PC images)**, and 
 
 ## Game on!
 
-You have installed Bazzite!  
+**You have installed Bazzite!**
 
-If you need any additional applications check out the software center that comes preinstalled.  Look for the shopping bag icon called either Discover or GNOME Software depending on which variant of Bazzite you have installed. If you wish to see what software is in the store before installing, or when you're off of your device, click [here.](https://flathub.org/apps/collection/popular/1)
+If you need any additional applications check out the software center that comes preinstalled.  Look for the shopping bag icon called either Discover or GNOME Software depending on which variant of Bazzite you have installed.  Check out the most [popular software](https://flathub.org/apps/collection/popular/1) available to install.
 
 ## Linux Gaming Guide
 
@@ -140,4 +140,4 @@ Check out the [Waydroid setup guide](/images/bazzite/waydroid) for Android suppo
 
 ## Frequently Asked Questions
 
-Check out the Bazzite [FAQ](/images/bazzite/FAQ).
+Check out the [Bazzite FAQ](/images/bazzite/FAQ).
