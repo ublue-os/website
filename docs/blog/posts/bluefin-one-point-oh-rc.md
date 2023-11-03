@@ -22,7 +22,7 @@ Bluefin is an interpretation of the Ubuntu spirit built with Fedora technology. 
  
 **A good internet connection is required.**
 
-## [bluefin-38-2023-10-23-x86_64.iso](https://ublue.download/bluefin-38-2023-10-23-x86_64-rc.iso)
+## [bluefin-38-2023-10-27-x86_64.iso](https://ublue.download/bluefin-38-2023-10-27-x86_64-rc.iso)
 
 ### Instructions
 
