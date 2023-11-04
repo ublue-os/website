@@ -51,7 +51,7 @@ If you do not have multiple drives, then there is an advanced method that requir
 8. Should have both OSes on the same drive
 
 ## I am having issues installing Bazzite on my hardware! What's going on?
-OCI images are very new and the Fedora installer, Anaconda, has some issues with this.  If you have skills in [Lorax](https://weldr.io/lorax/f28-branch/lorax.html) and the [Anaconda installer](https://www.fedoraproject.org/wiki/Anaconda), please help by contributing!  We are at a crossroads here because this is one of the most difficult hurdles that Bazzite and the Universal Blue project face.  We are essentially dependent on upstream to resolve the issues.
+OCI images are very new and the Fedora installer, Anaconda, has some issues with this.  If you have skills in [Lorax](https://weldr.io/lorax/f28-branch/lorax.html) and the [Anaconda installer](https://www.fedoraproject.org/wiki/Anaconda), please help by contributing!  We are at a crossroads here because this is one of the most difficult hurdles that Bazzite and the Universal Blue project face.  We are dependent on upstream to resolve the issues currently.
 
 **Here are the main installer issues and their workarounds:**
 
@@ -68,8 +68,11 @@ This is currently a known [issue](https://github.com/ublue-os/bazzite/issues/109
       - The image will be signed during Bazzite Portal completion.
 
 **Other methods that may work:**
+
 - Remove the `rd.live.check` line from the boot parameters in grub. Press <kbd>E</kbd> on a physical keyboard when you see the boot option.  After removing that line, press <kbd>CTRL</kbd>+<kbd>X</kbd> to save.  It should boot now, and this line skipped the media verification which is the default behavior in the installer.
+
 - Installing with basic graphics mode in the installer
+
 - [Advanced guide](https://sharing.io/deck.html) that is very command-line heavy to install Bazzite.
 
 Keep in mind we do **not** support booting using Ventoy.
