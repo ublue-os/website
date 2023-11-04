@@ -54,7 +54,9 @@ When you boot into the installer, you will be presented a list of Bazzite images
 - These images also come with the choice of [KDE Plasma](https://kde.org/plasma-desktop/) or [GNOME](https://www.gnome.org/) for their desktop environments.
    
 ### Common images:
-![image](https://github.com/nicknamenamenick/bazzite/assets/121328689/6d52a35b-ec89-4180-8940-173ce37a6200)
+
+![image](https://github.com/nicknamenamenick/website/assets/121328689/6ed9e4fd-0088-4f79-8f56-98b32ef3749b)
+
 
 * **bazzite** is the AMD/Intel GPU general desktop image intended for most personal computers.
 
@@ -74,8 +76,7 @@ There are also images specific to specialized hardware like **bazzite-framework*
 
 ### KDE Plasma
 
-![image](https://github.com/nicknamenamenick/bazzite/assets/121328689/afd257bd-1a66-48d2-980c-dc7ef6614d47)
-
+![image](https://github.com/nicknamenamenick/website/assets/121328689/094fdb77-50d6-4705-81f7-b8cc6a049348)
 
 - KDE Plasma's default interface has a traditional and familiar layout.
 - Highly customizable.
