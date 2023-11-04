@@ -60,11 +60,12 @@ OCI images are very new and the Fedora installer, Anaconda, has some issues with
 This is currently a known [issue](https://github.com/ublue-os/bazzite/issues/109).  There is a [workaround](https://github.com/ublue-os/bazzite/issues/109#issuecomment-1691090533) that requires either the stock [Fedora Silverblue](https://fedoraproject.org/silverblue/) or [Fedora Kinoite](https://fedoraproject.org/kinoite/) ISO and rebase to Bazzite from the terminal after installation.  The installer is the same one we use for Bazzite, and all of the data from the installer will carry over to Bazzite.
 
 **Rebasing from stock Fedora Silverblue or Fedora Kinoite image method**:
-- Download and install either Fedora Kinoite (KDE Plasma) or Fedora Silverblue (GNOME).
-- When you get to the desktop, open the terminal and enter the rebase command to an unsigned image.
-- See the Bazzite [README](https://github.com/ublue-os/bazzite#readme) to see the rebase commands for each image.
-- When it has finished, reboot your PC and you should now be on the Bazzite image you chose.
-- The image will be signed during Bazzite Portal completion.
+
+      - Download and install either Fedora Kinoite (KDE Plasma) or Fedora Silverblue (GNOME).
+      - When you get to the desktop, open the terminal and enter the rebase command to an unsigned image.
+      - See the Bazzite [README](https://github.com/ublue-os/bazzite#readme) to see the rebase commands for each image.
+      - When it has finished, reboot your PC and you should now be on the Bazzite image you chose.
+      - The image will be signed during Bazzite Portal completion.
 
 **Other methods that may work:**
 - Remove the `rd.live.check` line from the boot parameters in grub. Press <kbd>E</kbd> on a physical keyboard when you see the boot option.  After removing that line, press <kbd>CTRL</kbd>+<kbd>X</kbd> to save.  It should boot now, and this line skipped the media verification which is the default behavior in the installer.
