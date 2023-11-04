@@ -63,7 +63,7 @@ This is currently a known [issue](https://github.com/ublue-os/bazzite/issues/109
 - Download and install either Fedora Kinoite (KDE Plasma) or Fedora Silverblue (GNOME).
 - When you get to the desktop, open the terminal and enter the rebase command to an unsigned image.
 - See the Bazzite [README](https://github.com/ublue-os/bazzite#readme) to see the rebase commands for each image.
-- - When it has finished, reboot your PC and you should now be on the Bazzite image you chose.
+- When it has finished, reboot your PC and you should now be on the Bazzite image you chose.
 - The image will be signed during Bazzite Portal completion.
 
 **Other methods that may work:**
