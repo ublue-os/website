@@ -55,21 +55,29 @@ OCI images are very new and the Fedora installer, Anaconda, has some issues with
 
 **Here are the main installer issues and their workarounds:**
 
-### Black screen on boot and there are no logs
-Remove the `rd.live.check` line from the boot parameters in grub. Press <kbd>E</kbd> on a physical keyboard when you see the boot option.  After removing that line, press <kbd>CTRL</kbd>+<kbd>X</kbd> to save.  It should boot now, and this line skipped the media verification which is the default behavior in the installer.
+### Blank screen on boot
 
-### Black screen with "dracut" mentioned in the logs
-This is currently a known [issue](https://github.com/ublue-os/bazzite/issues/109).  There is a [workaround](https://github.com/ublue-os/bazzite/issues/109#issuecomment-1691090533) that requires either the stock Fedora Silverblue or Fedora Kinoite ISO and rebasing to Bazzite from there after installation.  
-!!! warning
+This is currently a known [issue](https://github.com/ublue-os/bazzite/issues/109).  There is a [workaround](https://github.com/ublue-os/bazzite/issues/109#issuecomment-1691090533) that requires either the stock [Fedora Silverblue](https://fedoraproject.org/silverblue/) or [Fedora Kinoite](https://fedoraproject.org/kinoite/) ISO and rebase to Bazzite from the terminal after installation.  The installer is the same one we use for Bazzite, and all of the data from the installer will carry over to Bazzite.
 
-    Keep in mind that the Steam Deck will not scale properly with the installer, and the buttons on the bottom of the screen will be cut off.  This will require the use of the <kbd>TAB</kbd> key on your keyboard to navigate the installer blindly.
+**Rebasing from stock Fedora Silverblue or Fedora Kinoite image method**:
+- Download and install either Fedora Kinoite (KDE Plasma) or Fedora Silverblue (GNOME).
+- When you get to the desktop, open the terminal and enter the rebase command to an unsigned image.
+- See the Bazzite [README](https://github.com/ublue-os/bazzite#readme) to see the rebase commands for each image.
+- - When it has finished, reboot your PC and you should now be on the Bazzite image you chose.
+- The image will be signed during Bazzite Portal completion.
 
-There is also two other **alternative** methods that may work:  
-Installing with basic graphics mode in the installer or using this [advanced guide](https://sharing.io/deck.html) that is very command-line heavy.
+**Other methods that may work:**
+- Remove the `rd.live.check` line from the boot parameters in grub. Press <kbd>E</kbd> on a physical keyboard when you see the boot option.  After removing that line, press <kbd>CTRL</kbd>+<kbd>X</kbd> to save.  It should boot now, and this line skipped the media verification which is the default behavior in the installer.
+- Installing with basic graphics mode in the installer
+- [Advanced guide](https://sharing.io/deck.html) that is very command-line heavy to install Bazzite.
 
 Keep in mind we do **not** support booting using Ventoy.
 
-### Error occured while installing the payload
+!!! warning
+
+    Keep in mind that the Steam Deck will not scale properly with the stock Fedora Silverblue/Kinoite installer, and the buttons on the bottom of the screen will be cut off.  This will require the use of the <kbd>TAB</kbd> key on your keyboard to navigate the installer blindly.
+
+### Error occured while installing the payload (Installer GUI Error)
 Make sure you are connected to the internet if you are using an online ISO.  If you are, and there is still an issue, there might be an issue with your network adapter and Linux.  It is recommended to use a wired connection if you can, especially if this occurs after connecting to a wireless network.
 
 ## What image do I use?
