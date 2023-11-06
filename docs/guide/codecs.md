@@ -57,3 +57,11 @@ flatpak list --runtime | grep ffmpeg-full
 ```
 
 This command should return the version(s) of the runtime that you installed.
+
+To check what runtime version a certain program is currently running (i.e Firefox), enter in a terminal:
+
+```bash
+flatpak info org.mozilla.firefox | grep Runtime
+```
+
+Ensure that you also get the ffmpeg-full version returned by the previous command.
