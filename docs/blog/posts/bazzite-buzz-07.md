@@ -18,7 +18,7 @@ links:
 
 <p style="text-align: center; font-weight: 600; color: red">ATTENTION:</p>
 
-If you tested the Fedora 39 builds of Bazzite early, then you need to rebase back to `:latest` because `:39` will be unsupported eventually.
+If you tested the Fedora 39 builds of Bazzite early, then you need to rebase back to `:latest` to be updated to future Bazzite versions.
 <hr>
 
 ![20](https://github.com/ublue-os/website/assets/121328689/d279494f-86c2-479e-a2b9-efd69f0783e6)
@@ -99,7 +99,7 @@ We would like to thank our community for helping the project grow into what it i
 - Bazzite has now upgraded from Fedora 38 to Fedora 39, here are the major changes:
     - GNOME is now on version 45
         - Check out all the major changes [here](https://release.gnome.org/45/).
-    - Newer base packages including new kernel.
+    - Newer base packages.
     - Performance improvements.
     - Colored Bash prompt.
     - [Full changelog for Fedora 39](https://www.fedoraproject.org/wiki/Releases/39/ChangeSet)
