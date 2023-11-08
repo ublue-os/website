@@ -18,7 +18,7 @@ links:
 
 <p style="text-align: center; font-weight: 600; color: red">ATTENTION:</p>
 
-YOU MAY BE STUCK ON FEDORA 38 BUILDS IF THE INSTALLER INSTALLED A `:38` IMAGE AND NOT A `:latest` IMAGE!  If you are unsure and feel like you are not up to date, open a host terminal and enter `rpm-ostree status`.  If it says that your deployment is on `:38` then you need to follow these instructions!
+If you installed Bazzite previously with the older ISOs then **YOU MAY BE STUCK ON FEDORA 38 BUILDS IF THE INSTALLER INSTALLED A `:38` IMAGE AND NOT A `:latest` IMAGE!**  If you are unsure and feel like you are not up to date, open a host terminal and enter `rpm-ostree status`.  If it says that your deployment is on `:38` then you need to follow these instructions!
 
 Open a host terminal and enter the command below for the image you're using.
 
@@ -29,13 +29,16 @@ Open a host terminal and enter the command below for the image you're using.
 - Bazzite Steam Deck/HTPC/Handheld PC: `rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bazzite-deck:latest`
 - Bazzite Steam Deck/HTPC/Handheld PC GNOME: `rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bazzite-deck-gnome:latest`
 
-For specific images that relate to hardware (Framework, Microsoft Surface, ASUS, etc.) see the [full image list](https://universal-blue.org/images/#latest) and make sure to select "latest" is selected.
+For specific images that relate to hardware (Framework, Microsoft Surface, ASUS, etc.) see the [full image list](https://universal-blue.org/images/#latest) and make sure "latest" is selected.
 
 After you enter the command, wait for it to finish (this will take a while), and reboot.  You should now get the latest updates for Bazzite.  
 
 We apologize for the inconvenience if you had to rebase, but you will NOT lose userdata rebasing to the `:latest` branch of the current image that you are on.
 
 If you tested the Fedora 39 builds of Bazzite early, then you need to rebase back to `:latest` to be updated to future Bazzite versions as well.
+
+Also desktop portal issues are happening currently: `systemctl restart --user xdg-desktop-portal` if you experience issues with the file picker.
+
 <hr>
 
 ![20](https://github.com/ublue-os/website/assets/121328689/d279494f-86c2-479e-a2b9-efd69f0783e6)
