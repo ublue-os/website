@@ -22,7 +22,7 @@ links:
 
 <p style="text-align: center; font-weight: 600; color: red">ATTENTION:</p>
 
-YOU MAY BE STUCK ON FEDORA 38 BUILDS IF THE INSTALLER INSTALLED A `:38` IMAGE AND NOT A `:latest` IMAGE!  If you are unsure and feel like you are not up to date, open a host terminal and enter `rpm-ostree status`.  If it says that your deployment is on `:38` then you need to follow these instructions!
+If you installed Bazzite previously with the older ISOs then **YOU MAY BE STUCK ON FEDORA 38 BUILDS IF THE INSTALLER INSTALLED A `:38` IMAGE AND NOT A `:latest` IMAGE!**  If you are unsure and feel like you are not up to date, open a host terminal and enter `rpm-ostree status`.  If it says that your deployment is on `:38` then you need to follow these instructions!
 
 Open a host terminal and enter the command below for the image you're using.
 
@@ -40,6 +40,9 @@ After you enter the command, wait for it to finish (this will take a while), and
 We apologize for the inconvenience if you had to rebase, but you will NOT lose userdata rebasing to the `:latest` branch of the current image that you are on.
 
 If you tested the Fedora 39 builds of Bazzite early, then you need to rebase back to `:latest` to be updated to future Bazzite versions as well.
+
+Also desktop portal issues are happening currently: `systemctl restart --user xdg-desktop-portal` if you experience issues with the file picker.
+
 <hr>
 
 It has been nearly 3 months later since releasing Bazzite to the public, and since then the team and the community has added tons of new features, enhancements, and bug fixes to the images. 
