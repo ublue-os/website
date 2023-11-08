@@ -31,7 +31,7 @@ For specific images that relate to hardware (Framework, Microsoft Surface, ASUS,
 
 After you enter the command, wait for it to finish (this will take a while), and reboot.  You should now get the latest updates for Bazzite.  
 
-We apologize for the inconvenience if you had to rebase, you will NOT lose userdata rebasing to the `:latest` branch of the current image that you are on.
+We apologize for the inconvenience if you had to rebase, and you will NOT lose userdata rebasing to the `:latest` branch of the current image that you are on.
 
 If you tested the Fedora 39 builds of Bazzite early, then you need to rebase back to `:latest` to be updated to future Bazzite versions as well.
 <hr>
