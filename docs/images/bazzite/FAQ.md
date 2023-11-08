@@ -51,15 +51,15 @@ If you do not have multiple drives, then there is an advanced method that requir
 8. Should have both OSes on the same drive
 
 ## I am having issues installing Bazzite on my hardware! What's going on?
-OCI images are very new and the Fedora installer, Anaconda, has some issues with this.  If you have skills in [Lorax](https://weldr.io/lorax/f28-branch/lorax.html) and the [Anaconda installer](https://www.fedoraproject.org/wiki/Anaconda), please help by contributing!  We are at a crossroads here because this is one of the most difficult hurdles that Bazzite and the Universal Blue project face.  We are dependent on upstream to resolve the issues currently.
+OCI images are very new and the Fedora installer, Anaconda, has some issues with this.  If you have skills in [Lorax](https://weldr.io/lorax/f28-branch/lorax.html) and the [Anaconda installer](https://www.fedoraproject.org/wiki/Anaconda), please help by contributing!  This is one of the most difficult hurdles that Bazzite and the Universal Blue project face.  We are dependent on upstream to resolve the issues currently.
 
 **Here are the main installer issues and their workarounds:**
 
 ### Blank screen on boot
 
-This is currently a known [issue](https://github.com/ublue-os/bazzite/issues/109).  There is a [workaround](https://github.com/ublue-os/bazzite/issues/109#issuecomment-1691090533) that requires either the stock [Fedora Silverblue](https://fedoraproject.org/silverblue/) or [Fedora Kinoite](https://fedoraproject.org/kinoite/) ISO and rebase to Bazzite from the terminal after installation.  The installer is the same one we use for Bazzite, and all of the data from the installer will carry over to Bazzite.
+This is currently a known [issue](https://github.com/ublue-os/bazzite/issues/109).  There is a [workaround](https://github.com/ublue-os/bazzite/issues/109#issuecomment-1691090533) that requires either the stock [Fedora Kinoite](https://fedoraproject.org/kinoite/) ISO and rebase to Bazzite from the terminal after installation.  The installer is the same one we use for Bazzite, and all of the data from the installer will carry over to Bazzite.
 
-**Rebasing from stock Fedora Silverblue or Fedora Kinoite image method**:
+**Rebasing from stock Fedora Kinoite image method**:
 
       - Download and install either Fedora Kinoite (KDE Plasma) or Fedora Silverblue (GNOME).
       - When you get to the desktop, open the terminal and enter the rebase command to an unsigned image.
@@ -82,7 +82,7 @@ Keep in mind we do **not** support booting using Ventoy.
     Keep in mind that the Steam Deck will not scale properly with the stock Fedora Silverblue/Kinoite installer, and the buttons on the bottom of the screen will be cut off.  This will require the use of the <kbd>TAB</kbd> key on your keyboard to navigate the installer blindly.
 
 ### Error occured while installing the payload (Installer GUI Error)
-Make sure you are connected to the internet if you are using an online ISO.  If you are, and there is still an issue, there might be an issue with your network adapter and Linux.  It is recommended to use a wired connection if you can, especially if this occurs after connecting to a wireless network.
+Make sure you are connected to the internet if you are using an online ISO.  If you are, and there is still an issue, there might be an issue with your network adapter and Linux.  It is recommended to use a wired connection if you can, especially if this occurs after connecting to a wireless network.  If you are confident that the connection is stable and your network adapter works on Linux, then try the Fedora Kinoite rebase method above.
 
 ## What image do I use?
 Images are split up between **2 types of images**: 
@@ -189,7 +189,8 @@ You can rollback in the GRUB menu by choosing the previous boot entry. Your pers
 
 You can pin your current deployment with `sudo ostree admin pin 0` in a host terminal for a backup save state of your current deployment.  
 
-**For advanced users**: We also offer specific builds from the last 90 days that you can rebase to, but you will have to rebase back to `:latest` once you want to upgrade.
+**For advanced users**: We also offer specific builds from the last 90 days that you can rebase to, but you will have to rebase back to `:latest` once you want to upgrade.  If you want to rollback within the 90 days of builds to a specific build, enter: `rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bazzite-deck:YEARMONTHDAY` (ex:20231031) for October 31, 2023.
+
 Read Fedora's official [documentation](https://docs.fedoraproject.org/en-US/fedora-silverblue/updates-upgrades-rollbacks/#rolling-back) on the topic of rolling back.
 
 ## How do I disable automatic updates for system, Flatpaks, and Distrobox containers?
