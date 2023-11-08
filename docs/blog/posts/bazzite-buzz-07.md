@@ -1,5 +1,5 @@
 ---
-date: 2023-11-07
+date: 2023-11-08
 comments: true
 authors: 
   - nicknamenamenick
@@ -7,7 +7,7 @@ categories:
   - bazzite
 links:
   - Bazzite Commits: https://github.com/ublue-os/bazzite/commits/main
-  - Bazzite 2.0: https://universal-blue.org/blog/2023/11/07/bazzite-20/
+  - Bazzite 2.0: https://universal-blue.org/blog/2023/11/08/bazzite-20/
 ---
 
 # Bazzite Buzz #7: Fedora 39 Builds Out Now
