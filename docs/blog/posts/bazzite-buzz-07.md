@@ -18,7 +18,22 @@ links:
 
 <p style="text-align: center; font-weight: 600; color: red">ATTENTION:</p>
 
-If you tested the Fedora 39 builds of Bazzite early, then you need to rebase back to `:latest` to be updated to future Bazzite versions.
+YOU MAY BE STUCK ON FEDORA 38 BUILDS IF THE INSTALLER INSTALLED A `:38` IMAGE AND NOT A `:latest` IMAGE!  Open a host terminal and enter the command below for the image you're using.
+
+Bazzite AMD/Intel Desktop: `rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bazzite:latest`
+Bazzite Nvidia Desktop: `rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bazzite-nvidia:latest`
+Bazzite AMD/Intel Desktop GNOME: `rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bazzite-gnome:latest`
+Bazzite Nvidia Desktop GNOME: `rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bazzite-gnome-nvidia:latest`
+Bazzite Steam Deck/HTPC/Handheld PC: `rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bazzite-deck:latest`
+Bazzite Steam Deck/HTPC/Handheld PC GNOME: `rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bazzite-deck-gnome:latest`
+
+For specific images that relate to hardware (Framework, Microsoft Surface, ASUS, etc.) see the [full image list](https://universal-blue.org/images/#latest) and make sure to select the "latest" option.
+
+After you enter the command, wait for it to finish (this will take a while), and reboot.  You should now get the latest updates for Bazzite.  
+
+We apologize for the inconvenience if you had to rebase, you will NOT lose userdata rebasing to the `:latest` branch of the current image that you are on.
+
+If you tested the Fedora 39 builds of Bazzite early, then you need to rebase back to `:latest` to be updated to future Bazzite versions as well.
 <hr>
 
 ![20](https://github.com/ublue-os/website/assets/121328689/d279494f-86c2-479e-a2b9-efd69f0783e6)
@@ -39,7 +54,9 @@ Today's newsletter focuses primarily on the state of Bazzite today and some new 
 
 Bazzite has upgraded from Fedora 38 to Fedora 39 recently.  This means all of the changes from Fedora Linux 39 will already be in Bazzite once you update to the latest build.  
 
-The highlights of this release are mostly tied to performance, package upgrades, and for those using GNOME images, it is now upgraded to version 45.  The upgrade is automatically done through an update on desktop images and will be there when you reboot.  The Steam Deck centric images, the images with Game Mode, will require you to update in Game Mode.  Of course, you can open the terminal and enter `ublue-update` and `rpm-ostree update` to update through the terminal if you prefer to upgrade immediately.
+The highlights of this release are mostly tied to performance, package upgrades, and for those using GNOME images, it is now upgraded to version 45.  
+
+The upgrade is automatically done through an update on desktop images and will be there when you reboot.  The Steam Deck centric images, the images with Game Mode, will require you to update in Game Mode.  Of course, you can open the terminal and enter `ublue-update` and `rpm-ostree update` to update through the terminal if you prefer to upgrade immediately.  Although there has been inconsistent reports of users stuck on Fedora 38 builds.  Please refer to the top of the newsletter to fix that.
 
 
 ## Lenovo Legion Go Support
