@@ -22,7 +22,9 @@ links:
 
 <p style="text-align: center; font-weight: 600; color: red">ATTENTION:</p>
 
-YOU MAY BE STUCK ON FEDORA 38 BUILDS IF THE INSTALLER INSTALLED A `:38` IMAGE AND NOT A `:latest` IMAGE!  Open a host terminal and enter the command below for the image you're using.
+YOU MAY BE STUCK ON FEDORA 38 BUILDS IF THE INSTALLER INSTALLED A `:38` IMAGE AND NOT A `:latest` IMAGE!  If you are unsure and feel like you are not up to date, open a host terminal and enter `rpm-ostree status`.  If it says that your deployment is on `:38` then you need to follow these instructions!
+
+Open a host terminal and enter the command below for the image you're using.
 
 - Bazzite AMD/Intel Desktop: `rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bazzite:latest`  
 - Bazzite Nvidia Desktop: `rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bazzite-nvidia:latest`  
