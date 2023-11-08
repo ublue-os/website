@@ -20,14 +20,14 @@ links:
 
 YOU MAY BE STUCK ON FEDORA 38 BUILDS IF THE INSTALLER INSTALLED A `:38` IMAGE AND NOT A `:latest` IMAGE!  Open a host terminal and enter the command below for the image you're using.
 
-Bazzite AMD/Intel Desktop: `rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bazzite:latest`
-Bazzite Nvidia Desktop: `rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bazzite-nvidia:latest`
-Bazzite AMD/Intel Desktop GNOME: `rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bazzite-gnome:latest`
-Bazzite Nvidia Desktop GNOME: `rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bazzite-gnome-nvidia:latest`
-Bazzite Steam Deck/HTPC/Handheld PC: `rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bazzite-deck:latest`
-Bazzite Steam Deck/HTPC/Handheld PC GNOME: `rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bazzite-deck-gnome:latest`
+- Bazzite AMD/Intel Desktop: `rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bazzite:latest`  
+- Bazzite Nvidia Desktop: `rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bazzite-nvidia:latest`  
+- Bazzite AMD/Intel Desktop GNOME: `rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bazzite-gnome:latest`
+- Bazzite Nvidia Desktop GNOME: `rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bazzite-gnome-nvidia:latest`
+- Bazzite Steam Deck/HTPC/Handheld PC: `rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bazzite-deck:latest`
+- Bazzite Steam Deck/HTPC/Handheld PC GNOME: `rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bazzite-deck-gnome:latest`
 
-For specific images that relate to hardware (Framework, Microsoft Surface, ASUS, etc.) see the [full image list](https://universal-blue.org/images/#latest) and make sure to select the "latest" option.
+For specific images that relate to hardware (Framework, Microsoft Surface, ASUS, etc.) see the [full image list](https://universal-blue.org/images/#latest) and make sure to select "latest" is selected.
 
 After you enter the command, wait for it to finish (this will take a while), and reboot.  You should now get the latest updates for Bazzite.  
 
