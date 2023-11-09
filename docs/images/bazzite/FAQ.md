@@ -314,6 +314,16 @@ Save the file.  Steam should now launch.
 
 Read more about this issue [here](https://github.com/ValveSoftware/steam-for-linux/issues/9940).
 
+## Bluetooth controller not connecting
+
+Currently a [known issue](https://github.com/ublue-os/bazzite/issues/456#issuecomment-1778188420).  Open a host terminal and enter these commands:   
+
+1. `ls -l /sys/class/bluetooth` 
+2. Spit results here: `sudo chmod 755 [results from first command]`
+3. Restart the bluetooth service: `sudo systemctl daemon-reload && sudo systemctl restart bluetooth.service`
+
+It should work now.
+
 ##  I am experiencing a bug or want to request a feature! Help!
 In order to troubleshoot the issue properly, you should add a log or terminal output of the issue.  
 
