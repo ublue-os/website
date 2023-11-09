@@ -319,7 +319,7 @@ Read more about this issue [here](https://github.com/ValveSoftware/steam-for-lin
 Currently a [known issue](https://github.com/ublue-os/bazzite/issues/456#issuecomment-1778188420).  Open a host terminal and enter these commands:   
 
 1. `ls -l /sys/class/bluetooth` 
-2. Spit results here: `sudo chmod 755 [results from first command]`
+2. Spit results from the output from step 1: `sudo chmod 755 [output from command in the first step]`
 3. Restart the bluetooth service: `sudo systemctl daemon-reload && sudo systemctl restart bluetooth.service`
 
 It should work now.
