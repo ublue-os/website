@@ -41,8 +41,6 @@ We apologize for the inconvenience if you had to rebase, but you will NOT lose u
 
 If you tested the Fedora 39 builds of Bazzite early, then you need to rebase back to `:latest` to be updated to future Bazzite versions as well.
 
-Also desktop portal issues are happening currently: `systemctl restart --user xdg-desktop-portal` if you experience issues with the file picker.
-
 <hr>
 
 It has been nearly 3 months later since releasing Bazzite to the public, and since then the team and the community has added tons of new features, enhancements, and bug fixes to the images. 
