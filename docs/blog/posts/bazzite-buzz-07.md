@@ -37,8 +37,6 @@ We apologize for the inconvenience if you had to rebase, but you will NOT lose u
 
 If you tested the Fedora 39 builds of Bazzite early, then you need to rebase back to `:latest` to be updated to future Bazzite versions as well.
 
-Also desktop portal issues are happening currently: `systemctl restart --user xdg-desktop-portal` if you experience issues with the file picker.
-
 <hr>
 
 ![20](https://github.com/ublue-os/website/assets/121328689/d279494f-86c2-479e-a2b9-efd69f0783e6)
