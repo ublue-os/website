@@ -1,4 +1,4 @@
-# Waydroid Configuration
+# Waydroid Setup Guide
 !!! note
 
     Nvidia images are not supported.
@@ -10,8 +10,14 @@ Open a host terminal and enter this command to setup Waydroid:
 ```bash
 just init-waydroid
 ```
+Then enter:
 
-## Gapps, ARM translation, and [other goodies](https://github.com/casualsnek/waydroid_script#waydroid-extras-script)
+```bash
+/usr/bin/waydroid-launcher
+```
+This will launch Waydroid for the first time.
+
+## Gapps, ARM translation, and [Other Goodies](https://github.com/casualsnek/waydroid_script#waydroid-extras-script)
 
 Open a host terminal and enter `just configure-waydroid`.
 
@@ -41,6 +47,30 @@ waydroid session stop
 ```
 
 Relaunch Waydroid and you should now have Google Play certification.
+
+# Known Issues & Reset Waydroid
+
+## Blank Screen / Not Launching
+
+If Waydroid does not run after following this guide then you have to set SELinux in permissive mode since there has been reports of it causing issues.
+
+Open a host terminal and enter:
+
+```bash
+sudoedit /etc/selinux/config
+```
+
+Then, change the line that says:
+```bash
+SELINUX=enforcing
+```
+
+to
+```bash
+SELINUX=permissive
+```
+
+Save the text file and exit.
 
 ## Hybrid Graphics Fix
 
