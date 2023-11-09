@@ -80,8 +80,11 @@ Now, for some bad news.  Asus ROG Ally support progress has been halted due to a
 ## Switching Update Branches & Bug Fixes
 
 Users can now switch to different update branches of Bazzite. 
-- Latest (**default**, **stable**)  
+
+- Latest (**default**, **stable**)
+
 - Testing
+
 - Unstable (**not recommended**)
 
 Latest is the default branch and what we generally recommend for most users to stay on.  Testing is a preview of what's to come, and unstable is only recommended for advanced users and is exactly how it sounds.
