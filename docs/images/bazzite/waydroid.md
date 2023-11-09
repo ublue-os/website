@@ -10,6 +10,12 @@ Open a host terminal and enter this command to setup Waydroid:
 ```bash
 just init-waydroid
 ```
+Then enter:
+
+```bash
+/usr/bin/waydroid-launcher
+```
+This will launch Waydroid for the first time.
 
 ## Gapps, ARM translation, and [other goodies](https://github.com/casualsnek/waydroid_script#waydroid-extras-script)
 
