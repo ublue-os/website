@@ -51,15 +51,15 @@ If you do not have multiple drives, then there is an advanced method that requir
 8. Should have both OSes on the same drive
 
 ## I am having issues installing Bazzite on my hardware! What's going on?
-OCI images are very new and the Fedora installer, Anaconda, has some issues with this.  If you have skills in [Lorax](https://weldr.io/lorax/f28-branch/lorax.html) and the [Anaconda installer](https://www.fedoraproject.org/wiki/Anaconda), please help by contributing!  We are at a crossroads here because this is one of the most difficult hurdles that Bazzite and the Universal Blue project face.  We are dependent on upstream to resolve the issues currently.
+OCI images are very new and the Fedora installer, Anaconda, has some issues with this.  If you have skills in [Lorax](https://weldr.io/lorax/f28-branch/lorax.html) and the [Anaconda installer](https://www.fedoraproject.org/wiki/Anaconda), please help by contributing!  This is one of the most difficult hurdles that Bazzite and the Universal Blue project face.  We are dependent on upstream to resolve the issues currently.
 
 **Here are the main installer issues and their workarounds:**
 
 ### Blank screen on boot
 
-This is currently a known [issue](https://github.com/ublue-os/bazzite/issues/109).  There is a [workaround](https://github.com/ublue-os/bazzite/issues/109#issuecomment-1691090533) that requires either the stock [Fedora Silverblue](https://fedoraproject.org/silverblue/) or [Fedora Kinoite](https://fedoraproject.org/kinoite/) ISO and rebase to Bazzite from the terminal after installation.  The installer is the same one we use for Bazzite, and all of the data from the installer will carry over to Bazzite.
+This is currently a known [issue](https://github.com/ublue-os/bazzite/issues/109).  There is a [workaround](https://github.com/ublue-os/bazzite/issues/109#issuecomment-1691090533) that requires either the stock [Fedora Kinoite](https://fedoraproject.org/kinoite/) ISO and rebase to Bazzite from the terminal after installation.  The installer is the same one we use for Bazzite, and all of the data from the installer will carry over to Bazzite.
 
-**Rebasing from stock Fedora Silverblue or Fedora Kinoite image method**:
+**Rebasing from stock Fedora Kinoite image method**:
 
       - Download and install either Fedora Kinoite (KDE Plasma) or Fedora Silverblue (GNOME).
       - When you get to the desktop, open the terminal and enter the rebase command to an unsigned image.
@@ -82,7 +82,7 @@ Keep in mind we do **not** support booting using Ventoy.
     Keep in mind that the Steam Deck will not scale properly with the stock Fedora Silverblue/Kinoite installer, and the buttons on the bottom of the screen will be cut off.  This will require the use of the <kbd>TAB</kbd> key on your keyboard to navigate the installer blindly.
 
 ### Error occured while installing the payload (Installer GUI Error)
-Make sure you are connected to the internet if you are using an online ISO.  If you are, and there is still an issue, there might be an issue with your network adapter and Linux.  It is recommended to use a wired connection if you can, especially if this occurs after connecting to a wireless network.
+Make sure you are connected to the internet if you are using an online ISO.  If you are, and there is still an issue, there might be an issue with your network adapter and Linux.  It is recommended to use a wired connection if you can, especially if this occurs after connecting to a wireless network.  If you are confident that the connection is stable and your network adapter works on Linux, then try the Fedora Kinoite rebase method above.
 
 ## What image do I use?
 Images are split up between **2 types of images**: 
@@ -189,7 +189,8 @@ You can rollback in the GRUB menu by choosing the previous boot entry. Your pers
 
 You can pin your current deployment with `sudo ostree admin pin 0` in a host terminal for a backup save state of your current deployment.  
 
-**For advanced users**: We also offer specific builds from the last 90 days that you can rebase to, but you will have to rebase back to `:latest` once you want to upgrade.
+**For advanced users**: We also offer specific builds from the last 90 days that you can rebase to, but you will have to rebase back to `:latest` once you want to upgrade.  If you want to rollback within the 90 days of builds to a specific build, enter: `rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bazzite-deck:YEARMONTHDAY` (ex:20231031) for October 31, 2023.
+
 Read Fedora's official [documentation](https://docs.fedoraproject.org/en-US/fedora-silverblue/updates-upgrades-rollbacks/#rolling-back) on the topic of rolling back.
 
 ## How do I disable automatic updates for system, Flatpaks, and Distrobox containers?
@@ -206,18 +207,6 @@ Open a host terminal and enter: `systemctl disable ublue-update`.
 
 ## How do I view all the system packages installed on Bazzite?
 Open a host terminal and enter `rpm -qa` and an output of every system package will be listed.
-
-### Now how do I remove a system package from the image?
-
-!!! warning
-
-    Removing packages that were preinstalled is an unsupported configuration.
-
-Open a host terminal and enter `rpm-ostree override remove <package>` and reboot.  This will remove the package from the image.
-
-**This is not recommended!**
-
-However, if you installed a package via rpm-ostree and want to remove it from the image, then enter `rpm-ostree uninstall <package>` and reboot.  Unlike removing packages that came preinstalled with Bazzite, there isn't consequences to doing this.
 
 ## SteamOS is based on Arch Linux, so why use Fedora Linux as the base? 
 SteamOS is based on Arch Linux, but the base packages and drivers get updates at a much slower pace than using vanilla Arch and updating yourself. Bazzite will follow Fedora's updates which means it will always be ahead of SteamOS in terms of newer software and drivers.  Also Fedora currently is the only Linux distribution that supports OCI custom images that this whole project is built around.  The end user typically shouldn't notice too much of a difference between Bazzite and SteamOS. 
@@ -324,6 +313,16 @@ X-KDE-RunOnDiscreteGpu=true
 Save the file.  Steam should now launch.
 
 Read more about this issue [here](https://github.com/ValveSoftware/steam-for-linux/issues/9940).
+
+## Bluetooth controller not connecting
+
+Currently a [known issue](https://github.com/ublue-os/bazzite/issues/456#issuecomment-1778188420).  Open a host terminal and enter these commands:   
+
+1. `ls -l /sys/class/bluetooth` 
+2. Spit results from the output from step 1: `sudo chmod 755 [output from command in the first step]`
+3. Restart the bluetooth service: `sudo systemctl daemon-reload && sudo systemctl restart bluetooth.service`
+
+It should work now.
 
 ##  I am experiencing a bug or want to request a feature! Help!
 In order to troubleshoot the issue properly, you should add a log or terminal output of the issue.  
