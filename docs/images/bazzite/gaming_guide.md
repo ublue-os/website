@@ -88,9 +88,8 @@ Non-Steam games can have the prefix folder anywhere you specify, but by default 
 
 ## Extras
 
-* It is recommended to use ProtonUp-Qt or ProtonPlus (included on Bazzite) to update the latest [GE-Proton](https://github.com/GloriousEggroll/proton-ge-custom) and [Luxtorpeda](https://github.com/luxtorpeda-dev/luxtorpeda) for Steam.
+* It is recommended to use ProtonUp-Qt or ProtonPlus (included on Bazzite) to update the latest [GE-Proton](https://github.com/GloriousEggroll/proton-ge-custom) and [Luxtorpeda](https://github.com/luxtorpeda-dev/luxtorpeda) for Steam, and it also includes other useful SteamPlay tools.
 * Some games require Protontricks (included) or Winetricks (for non-Steam games, included with Lutris) to function properly.
-* You can install [pacman](https://archlinux.org/packages/) and [AUR](https://aur.archlinux.org/) packages inside of the `bazzite-arch` container on AMD/Intel desktop images.
 * You can overlay [RPM](https://packages.fedoraproject.org/) packages to the host by using `rpm-ostree install <package>` in your host terminal **at your own risk.**
 
 
