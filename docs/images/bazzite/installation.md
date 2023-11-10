@@ -23,7 +23,7 @@ Installation tutorial begins at [1:37](https://youtu.be/aaeRk8_i1Ds?feature=shar
 
 ## Pre-Requisites
 
-* Make sure you meet the [system requirements](https://docs.fedoraproject.org/en-US/fedora/latest/release-notes/welcome/Hardware_Overview/) for Fedora Linux.
+* Make sure you meet the [system requirements](https://docs.fedoraproject.org/en-US/fedora/latest/release-notes/welcome/Hardware_Overview/) for Fedora Linux. 
 * A graphics card that can utilize Vulkan 1.3 or later.  Most modern AMD, Nvidia, and Intel GPUs should be fine.
 * The drive that Bazzite is installed to must have at least 32GB unallocated drive space.
 * A USB flash drive, external drive, or microSD card with at least 5GB of free space on it. **(This will remove existing data on it!)**
@@ -31,7 +31,6 @@ Installation tutorial begins at [1:37](https://youtu.be/aaeRk8_i1Ds?feature=shar
 * Download the latest ISO release [here](https://github.com/ublue-os/bazzite/releases).
 * Software to flash the image to your flash drive, external drive, or microSD card.  We recommend using [Fedora Media Writer,](https://www.fedoraproject.org/en/workstation/download/) [Balena Etcher,](https://etcher.balena.io/) or [Rufus.](https://rufus.ie/en/) **Ventoy is unsupported.**
 * Bazzite requires a physical wired keyboard to install properly.
-* Manual partitioning is unsupported.
 * See [Fedora Kinoite documentation](https://docs.fedoraproject.org/en-US/fedora-kinoite/installation/) and [Fedora Silverblue documentation](https://docs.fedoraproject.org/en-US/fedora-silverblue/installation/) for more information.
 
 ## Boot into your installation medium.
@@ -62,7 +61,7 @@ When you boot into the installer, you will be presented a list of Bazzite images
 
 * **bazzite-nvidia** is _bazzite_ but for PCs running Nvidia GPUs as they include their proprietary drivers in the image.
 
-* **bazzite-deck** is a special Steam Deck image of Bazzite.  More details on that [here.](https://github.com/ublue-os/bazzite#steam-deckhome-theater-pcs-htpcs)
+* **bazzite-deck** is a special Steam Deck/HTPC/Handheld PC image of Bazzite.  More details on that [here.](https://github.com/ublue-os/bazzite#steam-deckhome-theater-pcs-htpcs)
 
 * **bazzite-gnome** is _bazzite_, but instead of using KDE Plasma as the desktop environment, it uses GNOME.
 
