@@ -90,12 +90,12 @@ Make sure you are connected to the internet if you are using an online ISO.  If 
 Images are split up between **2 types of images**: 
 
 ### Desktop
-_AMD/Intel Desktop Images_: Steam and other gaming utilities are installed in a [customized Arch Linux](https://github.com/ublue-os/bazzite-arch) [Distrobox container](https://github.com/89luca89/distrobox).  No "Game Mode" on these images, but is similar to SteamOS's "Desktop Mode" from an end user point of view.  
+_AMD/Intel Desktop Images_: Steam and other gaming utilities are layered to the image.  **No "Game Mode" on these images**, but is similar to SteamOS's "Desktop Mode" from an end user point of view.  
 
-_Nvidia Desktop Images_: Very similar to their AMD/Intel desktop counterparts, but Steam and other gaming utilities are part of the image itself and are missing certain features like Waydroid.
+_Nvidia Desktop Images_: Very similar to their AMD/Intel desktop counterparts, but preinstalls Nvidia's proprietary graphic drivers to the image, and there are features like Waydroid out of the box.
 
 ### Steam Deck / HTPC / Handheld PC
-Mimics SteamOS with "Game Mode" with most of the features fully functional.  Can be used on most devices using a modern AMD/Intel GPU.
+Mimics SteamOS with "Game Mode" with most of the features fully functional.  Can be used on most devices using a modern AMD/Intel GPU.  **Nvidia is currently not supported.**
 
 ### Desktop Environments & Specific Hardware
 
@@ -127,8 +127,6 @@ AppImages can be installed by downloading any file with an `.AppImage` extension
 Distrobox containers are running subsystems of other popular Linux distributions with access to their package managers and their package formats (ex: `.deb`/`.rpm`) 
 
 Distrobox containers can be made with the host terminal following this [documentation](https://github.com/89luca89/distrobox/blob/main/docs/usage/distrobox-create.md). 
-
-AMD/Intel Bazzite Desktop images have the `bazzite-arch` container preinstalled that can use the `pacman` package manager and has access to the [AUR](https://aur.archlinux.org/).
 
 There are pre-made `ujust` commands to create a container of operating systems.  Ex: `ujust distrobox-fedora` to create a Fedora Linux Distrobox container to have access to `dnf`.  Keep in mind that this is still a container, so dependencies and libraries from anything you install are not part of your host.  
 
@@ -211,7 +209,7 @@ Open a host terminal and enter: `systemctl disable ublue-update`.
 Open a host terminal and enter `rpm -qa` and an output of every system package will be listed.
 
 ## SteamOS is based on Arch Linux, so why use Fedora Linux as the base? 
-SteamOS is based on Arch Linux, but the base packages and drivers get updates at a much slower pace than using vanilla Arch and updating yourself. Bazzite will follow Fedora's updates which means it will always be ahead of SteamOS in terms of newer software and drivers.  Also Fedora currently is the only Linux distribution that supports OCI custom images that this whole project is built around.  The end user typically shouldn't notice too much of a difference between Bazzite and SteamOS. 
+SteamOS is based on Arch Linux, but the base packages and drivers get updates at a much slower pace than using vanilla Arch and updating yourself. Bazzite will follow Fedora's updates which means it will always be ahead of SteamOS in terms of newer software and drivers.  Also Fedora Linux currently is the only Linux distribution that supports OCI custom images that this whole project is built around.  The end user typically shouldn't notice too much of a difference between Bazzite and SteamOS in terms of losing features. 
 
 ## How does Bazzite differ from other Linux distributions?
 Like SteamOS, Bazzite makes use of read-only root files for stability purposes.
@@ -268,32 +266,20 @@ Third-party software like Decky Loader, Emudeck, RetroDeck, etc. work and can be
 
 Desktop Mode still has access to all of the applications in Discover that SteamOS has.  
 
-The only missing feature that SteamOS has over Bazzite currently is HDR support, but this should change once Fedora Linux supports it.
+**The only missing feature that SteamOS has over Bazzite currently is HDR support, but this should change once Fedora Linux supports it.**
 
 ## Does the Steam Deck image recieve BIOS updates like SteamOS?
 
-Yes it does.  If a BIOS update is available then it will install when you update Bazzite normally.  We even included a special command to **disable** these BIOS updates **at your own risk:** `ujust disable-bios-updates`.
+**Yes it does**.  If a BIOS update is available then it will install when you update Bazzite normally.  We even included a **special command to disable BIOS updates at your own risk**: `ujust disable-bios-updates`.
 
-## What is Wayland and X11?
-In short, Wayland and X11 (also known as Xorg or the X Window System) are windowing systems for desktop Linux.
+## Why does the stock 64GB Steam Deck not supported on Bazzite?
 
-* Wayland is the default for most of the images and the recommended option for Bazzite.
-* X11 is a legacy windowing system. While we recommend to stick with Wayland, there may be scenarios where X11 would have to be used. Nvidia GPUs may have issues with Wayland, so X11 is the default for the Nvidia images.
-
-You can swap between the two in the login screen for desktop images, and enter `ujust _toggle_wayland` in a host terminal for Steam Deck/HTPC/Handheld PC images.
+It has filesystem corruptions.  You will have booting issues, freezes, and will not be able to update the image.  Upgrade the storage to resolve this if you feel comfortable doing so.
 
 ## Why are there no Nvidia images that include Game Mode and Waydroid?
 Nvidia's proprietary drivers currently do not work with any of this.  AMD and Intel have open source drivers on Linux and are usaully the far better option to use.  
 
 Hopefully this changes in the future thanks to the upcoming [NVK](https://www.collabora.com/news-and-blog/news-and-events/introducing-nvk.html) project. Then most desktop Linux users would not have to bother with Nvidia's closed source driver philosophy and all of the downsides that come with that. 
-
-## For the AMD/Intel desktop images, why run Steam in an Arch Linux Distrobox container as opposed to Flatpak?
-
-Steam is not built with flatpak in mind. Valve does not contribute to it, and as a result there are many workarounds that the Arch package does not have to worry about it. The Steam Deck uses the Arch package, and to stay consistent with SteamOS so do we.
-
-Running Steam in Distrobox has the advantage of using [LatencyFleX](https://github.com/ishitatsuyuki/LatencyFleX) and other packages added to the container.  It can also utilize the latest GPU driver releases without the end user having to worry about ABI considerations or a broken driver on the host.
-
-A user can still install the Flatpak Steam at any time and use both verisons of Steam if they desire.
 
 ## How do I disable update notifications for desktop images?
 
@@ -330,15 +316,13 @@ Save the file.  Steam should now launch.
 
 Read more about this issue [here](https://github.com/ValveSoftware/steam-for-linux/issues/9940).
 
-## Bluetooth controller not connecting
+## What is Wayland and X11?
+In short, Wayland and X11 (also known as Xorg or the X Window System) are windowing systems for desktop Linux.
 
-Currently a [known issue](https://github.com/ublue-os/bazzite/issues/456#issuecomment-1778188420).  Open a host terminal and enter these commands:   
+* Wayland is the default for most of the images and the recommended option for Bazzite.
+* X11 is a legacy windowing system. While we recommend to stick with Wayland, there may be scenarios where X11 would have to be used. Nvidia GPUs may have issues with Wayland, so X11 is the default for the Nvidia images.
 
-1. `ls -l /sys/class/bluetooth` 
-2. Spit results from the output from step 1: `sudo chmod 755 [output from command in the first step]`
-3. Restart the bluetooth service: `sudo systemctl daemon-reload && sudo systemctl restart bluetooth.service`
-
-It should work now.
+You can swap between the two in the login screen for desktop images, and enter `ujust _toggle_wayland` in a host terminal for Steam Deck/HTPC/Handheld PC images.
 
 ##  I am experiencing a bug or want to request a feature! Help!
 In order to troubleshoot the issue properly, you should add a log or terminal output of the issue.  
