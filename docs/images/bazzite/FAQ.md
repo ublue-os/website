@@ -246,6 +246,20 @@ You can also rebase to a stock Fedora imaged-based desktop image by entering in 
 !!! note
 
     Rebasing from KDE Plasma images to GNOME images may have major issues.  Rebasing from GNOME to KDE Plasma is usually fine however.
+    
+## How do I change the Bazzite branch? (Latest, Testing, and Unstable)
+
+There are 3 branches you can switch to:
+
+- Latest (default, stable)  
+- Testing
+- Unstable (Not recommended)
+
+Steam Deck/HTPC/Handheld PCs can switch branches inside of Settings > System > OS Update Channel.
+
+Other images, or a manual command-line method is adding `:testing` or `:unstable` to the end of the rebase command for your Bazzite image.
+
+**Ex**: `rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bazzite:testing` for the testing branch on a AMD/Intel desktop image.
 
 ##  How similar is Bazzite to SteamOS on Steam Deck hardware?
 It should nearly be identical to the end user.  Bazzite Steam Deck images include the latest Gamescope and packages, which means we are always ahead of SteamOS in terms of Game Mode and Desktop Mode features.  The Quick Access Menu (Accessed with the <kbd>...</kbd> button) is functional for TDP, framerate caps, scaling, etc.  Performance should be on par or better than SteamOS, and every game SteamOS can play should play well on Bazzite.
