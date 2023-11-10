@@ -1,4 +1,4 @@
-# Frequently Asked Questions
+   # Frequently Asked Questions
 
 This is a very lengthy FAQ that attempts to cover several different topics surrounding Bazzite. If you are looking for something specific then please use the table of contents because this is a really long page that tries to cover all of the Bazzite images.
 
@@ -70,6 +70,8 @@ This is currently a known [issue](https://github.com/ublue-os/bazzite/issues/109
 **Other methods that may work:**
 
 - Remove the `rd.live.check` line from the boot parameters in grub. Press <kbd>E</kbd> on a physical keyboard when you see the boot option.  After removing that line, press <kbd>CTRL</kbd>+<kbd>X</kbd> to save.  It should boot now, and this line skipped the media verification which is the default behavior in the installer.
+
+- Booting the bootable media from UEFI BIOS if possible.
 
 - Installing with basic graphics mode in the installer
 
