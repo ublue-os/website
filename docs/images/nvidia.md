@@ -199,6 +199,17 @@ flatpak override \
     org.mozilla.firefox
 ```
 
+!!! Warning "Fedora 39+ Firefox Flatpak Users Only"
+    Driver support is currently broken due to a [runtime version mismatch issue](https://github.com/elFarto/nvidia-vaapi-driver/issues/23#issuecomment-1667177811). In the meantime, you can edit the command line you use to run Firefox, from something like
+
+    ```Exec=/usr/bin/flatpak run [OPTIONS] org.mozilla.firefox [ARGUMENTS]```
+    
+    to
+
+    ```Exec=/usr/bin/flatpak run --runtime-version=23.08 [OPTIONS] org.mozilla.firefox [ARGUMENTS]```
+
+    Making a copy of the `org.mozilla.firefox.desktop` file into `~/.local/share/applications/` and editing the command line inside it will set this option each time you start Firefox.
+
 You can verify whether the GPU is being used for video decoding by running `nvidia-smi dmon` while the video is playing.
 
 ## Acknowledgements
