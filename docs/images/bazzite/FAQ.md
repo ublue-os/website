@@ -130,7 +130,7 @@ Distrobox containers can be made with the host terminal following this [document
 
 AMD/Intel Bazzite Desktop images have the `bazzite-arch` container preinstalled that can use the `pacman` package manager and has access to the [AUR](https://aur.archlinux.org/).
 
-There are pre-made `just` commands to create a container of operating systems.  Ex: `just distrobox-fedora` to create a Fedora Linux Distrobox container to have access to `dnf`.  Keep in mind that this is still a container, so dependencies and libraries from anything you install are not part of your host.  
+There are pre-made `ujust` commands to create a container of operating systems.  Ex: `ujust distrobox-fedora` to create a Fedora Linux Distrobox container to have access to `dnf`.  Keep in mind that this is still a container, so dependencies and libraries from anything you install are not part of your host.  
 
 [Full list of other distributions that work in Distrobox](https://github.com/89luca89/distrobox/blob/main/docs/compatibility.md#containers-distros).
 
@@ -142,7 +142,7 @@ If you opted to use Nix packages at the first boot, then you can use the Nix pac
 ### Brew
 Brew is a popular package manager that is intended as a community-driven package manager for macOS, which also has a Linux port for it.  It attempts to install packages in their own directories and prefixes keeping your directories clean.
 
-Brew is available by entering `just install-brew` and `just install-brew-to-shell`.  Read the [official documentation](https://docs.brew.sh/Homebrew-on-Linux) on how to use it.
+Brew is available by entering `ujust install-brew` and `ujust install-brew-to-shell`.  Read the [official documentation](https://docs.brew.sh/Homebrew-on-Linux) on how to use it.
 
 ### Bash Scripts
 Some applications require you to execute a Bash script (`.sh` extension).  Like AppImages, go into the script's file properties and give it executable permissions, and run it in your host terminal.
@@ -234,7 +234,7 @@ Unlike traditional Linux distributions, much of the maintenance and security upd
 
 ## What are some of the unique applications that Bazzite uses?
 - [Bazzite Portal, also known as YAFTI](https://github.com/ublue-os/yafti/), acts as both a first-boot utility and general software configuration and installation tool.
-- [Just](https://github.com/casey/just) is for executing custom commands based on recipes.  Type `just` in a host terminal to see what commands are available.  See some example commands [here](/guide/just/).
+- [Just](https://github.com/casey/just) is for executing custom commands based on recipes.  Type `ujust` in a host terminal to see what commands are available.  See some example commands [here](/guide/just/).
 - [Fleek](https://getfleek.dev/) is a [Nix](https://search.nixos.org/packages) package manager wrapper and `$HOME` manager using YAML.
 - [OBS-Portable OCI Image](https://github.com/ublue-os/obs-studio-portable) is the universal installation method of the [OBS-Portable](https://github.com/wimpysworld/obs-studio-portable) which aims to be OBS Studio with codecs and several popular plugins preinstalled, and as the name implies it's a portable application too.
 
@@ -258,7 +258,7 @@ The only missing feature that SteamOS has over Bazzite currently is HDR support,
 
 ## Does the Steam Deck image recieve BIOS updates like SteamOS?
 
-Yes it does.  If a BIOS update is available then it will install when you update Bazzite normally.  We even included a special command to **disable** these BIOS updates **at your own risk:** `just disable-bios-updates`.
+Yes it does.  If a BIOS update is available then it will install when you update Bazzite normally.  We even included a special command to **disable** these BIOS updates **at your own risk:** `ujust disable-bios-updates`.
 
 ## What is Wayland and X11?
 In short, Wayland and X11 (also known as Xorg or the X Window System) are windowing systems for desktop Linux.
@@ -266,7 +266,7 @@ In short, Wayland and X11 (also known as Xorg or the X Window System) are window
 * Wayland is the default for most of the images and the recommended option for Bazzite.
 * X11 is a legacy windowing system. While we recommend to stick with Wayland, there may be scenarios where X11 would have to be used. Nvidia GPUs may have issues with Wayland, so X11 is the default for the Nvidia images.
 
-You can swap between the two in the login screen for desktop images, and enter `just _toggle_wayland` in a host terminal for Steam Deck/HTPC/Handheld PC images.
+You can swap between the two in the login screen for desktop images, and enter `ujust _toggle_wayland` in a host terminal for Steam Deck/HTPC/Handheld PC images.
 
 ## Why are there no Nvidia images that include Game Mode and Waydroid?
 Nvidia's proprietary drivers currently do not work with any of this.  AMD and Intel have open source drivers on Linux and are usaully the far better option to use.  

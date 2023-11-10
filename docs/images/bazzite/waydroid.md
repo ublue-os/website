@@ -54,7 +54,7 @@ If your PC is running multiple GPUs and you experience either graphical corrupti
 !!! note
     This will delete all of your current Waydroid data!
 
-Enter `just reset-waydroid` if you run into any major issues.
+Enter `ujust reset-waydroid` if you run into any major issues.
 
 <hr>
 

@@ -125,7 +125,7 @@ If you have a microSD card and had game installed on SteamOS, and do NOT want to
 !!! NOTE
 
     For users with Secure Boot enabled: 
-    Run `just enroll-secure-boot-key` in the host terminal and enter the password `ublue-os` if prompted to enroll the required key!
+    Run `ujust enroll-secure-boot-key` in the host terminal and enter the password `ublue-os` if prompted to enroll the required key!
 
 ## Game on!
 
