@@ -1,14 +1,105 @@
-   # Frequently Asked Questions
+# Frequently Asked Questions
 
 This is a very lengthy FAQ that attempts to cover several different topics surrounding Bazzite. If you are looking for something specific then please use the table of contents because this is a really long page that tries to cover all of the Bazzite images.
 
-## Why is it called Bazzite?
+## General FAQ
+
+### Why is it called Bazzite?
 Fedora Linux's image-based desktops are usually named after [minerals](https://fedoraproject.org/kinoite/) or [flowers](https://fedoraproject.org/sericea/).  Bazzite is a mineral that is known for being strong, lightweight, and is colored [blue](https://universal-blue.org/).
 
-## How do I install Bazzite on my device?
+### What image do I use?
+Images are split up between **2 types of images**: 
+
+#### Desktop
+_AMD/Intel Desktop Images_: Steam and other gaming utilities are layered to the image.  **No "Game Mode" on these images**, but is similar to SteamOS's "Desktop Mode" from an end user point of view.  
+
+_Nvidia Desktop Images_: Very similar to their AMD/Intel desktop counterparts, but preinstalls Nvidia's proprietary graphic drivers to the image, and there are features like Waydroid out of the box.
+
+#### Steam Deck / HTPC / Handheld PC
+Mimics SteamOS with "Game Mode" with most of the features fully functional.  Can be used on most devices using a modern AMD/Intel GPU.  **Nvidia is currently not supported.**
+
+#### Desktop Environments & Specific Hardware
+
+All of the images also come with the choice of using [KDE Plasma](https://kde.org/plasma-desktop/) or [GNOME](https://www.gnome.org/) for the desktop environment and made with specific hardware in mind.
+
+There is more information about this on the [installation documentation](/images/bazzite/installation/). 
+
+### I am new to Linux gaming.  Where do I start?
+Welcome!  We have a gaming starter guide [here](/images/bazzite/gaming_guide).  
+
+The Steam Deck/HTPC images should be a very similar to SteamOS.
+
+### SteamOS is based on Arch Linux, so why use Fedora Linux as the base? 
+SteamOS is based on Arch Linux, but the base packages and drivers get updates at a much slower pace than using vanilla Arch and updating yourself. Bazzite will follow Fedora's updates which means it will always be ahead of SteamOS in terms of newer software and drivers.  Also Fedora Linux currently is the only Linux distribution that supports OCI custom images that this whole project is built around.  The end user typically shouldn't notice too much of a difference between Bazzite and SteamOS in terms of losing features. 
+
+### How does Bazzite differ from other Linux distributions?
+Like SteamOS, Bazzite makes use of read-only root files for stability purposes.
+
+Bazzite is Fedora Linux built with [libostree](https://ostreedev.github.io/ostree/) which has advantages such as:
+
+* Atomic updates for system and applications.
+* Containerized applications that do not interfere with your host system.
+* Overlay RPM packages to the host that survive upgrades.
+* Smooth upgrade process from major Fedora point releases.
+* Low risk of an unbootable or broken system. 
+* Rollback system updates if necessary and the ability pin your current deployment as a backup "save state."
+
+Check out [Fedora Silverblue](https://fedoraproject.org/silverblue/) and [Universal Blue homepage](https://universal-blue.org) for more information on what the libostree project is capable of.
+
+### Is this another fringe distro?
+Bazzite is not a distribution in the same sense that other Fedora-based distributions are.  These images are [Fedora Kinoite (KDE)](https://fedoraproject.org/kinoite/) and [Fedora Silverblue (GNOME)](https://fedoraproject.org/silverblue/) with a recipe on top of it.  This is a new "container-native" method that Fedora has been testing, and we are taking full advantage of this.  We are utilizing the [Open Container Initiative](https://opencontainers.org/) to create these images, and are simply adding packages, services, kernel modules, etc. to existing Fedora images.  Bazzite takes from the "main" Universal Blue Fedora image and adds to it.  Bazzite's goal is Fedora Linux, but provide a great gaming experience out of the box.
+
+Unlike traditional Linux distributions, much of the maintenance and security updates are done upstream by Fedora and Universal Blue while Bazzite only has to focus on the gaming aspects of it.  A hypothetical scenario where everyone involved with Bazzite could stop maintaining the project at once and it will still continue to receive updates directly from Fedora.  Check out the [mission statement](/mission) and [documentation](https://universal-blue.org/introduction/) for more information.
+
+### What is Wayland and X11?
+In short, Wayland and X11 (also known as Xorg or the X Window System) are windowing systems for desktop Linux.
+
+* Wayland is the default for most of the images and the recommended option for Bazzite.
+* X11 is a legacy windowing system. While we recommend to stick with Wayland, there may be scenarios where X11 would have to be used. Nvidia GPUs may have issues with Wayland, so X11 is the default for the Nvidia images.
+
+You can swap between the two in the login screen for desktop images, and enter `ujust _toggle_wayland` in a host terminal for Steam Deck/HTPC/Handheld PC images.
+
+### What are some of the unique applications that Bazzite uses?
+- [Bazzite Portal, also known as YAFTI](https://github.com/ublue-os/yafti/), acts as both a first-boot utility and general software configuration and installation tool.
+- [Just](https://github.com/casey/just) is for executing custom commands based on recipes.  Type `ujust` in a host terminal to see what commands are available.  See some example commands [here](/guide/just/).
+- [Fleek](https://getfleek.dev/) is a [Nix](https://search.nixos.org/packages) package manager wrapper and `$HOME` manager using YAML.
+- [OBS-Portable OCI Image](https://github.com/ublue-os/obs-studio-portable) is the universal installation method of the [OBS-Portable](https://github.com/wimpysworld/obs-studio-portable) which aims to be OBS Studio with codecs and several popular plugins preinstalled, and as the name implies it's a portable application too.
+
+
+### Steam is not launching on my desktop with hybrid graphics, what should I do?
+This would be out of scope for our project due to it being an issue currently with Steam itself and not Bazzite, but we had enough support tickets surrounding it that we are including the fix in our FAQ.
+
+Recently, Steam breaks if you have hybrid graphics in your PC.  The solution is simply locating the .desktop file for Steam (non-Flatpak versions are located in: `~/.local/share/applications/`) and opening it with a text editor (Kate, Text Editor, etc.), and adding this to the last line under `[Desktop Entry]`:
+```bash
+PrefersNonDefaultGPU=false
+X-KDE-RunOnDiscreteGpu=true
+```
+Save the file.  Steam should now launch.
+
+Read more about this issue [here](https://github.com/ValveSoftware/steam-for-linux/issues/9940).
+
+###  I am experiencing a bug or want to request a feature! Help!
+In order to troubleshoot the issue properly, you should add a log or terminal output of the issue.  
+
+**Example 1:** For a game running on Steam through Proton, go to the game's properties and type `PROTON_LOG=1 %command%` in the launch options section.  Play the game and the log should appear by the appid in your `Home` directory, and make sure to attach that to the issue you have opened.
+
+**Example 2**: For a Flatpak application that has issues, get the Flatpak package name of all installed applications by entering `flatpak list` (you may need to readjust the terminal window to get the package name to fit beforehand.)  After you got the name, enter `flatpak run <flatpak.package.name>` and a console output will appear.  Copy and paste into a text file, save it, and attach it.
+
+Explain your issue or proposal in our [issue tracker](https://github.com/ublue-os/bazzite/issues) or [Github Discussions Page](https://github.com/orgs/ublue-os/discussions/categories/bazzite).
+
+It's always a good idea to try and manually update your system by entering in a host terminal: `rpm-ostree update` and `ublue-update`, then waiting for the system to get the latest upgrades, and rebooting to see if the issue still persists.
+
+One of the goals of this project is to have the convenience of never worrying about having to reinstall your operating system.  However, all of this is new, and anything can explode horribly if you try hard enough.  When the worst-case scenario appears and the only solution is to reinstall Bazzite, then please backup your personal files in your `Home` directory as well as any drives connected to your device.  Application data for Flatpaks, which is anything installed from Discover or GNOME Software, are stored in your Home directory under `~/.var/app/`.  Make sure you have hidden files enabled in the file manager to see all of your files.
+
+### I would like to contribute to Bazzite.  Where do I start?
+Thank you for being so eager to contribute to the project!  Bazzite has a [suggestions thread](https://github.com/orgs/ublue-os/discussions/246) where you can suggest any feedback to the project.  If you want to develop or provide documentation for Bazzite, then read the contributing [guide](/images/bazzite/CONTRIBUTING).  This guide also links to our roadmap for future plans with the project.
+
+## Installation
+
+### How do I install Bazzite on my device?
 Follow this [guide](/images/bazzite/installation/).
 
-## Can I dual-boot Bazzite with Windows?
+### Can I dual-boot Bazzite with Windows?
 **Short answer: It's unsupported, but can work especially if Windows is on a different drive.**
 
 Dual-booting Bazzite with Windows works, but it is recommended if the both operating systems are on **a separate drive and have Windows already installed first**.  
@@ -50,12 +141,12 @@ If you do not have multiple drives, then there is an advanced method that requir
 7. Reboot
 8. Should have both OSes on the same drive
 
-## I am having issues installing Bazzite on my hardware! What's going on?
+### I am having issues installing Bazzite on my hardware! What's going on?
 OCI images are very new and the Fedora installer, Anaconda, has some issues with this.  If you have skills in [Lorax](https://weldr.io/lorax/f28-branch/lorax.html) and the [Anaconda installer](https://www.fedoraproject.org/wiki/Anaconda), please help by contributing!  This is one of the most difficult hurdles that Bazzite and the Universal Blue project face.  We are dependent on upstream to resolve the issues currently.
 
 **Here are the main installer issues and their workarounds:**
 
-### Blank screen on boot
+#### Blank screen on boot
 
 This is currently a known [issue](https://github.com/ublue-os/bazzite/issues/109).  There is a [workaround](https://github.com/ublue-os/bazzite/issues/109#issuecomment-1691090533) that requires either the stock [Fedora Kinoite](https://fedoraproject.org/kinoite/) ISO and rebase to Bazzite from the terminal after installation.  The installer is the same one we use for Bazzite, and all of the data from the installer will carry over to Bazzite.
 
@@ -83,47 +174,31 @@ Keep in mind we do **not** support booting using Ventoy.
 
     Keep in mind that the Steam Deck will not scale properly with the stock Fedora Silverblue/Kinoite installer, and the buttons on the bottom of the screen will be cut off.  This will require the use of the <kbd>TAB</kbd> key on your keyboard to navigate the installer blindly.
 
-### Error occured while installing the payload (Installer GUI Error)
+#### Error occured while installing the payload (Installer GUI Error)
 Make sure you are connected to the internet if you are using an online ISO.  If you are, and there is still an issue, there might be an issue with your network adapter and Linux.  It is recommended to use a wired connection if you can, especially if this occurs after connecting to a wireless network.  If you are confident that the connection is stable and your network adapter works on Linux, then try the Fedora Kinoite rebase method above.
 
-## What image do I use?
-Images are split up between **2 types of images**: 
+## Installing and Managing Software
 
-### Desktop
-_AMD/Intel Desktop Images_: Steam and other gaming utilities are layered to the image.  **No "Game Mode" on these images**, but is similar to SteamOS's "Desktop Mode" from an end user point of view.  
+### How do I install additional software?
 
-_Nvidia Desktop Images_: Very similar to their AMD/Intel desktop counterparts, but preinstalls Nvidia's proprietary graphic drivers to the image, and there are features like Waydroid out of the box.
-
-### Steam Deck / HTPC / Handheld PC
-Mimics SteamOS with "Game Mode" with most of the features fully functional.  Can be used on most devices using a modern AMD/Intel GPU.  **Nvidia is currently not supported.**
-
-### Desktop Environments & Specific Hardware
-
-All of the images also come with the choice of using [KDE Plasma](https://kde.org/plasma-desktop/) or [GNOME](https://www.gnome.org/) for the desktop environment and made with specific hardware in mind.
-
-There is more information about this on the [installation documentation](/images/bazzite/installation/). 
-
-## I am new to Linux gaming.  Where do I start?
-Welcome!  We have a gaming starter guide [here](/images/bazzite/gaming_guide).  
-
-The Steam Deck/HTPC images should be a very similar to SteamOS.
-
-## How do I install additional software?
-
-### Flatpak
+#### Flatpak
 Flatpak is the default method of installing applications on Bazzite.  It is a universal containerized package format that tries to sandbox applications through flexible permissions that the application has access to on your system.
 
 Typically it is recommended to use Flatpak for most software if possible.  These can be installed via the software center that is preinstalled like *Discover* or *GNOME Software*.  Take a look at the [selection](https://flathub.org/apps/collection/popular/1).
 
-### AppImage
+Manage Flatpaks with Flatseal and Warehouse which are both preinstalled.
+
+#### AppImage
 AppImage is a universal package method that attempts to bundle every single dependency that an application needs into one portable file.
 
 AppImages can be installed by downloading any file with an `.AppImage` extension.  These are usually found on a project's website, [AppImage Hub](https://www.appimagehub.com/) or if you install [AppImage Pool](https://flathub.org/apps/io.github.prateekmedia.appimagepool). Then giving the AppImage application executable permssions in the file's properties so the application can run properly.
 
+Manage AppImages with the Gear Lever application that is preinstalled.
+
 !!! Note
     AppImages are not supported in other Universal Blue images (like Bluefin.)
 
-### Distrobox
+#### Distrobox
 Distrobox containers are running subsystems of other popular Linux distributions with access to their package managers and their package formats (ex: `.deb`/`.rpm`) 
 
 Distrobox containers can be made with the host terminal following this [documentation](https://github.com/89luca89/distrobox/blob/main/docs/usage/distrobox-create.md). 
@@ -132,56 +207,61 @@ There are pre-made `ujust` commands to create a container of operating systems. 
 
 [Full list of other distributions that work in Distrobox](https://github.com/89luca89/distrobox/blob/main/docs/compatibility.md#containers-distros).
 
-### Nix
+#### Nix
 Nix is a cross-platform and declarative package manager that can be described as an "atomic" package manager.  There is a learning curve however, but Bazzite tries to keep it simple with the integration of [Fleek](https://github.com/ublue-os/fleek).
 
 If you opted to use Nix packages at the first boot, then you can use the Nix package manager.  More information on how to use the Nix package manager [here](https://zero-to-nix.com/).
 
-### Brew
+#### Brew
 Brew is a popular package manager that is intended as a community-driven package manager for macOS, which also has a Linux port for it.  It attempts to install packages in their own directories and prefixes keeping your directories clean.
 
 Brew is available by entering `ujust install-brew` and `ujust install-brew-to-shell`.  Read the [official documentation](https://docs.brew.sh/Homebrew-on-Linux) on how to use it.
 
-### Bash Scripts
+#### Bash Scripts
 Some applications require you to execute a Bash script (`.sh` extension).  Like AppImages, go into the script's file properties and give it executable permissions, and run it in your host terminal.
 
-### rpm-ostree
+#### rpm-ostree
 Obtain Fedora Linux packages like you typically would with their package manager.  However, it is highly recommended to only use this command as the last resort especially if the package can be obtained through the above methods.  Layering packages to your image is mostly intended for system-level packages.
 
 Fedora has [documentation](https://docs.fedoraproject.org/en-US/fedora/latest/system-administrators-guide/package-management/rpm-ostree/) on rpm-ostree.  The most common commands are `rpm-ostree install <package>` and `rpm-ostree uninstall <package>`.  Each package layered will be installed on the next reboot. 
 
-## How do I run Windows applications?
+### How do I run Windows applications?
 * Lutris (preinstalled) for non-Steam video games.
 * [Bottles](https://flathub.org/apps/com.usebottles.bottles) for general-purpose applications or as an alternative to Lutris.
 * [Heroic](https://flathub.org/apps/com.heroicgameslauncher.hgl) for Epic, GOG, and Amazon Games Launcher.
 * [itch](https://flathub.org/apps/io.itch.itch) for games on itch.io.  Also comes preinstalled with a Wine runner.
 
-## How do I run Android applications?
+### How do I run Android applications?
 Follow the [Waydroid guide](/images/bazzite/waydroid/).
 
-## How do updates work?
+### How do I view all the system packages installed on Bazzite?
+Open a host terminal and enter `rpm -qa` and an output of every system package will be listed.
 
-### Desktop images (*bazzite*, *bazzite-nvidia*, *bazzite-gnome*, and *bazzite-gnome-nvidia*, etc.)
+## Updates, Rollbacks, and Rebasing
+
+### How do updates work?
+
+#### Desktop images (*bazzite*, *bazzite-nvidia*, *bazzite-gnome*, and *bazzite-gnome-nvidia*, etc.)
 System updates happen automatically daily.  They will be downloaded in the background and will apply on shutdown or a reboot.  These system updates are NOT forced.  Bazzite downloads the latest patches in the background and they will be applied as soon as you shut down.  The next reboot will contain the newest changes.   No need for worrying about manually upgrading your system.
 
 Flatpak applications (installed from *Discover* or *GNOME Software*) also update twice a day automatically.  Distrobox containers are also automatically updated too.
 
 You can force an update to the whole system (base packages, applications, and containers) at any time by opening your host terminal and entering `ublue-update` then reboot your device after it has finished.
 
-### Steam Deck and HTPC images (*bazzite-deck* and *bazzite-deck-gnome*, etc.)
+#### Steam Deck and HTPC images (*bazzite-deck* and *bazzite-deck-gnome*, etc.)
 Similar to SteamOS, updates are handled by Steam.  In Game Mode, go to Settings > System > click "Apply"
 
 Alternatively, you can open a host terminal and enter `ublue-update`, then reboot your device after it has finished.  Updates upgrade your system, Flatpak applications, and distrobox containers all at once.
 
-## How does updating to a new Fedora point release work?
+### How does updating to a new Fedora point release work?
 Your system should automatically update when our new builds based on that new point release are ready on Desktop images, and Steam Deck images should update to the new release when you update in Game Mode.  Bazzite usually aims for the same day when the new Fedora Linux version releases.  
 
 Advanced users can test early builds by [rebasing](/images/bazzite/FAQ/#i-think-i-installed-the-wrong-bazzite-image-do-i-have-to-reinstall) to a beta image when avaliable at their own risk.
 
-## Do I have to reboot after every system update or layering a package (with rpm-ostree)? 
+### Do I have to reboot after every system update or layering a package (with rpm-ostree)? 
 No, but the upgrade won't apply until the next reboot and the package you layered to the image through `rpm-ostree` won't be there either.  You can attempt to layer package without rebooting with `rpm-ostree install --apply-live <package>` but sometimes this still requires a reboot depending on the package(s) you installed.
 
-## How do I rollback a system update?
+### How do I rollback a system update?
 You can rollback in the GRUB menu by choosing the previous boot entry. Your personal files will NOT be affected by this, and you can still update to the newest builds on older system builds.
 
 !!! Note
@@ -193,7 +273,7 @@ You can pin your current deployment with `sudo ostree admin pin 0` in a host ter
 
 Read Fedora's official [documentation](https://docs.fedoraproject.org/en-US/fedora-silverblue/updates-upgrades-rollbacks/#rolling-back) on the topic of rolling back.
 
-## How do I disable automatic updates for system, Flatpaks, and Distrobox containers?
+### How do I disable automatic updates for system and applications?
 
 !!! warning
 
@@ -205,38 +285,7 @@ Open a host terminal and enter: `systemctl disable ublue-update`.
 
 **This is not recommended.** 
 
-## How do I view all the system packages installed on Bazzite?
-Open a host terminal and enter `rpm -qa` and an output of every system package will be listed.
-
-## SteamOS is based on Arch Linux, so why use Fedora Linux as the base? 
-SteamOS is based on Arch Linux, but the base packages and drivers get updates at a much slower pace than using vanilla Arch and updating yourself. Bazzite will follow Fedora's updates which means it will always be ahead of SteamOS in terms of newer software and drivers.  Also Fedora Linux currently is the only Linux distribution that supports OCI custom images that this whole project is built around.  The end user typically shouldn't notice too much of a difference between Bazzite and SteamOS in terms of losing features. 
-
-## How does Bazzite differ from other Linux distributions?
-Like SteamOS, Bazzite makes use of read-only root files for stability purposes.
-
-Bazzite is Fedora Linux built with [libostree](https://ostreedev.github.io/ostree/) which has advantages such as:
-
-* Atomic updates for system and applications.
-* Containerized applications that do not interfere with your host system.
-* Overlay RPM packages to the host that survive upgrades.
-* Smooth upgrade process from major Fedora point releases.
-* Low risk of an unbootable or broken system. 
-* Rollback system updates if necessary and the ability pin your current deployment as a backup "save state."
-
-Check out [Fedora Silverblue](https://fedoraproject.org/silverblue/) and [Universal Blue homepage](https://universal-blue.org) for more information on what the libostree project is capable of.
-
-## Is this another fringe distro?
-Bazzite is not a distribution in the same sense that other Fedora-based distributions are.  These images are [Fedora Kinoite (KDE)](https://fedoraproject.org/kinoite/) and [Fedora Silverblue (GNOME)](https://fedoraproject.org/silverblue/) with a recipe on top of it.  This is a new "container-native" method that Fedora has been testing, and we are taking full advantage of this.  We are utilizing the [Open Container Initiative](https://opencontainers.org/) to create these images, and are simply adding packages, services, kernel modules, etc. to existing Fedora images.  Bazzite takes from the "main" Universal Blue Fedora image and adds to it.  Bazzite's goal is Fedora Linux, but provide a great gaming experience out of the box.
-
-Unlike traditional Linux distributions, much of the maintenance and security updates are done upstream by Fedora and Universal Blue while Bazzite only has to focus on the gaming aspects of it.  A hypothetical scenario where everyone involved with Bazzite could stop maintaining the project at once and it will still continue to receive updates directly from Fedora.  Check out the [mission statement](/mission) and [documentation](https://universal-blue.org/introduction/) for more information.
-
-## What are some of the unique applications that Bazzite uses?
-- [Bazzite Portal, also known as YAFTI](https://github.com/ublue-os/yafti/), acts as both a first-boot utility and general software configuration and installation tool.
-- [Just](https://github.com/casey/just) is for executing custom commands based on recipes.  Type `ujust` in a host terminal to see what commands are available.  See some example commands [here](/guide/just/).
-- [Fleek](https://getfleek.dev/) is a [Nix](https://search.nixos.org/packages) package manager wrapper and `$HOME` manager using YAML.
-- [OBS-Portable OCI Image](https://github.com/ublue-os/obs-studio-portable) is the universal installation method of the [OBS-Portable](https://github.com/wimpysworld/obs-studio-portable) which aims to be OBS Studio with codecs and several popular plugins preinstalled, and as the name implies it's a portable application too.
-
-## I think I installed the wrong Bazzite image!  Do I have to reinstall?
+### I think I installed the wrong Bazzite image!  Do I have to reinstall?
 No.  If you installed the wrong Bazzite image or want to use another image then you can switch to another Bazzite or any other Universal Blue image without losing any of user data by **rebasing**.  Enter the command in a host terminal found on this [page](/images/) for whatever image you're looking for, but make sure you're using `:latest`.  After it is finished rebasing, reboot your system to be in the new image.
 
 You can also rebase to a stock Fedora imaged-based desktop image by entering in a host terminal `ostree remote refs fedora` to see a list of available Fedora images that you can rebase to.  Afterwards, enter `rpm-ostree rebase <image>` and wait for it to install the image then reboot.
@@ -245,7 +294,7 @@ You can also rebase to a stock Fedora imaged-based desktop image by entering in 
 
     Rebasing from KDE Plasma images to GNOME images may have major issues.  Rebasing from GNOME to KDE Plasma is usually fine however.
     
-## How do I change the Bazzite branch? (Latest, Testing, and Unstable)
+### How do I change the Bazzite branch? (Latest, Testing, and Unstable)
 
 There are 3 branches you can switch to:
 
@@ -259,29 +308,7 @@ Other images, or a manual command-line method is adding `:testing` or `:unstable
 
 **Ex**: `rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bazzite:testing` for the testing branch on a AMD/Intel desktop image.
 
-##  How similar is Bazzite to SteamOS on Steam Deck hardware?
-It should nearly be identical to the end user.  Bazzite Steam Deck images include the latest Gamescope and packages, which means we are always ahead of SteamOS in terms of Game Mode and Desktop Mode features.  The Quick Access Menu (Accessed with the <kbd>...</kbd> button) is functional for TDP, framerate caps, scaling, etc.  Performance should be on par or better than SteamOS, and every game SteamOS can play should play well on Bazzite.
-
-Third-party software like Decky Loader, Emudeck, RetroDeck, etc. work and can be installed from the Bazzite Portal, but certain tools like CryoUtilities does not work.  If you want the swap functionality from CryoUtilities, then you can switch to using swap and adjust the size in the Bazzite Portal, but it is not recommended.  
-
-Desktop Mode still has access to all of the applications in Discover that SteamOS has.  
-
-**The only missing feature that SteamOS has over Bazzite currently is HDR support, but this should change once Fedora Linux supports it.**
-
-## Does the Steam Deck image recieve BIOS updates like SteamOS?
-
-**Yes it does**.  If a BIOS update is available then it will install when you update Bazzite normally.  We even included a **special command to disable BIOS updates at your own risk**: `ujust disable-bios-updates`.
-
-## Why does the stock 64GB Steam Deck not supported on Bazzite?
-
-It has filesystem corruptions.  You will have booting issues, freezes, and will not be able to update the image.  Upgrade the storage to resolve this if you feel comfortable doing so.
-
-## Why are there no Nvidia images that include Game Mode and Waydroid?
-Nvidia's proprietary drivers currently do not work with any of this.  AMD and Intel have open source drivers on Linux and are usaully the far better option to use.  
-
-Hopefully this changes in the future thanks to the upcoming [NVK](https://www.collabora.com/news-and-blog/news-and-events/introducing-nvk.html) project. Then most desktop Linux users would not have to bother with Nvidia's closed source driver philosophy and all of the downsides that come with that. 
-
-## How do I disable update notifications for desktop images?
+### How do I disable update notifications for desktop images?
 
 Open the directory `/etc/ublue-update/` and open `ublue-update.toml` with a text editor.
 
@@ -290,55 +317,44 @@ Change:
 
 Notifications for updates are now suppressed.
 
-##  I'm using the Steam Deck image on my HTPC, but there are games that force specific Steam Deck features I do not want like a specific controller layout.  Help?
+## Steam Deck Images FAQ
+
+###  How similar is Bazzite to SteamOS on Steam Deck hardware?
+It should nearly be identical to the end user.  Bazzite Steam Deck images include the latest Gamescope and packages, which means we are always ahead of SteamOS in terms of Game Mode and Desktop Mode features.  The Quick Access Menu (Accessed with the <kbd>...</kbd> button) is functional for TDP, framerate caps, scaling, etc.  Performance should be on par or better than SteamOS, and every game SteamOS can play should play well on Bazzite.
+
+Third-party software like Decky Loader, Emudeck, RetroDeck, etc. work and can be installed from the Bazzite Portal, but certain tools like CryoUtilities does not work.  If you want the swap functionality from CryoUtilities, then you can switch to using swap and adjust the size in the Bazzite Portal, but it is not recommended.  
+
+Desktop Mode still has access to all of the applications in Discover that SteamOS has.  
+
+**The only missing feature that SteamOS has over Bazzite currently is HDR support, but this should change once Fedora Linux supports it.**
+
+### Does the Steam Deck image recieve BIOS updates like SteamOS?
+
+**Yes it does**.  If a BIOS update is available then it will install when you update Bazzite normally.  We even included a **special command to disable BIOS updates at your own risk**: `ujust disable-bios-updates`.
+
+### Why does the stock 64GB Steam Deck not supported on Bazzite?
+
+It has filesystem corruptions.  You will have booting issues, freezes, and will not be able to update the image.  Upgrade the storage to resolve this if you feel comfortable doing so.
+
+### Why do the Nvidia images not include Game Mode and Waydroid?
+Nvidia's proprietary drivers currently do not work with any of this.  AMD and Intel have open source drivers on Linux and are usaully the far better option to use.  
+
+Hopefully this changes in the future thanks to the upcoming [NVK](https://www.collabora.com/news-and-blog/news-and-events/introducing-nvk.html) project. Then most desktop Linux users would not have to bother with Nvidia's closed source driver philosophy and all of the downsides that come with that. 
+
+###  I'm using the Steam Deck image on my HTPC, but there are games that force specific Steam Deck features I do not want like a specific controller layout.  Help?
 Open the game's properties and under "LAUNCH OPTIONS", add: `SteamDeck=0 %command%` to force a game's "Steam Deck" features to be turned off.
 
 ![image](https://github.com/ublue-os/website/assets/121328689/9175f6b8-5a70-49fe-b270-fbc55e8510c0)
 
 Currently, an example of a game where this is needed is Warframe.  Without this launch option, you cannot play Warframe on the Steam Deck images with a keyboard and mouse.
 
-## On Steam Deck, Handheld PC, and HTPC images I am stuck updating at 99%, and the changelog is the same after every update.  What gives?
+### On Steam Deck, Handheld PC, and HTPC images I am stuck updating at 99%, and the changelog is the same after every update.  What gives?
 The update indicator is actually faked due to the limitations of Steam itself expecting the user to be on SteamOS for that progress bar to give any accurate information.  
 
 There is a set schedule for that to stop showing the progress indicator after a certain time, but sometimes this fails.  If it's still at 99% and it's been an unrealistic amount of time, do not worry about it.  It most likely applied the updates to your system, flatpaks, and distrobox containers.  If you are still paranoid then go into Desktop Mode, open a host terminal, and enter: `ublue-update`, and if it there's no errors, you're good.  That is exactly the same method as updating in Game Mode.
 
 As for the changelog, those are for SteamOS and not Bazzite.  Some of it may apply since we share a lot of the same packages, but regardless, it will always show SteamOS changelogs by Valve and has no relation to the updates for Bazzite.  Check our [newsletters](https://universal-blue.org/blog/category/bazzite/) for major changes and features. If you want to see the patch notes in real time, check the newest [commits](https://github.com/ublue-os/bazzite/commits/main) on Github.
 
-## Steam is not starting, what should I do? (Also, I have 2 GPUs.)
-This would be out of scope for our project due to it being an issue currently with Steam itself and not Bazzite, but we had enough support tickets surrounding it that we are including the fix in our FAQ.
-
-Recently, Steam breaks if you have hybrid graphics in your PC.  The solution is simply locating the .desktop file for Steam (non-Flatpak versions are located in: `~/.local/share/applications/`) and opening it with a text editor (Kate, Text Editor, etc.), and adding this to the last line under `[Desktop Entry]`:
-```bash
-PrefersNonDefaultGPU=false
-X-KDE-RunOnDiscreteGpu=true
-```
-Save the file.  Steam should now launch.
-
-Read more about this issue [here](https://github.com/ValveSoftware/steam-for-linux/issues/9940).
-
-## What is Wayland and X11?
-In short, Wayland and X11 (also known as Xorg or the X Window System) are windowing systems for desktop Linux.
-
-* Wayland is the default for most of the images and the recommended option for Bazzite.
-* X11 is a legacy windowing system. While we recommend to stick with Wayland, there may be scenarios where X11 would have to be used. Nvidia GPUs may have issues with Wayland, so X11 is the default for the Nvidia images.
-
-You can swap between the two in the login screen for desktop images, and enter `ujust _toggle_wayland` in a host terminal for Steam Deck/HTPC/Handheld PC images.
-
-##  I am experiencing a bug or want to request a feature! Help!
-In order to troubleshoot the issue properly, you should add a log or terminal output of the issue.  
-
-**Example 1:** For a game running on Steam through Proton, go to the game's properties and type `PROTON_LOG=1 %command%` in the launch options section.  Play the game and the log should appear by the appid in your `Home` directory, and make sure to attach that to the issue you have opened.
-
-**Example 2**: For a Flatpak application that has issues, get the Flatpak package name of all installed applications by entering `flatpak list` (you may need to readjust the terminal window to get the package name to fit beforehand.)  After you got the name, enter `flatpak run <flatpak.package.name>` and a console output will appear.  Copy and paste into a text file, save it, and attach it.
-
-Explain your issue or proposal in our [issue tracker](https://github.com/ublue-os/bazzite/issues) or [Github Discussions Page](https://github.com/orgs/ublue-os/discussions/categories/bazzite).
-
-It's always a good idea to try and manually update your system by entering in a host terminal: `rpm-ostree update` and `ublue-update`, then waiting for the system to get the latest upgrades, and rebooting to see if the issue still persists.
-
-One of the goals of this project is to have the convenience of never worrying about having to reinstall your operating system.  However, all of this is new, and anything can explode horribly if you try hard enough.  When the worst-case scenario appears and the only solution is to reinstall Bazzite, then please backup your personal files in your `Home` directory as well as any drives connected to your device.  Application data for Flatpaks, which is anything installed from Discover or GNOME Software, are stored in your Home directory under `~/.var/app/`.  Make sure you have hidden files enabled in the file manager to see all of your files.
-
-## I would like to contribute to Bazzite.  Where do I start?
-Thank you for being so eager to contribute to the project!  Bazzite has a [suggestions thread](https://github.com/orgs/ublue-os/discussions/246) where you can suggest any feedback to the project.  If you want to develop or provide documentation for Bazzite, then read the contributing [guide](/images/bazzite/CONTRIBUTING).  This guide also links to our roadmap for future plans with the project.
 
 <hr>
 
