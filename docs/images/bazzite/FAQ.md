@@ -330,9 +330,9 @@ Desktop Mode still has access to all of the applications in Discover that SteamO
 
 ### Does the Steam Deck image recieve BIOS updates like SteamOS?
 
-**Yes it does**.  If a BIOS update is available then it will install when you update Bazzite normally.  We even included a **special command to disable BIOS updates at your own risk**: `ujust disable-bios-updates`.
+**Yes it does**.  If a BIOS update is available then it will install when you update Bazzite normally.  If desired, there is a **command to disable BIOS updates at your own risk**: `ujust disable-bios-updates`.
 
-### Why does the stock 64GB Steam Deck not supported on Bazzite?
+### Why is the stock 64GB Steam Deck not supported on Bazzite?
 
 It has filesystem corruptions.  You will have booting issues, freezes, and will not be able to update the image.  Upgrade the storage to resolve this if you feel comfortable doing so.
 
