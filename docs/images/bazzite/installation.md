@@ -118,7 +118,7 @@ Click "Next" to begin configuring Bazzite.  Press the toggle switch button next 
 
 Login to Steam **(required for Steam Deck, HTPC, and Handheld PC images)**, and reboot your device when you finish.
 
-If you have a microSD card and had game installed on SteamOS, and do NOT want to reinstall your video games, then select "Use EXT4 fo SD cards" in the Bazzite Portal.
+If you have a microSD card and had game installed on SteamOS, and do NOT want to reinstall your video games, then select "Use EXT4 for SD cards" in the Bazzite Portal.
 
 !!! NOTE
 
