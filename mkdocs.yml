@@ -66,6 +66,8 @@ extra:
     provider: google
     property: G-QJBLY50M60
   social:
+    - icon: fontawesome/brands/discourse
+      link: https://universal-blue.discourse.group
     - icon: fontawesome/brands/discord
       link: https://discord.gg/WEu6BdFEtp
     - icon: fontawesome/brands/youtube
