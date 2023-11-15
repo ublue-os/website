@@ -5,7 +5,7 @@ All contributions are appreciated!
 
 Please refer to our [Code of Conduct](/CODE_OF_CONDUCT) while you're at it!
 
-Feel free to report issues as you find them, and [helping others in the discussions](https://github.com/orgs/ublue-os/discussions) is always appreciated.
+Feel free to report issues as you find them, and [helping others in the discussions]([https://github.com/orgs/ublue-os/discussions](https://universal-blue.discourse.group/c/contributing/7)) is always appreciated.
 
 ## Getting Started
 
