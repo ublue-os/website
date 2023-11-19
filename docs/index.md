@@ -114,8 +114,9 @@ Our goal is to for one install to last the life of the hardware.
 
 ## Join Us
 
-We're always looking for people to help, all skill levels and areas of expertise are welcome. Check out [the roadmap](https://github.com/orgs/ublue-os/projects/1) and [proposals](https://github.com/orgs/ublue-os/discussions?discussions_q=is%3Aopen+label%3Aproposal) to get a feel for the project, then: 
+We're always looking for people to help, all skill levels and areas of expertise are welcome. Check out [the roadmap](https://github.com/orgs/ublue-os/projects/1) to get a feel for the project, then: 
 
+- Discuss the project with us on [Discourse](https://universal-blue.discourse.group/)
 - [Join our Discord](https://discord.gg/WEu6BdFEtp)
   - We strive for a safe, inclusive community.
 - Pull requests encouraged and accepted.
