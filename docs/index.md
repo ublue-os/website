@@ -44,7 +44,7 @@ Our images offer GNOME, KDE, XFCE, LXQt, Budgie, and MATE, with more being [adde
 
 Check out [Bazzite](/images/bazzite), the ultimate gaming setup for your PC, Steam Deck, ASUS ROG Ally and Legion Go. Fedora's upstream pipeline automated directly to your device, nice. 
 
-[Bluefin](/images/bluefin) is a simple to use desktop with the mission of serving a mass audience. The [Bluefin DX](/images/bluefin/developer-experience) edition is designed to be the ultimate Linux workstation for open source developers.
+[Bluefin](https://universal-blue.discourse.group/c/bluefin/6) is a simple to use desktop with the mission of serving a mass audience. The [Bluefin DX](https://universal-blue.discourse.group/t/bluefin-dx-the-bluefin-developer-experience/39) edition is designed to be the ultimate Linux workstation for open source developers.
 
 And last, but not least, check out [Beyond](https://github.com/ublue-os/beyond), our collaboration with [Cassidy James Blaede](https://cassidyjames.com/), a peek into his vision of a future GNOME desktop. 
 
