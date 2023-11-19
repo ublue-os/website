@@ -32,7 +32,7 @@ Here's the quick summary:
 
 ## New ISOs
 
-Thanks to [akdev1l](https://github.com/akdev1l/) we now have fresh offline ISOs available for testing! 
+Thanks to [akdev1l](https://github.com/akdev1l/) we now have fresh offline ISOs available for testing! (EDIT: DO NOT USE!)
 
 - [bazzite-38-x86_64.iso](https://ublue.download/bazzite-38-x86_64.iso) - [checksum](https://ublue.download/bazzite-38-x86_64.iso.CHECKSUM)
 - [bazzite-deck-38-x86_64.iso](https://ublue.download/bazzite-deck-38-x86_64.iso) - [checksum](https://ublue.download/bazzite-deck-38-x86_64.iso.CHECKSUM)
