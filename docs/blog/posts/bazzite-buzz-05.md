@@ -49,8 +49,6 @@ We are now focusing on having an extremely stable and consistent experience acro
 
 As always, we'd like to thank all of our contributors and those who are helping us troubleshoot any issues in our newer builds.  The next Bazzite Buzz will focus on the transition from Fedora 38 to Fedora 39, so stay tuned for that.
 
-New users who want to give Bazzite a try, here is the the latest [**online ISO**](https://github.com/ublue-os/bazzite/releases/tag/v1.2.0). Check out the [installation guide](https://universal-blue.org/images/bazzite/installation/) and [FAQ](https://universal-blue.org/images/bazzite/FAQ/), and if you experience any issues then please refer to our [issue tracker](https://github.com/ublue-os/bazzite/issues) and create one if your issue is not here.
-
 
 # Features
 - Nvidia support for ASUS and Microsoft Surface images.
