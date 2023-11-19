@@ -35,9 +35,9 @@
     margin: 0;
 
     color: var(--md-typeset-color);
+    background-color: #ecf3ff;
 
     display: block;
-    background-color: var(--md-default-bg-color);
     width: 23rem;
     max-width: 100%;
     padding: 1rem;
@@ -47,10 +47,12 @@
     left: -0.5rem;
     border: solid 1px var(--md-typeset-color);
 }
+[data-md-color-scheme="slate"] .md-typeset .ublue-card-grid ul li h3 {
+    background-color: #303952;
+}
 .md-typeset .ublue-card-grid ul li h3 a.headerlink {
     display: none;
 }
-
 
 @media only screen and (max-width: 750px) {
     .md-typeset .ublue-card-grid ul {
