@@ -95,9 +95,9 @@ The Steam Deck release also features the following:
     - Ability to switch back to X11 on the desktop if desired by editing `/etc/default/desktop-wayland`.
     - 32GB RAM mod your Steam Deck? Enjoy double the maximum VRAM amount, automatically applied. <sup><sub>(Can you share your soldering skills?)</sub></sup>
 
-## How to get it and current status
+## Current status
 
-Start with [the documentation](https://universal-blue.org/images/bazzite/) and make sure you [follow the installation instructions carefully](https://universal-blue.org/images/bazzite/installation/)! The installation process is still considered incomplete, we're hoping to eventually migrate to the [new webui-based Anaconda installer](https://fedoramagazine.org/anaconda-web-ui-preview-image-now-public/) which will be much nicer for our use case. 
+The installation process is still considered incomplete, we're hoping to eventually migrate to the [new webui-based Anaconda installer](https://fedoramagazine.org/anaconda-web-ui-preview-image-now-public/) which will be much nicer for our use case. 
 
 Like all Universal Blue images, Bazzite is using features that are on their way to Fedora, and are currently not considered stable. However with over 1.5 million image pulls over the last 9 months, we feel the model and method are proving to be reliable!
 
