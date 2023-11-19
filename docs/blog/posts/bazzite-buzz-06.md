@@ -29,7 +29,7 @@ This newsletter's highlight is all about the rebranding that Bazzite has undergo
 
 ![image](https://github.com/ublue-os/website/assets/121328689/27f6c942-990e-420f-8977-ed17e070043a)
 
-Bazzite has rebranded thanks to the design work of [rei0260](https://discord.com/users/rei0260). This new branding will also appear in Bazzite now by default.  Previously, the project only displayed the Fedora and SteamOS branding, but now the project has a standalone identity.  There are also new user avatars based on Valve games for both KDE and GNOME images of Bazzite.  You can change to any of these in the settings.
+Bazzite has rebranded thanks to the design work of rei. This new branding will also appear in Bazzite now by default.  Previously, the project only displayed the Fedora and SteamOS branding, but now the project has a standalone identity.  There are also new user avatars based on Valve games for both KDE and GNOME images of Bazzite.  You can change to any of these in the settings.
 
 <img 
     style="display: block; 
@@ -71,7 +71,7 @@ Bazzite and Universal Blue have been showcased by a ton of different [Youtube co
 <p style="text-align:center;">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/qQ8uoBQIZ1I" title="Fizeram um novo sistema operacional para Gamers" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </p>
 
-Translations to Bazzite's [documentation](https://github.com/ublue-os/website/tree/main/docs/images/bazzite) in different languages would be appreciated! The Linux desktop is used internationally, and it would be great for the Bazzite documentation to reflect that.  If anyone would like to make translations for the project, then please feel free to contribute.  Bazzite already has multiple language support due to Fedora already providing that for us, but our documentation is only avaliable in English currently.
+Translations to Bazzite's documentation in different languages would be appreciated! The Linux desktop is used internationally, and it would be great for the Bazzite documentation to reflect that.  If anyone would like to make translations for the project, then please feel free to contribute.  Bazzite already has multiple language support due to Fedora already providing that for us, but our documentation is only avaliable in English currently.
 
 While we're on the topic of media coverage, special thanks to everyone who has made a video or written an article about Bazzite.  We are humbled by all of the support from our community and are grateful for those promoting the project.
 
