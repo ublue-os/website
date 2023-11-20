@@ -1,4 +1,14 @@
 # Waydroid Setup Guide
+
+<hr>
+
+<p style="text-align: center; font-weight: 600">ATTENTION:</p>
+
+We are migrating [documentation](https://universal-blue.discourse.group/docs?category=5) to Discourse.  The [Waydroid Guide](https://universal-blue.discourse.group/docs?topic=32) is updated over there and this page will soon be removed.
+
+<hr>
+
+
 !!! note
 
     Nvidia images are not supported.
