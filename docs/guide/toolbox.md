@@ -26,7 +26,7 @@ To create an Arch Linux Distrobox, run:
 distrobox create --image docker.io/library/archlinux:latest --name arch
 ```
 
-[List of tested container images](https://distrobox.privatedns.org/compatibility/#containers-distros).
+[List of tested container images](https://distrobox.it/compatibility/#containers-distros).
 
 When choosing an image for your container, consider which package manager and repos you want to use (e.g. `apt` vs. `pacman`), and pick one that you're most comfortable with!
 
@@ -54,13 +54,13 @@ You can also export a binary or CLI program (for example, `vim`) by running the 
 distrobox-export --bin /usr/bin/vim --export-path ~/.local/bin
 ```
 
-[Read more in the Distrobox documentation about `distrobox-export`](https://distrobox.privatedns.org/usage/distrobox-export/)
+[Read more in the Distrobox documentation about `distrobox-export`](https://distrobox.it/usage/distrobox-export/)
 
 ## Integrating VSCode with Distrobox
 
 There are two ways to integrate VSCode with a Distrobox.  
 The easiest way is to just install it inside your Distrobox and `distrobox-export` it. The integrated terminal and all addons will then be run inside that single Distrobox. The other way is with [the Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers).
-Both ways are detailed inside [the official Distrobox tutorial for integrating with VSCode](https://distrobox.privatedns.org/posts/integrate_vscode_distrobox/)
+Both ways are detailed inside [the official Distrobox tutorial for integrating with VSCode](https://distrobox.it/posts/integrate_vscode_distrobox/)
 
 ## Using the host's `xdg-open` inside Distrobox
 
