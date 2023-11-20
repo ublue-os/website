@@ -1,5 +1,13 @@
 # Frequently Asked Questions
 
+<hr>
+
+<p style="text-align: center; font-weight: 600">ATTENTION:</p>
+
+We are migrating [documentation](https://universal-blue.discourse.group/docs?category=5) to Discourse.  The [FAQ](https://universal-blue.discourse.group/docs?topic=33) is updated over there and this page will soon be removed.
+
+<hr>
+
 This is a very lengthy FAQ that attempts to cover several different topics surrounding Bazzite. If you are looking for something specific then please use the table of contents because this is a really long page that tries to cover all of the Bazzite images.
 
 ## General FAQ
