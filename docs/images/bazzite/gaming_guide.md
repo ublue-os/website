@@ -1,5 +1,13 @@
 # Linux Gaming Guide
 
+<hr>
+
+<p style="text-align: center; font-weight: 600">ATTENTION:</p>
+
+We are migrating [documentation](https://universal-blue.discourse.group/docs?category=5) to Discourse.  The [Gaming Guide](https://universal-blue.discourse.group/docs?topic=31) is updated over there and this page will soon be removed.
+
+<hr>
+
 ## Useful Websites
 
 * [ProtonDB](https://www.protondb.com/) - User reports for games running through proton or have a Linux port. 
