@@ -32,7 +32,7 @@ Please report unacceptable behavior to `jorge.castro@gmail.com`
 
 ## I Have a Question
 
-If you want to ask a question, ask in the [discussion forum](https://github.com/orgs/ublue-os/discussions) or come hang out on [the Discord server](https://discord.gg/WEu6BdFEtp)
+If you want to ask a question, ask in the [discussion forum](https://universal-blue.discourse.group/) or come hang out on [the Discord server](https://discord.gg/WEu6BdFEtp)
 
 ## I Want To Contribute
 

@@ -1,5 +1,13 @@
 # Contributing to Bazzite
 
+<hr>
+
+<p style="text-align: center; font-weight: 600">ATTENTION:</p>
+
+We are migrating [documentation](https://universal-blue.discourse.group/docs?category=5) to Discourse.  This [document](https://universal-blue.discourse.group/docs?topic=38) is updated over there and this page will soon be removed.
+
+<hr>
+
 ![image](https://github.com/ublue-os/website/assets/121328689/2dabd43d-58ae-414b-a017-86fa52474168)
 
 <p style="text-align: center; font-weight: 600; color: red">We want YOU to contribute to Bazzite and Universal Blue. </p>

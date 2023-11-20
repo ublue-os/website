@@ -96,7 +96,6 @@ rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/silverblue-nvidi
 !!! Warning "Driver Support Subject to Change"
     - Drivers are provided by Nvidia and packaged by RPMFusion, therefore we cannot make any guarantees on support outside of the support these two organizations provide.
     - Due to the nature of third party kernel modules, support for older versions is best effort.
-    - It is *strongly encouraged* for you to subscribe to [the Nvidia driver announcements](https://github.com/orgs/ublue-os/discussions/categories/nvidia-driver-announcements?discussions_q=is%3Aopen+category%3A%22Nvidia+Driver+Announcements%22) section of the forums to keep up with the latest changes and news.
 
 !!! Info "TL;DR:"
     We do the best we can but sometimes need to drop support depending on what's going with Nvidia, RPMFusion, Fedora, and/or the Linux kernel.
