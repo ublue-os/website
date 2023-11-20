@@ -26,7 +26,7 @@ To create an Arch Linux Distrobox, run:
 distrobox create --image docker.io/library/archlinux:latest --name arch
 ```
 
-[List of tested container images](https://distrobox.privatedns.org/compatibility/#containers-distros).
+[List of tested container images](https://distrobox.it/compatibility/#containers-distros).
 
 When choosing an image for your container, consider which package manager and repos you want to use (e.g. `apt` vs. `pacman`), and pick one that you're most comfortable with!
 
