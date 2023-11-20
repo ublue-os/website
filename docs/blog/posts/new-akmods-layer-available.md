@@ -17,7 +17,7 @@ Since early in the Universal Blue project, our [Nvidia repository](https://githu
 
 ![image](https://user-images.githubusercontent.com/1264109/223513413-45c425a4-bd90-4d33-af47-52a4aac70908.png)
 
-This kicked off a [nice community discussion](https://github.com/orgs/ublue-os/discussions/106) where the team figured out an approach.
+This kicked off a nice community discussion where the team figured out an approach.
 
 First we [needed to migrate to a new signing key](https://ublue.it/blog/2023/05/19/important-secure-boot-changes-required-for-nvidia-image-users/) and then begin splitting the akmods into [its own repository](https://github.com/ublue-os/akmods). Conveniently, this also allows us to include things like `v4l2loopback` so that Universal Blue users will have that working out of the box. Soon we hope to add more hardware enablement akmods like XBox Wireless controllers, OpenRazer, and some older Broadcom wireless drivers. 
 
