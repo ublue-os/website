@@ -1,5 +1,13 @@
 # Installing Bazzite and Initial Setup
 
+<hr>
+
+<p style="text-align: center; font-weight: 600">ATTENTION:</p>
+
+We are migrating [documentation](https://universal-blue.discourse.group/docs?category=5) to Discourse.  The [Installation Guide](https://universal-blue.discourse.group/docs?topic=30) is updated over there and this page will soon be removed.
+
+<hr>
+
 !!! WARNING
     Fedora's installer has some issues with OCI images currently since this feature is still new.  If you have any issues installing, please consult our FAQ page [here](/images/bazzite/FAQ/#i-am-having-issues-installing-bazzite-onto-my-hardware).
 
