@@ -29,7 +29,7 @@ This newsletter's highlight is all about the rebranding that Bazzite has undergo
 
 ![image](https://github.com/ublue-os/website/assets/121328689/27f6c942-990e-420f-8977-ed17e070043a)
 
-Bazzite has rebranded thanks to the design work of [rei0260](https://discord.com/users/rei0260). This new branding will also appear in Bazzite now by default.  Previously, the project only displayed the Fedora and SteamOS branding, but now the project has a standalone identity.  There are also new user avatars based on Valve games for both KDE and GNOME images of Bazzite.  You can change to any of these in the settings.
+Bazzite has rebranded thanks to the design work of rei. This new branding will also appear in Bazzite now by default.  Previously, the project only displayed the Fedora and SteamOS branding, but now the project has a standalone identity.  There are also new user avatars based on Valve games for both KDE and GNOME images of Bazzite.  You can change to any of these in the settings.
 
 <img 
     style="display: block; 
@@ -71,13 +71,13 @@ Bazzite and Universal Blue have been showcased by a ton of different [Youtube co
 <p style="text-align:center;">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/qQ8uoBQIZ1I" title="Fizeram um novo sistema operacional para Gamers" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </p>
 
-Translations to Bazzite's [documentation](https://github.com/ublue-os/website/tree/main/docs/images/bazzite) in different languages would be appreciated! The Linux desktop is used internationally, and it would be great for the Bazzite documentation to reflect that.  If anyone would like to make translations for the project, then please feel free to contribute.  Bazzite already has multiple language support due to Fedora already providing that for us, but our documentation is only avaliable in English currently.
+Translations to Bazzite's documentation in different languages would be appreciated! The Linux desktop is used internationally, and it would be great for the Bazzite documentation to reflect that.  If anyone would like to make translations for the project, then please feel free to contribute.  Bazzite already has multiple language support due to Fedora already providing that for us, but our documentation is only avaliable in English currently.
 
 While we're on the topic of media coverage, special thanks to everyone who has made a video or written an article about Bazzite.  We are humbled by all of the support from our community and are grateful for those promoting the project.
 
 ## Closing Thoughts, Fedora 39 Testing, Bluefin, and Survey
 
-We are nearing the 2.0 release of Bazzite.  It has been both a bumpy yet exciting ride few months releasing Bazzite out into the wild.  Our goal is to have Bazzite remain a very stable and consistent experience across different hardware and configurations when the Fedora 39 builds are out.  We had fixed edge-case scenarios and issues that had gone overlooked for the last three months.  However, one of the major issues that has plagued Bazzite since we released ISOs is Fedora's installer not cooperating with our OCI image method.  Please check our [FAQ](https://universal-blue.org/images/bazzite/FAQ/#i-am-having-issues-installing-bazzite-onto-my-hardware) if you have issues installing Bazzite.
+We are nearing the 2.0 release of Bazzite.  It has been both a bumpy yet exciting ride few months releasing Bazzite out into the wild.  Our goal is to have Bazzite remain a very stable and consistent experience across different hardware and configurations when the Fedora 39 builds are out.  We had fixed edge-case scenarios and issues that had gone overlooked for the last three months.  However, one of the major issues that has plagued Bazzite since we released ISOs is Fedora's installer not cooperating with our OCI image method.
 
 Fedora 39 can be tested right now by rebasing to the 39 builds.  These Bazzite builds are considered "Release Candidate (RC)" right now, but there will be missing packages since many repositories do not build for unstable versions of Fedora.  If you want to test it now, open a host terminal and enter the command based on the image you're using.  Here are some examples:
 
@@ -85,13 +85,11 @@ Fedora 39 can be tested right now by rebasing to the 39 builds.  These Bazzite b
 
 `rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bazzite-deck:39` for the Steam Deck / HTPC image.
 
-Refer to the Universal Blue [full image list](https://universal-blue.org/images/#latest) and replace `:latest` with `:39` for the image you're currently on to upgrade to the Fedora 39 builds right now.  **Please note:** Once you rebase to the 39 testing builds, you will have to rebase back to `:latest` once Fedora 39 is out.    When Fedora 39 has a stable release, then it will be upgraded for everyone in an update.
+Refer to the Universal Blue [full image list](/images/#latest) and replace `:latest` with `:39` for the image you're currently on to upgrade to the Fedora 39 builds right now.  **Please note:** Once you rebase to the 39 testing builds, you will have to rebase back to `:latest` once Fedora 39 is out.    When Fedora 39 has a stable release, then it will be upgraded for everyone in an update.
 
 For those waiting on ASUS ROG Ally support, a lot of work has been done these past weeks to get it working properly.  The current state of Bazzite on the Ally is that it's slowly working.  We are hoping to resolve this in the coming months, but for those curious, the `bazzite-ally` does boot with major controller issues right now.  If you would like to help debug Bazzite on the ASUS ROG Ally, or other unique handheld hardware, then get in touch with us.  There are already trackers for [other handheld hardware](https://github.com/ublue-os/bazzite/issues/468) right now. We would like to thank everyone who has been helping us with proper support for all of the other handheld devices on the market.
 
 We would like to thank our community for helping the project grow into what it is today.  Universal Blue has [announced](https://www.ypsidanger.com/announcing-project-bluefin/) a new image coming to beta soon known as [Bluefin](https://projectbluefin.io/).  It is a Fedora Linux image which is a curated GNOME experience that has the reliability of ChromeOS, but with the power of the modern Linux desktop.  Bazzite is the more gaming focused between the two, but Bluefin offers the [`bazzite-arch`](https://github.com/ublue-os/bazzite-arch) Distrobox container which is utilized in the Bazzite desktop images.  Bluefin also allows developers to have access to many of the standard tools and container-focused work environments with a single command. Give it a try sometime, and this is a reminder that [anyone can make their own custom image for Fedora](https://universal-blue.org/guide/fork-your-own/).
-
-New users who want to give Bazzite a try, here is the the [**latest releases**](https://github.com/ublue-os/bazzite/releases). Check out the [installation guide](https://universal-blue.org/images/bazzite/installation/) and [FAQ](https://universal-blue.org/images/bazzite/FAQ/), and if you experience any issues, then please refer to our [issue tracker](https://github.com/ublue-os/bazzite/issues).  Also, discuss any feature requests or questions you have about Bazzite [here](https://github.com/orgs/ublue-os/discussions/categories/bazzite).
 
 Lastly, we have a [**survey**](https://opnform.com/forms/your-bazzite-experience-sohzei) out now that we encourage you to fill out for feedback on the project.  We also want to gather statistics on what hardware that Bazzite is being installed on.  Thank you in advance if you participate in it.  This should only take about 5 minutes to complete.
 
