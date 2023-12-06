@@ -44,7 +44,7 @@ Our images offer GNOME, KDE, XFCE, LXQt, Budgie, and MATE, with more being [adde
 
 Check out [Bazzite](/images/bazzite), the ultimate gaming setup for your PC, Steam Deck, ASUS ROG Ally and Legion Go. Fedora's upstream pipeline automated directly to your device, nice. 
 
-[Bluefin](/images/bluefin) is a simple to use desktop with the mission of serving a mass audience. The [Bluefin DX](/images/bluefin/developer-experience) edition is designed to be the ultimate Linux workstation for open source developers.
+[Bluefin](https://universal-blue.discourse.group/c/bluefin/6) is a simple to use desktop with the mission of serving a mass audience. The [Bluefin DX](https://universal-blue.discourse.group/t/bluefin-dx-the-bluefin-developer-experience/39) edition is designed to be the ultimate Linux workstation for open source developers.
 
 And last, but not least, check out [Beyond](https://github.com/ublue-os/beyond), our collaboration with [Cassidy James Blaede](https://cassidyjames.com/), a peek into his vision of a future GNOME desktop. 
 
@@ -114,8 +114,9 @@ Our goal is to for one install to last the life of the hardware.
 
 ## Join Us
 
-We're always looking for people to help, all skill levels and areas of expertise are welcome. Check out [the roadmap](https://github.com/orgs/ublue-os/projects/1) and [proposals](https://github.com/orgs/ublue-os/discussions?discussions_q=is%3Aopen+label%3Aproposal) to get a feel for the project, then: 
+We're always looking for people to help, all skill levels and areas of expertise are welcome. Check out [the roadmap](https://github.com/orgs/ublue-os/projects/1) to get a feel for the project, then: 
 
+- Discuss the project with us on [Discourse](https://universal-blue.discourse.group/).
 - [Join our Discord](https://discord.gg/WEu6BdFEtp)
   - We strive for a safe, inclusive community.
 - Pull requests encouraged and accepted.

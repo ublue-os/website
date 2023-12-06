@@ -89,9 +89,7 @@ Users can now switch to different update branches of Bazzite.
 
 Latest is the default branch and what we generally recommend for most users to stay on.  Testing is a preview of what's to come, and unstable is only recommended for advanced users and is exactly how it sounds.
 
-[Waydroid](https://waydro.id/) has improved since it was first packaged in Bazzite.  Check out the [updated guide](https://universal-blue.org/images/bazzite/waydroid/) for setting it up if you want to run Android applications.
-
-Lots of bug also have been squashed the last couple of weeks.  OpenRazor should function properly now once installed through the Bazzite Portal.  Lutris should no longer complain about missing Wine dependencies, and Nix applications should have icons.
+[Waydroid](https://waydro.id/) has improved since it was first packaged in Bazzite.  Lots of bug also have been squashed the last couple of weeks.  OpenRazor should function properly now once installed through the Bazzite Portal.  Lutris should no longer complain about missing Wine dependencies, and Nix applications should have icons.
 
 ## DaVinci Resolve Container & Bluefin Beta
 
@@ -102,19 +100,17 @@ For the video editing enthusiasts out there, if you use DaVinci Resolve and want
 ![Bluefin](https://github.com/ublue-os/website/assets/121328689/3bf84bd7-5681-459f-930f-dee4b9f3470b)
 <p style="text-align: left;font-weight: bold;font-size: 14px">Bluefin showcase by Justin Garrison.</p>
 
-While we're on the topic of Universal Blue, [Bluefin](https://projectbluefin.io/) is another Universal Blue image centered around an Ubuntu-like experience, but using the Fedora Linux technology that Bazzite users are already familiar with.  A great image to install on a laptop or workstation.  If you want a developer-focused OS in the same nature as Bazzite, then give it a shot even if it's in a virtual machine for testing purposes!  You can even [make your own image too](https://universal-blue.org/guide/fork-your-own/)!
+While we're on the topic of Universal Blue, [Bluefin](https://projectbluefin.io/) is another Universal Blue image centered around an Ubuntu-like experience, but using the Fedora Linux technology that Bazzite users are already familiar with.  A great image to install on a laptop or workstation.  If you want a developer-focused OS in the same nature as Bazzite, then give it a shot even if it's in a virtual machine for testing purposes!
 
 ## Closing Thoughts
 
 Bazzite and its community has grown extraordinarily since we first started.  The project is now established and can move forward focusing on stability and hardware support.  The future of Bazzite will be focused on keeping up with feature parity of SteamOS, getting other hardware to work on it, and taking cues from the feedback we have received to make a better image for everyone.
 
-There has also been users in our community who would prefer not to use Discord as a communication method for support or discussion.  We do have a [Github Discussions](https://github.com/orgs/ublue-os/discussions/categories/bazzite) forum, but that's not an alternative to an instant messaging platform like Discord.  A user has [suggested](https://github.com/ublue-os/main/issues/388) to have an unofficial [Matrix](https://matrix.to/#/#universal-blue:matrix.org) room.  However, the maintainers of the images may not be as present, if at all, for any alternative means of communication outside of Discord and the Github discussions.  This is detrimental for support, but we are not against a community forming outside of the official communication channels discussing and helping each other surrounding the Universal Blue projects including Bazzite
+There has also been users in our community who would prefer not to use Discord as a communication method for support or discussion. A user has [suggested](https://github.com/ublue-os/main/issues/388) to have an unofficial [Matrix](https://matrix.to/#/#universal-blue:matrix.org) room.  However, the maintainers of the images may not be as present, if at all, for any alternative means of communication outside of Discord and the Github discussions.  This is detrimental for support, but we are not against a community forming outside of the official communication channels discussing and helping each other surrounding the Universal Blue projects including Bazzite
 
-Currently, one of the major growing pains is the installation process.  If you do run into installation issues, then please check out the workarounds listed [here](https://universal-blue.org/images/bazzite/FAQ/#i-am-having-issues-installing-bazzite-on-my-hardware-whats-going-on).  Bazzite still has the feeback [**survey**](https://opnform.com/forms/your-bazzite-experience-sohzei) open if anyone who hasn't taken it yet is still interested. There is also a [Github discussion](https://github.com/orgs/ublue-os/discussions/246) open for feedback on the project too.
+Bazzite still has the feeback [**survey**](https://opnform.com/forms/your-bazzite-experience-sohzei) open if anyone who hasn't taken it yet is still interested.
 
-
-We would like to thank our community for helping the project grow into what it is today.  New users who want to give Bazzite a try, here is the the [**latest releases**](https://github.com/ublue-os/bazzite/releases). Check out the [installation guide](https://universal-blue.org/images/bazzite/installation/) and [FAQ](https://universal-blue.org/images/bazzite/FAQ/), and if you experience any issues, then please refer to our [issue tracker](https://github.com/ublue-os/bazzite/issues).  Also, discuss any feature requests or questions you have about Bazzite [here](https://github.com/orgs/ublue-os/discussions/categories/bazzite).
-
+We would like to thank our community for helping the project grow into what it is today.  New users who want to give Bazzite a try, here is the the [**latest releases**](https://github.com/ublue-os/bazzite/releases).
 
 ## Changelog
 

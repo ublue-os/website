@@ -5,7 +5,7 @@ All contributions are appreciated!
 
 Please refer to our [Code of Conduct](/CODE_OF_CONDUCT) while you're at it!
 
-Feel free to report issues as you find them, and [helping others in the discussions](https://github.com/orgs/ublue-os/discussions) is always appreciated.
+Feel free to report issues as you find them, and [helping others in the discussions]([https://github.com/orgs/ublue-os/discussions](https://universal-blue.discourse.group/c/contributing/7)) is always appreciated.
 
 ## Getting Started
 
@@ -32,7 +32,7 @@ Please report unacceptable behavior to `jorge.castro@gmail.com`
 
 ## I Have a Question
 
-If you want to ask a question, ask in the [discussion forum](https://github.com/orgs/ublue-os/discussions) or come hang out on [the Discord server](https://discord.gg/WEu6BdFEtp)
+If you want to ask a question, ask in the [discussion forum](https://universal-blue.discourse.group/) or come hang out on [the Discord server](https://discord.gg/WEu6BdFEtp)
 
 ## I Want To Contribute
 
