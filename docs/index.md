@@ -39,7 +39,6 @@ Our images offer GNOME, KDE, XFCE, LXQt, Budgie, and MATE, with more being [adde
 
 - [Asus](/images/asus) - Fedora-based images with [asus-linux.org](https://asus-linux.org) kernels
 - [Framework](/images/framework) - Framework's recommended Fedora settings 
-- [Legion](/images/legion) - Fedora-based images with support Lenovo Legion laptops and Legion Go
 - [Surface](/images/surface) - Fedora-based images with [linux-surface](https://github.com/linux-surface/linux-surface) kernels
 
 Check out [Bazzite](/images/bazzite), the ultimate gaming setup for your PC, Steam Deck, ASUS ROG Ally and Legion Go. Fedora's upstream pipeline automated directly to your device, nice. 
