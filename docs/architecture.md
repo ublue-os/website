@@ -21,7 +21,7 @@ Images with hardware specific features, built after the main images:
 
 ## Opinionated Images 
 
-These tend to have more opinions and are more "end prodcuct" base than base images: 
+These tend to have more opinions and are more "end product" base than base images: 
   
 - [Bazzite](https://github.com/ublue-os/bazzite/)
 - [Beyond](https://github.com/ublue-os/beyond)
