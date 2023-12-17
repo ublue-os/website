@@ -178,3 +178,5 @@ You can try changing to a single-containerfile setup where your build matrix set
 You might also want to get in-depth with the Containerfile/Dockerfile syntax, for that, check the [Dockerfile reference](https://docs.docker.com/engine/reference/builder/). You'll at least want to know about [`FROM`](https://docs.docker.com/engine/reference/builder/#from), [`RUN`](https://docs.docker.com/engine/reference/builder/#run), [`COPY`](https://docs.docker.com/engine/reference/builder/#copy), and [`ARG`](https://docs.docker.com/engine/reference/builder/#arg). Also check out the Containerfiles in Universal Blue projects for inspiration.
 
 When you get to the point that a lot of your Containerfile is just a big `RUN` statement, consider creating a `build.sh` script and running that instead.
+
+To add proper signing support, look at [signing.sh](https://github.com/ublue-os/startingpoint/blob/template/config/scripts/signing.sh) in ublue-os/startingpont. You'll have to adapt the script a little, but it shows everything that you need to do to get it to work properly.
