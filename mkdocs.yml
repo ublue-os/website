@@ -143,6 +143,7 @@ nav:
             - Manual setup: tinker/setup/manual.md
           - Installation: tinker/installation.md
           - Modification: tinker/modification.md
+          - Syncing: tinker/syncing.md
           - Community: tinker/community.md
           - Modules:
             - tinker/modules/index.md
