@@ -145,6 +145,8 @@ nav:
           - Modification: tinker/modification.md
           - Syncing: tinker/syncing.md
           - Community: tinker/community.md
+          - Advanced:
+            - Minimal setup: tinker/advanced/minimal-setup.md
           - Modules:
             - tinker/modules/index.md
             - bling: tinker/modules/bling.md

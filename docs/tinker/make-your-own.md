@@ -2,8 +2,10 @@
 
 The concept around image-based operating systems balances on the idea that the core image is ready to go, and ideally users don't need to touch it, but we understand that people like to tinker. Instead of layering packages that compromise the integrity of upgrades, we provide the tools for you to make your own image allowing you to have a pristine setup with just the configuration you want with minimal maintenance.
 
-This guide will help you set up your own GitHub repository to build a custom image, using the [`ublue-os/startingpoint`](https://github.com/ublue-os/startingpoint) template. At the end of the guide, you'll have a easily configurable base repository for building and signing a bootable OCI image.
+This guide will help you set up your own GitHub repository to build a custom image, using the [`ublue-os/startingpoint`](https://github.com/ublue-os/startingpoint) template, which provides some good defaults and an easy configuration format. At the end of the guide, you'll have an easily configurable base repository for building and signing a bootable OCI image.
 
 This guide requires you know at least the basics of using `git` and GitHub. If you are not yet familiar with the tools, you should understand some basics, like what a repository is, how committing and pushing work, what branches are, etc. You can start by reading the GitHub documentation [for getting started with git](https://docs.github.com/en/get-started/getting-started-with-git) and [for using git](https://docs.github.com/en/get-started/using-git).
 
 The template is built such that, for simple use cases, you don't need to know any [`Containerfile` syntax](https://docs.docker.com/engine/reference/builder/) or how [GitHub Actions](https://docs.github.com/en/actions) work, or even having much shell scripting experience, but knowing how those tools work will make more advanced modification possible.
+
+If you'd be more comfortable starting from scratch building with building OCI-images by writing Containerfiles by hand, check out [the minimal setup guide](advanced/minimal-setup.md). The guide will get you up to speed with making your own bare-bones repo from scratch, where you can learn the technologies Universal Blue relies on. Keep in mind that there is less documentation for this approach and some things have to be done more manually.
