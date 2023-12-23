@@ -43,7 +43,6 @@ theme:
     - toc.integrate
     - content.tabs.link
 markdown_extensions:
-  - meta
   - admonition
   - attr_list
   - md_in_html
