@@ -43,6 +43,7 @@ theme:
     - toc.integrate
     - content.tabs.link
 markdown_extensions:
+  - meta
   - admonition
   - attr_list
   - md_in_html
@@ -73,7 +74,7 @@ extra:
     - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/c/JorgeCastro/videos
     - icon: fontawesome/brands/mastodon
-      link: https://hachyderm.io/@jorge
+      link: https://fosstodon.org/@UniversalBlue
     - icon: fontawesome/solid/rss
       link: https://universal-blue.org/feed_rss_updated.xml
 plugins:
