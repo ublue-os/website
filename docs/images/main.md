@@ -2,7 +2,7 @@
 
 [![build-ublue](https://github.com/ublue-os/main/actions/workflows/build.yml/badge.svg)](https://github.com/ublue-os/main/actions/workflows/build.yml)
 
-A common main image for all other uBlue images, with minimal (but important) adjustments to Fedora. 💙
+A common main image for all other Universal Blue images, with minimal (but important) adjustments to Fedora. 💙
 
 1. [Features](#Features)
 2. [Tips and Tricks](#Tips-and-Tricks)
@@ -43,8 +43,6 @@ Should that not be possible, you can use [distrobox](https://github.com/89luca89
 Want an application that is only available on Arch Linux *and* one that is only on Ubuntu? Well, now can have both!
 
 Distrobox is very powerful; for example, you can use it to [host your entire development environment](https://github.com/89luca89/distrobox/blob/main/docs/posts/integrate_vscode_distrobox.md) completely separate from your host system. Or use it to run a [container for your virtual machines](https://github.com/89luca89/distrobox/blob/main/docs/posts/run_libvirt_in_distrobox.md).
-
-`ublue-os/base-main` is also very well suited for servers, and users are expected to make full use of `podman` to host containers running "typical" server software i.e. `nginx`, `caddy` and others.
 
 ## How to Install
 
