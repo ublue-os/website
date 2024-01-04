@@ -73,7 +73,7 @@ extra:
     - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/c/JorgeCastro/videos
     - icon: fontawesome/brands/mastodon
-      link: https://hachyderm.io/@jorge
+      link: https://fosstodon.org/@UniversalBlue
     - icon: fontawesome/solid/rss
       link: https://universal-blue.org/feed_rss_updated.xml
 plugins:
@@ -102,11 +102,6 @@ nav:
       - Framework Images: images/framework.md
       - Nvidia Images: images/nvidia.md
       - Surface Images: images/surface.md
-      - Bazzite: 
-          - Introduction: images/bazzite/index.md
-          - Installation: images/bazzite/installation.md
-          - Bazzite FAQ: images/bazzite/FAQ.md
-          - Waydroid Configuration: images/bazzite/waydroid.md
       - Toolboxes: toolboxes.md
   - Community:
       - Mission: mission.md
@@ -119,14 +114,6 @@ nav:
       - Videos: https://www.youtube.com/c/JorgeCastro/videos
   - Documentation:
       - Introduction: introduction.md
-      - User's Guide:
-          - Installing Software: guide/software.md
-          - just: guide/just.md
-          - Toolboxes: guide/toolbox.md
-          - Codecs: guide/codecs.md
-          - Thumbnails: guide/thumbnails.md
-          - Screensharing on Wayland: guide/screensharing.md
-          - Fork Your Own: guide/fork-your-own.md
       - Contributor's Guide:
           - Architecture: architecture.md
           - Contributing: CONTRIBUTING.md
