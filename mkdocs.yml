@@ -42,6 +42,8 @@ theme:
     - search.share
     - toc.integrate
     - content.tabs.link
+extra_css:
+  - styles/ublue-card-grid.css
 markdown_extensions:
   - admonition
   - attr_list
