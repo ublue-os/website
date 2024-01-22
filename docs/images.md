@@ -47,7 +47,7 @@ After you have rebooted, switch to the signed image by running one of the comman
     - Unique images for specific hardware (Framework, Surface, etc.)
     -  Overlaps with the other images.
         -  `bazzite-framework` as an example.
-- [Community Images](https://github.com/ublue-os/awesome-custom-images)
+- [[Community Images](https://github.com/ublue-os/awesome-custom-images)](https://universal-blue.discourse.group/t/list-of-community-created-custom-images/340)
     - You can make your own too!  Check out [Making Your Own](/tinker/make-your-own/) and [Forking Your Own](/guide/fork-your-own/).
 - Other images
     - Base images that include only the necessary Fedora packages as a starting point.
