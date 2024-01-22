@@ -14,7 +14,7 @@ mkdocs-video = "^1.5.0"
 mkdocs-git-committers-plugin-2 = "^1.1.2"
 mkdocs-embed-external-markdown = "^2.3.0"
 mkdocs-rss-plugin = "^1.6.0"
-pillow = "^10.0.1"
+pillow = "^10.2.0"
 cairosvg = "^2.7.0"
 
 [tool.poetry.group.dev.dependencies]
