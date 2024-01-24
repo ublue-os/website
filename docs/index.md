@@ -120,4 +120,4 @@ We're always looking for people to help, all skill levels and areas of expertise
   - We strive for a safe, inclusive community.
 - Pull requests encouraged and accepted.
 
-If you're building your own custom images feel free to add them to [our awesome list](https://github.com/ublue-os/awesome-custom-images)!
+If you're building your own custom images feel free to add them to [our awesome list](https://universal-blue.discourse.group/t/list-of-community-created-custom-images/340)!

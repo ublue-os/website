@@ -12,9 +12,11 @@ This list is in alphabetical order.
 ## Preparing to Rebase
 
 1. Optional: it is recommended that you pin your current ostree image to make sure you can roll back if you change your mind using:
+
     ```
    sudo ostree admin pin <index: number>
-   ```   
+   ```
+
    For example pinning the deployment at index 0 by running `sudo ostree admin pin 0`
 
 2. `rpm-ostree reset` will remove all your layered packages and prepare for rebasing.
@@ -35,24 +37,25 @@ This list is in alphabetical order.
 After you have rebooted, switch to the signed image by running one of the commands below for the image you want. If you're already on the signed image then switching over should be a quick rebase, and then reboot.
 
 ## Image Categorization
+
 - Featured Images
-    - [Bluefin](https://github.com/ublue-os/bluefin)
-    - [Bazzite](https://github.com/ublue-os/bazzite/)
-    - [Beyond](https://github.com/ublue-os/beyond)
+  - [Bluefin](https://github.com/ublue-os/bluefin)
+  - [Bazzite](https://github.com/ublue-os/bazzite/)
+  - [Beyond](https://github.com/ublue-os/beyond)
 - Opinionated Fedora Silverblue Images
-    - More information on changes from stock Fedora Silverblue [here](/images/main/). 
-    - Offers different desktop environments and window managers if desired.
-    - Download the ISO for all different desktop variants [here](https://github.com/ublue-os/main/releases).
+  - More information on changes from stock Fedora Silverblue [here](/images/main/).
+  - Offers different desktop environments and window managers if desired.
+  - Download the ISO for all different desktop variants [here](https://github.com/ublue-os/main/releases).
 - Specialized Hardware
-    - Unique images for specific hardware (Framework, Surface, etc.)
-    -  Overlaps with the other images.
-        -  `bazzite-framework` as an example.
-- [[Community Images](https://github.com/ublue-os/awesome-custom-images)](https://universal-blue.discourse.group/t/list-of-community-created-custom-images/340)
-    - You can make your own too!  Check out [Making Your Own](/tinker/make-your-own/) and [Forking Your Own](/guide/fork-your-own/).
+  - Unique images for specific hardware (Framework, Surface, etc.)
+  - Overlaps with the other images.
+    - `bazzite-framework` as an example.
+- [Community Images](https://universal-blue.discourse.group/t/list-of-community-created-custom-images/340)
+  - You can make your own too!  Check out [Making Your Own](/tinker/make-your-own/) and [Forking Your Own](/guide/fork-your-own/).
 - Other images
-    - Base images that include only the necessary Fedora packages as a starting point.
-    - Images without kernel modules or kernel packages.
-    - Images intended only for use inside of another image and **not** installed by itself on a desktop.
+  - Base images that include only the necessary Fedora packages as a starting point.
+  - Images without kernel modules or kernel packages.
+  - Images intended only for use inside of another image and **not** installed by itself on a desktop.
 
 ## Image List
 
