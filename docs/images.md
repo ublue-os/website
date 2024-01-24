@@ -13,7 +13,7 @@ This list is in alphabetical order.
 
 1. Optional: it is recommended that you pin your current ostree image to make sure you can roll back if you change your mind using:
 
-    ```
+    ```sh
    sudo ostree admin pin <index: number>
    ```
 
