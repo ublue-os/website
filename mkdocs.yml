@@ -78,37 +78,15 @@ extra:
       link: https://universal-blue.org/feed_rss_updated.xml
 plugins:
   search: {}
-  external-markdown: {}
-  mkdocs-video:
-      video_muted: True
-      video_controls: True
-      css_style:
-        width: "50%"
-        height: "22.172vw"
-  rss:
-      match_path: blog/posts/.*
-      date_from_meta:
-        as_creation: date
 nav:
   - Home: index.md
-  - FAQ: faq.md
-  - Media Coverage: media.md
   - Download + Images:
       - Installation: installation.md
       - Full Image List: images.md
       - Main Images: 
           - images/main.md
-      - Asus Images: images/asus.md
-      - Framework Images: images/framework.md
-      - Nvidia Images: images/nvidia.md
-      - Surface Images: images/surface.md
-      - Toolboxes: toolboxes.md
   - Community:
-      - Mission: mission.md
-      - Scope: scope.md
-      - Values: values.md
       - Code of Conduct: CODE_OF_CONDUCT.md
-      - Membership: membership.md
       - Discord Chat: https://discord.gg/WEu6BdFEtp
       - Discussion Forums: https://universal-blue.discourse.group/
       - Videos: https://www.youtube.com/c/JorgeCastro/videos
@@ -142,8 +120,6 @@ nav:
             - script: tinker/modules/script.md
             - systemd: tinker/modules/systemd.md
             - yafti: tinker/modules/yafti.md
-  - Blog:
-      - blog/index.md
   - Cheatsheet:
       - Just: cheatsheet/just.md
       - OStree: cheatsheet/ostree.md
