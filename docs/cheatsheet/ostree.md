@@ -9,27 +9,27 @@ You can read more about [ostree](https://ostreedev.github.io/ostree/) in the ups
 ### Update ostree
 Pull updated version based on your current upstream repository.
 ```
-sudo rpm-ostree upgrade
+rpm-ostree upgrade
 ```
 
 ### Roll back deployment
 This will change your next target boot to the previous deployment.
 Use this if you have issues with your current booted deployment.
 ```
-sudo rpm-ostree rollback
+rpm-ostree rollback
 ```
 
 ### Add rpm package
 Install a new package layered on top of the file system tree.
 Add `--now` to layer on top of the active tree.
 ```
-sudo rpm-ostree install $PACKAGE
+rpm-ostree install $PACKAGE
 ```
 
 ### Get ostree status
 See the current booted file system tree and any layered packages.
 ```
-sudo rpm-ostree status
+rpm-ostree status
 ```
 
 ### Pin a file system tree
