@@ -120,7 +120,3 @@ nav:
             - script: tinker/modules/script.md
             - systemd: tinker/modules/systemd.md
             - yafti: tinker/modules/yafti.md
-  - Cheatsheet:
-      - Just: cheatsheet/just.md
-      - OStree: cheatsheet/ostree.md
-      - Distrobox: cheatsheet/distrobox.md
