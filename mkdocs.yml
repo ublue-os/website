@@ -133,6 +133,7 @@ nav:
           - Community: tinker/community.md
           - Modules:
             - tinker/modules/index.md
+            - akmods: tinker/modules/akmods.md
             - bling: tinker/modules/bling.md
             - default-flatpaks: tinker/modules/default-flatpaks.md
             - files: tinker/modules/files.md
