@@ -9,7 +9,7 @@ This is a collection of container images using Fedora's support for OCI/Docker c
 
 For a more in-depth explanation, refer to our [Documentation,](/introduction) and [Media Coverage](/media) sections.
 
-This project provides ...
+This project provides:
 
 <div class="grid cards" markdown>
 
@@ -78,22 +78,22 @@ Our goal is to for one install to last the life of the hardware.
 ### Advantages over traditional Linux desktops
 
 - Reliable, atomic updates with built in rollback
-- Known-good state and fewer failures:
-  - Significantly reduced configuration drift
-  - No compiling or building Nvidia drivers on the local client, they come pre-made on the image
-  - [Kernel mods](https://github.com/ublue-os/akmods) right on the image
+- Known-good state and fewer failures
+    - Significantly reduced configuration drift
+    - No compiling or building Nvidia drivers on the local client, they come pre-made on the image
+    - [Kernel mods](https://github.com/ublue-os/akmods) right on the image
 - Clean separation of the base system from applications and your data
-  - Integration of Flatpak applications via [Flathub](https://flathub.org/home).
-  - [Toolbox](https://github.com/containers/toolbox) and [Distrobox](https://github.com/89luca89/distrobox) support, run applications from any distribution in a containerized environment
-- Unbridled customization:
-  - Craft your perfect image from scratch or derive from others
+    - Integration of Flatpak applications via [Flathub](https://flathub.org/home).
+    - [Toolbox](https://github.com/containers/toolbox) and [Distrobox](https://github.com/89luca89/distrobox) support, run applications from any distribution in a containerized environment
+- Unbridled customization
+    - Craft your perfect image from scratch or derive from others
 - Community Maintained
-  - The project is maintained by a community of cloud-native contributors with an [explicit mission](/mission)
+    - The project is maintained by a community of cloud-native contributors with an [explicit mission](/mission)
 - Reuses standards-based tooling from cloud:
-  - Built using ostree-enabled [OCI compliant images](https://opencontainers.org/)
-- Built-in container tools for developers:
-  - Consume packages and software from any repo without risking breakage on the client
-  - Easy consumption of other OCI images, if it's on the [CNCF Landscape](https://landscape.cncf.io/) it's a first class citizen thanks to Podman!
+    - Built using ostree-enabled [OCI compliant images](https://opencontainers.org/)
+- Built-in container tools for developers
+    - Consume packages and software from any repo without risking breakage on the client
+    - Easy consumption of other OCI images, if it's on the [CNCF Landscape](https://landscape.cncf.io/) it's a first class citizen thanks to Podman!
 
 !!! example "What we mean by reliability:"
 
@@ -104,8 +104,8 @@ Our goal is to for one install to last the life of the hardware.
 - Rebase back to pure [Fedora](https://getfedora.org/en/) without reinstallation. This is why we don't call it a distribution, it's an atomic layer of customization on an existing distribution that can be removed.
 - Fast updates: minimum of once-a-day updates so you're never behind Fedora.
 - Hosted on ghcr.io:
-  - Ninety (90) days of image archives allowing for flexible rollback options.
-  - Globally distributed via CDN for fast image downloads, thanks Microsoft!
+    - Ninety (90) days of image archives allowing for flexible rollback options.
+    - Globally distributed via CDN for fast image downloads, thanks Microsoft!
 - Images signed with standard [sigstore tools](https://www.sigstore.dev/).
 - And some more features explained here:
 
@@ -117,7 +117,7 @@ We're always looking for people to help, all skill levels and areas of expertise
 
 - Discuss the project with us on [Discourse](https://universal-blue.discourse.group/).
 - [Join our Discord](https://discord.gg/WEu6BdFEtp)
-  - We strive for a safe, inclusive community.
+    - We strive for a safe, inclusive community.
 - Pull requests encouraged and accepted.
 
 If you're building your own custom images feel free to add them to [our awesome list](https://universal-blue.discourse.group/t/list-of-community-created-custom-images/340)!
