@@ -43,7 +43,7 @@ An interpretation of the Ubuntu spirit built on Fedora technology
 ![Alt](https://repobeats.axiom.co/api/embed/40b85b252bf6ea25eb90539d1adcea013ccae69a.svg "Repobeats analytics image")
 
 
-#### [uCore]
+#### [uCore](https://github.com/ublue-os/ucore)
 
 An OCI base image of Fedora CoreOS with batteries included 
 
