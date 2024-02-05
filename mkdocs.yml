@@ -80,16 +80,16 @@ plugins:
   search: {}
 nav:
   - Home: index.md
-  - Download + Images:
-      - Installation: installation.md
+  - Installation: installation.md
+  - Images:
       - Full Image List: images.md
-      - Main Images: 
-          - images/main.md
+      - Main Images: images/main.md
   - Community:
       - Code of Conduct: CODE_OF_CONDUCT.md
       - Discord Chat: https://discord.gg/WEu6BdFEtp
       - Discussion Forums: https://universal-blue.discourse.group/
       - Videos: https://www.youtube.com/c/JorgeCastro/videos
+  - Metrics: metrics.md
   - Documentation:
       - Introduction: introduction.md
       - Contributor's Guide:
