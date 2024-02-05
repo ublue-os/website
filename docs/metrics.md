@@ -32,6 +32,6 @@ An OCI image that serves as an alternative operating system for the Steam Deck, 
 
 ### Bluefin
 
- An interpretation of the Ubuntu spirit built on Fedora technology 
+An interpretation of the Ubuntu spirit built on Fedora technology 
 
-![Alt](https://repobeats.axiom.co/api/embed/7d4d3d6239bfb43fa6df8054b940d116727c833f.svg "Repobeats analytics image")
+![Alt](https://repobeats.axiom.co/api/embed/40b85b252bf6ea25eb90539d1adcea013ccae69a.svg "Repobeats analytics image")
