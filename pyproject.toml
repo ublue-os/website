@@ -16,6 +16,7 @@ mkdocs-embed-external-markdown = "^2.3.0"
 mkdocs-rss-plugin = "^1.6.0"
 pillow = "^10.2.0"
 cairosvg = "^2.7.0"
+mkdocs-redirects = "^1.2.1"
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.1.0"
