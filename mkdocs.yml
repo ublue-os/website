@@ -78,6 +78,27 @@ extra:
       link: https://universal-blue.org/feed_rss_updated.xml
 plugins:
   search: {}
+  redirects: 
+      redirect_maps:
+        'tinker/make-your-own.md': 'tinker.md'
+        'tinker/mindset.md': 'tinker.md'
+        'tinker/setup.md': 'tinker.md'
+        'tinker/setup/auto-cli.md': 'tinker.md'
+        'tinker/setup/auto-web.md': 'tinker.md'
+        'tinker/setup/manual.md': 'tinker.md'
+        'tinker/installation.md': 'tinker.md'
+        'tinker/modification.md': 'tinker.md'
+        'tinker/community.md': 'tinker.md'
+        'tinker/modules.md': 'tinker.md'
+        'tinker/modules/akmods.md': 'tinker.md'
+        'tinker/modules/bling.md': 'tinker.md'
+        'tinker/modules/default-flatpaks.md': 'tinker.md'
+        'tinker/modules/files.md': 'tinker.md'
+        'tinker/modules/fonts.md': 'tinker.md'
+        'tinker/modules/rpm-ostree.md': 'tinker.md'
+        'tinker/modules/script.md': 'tinker.md'
+        'tinker/modules/systemd.md': 'tinker.md'
+        'tinker/modules/yafti.md': 'tinker.md'
 nav:
   - Home: index.md
   - Installation: installation.md
@@ -98,25 +119,4 @@ nav:
           - Repository Health: contributor-health.md
           - Proposals: https://github.com/orgs/ublue-os/discussions?discussions_q=is%3Aopen+label%3Aproposal
           - Roadmap: https://github.com/orgs/ublue-os/projects/1
-      - Tinkerer's Guide:
-          - Introduction: tinker/make-your-own.md
-          - Mindset: tinker/mindset.md
-          - Setup:
-            - tinker/setup/index.md
-            - Automatic setup (cli): tinker/setup/auto-cli.md
-            - Automatic setup (web): tinker/setup/auto-web.md
-            - Manual setup: tinker/setup/manual.md
-          - Installation: tinker/installation.md
-          - Modification: tinker/modification.md
-          - Community: tinker/community.md
-          - Modules:
-            - tinker/modules/index.md
-            - akmods: tinker/modules/akmods.md
-            - bling: tinker/modules/bling.md
-            - default-flatpaks: tinker/modules/default-flatpaks.md
-            - files: tinker/modules/files.md
-            - fonts: tinker/modules/fonts.md
-            - rpm-ostree: tinker/modules/rpm-ostree.md
-            - script: tinker/modules/script.md
-            - systemd: tinker/modules/systemd.md
-            - yafti: tinker/modules/yafti.md
+      - Tinkerer's Guide (deprecated): tinker.md

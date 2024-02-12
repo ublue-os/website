@@ -694,6 +694,24 @@ files = [
 ]
 
 [[package]]
+name = "mkdocs-redirects"
+version = "1.2.1"
+description = "A MkDocs plugin for dynamic page redirects to prevent broken links."
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "mkdocs-redirects-1.2.1.tar.gz", hash = "sha256:9420066d70e2a6bb357adf86e67023dcdca1857f97f07c7fe450f8f1fb42f861"},
+]
+
+[package.dependencies]
+mkdocs = ">=1.1.1"
+
+[package.extras]
+dev = ["autoflake", "black", "isort", "pytest", "twine (>=1.13.0)"]
+release = ["twine (>=1.13.0)"]
+test = ["autoflake", "black", "isort", "pytest"]
+
+[[package]]
 name = "mkdocs-rss-plugin"
 version = "1.6.0"
 description = "MkDocs plugin which generates a static RSS feed using git log and page.meta."
@@ -1239,4 +1257,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "892597b2ea495afe0ceddbca856c31e6a31bf45b005ad56964aea551365f2b98"
+content-hash = "4526a1d55d86464566cae63946c92e53057e9701b092ec4f0370fc89d10d92a8"
