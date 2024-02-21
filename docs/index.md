@@ -18,11 +18,6 @@ This project provides:
     ---
     A diverse set of [continuously delivered](https://en.wikipedia.org/wiki/Continuous_delivery) Fedora-based images for people to use as their desktop operating system
 
-- :material-toolbox:{ .lg .middle } __Toolkit__
-
-    ---
-    A diverse set of tools and [a reusable automation kit](https://github.com/ublue-os/startingpoint) for more technical users so that they can customize and share their images with others
-
 - :material-speedometer:{ .lg .middle } __Experimental Applications__
 
     ---
