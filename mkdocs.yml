@@ -103,17 +103,16 @@ nav:
   - Home: index.md
   - Installation: installation.md
   - Community:
-      - Discord Chat: https://discord.gg/WEu6BdFEtp
       - Discussion Forums: https://universal-blue.discourse.group/
+      - Discord Chat: https://discord.gg/WEu6BdFEtp
       - Videos: https://www.youtube.com/c/JorgeCastro/videos
-      - Values: values.md
-      - Code of Conduct: CODE_OF_CONDUCT.md
-      
+      - Code of Conduct: CODE_OF_CONDUCT.md    
   - Metrics: metrics.md
   - Documentation:
       - Introduction: introduction.md
       - Mission: mission.md
       - Scope: scope.md
+      - Values: values.md
       - Contributor's Guide:
           - Architecture: architecture.md
           - Contributing: CONTRIBUTING.md
