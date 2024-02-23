@@ -49,6 +49,22 @@ Ashley Willis has a great introductory post called [How to Be a Good Open Source
 
 ## Submitting Pull Requests
 
+### Best Practices and Conventions
+
+Make sure your pull request adheres to our best practices. 
+These include following project conventions, making small pull requests, and commenting thoroughly. 
+
+- Follow the directions of the pull request template if one is available. It will help those who respond to your PR.
+- If a trivial fix such as a broken link, typo, or grammar mistake, review the entire document for other potential mistakes. Do not open multiple PRs for small fixes in the same document.
+- Reference any issues related to your PR, or issues that PR may solve.
+- Avoid creating overly large changes in a single commit. Instead, break your PR into multiple small, logical commits. This makes it easier for your PR to be reviewed.
+  - Small commits and small pull requests get reviewed faster and are more likely to be correct than big ones.
+  - Open a Different Pull Request for Fixes and Generic Features
+- Comment on your own PR where you believe something may need further explanation.
+- If your PR is considered a “Work in progress” [mark it as a draft](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/changing-the-stage-of-a-pull-request).
+
+### Submitting a Pull Request
+
 If you want to contribute code to the project, the general workflow is as follows:
 
 1. [Fork the desired project repository on GitHub](https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository).
