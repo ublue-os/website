@@ -7,8 +7,6 @@ hide:
 
 This is a collection of container images using Fedora's support for OCI/Docker containers as a [transport and delivery mechanism for operating system content](https://fedoraproject.org/wiki/Changes/OstreeNativeContainerStable). That's nerdspeak for the ultimate Linux client: the reliability of a Chromebook, but with the flexibility and power of a traditional Linux desktop. At long last, we've ascended.
 
-For a more in-depth explanation, refer to our [Documentation,](/introduction) and [Media Coverage](/media) sections.
-
 This project provides:
 
 <div class="grid cards" markdown>
@@ -16,18 +14,8 @@ This project provides:
 - :material-train-car-container:{ .lg .middle } __Images__
 
     ---
-    A diverse set of [continuously delivered](https://en.wikipedia.org/wiki/Continuous_delivery) Fedora-based images for people to use as their desktop operating system
-
-- :material-toolbox:{ .lg .middle } __Toolkit__
-
-    ---
-    A diverse set of tools and [a reusable automation kit](https://github.com/ublue-os/startingpoint) for more technical users so that they can customize and share their images with others
-
-- :material-speedometer:{ .lg .middle } __Experimental Applications__
-
-    ---
-    Act as a proving ground for new ideas around the Linux desktop like [Fleek](https://getfleek.dev/), [Forge](https://github.com/ublue-os/forge), [Yafti](https://github.com/ublue-os/yafti), and [Boxkit](https://github.com/ublue-os/boxkit)
-
+    A diverse set of [continuously delivered](https://en.wikipedia.org/wiki/Continuous_delivery) Fedora-based images for people to use as base images
+  
 - :material-heart:{ .lg .middle } __Community__
 
     ---
@@ -35,17 +23,17 @@ This project provides:
 
 </div>
   
-Our images offer GNOME, KDE, XFCE, LXQt, Budgie, and MATE, with more being [added regularly](/images). Our [NVIDIA images](/images/nvidia) offer a unique blend of reliability and ease of use that you won't find anywhere else. These are offered in a variety of images to fit your needs:
+Our main images offer GNOME, KDE, XFCE, LXQt, Budgie, and MATE, with more being [added regularly]([/images](https://github.com/orgs/ublue-os/packages). Our [NVIDIA images]([/images/nvidia](https://github.com/orgs/ublue-os/packages?repo_name=nvidia)) offer a unique blend of reliability and ease of use that you won't find anywhere else. These are offered in a variety of images to fit your needs:
 
-- [Asus](/images/asus) - Fedora-based images with [asus-linux.org](https://asus-linux.org) kernels
-- [Framework](/images/framework) - Framework's recommended Fedora settings
-- [Surface](/images/surface) - Fedora-based images with [linux-surface](https://github.com/linux-surface/linux-surface) kernels
+- [Asus](https://github.com/orgs/ublue-os/packages?repo_name=asus) - Fedora-based images with [asus-linux.org](https://asus-linux.org) kernels
+- [Framework](https://github.com/orgs/ublue-os/packages?repo_name=framework) - Framework's recommended Fedora settings
+- [Surface]([/images/surface](https://github.com/orgs/ublue-os/packages?repo_name=surface)) - Fedora-based images with [linux-surface](https://github.com/linux-surface/linux-surface) kernels
+
+## End-User Focused Images
 
 Check out [Bazzite](https://bazzite.gg), the ultimate gaming setup for your PC, Steam Deck, ASUS ROG Ally and Legion Go. Fedora's upstream pipeline automated directly to your device, nice.
 
 [Bluefin](https://universal-blue.discourse.group/c/bluefin/6) is a simple to use desktop with the mission of serving a mass audience. The [Bluefin DX](https://universal-blue.discourse.group/t/bluefin-dx-the-bluefin-developer-experience/39) edition is designed to be the ultimate Linux workstation for open source developers.
-
-And last, but not least, check out [Beyond](https://github.com/ublue-os/beyond), our collaboration with [Cassidy James Blaede](https://cassidyjames.com/), a peek into his vision of a future GNOME desktop.
 
 ## Why would I use these?
 
@@ -58,22 +46,6 @@ We like the sound of that, and we're hoping to be your "Desktop DevOps team". Br
 If you want to learn, come hang out. We are here to teach and learn from each other!
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vZ1LRe_foJY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
-
-## Usage
-
-[Download the ISO :fontawesome-solid-heart:](https://github.com/ublue-os/main/releases){ .md-button .md-button--primary }
-
-One small ISO with options to install GNOME, KDE, XFCE, LXQt, and MATE, as well as Nvidia-integrated versions of each.
-
-!!! example "... and then follow this!"
-
-    [Installation Instructions](/installation)
-
-You can always rebase from one image to another, don't worry, that operation is image-based, so you'll always have what's supposed to be there.
-
-Image based updates inherently don't allow for cruft to accumulate, allowing for a level of stability and upgrade resilience that has been missing on the Linux desktop, until now...
-
-Our goal is to for one install to last the life of the hardware.
 
 ### Advantages over traditional Linux desktops
 
