@@ -11,7 +11,7 @@ Notably:
 
 Bazzite is a custom image built on Fedora Atomic technology that brings the best of Linux gaming to all of your devices (yep, even your favorite handheld). Featuring a rock-solid base with automatic updates and ninety days of rollbacks.
 
-- Check [the Bazzite homepage](https://bazzite.gg) for image download instructions
+- Check [the Bazzite image picker](https://bazzite.gg#image-picker) for download instructions
 
 ## Bluefin
 
