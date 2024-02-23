@@ -102,9 +102,6 @@ plugins:
 nav:
   - Home: index.md
   - Installation: installation.md
-  - Images:
-      - Full Image List: images.md
-      - Main Images: images/main.md
   - Community:
       - Code of Conduct: CODE_OF_CONDUCT.md
       - Discord Chat: https://discord.gg/WEu6BdFEtp
