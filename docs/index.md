@@ -27,7 +27,7 @@ Our main images offer GNOME, KDE, XFCE, LXQt, Budgie, and MATE, with more being 
 
 - [Asus](https://github.com/orgs/ublue-os/packages?repo_name=asus) - Fedora-based images with [asus-linux.org](https://asus-linux.org) kernels
 - [Framework](https://github.com/orgs/ublue-os/packages?repo_name=framework) - Framework's recommended Fedora settings
-- [Surface]([/images/surface](https://github.com/orgs/ublue-os/packages?repo_name=surface)) - Fedora-based images with [linux-surface](https://github.com/linux-surface/linux-surface) kernels
+- [Surface](https://github.com/orgs/ublue-os/packages?repo_name=surface) - Fedora-based images with [linux-surface](https://github.com/linux-surface/linux-surface) kernels
 
 ## End-User Focused Images
 
