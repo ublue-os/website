@@ -22,11 +22,11 @@ This project provides:
 
 </div>
   
-Our main images offer GNOME, KDE, XFCE, LXQt, Budgie, and MATE, with more being [added regularly]([/images](https://github.com/orgs/ublue-os/packages). Our [NVIDIA images]([/images/nvidia](https://github.com/orgs/ublue-os/packages?repo_name=nvidia)) offer a unique blend of reliability and ease of use that you won't find anywhere else. These are offered in a variety of images to fit your needs:
+Our main images offer GNOME, KDE, XFCE, LXQt, Budgie, and MATE, with more being [added regularly](https://github.com/orgs/ublue-os/packages). Our [NVIDIA images](https://github.com/orgs/ublue-os/packages?repo_name=nvidia) offer a unique blend of reliability and ease of use that you won't find anywhere else. These are offered in a variety of images to fit your needs:
 
 - [Asus](https://github.com/orgs/ublue-os/packages?repo_name=asus) - Fedora-based images with [asus-linux.org](https://asus-linux.org) kernels
 - [Framework](https://github.com/orgs/ublue-os/packages?repo_name=framework) - Framework's recommended Fedora settings
-- [Surface]([/images/surface](https://github.com/orgs/ublue-os/packages?repo_name=surface)) - Fedora-based images with [linux-surface](https://github.com/linux-surface/linux-surface) kernels
+- [Surface](https://github.com/orgs/ublue-os/packages?repo_name=surface) - Fedora-based images with [linux-surface](https://github.com/linux-surface/linux-surface) kernels
 
 ## End-User Focused Images
 
@@ -75,7 +75,7 @@ If you want to learn, come hang out. We are here to teach and learn from each ot
 - Rebase back to pure [Fedora](https://getfedora.org/en/) without reinstallation. This is why we don't call it a distribution, it's an atomic layer of customization on an existing distribution that can be removed.
 - Fast updates: minimum of once-a-day updates so you're never behind Fedora
 - Hosted on [ghcr.io](https://github.com/features/packages):
-    - Ninety (90) days of image archives allowing for flexible rollback options
+    - Ninety (_90_) days of image archives allowing for flexible rollback options
     - Globally distributed via CDN for fast image downloads, thanks Microsoft!
 - Images signed with standard [sigstore tools](https://www.sigstore.dev/)
 - And some more features explained here:
