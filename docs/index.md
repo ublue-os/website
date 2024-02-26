@@ -14,8 +14,7 @@ This project provides:
 - :material-train-car-container:{ .lg .middle } __Images__
 
     ---
-    A diverse set of [continuously delivered](https://en.wikipedia.org/wiki/Continuous_delivery) Fedora-based images for people to use as base images
-  
+ 
 - :material-heart:{ .lg .middle } __Community__
 
     ---
