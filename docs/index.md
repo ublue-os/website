@@ -32,11 +32,11 @@ These are offered in a variety of images to fit the needs of your hardware:
 
 ## End-User Focused Images
 
-- [Bazzite](https://bazzite.gg) - the ultimate gaming setup for your PC, Steam Deck, ASUS ROG Ally and Legion Go. Fedora's upstream pipeline automated directly to your device, nice.
+- [Bazzite](https://bazzite.gg) - The ultimate gaming setup for your PC, Steam Deck, ASUS ROG Ally and Legion Go. Fedora's upstream pipeline automated directly to your device, nice.
 
 - [Bluefin](https://projectbluefin.io/) - A simple to use desktop with the mission of serving a mass audience.
 		
-	- [Bluefin DX Edition](https://universal-blue.discourse.group/docs?topic=39) is designed to be the ultimate Linux workstation for open source developers.
+	- [Bluefin DX Edition](https://universal-blue.discourse.group/docs?topic=39) - Designed to be the ultimate Linux workstation for open source developers.
 
 ### Why would I use these?
 
