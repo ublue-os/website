@@ -19,7 +19,7 @@ cairosvg = "^2.7.0"
 mkdocs-redirects = "^1.2.1"
 
 [tool.poetry.group.dev.dependencies]
-black = "^23.1.0"
+black = "^24.3.0"
 
 [build-system]
 requires = ["poetry-core>=1.2.0"]
