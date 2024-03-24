@@ -9,6 +9,10 @@ This list is in alphabetical order.
 
     If you're coming from an existing Fedora installation **please ensure you remove layered packages before rebasing!** If you're not familiar with the usage of `rpm-ostree` we strongly recommend [reading the documentation](https://coreos.github.io/rpm-ostree/).
 
+## Available desktops
+
+![Silverblue: GNOME, Kinoite: KDE Plasma, Sericea: Sway, Onyx: Budgie, Vauxite: XFCE, LXQt: LXQt, Mate: Mate, Base: No DE](ublue-images.png)
+
 ## Preparing to Rebase
 
 1. Optional: it is recommended that you pin your current ostree image to make sure you can roll back if you change your mind using:
